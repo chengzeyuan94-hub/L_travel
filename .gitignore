@@ -13,3 +13,7 @@ __pycache__/
 .env*
 export_credentials.cfg
 BUILD_INFO.json
+
+# Generated importer metadata / CSV translation artifacts
+*.import
+*.translation
