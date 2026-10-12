@@ -1,0 +1,30 @@
+{
+  "static": {
+    "extra_scripts": [
+      {
+        "script": "res://tools/traveler/lookdev_panti/c_probe_ground.gd",
+        "cfg": {
+          "xs": [
+            870,
+            1037,
+            1200,
+            1470
+          ],
+          "ys": [
+            826,
+            830,
+            835,
+            840,
+            845,
+            850,
+            860,
+            870,
+            885,
+            900,
+            930
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "base": "l3_r3",
+  "description": "L3 ablation: r3 without rim.",
+  "common": {
+    "l3": {
+      "character": {
+        "rim": {
+          "enabled": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "lshu.director.v1",
+  "note": "第四幕「L叔在哪儿」导演（scripts/traveler/lshu/lshu_director.gd）的数值。全部是起点，看过实机随时可调，不作为验收门槛。这里不许出现任何地块、地点或素材编号。时长：带 _s 的是秒；logic 指 L叔 的时钟（加速时钟下是加速后的秒），其余是墙上时间。",
+  "tick": {
+    "note": "resolve() 的间隔：1 倍速用 loop.json save.resolve_every_s（2 秒）；加速时钟按倍速缩短，但不短于 min_real_s",
+    "min_real_s": 0.05
+  },
+  "switch": {
+    "note": "换地：他走后预载下一块（后台读盘 + 分帧组装，每帧不超过 budget_ms）；路走完时把上一帧拷到屏上，在它下面换地块，再用 fade_s 溶解过去，然后他从路口走进来。加速时钟下溶解不超过 fade_max_logic_s 的逻辑时间",
+    "budget_ms": 6.0,
+    "fade_s": 2.5,
+    "fade_max_logic_s": 150.0,
+    "opening_fade_s": 1.6,
+    "hard_fade_s": 1.8
+  },
+  "fire": {
+    "note": "火的旺度（1 = 定稿的样子）：他进帐篷后降到 low_level；他走后在 ember_fade_logic_s 里慢慢降到余烬 ember_level。其余几项是各部分跟着旺度变的方式",
+    "low_level": 0.45,
+    "low_fade_logic_s": 120.0,
+    "ember_level": 0.1,
+    "ember_fade_logic_s": 180.0,
+    "shape": {
+      "flame_width_min": 0.55,
+      "coal_min": 0.6,
+      "smoke_min": 0.45,
+      "spark_from": 0.15
+    }
+  },
+  "lamp": {
+    "note": "夜里他离开时，营灯的光在 leave_fade_s 里淡掉（他把灯带走了），然后灯收起",
+    "leave_fade_s": 2.0
+  },
+  "fps": {
+    "note": "场景级：窗口在前台 focused，失焦或最小化 unfocused；退出时恢复原值。--lshu-fps-cap=off 只给 QA 测帧耗用。2026-09-27 Carlos：旅人模式像屏保一样开在别的程序旁边，失焦也不降帧，两项都是 30",
+    "focused": 30,
+    "unfocused": 30
+  },
+  "snap": {
+    "note": "点到他：鞠躬（坐着时点头），转向玩家以后顺手拍一张。每站最多 max_per_leg 张，这张作为 type=snap 的记录进明信片列表",
+    "max_per_leg": 1,
+    "after_greet_logic_s": 0.75
+  },
+  "postcard": {
+    "note": "明信片等他站定（动作模块处在 kit 阶段）再拍；超时留在待渲里，窗口重新可见时补渲，最多每 retry_every_s 秒试一次",
+    "retry_every_s": 20.0
+  },
+  "save": {
+    "note": "写档：子状态切换、每 loop.json save.write_every_s、明信片渲好 / 已读、鞠躬照、退出；lock 心跳和只读实例的接管每 heartbeat_s 一次",
+    "heartbeat_s": 60.0
+  }
+}

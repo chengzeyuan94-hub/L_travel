@@ -1,0 +1,993 @@
+[gd_scene format=4]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2n1le"]
+resource_local_to_scene = true
+resource_name = "LanternGlow"
+cull_mode = 2
+albedo_color = Color(0.7137255, 0.5568628, 0.32156864, 1)
+roughness = 0.86
+emission_enabled = true
+emission = Color(1, 0.68235296, 0.32941177, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ht5h7"]
+resource_name = "Sandstone joints"
+cull_mode = 2
+albedo_color = Color(0.7019608, 0.60784316, 0.47058824, 1)
+roughness = 0.86
+
+[sub_resource type="BoxMesh" id="BoxMesh_brt1j"]
+size = Vector3(2.06, 0.11, 1.69)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_srsdr"]
+resource_name = "Carved ivory stone"
+cull_mode = 2
+albedo_color = Color(0.8745098, 0.81960785, 0.69411767, 1)
+roughness = 0.86
+
+[sub_resource type="BoxMesh" id="BoxMesh_0j8nx"]
+size = Vector3(1.99, 0.065, 1.64)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ugrln"]
+size = Vector3(1.65, 0.96, 1.19)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ik68a"]
+resource_name = "Cinnabar painted timber"
+cull_mode = 2
+albedo_color = Color(0.6, 0.30980393, 0.24705882, 1)
+roughness = 0.86
+
+[sub_resource type="BoxMesh" id="BoxMesh_urdpo"]
+size = Vector3(1.72, 0.15, 1.28)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_as74e"]
+top_radius = 0.046
+bottom_radius = 0.046
+height = 1.02
+radial_segments = 8
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tdcp0"]
+resource_name = "Worn cedar planks"
+cull_mode = 2
+albedo_color = Color(0.69803923, 0.5137255, 0.31764707, 1)
+roughness = 0.86
+
+[sub_resource type="BoxMesh" id="BoxMesh_hemon"]
+size = Vector3(0.13, 0.09, 0.15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mcouv"]
+size = Vector3(0.25, 0.46, 0.027)
+
+[sub_resource type="BoxMesh" id="BoxMesh_biope"]
+size = Vector3(0.013, 0.46, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tqw3a"]
+size = Vector3(0.013, 0.46, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_35nja"]
+size = Vector3(0.013, 0.46, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fhmyv"]
+size = Vector3(0.25, 0.016, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sh5ej"]
+size = Vector3(0.25, 0.016, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l3mxt"]
+size = Vector3(0.25, 0.016, 0.023)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_rccg0"]
+top_radius = 0.046
+bottom_radius = 0.046
+height = 1.02
+radial_segments = 8
+rings = 1
+
+[sub_resource type="BoxMesh" id="BoxMesh_eukr2"]
+size = Vector3(0.13, 0.09, 0.15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_d3r4h"]
+size = Vector3(0.25, 0.46, 0.027)
+
+[sub_resource type="BoxMesh" id="BoxMesh_udhwb"]
+size = Vector3(0.013, 0.46, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1dt8x"]
+size = Vector3(0.013, 0.46, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_u3b7c"]
+size = Vector3(0.013, 0.46, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_g1sky"]
+size = Vector3(0.25, 0.016, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_w60v4"]
+size = Vector3(0.25, 0.016, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_os8g3"]
+size = Vector3(0.25, 0.016, 0.023)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ffhsb"]
+top_radius = 0.046
+bottom_radius = 0.046
+height = 1.02
+radial_segments = 8
+rings = 1
+
+[sub_resource type="BoxMesh" id="BoxMesh_shsry"]
+size = Vector3(0.13, 0.09, 0.15)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_tn1wv"]
+top_radius = 0.046
+bottom_radius = 0.046
+height = 1.02
+radial_segments = 8
+rings = 1
+
+[sub_resource type="BoxMesh" id="BoxMesh_vtukf"]
+size = Vector3(0.13, 0.09, 0.15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ng485"]
+size = Vector3(0.25, 0.46, 0.027)
+
+[sub_resource type="BoxMesh" id="BoxMesh_naa1l"]
+size = Vector3(0.013, 0.46, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_podsm"]
+size = Vector3(0.013, 0.46, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fmvsr"]
+size = Vector3(0.013, 0.46, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_66fum"]
+size = Vector3(0.25, 0.016, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_b2ol6"]
+size = Vector3(0.25, 0.016, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_s6ver"]
+size = Vector3(0.25, 0.016, 0.023)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_buvpv"]
+top_radius = 0.046
+bottom_radius = 0.046
+height = 1.02
+radial_segments = 8
+rings = 1
+
+[sub_resource type="BoxMesh" id="BoxMesh_quwfm"]
+size = Vector3(0.13, 0.09, 0.15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_s7b38"]
+size = Vector3(0.25, 0.46, 0.027)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mytbw"]
+size = Vector3(0.013, 0.46, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_34nmi"]
+size = Vector3(0.013, 0.46, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7qgvn"]
+size = Vector3(0.013, 0.46, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1si0p"]
+size = Vector3(0.25, 0.016, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4daxm"]
+size = Vector3(0.25, 0.016, 0.023)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mvf0k"]
+size = Vector3(0.25, 0.016, 0.023)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xboa3"]
+resource_name = "Deep recessed shadow"
+cull_mode = 2
+albedo_color = Color(0.21568628, 0.28627452, 0.27450982, 1)
+roughness = 0.86
+
+[sub_resource type="BoxMesh" id="BoxMesh_vciap"]
+size = Vector3(0.28, 0.76, 0.03)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4xbs7"]
+size = Vector3(1.89, 0.14, 0.17)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p7dna"]
+resource_name = "Aged brass"
+cull_mode = 2
+albedo_color = Color(0.79607844, 0.6901961, 0.43137255, 1)
+roughness = 0.86
+
+[sub_resource type="BoxMesh" id="BoxMesh_pfgtw"]
+size = Vector3(0.38, 0.11, 0.022)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dt8db"]
+resource_name = "Deep jade glazed roof"
+cull_mode = 2
+albedo_color = Color(0.20784314, 0.39607844, 0.3882353, 1)
+roughness = 0.86
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_sqt37"]
+_surfaces = [{
+"aabb": AABB(-1.2, 0.057, -0.99, 2.4, 0.513, 1.98),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 144,
+"vertex_data": PackedByteArray("uEACv4XrET+cMyK9AAAAALpJzD5iEJi+AAAAAIXrET+cMyK9uEACv4XrET+cMyK9Di0yv7pJzD5iEJi+AAAAALpJzD5iEJi+AAAAAIXrET+cMyK9Di0yP7pJzD5iEJi+uEACP4XrET+cMyK9AAAAAIXrET+cMyK9AAAAALpJzD5iEJi+Di0yP7pJzD5iEJi+uEACP4XrET+cMyK9Di0yP7pJzD4AAAAAuEACP4XrET8AAAAAuEACP4XrET+cMyK9Di0yP7pJzD5iEJi+Di0yP7pJzD4AAAAAuEACP4XrET8AAAAADi0yP7pJzD5iEJg+uEACP4XrET+cMyI9uEACP4XrET8AAAAADi0yP7pJzD4AAAAADi0yP7pJzD5iEJg+uEACP4XrET+cMyI9AAAAALpJzD5iEJg+AAAAAIXrET+cMyI9uEACP4XrET+cMyI9Di0yP7pJzD5iEJg+AAAAALpJzD5iEJg+AAAAAIXrET+cMyI9Di0yv7pJzD5iEJg+uEACv4XrET+cMyI9AAAAAIXrET+cMyI9AAAAALpJzD5iEJg+Di0yv7pJzD5iEJg+uEACv4XrET+cMyI9Di0yv7pJzD4AAAAAuEACv4XrET8AAAAAuEACv4XrET+cMyI9Di0yv7pJzD5iEJg+Di0yv7pJzD4AAAAAuEACv4XrET8AAAAADi0yv7pJzD5iEJi+uEACv4XrET+cMyK9uEACv4XrET8AAAAADi0yv7pJzD4AAAAADi0yv7pJzD5iEJi+Di0yv7pJzD5iEJi+AAAAANV4aT3eAjm/AAAAALpJzD5iEJi+Di0yv7pJzD5iEJi+gLeAv9WVDz7eAjm/AAAAANV4aT3eAjm/AAAAALpJzD5iEJi+gLeAP9WVDz7eAjm/Di0yP7pJzD5iEJi+AAAAALpJzD5iEJi+AAAAANV4aT3eAjm/gLeAP9WVDz7eAjm/Di0yP7pJzD5iEJi+gLeAP9V4aT0AAAAADi0yP7pJzD4AAAAADi0yP7pJzD5iEJi+gLeAP9WVDz7eAjm/gLeAP9V4aT0AAAAADi0yP7pJzD4AAAAAgLeAP9WVDz7eAjk/Di0yP7pJzD5iEJg+Di0yP7pJzD4AAAAAgLeAP9V4aT0AAAAAgLeAP9WVDz7eAjk/Di0yP7pJzD5iEJg+AAAAANV4aT3eAjk/AAAAALpJzD5iEJg+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")
+}]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3mrfk"]
+resource_name = "Oiled cedar"
+cull_mode = 2
+albedo_color = Color(0.4509804, 0.31764707, 0.22745098, 1)
+roughness = 0.86
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gtesv"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 1.2054029
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_eqp17"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 1.2054029
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_lytdg"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.99654204
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gyic5"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.99654204
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2fpku"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 1.2054029
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xrr7f"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 1.2054029
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ytwws"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.99654204
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_inidk"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.99654204
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ya1x3"]
+top_radius = 0.036
+bottom_radius = 0.036
+height = 1.104
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2r3je"]
+top_radius = 0.035
+bottom_radius = 0.035
+height = 0.20645577
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_5k37c"]
+top_radius = 0.035
+bottom_radius = 0.035
+height = 0.20645577
+radial_segments = 6
+rings = 1
+
+[sub_resource type="BoxMesh" id="BoxMesh_rg81o"]
+size = Vector3(0.95, 0.47, 0.73)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_3bd10"]
+top_radius = 0.035
+bottom_radius = 0.035
+height = 0.55
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nr0be"]
+top_radius = 0.035
+bottom_radius = 0.035
+height = 0.55
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2xs7j"]
+top_radius = 0.035
+bottom_radius = 0.035
+height = 0.55
+radial_segments = 8
+rings = 1
+
+[sub_resource type="BoxMesh" id="BoxMesh_ii4bp"]
+size = Vector3(0.7, 0.27, 0.025)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nn7eu"]
+size = Vector3(0.025, 0.32, 0.025)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2lrku"]
+size = Vector3(0.025, 0.32, 0.025)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xlfhq"]
+size = Vector3(0.025, 0.32, 0.025)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qatwg"]
+size = Vector3(0.025, 0.32, 0.025)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_aa7xq"]
+_surfaces = [{
+"aabb": AABB(-0.81, 0.051, -0.67, 1.62, 0.459, 1.34),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 144,
+"vertex_data": PackedByteArray("XtevvlyPAj+si9u8AAAAALTItj7y0k2+AAAAAFyPAj+si9u8XtevvlyPAj+si9u8oInwvrTItj7y0k2+AAAAALTItj7y0k2+AAAAAFyPAj+si9u8oInwPrTItj7y0k2+XtevPlyPAj+si9u8AAAAAFyPAj+si9u8AAAAALTItj7y0k2+oInwPrTItj7y0k2+XtevPlyPAj+si9u8oInwPrTItj4AAAAAXtevPlyPAj8AAAAAXtevPlyPAj+si9u8oInwPrTItj7y0k2+oInwPrTItj4AAAAAXtevPlyPAj8AAAAAoInwPrTItj7y0k0+XtevPlyPAj+si9s8XtevPlyPAj8AAAAAoInwPrTItj4AAAAAoInwPrTItj7y0k0+XtevPlyPAj+si9s8AAAAALTItj7y0k0+AAAAAFyPAj+si9s8XtevPlyPAj+si9s8oInwPrTItj7y0k0+AAAAALTItj7y0k0+AAAAAFyPAj+si9s8oInwvrTItj7y0k0+XtevvlyPAj+si9s8AAAAAFyPAj+si9s8AAAAALTItj7y0k0+oInwvrTItj7y0k0+XtevvlyPAj+si9s8oInwvrTItj4AAAAAXtevvlyPAj8AAAAAXtevvlyPAj+si9s8oInwvrTItj7y0k0+oInwvrTItj4AAAAAXtevvlyPAj8AAAAAoInwvrTItj7y0k2+XtevvlyPAj+si9u8XtevvlyPAj8AAAAAoInwvrTItj4AAAAAoInwvrTItj7y0k2+oInwvrTItj7y0k2+AAAAAGDlUD1Ra/q+AAAAALTItj7y0k2+oInwvrTItj7y0k2+h8Qtv5Z4AD5Ra/q+AAAAAGDlUD1Ra/q+AAAAALTItj7y0k2+h8QtP5Z4AD5Ra/q+oInwPrTItj7y0k2+AAAAALTItj7y0k2+AAAAAGDlUD1Ra/q+h8QtP5Z4AD5Ra/q+oInwPrTItj7y0k2+h8QtP2DlUD0AAAAAoInwPrTItj4AAAAAoInwPrTItj7y0k2+h8QtP5Z4AD5Ra/q+h8QtP2DlUD0AAAAAoInwPrTItj4AAAAAh8QtP5Z4AD5Ra/o+oInwPrTItj7y0k0+oInwPrTItj4AAAAAh8QtP2DlUD0AAAAAh8QtP5Z4AD5Ra/o+oInwPrTItj7y0k0+AAAAAGDlUD1Ra/o+AAAAALTItj7y0k0+oInwPrTItj7y0k0+h8QtP5Z4AD5Ra/o+AAAAAGDlUD1Ra/o+AAAAALTItj7y0k0+h8Qtv5Z4AD5Ra/o+oInwvrTItj7y0k0+AAAAALTItj7y0k0+AAAAAGDlUD1Ra/o+h8Qtv5Z4AD5Ra/o+oInwvrTItj7y0k0+h8Qtv2DlUD0AAAAAoInwvrTItj4AAAAAoInwvrTItj7y0k0+h8Qtv5Z4AD5Ra/o+h8Qtv2DlUD0AAAAAoInwvrTItj4AAAAAh8Qtv5Z4AD5Ra/q+oInwvrTItj7y0k2+oInwvrTItj4AAAAAh8Qtv2DlUD0AAAAAh8Qtv5Z4AD5Ra/q+h8Qtv5Z4AD5Ra/q+AAAAAKMBvD0fhSu/AAAAAGDlUD1Ra/q+h8Qtv5Z4AD5Ra/q+KVxPv4JzRj4fhSu/AAAAAKMBvD0fhSu/AAAAAGDlUD1Ra/q+KVxPP4JzRj4fhSu/h8QtP5Z4AD5Ra/q+AAAAAGDlUD1Ra/q+AAAAAKMBvD0fhSu/KVxPP4JzRj4fhSu/h8QtP5Z4AD5Ra/q+KVxPP6MBvD0AAAAAh8QtP2DlUD0AAAAAh8QtP5Z4AD5Ra/q+KVxPP4JzRj4fhSu/KVxPP6MBvD0AAAAAh8QtP2DlUD0AAAAAKVxPP4JzRj4fhSs/h8QtP5Z4AD5Ra/o+h8QtP2DlUD0AAAAAKVxPP6MBvD0AAAAAKVxPP4JzRj4fhSs/h8QtP5Z4AD5Ra/o+AAAAAKMBvD0fhSs/AAAAAGDlUD1Ra/o+h8QtP5Z4AD5Ra/o+KVxPP4JzRj4fhSs/AAAAAKMBvD0fhSs/AAAAAGDlUD1Ra/o+KVxPv4JzRj4fhSs/h8Qtv5Z4AD5Ra/o+AAAAAGDlUD1Ra/o+AAAAAKMBvD0fhSs/KVxPv4JzRj4fhSs/h8Qtv5Z4AD5Ra/o+KVxPv6MBvD0AAAAAh8Qtv2DlUD0AAAAAh8Qtv5Z4AD5Ra/o+KVxPv4JzRj4fhSs/KVxPv6MBvD0AAAAAh8Qtv2DlUD0AAAAAKVxPv4JzRj4fhSu/h8Qtv5Z4AD5Ra/q+h8Qtv2DlUD0AAAAAKVxPv6MBvD0AAAAAKVxPv4JzRj4fhSu/vECq6LQm7J8AQt/+licrl9m7//9DJSaYvECq6LQm7J8PP1jePizgowBC3/6WJyuX2bv//0MlJpg5wUTbmSeh2a3CTNERRj7Z2bv//0MlJpgAQt/+licrlznBRNuZJ6HZrcJM0RFGPtkoyCC5iF821RnG5LkvXRLVrcJM0RFGPtk5wUTbmSeh2SjIILmIXzbVGcbkuS9dEtWmoQ+/nDrhx1OXu8BZMVm/GcbkuS9dEtUoyCC5iF821aahD7+cOuHHU5e7wFkxWb8fgQDCF1HArP9/JMSxT12tU5e7wFkxWb+moQ+/nDrhxx+BAMIXUcCs/38kxLFPXa1FW8S+hFcwqk1RUL3kWQGq/38kxLFPXa0fgQDCF1HArEVbxL6EVzCqTVFQveRZAaogOda37V8Fq+U55LkvXeyqTVFQveRZAapFW8S+hFcwqiA51rftXwWr5TnkuS9d7KoPP1jePizgo7xAqui0Juyf5TnkuS9d7KogOda37V8Fqw8/WN4+LOCjDz9Y3j4s4KNoYsX9PgmJrgBC3/6WJyuXDz9Y3j4s4KMDa6rpuhnOtWhixf0+CYmuAELf/pYnK5dGkGb/mAFqtznBRNuZJ6HZAELf/pYnK5doYsX9PgmJrkaQZv+YAWq3OcFE25knodm3ohjgoSZlzyjIILmIXzbVOcFE25knodlGkGb/mAFqt7eiGOChJmXPKMgguYhfNtVTlgPrkRdiyqahD7+cOuHHKMgguYhfNtW3ohjgoSZlz1OWA+uRF2LKpqEPv5w64cc4gmfi2h9hvR+BAMIXUcCspqEPv5w64cdTlgPrkRdiyjiCZ+LaH2G9H4EAwhdRwKxnf7jvLRKfvkVbxL6EVzCqH4EAwhdRwKw4gmfi2h9hvWd/uO8tEp++RVvEvoRXMKoZYEfdYyoqsSA51rftXwWrRVvEvoRXMKpnf7jvLRKfvhlgR91jKiqxIDnWt+1fBasDa6rpuhnOtQ8/WN4+LOCjIDnWt+1fBasZYEfdYyoqsQNrqum6Gc61A2uq6boZzrWcg9rjGxvKvmhixf0+CYmuA2uq6boZzrUGloLYjSfYyJyD2uMbG8q+aGLF/T4Jia58b/faVSu9tUaQZv+YAWq3aGLF/T4Jia6cg9rjGxvKvnxv99pVK721RpBm/5gBarfFYv/d0ygdsreiGOChJmXPRpBm/5gBard8b/faVSu9tcVi/93TKB2yt6IY4KEmZc+CWPjpBBmarVOWA+uRF2LKt6IY4KEmZc/FYv/d0ygdsoJY+OkEGZqtU5YD65EXYsrbY2L8JwnVrziCZ+LaH2G9U5YD65EXYsqCWPjpBBmardtjYvwnCdWvOIJn4tofYb0HpXvvCg0h0Gd/uO8tEp++OIJn4tofYb3bY2L8JwnVrwele+8KDSHQZ3+47y0Sn77+ocTi4SG9zhlgR91jKiqxZ3+47y0Sn74HpXvvCg0h0P6hxOLhIb3OGWBH3WMqKrEGloLYjSfYyANrqum6Gc61GWBH3WMqKrH+ocTi4SG9zgaWgtiNJ9jI")
+}]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_441o7"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.81639695
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_moi68"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.81639695
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dti2j"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.6777198
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_sc6lv"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.67771965
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4f0jx"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.81639695
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_fxrpy"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.81639695
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_kkfek"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.67771965
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_kmw22"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.6777198
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_met76"]
+top_radius = 0.036
+bottom_radius = 0.036
+height = 0.7452
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xui53"]
+top_radius = 0.035
+bottom_radius = 0.035
+height = 0.16510463
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4fpob"]
+top_radius = 0.035
+bottom_radius = 0.035
+height = 0.16510463
+radial_segments = 6
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_75ku3"]
+resource_name = "Worn doorstep"
+cull_mode = 2
+albedo_color = Color(0.75686276, 0.7019608, 0.5647059, 1)
+roughness = 0.86
+
+[sub_resource type="BoxMesh" id="BoxMesh_6e3ql"]
+size = Vector3(1, 0.065, 0.15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_18hrb"]
+size = Vector3(1, 0.115, 0.15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cp6q5"]
+size = Vector3(1, 0.165, 0.15)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_1xj8n"]
+top_radius = 0.014
+bottom_radius = 0.014
+height = 0.19
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_rc0vq"]
+top_radius = 0.058
+bottom_radius = 0.068
+height = 0.105
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_fc3ul"]
+top_radius = 0.077
+bottom_radius = 0.077
+height = 0.038
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_d0mf5"]
+top_radius = 0.058
+bottom_radius = 0.058
+height = 0.032
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_g2sc2"]
+top_radius = 0.014
+bottom_radius = 0.014
+height = 0.19
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_j0sxs"]
+top_radius = 0.058
+bottom_radius = 0.068
+height = 0.105
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_obqb1"]
+top_radius = 0.077
+bottom_radius = 0.077
+height = 0.038
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6trab"]
+top_radius = 0.058
+bottom_radius = 0.058
+height = 0.032
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_esq88"]
+top_radius = 0.017
+bottom_radius = 0.017
+height = 0.7
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_unv2s"]
+_surfaces = [{
+"aabb": AABB(0, 0.455, 0, 0.31, 0.21699998, 0.035),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 3,
+"vertex_data": PackedByteArray("AAAAADEILD8AAAAAAAAAAMP16D4AAAAAUriePmq8FD8pXA89//8C89aMJIf//wLz1owkh///AvPWjCSH")
+}]
+
+[node name="CityChinese" type="Node3D" unique_id=40300563]
+metadata/asset_id = "city_chinese"
+metadata/source_script = "res://tools/miniworld/bake_editor_assets.gd"
+metadata/entrance = Vector3(-0.011338508, 0.0803918, 0.8759105)
+metadata/ground_origin = true
+metadata/source_bounds = AABB(-1.2216507, -0.000500001, -1.115, 2.4716506, 2.7413185, 2.3400002)
+
+[node name="Architecture_city_chinese" type="Node3D" parent="." unique_id=1816658359]
+transform = Transform3D(0.79991835, 0, 0, 0, 0.79991835, 0, 0, 0, 0.79991835, -0.011338508, 0.00039996, -0.043995563)
+metadata/light_materials = [SubResource("StandardMaterial3D_2n1le")]
+metadata/city_id = "city_chinese"
+metadata/architecture_style = "chinese"
+metadata/entrance = Vector3(0, 0.1, 1.15)
+
+[node name="Chamfered lower course" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=2111853222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.055, -0.14)
+material_override = SubResource("StandardMaterial3D_ht5h7")
+mesh = SubResource("BoxMesh_brt1j")
+
+[node name="Raised stone sill" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=704941919]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, -0.14)
+material_override = SubResource("StandardMaterial3D_srsdr")
+mesh = SubResource("BoxMesh_0j8nx")
+
+[node name="Great hall lime walls" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=128777406]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.66, -0.14)
+material_override = SubResource("StandardMaterial3D_srsdr")
+mesh = SubResource("BoxMesh_ugrln")
+
+[node name="Hall lower timber" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=319228216]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24, -0.14)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_urdpo")
+
+[node name="Front vermilion column" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1169477283]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.76, 0.7, 0.63)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("CylinderMesh_as74e")
+
+[node name="Column capital" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1765774072]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.76, 1.14, 0.63)
+material_override = SubResource("StandardMaterial3D_tdcp0")
+mesh = SubResource("BoxMesh_hemon")
+
+[node name="Amber lattice window" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=743493981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.76, 0.7, 0.465)
+material_override = SubResource("StandardMaterial3D_2n1le")
+mesh = SubResource("BoxMesh_mcouv")
+
+[node name="Lattice vertical" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=378816619]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.833, 0.7, 0.486)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_biope")
+
+[node name="TimberOrMasonry_010" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=300540309]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.76, 0.7, 0.486)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_tqw3a")
+
+[node name="TimberOrMasonry_011" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=445177048]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.687, 0.7, 0.486)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_35nja")
+
+[node name="Lattice horizontal" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=742937662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.76, 0.57, 0.49)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_fhmyv")
+
+[node name="TimberOrMasonry_013" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1061168001]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.76, 0.72, 0.49)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_sh5ej")
+
+[node name="TimberOrMasonry_014" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1756677105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.76, 0.87, 0.49)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_l3mxt")
+
+[node name="PostOrSpar_015" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1936126149]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39, 0.7, 0.63)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("CylinderMesh_rccg0")
+
+[node name="TimberOrMasonry_016" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=376822415]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39, 1.14, 0.63)
+material_override = SubResource("StandardMaterial3D_tdcp0")
+mesh = SubResource("BoxMesh_eukr2")
+
+[node name="TimberOrMasonry_017" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1584041572]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39, 0.7, 0.465)
+material_override = SubResource("StandardMaterial3D_2n1le")
+mesh = SubResource("BoxMesh_d3r4h")
+
+[node name="TimberOrMasonry_018" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=11750784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.463, 0.7, 0.486)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_udhwb")
+
+[node name="TimberOrMasonry_019" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=298916847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39, 0.7, 0.486)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_1dt8x")
+
+[node name="TimberOrMasonry_020" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1719359523]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.317, 0.7, 0.486)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_u3b7c")
+
+[node name="TimberOrMasonry_021" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=530504358]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39, 0.57, 0.49)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_g1sky")
+
+[node name="TimberOrMasonry_022" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1601486152]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39, 0.72, 0.49)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_w60v4")
+
+[node name="TimberOrMasonry_023" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1051085946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39, 0.87, 0.49)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_os8g3")
+
+[node name="PostOrSpar_024" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=874744845]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0.63)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("CylinderMesh_ffhsb")
+
+[node name="TimberOrMasonry_025" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=414826294]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.14, 0.63)
+material_override = SubResource("StandardMaterial3D_tdcp0")
+mesh = SubResource("BoxMesh_shsry")
+
+[node name="PostOrSpar_026" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=608844042]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39, 0.7, 0.63)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("CylinderMesh_tn1wv")
+
+[node name="TimberOrMasonry_027" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1908633538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39, 1.14, 0.63)
+material_override = SubResource("StandardMaterial3D_tdcp0")
+mesh = SubResource("BoxMesh_vtukf")
+
+[node name="TimberOrMasonry_028" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=2093333415]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39, 0.7, 0.465)
+material_override = SubResource("StandardMaterial3D_2n1le")
+mesh = SubResource("BoxMesh_ng485")
+
+[node name="TimberOrMasonry_029" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=899761174]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.317, 0.7, 0.486)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_naa1l")
+
+[node name="TimberOrMasonry_030" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=571432977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39, 0.7, 0.486)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_podsm")
+
+[node name="TimberOrMasonry_031" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=438893486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.463, 0.7, 0.486)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_fmvsr")
+
+[node name="TimberOrMasonry_032" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1886049209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39, 0.57, 0.49)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_66fum")
+
+[node name="TimberOrMasonry_033" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=403417630]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39, 0.72, 0.49)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_b2ol6")
+
+[node name="TimberOrMasonry_034" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1198208830]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39, 0.87, 0.49)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_s6ver")
+
+[node name="PostOrSpar_035" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=117914788]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76, 0.7, 0.63)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("CylinderMesh_buvpv")
+
+[node name="TimberOrMasonry_036" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1545922278]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76, 1.14, 0.63)
+material_override = SubResource("StandardMaterial3D_tdcp0")
+mesh = SubResource("BoxMesh_quwfm")
+
+[node name="TimberOrMasonry_037" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1881103266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76, 0.7, 0.465)
+material_override = SubResource("StandardMaterial3D_2n1le")
+mesh = SubResource("BoxMesh_s7b38")
+
+[node name="TimberOrMasonry_038" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=947506761]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.687, 0.7, 0.486)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_mytbw")
+
+[node name="TimberOrMasonry_039" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=313541642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76, 0.7, 0.486)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_34nmi")
+
+[node name="TimberOrMasonry_040" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1833415189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.833, 0.7, 0.486)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_7qgvn")
+
+[node name="TimberOrMasonry_041" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1475618283]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76, 0.57, 0.49)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_1si0p")
+
+[node name="TimberOrMasonry_042" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=32984377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76, 0.72, 0.49)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_4daxm")
+
+[node name="TimberOrMasonry_043" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1219234680]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76, 0.87, 0.49)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_mvf0k")
+
+[node name="Open central doors" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=617532806]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.56, 0.464)
+material_override = SubResource("StandardMaterial3D_xboa3")
+mesh = SubResource("BoxMesh_vciap")
+
+[node name="Long decorated architrave" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1288290501]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16, 0.62)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_4xbs7")
+
+[node name="Golden plaque" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1784260823]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0.72)
+material_override = SubResource("StandardMaterial3D_p7dna")
+mesh = SubResource("BoxMesh_pfgtw")
+
+[node name="Sweeping roof planes" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1666009843]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.17, -0.1)
+material_override = SubResource("StandardMaterial3D_dt8db")
+mesh = SubResource("ArrayMesh_sqt37")
+
+[node name="Roof eave fascia" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=215046323]
+transform = Transform3D(-0.09457433, 0.99551785, 0, -0.99551785, -0.09457433, 0, 0, 0, 1, -0.6, 1.3296, -1.09)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_gtesv")
+
+[node name="PostOrSpar_049" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1663099941]
+transform = Transform3D(0.094574094, 0.99551785, 0, -0.99551785, 0.094574094, 0, 0, 0, 1, 0.6, 1.3296, -1.09)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_eqp17")
+
+[node name="PostOrSpar_050" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1593643914]
+transform = Transform3D(1, 0, 0, 0, -0.11439562, -0.9934353, 0, 0.9934353, -0.11439562, 1.2, 1.3296, -0.595)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_lytdg")
+
+[node name="PostOrSpar_051" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1807487723]
+transform = Transform3D(1, 0, 0, 0, 0.11439568, -0.99343526, 0, 0.99343526, 0.11439568, 1.2, 1.3296, 0.39499998)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_gyic5")
+
+[node name="PostOrSpar_052" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1655247855]
+transform = Transform3D(-0.09457433, -0.99551785, 0, 0.99551785, -0.09457433, 0, 0, 0, 1, 0.6, 1.3296, 0.89)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_2fpku")
+
+[node name="PostOrSpar_053" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=720379223]
+transform = Transform3D(0.094574094, -0.99551785, 0, 0.99551785, 0.094574094, 0, 0, 0, 1, -0.6, 1.3296, 0.89)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_xrr7f")
+
+[node name="PostOrSpar_054" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1371503691]
+transform = Transform3D(1, 0, 0, 0, -0.11439562, 0.9934353, 0, -0.9934353, -0.11439562, -1.2, 1.3296, 0.39499998)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_ytwws")
+
+[node name="PostOrSpar_055" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=2099357333]
+transform = Transform3D(1, 0, 0, 0, 0.11439568, 0.99343526, 0, -0.99343526, 0.11439568, -1.2, 1.3296, -0.595)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_inidk")
+
+[node name="Decorated roof ridge" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=278049193]
+transform = Transform3D(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 1.74, -0.1)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_ya1x3")
+
+[node name="Ridge finial" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=824333177]
+transform = Transform3D(0.5812378, -0.81373376, 0, 0.81373376, 0.5812378, 0, 0, 0, 1, -0.63600004, 1.8, -0.1)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_2r3je")
+
+[node name="PostOrSpar_058" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1242784421]
+transform = Transform3D(0.5812378, 0.81373376, 0, -0.81373376, 0.5812378, 0, 0, 0, 1, 0.63600004, 1.8, -0.1)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_5k37c")
+
+[node name="Upper pavilion chamber" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=468512876]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.84, -0.16)
+material_override = SubResource("StandardMaterial3D_srsdr")
+mesh = SubResource("BoxMesh_rg81o")
+
+[node name="Upper pavilion column" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=512224976]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45, 1.87, 0.23)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("CylinderMesh_3bd10")
+
+[node name="PostOrSpar_061" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=518299279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.87, 0.23)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("CylinderMesh_nr0be")
+
+[node name="PostOrSpar_062" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=62521585]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 1.87, 0.23)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("CylinderMesh_2xs7j")
+
+[node name="Upper pavilion amber window" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=283738675]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.85, 0.22)
+material_override = SubResource("StandardMaterial3D_2n1le")
+mesh = SubResource("BoxMesh_ii4bp")
+
+[node name="Upper lattice" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=404380580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 1.86, 0.242)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_nn7eu")
+
+[node name="TimberOrMasonry_065" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1415649012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08, 1.86, 0.242)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_2lrku")
+
+[node name="TimberOrMasonry_066" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1318065241]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08, 1.86, 0.242)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_xlfhq")
+
+[node name="TimberOrMasonry_067" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=199276438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 1.86, 0.242)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("BoxMesh_qatwg")
+
+[node name="SculptedSurface_068" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1078466728]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.09, -0.16)
+material_override = SubResource("StandardMaterial3D_dt8db")
+mesh = SubResource("ArrayMesh_aa7xq")
+
+[node name="PostOrSpar_069" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=2067610732]
+transform = Transform3D(-0.1249392, 0.99216443, 0, -0.99216443, -0.1249392, 0, 0, 0, 1, -0.405, 2.2328, -0.83000004)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_441o7")
+
+[node name="PostOrSpar_070" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1591358512]
+transform = Transform3D(0.1249392, 0.99216443, 0, -0.99216443, 0.1249392, 0, 0, 0, 1, 0.405, 2.2328, -0.83000004)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_moi68")
+
+[node name="PostOrSpar_071" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=2019877147]
+transform = Transform3D(1, 0, 0, 0, -0.15050471, -0.98860925, 0, 0.98860925, -0.15050471, 0.81, 2.2328, -0.495)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_dti2j")
+
+[node name="PostOrSpar_072" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1427629321]
+transform = Transform3D(1, 0, 0, 0, 0.15050471, -0.98860925, 0, 0.98860925, 0.15050471, 0.81, 2.2328, 0.175)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_sc6lv")
+
+[node name="PostOrSpar_073" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1618785752]
+transform = Transform3D(-0.1249392, -0.99216443, 0, 0.99216443, -0.1249392, 0, 0, 0, 1, 0.405, 2.2328, 0.51)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_4f0jx")
+
+[node name="PostOrSpar_074" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1360599343]
+transform = Transform3D(0.1249392, -0.99216443, 0, 0.99216443, 0.1249392, 0, 0, 0, 1, -0.405, 2.2328, 0.51)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_fxrpy")
+
+[node name="PostOrSpar_075" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1582983262]
+transform = Transform3D(1, 0, 0, 0, -0.15050471, 0.98860925, 0, -0.98860925, -0.15050471, -0.81, 2.2328, 0.175)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_kkfek")
+
+[node name="PostOrSpar_076" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=857672629]
+transform = Transform3D(1, 0, 0, 0, 0.15050471, 0.98860925, 0, -0.98860925, 0.15050471, -0.81, 2.2328, -0.495)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_kmw22")
+
+[node name="PostOrSpar_077" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1793188268]
+transform = Transform3D(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 2.6, -0.16)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_met76")
+
+[node name="PostOrSpar_078" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1476560935]
+transform = Transform3D(0.7268112, -0.6868373, 0, 0.6868373, 0.7268112, 0, 0, 0, 1, -0.4293, 2.6599998, -0.16)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_xui53")
+
+[node name="PostOrSpar_079" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=278572721]
+transform = Transform3D(0.7268112, 0.6868373, 0, -0.6868373, 0.7268112, 0, 0, 0, 1, 0.4293, 2.6599998, -0.16)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_4fpob")
+
+[node name="Entrance step" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=616624230]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.032, 1.15)
+material_override = SubResource("StandardMaterial3D_75ku3")
+mesh = SubResource("BoxMesh_6e3ql")
+
+[node name="TimberOrMasonry_081" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=556252069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.057, 1.045)
+material_override = SubResource("StandardMaterial3D_75ku3")
+mesh = SubResource("BoxMesh_18hrb")
+
+[node name="TimberOrMasonry_082" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1867722490]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.082, 0.94)
+material_override = SubResource("StandardMaterial3D_75ku3")
+mesh = SubResource("BoxMesh_cp6q5")
+
+[node name="Lantern brass hanger" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1083025169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 1.0500001, 0.72)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_1xj8n")
+
+[node name="LanternGlow" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1513691724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 0.97, 0.72)
+material_override = SubResource("StandardMaterial3D_2n1le")
+mesh = SubResource("CylinderMesh_rc0vq")
+
+[node name="Lantern cap" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1749204279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 1.0350001, 0.72)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("CylinderMesh_fc3ul")
+
+[node name="Lantern base" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=468530970]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 0.90500003, 0.72)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("CylinderMesh_d0mf5")
+
+[node name="PostOrSpar_087" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=63824699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 1.0500001, 0.72)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_g2sc2")
+
+[node name="PostOrSpar_088" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1180408104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0.97, 0.72)
+material_override = SubResource("StandardMaterial3D_2n1le")
+mesh = SubResource("CylinderMesh_j0sxs")
+
+[node name="PostOrSpar_089" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=2117860892]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 1.0350001, 0.72)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("CylinderMesh_obqb1")
+
+[node name="PostOrSpar_090" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1523694082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0.90500003, 0.72)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("CylinderMesh_6trab")
+
+[node name="Pennant pole" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1153918818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.94, 0.6, -0.75)
+material_override = SubResource("StandardMaterial3D_3mrfk")
+mesh = SubResource("CylinderMesh_esq88")
+
+[node name="Trade pennant" type="MeshInstance3D" parent="Architecture_city_chinese" unique_id=1008922005]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.94, 0.25, -0.75)
+material_override = SubResource("StandardMaterial3D_ik68a")
+mesh = SubResource("ArrayMesh_unv2s")
+
+[node name="DoorstepWarmLight" type="OmniLight3D" parent="." unique_id=1954891992]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011338508, 0.80039185, 0.91591054)
+visible = false
+light_color = Color(1, 0.7607843, 0.48235294, 1)
+light_energy = 0.65
+omni_range = 2.35
+omni_attenuation = 1.5
+metadata/night_only = true

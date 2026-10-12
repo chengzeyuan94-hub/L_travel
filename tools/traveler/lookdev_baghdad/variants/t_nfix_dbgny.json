@@ -1,0 +1,12 @@
+{
+  "base": "c_bands_v4_sunG",
+  "ground_shader": {
+    "shader": "res://tools/traveler/lookdev_baghdad/lookdev_sand.gdshader",
+    "macro_strength": 0.0,
+    "grain_strength": 0.0,
+    "fleck_density": 0.0,
+    "ripple_enabled": 0.0,
+    "glint_strength": 0.0,
+    "debug_mode": 2.0
+  }
+}

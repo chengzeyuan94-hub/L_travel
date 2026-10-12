@@ -1,0 +1,131 @@
+{
+  "schema": "silkroad.baghdad-cinematic-sunset.v1",
+  "preset": "baghdad/cinematic-sunset",
+  "source": "Independent Forward+ sunset study: low-poly geometry with film-style lighting; no orange full-screen grade.",
+  "params": {
+    "sun": 3.6,
+    "sunel": -12.0,
+    "sunaz": -15.163568109516078,
+    "amb": 0.48,
+    "exp": 1.0,
+    "white": 1.6,
+    "sat": 1.0,
+    "con": 1.0,
+    "ao": 0.45,
+    "aoi": 0.65,
+    "ssil": 0.0,
+    "ssili": 0.0,
+    "glow": 0.22,
+    "fogb": 22.0,
+    "foge": 95.0,
+    "aerial": 0.18,
+    "fogd": 0.32,
+    "dof": 20.0,
+    "blur": 0.045,
+    "ang": 0.65,
+    "sblur": 0.7,
+    "shmax": 55.0,
+    "bias": 0.04,
+    "nbias": 0.1,
+    "shadow_atlas_size": 4096,
+    "dof_transition": 12.0,
+    "sdfgi_enabled": true,
+    "sdfgi_read_sky_light": true,
+    "sdfgi_use_occlusion": true,
+    "sdfgi_cascades": 4,
+    "sdfgi_min_cell_size": 0.5,
+    "sdfgi_max_distance": 64.0,
+    "sdfgi_y_scale": 2,
+    "sdfgi_energy": 0.6,
+    "sdfgi_bounce_feedback": 0.7,
+    "sdfgi_normal_bias": 1.1,
+    "sdfgi_probe_bias": 1.1,
+    "ambient_fill_color": [
+      0.53,
+      0.58,
+      0.68
+    ],
+    "ambient_fill_energy": 0.48,
+    "cinematic_materials": true,
+    "lowpoly_materials": true,
+    "lowpoly_roughness": 0.9,
+    "lowpoly_specular_disabled": false,
+    "tree_albedo_boost": 1.05,
+    "tree_emission_enabled": false,
+    "tree_emission_energy": 0.0,
+    "skyline_albedo_scale": 0.36,
+    "skyline_emission_enabled": false,
+    "cinematic_character_fill": true,
+    "character_fill_color": [
+      1.0,
+      0.72,
+      0.48
+    ],
+    "character_fill_energy": 0.5,
+    "character_fill_range": 4.5,
+    "character_fill_angle": 42.0,
+    "cinematic_cool_fill": true,
+    "cinematic_cool_fill_color": [
+      0.48,
+      0.58,
+      0.82
+    ],
+    "cinematic_cool_fill_energy": 0.65,
+    "lightmap_gi": {
+      "status": "prepared_separately",
+      "reason": "Current Baghdad scene builds meshes at runtime and imported meshes have no UV2; the sample uses SDFGI until the static bake is explicitly produced in the editor."
+    }
+  },
+  "sky": {
+    "top": [
+      0.22,
+      0.29,
+      0.45
+    ],
+    "horizon": [
+      0.98,
+      0.58,
+      0.3
+    ],
+    "ground_bottom": [
+      0.2,
+      0.14,
+      0.16
+    ],
+    "ground_horizon": [
+      0.72,
+      0.44,
+      0.28
+    ],
+    "sun_color": [
+      1.0,
+      0.83,
+      0.61
+    ],
+    "fog_color": [
+      0.92,
+      0.64,
+      0.48
+    ],
+    "sun_disc_color": [
+      1.0,
+      0.92,
+      0.73
+    ],
+    "sun_disc_energy": 2.2,
+    "sun_radius_deg": 0.72,
+    "sun_edge_deg": 0.02,
+    "sun_halo_radius_deg": 4.2,
+    "sun_halo_strength": 0.16,
+    "cloud_color": [
+      0.87,
+      0.65,
+      0.54
+    ],
+    "cloud_opacity": 0.16,
+    "cloud_seed": 29.0,
+    "cloud_coverage": 0.34,
+    "horizon_falloff": 0.22,
+    "sky_energy": 1.0
+  }
+}

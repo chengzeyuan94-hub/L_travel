@@ -1,0 +1,321 @@
+{
+  "schema_version": "4.1.0",
+  "scope": "Random travel miniatures; no binding to the 16-city trade map. Three runtime studies, not twelve finished scenes.",
+  "units": {
+    "tile_width": 8,
+    "tile_depth": 8,
+    "base_bottom": -0.83,
+    "up": "+Y",
+    "camera_side": "+X +Z"
+  },
+  "runtime_scenes": {
+    "canyon": {
+      "name": "红岩古道",
+      "variants": [
+        "宽谷缓行：曲线古道贯穿前后，宽缓坡脚衔接左右赤岩",
+        "双壁夹道：谷底近直行，左右高岩围合，前景保持通行",
+        "偏侧曲径：路偏右绕行岩壁，左侧留空供停留"
+      ],
+      "path_logic": "前侧入口→谷底→后侧出口；先设廊道，坡脚避开路径，再生成贴地路面。",
+      "event": "L叔在古道路牌旁停留。",
+      "assets": [
+        "R08",
+        "P01",
+        "P07"
+      ],
+      "status": "implemented"
+    },
+    "cabin": {
+      "name": "雪林木屋",
+      "variants": [
+        "湖畔围合：木屋在左后坡脚，湖在右前，后排雪杉围合",
+        "林隙弯径：屋位左移，道路从左前进入，林间空地更开阔",
+        "坡脚小屋：屋位后移，门前雪路更长，湖岸保持连续"
+      ],
+      "path_logic": "雪地前端→门前空地→木屋门槛，独立码头支撑于水下桩。",
+      "event": "门窗夜间暖光，烟囱白烟，L叔站在门前雪路。",
+      "assets": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "R02",
+        "C13",
+        "P01"
+      ],
+      "status": "implemented"
+    },
+    "cape": {
+      "name": "灯塔海角",
+      "variants": [
+        "西岸回廊：地形向西后连接，石径绕行至灯塔前",
+        "弧湾石径：灯塔平台偏移，路径沿岸向上",
+        "礁岸转角：海角前留水面，支路下坡接泊船码头"
+      ],
+      "path_logic": "地块西侧入口→回廊石径→灯塔门前；支路→码头。",
+      "event": "L叔站码头等风，小舟轻摇，塔灯在夜间变暖。",
+      "assets": [
+        "H05",
+        "R13",
+        "T21",
+        "T22",
+        "T23"
+      ],
+      "status": "implemented"
+    }
+  },
+  "generation_order": [
+    "select_compatible_scene_variant",
+    "hero_pad_and_macro_relief",
+    "grade_route_corridors",
+    "triangulate_shared_heightfield",
+    "sample_exact_triangle_heights",
+    "build_hero_and_sockets",
+    "shoreline_clipped_water",
+    "cluster_vegetation_and_props",
+    "place_traveler_on_support",
+    "lighting",
+    "validate_and_render"
+  ],
+  "limits": {
+    "scene_choices": [
+      "canyon",
+      "cabin",
+      "cape"
+    ],
+    "variants": [
+      0,
+      1,
+      2
+    ],
+    "lighting": [
+      "day",
+      "sunset",
+      "night",
+      "morning"
+    ],
+    "candidates_per_jev_call": 8,
+    "api_calls_per_click": 1,
+    "supports_arbitrary_model_output": false,
+    "site_credentials_in_browser": false
+  },
+  "rules": {
+    "material_categories": [
+      "rock",
+      "wood",
+      "cloth",
+      "snow",
+      "water",
+      "emissive"
+    ],
+    "route_contact": "Route colour is embedded in the visible shared heightfield, with the exact barycentric height query also used for placement. Steep stone sections receive explicit stair geometry; no coplanar ribbon.",
+    "density": "One readable hero, not a fixed quota. Fewer props on foreground paths and shorelines.",
+    "fallback": "On Jev failure preserve current scene; local mode is explicitly labeled.",
+    "renderers": "Prefer genuine Three.js r160 when installed/loaded, otherwise explicit native WebGL2; no screenshot or 2D faux-GPU fallback.",
+    "comparison": "Four states: original120, geometry-only, lighting-only, combined; fixed seed, camera and time."
+  },
+  "motifs_12": [
+    {
+      "id": "snow_camp",
+      "name": "雪林营地",
+      "skeleton": "林间空地/后高前低",
+      "hero": "S01 + C02",
+      "route": "雪地小径通营地",
+      "event": "喝茶与营火",
+      "priority": "core",
+      "status": "design_ready_legacy_assets",
+      "environment": "雪地、冷杉、蓝灰岩",
+      "composition_notes": "浅C形林墙在后侧，人物和暖火在前；营地平台比路径略宽。",
+      "placement_notes": "座位＋人物＋杯子为整组；树冠允许重叠，树根不占小路。",
+      "lighting_notes": "雪地浅蓝白，帐篷米黄，夜间暖火为局部光。",
+      "dynamic_notes": "少雪粒、火焰、呼吸；不要全场同频摇动。",
+      "asset_work": "已有S01/C02/坐具/火塘；仍需接入共享地形与雪路。"
+    },
+    {
+      "id": "life_tree",
+      "name": "生命之树",
+      "skeleton": "偏侧独树/沙丘留白",
+      "hero": "T15",
+      "route": "少量引路石，不强加贯穿路",
+      "event": "土豆开花",
+      "priority": "core",
+      "status": "design_ready_legacy_assets",
+      "environment": "暖沙、独树、少量绿草",
+      "composition_notes": "生命树偏后偏轴，前部沙丘留白；人物手中小花与大树呼应。",
+      "placement_notes": "先保留原先水滴形生命树方案；微缩模型可以概括，不一律换成蘑菇伞树。",
+      "lighting_notes": "夕阳暖边缘，暗部不全黄；夜版以少量暖火照亮手中花。",
+      "dynamic_notes": "土豆缓慢发芽开花，一次小表演后保持。",
+      "asset_work": "原树/土豆花/石门均可参考复用；正式角色捧物动作尚未接。"
+    },
+    {
+      "id": "harbor",
+      "name": "港口停泊",
+      "skeleton": "L形岸线/中央木桥",
+      "hero": "H02 + H06",
+      "route": "岸边→栈桥→泊船位",
+      "event": "等风",
+      "priority": "core",
+      "status": "design_ready_legacy_assets",
+      "environment": "蓝绿海水、浅岸、木构",
+      "composition_notes": "一侧实陆一侧开水面，岸到栈桥连续；帆船不遮L叔。",
+      "placement_notes": "人物只落在码头站位，船在水位；货物聚在岸端。",
+      "lighting_notes": "水与木材分粗糙度，白帆不过曝；晨光或夕照。",
+      "dynamic_notes": "船轻晃、旗轻摆；不做真实流体。",
+      "asset_work": "已有H02/H06/码头货物；连续岸线方法可复用海角样板。"
+    },
+    {
+      "id": "autumn_camp",
+      "name": "秋日野营",
+      "skeleton": "林墙围合/林间曲径",
+      "hero": "C01 + T07",
+      "route": "土路通帐篷",
+      "event": "落叶与看书",
+      "priority": "core",
+      "status": "design_ready_legacy_assets",
+      "environment": "暖草坡、橙红树冠",
+      "composition_notes": "一侧树群一侧营地空地，小径从前角进入而非绕一整圈。",
+      "placement_notes": "树簇共用地貌区，落叶靠树下和路边；不是均匀铺满全地。",
+      "lighting_notes": "米灰背景，中性主光保住橙红层次；营火只做亮点。",
+      "dynamic_notes": "少量落叶＋坐着看书；不要求所有叶片骨骼。",
+      "asset_work": "已有T07/C01/营地道具；坐姿与看书表演须制作验证。"
+    },
+    {
+      "id": "canyon",
+      "name": "红岩古道",
+      "skeleton": "中央通谷/双侧围合",
+      "hero": "程序化连续坡脚+分层赤岩",
+      "route": "前后贯穿古道",
+      "event": "读路标",
+      "priority": "core",
+      "status": "implemented",
+      "environment": "赤岩、宽缓坡脚、谷底古道",
+      "composition_notes": "岩壁高低错开形成通谷，古道穿过；前方不摆阻路的大石。",
+      "placement_notes": "坡脚参与同一高度场，路的颜色嵌进地形；不是独立悬浮路条。",
+      "lighting_notes": "粉砂背景，中暖主光，赤岩保留暗面；日落改光方向。",
+      "dynamic_notes": "L叔停留、微风；不照搬汽车、公路或战争。",
+      "asset_work": "本包已实现：3布局、共享高度、路面、分层赤岩。"
+    },
+    {
+      "id": "cape",
+      "name": "海崖灯塔",
+      "skeleton": "L形海角/偏侧高地",
+      "hero": "程序化多材质灯塔",
+      "route": "石径→门口；支路→码头",
+      "event": "等船与塔灯",
+      "priority": "core",
+      "status": "implemented",
+      "environment": "海角台地、浅滩、礁石",
+      "composition_notes": "高地接地块后缘，弯路到灯塔；支路下坡接码头。",
+      "placement_notes": "建筑有落脚平台；码头板、岸线、水位一起校准。",
+      "lighting_notes": "白红灯塔，青绿海面，暖日光；夜间塔灯另发光。",
+      "dynamic_notes": "塔灯、船摇、水纹；无复杂折射或浪花物理。",
+      "asset_work": "本包已实现：3布局、海岸裁切、石阶、码头和舟。"
+    },
+    {
+      "id": "night_village",
+      "name": "夜色村落",
+      "skeleton": "临水台地/后高前低",
+      "hero": "主屋+2幢缩小配屋",
+      "route": "岸边→主屋门口",
+      "event": "暖窗与炊烟",
+      "priority": "core",
+      "status": "design_ready_requires_support_houses",
+      "environment": "临水小台地、2至3间小屋",
+      "composition_notes": "1间主屋＋小配屋分台地，不建整座城市；前侧留水岸或小路。",
+      "placement_notes": "台阶只连接相邻高度；暖光聚在门前，不给每个窗都开阴影灯。",
+      "lighting_notes": "蓝紫环境＋暖黄窗光；光落到地面，非简单蓝色滤镜。",
+      "dynamic_notes": "白烟、水面亮点、偶尔开合门；一个主事件。",
+      "asset_work": "需提取/补做支持小屋与门位；本包只有设计，未实装这张地块。"
+    },
+    {
+      "id": "shrine",
+      "name": "山顶神龛",
+      "skeleton": "偏侧高台/台阶山坡",
+      "hero": "S09 / S15",
+      "route": "山脚→折返石阶→平台",
+      "event": "眺望与烛灯",
+      "priority": "core",
+      "status": "design_ready_legacy_assets",
+      "environment": "岩坡、石阶、少量松树",
+      "composition_notes": "主建筑在偏侧高台，阶梯折返；前部用小平台给L叔站立。",
+      "placement_notes": "陡坡不是可走路径；每段台阶与平台相接，不把整坡刷成路。",
+      "lighting_notes": "冷岩、中暖檐下光；云雾只能点缀不能盖住高差。",
+      "dynamic_notes": "烛灯或轻风，L叔远望；不加大型战斗或密集人群。",
+      "asset_work": "已有S09/S15；需接坡脚与台階，人物站位再核对。"
+    },
+    {
+      "id": "cabin",
+      "name": "冰湖木屋",
+      "skeleton": "林间空地/后高前低",
+      "hero": "程序化雪屋",
+      "route": "曲径→门槛；湖边码头",
+      "event": "烟囱与暖窗",
+      "priority": "validation_sample",
+      "status": "implemented",
+      "environment": "雪林、木屋、湖盆",
+      "composition_notes": "屋在左后坡脚，右前有一个湖盆，雪路抵门槛，后排树围合。",
+      "placement_notes": "雪地和湖盆同一高度网格；湖边小码头有桩支撑。",
+      "lighting_notes": "雪/木/窗/水分材质，蓝夜配两处近窗暖光。",
+      "dynamic_notes": "7颗轻量烟粒缓慢上升；L叔在门前站立。",
+      "asset_work": "本包已实现：3布局、门前路、雪屋、湖岸；屋顶是简单几何。"
+    },
+    {
+      "id": "windmill",
+      "name": "风车草丘",
+      "skeleton": "单峰抬升/偏侧高台",
+      "hero": "S03",
+      "route": "草坡弯径到磨坊门",
+      "event": "风车缓转",
+      "priority": "expansion",
+      "status": "design_ready_legacy_assets",
+      "environment": "草丘、石路、磨坊",
+      "composition_notes": "单峰/偏侧高地，风车占主轮廓，路从低处弯上。",
+      "placement_notes": "扇叶保留可转节点，叶片旋转范围不碰树与人。",
+      "lighting_notes": "浅草绿、暖墙、蓝灰屋顶；对比比多加花草重要。",
+      "dynamic_notes": "风车缓转，人物看风；不与树同步。",
+      "asset_work": "已有S03含风车；需把原小平台融入共享高地。"
+    },
+    {
+      "id": "waterfall",
+      "name": "瀑布溪谷",
+      "skeleton": "台阶高差/中央水槽",
+      "hero": "S05 / S06",
+      "route": "两岸平台用桥或石阶相连",
+      "event": "流水与观景",
+      "priority": "expansion",
+      "status": "design_ready_legacy_assets",
+      "environment": "上下台地、岩壁、潭水",
+      "composition_notes": "水从上游浅池落入下潭，路径走旁侧或桥，不穿瀑布。",
+      "placement_notes": "源头与出口必须连续；先连几何水路，不做流体模拟。",
+      "lighting_notes": "岩水明度分开，泡沫只在落点少量出现。",
+      "dynamic_notes": "几何/材质滚动水纹，微量水雾；不用全屏Bloom。",
+      "asset_work": "已有S05/S06；需要拆水面材质及进出水连接点。"
+    },
+    {
+      "id": "terraces",
+      "name": "梯田山村",
+      "skeleton": "连续三级台地",
+      "hero": "S19",
+      "route": "各级梯田间连续石阶",
+      "event": "风中稻叶",
+      "priority": "expansion",
+      "status": "design_ready_legacy_assets",
+      "environment": "三级草台、屋、石阶",
+      "composition_notes": "台地延伸到边界，屋靠最高层，石阶逐级往下。",
+      "placement_notes": "每层有明确平台，地形与阶梯共享接口；不是把S19放平板上。",
+      "lighting_notes": "明亮自然绿，不均匀随机荧光；暖色屋为主体。",
+      "dynamic_notes": "少量叶摆或炊烟；稻穗动态可后补。",
+      "asset_work": "已有S19；高差骨架与入口仍需专门接入。"
+    }
+  ],
+  "core_8": [
+    "snow_camp",
+    "life_tree",
+    "harbor",
+    "autumn_camp",
+    "canyon",
+    "cape",
+    "night_village",
+    "shrine"
+  ]
+}

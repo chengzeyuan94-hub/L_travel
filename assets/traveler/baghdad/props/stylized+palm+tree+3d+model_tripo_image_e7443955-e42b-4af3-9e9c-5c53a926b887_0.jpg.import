@@ -1,0 +1,45 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://caol4u8llturg"
+path.s3tc="res://.godot/imported/stylized+palm+tree+3d+model_tripo_image_e7443955-e42b-4af3-9e9c-5c53a926b887_0.jpg-b7ef5a994dbb3b381264c62bcd6ceb6b.s3tc.ctex"
+path.etc2="res://.godot/imported/stylized+palm+tree+3d+model_tripo_image_e7443955-e42b-4af3-9e9c-5c53a926b887_0.jpg-b7ef5a994dbb3b381264c62bcd6ceb6b.etc2.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "565f9e2e75c5af34480ac034ad169f4b"
+}
+
+[deps]
+
+source_file="res://assets/traveler/baghdad/props/stylized+palm+tree+3d+model_tripo_image_e7443955-e42b-4af3-9e9c-5c53a926b887_0.jpg"
+dest_files=["res://.godot/imported/stylized+palm+tree+3d+model_tripo_image_e7443955-e42b-4af3-9e9c-5c53a926b887_0.jpg-b7ef5a994dbb3b381264c62bcd6ceb6b.s3tc.ctex", "res://.godot/imported/stylized+palm+tree+3d+model_tripo_image_e7443955-e42b-4af3-9e9c-5c53a926b887_0.jpg-b7ef5a994dbb3b381264c62bcd6ceb6b.etc2.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

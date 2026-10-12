@@ -1,0 +1,1237 @@
+{
+  "schema": "lshu.look.v1",
+  "note": "Approved act-4 look (probe m_final flattened on baseline). Effective config = merge(common, lights.<light>). Colours are sRGB. Global rules only.",
+  "modules": {
+    "order": [
+      "atmos",
+      "edges",
+      "surface_detail",
+      "scatter",
+      "life"
+    ],
+    "atmos": {
+      "shadow_atlas": 8192,
+      "soft_shadow_quality": 4,
+      "positional_soft_shadow_quality": 3,
+      "positional_shadow_atlas": 4096,
+      "dof_quality": "high",
+      "dof_bokeh": "circle",
+      "dof_jitter": false,
+      "debanding": true,
+      "taa": false
+    },
+    "edges": {
+      "crease_deg": 28.0,
+      "proc_roles": [
+        "structure",
+        "steps",
+        "cliff"
+      ]
+    },
+    "surface_detail": {
+      "map_roles": [
+        "ground",
+        "skirt",
+        "cliff"
+      ],
+      "hide_proc_foam": true,
+      "ripple_visible": {
+        "default": false
+      }
+    },
+    "scatter": {
+      "role": "scatter",
+      "hide_web_grass": true,
+      "cell": 0.07,
+      "edge_margin": 0.1,
+      "character_radius": 0.26,
+      "near_boost": 1.8,
+      "activity_scale": 0.45,
+      "cluster_frequency": 0.75,
+      "flower_frequency": 1.1,
+      "tuft_tone": [
+        1.3,
+        0.97
+      ],
+      "pebble_ground_mix": 0.3,
+      "density": {
+        "grass": {
+          "tuft": 16.0,
+          "flower": 2.0,
+          "pebble": 0.5
+        },
+        "sand": {
+          "dry": 1.8,
+          "pebble": 2.2
+        },
+        "beach": {
+          "pebble": 1.4,
+          "dry": 1.6
+        },
+        "snow": {
+          "lump": 0.25,
+          "stalk": 1.0,
+          "pebble": 0.35
+        },
+        "wet": {
+          "pebble": 0.8
+        },
+        "path_rim": {
+          "pebble": 2.5
+        },
+        "path_core": {
+          "pebble": 1.2
+        }
+      },
+      "sizes": {
+        "pebble": {
+          "radius": [
+            0.018,
+            0.05
+          ]
+        },
+        "lump": {
+          "radius": [
+            0.08,
+            0.18
+          ]
+        },
+        "tuft": {
+          "scale": [
+            0.8,
+            1.35
+          ]
+        },
+        "leaf": {
+          "scale": [
+            1.2,
+            1.8
+          ]
+        },
+        "flower": {
+          "scale": [
+            1.0,
+            1.5
+          ]
+        }
+      },
+      "flower_colors": {
+        "autumn": [
+          "#f4f1e8",
+          "#f2cf4a",
+          "#eea5b5",
+          "#b9a4e6",
+          "#f2f2f2"
+        ],
+        "harbor": [
+          "#f4f1e8",
+          "#f6d65a",
+          "#f4f4f4"
+        ],
+        "desert": [
+          "#e99a9a",
+          "#f2cf4a"
+        ],
+        "snow": [
+          "#f4f4f4"
+        ]
+      },
+      "dry_colors": {
+        "desert": [
+          "#9a9550",
+          "#a9a15e",
+          "#8b8746"
+        ],
+        "harbor": [
+          "#a8a86a",
+          "#9fa468",
+          "#b3ad78"
+        ],
+        "default": [
+          "#9a9550",
+          "#a39c5c"
+        ]
+      },
+      "stalk_colors": {
+        "default": [
+          "#7a6a58",
+          "#6b5d4f",
+          "#8c7b66"
+        ]
+      },
+      "pebble_colors": {
+        "autumn": [
+          "#9d9b95",
+          "#8e8b84",
+          "#aaa69c"
+        ],
+        "desert": [
+          "#a3715a",
+          "#b4876b",
+          "#8d634f"
+        ],
+        "snow": [
+          "#7d8a92",
+          "#96a2a9",
+          "#6f7b83"
+        ],
+        "harbor": [
+          "#c3bcad",
+          "#d9d2c3",
+          "#a9a498"
+        ]
+      },
+      "lump_colors": {
+        "default": [
+          "#f4f8f9",
+          "#eef4f6"
+        ]
+      },
+      "leaves_per_tree": 40,
+      "leaf_spread": 1.25,
+      "cast_shadow": [
+        "pebble",
+        "lump"
+      ],
+      "near_boost_by_kind": {
+        "lump": 7.0
+      },
+      "lump_stretch": 1.6
+    },
+    "life": {}
+  },
+  "common": {
+    "camera": {
+      "projection": "perspective",
+      "fov_deg": 22.0,
+      "yaw_deg": 40.1,
+      "pitch_deg": 37.8,
+      "margin": 0.05,
+      "aspect": 1.7778,
+      "target_offset": [
+        0,
+        0,
+        0
+      ],
+      "near": 0.1,
+      "far": 400.0,
+      "focus_on_character": false,
+      "dof": {
+        "far_enabled": true,
+        "far_offset": 2.5,
+        "far_transition": 4.0,
+        "near_enabled": true,
+        "near_offset": 2.0,
+        "near_transition": 2.5,
+        "amount": 0.18
+      }
+    },
+    "sun": {
+      "shadow": true,
+      "shadow_mode": "parallel_2",
+      "shadow_bias": 0.06,
+      "shadow_normal_bias": 2.5,
+      "shadow_blur": 1.0,
+      "shadow_opacity": 1.0,
+      "shadow_extra_distance": 20.0,
+      "angular_distance_deg": 1.2,
+      "indirect_energy": 1.0,
+      "shadow_split_1": "auto",
+      "shadow_fade_start": 0.95,
+      "shadow_blend_splits": true
+    },
+    "fill": {
+      "enabled": true,
+      "direction": [
+        6,
+        4,
+        -6
+      ],
+      "color": [
+        0.65,
+        0.73,
+        0.88
+      ],
+      "energy": 0.4,
+      "shadow": false,
+      "specular": 0.0
+    },
+    "env": {
+      "tonemap": "aces",
+      "exposure": 1.0,
+      "white": 6.0,
+      "ambient_source": "sky",
+      "ambient_energy": 1.0,
+      "ambient_sky_contribution": 1.0,
+      "ssao": {
+        "enabled": true,
+        "radius": 0.8,
+        "intensity": 2.2,
+        "power": 1.6,
+        "detail": 0.7,
+        "horizon": 0.06,
+        "sharpness": 0.98,
+        "light_affect": 0.35,
+        "ao_channel_affect": 0.0
+      },
+      "ssil": {
+        "enabled": true,
+        "radius": 2.0,
+        "intensity": 0.5
+      },
+      "glow": {
+        "enabled": true,
+        "intensity": 0.45,
+        "strength": 1.0,
+        "bloom": 0.02,
+        "hdr_threshold": 0.95,
+        "hdr_scale": 2.0,
+        "blend_mode": "screen",
+        "levels": [
+          0,
+          0,
+          1,
+          0.6,
+          0.4,
+          0,
+          0
+        ]
+      },
+      "fog": {
+        "enabled": false
+      },
+      "adjust": {
+        "enabled": true,
+        "brightness": 1.0,
+        "contrast": 1.06,
+        "saturation": 1.08
+      }
+    },
+    "sky": {
+      "backdrop": "#eadbcc",
+      "top_mult": 1.0,
+      "bottom_mult": 0.84,
+      "vignette": 0.22,
+      "glow_amount": 0.1,
+      "compensate_tonemap": true,
+      "ambient_top": [
+        0.72,
+        0.78,
+        0.86
+      ],
+      "ambient_horizon": [
+        0.62,
+        0.62,
+        0.66
+      ],
+      "ambient_bottom": [
+        0.48,
+        0.42,
+        0.47
+      ],
+      "ambient_energy": 0.74
+    },
+    "floor": {
+      "enabled": true,
+      "y": -0.92,
+      "size": 400.0,
+      "shadow_value": 0.74,
+      "shadow_tint": [
+        0.88,
+        0.94,
+        1.12
+      ]
+    },
+    "surface": {
+      "shader": "res://shaders/traveler/lshu/lshu_surface.gdshader",
+      "overlay_shader": "res://shaders/traveler/lshu/lshu_overlay.gdshader",
+      "overlay_roles": [
+        "ripple"
+      ],
+      "no_shadow_roles": [
+        "water",
+        "foam",
+        "ripple",
+        "glow"
+      ],
+      "group_roles": {
+        "tree": "tree",
+        "rock": "rock",
+        "scenery": "landmark",
+        "city_scenery": "landmark",
+        "camp": "prop",
+        "prop": "prop",
+        "harbor": "prop",
+        "vegetation": "vegetation",
+        "terrain": "matte"
+      },
+      "uniforms": {
+        "vertex_color_srgb": true,
+        "roughness": 0.9,
+        "specular_amount": 0.25,
+        "metallic": 0.0,
+        "noise_amount": 0.0,
+        "facet_jitter": 0.0,
+        "rim_strength": 0.0,
+        "contact_ao": 0.0
+      },
+      "roles": {
+        "ground": {
+          "roughness": 0.98,
+          "l2_ground_smooth": 1.0,
+          "l2_grain": 0.075,
+          "l2_grain_scale": 24.0,
+          "l2_patch": 0.09,
+          "l2_patch_scale": 0.7,
+          "l2_patch_hue": 0.5,
+          "l2_sand_ripple": 0.05,
+          "l2_path_detail": 1.0,
+          "l2_path_edge": 0.06,
+          "l2_slope_tint": 0.5,
+          "l2_valley": 0.12,
+          "l2_glint": 0.8,
+          "l2_smooth_normal": 0.75,
+          "l2_glint_sand": 0.1,
+          "l2_glint_density": 0.05,
+          "l2_dry_tint": [
+            1.05,
+            1.02,
+            0.86
+          ],
+          "l2_lush_tint": [
+            0.93,
+            1.03,
+            0.95
+          ],
+          "l2_slope_color": "#dcc2a8",
+          "l2_valley_tint": "#e6ecf8",
+          "l2_sand_counter": 0.0,
+          "l2_sand_cast": "#ffffff"
+        },
+        "skirt": {
+          "roughness": 0.95,
+          "l2_strata": 0.08,
+          "l2_lip": 1.0,
+          "l2_lip_height": 0.045,
+          "l2_bottom_dark": 0.15
+        },
+        "water": {
+          "water_mode": 1.0,
+          "roughness": 0.23,
+          "specular_amount": 0.15,
+          "water_sky": "#d8eef0",
+          "water_fresnel": 0.15,
+          "water_ripple": 0.03,
+          "shader": "res://shaders/traveler/lshu/lshu_water.gdshader",
+          "l2_wave": 0.7,
+          "l2_foam": 0.8,
+          "l2_foam_width": 0.07,
+          "l2_foam_bands": 0.55,
+          "l2_shimmer": 0.08,
+          "l2_glint": 0.8,
+          "l2_shallow": "#9fd6cf",
+          "l2_mid": "#53aab3",
+          "l2_deep": "#388996",
+          "l2_wave_scale": 5.0,
+          "l2_foam_color": "#eef8f3",
+          "l2_depth_mid": 0.07,
+          "l2_depth_deep": 0.26,
+          "l2_pool_slope": 0.8,
+          "l2_pool_depth_mix": 0.75,
+          "l2_pool_foam": 0.45,
+          "l2_pool_bands": 0.0,
+          "l2_pool_foam_frac": 0.15,
+          "l2_pool_ripple": 0.12,
+          "saturation": 1.0
+        },
+        "water_side": {
+          "roughness": 0.32,
+          "l2_side_depth": 1.0
+        },
+        "metal": {
+          "metallic": 0.6,
+          "roughness": 0.48,
+          "l2_edge": 0.15,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "glow": {
+          "emission_strength": 0.13,
+          "roughness": 0.4,
+          "l2_glow_glass": 0.0,
+          "l2_glow_flicker": 0.0,
+          "l2_glass_color": "#3d4852"
+        },
+        "ripple": {
+          "opacity": 0.5
+        },
+        "cliff": {
+          "l2_strata": 0.05,
+          "l2_strata_freq": 22.0,
+          "l2_height_grad": 0.3,
+          "l2_height_grad_range": 1.2,
+          "facet_jitter": 0.06,
+          "l2_edge": 0.24,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "rock": {
+          "l2_height_grad": 0.25,
+          "l2_height_grad_range": 0.3,
+          "noise_amount": 0.05,
+          "noise_scale": 7.0,
+          "facet_jitter": 0.08,
+          "l2_top_light": 0.06,
+          "l2_edge": 0.35,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "landmark": {
+          "l2_height_grad": 0.22,
+          "l2_height_grad_range": 1.0,
+          "noise_amount": 0.03,
+          "noise_scale": 5.0,
+          "facet_jitter": 0.04,
+          "l2_edge": 0.3,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "tree": {
+          "l2_height_grad": 0.3,
+          "l2_height_grad_range": 0.8,
+          "facet_jitter": 0.07,
+          "l2_edge": 0.1,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "prop": {
+          "l2_height_grad": 0.18,
+          "l2_height_grad_range": 0.4,
+          "facet_jitter": 0.04,
+          "l2_edge": 0.18,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "structure": {
+          "l2_height_grad": 0.2,
+          "l2_height_grad_range": 1.0,
+          "noise_amount": 0.03,
+          "noise_scale": 6.0,
+          "l2_edge": 0.26,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "steps": {
+          "noise_amount": 0.05,
+          "noise_scale": 8.0,
+          "facet_jitter": 0.06,
+          "l2_edge": 0.26,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "vegetation": {
+          "l2_height_grad": 0.25,
+          "l2_height_grad_range": 0.3,
+          "l2_edge": 0.1,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "scatter": {
+          "shader": "res://shaders/traveler/lshu/lshu_scatter.gdshader",
+          "roughness": 0.9,
+          "specular_amount": 0.15,
+          "l2_sway": 60.0,
+          "wind_strength": 0.0
+        },
+        "matte": {
+          "l2_edge": 0.2,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        }
+      }
+    },
+    "fires": {
+      "enabled": true,
+      "flame": false,
+      "flame_emission": 1.5,
+      "light_color": [
+        1.0,
+        0.45,
+        0.12
+      ],
+      "light_energy": 0.35,
+      "light_range": 2.5,
+      "light_attenuation": 1.5,
+      "light_lift": 0.15,
+      "flicker": 0.12,
+      "shadow": false,
+      "shadow_mode": "dual_paraboloid"
+    },
+    "lamps": {
+      "enabled": true,
+      "light_color": [
+        1.0,
+        0.55,
+        0.22
+      ],
+      "light_energy": 0.3,
+      "light_range": 2.5,
+      "light_attenuation": 1.5,
+      "shadow": false,
+      "shadow_mode": "dual_paraboloid"
+    },
+    "character": {
+      "height_m": 1.15,
+      "yaw_offset_deg": 0.0,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "outline_multiplier": 1.0,
+      "seated_outline_multiplier": 1.0,
+      "pose_map": {
+        "look": "standing",
+        "tea": "seated",
+        "bloom": "carrying"
+      },
+      "standing_animation": "idle",
+      "idle_offset_s": 0.0,
+      "seat_offset": [
+        0,
+        0,
+        0
+      ],
+      "carrying_turn_deg": 0.0,
+      "carrying_bundle_scale": 1.0
+    },
+    "motion": {
+      "wind_strength": 0.04,
+      "sway_scale": 1.0,
+      "boat_bob": 0.016,
+      "rotor": true,
+      "freeze_time_s": 2.5
+    },
+    "atmos": {
+      "floor": {
+        "gradient_curve": 1.2,
+        "glow_tint": "#ffffff",
+        "glow_radius": [
+          1.3,
+          1.9
+        ],
+        "glow_center": [
+          0.5,
+          0.47
+        ],
+        "vignette_inner": 0.3,
+        "vignette_outer": 0.85,
+        "contact_ao": 0.35,
+        "contact_ao_radius": 0.6,
+        "shadow_fade_distance": 60.0,
+        "stars_amount": 0.0,
+        "bottom_tint": [
+          0.98,
+          0.98,
+          1.02
+        ],
+        "stars_density": 0.004
+      },
+      "fog": {
+        "enabled": true,
+        "mode": "depth",
+        "depth_begin_offset": -3.0,
+        "depth_end_offset": 14.0,
+        "depth_curve": 1.2,
+        "density": 0.05,
+        "height": -0.3,
+        "height_density": 1.0,
+        "light_energy": 1.0,
+        "backdrop_mix": 0.65
+      },
+      "glow": {
+        "luminance_cap": 12.0,
+        "normalized": false,
+        "mix": 0.05
+      },
+      "ssil": {
+        "sharpness": 0.98,
+        "normal_rejection": 1.0
+      }
+    },
+    "life": {
+      "character": {
+        "layer_bit": 18,
+        "face_camera_max_deg": 70.0,
+        "rim": {
+          "enabled": true,
+          "color": "sun",
+          "tint": "#ffffff",
+          "strength": 0.5,
+          "power": 2.6,
+          "key_bias": 0.65,
+          "top_bias": 0.3,
+          "local_key_radius_m": 0.0,
+          "local_key_color": "#ffa060"
+        },
+        "contact": {
+          "enabled": true,
+          "radius_m": 0.46,
+          "seated_radius_m": 0.58,
+          "height_m": 0.5,
+          "softness": 1.25,
+          "strength": 0.5
+        },
+        "cup": {
+          "enabled": true,
+          "steam": false,
+          "hold": "both",
+          "radius_m": 0.035,
+          "height_m": 0.07,
+          "offset_m": [
+            0,
+            -0.02,
+            0
+          ],
+          "color": "#efe4d2"
+        },
+        "flowers": {
+          "enabled": true,
+          "emission": 0.8,
+          "scale": 1.0,
+          "growth_s": 5.5
+        }
+      },
+      "fire": {
+        "enabled": true,
+        "flame_height_per_scale": 0.68,
+        "flame_width_per_scale": 0.44,
+        "base_lift_per_scale": 0.11,
+        "effect_point_mult": 0.7,
+        "flame_count": 5,
+        "spark_amount": 10,
+        "spark_lifetime_s": 1.4,
+        "spark_size_per_scale": 0.05,
+        "coals": true,
+        "coal_emission": 1.0
+      },
+      "smoke": {
+        "chimney": {
+          "enabled": true,
+          "puffs": 10,
+          "rise_m": 1.4,
+          "drift_m": [
+            0.35,
+            0.0,
+            -0.12
+          ],
+          "speed": 0.08,
+          "size_start_m": 0.14,
+          "size_end_m": 0.6,
+          "alpha": 0.6,
+          "wobble_m": 0.06,
+          "color": "#dfe3df",
+          "warm": 0.0,
+          "self_lit": 0.0
+        },
+        "fire": {
+          "enabled": true,
+          "puffs": 8,
+          "rise_m": 1.0,
+          "drift_m": [
+            0.15,
+            0.0,
+            -0.05
+          ],
+          "speed": 0.16,
+          "size_start_m": 0.04,
+          "size_end_m": 0.15,
+          "alpha": 0.16,
+          "wobble_m": 0.04,
+          "color": "#d9d6d0",
+          "warm": 0.0,
+          "start_above_flame": 1.15,
+          "self_lit": 0.0
+        },
+        "steam": {
+          "puffs": 6,
+          "rise_m": 0.36,
+          "drift_m": [
+            0.04,
+            0.0,
+            0.0
+          ],
+          "speed": 0.3,
+          "size_start_m": 0.035,
+          "size_end_m": 0.1,
+          "alpha": 0.55,
+          "wobble_m": 0.02,
+          "color": "#ffffff",
+          "warm": 0.0
+        }
+      },
+      "lanterns": {
+        "enabled": true,
+        "halo_color": "#ffb66e",
+        "halo_strength": 0.0,
+        "halo_size_m": 0.7,
+        "halo_falloff": 3.0,
+        "flicker": 0.05,
+        "halo_toward_camera_m": -0.22
+      }
+    },
+    "night_lamp": {
+      "enabled": true,
+      "near_radius_m": 1.5,
+      "front_max_deg": 75.0,
+      "prop_scale": 0.85,
+      "ring_m": [
+        0.6,
+        0.72,
+        0.5,
+        0.86,
+        1.0
+      ],
+      "angles_deg": [
+        55,
+        -55,
+        70,
+        -70,
+        40,
+        -40,
+        85,
+        -85,
+        100,
+        -100,
+        30,
+        -30,
+        120,
+        -120
+      ],
+      "angle_pref_deg": 55.0,
+      "angle_cost_deg": 15.0,
+      "ring_pref_m": 0.6,
+      "ring_cost_m": 0.12,
+      "edge_margin_m": 0.3,
+      "path_margin_m": 0.08,
+      "clearance_m": 0.06,
+      "fire_clearance_m": 0.45,
+      "feet_clearance_m": 0.12,
+      "max_step_m": 0.06,
+      "water_margin_m": 0.03,
+      "max_screen_overlap": 0.12,
+      "max_prop_cover": 0.3,
+      "light_color": "#ffa24a",
+      "light_energy": 0.5,
+      "light_range": 1.8,
+      "light_attenuation": 1.4,
+      "character_energy": 0.6,
+      "character_range": 2.0,
+      "character_attenuation": 1.2,
+      "key_ground_radius_m": 0.3,
+      "light_height_frac": 0.6,
+      "flicker": 0.05,
+      "halo_size_m": 0.55
+    }
+  },
+  "lights": {
+    "morning": {
+      "sun": {
+        "position": [
+          7,
+          6.5,
+          -5
+        ],
+        "color": "#ffdcae",
+        "energy": 1.75,
+        "angular_distance_deg": 1.2
+      },
+      "env": {
+        "exposure": 1.0,
+        "adjust": {
+          "contrast": 1.05,
+          "saturation": 1.05
+        }
+      },
+      "sky": {
+        "backdrop": "#c2d4d7",
+        "ambient_energy": 0.62,
+        "theme_backdrop": {
+          "desert": "#d6cbc6",
+          "snow": "#c1d2da",
+          "harbor": "#bcd2d6",
+          "autumn": "#ccd8d2"
+        },
+        "ambient_top": "#8fb2de",
+        "ambient_horizon": "#b7b1a8",
+        "ambient_bottom": "#8a7f72"
+      },
+      "fill": {
+        "energy": 0.3,
+        "color": "#9fbde6"
+      },
+      "surface": {
+        "roles": {
+          "glow": {
+            "emission_strength": 0.08,
+            "l2_glow_glass": 0.6
+          },
+          "water": {
+            "water_sky": "#d4e6ea"
+          }
+        }
+      },
+      "fires": {
+        "light_energy": 0.5
+      },
+      "lamps": {
+        "light_energy": 0.25
+      },
+      "floor": {
+        "shadow_value": 0.76,
+        "shadow_tint": [
+          0.86,
+          0.94,
+          1.14
+        ]
+      },
+      "atmos": {
+        "fog": {
+          "density": 0.1,
+          "height": -0.1,
+          "height_density": 1.2
+        }
+      },
+      "life": {
+        "character": {
+          "rim": {
+            "strength": 0.35
+          }
+        },
+        "fire": {
+          "coal_emission": 0.8
+        }
+      }
+    },
+    "day": {
+      "sun": {
+        "position": [
+          -8,
+          13,
+          7
+        ],
+        "color": "#fff3dc",
+        "energy": 1.95,
+        "angular_distance_deg": 0.8
+      },
+      "env": {
+        "exposure": 0.94
+      },
+      "sky": {
+        "backdrop": "#eadbcc",
+        "theme_backdrop": {
+          "desert": "#e9bcae",
+          "snow": "#c8d5d9",
+          "harbor": "#bbd1d4",
+          "autumn": "#eadbcc"
+        },
+        "ambient_energy": 0.58,
+        "ambient_top": "#93b4e2",
+        "ambient_horizon": "#b3aea6",
+        "ambient_bottom": "#8d7c69"
+      },
+      "fill": {
+        "energy": 0.3,
+        "color": "#aac2ea"
+      },
+      "surface": {
+        "roles": {
+          "glow": {
+            "emission_strength": 0.03,
+            "l2_glow_glass": 0.8
+          },
+          "water": {
+            "water_sky": "#d8eef0"
+          }
+        }
+      },
+      "fires": {
+        "light_energy": 0.35
+      },
+      "lamps": {
+        "light_energy": 0.2
+      },
+      "life": {
+        "character": {
+          "rim": {
+            "strength": 0.3
+          }
+        },
+        "fire": {
+          "coal_emission": 0.6
+        }
+      }
+    },
+    "sunset": {
+      "sun": {
+        "position": [
+          -10,
+          5.5,
+          4
+        ],
+        "color": "#ffb97c",
+        "energy": 2.05,
+        "angular_distance_deg": 1.5
+      },
+      "env": {
+        "exposure": 1.0,
+        "adjust": {
+          "contrast": 1.07,
+          "saturation": 1.02
+        },
+        "glow": {
+          "intensity": 0.55,
+          "hdr_threshold": 0.9
+        },
+        "ssil": {
+          "intensity": 0.3
+        }
+      },
+      "sky": {
+        "backdrop": "#ddaf9b",
+        "ambient_energy": 0.55,
+        "theme_backdrop": {
+          "desert": "#dea593",
+          "snow": "#d6aea6",
+          "harbor": "#d8ada0",
+          "autumn": "#dcae98"
+        },
+        "ambient_top": "#6c68b8",
+        "ambient_horizon": "#b88a86",
+        "ambient_bottom": "#7a5256"
+      },
+      "fill": {
+        "energy": 0.32,
+        "color": "#978ad0"
+      },
+      "surface": {
+        "roles": {
+          "glow": {
+            "emission_strength": 0.8,
+            "l2_glow_flicker": 0.05
+          },
+          "water": {
+            "water_sky": "#efcdb8"
+          },
+          "ground": {
+            "l2_glint": 1.0
+          }
+        }
+      },
+      "fires": {
+        "light_energy": 1.0,
+        "light_range": 3.0
+      },
+      "lamps": {
+        "light_energy": 0.8,
+        "light_range": 3.0
+      },
+      "floor": {
+        "shadow_value": 0.7,
+        "shadow_tint": [
+          0.84,
+          0.84,
+          1.14
+        ]
+      },
+      "atmos": {
+        "floor": {
+          "glow_tint": "#ffe4c8",
+          "bottom_tint": [
+            0.97,
+            0.95,
+            1.02
+          ]
+        },
+        "fog": {
+          "density": 0.06
+        }
+      },
+      "life": {
+        "character": {
+          "rim": {
+            "strength": 0.55,
+            "local_key_radius_m": 0.0
+          }
+        },
+        "fire": {
+          "coal_emission": 1.2
+        },
+        "lanterns": {
+          "halo_strength": 0.15
+        }
+      }
+    },
+    "night": {
+      "sun": {
+        "position": [
+          8,
+          10,
+          -2
+        ],
+        "color": "#a8bff8",
+        "energy": 0.8,
+        "angular_distance_deg": 0.8
+      },
+      "env": {
+        "exposure": 1.15,
+        "adjust": {
+          "enabled": true,
+          "saturation": 1.08,
+          "contrast": 1.05
+        },
+        "glow": {
+          "hdr_threshold": 1.3,
+          "intensity": 0.8,
+          "bloom": 0.0,
+          "levels": [
+            0,
+            1,
+            1,
+            0.8,
+            0.5,
+            0.2,
+            0
+          ]
+        }
+      },
+      "sky": {
+        "backdrop": "#192a49",
+        "ambient_energy": 0.5,
+        "theme_backdrop": {
+          "desert": "#22284a",
+          "snow": "#1b2d4d",
+          "harbor": "#182b4a",
+          "autumn": "#1a2a46"
+        },
+        "ambient_top": "#3d5c9c",
+        "ambient_horizon": "#27385e",
+        "ambient_bottom": "#161d36",
+        "glow_amount": 0.3,
+        "bottom_mult": 0.8
+      },
+      "fill": {
+        "energy": 0.25,
+        "color": "#4a64b0"
+      },
+      "surface": {
+        "roles": {
+          "glow": {
+            "emission_strength": 2.4,
+            "l2_glow_flicker": 0.07
+          },
+          "water": {
+            "water_sky": "#2a3b5c",
+            "specular_amount": 0.04,
+            "roughness": 0.45,
+            "l2_glint": 0.4,
+            "saturation": 0.6
+          },
+          "ground": {
+            "l2_glint": 0.5,
+            "l2_sand_counter": 0.45,
+            "l2_sand_cast": "#a8bff8"
+          }
+        }
+      },
+      "fires": {
+        "light_energy": 0.6,
+        "light_color": "#ff7020",
+        "light_range": 2.8,
+        "light_attenuation": 1.6,
+        "shadow": true
+      },
+      "lamps": {
+        "light_energy": 0.4,
+        "light_color": "#ff9a40",
+        "light_range": 2.6,
+        "light_attenuation": 1.6
+      },
+      "floor": {
+        "shadow_value": 0.88,
+        "shadow_tint": [
+          1,
+          1,
+          1
+        ]
+      },
+      "atmos": {
+        "floor": {
+          "glow_tint": [
+            0.8,
+            0.9,
+            1.3
+          ],
+          "stars_amount": 0.5,
+          "stars_density": 0.0015,
+          "bottom_tint": [
+            0.95,
+            0.97,
+            1.0
+          ]
+        },
+        "fog": {
+          "density": 0.06,
+          "height_density": 0.9
+        }
+      },
+      "life": {
+        "character": {
+          "rim": {
+            "color": "#9fb6ff",
+            "strength": 0.35,
+            "key_bias": 0.85,
+            "top_bias": 0.08,
+            "local_key_radius_m": 2.5,
+            "local_key_color": "#ffa060"
+          },
+          "contact": {
+            "strength": 0.45
+          }
+        },
+        "fire": {
+          "coal_emission": 2.2
+        },
+        "smoke": {
+          "chimney": {
+            "color": "#b9c3d9",
+            "warm": 0.0,
+            "alpha": 0.7,
+            "self_lit": 0.35
+          },
+          "fire": {
+            "color": "#8a8f9c",
+            "warm": 0.35,
+            "self_lit": 0.2
+          },
+          "steam": {
+            "color": "#c8d2e6"
+          }
+        },
+        "lanterns": {
+          "halo_strength": 0.4
+        }
+      }
+    }
+  }
+}

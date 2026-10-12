@@ -1,0 +1,49 @@
+{
+  "schema": "silkroad.panti-night-sky.v1",
+  "source": "Carlos 2026-09-20: try a quiet Milky Way snow night with warm fortress windows. Local implementation following the pasted design advice; no downloaded shader package.",
+  "parameters": {
+    "zenith_color": [
+      0.045,
+      0.071,
+      0.18
+    ],
+    "horizon_color": [
+      0.11,
+      0.16,
+      0.29
+    ],
+    "ground_color": [
+      0.035,
+      0.047,
+      0.085
+    ],
+    "horizon_falloff": 0.34,
+    "galaxy_azimuth_relative_camera_deg": -2.0,
+    "galaxy_elevation_deg": 27.0,
+    "galaxy_tilt_deg": 65.0,
+    "galaxy_width_deg": 3.5,
+    "galaxy_warp_deg": 1.6,
+    "galaxy_strength": 0.3,
+    "galaxy_color": [
+      0.43,
+      0.57,
+      0.88
+    ],
+    "star_strength": 1.2,
+    "base_star_density": 0.045,
+    "milky_star_density": 0.3,
+    "star_size_multiplier": 1.4,
+    "sky_seed": 29.17
+  },
+  "direction_note": "Azimuth is measured from world -Z towards +X. Camera-relative yaw is resolved once at configure(), then stays anchored in world space. Elevation is above the world horizon. Tilt 0 follows the local sky horizon; positive values climb toward camera-right.",
+  "lighting_note": "Sky cubemap renders only the blue gradient. Independent ambient color / moonlight must be configured in the Panti look; raising Milky Way brightness is not used to light snow.",
+  "motion_note": "Shared explicit anim_t drives slow spatially offset star twinkle; no TIME. During the 8-second period transition, the caller rotates the real sky in world azimuth and redraws the star viewport; after easing to midnight it renders once and holds. Shared pause freezes both motion and rendering.",
+  "render_note": "The original opaque scene and its DOF remain intact; its native Sky draws base color and Milky Way dust. A second viewport shares the same World3D and matching camera/DOF but has a white background, yielding a soft sky mask from its color difference. One empty-world viewport (static at endpoints, re-rendered during sky flow) renders sharp stars only. A CanvasLayer adds those stars through the difference mask. No geometry is duplicated and there are no depth writes or transparent scene backgrounds.",
+  "twinkle": {
+    "twinkle_amplitude": 0.66,
+    "twinkle_transition_amplitude": 0.72,
+    "twinkle_period_min_s": 3.2,
+    "twinkle_period_max_s": 6.2
+  },
+  "twinkle_revision": "Carlos: keep the stronger star twinkle after reaching stable midnight; the eight-second period transition remains one step stronger."
+}

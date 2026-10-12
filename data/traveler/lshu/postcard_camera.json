@@ -1,0 +1,178 @@
+{
+  "schema": "lshu.postcard_camera.v1",
+  "note": "第四幕明信片取景。三条全局规则 + 点他鞠躬的 snap，全部由地块烘焙数据和 L叔 当下的姿态算出，不为任何地块摆机位。所有数值都是起点，看过图随时可调，不是验收门槛。脚本：scripts/traveler/lshu/lshu_postcard_camera.gd",
+  "size": [
+    1500,
+    1000
+  ],
+  "jpg_quality": 0.9,
+  "timeout_s": 2.0,
+  "weights": {
+    "far": 0.4,
+    "mid": 0.4,
+    "back": 0.2
+  },
+  "rule_order": [
+    "far",
+    "mid",
+    "back"
+  ],
+  "snap_order": [
+    "snap",
+    "mid",
+    "far"
+  ],
+  "layers": {
+    "note": "the postcard camera draws its own copy of the sun on postcard_sun_bit (the main camera stops drawing that bit); for the render frame the real sun moves to main_sun_bit, which the postcard camera does not draw",
+    "main_sun_bit": 16,
+    "postcard_sun_bit": 17
+  },
+  "near": 0.05,
+  "far_plane": 400.0,
+  "landmark": {
+    "instance_roles": [
+      "landmark"
+    ],
+    "proc_roles": [
+      "structure"
+    ],
+    "look_height": 0.45,
+    "fallback_height_m": 1.5
+  },
+  "occlusion": {
+    "proc_roles": [
+      "ground",
+      "skirt",
+      "cliff",
+      "structure",
+      "steps"
+    ],
+    "instance_roles": [
+      "landmark"
+    ],
+    "report_roles": [
+      "backdrop",
+      "rock",
+      "prop",
+      "seat",
+      "fire",
+      "lamp",
+      "tree"
+    ],
+    "samples": [
+      [
+        0.0,
+        0.88
+      ],
+      [
+        0.0,
+        0.62
+      ],
+      [
+        0.0,
+        0.38
+      ],
+      [
+        -0.7,
+        0.62
+      ],
+      [
+        0.7,
+        0.62
+      ]
+    ],
+    "min_visible": 0.6,
+    "camera_clearance_m": 0.3
+  },
+  "far": {
+    "raise_deg": 18.0,
+    "narrow": 0.75,
+    "yaw_jitter_deg": 10.0,
+    "frame_fraction": [
+      0.042,
+      0.05
+    ],
+    "fraction_limits": [
+      0.03,
+      0.05
+    ],
+    "frame_margin": 0.04,
+    "focus_to_center": 0.35,
+    "dof": {
+      "near_enabled": true,
+      "near_offset": 2.0,
+      "near_transition": 3.0,
+      "far_enabled": true,
+      "far_offset": 2.5,
+      "far_transition": 5.0,
+      "amount": 0.22
+    }
+  },
+  "mid": {
+    "back_m": [
+      3.0,
+      5.0
+    ],
+    "up_m": 1.5,
+    "fov_deg": 34.0,
+    "look_height": 0.55,
+    "look_to_landmark": 0.3,
+    "dof": {
+      "near_enabled": true,
+      "near_offset": 1.2,
+      "near_transition": 1.2,
+      "far_enabled": true,
+      "far_offset": 1.8,
+      "far_transition": 5.0,
+      "amount": 0.12
+    }
+  },
+  "back": {
+    "back_m": [
+      2.4,
+      3.4
+    ],
+    "up_m": 1.45,
+    "look_height": 0.6,
+    "max_turn_deg": 90.0,
+    "turn_step_deg": 5.0,
+    "max_separation_deg": 32.0,
+    "distance_steps": [
+      1.0,
+      1.35,
+      1.7,
+      2.1
+    ],
+    "fov_limits_deg": [
+      28.0,
+      55.0
+    ],
+    "max_frame_fraction": 0.45,
+    "frame_margin": 0.08,
+    "focus_to_landmark": 0.5,
+    "dof": {
+      "near_enabled": true,
+      "near_offset": 1.0,
+      "near_transition": 1.0,
+      "far_enabled": true,
+      "far_offset": 3.0,
+      "far_transition": 6.0,
+      "amount": 0.1
+    }
+  },
+  "snap": {
+    "distance_m": 4.2,
+    "pitch_deg": 18.0,
+    "fov_deg": 30.0,
+    "look_height": 0.6,
+    "dof": {
+      "near_enabled": true,
+      "near_offset": 1.0,
+      "near_transition": 1.0,
+      "far_enabled": true,
+      "far_offset": 1.5,
+      "far_transition": 4.0,
+      "amount": 0.14
+    }
+  }
+}

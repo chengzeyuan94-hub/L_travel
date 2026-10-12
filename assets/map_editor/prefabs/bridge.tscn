@@ -1,0 +1,441 @@
+[gd_scene format=3]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_836oj"]
+cull_mode = 2
+albedo_color = Color(0.7764706, 0.6313726, 0.41568628, 1)
+roughness = 0.85
+
+[sub_resource type="BoxMesh" id="BoxMesh_kjcnw"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ewyib"]
+cull_mode = 2
+albedo_color = Color(0.7254902, 0.57254905, 0.35686275, 1)
+roughness = 0.85
+
+[sub_resource type="BoxMesh" id="BoxMesh_20m5t"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_guey0"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h4ac6"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_v6p5m"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fky8n"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bnrna"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5epyj"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h8t1e"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gur78"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_aydl5"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fw53g"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2t5vr"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5v0rl"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7s2c3"]
+size = Vector3(0.128, 0.075, 0.72)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ir6nx"]
+cull_mode = 2
+albedo_color = Color(0.53333336, 0.40784314, 0.2627451, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ta78m"]
+top_radius = 0.027
+bottom_radius = 0.032
+height = 0.46999997
+radial_segments = 6
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_trsjv"]
+cull_mode = 2
+albedo_color = Color(0.6627451, 0.5058824, 0.30588236, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_3whoc"]
+top_radius = 0.023
+bottom_radius = 0.023
+height = 0.41529775
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_pi23k"]
+top_radius = 0.027
+bottom_radius = 0.032
+height = 0.46999997
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2jc63"]
+top_radius = 0.023
+bottom_radius = 0.023
+height = 0.40591133
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0uod3"]
+top_radius = 0.027
+bottom_radius = 0.032
+height = 0.46999997
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_wuals"]
+top_radius = 0.023
+bottom_radius = 0.023
+height = 0.4
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dnap5"]
+top_radius = 0.027
+bottom_radius = 0.032
+height = 0.46999997
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vxd0i"]
+top_radius = 0.023
+bottom_radius = 0.023
+height = 0.40591133
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4v0p1"]
+top_radius = 0.027
+bottom_radius = 0.032
+height = 0.46999997
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_by5w3"]
+top_radius = 0.023
+bottom_radius = 0.023
+height = 0.41529775
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_1eny0"]
+top_radius = 0.027
+bottom_radius = 0.032
+height = 0.46999997
+radial_segments = 6
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_46y50"]
+cull_mode = 2
+albedo_color = Color(0.52156866, 0.4, 0.26666668, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_lm4j2"]
+top_radius = 0.047
+bottom_radius = 0.055
+height = 0.43
+radial_segments = 7
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_s0yts"]
+top_radius = 0.047
+bottom_radius = 0.055
+height = 0.43
+radial_segments = 7
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_32xkl"]
+top_radius = 0.027
+bottom_radius = 0.032
+height = 0.46999997
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_j321x"]
+top_radius = 0.023
+bottom_radius = 0.023
+height = 0.41529775
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_hlrs3"]
+top_radius = 0.027
+bottom_radius = 0.032
+height = 0.46999997
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_sa7xd"]
+top_radius = 0.023
+bottom_radius = 0.023
+height = 0.40591133
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_f43aa"]
+top_radius = 0.027
+bottom_radius = 0.032
+height = 0.46999997
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_sbl8s"]
+top_radius = 0.023
+bottom_radius = 0.023
+height = 0.4
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_w8hbh"]
+top_radius = 0.027
+bottom_radius = 0.032
+height = 0.46999997
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_hamc7"]
+top_radius = 0.023
+bottom_radius = 0.023
+height = 0.40591133
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_jutjl"]
+top_radius = 0.027
+bottom_radius = 0.032
+height = 0.46999997
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_rfi2h"]
+top_radius = 0.023
+bottom_radius = 0.023
+height = 0.41529775
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0obdq"]
+top_radius = 0.027
+bottom_radius = 0.032
+height = 0.46999997
+radial_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xngo6"]
+top_radius = 0.047
+bottom_radius = 0.055
+height = 0.43
+radial_segments = 7
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4s8h0"]
+top_radius = 0.047
+bottom_radius = 0.055
+height = 0.43
+radial_segments = 7
+
+[node name="Bridge" type="Node3D" unique_id=866616344]
+metadata/asset_id = "bridge"
+metadata/source_script = "res://tools/miniworld/bake_editor_assets.gd"
+metadata/ground_origin = true
+metadata/source_bounds = AABB(-1.0277128, -0.22, -0.372, 2.0554256, 0.8707007, 0.744)
+
+[node name="ArchedTradeBridge" type="Node3D" parent="." unique_id=1243923344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22, 0)
+
+[node name="TimberOrMasonry_002" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=162404010]
+transform = Transform3D(0.9586622, -0.28454664, 0, 0.28454664, 0.9586622, 0, 0, 0, 1, -0.93333334, 0.09986041, 0)
+material_override = SubResource("StandardMaterial3D_836oj")
+mesh = SubResource("BoxMesh_kjcnw")
+
+[node name="TimberOrMasonry_003" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=827007441]
+transform = Transform3D(0.96199775, -0.27305734, 0, 0.27305734, 0.96199775, 0, 0, 0, 1, -0.8, 0.13871323, 0)
+material_override = SubResource("StandardMaterial3D_ewyib")
+mesh = SubResource("BoxMesh_20m5t")
+
+[node name="TimberOrMasonry_004" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1662738231]
+transform = Transform3D(0.9681831, -0.2502428, 0, 0.2502428, 0.9681831, 0, 0, 0, 1, -0.6666667, 0.175, 0)
+material_override = SubResource("StandardMaterial3D_ewyib")
+mesh = SubResource("BoxMesh_guey0")
+
+[node name="TimberOrMasonry_005" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1183451939]
+transform = Transform3D(0.9762758, -0.2165307, 0, 0.2165307, 0.9762758, 0, 0, 0, 1, -0.53333336, 0.20713481, 0)
+material_override = SubResource("StandardMaterial3D_836oj")
+mesh = SubResource("BoxMesh_h4ac6")
+
+[node name="TimberOrMasonry_006" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1732096268]
+transform = Transform3D(0.98495924, -0.17278674, 0, 0.17278674, 0.98495924, 0, 0, 0, 1, -0.4, 0.23371322, 0)
+material_override = SubResource("StandardMaterial3D_ewyib")
+mesh = SubResource("BoxMesh_v6p5m")
+
+[node name="TimberOrMasonry_007" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1216290786]
+transform = Transform3D(0.99271256, -0.12050645, 0, 0.12050645, 0.99271256, 0, 0, 0, 1, -0.26666668, 0.25357363, 0)
+material_override = SubResource("StandardMaterial3D_ewyib")
+mesh = SubResource("BoxMesh_fky8n")
+
+[node name="TimberOrMasonry_008" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=97475417]
+transform = Transform3D(0.9980804, -0.0619324, 0, 0.0619324, 0.9980804, 0, 0, 0, 1, -0.13333334, 0.26584804, 0)
+material_override = SubResource("StandardMaterial3D_836oj")
+mesh = SubResource("BoxMesh_bnrna")
+
+[node name="TimberOrMasonry_009" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=969684296]
+transform = Transform3D(1, -1.8274871e-17, 0, 1.8274871e-17, 1, 0, 0, 0, 1, 0, 0.27, 0)
+material_override = SubResource("StandardMaterial3D_ewyib")
+mesh = SubResource("BoxMesh_5epyj")
+
+[node name="TimberOrMasonry_010" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=220360245]
+transform = Transform3D(0.9980804, 0.0619324, 0, -0.0619324, 0.9980804, 0, 0, 0, 1, 0.13333334, 0.26584804, 0)
+material_override = SubResource("StandardMaterial3D_ewyib")
+mesh = SubResource("BoxMesh_h8t1e")
+
+[node name="TimberOrMasonry_011" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1359630425]
+transform = Transform3D(0.99271256, 0.12050645, 0, -0.12050645, 0.99271256, 0, 0, 0, 1, 0.26666668, 0.25357363, 0)
+material_override = SubResource("StandardMaterial3D_836oj")
+mesh = SubResource("BoxMesh_gur78")
+
+[node name="TimberOrMasonry_012" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=480331367]
+transform = Transform3D(0.98495924, 0.17278674, 0, -0.17278674, 0.98495924, 0, 0, 0, 1, 0.4, 0.23371322, 0)
+material_override = SubResource("StandardMaterial3D_ewyib")
+mesh = SubResource("BoxMesh_aydl5")
+
+[node name="TimberOrMasonry_013" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=138761505]
+transform = Transform3D(0.9762758, 0.2165307, 0, -0.2165307, 0.9762758, 0, 0, 0, 1, 0.53333336, 0.20713481, 0)
+material_override = SubResource("StandardMaterial3D_ewyib")
+mesh = SubResource("BoxMesh_fw53g")
+
+[node name="TimberOrMasonry_014" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1642078914]
+transform = Transform3D(0.9681831, 0.2502428, 0, -0.2502428, 0.9681831, 0, 0, 0, 1, 0.6666667, 0.175, 0)
+material_override = SubResource("StandardMaterial3D_836oj")
+mesh = SubResource("BoxMesh_2t5vr")
+
+[node name="TimberOrMasonry_015" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=219861070]
+transform = Transform3D(0.96199775, 0.27305734, 0, -0.27305734, 0.96199775, 0, 0, 0, 1, 0.8, 0.13871323, 0)
+material_override = SubResource("StandardMaterial3D_ewyib")
+mesh = SubResource("BoxMesh_5v0rl")
+
+[node name="TimberOrMasonry_016" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1788234121]
+transform = Transform3D(0.9586622, 0.28454664, 0, -0.28454664, 0.9586622, 0, 0, 0, 1, 0.93333334, 0.09986041, 0)
+material_override = SubResource("StandardMaterial3D_ewyib")
+mesh = SubResource("BoxMesh_7s2c3")
+
+[node name="PostOrSpar_017" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=2126523201]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -1, 0.23499998, -0.34)
+material_override = SubResource("StandardMaterial3D_ir6nx")
+mesh = SubResource("CylinderMesh_ta78m")
+
+[node name="PostOrSpar_018" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1607028561]
+transform = Transform3D(-0.26891357, 0.9631643, 0, 0.9631643, 0.26891357, 0, 0, 0, -1, -0.8, 0.44583958, -0.34)
+material_override = SubResource("StandardMaterial3D_trsjv")
+mesh = SubResource("CylinderMesh_3whoc")
+
+[node name="PostOrSpar_019" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=410805666]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -0.6, 0.34667918, -0.34)
+material_override = SubResource("StandardMaterial3D_ir6nx")
+mesh = SubResource("CylinderMesh_pi23k")
+
+[node name="PostOrSpar_020" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1132459962]
+transform = Transform3D(-0.17004104, 0.985437, 0, 0.985437, 0.17004104, 0, 0, 0, -1, -0.4, 0.53619, -0.34)
+material_override = SubResource("StandardMaterial3D_trsjv")
+mesh = SubResource("CylinderMesh_2jc63")
+
+[node name="PostOrSpar_021" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1502246596]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -0.2, 0.4157007, -0.34)
+material_override = SubResource("StandardMaterial3D_ir6nx")
+mesh = SubResource("CylinderMesh_0uod3")
+
+[node name="PostOrSpar_022" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1415905512]
+transform = Transform3D(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 0.57070076, -0.34)
+material_override = SubResource("StandardMaterial3D_trsjv")
+mesh = SubResource("CylinderMesh_wuals")
+
+[node name="PostOrSpar_023" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=2096736417]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0.2, 0.4157007, -0.34)
+material_override = SubResource("StandardMaterial3D_ir6nx")
+mesh = SubResource("CylinderMesh_dnap5")
+
+[node name="PostOrSpar_024" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=151601284]
+transform = Transform3D(0.17004104, 0.985437, 0, 0.985437, -0.17004104, 0, 0, 0, -1, 0.4, 0.53619, -0.34)
+material_override = SubResource("StandardMaterial3D_trsjv")
+mesh = SubResource("CylinderMesh_vxd0i")
+
+[node name="PostOrSpar_025" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=673386595]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0.6, 0.34667918, -0.34)
+material_override = SubResource("StandardMaterial3D_ir6nx")
+mesh = SubResource("CylinderMesh_4v0p1")
+
+[node name="PostOrSpar_026" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=266662128]
+transform = Transform3D(0.26891357, 0.9631643, 0, 0.9631643, -0.26891357, 0, 0, 0, -1, 0.8, 0.44583958, -0.34)
+material_override = SubResource("StandardMaterial3D_trsjv")
+mesh = SubResource("CylinderMesh_by5w3")
+
+[node name="PostOrSpar_027" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=274877321]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 1, 0.23499998, -0.34)
+material_override = SubResource("StandardMaterial3D_ir6nx")
+mesh = SubResource("CylinderMesh_1eny0")
+
+[node name="PostOrSpar_028" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=312212068]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -0.66, -0.0050000027, -0.26)
+material_override = SubResource("StandardMaterial3D_46y50")
+mesh = SubResource("CylinderMesh_lm4j2")
+
+[node name="PostOrSpar_029" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1959551435]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0.66, -0.0050000027, -0.26)
+material_override = SubResource("StandardMaterial3D_46y50")
+mesh = SubResource("CylinderMesh_s0yts")
+
+[node name="PostOrSpar_030" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1289041776]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -1, 0.23499998, 0.34)
+material_override = SubResource("StandardMaterial3D_ir6nx")
+mesh = SubResource("CylinderMesh_32xkl")
+
+[node name="PostOrSpar_031" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=518707973]
+transform = Transform3D(-0.26891357, 0.9631643, 0, 0.9631643, 0.26891357, 0, 0, 0, -1, -0.8, 0.44583958, 0.34)
+material_override = SubResource("StandardMaterial3D_trsjv")
+mesh = SubResource("CylinderMesh_j321x")
+
+[node name="PostOrSpar_032" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1456489754]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -0.6, 0.34667918, 0.34)
+material_override = SubResource("StandardMaterial3D_ir6nx")
+mesh = SubResource("CylinderMesh_hlrs3")
+
+[node name="PostOrSpar_033" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1242953876]
+transform = Transform3D(-0.17004104, 0.985437, 0, 0.985437, 0.17004104, 0, 0, 0, -1, -0.4, 0.53619, 0.34)
+material_override = SubResource("StandardMaterial3D_trsjv")
+mesh = SubResource("CylinderMesh_sa7xd")
+
+[node name="PostOrSpar_034" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1702146283]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -0.2, 0.4157007, 0.34)
+material_override = SubResource("StandardMaterial3D_ir6nx")
+mesh = SubResource("CylinderMesh_f43aa")
+
+[node name="PostOrSpar_035" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=121480971]
+transform = Transform3D(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 0.57070076, 0.34)
+material_override = SubResource("StandardMaterial3D_trsjv")
+mesh = SubResource("CylinderMesh_sbl8s")
+
+[node name="PostOrSpar_036" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1438541833]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0.2, 0.4157007, 0.34)
+material_override = SubResource("StandardMaterial3D_ir6nx")
+mesh = SubResource("CylinderMesh_w8hbh")
+
+[node name="PostOrSpar_037" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=2137851252]
+transform = Transform3D(0.17004104, 0.985437, 0, 0.985437, -0.17004104, 0, 0, 0, -1, 0.4, 0.53619, 0.34)
+material_override = SubResource("StandardMaterial3D_trsjv")
+mesh = SubResource("CylinderMesh_hamc7")
+
+[node name="PostOrSpar_038" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1849531803]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0.6, 0.34667918, 0.34)
+material_override = SubResource("StandardMaterial3D_ir6nx")
+mesh = SubResource("CylinderMesh_jutjl")
+
+[node name="PostOrSpar_039" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=474013369]
+transform = Transform3D(0.26891357, 0.9631643, 0, 0.9631643, -0.26891357, 0, 0, 0, -1, 0.8, 0.44583958, 0.34)
+material_override = SubResource("StandardMaterial3D_trsjv")
+mesh = SubResource("CylinderMesh_rfi2h")
+
+[node name="PostOrSpar_040" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1250102008]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 1, 0.23499998, 0.34)
+material_override = SubResource("StandardMaterial3D_ir6nx")
+mesh = SubResource("CylinderMesh_0obdq")
+
+[node name="PostOrSpar_041" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=1796650622]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -0.66, -0.0050000027, 0.26)
+material_override = SubResource("StandardMaterial3D_46y50")
+mesh = SubResource("CylinderMesh_xngo6")
+
+[node name="PostOrSpar_042" type="MeshInstance3D" parent="ArchedTradeBridge" unique_id=35646035]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0.66, -0.0050000027, 0.26)
+material_override = SubResource("StandardMaterial3D_46y50")
+mesh = SubResource("CylinderMesh_4s8h0")

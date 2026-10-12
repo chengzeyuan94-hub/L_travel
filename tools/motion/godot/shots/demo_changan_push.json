@@ -1,0 +1,42 @@
+{
+  "target": "changan",
+  "duration": 3.0,
+  "warmup_frames": 45,
+  "note": "demo: push in from the act's framing toward the lit temple gate; L叔 walks by himself",
+  "camera": {
+    "mode": "keys",
+    "space": "world",
+    "interp": "catmull",
+    "keys": [
+      {
+        "t": 0.0,
+        "pos": [
+          34.57,
+          3.97,
+          14.92
+        ],
+        "look": [
+          28.81,
+          2.74,
+          6.85
+        ],
+        "fov": 36,
+        "ease": "inOutSine"
+      },
+      {
+        "t": 3.0,
+        "pos": [
+          32.1,
+          2.55,
+          10.9
+        ],
+        "look": [
+          29.4,
+          1.35,
+          6.4
+        ],
+        "fov": 34
+      }
+    ]
+  }
+}

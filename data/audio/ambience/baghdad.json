@@ -1,0 +1,106 @@
+{
+  "schema": "silkroad.ambience-mix.v1",
+  "scene": "baghdad",
+  "note": "第三幕「巴格达」环境声起点值（方案 §3.7），不是冻结值，随时可调，改完重开场景就生效。states 里是每个状态各层的 volume_db，没写的层 = 静音；过渡按进度做等功率交叉。实听 ≈ 文件响度 + volume_db + master_db（文件响度：雨 −31.3、空旷风 −30.1、鸟底床 −33.2、树风 −30.3、篝火 −30.2 LUFS）。方案原值（雨 0 / 风 −6 / 鸟 −2 / 树风 −3 / 篝火 −8）叠起来只有约 −30~−32 LUFS，达不到旅人四幕 −26~−28 的目标，所以整体上调了约 3 dB，层与层的相对关系基本照方案。 2026-09-26 实录校准：雨 +1.5（再高雨声瞬态会到 −1.8 dBFS）、开花时鸟底床 +5、风 −4（鸟底床本身有空档，风垫底），第一声鸟叫 −3。",
+  "master_db": 0.0,
+  "fade_in_s": 3.0,
+  "follow_s": 0.3,
+  "fallback_state": "rain",
+  "sounds": {
+    "rain": "rain_bed_long_loop_v1",
+    "wind_open": "wind_open_bed_loop_v1",
+    "birds": "birds_day_bed_loop_v1",
+    "wind_leaves": "wind_leaves_bed_loop_v1",
+    "campfire": "campfire_bed_loop_v1"
+  },
+  "states": {
+    "rain": {
+      "rain": 1.5,
+      "wind_open": -2.5
+    },
+    "bloom": {
+      "birds": 5.0,
+      "wind_open": -4.0,
+      "rain": -14.0
+    },
+    "dusk": {
+      "birds": -2.0,
+      "wind_leaves": 0.0,
+      "campfire": -4.0,
+      "wind_open": -8.0
+    }
+  },
+  "transitions": {
+    "note": "speed = 这一层比整段过渡快几倍（2 = 用一半时间走完）。to_bloom 的进度 = story_t / 8 s，另外两段用 review_cycle 的 _state.progress。",
+    "to_bloom": {
+      "speed": {}
+    },
+    "to_dusk": {
+      "speed": {}
+    },
+    "to_rain": {
+      "speed": {
+        "birds": 2.0,
+        "campfire": 2.0
+      }
+    }
+  },
+  "first_bird_call": {
+    "sound": "bird_call_v6",
+    "at_progress": 0.35,
+    "volume_db": -3.0,
+    "pitch": [
+      0.98,
+      1.02
+    ],
+    "note": "转开花进度过 0.35 时响一声，「雨停了」的第一声鸟叫"
+  },
+  "potato_dings": {
+    "enabled": true,
+    "sound": "bell_small_ding_v1",
+    "growth_fractions": [
+      0.3,
+      0.6,
+      0.9
+    ],
+    "pitches": [
+      1.26,
+      1.5,
+      1.68
+    ],
+    "volume_db": -14.0,
+    "note": "土豆花生长比例（growth / growth_full）向上跨过这几个值时各叮一下，只在转开花里；不想要就把 enabled 改成 false"
+  },
+  "rain_gust": {
+    "sound": "wind_leaves_gust_v1",
+    "volume_db": 0.0,
+    "pitch": [
+      0.96,
+      1.04
+    ],
+    "note": "转回雨的开头一阵风"
+  },
+  "dusk_birds": {
+    "sounds": [
+      "bird_call_v1",
+      "bird_call_v2",
+      "bird_call_v3",
+      "bird_call_v4",
+      "bird_call_v5"
+    ],
+    "interval_s": [
+      12.0,
+      25.0
+    ],
+    "volume_db": [
+      -11.0,
+      -8.0
+    ],
+    "pitch": [
+      0.95,
+      1.05
+    ],
+    "first_delay_s": 4.0,
+    "note": "晚霞停留时的零星鸟叫"
+  }
+}

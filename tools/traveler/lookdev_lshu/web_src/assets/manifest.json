@@ -1,0 +1,4028 @@
+{
+  "version": 5,
+  "pack": "Little Journey · City Landmarks / 140 assets",
+  "count": 140,
+  "created": "2026-09-21",
+  "coordinate_system": "Y up, metre design unit, +Z front. Asset pivots at ground-level bottom center. Terrain bottom y=0, nominal top y=0.88.",
+  "geometry": "Original 120 GLBs unchanged; 20 new S21-S40 original city-inspired scenery models. All geometry is real, uncompressed glTF 2.0. Stylized game interpretation, not archaeological reconstruction. Runtime material regions stored in metadata; standalone assets use a matte vertex-colour material.",
+  "groups": {
+    "terrain": "地形底座",
+    "tree": "树木",
+    "rock": "岩石",
+    "camp": "营地",
+    "harbor": "港岸",
+    "vegetation": "植被小景",
+    "prop": "旅途道具",
+    "scenery": "主体风景",
+    "city_scenery": "城市特色主景 · 新增20"
+  },
+  "assets": [
+    {
+      "id": "B01",
+      "name": "雪地缓坡",
+      "group": "terrain",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        8,
+        1.04696,
+        8
+      ],
+      "triangles": 448,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/B01.glb",
+      "thumbnail": "assets/thumbs/B01.png",
+      "variant": 0,
+      "surface_y": 0.88,
+      "role": "base",
+      "sha256": "4365fd30a16b880bf3737e777f734578f6e093a75bd3513006326fe30c0ef228"
+    },
+    {
+      "id": "B02",
+      "name": "雪地宽脊",
+      "group": "terrain",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        8,
+        1.05375,
+        8
+      ],
+      "triangles": 448,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/B02.glb",
+      "thumbnail": "assets/thumbs/B02.png",
+      "variant": 1,
+      "surface_y": 0.88,
+      "role": "base",
+      "sha256": "69e26b1735ec851d118b4c4cfb8cf2e0257a6b0962e5b6a6a5b87c875f22cf8b"
+    },
+    {
+      "id": "B03",
+      "name": "雪地弯径",
+      "group": "terrain",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        8,
+        1.06541,
+        8
+      ],
+      "triangles": 468,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/B03.glb",
+      "thumbnail": "assets/thumbs/B03.png",
+      "variant": 2,
+      "surface_y": 0.88,
+      "role": "base",
+      "sha256": "969f9ded387f2a110f4b8d6b7226789a830b24db82b214b6038656cfb60eda31"
+    },
+    {
+      "id": "B04",
+      "name": "秋土浅坡",
+      "group": "terrain",
+      "themes": [
+        "autumn"
+      ],
+      "size": [
+        8,
+        1.04696,
+        8
+      ],
+      "triangles": 448,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/B04.glb",
+      "thumbnail": "assets/thumbs/B04.png",
+      "variant": 0,
+      "surface_y": 0.88,
+      "role": "base",
+      "sha256": "2273309ce9721ba7f5c81b7d1fabdccbc8908d4696dbe43f638433a0c6997a4f"
+    },
+    {
+      "id": "B05",
+      "name": "秋土古道",
+      "group": "terrain",
+      "themes": [
+        "autumn"
+      ],
+      "size": [
+        8,
+        1.05375,
+        8
+      ],
+      "triangles": 468,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/B05.glb",
+      "thumbnail": "assets/thumbs/B05.png",
+      "variant": 1,
+      "surface_y": 0.88,
+      "role": "base",
+      "sha256": "68e016582a6735a13f8a11ea07b805af6ea773795bd607f60dbba2c3e645b4bc"
+    },
+    {
+      "id": "B06",
+      "name": "秋土高台",
+      "group": "terrain",
+      "themes": [
+        "autumn"
+      ],
+      "size": [
+        8,
+        1.06541,
+        8
+      ],
+      "triangles": 468,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/B06.glb",
+      "thumbnail": "assets/thumbs/B06.png",
+      "variant": 2,
+      "surface_y": 0.88,
+      "role": "base",
+      "sha256": "7ad49c68ba90dc97e8693cd74f8df149924efc60d4c875c8038bb168537a739c"
+    },
+    {
+      "id": "B07",
+      "name": "沙地缓丘",
+      "group": "terrain",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        8,
+        1.04696,
+        8
+      ],
+      "triangles": 448,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/B07.glb",
+      "thumbnail": "assets/thumbs/B07.png",
+      "variant": 0,
+      "surface_y": 0.88,
+      "role": "base",
+      "sha256": "da235cfa44a412b621c6a1e7540a22dfd4ccb4dcda3d0e10680ae8aef49dd38d"
+    },
+    {
+      "id": "B08",
+      "name": "沙地双脊",
+      "group": "terrain",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        8,
+        1.05375,
+        8
+      ],
+      "triangles": 448,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/B08.glb",
+      "thumbnail": "assets/thumbs/B08.png",
+      "variant": 1,
+      "surface_y": 0.88,
+      "role": "base",
+      "sha256": "721443772457f9ebfa64b5e77c49274193400b3026a55eec6998501dd96726d8"
+    },
+    {
+      "id": "B09",
+      "name": "沙地绿洲岸",
+      "group": "terrain",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        8,
+        1.06541,
+        8
+      ],
+      "triangles": 468,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/B09.glb",
+      "thumbnail": "assets/thumbs/B09.png",
+      "variant": 2,
+      "surface_y": 0.88,
+      "role": "base",
+      "sha256": "51c3e74f6c4ff58465346f9366889ec3093320458de1629c49651a0409cd79e7"
+    },
+    {
+      "id": "B10",
+      "name": "港湾浅滩",
+      "group": "terrain",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        8,
+        1.02,
+        8
+      ],
+      "triangles": 472,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/B10.glb",
+      "thumbnail": "assets/thumbs/B10.png",
+      "variant": 0,
+      "surface_y": 0.88,
+      "role": "base",
+      "sha256": "8057133c6e7eb95f273c271ac1fddc8864eb7637ae9a159b94c211183122af06"
+    },
+    {
+      "id": "B11",
+      "name": "海岸宽滩",
+      "group": "terrain",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        8,
+        1.02,
+        8
+      ],
+      "triangles": 472,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/B11.glb",
+      "thumbnail": "assets/thumbs/B11.png",
+      "variant": 1,
+      "surface_y": 0.88,
+      "role": "base",
+      "sha256": "b87af4a654454b631dde69953318eefa0e58038851f183eff4f0992b6ae00dd4"
+    },
+    {
+      "id": "B12",
+      "name": "港湾礁岸",
+      "group": "terrain",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        8,
+        1.02,
+        8
+      ],
+      "triangles": 472,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/B12.glb",
+      "thumbnail": "assets/thumbs/B12.png",
+      "variant": 2,
+      "surface_y": 0.88,
+      "role": "base",
+      "sha256": "e99707c54b20126c6badf08065e714448dc21c7709aedd29338ee1a3805ab37e"
+    },
+    {
+      "id": "T01",
+      "name": "层叠雪杉",
+      "group": "tree",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        1.3376,
+        2.81834,
+        1.30406
+      ],
+      "triangles": 196,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T01.glb",
+      "thumbnail": "assets/thumbs/T01.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "7788e7f270c7835a3c71856fc580bacff23907564812c00e43a96f7e7b4e8741"
+    },
+    {
+      "id": "T02",
+      "name": "修长雪杉",
+      "group": "tree",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        1.73515,
+        3.39732,
+        1.76191
+      ],
+      "triangles": 252,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T02.glb",
+      "thumbnail": "assets/thumbs/T02.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "d2f99bd348196f0aecf183b8a9ec98881f9924684b990574576ffd38b1b4f94a"
+    },
+    {
+      "id": "T03",
+      "name": "宽冠雪杉",
+      "group": "tree",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        1.23716,
+        2.61703,
+        1.23066
+      ],
+      "triangles": 308,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T03.glb",
+      "thumbnail": "assets/thumbs/T03.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "d61b561f9f5e67050d6d6b841c32c6c80a9878f1c9df2eeae659460a16e1216a"
+    },
+    {
+      "id": "T04",
+      "name": "矮雪杉",
+      "group": "tree",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        0.91748,
+        1.77472,
+        0.91315
+      ],
+      "triangles": 196,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T04.glb",
+      "thumbnail": "assets/thumbs/T04.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "1bd8add614ab7e18ac78cc4125813dbea6c647f2eb557124d76f4f05ae8ac673"
+    },
+    {
+      "id": "T05",
+      "name": "高脊雪杉",
+      "group": "tree",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        1.69272,
+        3.62358,
+        1.71789
+      ],
+      "triangles": 252,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T05.glb",
+      "thumbnail": "assets/thumbs/T05.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "60cb8a4c0fb7b451bc7614a2e43118d649bc5ab0fa47e2944e87948595bcd3d3"
+    },
+    {
+      "id": "T06",
+      "name": "紧凑雪杉",
+      "group": "tree",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        1.13189,
+        2.18037,
+        1.10411
+      ],
+      "triangles": 308,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T06.glb",
+      "thumbnail": "assets/thumbs/T06.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "3807dab7249319f989bdac4c25ef252c09d7717c95509be2d7779561d5ecb21d"
+    },
+    {
+      "id": "T07",
+      "name": "橙叶圆冠树",
+      "group": "tree",
+      "themes": [
+        "autumn"
+      ],
+      "size": [
+        1.45174,
+        2.1326,
+        1.01181
+      ],
+      "triangles": 304,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T07.glb",
+      "thumbnail": "assets/thumbs/T07.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "d6d0f7a0b88732099883b32931c58e2200d23530644683c889fc397960322ad9"
+    },
+    {
+      "id": "T08",
+      "name": "赤枫双冠树",
+      "group": "tree",
+      "themes": [
+        "autumn"
+      ],
+      "size": [
+        1.61515,
+        2.38072,
+        1.12102
+      ],
+      "triangles": 304,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T08.glb",
+      "thumbnail": "assets/thumbs/T08.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "7c1097de849e32dfe0c315f7aceddf45f0f973ae5ad8759e1a6d2967dba3e35e"
+    },
+    {
+      "id": "T09",
+      "name": "金叶小乔木",
+      "group": "tree",
+      "themes": [
+        "autumn"
+      ],
+      "size": [
+        1.41811,
+        2.06829,
+        1.00423
+      ],
+      "triangles": 304,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T09.glb",
+      "thumbnail": "assets/thumbs/T09.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "ceb4396bcc3480eea923c6573b6c5162086c3d4e6ccb23c1dcc299b5064b7bc7"
+    },
+    {
+      "id": "T10",
+      "name": "红叶斜枝树",
+      "group": "tree",
+      "themes": [
+        "autumn"
+      ],
+      "size": [
+        1.32673,
+        1.96759,
+        0.99878
+      ],
+      "triangles": 304,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T10.glb",
+      "thumbnail": "assets/thumbs/T10.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "8dcc1b95414607506a5d25f89ef7756f6b3f3cdb3e997cef51354e15be53c64e"
+    },
+    {
+      "id": "T11",
+      "name": "琥珀高冠树",
+      "group": "tree",
+      "themes": [
+        "autumn"
+      ],
+      "size": [
+        1.87443,
+        2.80351,
+        1.50371
+      ],
+      "triangles": 304,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T11.glb",
+      "thumbnail": "assets/thumbs/T11.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "ebce1bd8d98f83e10646928b6e86d3594317152242d6e5e16e42c3e9b877149c"
+    },
+    {
+      "id": "T12",
+      "name": "矮丛秋树",
+      "group": "tree",
+      "themes": [
+        "autumn"
+      ],
+      "size": [
+        1.10366,
+        1.67613,
+        0.8995
+      ],
+      "triangles": 304,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T12.glb",
+      "thumbnail": "assets/thumbs/T12.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "9c318432d573c3d95c2c743fc92adc93f233593c4b63c494e7d39fbe41a33aaa"
+    },
+    {
+      "id": "T13",
+      "name": "生命树·舒枝",
+      "group": "tree",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        2.42157,
+        3.49681,
+        1.84143
+      ],
+      "triangles": 446,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T13.glb",
+      "thumbnail": "assets/thumbs/T13.png",
+      "role": "hero",
+      "motion": "gentle_sway",
+      "sha256": "cd36f7e1a58a88280e52e8fbed8c8b744fa6da49b496b87a579591c2f4724efa"
+    },
+    {
+      "id": "T14",
+      "name": "生命树·圆冠",
+      "group": "tree",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        2.18609,
+        3.16307,
+        1.67189
+      ],
+      "triangles": 446,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T14.glb",
+      "thumbnail": "assets/thumbs/T14.png",
+      "role": "hero",
+      "motion": "gentle_sway",
+      "sha256": "c0b3fdfb2d1fc9bebbb3427f405cea93e57b1ad53b2ceb7d635e71b12f45d991"
+    },
+    {
+      "id": "T15",
+      "name": "生命树·长卵冠",
+      "group": "tree",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        2.76657,
+        3.97907,
+        2.15611
+      ],
+      "triangles": 446,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T15.glb",
+      "thumbnail": "assets/thumbs/T15.png",
+      "role": "hero",
+      "motion": "gentle_sway",
+      "sha256": "2755d0e929bbfa61ba7aafa99465c6a783ae01cec781989e0810e5248c834f45"
+    },
+    {
+      "id": "T16",
+      "name": "单干棕榈",
+      "group": "tree",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        1.83962,
+        2.20952,
+        1.82352
+      ],
+      "triangles": 116,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T16.glb",
+      "thumbnail": "assets/thumbs/T16.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "d42e4bcde73d315974092f6ef57ea2af4b70522e0588489aba25c1c1084e6d54"
+    },
+    {
+      "id": "T17",
+      "name": "弯干棕榈",
+      "group": "tree",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        2.12634,
+        2.55822,
+        2.10976
+      ],
+      "triangles": 112,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T17.glb",
+      "thumbnail": "assets/thumbs/T17.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "02c1989fb5944016bf3ede1bcaf8c89d16391a364cbe383cc3a0b3ff62bc432f"
+    },
+    {
+      "id": "T18",
+      "name": "稀叶荒漠树",
+      "group": "tree",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        1.52,
+        1.80865,
+        1.22
+      ],
+      "triangles": 380,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T18.glb",
+      "thumbnail": "assets/thumbs/T18.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "e3792f3d4036884f341204ebeb0cac113b40d864fed7a158479b52bfe7f16ef6"
+    },
+    {
+      "id": "T19",
+      "name": "海岸矮松",
+      "group": "tree",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        0.90766,
+        1.9095,
+        0.8849
+      ],
+      "triangles": 112,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T19.glb",
+      "thumbnail": "assets/thumbs/T19.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "927f171b5feb7475d2b96757e28ec1863a999520e9e737609e381a674efbefc0"
+    },
+    {
+      "id": "T20",
+      "name": "海岸风松",
+      "group": "tree",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        1.1654,
+        2.27813,
+        1.18337
+      ],
+      "triangles": 140,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T20.glb",
+      "thumbnail": "assets/thumbs/T20.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "d7b5b74d804189c18658cd01fcb88fd263c144a0ce14ee9203c4671308d5edcd"
+    },
+    {
+      "id": "T21",
+      "name": "港岸棕榈",
+      "group": "tree",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        2.29713,
+        2.90724,
+        2.47497
+      ],
+      "triangles": 112,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T21.glb",
+      "thumbnail": "assets/thumbs/T21.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "81758d13f23e486fe923b85cacadec910c2ea6d96b443a11801786a18bcd6956"
+    },
+    {
+      "id": "T22",
+      "name": "宽叶棕榈",
+      "group": "tree",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        1.83962,
+        2.20952,
+        1.82352
+      ],
+      "triangles": 116,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T22.glb",
+      "thumbnail": "assets/thumbs/T22.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "9f7db015e72ab5c55eb288e61f8f72bcb5457bf78b5c629cb77173cffb654f00"
+    },
+    {
+      "id": "T23",
+      "name": "绿荫小树",
+      "group": "tree",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        1.40582,
+        2.11394,
+        1.12779
+      ],
+      "triangles": 304,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T23.glb",
+      "thumbnail": "assets/thumbs/T23.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "a40a134a8de8c1eccc9762be6b51859c10c0a55e5dc8982131b4a1ac1dab9e3b"
+    },
+    {
+      "id": "T24",
+      "name": "海岸斜生树",
+      "group": "tree",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        1.53843,
+        2.31503,
+        1.25385
+      ],
+      "triangles": 304,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/T24.glb",
+      "thumbnail": "assets/thumbs/T24.png",
+      "role": "backdrop",
+      "motion": "gentle_sway",
+      "sha256": "be1fabc2147da531c89937ba5c6d4b0fea2d74095e1d90ca8ad9a5a336b037fd"
+    },
+    {
+      "id": "R01",
+      "name": "雪覆圆石",
+      "group": "rock",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        0.89479,
+        0.7245,
+        0.81038
+      ],
+      "triangles": 70,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R01.glb",
+      "thumbnail": "assets/thumbs/R01.png",
+      "role": "rock",
+      "sha256": "d2564836e3bd5ee276352620e638b4a579e97cecf4dedba32676e1479e20cfce"
+    },
+    {
+      "id": "R02",
+      "name": "雪覆尖石",
+      "group": "rock",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        0.80163,
+        1.5525,
+        0.75169
+      ],
+      "triangles": 70,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R02.glb",
+      "thumbnail": "assets/thumbs/R02.png",
+      "role": "rock",
+      "sha256": "df10b3033ec34b8aae5b694ba2744072496ae03c7f8cdd82e42a3d9b90a4a854"
+    },
+    {
+      "id": "R03",
+      "name": "雪覆长岩",
+      "group": "rock",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        1.29571,
+        0.5382,
+        0.6512
+      ],
+      "triangles": 70,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R03.glb",
+      "thumbnail": "assets/thumbs/R03.png",
+      "role": "rock",
+      "sha256": "87e462ba933978f8de32b8e1575fd26efa9016e906524ea7c1a0c1f0f1926bcf"
+    },
+    {
+      "id": "R04",
+      "name": "雪覆双脊岩",
+      "group": "rock",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        1.40833,
+        1.29375,
+        0.76696
+      ],
+      "triangles": 140,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R04.glb",
+      "thumbnail": "assets/thumbs/R04.png",
+      "role": "rock",
+      "sha256": "0b86c3ab81b693a1c5220e8d83e115f5dcdad4c6c95ca7d2abad678aa0563c86"
+    },
+    {
+      "id": "R05",
+      "name": "厚身砂岩",
+      "group": "rock",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        0.95286,
+        0.7245,
+        0.8183
+      ],
+      "triangles": 56,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R05.glb",
+      "thumbnail": "assets/thumbs/R05.png",
+      "role": "rock",
+      "sha256": "29258162b834233d0a710e02f14c3ae6f658f8070a05377105a920b6b330e9c1"
+    },
+    {
+      "id": "R06",
+      "name": "砂岩立柱",
+      "group": "rock",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        0.79355,
+        1.5525,
+        0.75917
+      ],
+      "triangles": 56,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R06.glb",
+      "thumbnail": "assets/thumbs/R06.png",
+      "role": "rock",
+      "sha256": "d97991508ffe992c9a1e93bffe978b4c735c9ce1fc9c2816e7f52915490bfd15"
+    },
+    {
+      "id": "R07",
+      "name": "低平砂岩",
+      "group": "rock",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        1.33627,
+        0.5382,
+        0.71264
+      ],
+      "triangles": 56,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R07.glb",
+      "thumbnail": "assets/thumbs/R07.png",
+      "role": "rock",
+      "sha256": "29613e9bf0bbb6ccc397ecf062de32485b0d8871ae4fb3522e4b4745aaacfd89"
+    },
+    {
+      "id": "R08",
+      "name": "砂岩折脊",
+      "group": "rock",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        1.38574,
+        1.29375,
+        0.8407
+      ],
+      "triangles": 112,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R08.glb",
+      "thumbnail": "assets/thumbs/R08.png",
+      "role": "rock",
+      "sha256": "24a596775023cbaead567897b706546283bf5f6af2d9a83a97332cd837fa6ca7"
+    },
+    {
+      "id": "R09",
+      "name": "灰蓝卵岩",
+      "group": "rock",
+      "themes": [
+        "snow",
+        "autumn"
+      ],
+      "size": [
+        0.8781,
+        0.7245,
+        0.82622
+      ],
+      "triangles": 56,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R09.glb",
+      "thumbnail": "assets/thumbs/R09.png",
+      "role": "rock",
+      "sha256": "b3905b1106554eb14f038fb7592d877c8d3c28ad54cdb5ed90a46407dbaa27aa"
+    },
+    {
+      "id": "R10",
+      "name": "灰蓝立岩",
+      "group": "rock",
+      "themes": [
+        "snow",
+        "autumn"
+      ],
+      "size": [
+        0.78744,
+        1.5525,
+        0.76666
+      ],
+      "triangles": 56,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R10.glb",
+      "thumbnail": "assets/thumbs/R10.png",
+      "role": "rock",
+      "sha256": "d21a0ada1a7c9723010ffe1a61a2779eb90909655650b9c214eb3c9d8a82bccd"
+    },
+    {
+      "id": "R11",
+      "name": "灰蓝扁岩",
+      "group": "rock",
+      "themes": [
+        "snow",
+        "autumn"
+      ],
+      "size": [
+        1.28548,
+        0.5382,
+        0.6644
+      ],
+      "triangles": 56,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R11.glb",
+      "thumbnail": "assets/thumbs/R11.png",
+      "role": "rock",
+      "sha256": "0649b657c14ba3de6c2361295cfb0386c2813e068c0b791dc11b01bea38c1323"
+    },
+    {
+      "id": "R12",
+      "name": "灰蓝群峰",
+      "group": "rock",
+      "themes": [
+        "snow",
+        "autumn"
+      ],
+      "size": [
+        1.40491,
+        1.29375,
+        0.78281
+      ],
+      "triangles": 112,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R12.glb",
+      "thumbnail": "assets/thumbs/R12.png",
+      "role": "rock",
+      "sha256": "db0756adb1bc1dddff542ac551c6ff4a0587ee0745d40e9303fe78ac46796f56"
+    },
+    {
+      "id": "R13",
+      "name": "岸边礁石",
+      "group": "rock",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        0.93616,
+        0.7245,
+        0.83415
+      ],
+      "triangles": 56,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R13.glb",
+      "thumbnail": "assets/thumbs/R13.png",
+      "role": "rock",
+      "sha256": "7f1dbd5580418037972e67235b5a168891fe1e1efe894b2aab6d885f0ec7d5f9"
+    },
+    {
+      "id": "R14",
+      "name": "细高海蚀岩",
+      "group": "rock",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        0.78458,
+        1.5525,
+        0.77414
+      ],
+      "triangles": 56,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R14.glb",
+      "thumbnail": "assets/thumbs/R14.png",
+      "role": "rock",
+      "sha256": "33fe44bd68942b050373244360c92b00ba6d259736a9a66e5f8ea27edb5dfaaa"
+    },
+    {
+      "id": "R15",
+      "name": "低平礁石",
+      "group": "rock",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        1.35127,
+        0.5382,
+        0.67101
+      ],
+      "triangles": 56,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R15.glb",
+      "thumbnail": "assets/thumbs/R15.png",
+      "role": "rock",
+      "sha256": "890b3e472a7e6af5c1adeab4bbc3a49526fbeb834c1f4f93612775f3c54daae6"
+    },
+    {
+      "id": "R16",
+      "name": "狭长礁脊",
+      "group": "rock",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        1.38233,
+        1.29375,
+        0.85654
+      ],
+      "triangles": 112,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/R16.glb",
+      "thumbnail": "assets/thumbs/R16.png",
+      "role": "rock",
+      "sha256": "a62e3a787abe5fbdd3dacb5398b9cd2aab2167616f48f0ad095230568ccad0e8"
+    },
+    {
+      "id": "C01",
+      "name": "原木A字帐篷",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert"
+      ],
+      "size": [
+        2.19706,
+        1.55025,
+        1.72
+      ],
+      "triangles": 179,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C01.glb",
+      "thumbnail": "assets/thumbs/C01.png",
+      "role": "shelter",
+      "sha256": "ffb7b09719df2c6068d2a96f894f5ede55f99d264940a9a3b31bbc353526d4eb"
+    },
+    {
+      "id": "C02",
+      "name": "低矮覆雪帐篷",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert"
+      ],
+      "size": [
+        2.39706,
+        1.33561,
+        1.92
+      ],
+      "triangles": 181,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C02.glb",
+      "thumbnail": "assets/thumbs/C02.png",
+      "role": "shelter",
+      "sha256": "187fd35be041132add5912a3497004e7b6413874148b01f7dde0190c40d7964c"
+    },
+    {
+      "id": "C03",
+      "name": "尖顶小帐篷",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert"
+      ],
+      "size": [
+        1.99706,
+        1.75382,
+        1.60427
+      ],
+      "triangles": 165,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C03.glb",
+      "thumbnail": "assets/thumbs/C03.png",
+      "role": "shelter",
+      "sha256": "6dea72c1ea66c9587de06b27c8dc74217e6837cd40395248e1e6cc60a653fbb9"
+    },
+    {
+      "id": "C04",
+      "name": "单坡遮阳篷",
+      "group": "camp",
+      "themes": [
+        "autumn",
+        "desert"
+      ],
+      "size": [
+        2.29706,
+        1.40351,
+        1.47
+      ],
+      "triangles": 176,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C04.glb",
+      "thumbnail": "assets/thumbs/C04.png",
+      "role": "shelter",
+      "sha256": "857ede3e556dffa267f9797f22761318122c4eaec95b65a845a3c85009b825da"
+    },
+    {
+      "id": "C05",
+      "name": "带根树桩",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        1.08758,
+        0.4863,
+        1.13044
+      ],
+      "triangles": 136,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C05.glb",
+      "thumbnail": "assets/thumbs/C05.png",
+      "role": "seat",
+      "sockets": {
+        "seat": [
+          -0.03837,
+          0.4838,
+          -0.0001
+        ]
+      },
+      "sha256": "d18d45b7a79e7d48e41e05fb5a911f0f081bdc1ea99aba3217d8cc05e3f76be2"
+    },
+    {
+      "id": "C06",
+      "name": "横放原木",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        1.216,
+        0.44,
+        0.44
+      ],
+      "triangles": 64,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C06.glb",
+      "thumbnail": "assets/thumbs/C06.png",
+      "role": "seat",
+      "sockets": {
+        "seat": [
+          -0.008,
+          0.46,
+          0
+        ]
+      },
+      "sha256": "09c6080ec8d2a03b9b6362d7e9077d1aa0ce44d796fe3deb7acaa94f999c3fa7"
+    },
+    {
+      "id": "C07",
+      "name": "木板长凳",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        1.35,
+        0.48,
+        0.42
+      ],
+      "triangles": 36,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C07.glb",
+      "thumbnail": "assets/thumbs/C07.png",
+      "role": "seat",
+      "sockets": {
+        "seat": [
+          0,
+          0.46,
+          0
+        ]
+      },
+      "sha256": "615a9795399492d3638e4055ca40216b557a0dced413864cfe028b3513d612e3"
+    },
+    {
+      "id": "C08",
+      "name": "平顶坐石",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.96519,
+        0.4575,
+        0.64417
+      ],
+      "triangles": 88,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C08.glb",
+      "thumbnail": "assets/thumbs/C08.png",
+      "role": "seat",
+      "sockets": {
+        "seat": [
+          -0.03704,
+          0.46,
+          -0.00749
+        ]
+      },
+      "sha256": "d69e327e311ebec1e1cdbc4fb3bf011f467331b2ed9cdb3a5f50f94a005d3c17"
+    },
+    {
+      "id": "C09",
+      "name": "八石交柴火塘",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert"
+      ],
+      "size": [
+        1.24923,
+        0.31858,
+        1.24924
+      ],
+      "triangles": 222,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C09.glb",
+      "thumbnail": "assets/thumbs/C09.png",
+      "role": "fire",
+      "sockets": {
+        "flame": [
+          0,
+          0.2276,
+          0
+        ]
+      },
+      "motion": "runtime_flame_not_baked",
+      "sha256": "8ed1b7c0949245f6d4a2846ddbe55b84bde9a304f445c8920de2f3586f60c837"
+    },
+    {
+      "id": "C10",
+      "name": "六石小火塘",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert"
+      ],
+      "size": [
+        1.14923,
+        0.34295,
+        1.07942
+      ],
+      "triangles": 196,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C10.glb",
+      "thumbnail": "assets/thumbs/C10.png",
+      "role": "fire",
+      "sockets": {
+        "flame": [
+          0,
+          0.2276,
+          1e-05
+        ]
+      },
+      "motion": "runtime_flame_not_baked",
+      "sha256": "3c0f3849b49a4bacfda90577b49c9d057332aaee4dc70c66a5157dc2887b32ee"
+    },
+    {
+      "id": "C11",
+      "name": "平铺炭木火塘",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert"
+      ],
+      "size": [
+        1.29853,
+        0.3672,
+        1.31855
+      ],
+      "triangles": 242,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C11.glb",
+      "thumbnail": "assets/thumbs/C11.png",
+      "role": "fire",
+      "sockets": {
+        "flame": [
+          -0.00535,
+          0.2276,
+          0
+        ]
+      },
+      "motion": "runtime_flame_not_baked",
+      "sha256": "cae2e7a1f29e58d4dfb0f7e2190011f82eda54b2cb13fb256bc7e46fc309a6fc"
+    },
+    {
+      "id": "C12",
+      "name": "低垒椭圆火塘",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert"
+      ],
+      "size": [
+        1.14784,
+        0.39135,
+        1.17734
+      ],
+      "triangles": 216,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C12.glb",
+      "thumbnail": "assets/thumbs/C12.png",
+      "role": "fire",
+      "sockets": {
+        "flame": [
+          -0.01069,
+          0.2276,
+          0
+        ]
+      },
+      "motion": "runtime_flame_not_baked",
+      "sha256": "d0a15373d89d508b7ec3047f287848c82b8c88cf2bdcb83fed20276ea6239190"
+    },
+    {
+      "id": "C13",
+      "name": "六角提灯",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.27713,
+        0.50211,
+        0.32
+      ],
+      "triangles": 160,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C13.glb",
+      "thumbnail": "assets/thumbs/C13.png",
+      "role": "lamp",
+      "motion": "runtime_light",
+      "sha256": "5cfaf9003201c6c0f156dba786803a42acfcd06f54c064d2eb3b20c85de8c660"
+    },
+    {
+      "id": "C14",
+      "name": "方框木灯",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.31198,
+        0.55983,
+        0.30416
+      ],
+      "triangles": 192,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C14.glb",
+      "thumbnail": "assets/thumbs/C14.png",
+      "role": "lamp",
+      "motion": "runtime_light",
+      "sha256": "4f0296639039867f2e776125fec5aa2843ba3567189de112acf387e979d19fb6"
+    },
+    {
+      "id": "C15",
+      "name": "矮身油灯",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.32,
+        0.44436,
+        0.32
+      ],
+      "triangles": 176,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C15.glb",
+      "thumbnail": "assets/thumbs/C15.png",
+      "role": "lamp",
+      "motion": "runtime_light",
+      "sha256": "bcf9b8dcb50da49c8f5d32f6ee0a7718474ba25d427298d13b72da8bd87829aa"
+    },
+    {
+      "id": "C16",
+      "name": "高柄营灯",
+      "group": "camp",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.31514,
+        0.65217,
+        0.31035
+      ],
+      "triangles": 184,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/C16.glb",
+      "thumbnail": "assets/thumbs/C16.png",
+      "role": "lamp",
+      "motion": "runtime_light",
+      "sha256": "a2ead5ce5fd6fd7a81a7fd32732eb2b41e801e8ea388349c6aaa2d403bb6d1ea"
+    },
+    {
+      "id": "H01",
+      "name": "窄木码头",
+      "group": "harbor",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        1.34499,
+        0.75,
+        2.975
+      ],
+      "triangles": 392,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/H01.glb",
+      "thumbnail": "assets/thumbs/H01.png",
+      "role": "dock",
+      "sockets": {
+        "stand": [
+          0,
+          0.58,
+          0.225
+        ]
+      },
+      "sha256": "488c8893f42abe33a2c5619b8bf9d85eb9feaad0a5558bcfac76d4a6f281c888"
+    },
+    {
+      "id": "H02",
+      "name": "L形小码头",
+      "group": "harbor",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        2.93249,
+        0.75,
+        2.475
+      ],
+      "triangles": 416,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/H02.glb",
+      "thumbnail": "assets/thumbs/H02.png",
+      "role": "dock",
+      "sockets": {
+        "stand": [
+          -0.31875,
+          0.58,
+          0.225
+        ]
+      },
+      "sha256": "991518819b490f131ac0a25270b39324901aa4e82279e2d7319cc51a0da8ded4"
+    },
+    {
+      "id": "H03",
+      "name": "绳栏码头",
+      "group": "harbor",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        1.54499,
+        0.76895,
+        2.6125
+      ],
+      "triangles": 392,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/H03.glb",
+      "thumbnail": "assets/thumbs/H03.png",
+      "role": "dock",
+      "sockets": {
+        "stand": [
+          0,
+          0.58,
+          0.25625
+        ]
+      },
+      "sha256": "3ac6204ea22c51aab81d9779a0fb4559155c3216590d8a3e4f298b3332a6206e"
+    },
+    {
+      "id": "H04",
+      "name": "宽头停泊台",
+      "group": "harbor",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        2.86499,
+        0.75,
+        2.225
+      ],
+      "triangles": 404,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/H04.glb",
+      "thumbnail": "assets/thumbs/H04.png",
+      "role": "dock",
+      "sockets": {
+        "stand": [
+          -0.31,
+          0.58,
+          0.25
+        ]
+      },
+      "sha256": "18ece9efce40e3abd2cf8429150f823aedfc0359f1891504c75806ad7e738dde"
+    },
+    {
+      "id": "H05",
+      "name": "双桨小木舟",
+      "group": "harbor",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        1.04447,
+        0.30378,
+        1.54774
+      ],
+      "triangles": 139,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/H05.glb",
+      "thumbnail": "assets/thumbs/H05.png",
+      "role": "boat",
+      "motion": "bob",
+      "sha256": "1547d9b1be7a74df8c50eeeca4f351baecde5a44315a824417cdc057a924c293"
+    },
+    {
+      "id": "H06",
+      "name": "单帆小船",
+      "group": "harbor",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        1.08589,
+        1.5,
+        1.69952
+      ],
+      "triangles": 152,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/H06.glb",
+      "thumbnail": "assets/thumbs/H06.png",
+      "role": "boat",
+      "motion": "bob",
+      "sha256": "502605b247cfc7187ae84b54464fe29759c3c09dc8d48a05c1f674a1323fef53"
+    },
+    {
+      "id": "H07",
+      "name": "遮篷货舟",
+      "group": "harbor",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        1.11795,
+        1.5,
+        1.70009
+      ],
+      "triangles": 168,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/H07.glb",
+      "thumbnail": "assets/thumbs/H07.png",
+      "role": "boat",
+      "motion": "bob",
+      "sha256": "87c3092316f904021d44d9612079bcd7ab71572e5e2d0ab091a91f472816c69c"
+    },
+    {
+      "id": "H08",
+      "name": "狭长独木舟",
+      "group": "harbor",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        0.82425,
+        0.30378,
+        1.69651
+      ],
+      "triangles": 139,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/H08.glb",
+      "thumbnail": "assets/thumbs/H08.png",
+      "role": "boat",
+      "motion": "bob",
+      "sha256": "435300211e5072e44b9d84c9d343277c835b365ee3bbbaead97622abdface466"
+    },
+    {
+      "id": "H09",
+      "name": "双系缆木桩",
+      "group": "harbor",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        0.62624,
+        0.74,
+        0.14257
+      ],
+      "triangles": 80,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/H09.glb",
+      "thumbnail": "assets/thumbs/H09.png",
+      "role": "dock_prop",
+      "sha256": "55394ac1e88401f92df254bc80ded465e04739cf2ec01f6b1cd56e8603dd3ee7"
+    },
+    {
+      "id": "H10",
+      "name": "木箱货垛",
+      "group": "harbor",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        0.75,
+        0.585,
+        0.491
+      ],
+      "triangles": 108,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/H10.glb",
+      "thumbnail": "assets/thumbs/H10.png",
+      "role": "dock_prop",
+      "sha256": "ad2b5b9f5b634b03c00a409ba137d5dc29880f48ee64a68a94e7583bf60d8e65"
+    },
+    {
+      "id": "H11",
+      "name": "鱼篓与短桩",
+      "group": "harbor",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        0.6226,
+        0.6,
+        0.44
+      ],
+      "triangles": 108,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/H11.glb",
+      "thumbnail": "assets/thumbs/H11.png",
+      "role": "dock_prop",
+      "sha256": "63e85470807d23894659b13210415f5a43607ceff98efacb4eef3c5377e050f3"
+    },
+    {
+      "id": "H12",
+      "name": "岸边绳栏",
+      "group": "harbor",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        1.20392,
+        0.8,
+        0.12
+      ],
+      "triangles": 96,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/H12.glb",
+      "thumbnail": "assets/thumbs/H12.png",
+      "role": "dock_prop",
+      "sha256": "9167d32b414a98499f51cbf140593db69c72167b938b349e642c750844d659cd"
+    },
+    {
+      "id": "V01",
+      "name": "枯金草簇",
+      "group": "vegetation",
+      "themes": [
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.43693,
+        0.3108,
+        0.4579
+      ],
+      "triangles": 20,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/V01.glb",
+      "thumbnail": "assets/thumbs/V01.png",
+      "role": "detail",
+      "sha256": "7070f1ace7ccdbbb0329a9fe2f1191a8c49c40abd60c261ffd4ac2d55cfe93ef"
+    },
+    {
+      "id": "V02",
+      "name": "霜白短草",
+      "group": "vegetation",
+      "themes": [
+        "snow"
+      ],
+      "size": [
+        0.45541,
+        0.3108,
+        0.43969
+      ],
+      "triangles": 20,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/V02.glb",
+      "thumbnail": "assets/thumbs/V02.png",
+      "role": "detail",
+      "sha256": "f7d03a9e18ad59eba3eb0fcf8ec1c255a062ed868241447f8e3ad4e500ee653b"
+    },
+    {
+      "id": "V03",
+      "name": "绿洲长叶",
+      "group": "vegetation",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        0.43787,
+        0.5106,
+        0.45512
+      ],
+      "triangles": 20,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/V03.glb",
+      "thumbnail": "assets/thumbs/V03.png",
+      "role": "detail",
+      "sha256": "906c27bacd0d9dbb5d591f4a48ed6c815841ce8eec9623a5b44630e18bda797e"
+    },
+    {
+      "id": "V04",
+      "name": "橘叶矮灌丛",
+      "group": "vegetation",
+      "themes": [
+        "autumn"
+      ],
+      "size": [
+        0.79654,
+        0.4814,
+        0.6229
+      ],
+      "triangles": 60,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/V04.glb",
+      "thumbnail": "assets/thumbs/V04.png",
+      "role": "detail",
+      "sha256": "b8dde3d153794b9cbb5dbee314312b960992cf51242b023f18597678b34e544c"
+    },
+    {
+      "id": "V05",
+      "name": "深绿矮灌丛",
+      "group": "vegetation",
+      "themes": [
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.79654,
+        0.4814,
+        0.6229
+      ],
+      "triangles": 60,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/V05.glb",
+      "thumbnail": "assets/thumbs/V05.png",
+      "role": "detail",
+      "sha256": "ee60d7997bfe87d9dc3ce35cacbfba5b892128648ee11012ee87cf77f530bdf7"
+    },
+    {
+      "id": "V06",
+      "name": "海岸圆灌丛",
+      "group": "vegetation",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        0.79654,
+        0.4814,
+        0.6229
+      ],
+      "triangles": 60,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/V06.glb",
+      "thumbnail": "assets/thumbs/V06.png",
+      "role": "detail",
+      "sha256": "93ced157efba87b4acde0edd71cdc79eb67e89ccac329266a06adfe42afba2b6"
+    },
+    {
+      "id": "V07",
+      "name": "白色小花簇",
+      "group": "vegetation",
+      "themes": [
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.40921,
+        0.4118,
+        0.15684
+      ],
+      "triangles": 402,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/V07.glb",
+      "thumbnail": "assets/thumbs/V07.png",
+      "role": "detail",
+      "sha256": "8a4cfc6096b3fd1e97b7988e88dd2992c10982a4ab9aac68af744b008295400b"
+    },
+    {
+      "id": "V08",
+      "name": "黄色小花簇",
+      "group": "vegetation",
+      "themes": [
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.40921,
+        0.4118,
+        0.15684
+      ],
+      "triangles": 402,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/V08.glb",
+      "thumbnail": "assets/thumbs/V08.png",
+      "role": "detail",
+      "sha256": "5e8aeffeaba771e2a92c2d37ddf64606a8d671d11f320554d31a217750685ba5"
+    },
+    {
+      "id": "V09",
+      "name": "发芽土豆花",
+      "group": "vegetation",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        0.54226,
+        0.41797,
+        0.24221
+      ],
+      "triangles": 442,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/V09.glb",
+      "thumbnail": "assets/thumbs/V09.png",
+      "role": "detail",
+      "sha256": "a39d666d73389bc6a84db7b9ebe965fde58774eec9c353ee0153dd66ae6addc6"
+    },
+    {
+      "id": "V10",
+      "name": "三石小堆",
+      "group": "vegetation",
+      "themes": [
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.5872,
+        0.23805,
+        0.28915
+      ],
+      "triangles": 168,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/V10.glb",
+      "thumbnail": "assets/thumbs/V10.png",
+      "role": "detail",
+      "sha256": "561a21e60160f29e1c37b13ef3626478bfe1eab358fabb9142d77dc2b3227d13"
+    },
+    {
+      "id": "V11",
+      "name": "扇形落叶簇",
+      "group": "vegetation",
+      "themes": [
+        "autumn"
+      ],
+      "size": [
+        0.54304,
+        0.01985,
+        0.57081
+      ],
+      "triangles": 20,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/V11.glb",
+      "thumbnail": "assets/thumbs/V11.png",
+      "role": "detail",
+      "sha256": "24e9f3ea4132da3f5fd571e10f9e77e0073938a7dde6361199a596a874ae4cd8"
+    },
+    {
+      "id": "V12",
+      "name": "矮芦苇簇",
+      "group": "vegetation",
+      "themes": [
+        "harbor"
+      ],
+      "size": [
+        0.29266,
+        0.52064,
+        0.03618
+      ],
+      "triangles": 128,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/V12.glb",
+      "thumbnail": "assets/thumbs/V12.png",
+      "role": "detail",
+      "sha256": "9346b5931b47af52c1ee67414b1b87a7945c9fc9ab5b7cf611224800333398e8"
+    },
+    {
+      "id": "P01",
+      "name": "双向木路牌",
+      "group": "prop",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.78757,
+        1,
+        0.085
+      ],
+      "triangles": 36,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/P01.glb",
+      "thumbnail": "assets/thumbs/P01.png",
+      "role": "prop",
+      "sha256": "4bc599ec4d3ba284417481d8659c76fdd6b8e430cd49b6ded1313b741bbbbf37"
+    },
+    {
+      "id": "P02",
+      "name": "古道红旗",
+      "group": "prop",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.7,
+        1.6,
+        0.105
+      ],
+      "triangles": 42,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/P02.glb",
+      "thumbnail": "assets/thumbs/P02.png",
+      "role": "prop",
+      "sha256": "bae91fe6dcfc0c8efa28ec4a9e8ade86e762abc43c21a1ce607297332d297879"
+    },
+    {
+      "id": "P03",
+      "name": "旅行背包",
+      "group": "prop",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.36,
+        0.53732,
+        0.3125
+      ],
+      "triangles": 84,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/P03.glb",
+      "thumbnail": "assets/thumbs/P03.png",
+      "role": "prop",
+      "sha256": "0d3f15be89097f5ac7bc02f84304d29537a1e228a47da25f27711d688ba3220b"
+    },
+    {
+      "id": "P04",
+      "name": "捆扎铺盖卷",
+      "group": "prop",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.54,
+        0.27575,
+        0.27156
+      ],
+      "triangles": 108,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/P04.glb",
+      "thumbnail": "assets/thumbs/P04.png",
+      "role": "prop",
+      "sha256": "bebfc012f2150e477be1681352d25dc72c24e6c43036667506a52e08f455c418"
+    },
+    {
+      "id": "P05",
+      "name": "十字板木箱",
+      "group": "prop",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.48,
+        0.48,
+        0.519
+      ],
+      "triangles": 48,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/P05.glb",
+      "thumbnail": "assets/thumbs/P05.png",
+      "role": "prop",
+      "sha256": "772067a2c6a53e253afc61a468113d5804095096c1f4892c0c9bbb3366074dbf"
+    },
+    {
+      "id": "P06",
+      "name": "茶壶与杯",
+      "group": "prop",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.61937,
+        0.4037,
+        0.32409
+      ],
+      "triangles": 132,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/P06.glb",
+      "thumbnail": "assets/thumbs/P06.png",
+      "role": "prop",
+      "sha256": "05fc24381892865e0b0d4c1bf5c1530fd0c059022101e4c816a0c80e70a0435b"
+    },
+    {
+      "id": "P07",
+      "name": "叠石路标",
+      "group": "prop",
+      "themes": [
+        "snow",
+        "autumn",
+        "desert",
+        "harbor"
+      ],
+      "size": [
+        0.45293,
+        0.61162,
+        0.34026
+      ],
+      "triangles": 80,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/P07.glb",
+      "thumbnail": "assets/thumbs/P07.png",
+      "role": "prop",
+      "sha256": "0375dd84bbea5338594a0618ea451e4e5a4e84d3c5491e05a736df84d2dcda3f"
+    },
+    {
+      "id": "P08",
+      "name": "简化砂岩门",
+      "group": "prop",
+      "themes": [
+        "desert"
+      ],
+      "size": [
+        1.67,
+        1.97,
+        0.4
+      ],
+      "triangles": 156,
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "file": "assets/glb/P08.glb",
+      "thumbnail": "assets/thumbs/P08.png",
+      "role": "ruin",
+      "sha256": "7ddd23ee14c4eaa0ba1add0b111e4a506c9d35226b2a9c0c4bb72f3be732167e"
+    },
+    {
+      "id": "S01",
+      "name": "雪峰营地",
+      "group": "scenery",
+      "themes": [
+        "snow"
+      ],
+      "role": "landmark",
+      "description": "三座错落雪峰与低矮岩鞍，前方留出扎营空地；高峰明确建立背部轮廓。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.74825,
+        4.6881,
+        2.94558
+      ],
+      "triangles": 498,
+      "file": "assets/glb/S01.glb",
+      "thumbnail": "assets/thumbs/S01.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "camp",
+      "access": "ground",
+      "sha256": "977f951747009f95fd651df9c3198ea4a67a234e3c2ef6c605270176e71631c8"
+    },
+    {
+      "id": "S02",
+      "name": "灯塔海角",
+      "group": "scenery",
+      "themes": [
+        "harbor"
+      ],
+      "role": "landmark",
+      "description": "带红色环带的八角灯塔立在礁台上；附小屋、护栏、前侧登岸平台。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.7945,
+        4.405,
+        4.05892
+      ],
+      "triangles": 1576,
+      "file": "assets/glb/S02.glb",
+      "thumbnail": "assets/thumbs/S02.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "coastal",
+      "access": "socket",
+      "sockets": {
+        "stand": [
+          0.08988,
+          0.3,
+          1.70446
+        ]
+      },
+      "effect_points": [
+        {
+          "type": "lamp",
+          "position": [
+            -0.51012,
+            3.71,
+            -0.69554
+          ]
+        }
+      ],
+      "sha256": "c3a44f390127f553bcfa868934879f63d3e49b1c48cb385020f1dbfd4fd07925"
+    },
+    {
+      "id": "S03",
+      "name": "风车草丘",
+      "group": "scenery",
+      "themes": [
+        "autumn"
+      ],
+      "role": "landmark",
+      "description": "带可旋转四叶木帆的白墙风车，草坡基座与通往门口的石阶。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        3.63584,
+        4.02432,
+        3.04407
+      ],
+      "triangles": 670,
+      "file": "assets/glb/S03.glb",
+      "thumbnail": "assets/thumbs/S03.png",
+      "runtime_parts": [
+        {
+          "name": "windmill_sails",
+          "start_triangle": 190,
+          "triangle_count": 272,
+          "pivot": [
+            -0.02802,
+            2.48,
+            0.22454
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "speed_rad_s": 0.22
+        }
+      ],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "sha256": "5b5df248a5d70a3c2eab2865fc2b872b96a2d38a9a55600bc9fb1dcfcea5dc80"
+    },
+    {
+      "id": "S04",
+      "name": "绿洲商站",
+      "group": "scenery",
+      "themes": [
+        "desert"
+      ],
+      "role": "landmark",
+      "description": "明亮小绿洲、棕榈与条纹商棚形成一个完整停靠点，不依赖远景城市。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        5.29781,
+        2.95835,
+        4.28672
+      ],
+      "triangles": 863,
+      "file": "assets/glb/S04.glb",
+      "thumbnail": "assets/thumbs/S04.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "camp",
+      "access": "ground",
+      "sha256": "29d6f438047ddd34bc133a1cfa8058e39c4a9c2124a6b5b8166414433e0a712c"
+    },
+    {
+      "id": "S05",
+      "name": "瀑布崖台",
+      "group": "scenery",
+      "themes": [
+        "autumn"
+      ],
+      "role": "landmark",
+      "description": "双崖夹住一条落差明确的折面瀑布，下接水潭和白色泡沫块。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        5.26505,
+        3.8703,
+        3.89193
+      ],
+      "triangles": 1125,
+      "file": "assets/glb/S05.glb",
+      "thumbnail": "assets/thumbs/S05.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "sha256": "350f3406ce764ce7275b6db38f6170f90a3a7764e40513355d10fde9c98b1725"
+    },
+    {
+      "id": "S06",
+      "name": "断桥溪谷",
+      "group": "scenery",
+      "themes": [
+        "autumn"
+      ],
+      "role": "landmark",
+      "description": "双层峡谷和两段断桥，桥板断口可读，水流穿过真正的崖间空隙。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.66306,
+        2.68925,
+        3.86214
+      ],
+      "triangles": 1067,
+      "file": "assets/glb/S06.glb",
+      "thumbnail": "assets/thumbs/S06.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "sha256": "b6e31900b720633d7bbced7c37a7b35d1776783bd3464fd85730147481d8015f"
+    },
+    {
+      "id": "S07",
+      "name": "石门古驿",
+      "group": "scenery",
+      "themes": [
+        "desert"
+      ],
+      "role": "landmark",
+      "description": "厚重的直梁砂岩门，残墙、石阶与褪色红幡构成古驿入口。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.46,
+        2.84409,
+        3.18501
+      ],
+      "triangles": 564,
+      "file": "assets/glb/S07.glb",
+      "thumbnail": "assets/thumbs/S07.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "camp",
+      "access": "ground",
+      "sha256": "9b36d7a953e7b54ea106ac5c242b1e48cb5cf2d890c4d1ab2f19d8d557d45418"
+    },
+    {
+      "id": "S08",
+      "name": "孤塔烽燧",
+      "group": "scenery",
+      "themes": [
+        "desert"
+      ],
+      "role": "landmark",
+      "description": "有木构瞭望台和顶层火盆的锥形石塔，背靠红岩形成高低对照。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.10302,
+        3.48858,
+        3.02541
+      ],
+      "triangles": 672,
+      "file": "assets/glb/S08.glb",
+      "thumbnail": "assets/thumbs/S08.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "effect_points": [
+        {
+          "type": "flame",
+          "position": [
+            0.4287,
+            3.34,
+            -0.26544
+          ]
+        }
+      ],
+      "sha256": "bde2ad9abfb0f07ff9805cf1a303f28e739a2c8cd90278cfc317a14bf5177fca"
+    },
+    {
+      "id": "S09",
+      "name": "悬崖神龛",
+      "group": "scenery",
+      "themes": [
+        "autumn"
+      ],
+      "role": "landmark",
+      "description": "石壁内的小神龛、木檐和折返台阶，石像是简化原创无名坐像。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.48934,
+        3.73541,
+        3.40154
+      ],
+      "triangles": 1116,
+      "file": "assets/glb/S09.glb",
+      "thumbnail": "assets/thumbs/S09.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "sha256": "d7045d25072dbda708c028e414f7ff958903a13e4183493e5aedc0f53cc84919"
+    },
+    {
+      "id": "S10",
+      "name": "花树牧场",
+      "group": "scenery",
+      "themes": [
+        "autumn"
+      ],
+      "role": "landmark",
+      "description": "桃粉色盛开的树冠覆盖一小片带木篱笆的草地，附一只静态低模羊。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.40504,
+        3.651,
+        3.33892
+      ],
+      "triangles": 1926,
+      "file": "assets/glb/S10.glb",
+      "thumbnail": "assets/thumbs/S10.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "sha256": "ee86c3437e4e2143ce9983e6a138f4971a5733fbc20d19858bb867029ffc0128"
+    },
+    {
+      "id": "S11",
+      "name": "红岩峡谷",
+      "group": "scenery",
+      "themes": [
+        "desert"
+      ],
+      "role": "landmark",
+      "description": "层理清晰的四座红岩桌山，弯曲沙路从主体间穿过，避免只有小石块。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        5.26675,
+        3.80885,
+        3.49119
+      ],
+      "triangles": 946,
+      "file": "assets/glb/S11.glb",
+      "thumbnail": "assets/thumbs/S11.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "sha256": "603d49ea037f0d7af9a15f34f8e6e1905517feec62df2d4687cef105426be141"
+    },
+    {
+      "id": "S12",
+      "name": "冰湖木屋",
+      "group": "scenery",
+      "themes": [
+        "snow"
+      ],
+      "role": "landmark",
+      "description": "雪覆屋顶、暖窗木屋与结冰小湖，木平台在湖沿，冰面为不透明折面。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.90157,
+        2.6518,
+        4.25677
+      ],
+      "triangles": 1353,
+      "file": "assets/glb/S12.glb",
+      "thumbnail": "assets/thumbs/S12.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "sha256": "b413e26ddfed21e320ac654bf65961899c7a710805e1ae7006dba57bab64dc3e"
+    },
+    {
+      "id": "S13",
+      "name": "石拱遗迹",
+      "group": "scenery",
+      "themes": [
+        "autumn"
+      ],
+      "role": "landmark",
+      "description": "独立拱券、断柱与低矮残墙；拱洞真实通透而非一块贴图。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.55495,
+        2.7084,
+        3.15348
+      ],
+      "triangles": 674,
+      "file": "assets/glb/S13.glb",
+      "thumbnail": "assets/thumbs/S13.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "camp",
+      "access": "ground",
+      "sha256": "06a281ca6da6db0415b15711404f315692dcdf781225ddd8c029f323f53ab3ba"
+    },
+    {
+      "id": "S14",
+      "name": "热泉石谷",
+      "group": "scenery",
+      "themes": [
+        "autumn"
+      ],
+      "role": "landmark",
+      "description": "蓝绿色温泉、小瀑与环抱岩壁；水体自带岩盆，避免把水片铺在草地上。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.87344,
+        2.18078,
+        3.5695
+      ],
+      "triangles": 835,
+      "file": "assets/glb/S14.glb",
+      "thumbnail": "assets/thumbs/S14.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "sha256": "30d45dc965fe4718c3d7bd67717aee662c6b68db71a09b251fefd0ab1788d11a"
+    },
+    {
+      "id": "S15",
+      "name": "山寺台地",
+      "group": "scenery",
+      "themes": [
+        "autumn"
+      ],
+      "role": "landmark",
+      "description": "两层岩台承托小亭祠，台阶形成从近处向上看的路线。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.92091,
+        4.05,
+        3.69512
+      ],
+      "triangles": 1244,
+      "file": "assets/glb/S15.glb",
+      "thumbnail": "assets/thumbs/S15.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "sha256": "3ffe9a40f01713bc5946a108c38e4b25c17c743d06354a7c5cf3a3b743fc9653"
+    },
+    {
+      "id": "S16",
+      "name": "观星高台",
+      "group": "scenery",
+      "themes": [
+        "autumn"
+      ],
+      "role": "landmark",
+      "description": "岩台上的木平台与可辨认的望远镜；包含稳定站位与一段石阶。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.32494,
+        2.85425,
+        3.15903
+      ],
+      "triangles": 830,
+      "file": "assets/glb/S16.glb",
+      "thumbnail": "assets/thumbs/S16.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "sha256": "f6c89b865b8063bcd9a86d6d4cb46faac7eac49fde49f52d463297251e0a9386"
+    },
+    {
+      "id": "S17",
+      "name": "盐湖小站",
+      "group": "scenery",
+      "themes": [
+        "harbor"
+      ],
+      "role": "landmark",
+      "description": "木桩撑起的浅色小屋和码头，自带盐壳浅滩；不是孤零零一艘船。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.65846,
+        2.7136,
+        3.40986
+      ],
+      "triangles": 1417,
+      "file": "assets/glb/S17.glb",
+      "thumbnail": "assets/thumbs/S17.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "coastal",
+      "access": "socket",
+      "sockets": {
+        "stand": [
+          0.98587,
+          0.475,
+          1.25493
+        ]
+      },
+      "sha256": "4e158e77dbef5cdb267ab2696a9f64ea844f73f4a37133e6790a6e5498f3d7bf"
+    },
+    {
+      "id": "S18",
+      "name": "月门沙丘",
+      "group": "scenery",
+      "themes": [
+        "desert"
+      ],
+      "role": "landmark",
+      "description": "环形石门与两侧起伏沙丘，完整圆孔保持通透；附一株风蚀枯木。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.6364,
+        3.33995,
+        3.27343
+      ],
+      "triangles": 550,
+      "file": "assets/glb/S18.glb",
+      "thumbnail": "assets/thumbs/S18.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "sha256": "de7d094d9ec6fd91d5941495f7122d8b3331b238fe312edb195f7311b5726d0e"
+    },
+    {
+      "id": "S19",
+      "name": "梯田山村",
+      "group": "scenery",
+      "themes": [
+        "autumn"
+      ],
+      "role": "landmark",
+      "description": "三层绿色梯田、金色田埂、石阶与一间小屋，地形本身就是主景。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.87754,
+        3.3098,
+        3.90479
+      ],
+      "triangles": 2264,
+      "file": "assets/glb/S19.glb",
+      "thumbnail": "assets/thumbs/S19.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "look",
+      "access": "ground",
+      "sha256": "c42e36bd2dd154d87b255907c719ff6d02f3d2dc2b3307c7a644050be56d4dcd"
+    },
+    {
+      "id": "S20",
+      "name": "海崖风亭",
+      "group": "scenery",
+      "themes": [
+        "harbor"
+      ],
+      "role": "landmark",
+      "description": "折面海崖上的小风亭与偏斜松树，蓝色潮池包围崖脚，并有前侧安全站台。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "size": [
+        4.72687,
+        3.64214,
+        3.9218
+      ],
+      "triangles": 1383,
+      "file": "assets/glb/S20.glb",
+      "thumbnail": "assets/thumbs/S20.png",
+      "runtime_parts": [],
+      "source": "Original procedural mesh authored for this project; references are composition inspiration, not copied geometry.",
+      "composition": "coastal",
+      "access": "socket",
+      "sockets": {
+        "stand": [
+          0.43658,
+          0.40214,
+          1.52527
+        ]
+      },
+      "sha256": "b44e5ef2bae3d5917c0486616befdd40b176209a9f55c294d3ceb190e290dc98"
+    },
+    {
+      "id": "S21",
+      "name": "古罗马城 · 拱廊广场",
+      "city": "古罗马城",
+      "slug": "rome_forum",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "ruin",
+      "description": "三孔石拱、柱廊和小广场；不复制某一座真实凯旋门。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.295,
+        2.345,
+        3.16
+      ],
+      "triangles": 1386,
+      "file": "assets/glb/S21.glb",
+      "thumbnail": "assets/thumbs/S21.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 996,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0.0225,
+          0,
+          1.58
+        ],
+        "stand": [
+          0.0225,
+          0,
+          1.73
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "b0d5cb139f70ef153bf98c4a415ee7779002566a098eb04ffef9941010a4e531"
+    },
+    {
+      "id": "S22",
+      "name": "君士坦丁堡 · 穹顶城丘",
+      "city": "君士坦丁堡",
+      "slug": "constantinople_dome",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "hill",
+      "description": "中央大穹顶、半穹与扶壁组成山丘建筑。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        3.875,
+        3.2557,
+        3.2
+      ],
+      "triangles": 2060,
+      "file": "assets/glb/S22.glb",
+      "thumbnail": "assets/thumbs/S22.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "glow",
+          "start_triangle": 1394,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 1442,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1664,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1886,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0,
+          0,
+          1.6
+        ],
+        "stand": [
+          0,
+          0,
+          1.75
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "3be33160952b2eb2a95404834fdeebfb50e275e808e39e5e0ae29370fd0349dd"
+    },
+    {
+      "id": "S23",
+      "name": "开罗 · 河畔方尖碑",
+      "city": "开罗",
+      "slug": "cairo_quay",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "shore",
+      "description": "双塔门、方尖碑与河畔台阶，水面由外部地块衔接。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.27,
+      "size": [
+        3.973746,
+        3.43,
+        4.333694
+      ],
+      "triangles": 594,
+      "file": "assets/glb/S23.glb",
+      "thumbnail": "assets/thumbs/S23.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 224,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0.086873,
+          0.27,
+          2.173847
+        ],
+        "stand": [
+          0.086873,
+          0.53,
+          1.803847
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "effect_points": [],
+      "sha256": "dad90d67260ac68beef85fbb3cf0434bb44df88dce69fcef5fa8e6fd081d1ca6"
+    },
+    {
+      "id": "S24",
+      "name": "吉达 · 红海商馆",
+      "city": "吉达",
+      "slug": "jeddah_house",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "shore",
+      "description": "白色商馆、高低错落的木窗格与临海门廊。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.31,
+      "size": [
+        3.513746,
+        3.32,
+        4.052695
+      ],
+      "triangles": 1512,
+      "file": "assets/glb/S24.glb",
+      "thumbnail": "assets/thumbs/S24.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 120,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 240,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0.106873,
+          0.31,
+          2.026347
+        ],
+        "stand": [
+          0.106873,
+          0.31,
+          2.176347
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "42c293df8654c28d4981f11303ef61b06faef68be0661cc4b672f8dcc6c6945d"
+    },
+    {
+      "id": "S25",
+      "name": "阿丹国 · 火山岩港",
+      "city": "阿丹国",
+      "slug": "aden_volcanic_port",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "headland",
+      "description": "赤褐岩壁围住一座小海港，石塔与岸边栈台。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.29,
+      "size": [
+        3.955474,
+        3.59,
+        3.745057
+      ],
+      "triangles": 801,
+      "file": "assets/glb/S25.glb",
+      "thumbnail": "assets/thumbs/S25.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 441,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          -0.013991,
+          0.29,
+          1.872528
+        ],
+        "stand": [
+          -0.013991,
+          0.29,
+          2.022528
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "b46e2fab157e2c9382b648c9472fa0350e6876cb38b1d332c2a04b9e81f28027"
+    },
+    {
+      "id": "S26",
+      "name": "巴格达 · 圆顶学宫",
+      "city": "巴格达",
+      "slug": "baghdad_academy",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "desert"
+      ],
+      "theme": "desert",
+      "landform": "oasis",
+      "description": "蓝绿穹顶、深拱门与几何庭院，游戏化学宫意象。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.058746,
+        3.2251,
+        3.690694
+      ],
+      "triangles": 1959,
+      "file": "assets/glb/S26.glb",
+      "thumbnail": "assets/thumbs/S26.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 666,
+          "triangle_count": 15
+        },
+        {
+          "role": "matte",
+          "start_triangle": 741,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1311,
+          "triangle_count": 12
+        },
+        {
+          "role": "water",
+          "start_triangle": 1833,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 1923,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0.104373,
+          0,
+          1.845347
+        ],
+        "stand": [
+          0.104373,
+          0,
+          1.995347
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "9c8fedddea7a72ea233dcaac6c713b2b5c6760e28db3ead5abce6126b4895c38"
+    },
+    {
+      "id": "S27",
+      "name": "盘橐城 · 绿洲宫城",
+      "city": "盘橐城",
+      "slug": "pantu_oasis_palace",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "desert"
+      ],
+      "theme": "desert",
+      "landform": "oasis",
+      "description": "不对称台阶式土砖宫城，仓舍、门楼和一小片绿荫。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.345,
+        3.63,
+        3.255694
+      ],
+      "triangles": 932,
+      "file": "assets/glb/S27.glb",
+      "thumbnail": "assets/thumbs/S27.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 276,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 396,
+          "triangle_count": 12
+        },
+        {
+          "role": "water",
+          "start_triangle": 920,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          -0.1975,
+          0,
+          1.627847
+        ],
+        "stand": [
+          -0.1975,
+          0,
+          1.777847
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "92fba55930777a668f98ae3926eb00e8625cc10d3f6c35f68930f8fc3ae5362a"
+    },
+    {
+      "id": "S28",
+      "name": "玉门关 · 夯土关塞",
+      "city": "玉门关",
+      "slug": "yumen_pass",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "desert"
+      ],
+      "theme": "desert",
+      "landform": "ruin",
+      "description": "低矮空旷的夯土关墙、单门和一座朴素的烽燧。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.05,
+        2.085,
+        2.7
+      ],
+      "triangles": 737,
+      "file": "assets/glb/S28.glb",
+      "thumbnail": "assets/thumbs/S28.png",
+      "runtime_parts": [],
+      "material_regions": [],
+      "sockets": {
+        "entrance": [
+          0,
+          0,
+          1.35
+        ],
+        "stand": [
+          0,
+          0,
+          1.5
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "f20d21f688210039a5a5126817ddb11665d8bb98886ce9f25c8d12e43a9bd430"
+    },
+    {
+      "id": "S29",
+      "name": "德里 · 红砂阶井",
+      "city": "德里",
+      "slug": "delhi_stepwell",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "terrace",
+      "description": "下沉水院、四向梯级和红砂石柱亭，采用抬高的局部井壁而非穿透地板。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.2,
+        2.57255,
+        4.02
+      ],
+      "triangles": 1492,
+      "file": "assets/glb/S29.glb",
+      "thumbnail": "assets/thumbs/S29.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "water",
+          "start_triangle": 72,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0,
+          0,
+          1.89
+        ],
+        "stand": [
+          0,
+          0.1,
+          2.04
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "f06d1f5005d029c423be4428b07059a1ab0e6c3d9ed2e92be0ce9545cff4a7a1"
+    },
+    {
+      "id": "S30",
+      "name": "狮子国 · 莲台佛塔",
+      "city": "狮子国",
+      "slug": "lanka_stupa",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "shore",
+      "description": "白色半球塔、金色尖顶和开敞环台。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.393746,
+        2.7832,
+        3.603195
+      ],
+      "triangles": 1238,
+      "file": "assets/glb/S30.glb",
+      "thumbnail": "assets/thumbs/S30.png",
+      "runtime_parts": [],
+      "material_regions": [],
+      "sockets": {
+        "entrance": [
+          -0.173127,
+          0,
+          1.801597
+        ],
+        "stand": [
+          -0.173127,
+          0,
+          1.951597
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "8ae2096b8534c0ad6e5c5acd94c71f7abcd627a7507e0f8f0e04e13ac838bd66"
+    },
+    {
+      "id": "S31",
+      "name": "长安 · 石窟台地",
+      "city": "长安",
+      "slug": "changan_grotto",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "ridge",
+      "description": "虚构的丝路石窟意象：岩壁中的坐像、层叠石阶与小亭；不是西安某座石窟的复原。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.65,
+        3.88247,
+        3.549449
+      ],
+      "triangles": 2418,
+      "file": "assets/glb/S31.glb",
+      "thumbnail": "assets/thumbs/S31.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 417,
+          "triangle_count": 15
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1008,
+          "triangle_count": 15
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1551,
+          "triangle_count": 15
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0,
+          0,
+          1.774725
+        ],
+        "stand": [
+          0,
+          0.14,
+          1.554725
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "5875b30a4d946f895ecebfd44d86ea586f8f14c5c4a12b5e881d10d30637e8d8"
+    },
+    {
+      "id": "S32",
+      "name": "大光 · 金塔水院",
+      "city": "大光",
+      "slug": "dagon_gold_court",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "shore",
+      "description": "金色层叠尖塔、小红顶佛殿与水边石台。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.34,
+      "size": [
+        4.09,
+        3.44825,
+        4.079094
+      ],
+      "triangles": 1434,
+      "file": "assets/glb/S32.glb",
+      "thumbnail": "assets/thumbs/S32.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "water",
+          "start_triangle": 1214,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          -0.195,
+          0.34,
+          2.039547
+        ],
+        "stand": [
+          -0.195,
+          0.34,
+          2.189547
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "e08795deedbcdfe5a9efe38e9ccf6744859b26911607b898e08c58cf381d760e"
+    },
+    {
+      "id": "S33",
+      "name": "真腊 · 丛林塔庙",
+      "city": "真腊",
+      "slug": "chenla_prasat",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "terrace",
+      "description": "灰石三塔与层级门洞，树根和绿色苔块只点缀转折处。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.755544,
+        3.477273,
+        3.807236
+      ],
+      "triangles": 1276,
+      "file": "assets/glb/S33.glb",
+      "thumbnail": "assets/thumbs/S33.png",
+      "runtime_parts": [],
+      "material_regions": [],
+      "sockets": {
+        "entrance": [
+          -0.075865,
+          0,
+          1.903618
+        ],
+        "stand": [
+          -0.075865,
+          0,
+          2.053618
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "7fd1624a62bfe36b577c82796e9a7ea5bddc33d4e2c04c1c4960a6432c714445"
+    },
+    {
+      "id": "S34",
+      "name": "泉州 · 刺桐海港",
+      "city": "泉州",
+      "slug": "quanzhou_twin_port",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "shore",
+      "description": "双石塔、红瓦仓舍与简化码头；水由地块统一提供。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.3,
+      "size": [
+        4.1,
+        3.28855,
+        3.7347
+      ],
+      "triangles": 2996,
+      "file": "assets/glb/S34.glb",
+      "thumbnail": "assets/thumbs/S34.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "glow",
+          "start_triangle": 156,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 432,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 708,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 984,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 1340,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1616,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 1892,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 2212,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0,
+          0.3,
+          1.86735
+        ],
+        "stand": [
+          0,
+          0.3,
+          2.01735
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "99fb67017df3f12a8fea6b24ae7de2e5753dcdd2e78b2980e9a8cd72c1acb327"
+    },
+    {
+      "id": "S35",
+      "name": "金城 · 山岭石城",
+      "city": "金城",
+      "slug": "geumseong_mountain_wall",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "ridge",
+      "description": "灰岩台地上的弯折石城墙与东方式木构门楼。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.110405,
+        3.411962,
+        3.429092
+      ],
+      "triangles": 1199,
+      "file": "assets/glb/S35.glb",
+      "thumbnail": "assets/thumbs/S35.png",
+      "runtime_parts": [],
+      "material_regions": [],
+      "sockets": {
+        "entrance": [
+          0.080107,
+          0,
+          1.714546
+        ],
+        "stand": [
+          0.080107,
+          0,
+          1.864546
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "d203589abdf33482b16c04a294dee34eabc72a3d85083ad9ddd68620af712cbe"
+    },
+    {
+      "id": "S36",
+      "name": "平城京 · 木构寺塔",
+      "city": "平城京",
+      "slug": "heijo_pagoda",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "grove",
+      "description": "五层木塔和低矮佛堂、粉色花树，塔与殿保持高低对照。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        3.933299,
+        3.73855,
+        3.5
+      ],
+      "triangles": 2108,
+      "file": "assets/glb/S36.glb",
+      "thumbnail": "assets/thumbs/S36.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "glow",
+          "start_triangle": 156,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 432,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 708,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 984,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 1260,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          -0.01665,
+          0,
+          1.75
+        ],
+        "stand": [
+          -0.01665,
+          0,
+          1.9
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "1dbb228df44ab29e70b4b46962b0e0630b44f175c80e3c297cc358e385e2619a"
+    },
+    {
+      "id": "S37",
+      "name": "长安 · 山门钟楼",
+      "city": "长安",
+      "slug": "changan_bell_gate",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "terrace",
+      "description": "宽阔的山门石阶，双层飞檐围住一口低模铜钟。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.015,
+      "size": [
+        3.803732,
+        3.836962,
+        3.2
+      ],
+      "triangles": 1074,
+      "file": "assets/glb/S37.glb",
+      "thumbnail": "assets/thumbs/S37.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "metal",
+          "start_triangle": 552,
+          "triangle_count": 402
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0.101866,
+          0.015,
+          1.6
+        ],
+        "stand": [
+          0.101866,
+          0.015,
+          1.75
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "1521e1f7fefea3af33107cb57ba5ace558deec8c74585f5c5d3f19d4e7880ff4"
+    },
+    {
+      "id": "S38",
+      "name": "巴格达 · 星象观台",
+      "city": "巴格达",
+      "slug": "baghdad_observatory",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "desert"
+      ],
+      "theme": "desert",
+      "landform": "terrace",
+      "description": "阶梯观台、大型铜色浑仪和蓝色小穹顶，奇想学术主题。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.245,
+        2.705037,
+        3.590695
+      ],
+      "triangles": 2252,
+      "file": "assets/glb/S38.glb",
+      "thumbnail": "assets/thumbs/S38.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "metal",
+          "start_triangle": 216,
+          "triangle_count": 1472
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1736,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          -0.2475,
+          0,
+          1.795347
+        ],
+        "stand": [
+          -0.2475,
+          0,
+          1.945347
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "1a60ffcee2735dbbca9487047d22dc850245779bdc139566e117c1d79fa47484"
+    },
+    {
+      "id": "S39",
+      "name": "古罗马城 · 山谷水道",
+      "city": "古罗马城",
+      "slug": "rome_aqueduct",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "ravine",
+      "description": "上下两层连续石拱跨越谷口，清水槽顺着顶端延伸。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.0091,
+      "size": [
+        4.553828,
+        2.6391,
+        1.361089
+      ],
+      "triangles": 1554,
+      "file": "assets/glb/S39.glb",
+      "thumbnail": "assets/thumbs/S39.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "water",
+          "start_triangle": 1200,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0.013229,
+          0.0091,
+          0.680545
+        ],
+        "stand": [
+          0.013229,
+          0.0091,
+          0.830545
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "375715427c6a864a472f270e3b5fc1a9ecd948230915bcc7283b59a4d107ee5d"
+    },
+    {
+      "id": "S40",
+      "name": "泉州 · 海风古庙",
+      "city": "泉州",
+      "slug": "quanzhou_sea_shrine",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "shore",
+      "description": "红柱飞檐的海边小庙、石门与桅杆，面朝小港。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.31,
+      "size": [
+        4.035143,
+        3.321962,
+        3.643
+      ],
+      "triangles": 945,
+      "file": "assets/glb/S40.glb",
+      "thumbnail": "assets/thumbs/S40.png",
+      "runtime_parts": [],
+      "material_regions": [],
+      "sockets": {
+        "entrance": [
+          -0.067572,
+          0.31,
+          1.8215
+        ],
+        "stand": [
+          -0.067572,
+          0.31,
+          1.9715
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "ecce4bf9e1a0cc6c4802550607bad143278bca3982fb56e3e790a2e4fc6c4498"
+    }
+  ]
+}

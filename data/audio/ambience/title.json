@@ -1,0 +1,93 @@
+{
+  "_note": "开场环境音参数（方案 §3.1，脚本 scripts/audio/ambience/title_ambience.gd）。音量都是 volume_db，叠在文件自身响度上（底床文件约 -30 到 -33 LUFS，一次性约 -20 到 -24）。这是起点值，不是冻结值，随时可调；缺哪个键就用脚本里的默认值。",
+  "crossfade_sec": 1.5,
+  "show_in_sec": 2.0,
+  "hide_out_sec": 0.8,
+  "act_out_sec": 0.4,
+  "act_back_sec": 2.0,
+  "picker_duck_db": -4.0,
+  "picker_sec": 0.6,
+  "_gust": "默认开场的两层底床跟着草花阵风起伏 ±gust_mod_db（同 shader 的 0.6+0.4·sin(TIME·0.43+1.1)）",
+  "gust_mod_db": 2.0,
+  "gust_layers": [
+    "wind_open_bed_loop_v1",
+    "breeze_hiss_bed_loop_v1"
+  ],
+  "_mixes": "home 是默认插画「旅行L叔」；其余是开场换成那一幕成片时的明信片版（比幕里轻）。巴格达的开场成片是雨景，所以用雨。",
+  "mixes": {
+    "home": {
+      "wind_open_bed_loop_v1": -12.0,
+      "breeze_hiss_bed_loop_v1": -10.0
+    },
+    "changan": {
+      "wind_leaves_bed_loop_v1": -8.5
+    },
+    "panti": {
+      "wind_open_bed_loop_v1": -9.0,
+      "campfire_bed_loop_v1": -15.0
+    },
+    "baghdad": {
+      "rain_bed_long_loop_v1": -7.0
+    },
+    "lshu": {
+      "birds_day_bed_loop_v1": -8.0,
+      "breeze_hiss_bed_loop_v1": -6.0
+    }
+  },
+  "birds": {
+    "sounds": [
+      "bird_call_v1",
+      "bird_call_v2",
+      "bird_call_v3",
+      "bird_call_v4",
+      "bird_call_v5"
+    ],
+    "count": [
+      3,
+      4
+    ],
+    "window_sec": [
+      1.5,
+      20.0
+    ],
+    "volume_db": [
+      -16.0,
+      -12.0
+    ],
+    "pitch": [
+      0.95,
+      1.05
+    ]
+  },
+  "camel_bells": {
+    "sound": "bell_small_ding_v1",
+    "interval_sec": [
+      1.4,
+      2.8
+    ],
+    "volume_db": -20.0,
+    "pitch": [
+      0.78,
+      0.9
+    ]
+  },
+  "poke": {
+    "sound": "bell_small_jingle_v1",
+    "volume_db": -6.0
+  },
+  "plane_gust": {
+    "enabled": true,
+    "sound": "wind_leaves_gust_v1",
+    "volume_db": -24.0,
+    "pitch": 1.25
+  },
+  "changan_bell": {
+    "sound": "temple_bell_v1",
+    "interval_sec": [
+      50.0,
+      90.0
+    ],
+    "first_sec": 8.0,
+    "volume_db": -17.0
+  }
+}

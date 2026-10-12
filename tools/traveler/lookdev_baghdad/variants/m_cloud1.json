@@ -1,0 +1,206 @@
+{
+  "base": "t_combo_geo",
+  "sky": {
+    "shader": "res://tools/traveler/lookdev_baghdad/lookdev_sky_bands_v4.gdshader",
+    "zenith_color": [
+      0.3,
+      0.5,
+      0.84
+    ],
+    "mid_color": [
+      0.86,
+      0.44,
+      0.4
+    ],
+    "mid_height": 0.18,
+    "horizon_color": [
+      1.0,
+      0.66,
+      0.3
+    ],
+    "horizon_falloff": 0.14,
+    "ground_horizon_color": [
+      0.8,
+      0.44,
+      0.24
+    ],
+    "ground_bottom_color": [
+      0.22,
+      0.14,
+      0.18
+    ],
+    "sky_energy": 1.0,
+    "sun_disc_color": [
+      1.0,
+      0.92,
+      0.72
+    ],
+    "sun_disc_energy": 5.5,
+    "sun_radius_deg": 1.2,
+    "sun_edge_deg": 0.025,
+    "sun_halo_radius_deg": 12.0,
+    "sun_halo_strength": 1.2,
+    "cloud_opacity": 0.0,
+    "cumulus_enabled": 0.0,
+    "cloud_contrast": 2.0,
+    "cloud_b_base_el": 0.05,
+    "cloud_b_top_el": 0.3,
+    "cloud_b_scale": [
+      7.0,
+      6.0
+    ],
+    "cloud_b_offset": [
+      11.3,
+      2.9
+    ],
+    "cloud_b_coverage": 0.45,
+    "cloud_b_alpha": 0.97,
+    "cloud_a_base_el": 0.28,
+    "cloud_a_top_el": 0.62,
+    "cloud_a_scale": [
+      8.0,
+      7.0
+    ],
+    "cloud_a_offset": [
+      3.1,
+      7.7
+    ],
+    "cloud_a_coverage": 0.4,
+    "cloud_a_alpha": 0.88,
+    "cloud_lit_color": [
+      1.0,
+      0.8,
+      0.58
+    ],
+    "cloud_shadow_color": [
+      0.46,
+      0.28,
+      0.46
+    ],
+    "cloud_rim_color": [
+      1.0,
+      0.82,
+      0.42
+    ],
+    "cloud_rim_strength": 1.6,
+    "cloud_rim_step": 0.1,
+    "cloud_sun_sigma_deg": 32.0,
+    "cloud_prox_floor": 0.15,
+    "cloud_underglow": 0.3,
+    "cloud_edge_soft": 0.14,
+    "cloud_shade_softness": 1.2,
+    "cloud_core_darkening": 0.4,
+    "sky_glow_color": [
+      1.0,
+      0.88,
+      0.6
+    ],
+    "sky_glow_deg": 9.0,
+    "sky_glow_strength": 0.75,
+    "sky_near_color": [
+      1.0,
+      0.66,
+      0.28
+    ],
+    "sky_mid_color": [
+      0.94,
+      0.68,
+      0.58
+    ],
+    "sky_far_low_color": [
+      0.6,
+      0.72,
+      0.9
+    ],
+    "sky_near_deg": 15.0,
+    "sky_mid_deg": 26.0,
+    "sky_far_deg": 36.0,
+    "sky_el_boost": 0.35,
+    "haze_far_color": [
+      0.97,
+      0.66,
+      0.5
+    ],
+    "haze_strength": 0.85,
+    "haze_far_scale": 0.6,
+    "bands_enabled": 1.0,
+    "band_count": 8.0,
+    "band_lo_el": 0.055,
+    "band_hi_el": 0.46,
+    "band_spacing_pow": 1.6,
+    "band_half_lo": 0.01,
+    "band_half_hi": 0.055,
+    "band_freq_k": 0.15,
+    "band_vfreq": 1.2,
+    "band_vfreq_max": 40.0,
+    "band_undulate": 0.8,
+    "band_bottom_soft": 0.35,
+    "band_bottom_tear": 0.35,
+    "band_top_start": 0.2,
+    "band_top_end": 1.3,
+    "band_top_tear": 1.6,
+    "band_gate_freq": 0.35,
+    "band_gate_lo": 0.2,
+    "band_gate_lo_hi": 0.35,
+    "band_gate_soft": 0.3,
+    "band_contrast": 2.2,
+    "band_cov_lo": 0.82,
+    "band_cov_hi": 0.66,
+    "band_edge_soft": 0.18,
+    "band_alpha_lo": 0.85,
+    "band_alpha_hi": 0.7,
+    "band_seed": 17.0,
+    "band_horizon_fade_lo": 0.015,
+    "band_horizon_fade_hi": 0.045,
+    "cloud_lit_near": [
+      1.0,
+      0.8,
+      0.46
+    ],
+    "cloud_lit_far": [
+      0.98,
+      0.7,
+      0.66
+    ],
+    "cloud_shadow_near": [
+      0.6,
+      0.32,
+      0.2
+    ],
+    "cloud_shadow_far": [
+      0.5,
+      0.36,
+      0.52
+    ],
+    "cloud_low_lit_bias": 0.6,
+    "cloud_sun_clear_deg": 6.0,
+    "cloud_sun_clear": 0.85,
+    "band_alpha_top_fade": 0.25,
+    "far_set_enabled": 1.0,
+    "far_alpha_scale": 0.5,
+    "far_thick_scale": 0.8,
+    "far_center_shift": 0.5,
+    "far_cov_scale": 0.95,
+    "far_freq_scale": 1.35,
+    "far_sky_fade": 0.3,
+    "veil_set_enabled": 1.0,
+    "veil_alpha_scale": 0.2,
+    "veil_thick_scale": 1.6,
+    "veil_center_shift": 0.25,
+    "veil_cov_scale": 1.0,
+    "veil_freq_scale": 0.6,
+    "veil_sky_fade": 0.45,
+    "sun_core_radius_deg": 5.0,
+    "sun_core_strength": 1.8,
+    "sun_core_color": [
+      1.0,
+      0.82,
+      0.48
+    ],
+    "cloud_drift_speed": 0.006,
+    "cloud_drift_low_factor": 0.5,
+    "cloud_drift_far_factor": 0.7,
+    "cloud_drift_veil_factor": 0.5,
+    "cloud_morph_speed": 0.02
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "schema_version": 2,
+  "asset_count": 22,
+  "total_glb_bytes": 7268724,
+  "total_triangles": 88189,
+  "active_world": "planet-v2",
+  "active_asset_count": 20,
+  "active_glb_bytes": 6071524,
+  "active_triangles": 70311,
+  "active_asset_paths": [
+    "assets/game/lowpoly/cities/aden.glb",
+    "assets/game/lowpoly/cities/baghdad.glb",
+    "assets/game/lowpoly/cities/cairo.glb",
+    "assets/game/lowpoly/cities/changan.glb",
+    "assets/game/lowpoly/cities/chenla.glb",
+    "assets/game/lowpoly/cities/constantinople.glb",
+    "assets/game/lowpoly/cities/dagon.glb",
+    "assets/game/lowpoly/cities/delhi.glb",
+    "assets/game/lowpoly/cities/geumseong.glb",
+    "assets/game/lowpoly/cities/heijokyo.glb",
+    "assets/game/lowpoly/cities/jeddah.glb",
+    "assets/game/lowpoly/cities/panti.glb",
+    "assets/game/lowpoly/cities/quanzhou.glb",
+    "assets/game/lowpoly/cities/rome.glb",
+    "assets/game/lowpoly/cities/simhala.glb",
+    "assets/game/lowpoly/cities/yumenguan.glb",
+    "assets/game/lowpoly/planet/terrain.glb",
+    "assets/game/lowpoly/planet/water.glb",
+    "assets/game/lowpoly/vehicles/camel.glb",
+    "assets/game/lowpoly/vehicles/ship.glb"
+  ],
+  "coordinate_system": "glTF Y-up; vehicles face -Z; feet/waterline at Y=0",
+  "source": "docs/design/lowpoly-v1/source/",
+  "assets": [
+    {
+      "path": "assets/game/lowpoly/cities/aden.glb",
+      "bytes": 54272,
+      "sha256": "88ac40a45716a5524523a048563616ccec4b59cd2e6a36cc83f7b7dcad0e9fe1",
+      "triangles": 950,
+      "meshes": 8,
+      "surfaces": 8,
+      "materials": 8,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/baghdad.glb",
+      "bytes": 58228,
+      "sha256": "bd25f364a56dfb0f1711e6dca95d17cc23179bb6d7efdd30fb8d87b8a0411c02",
+      "triangles": 1062,
+      "meshes": 5,
+      "surfaces": 5,
+      "materials": 5,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/cairo.glb",
+      "bytes": 46472,
+      "sha256": "28befae51a6d945498d08b2c74525f1baa4043119668c8d5b2cbdb9046ddc3b0",
+      "triangles": 802,
+      "meshes": 7,
+      "surfaces": 7,
+      "materials": 7,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/changan.glb",
+      "bytes": 56296,
+      "sha256": "3f930d71815525089225e939290d91d4942d8996233482cf95b0a7b175537648",
+      "triangles": 986,
+      "meshes": 8,
+      "surfaces": 8,
+      "materials": 8,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/chenla.glb",
+      "bytes": 47644,
+      "sha256": "378e1d5a1a09fa95d7ab1079d211799641c41825c9e3c2a1de737892948f8c05",
+      "triangles": 804,
+      "meshes": 8,
+      "surfaces": 8,
+      "materials": 8,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/constantinople.glb",
+      "bytes": 71244,
+      "sha256": "71ba913a624222b4c01e41f0b3465878100aa5ef90ec3d97a2363e23b2109879",
+      "triangles": 1282,
+      "meshes": 6,
+      "surfaces": 6,
+      "materials": 6,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/dagon.glb",
+      "bytes": 45108,
+      "sha256": "6e9292fad44e0f3df55a7cef1f28e692d55808c865a3744485db3769227a06ce",
+      "triangles": 800,
+      "meshes": 7,
+      "surfaces": 7,
+      "materials": 7,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/delhi.glb",
+      "bytes": 59236,
+      "sha256": "d0b60c2211f7d2f79412cf1c12d9a7eb6bb6e28807a2fc97baf8d7ad5db1bbe9",
+      "triangles": 1121,
+      "meshes": 6,
+      "surfaces": 6,
+      "materials": 6,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/geumseong.glb",
+      "bytes": 54932,
+      "sha256": "eaed85a17ade469875b4a0de4b1381bd3e75e5b834902bc4b8570d82458cbce3",
+      "triangles": 997,
+      "meshes": 5,
+      "surfaces": 5,
+      "materials": 5,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/heijokyo.glb",
+      "bytes": 51276,
+      "sha256": "c665416817b83f03f66c530e645ca47c44bb81aa2245f1d314bba5fcfcdb52b2",
+      "triangles": 845,
+      "meshes": 8,
+      "surfaces": 8,
+      "materials": 8,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/jeddah.glb",
+      "bytes": 52500,
+      "sha256": "3d3d0db4867ee0d608bacc0457126159ef3631a73f966d4060755b72e6413d89",
+      "triangles": 856,
+      "meshes": 7,
+      "surfaces": 7,
+      "materials": 7,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/panti.glb",
+      "bytes": 46892,
+      "sha256": "e07525ce921bb5e1d7e8b56d50847dcfac619f37586baf6bfe16896b3d3d2c94",
+      "triangles": 780,
+      "meshes": 8,
+      "surfaces": 8,
+      "materials": 8,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/quanzhou.glb",
+      "bytes": 154596,
+      "sha256": "016d03d9cf5dc66155b06dac1b6ddaded85d8710d7e525f00c789b0d300f50db",
+      "triangles": 2940,
+      "meshes": 8,
+      "surfaces": 8,
+      "materials": 8,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/rome.glb",
+      "bytes": 163468,
+      "sha256": "8dcef33651c7e998f0905583113e537b767b6e0a05829a224f17c469a7f9aa8d",
+      "triangles": 3360,
+      "meshes": 5,
+      "surfaces": 5,
+      "materials": 5,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/simhala.glb",
+      "bytes": 45476,
+      "sha256": "61c1c41a605e1e9eaee5534c0304418521290cc1d2ab2ab77ec8f4379cabfb17",
+      "triangles": 799,
+      "meshes": 7,
+      "surfaces": 7,
+      "materials": 7,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/cities/yumenguan.glb",
+      "bytes": 46500,
+      "sha256": "c7634dbbb2f268d7689f4a9cea1d089eed2f24e06cff4370b202ac2292fbc9cd",
+      "triangles": 746,
+      "meshes": 8,
+      "surfaces": 8,
+      "materials": 8,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/planet/terrain.glb",
+      "bytes": 2525336,
+      "sha256": "2382600b2a0e56760ff9f772c678f065a1531852b92292e5582793a11975cdf7",
+      "triangles": 25659,
+      "meshes": 15,
+      "surfaces": 22,
+      "materials": 19,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/planet/water.glb",
+      "bytes": 2090200,
+      "sha256": "4a1ae95cef9e1d497976d8278c484f404ff807abb4cba66fe6e5819f18f317d3",
+      "triangles": 20480,
+      "meshes": 1,
+      "surfaces": 1,
+      "materials": 1,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/vehicles/camel.glb",
+      "bytes": 142668,
+      "sha256": "82d668b31164c3312a984a84cfe1d3723e5567e49b5cbd17a15f65543ea6a48b",
+      "triangles": 1992,
+      "meshes": 10,
+      "surfaces": 18,
+      "materials": 6,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/vehicles/ship.glb",
+      "bytes": 259180,
+      "sha256": "bc7583c0ff5f5d5bcf1541d34a821d7717a5e5bfa1702b3634aa7297f31f6b2c",
+      "triangles": 3050,
+      "meshes": 6,
+      "surfaces": 6,
+      "materials": 6,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/world/terrain.glb",
+      "bytes": 1069852,
+      "sha256": "26e75bb6f1270d567fd1df3552eade8145d9e5e10b98d9db4e79461f3cbb2e38",
+      "triangles": 15242,
+      "meshes": 9,
+      "surfaces": 20,
+      "materials": 17,
+      "textures": 0
+    },
+    {
+      "path": "assets/game/lowpoly/world/water.glb",
+      "bytes": 127348,
+      "sha256": "5fcee363480a069c6668e9ca15da842a51a9ea6acd45aeb7b0693fb1b3fa2def",
+      "triangles": 2636,
+      "meshes": 2,
+      "surfaces": 5,
+      "materials": 5,
+      "textures": 0
+    }
+  ],
+  "rule_source_sha256": {
+    "cities.json": "7fd570982a7b768c0c9e27a9bbf348e3e437644e0df86f7ef07c2336e2d0f994",
+    "board_nodes.json": "c3f8efdda61c424b777ee53ecfea3a9b2e0c6b028cbbe7e9351d9506a5ed9be9",
+    "board_edges.json": "d79904b6b6af183dc3172fd609da7299a3f93eb65849c0d938d0c6f50f1942c6"
+  }
+}

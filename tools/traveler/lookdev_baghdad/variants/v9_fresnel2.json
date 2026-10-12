@@ -1,0 +1,18 @@
+{
+  "base": "v8_dusk3",
+  "fresnel": {
+    "color": [
+      1.0,
+      0.78,
+      0.4
+    ],
+    "tree_power": 2.2,
+    "tree_intensity": 0.9,
+    "character_power": 3.0,
+    "character_intensity": 1.4,
+    "dir_weight": 0.6,
+    "dir_softness": 0.35,
+    "tree": true,
+    "character": true
+  }
+}

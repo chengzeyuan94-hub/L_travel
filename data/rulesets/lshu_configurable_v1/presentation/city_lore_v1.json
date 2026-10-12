@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "ruleset_id": "lshu_configurable_v1",
+  "edition_id": "user_confirmed_v1",
+  "content_kind": "presentation_only_city_lore",
+  "note": "教育性史地说明与原版规则事实分离；不参与结算。CONTENT_BLOCKED 表示历史对象或现代定位仍需产品裁决。",
+  "items": [
+    {
+      "id": "yumenguan",
+      "city_id": "yumenguan",
+      "epithet": "玉关烽燧，大漠锁钥",
+      "position": "敦煌西北的河西走廊尽头，扼守汉代通往西域的戈壁通道。",
+      "history": "玉门关是汉代河西边防与交通体系的重要关隘，商旅、使节和军队由此出入西域。关塞与长城、烽燧共同承担通行管理和预警防御，也见证了丝绸之路上货物、人员与观念的长期往来。",
+      "sights": "小方盘城保存夯土关城轮廓；汉长城与烽燧遗址散布戈壁，共同呈现边塞交通和防御体系。",
+      "historical_period": "汉代，重点为西汉至东汉",
+      "modern_reference": "中国甘肃省敦煌市西北玉门关遗址区域",
+      "source_refs": [
+        {
+          "title": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor",
+          "url": "https://whc.unesco.org/en/list/1442/"
+        },
+        {
+          "title": "Dunhuang | Silk Roads Programme",
+          "url": "https://en.unesco.org/silkroad/content/dunhuang"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "rome",
+      "city_id": "rome",
+      "epithet": "七丘古都，地中海帝城",
+      "position": "意大利半岛中部、台伯河沿岸，面向地中海交通网络的古代都会。",
+      "history": "罗马先后成为共和国与帝国的政治中心，其道路、港口和行政网络连接欧洲、北非与西亚。东方的香料、丝织品和宝石经多级贸易进入地中海世界，罗马也由此成为欧亚长距离交换链西端的重要消费中心。",
+      "sights": "古罗马广场保存公共生活遗迹；斗兽场、万神殿和图拉真柱呈现帝国时期的工程、宗教与纪功传统。",
+      "historical_period": "罗马共和国晚期至罗马帝国时期",
+      "modern_reference": "意大利罗马历史中心",
+      "source_refs": [
+        {
+          "title": "Historic Centre of Rome",
+          "url": "https://whc.unesco.org/en/list/91/"
+        },
+        {
+          "title": "The UNESCO Courier: Tales of silken times",
+          "url": "https://courier.unesco.org/en/articles/tales-silken-times"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "constantinople",
+      "city_id": "constantinople",
+      "epithet": "海峡帝都，东西津梁",
+      "position": "博斯普鲁斯海峡两岸，控制黑海与地中海之间的水陆交通要冲。",
+      "history": "君士坦丁堡长期作为东罗马帝国首都，凭借海峡、天然港湾和坚固城墙连接巴尔干、安纳托利亚与黑海贸易。来自欧亚各地的粮食、丝织品、香料和工艺品在此汇集，使城市成为政治、宗教与商业重镇。",
+      "sights": "圣索菲亚大教堂体现帝国建筑成就；狄奥多西城墙守护陆侧门户，古竞技场遗迹记录城市公共生活。",
+      "historical_period": "东罗马帝国时期，重点为4至15世纪",
+      "modern_reference": "土耳其伊斯坦布尔历史城区",
+      "source_refs": [
+        {
+          "title": "Historic Areas of Istanbul",
+          "url": "https://whc.unesco.org/en/list/356/"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "changan",
+      "city_id": "changan",
+      "epithet": "丝路东端，盛唐西都",
+      "position": "关中平原渭水流域，连接河西走廊与中原腹地的帝国都城。",
+      "history": "长安在汉唐时期是国家政治中心，也是丝绸之路东端最重要的都会之一。规划严整的城坊、宫殿和市场容纳了来自不同地区的商人、使节与宗教群体，丝绸、香料、金银器和知识由此进入跨区域交流网络。",
+      "sights": "大雁塔见证佛典译传；大明宫遗址展现唐代宫城规模，西市遗址则保留国际商贸都会的历史记忆。",
+      "historical_period": "汉唐时期，重点为唐代",
+      "modern_reference": "中国陕西省西安市",
+      "source_refs": [
+        {
+          "title": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor",
+          "url": "https://whc.unesco.org/en/list/1442/"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "panti",
+      "city_id": "panti",
+      "epithet": "班超故垒，西域要冲",
+      "position": "史籍所记疏勒地区的汉代据点，具体遗址定位在喀什与图木舒克之间仍有争议。",
+      "history": "盘橐城见于东汉班超经营西域的相关记载，曾作为驻守疏勒、维系丝路交通的重要堡垒。现代资料分别将其联系到喀什东南遗址和图木舒克托库孜萨来遗址，目前缺乏足以在产品中锁定唯一现代坐标的统一结论。",
+      "sights": "可观察夯土城垒、烽燧与屯驻遗迹；在定位争议裁决前，不把某一现代遗址写成唯一确址。",
+      "historical_period": "东汉，重点为公元1世纪班超经略西域时期",
+      "modern_reference": "待裁决：喀什东南盘橐城遗址说／图木舒克托库孜萨来遗址说",
+      "source_refs": [
+        {
+          "title": "盘橐城（喀什经济开发区）",
+          "url": "https://www.kstq.gov.cn/kashi/lyjd/201302/62ccf41af71a4dc4aec979c3a116d52f.shtml"
+        },
+        {
+          "title": "丝路屯城越古今",
+          "url": "https://www.xjzgh.org.cn/2024-02/26/c_1130081974.htm"
+        }
+      ],
+      "verification_status": "CONTENT_BLOCKED"
+    },
+    {
+      "id": "baghdad",
+      "city_id": "baghdad",
+      "epithet": "圆城汇商，两河文都",
+      "position": "底格里斯河畔，连接波斯湾、伊朗高原、安纳托利亚与叙利亚的交通中心。",
+      "history": "阿拔斯哈里发曼苏尔于762年营建新都，正式名为和平之城。巴格达依托两河水运和放射状陆路迅速成为商业、行政与学术中心，来自印度洋、波斯、中亚和地中海方向的货物与知识在此汇流。",
+      "sights": "圆城原貌已难完整保存；阿拔斯宫殿遗存、底格里斯河岸与历史市集可作为城市文化线索。",
+      "historical_period": "阿拔斯王朝，重点为8至13世纪初",
+      "modern_reference": "伊拉克巴格达",
+      "source_refs": [
+        {
+          "title": "Baghdad and Silk Route",
+          "url": "https://en.unesco.org/silkroad/sites/default/files/knowledge-bank-article/baghdad_and_silk_route.pdf"
+        },
+        {
+          "title": "Iraq | Silk Roads Programme",
+          "url": "https://en.unesco.org/silkroad/countries-alongside-silk-road-routes/iraq"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "delhi",
+      "city_id": "delhi",
+      "epithet": "王城层叠，天竺北门",
+      "position": "印度北部恒河平原西缘，连接西北山口、恒河流域与德干方向。",
+      "history": "德里地区由多座先后兴建的城郭共同构成。12世纪末至13世纪初，德里苏丹国的建立使这里成为北印度政治中心，并推动波斯、中亚与印度建筑和工艺传统交汇，城市也成为区域陆路贸易的重要节点。",
+      "sights": "顾特卜塔及清真寺群展示早期印度伊斯兰建筑；后世城堡、陵墓与连续城址呈现多朝建都的层积。",
+      "historical_period": "德里苏丹国初期，重点为12世纪末至13世纪",
+      "modern_reference": "印度德里国家首都辖区",
+      "source_refs": [
+        {
+          "title": "Qutb Minar and its Monuments, Delhi",
+          "url": "https://whc.unesco.org/en/list/233/"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "geumseong",
+      "city_id": "geumseong",
+      "epithet": "新罗金城，佛国王都",
+      "position": "朝鲜半岛东南部内陆盆地，今庆州一带的新罗王都。",
+      "history": "金城是新罗都城的历史名称之一，所在地对应今日庆州。新罗在此长期建都，统一时期形成宫苑、寺院、天文设施与王陵群。考古遗物也反映出这座王都与中国及更远地区之间的文化交流。",
+      "sights": "月城为王宫核心遗址；瞻星台、皇龙寺址和大陵苑王陵群共同展现新罗王都的宗教、科学与礼制。",
+      "historical_period": "新罗至统一新罗时期",
+      "modern_reference": "韩国庆尚北道庆州市",
+      "source_refs": [
+        {
+          "title": "Gyeongju Historic Areas",
+          "url": "https://whc.unesco.org/en/list/976/"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED_WITH_ALIAS_NOTE"
+    },
+    {
+      "id": "chenla",
+      "city_id": "chenla",
+      "epithet": "水陆真腊，森寺王都",
+      "position": "游戏名称指向古代真腊政体，代表性都城对应今柬埔寨桑博波雷古的伊奢那补罗。",
+      "history": "“真腊”是古代政体名称，并非单一城市。联合国教科文组织资料将桑博波雷古认定为古伊奢那补罗遗址，并视其为6至7世纪真腊的重要都城。城市借助河流、水利和区域道路联系内陆与更广阔贸易网络。",
+      "sights": "桑博波雷古保存城垣、护城水系及大量砖塔寺院；八角形祠堂与早期高棉装饰具有鲜明辨识度。",
+      "historical_period": "真腊时期，重点为6至7世纪",
+      "modern_reference": "柬埔寨桑博波雷古／古伊奢那补罗；真腊按文明节点处理",
+      "source_refs": [
+        {
+          "title": "Temple Zone of Sambor Prei Kuk, Archaeological Site of Ancient Ishanapura",
+          "url": "https://whc.unesco.org/en/list/1532/"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED_WITH_SCOPE_NOTE"
+    },
+    {
+      "id": "aden",
+      "city_id": "aden",
+      "epithet": "火山良港，季风商埠",
+      "position": "阿拉伯半岛南端火山地貌中的天然港湾，临近红海与印度洋航路交会处。",
+      "history": "亚丁凭借天然港湾和季风航线成为东西方海运的中转站，商船在此补给并交换来自印度洋、东非、阿拉伯与地中海方向的货物。游戏名“阿丹国”对应的历史实体按亚丁港城理解，而非独立国家。",
+      "sights": "火山口内的老城地形最具特色；西拉城堡俯瞰港湾，亚丁蓄水池体现干旱港城的水利工程。",
+      "historical_period": "中世纪印度洋贸易时期",
+      "modern_reference": "也门亚丁；游戏显示名“阿丹国”属于产品命名",
+      "source_refs": [
+        {
+          "title": "The Historic City of Aden",
+          "url": "https://whc.unesco.org/en/tentativelists/6858/"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED_WITH_NAMING_NOTE"
+    },
+    {
+      "id": "heijokyo",
+      "city_id": "heijokyo",
+      "epithet": "奈良古京，唐风棋盘",
+      "position": "日本本州奈良盆地北部，按规则方格规划的奈良时代都城。",
+      "history": "平城京自710年至784年为日本都城，其规划吸收了中国都城制度，尤以唐代长安为重要参照。宫城、寺院、道路和坊区承载政治与宗教活动，也反映东亚海陆交流带来的制度、佛教与工艺传播。",
+      "sights": "平城宫遗址保存都城中枢格局；东大寺、兴福寺与春日大社呈现奈良时代佛教和王权文化。",
+      "historical_period": "奈良时代，710至784年",
+      "modern_reference": "日本奈良县奈良市平城宫及古都遗址区域",
+      "source_refs": [
+        {
+          "title": "Historic Monuments of Ancient Nara",
+          "url": "https://whc.unesco.org/en/list/870/"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "simhala",
+      "city_id": "simhala",
+      "epithet": "狮子海国，印度洋津",
+      "position": "“狮子国／Simhala”通常指斯里兰卡岛域，并非已确认的一座单一城市。",
+      "history": "斯里兰卡位于印度洋海路要冲，古代长期参与中国、印度、波斯等地的航海贸易。阿努拉德普勒曾是岛上延续千余年的政治与宗教中心，但现有游戏资料没有证明“狮子国”节点专指该城，不能直接将两者画等号。",
+      "sights": "若采用文明节点，可观察斯里兰卡港湾、佛塔与香料贸易；若改为城市节点，须由产品明确具体对象。",
+      "historical_period": "待裁决；可参考古代至中世纪斯里兰卡海贸时期",
+      "modern_reference": "斯里兰卡岛域；是否映射阿努拉德普勒尚未确认",
+      "source_refs": [
+        {
+          "title": "Sri Lanka | Silk Roads Programme",
+          "url": "https://en.unesco.org/silkroad/countries-alongside-silk-road-routes/sri-lanka"
+        },
+        {
+          "title": "Sacred City of Anuradhapura",
+          "url": "https://whc.unesco.org/en/list/200/"
+        }
+      ],
+      "verification_status": "CONTENT_BLOCKED"
+    },
+    {
+      "id": "cairo",
+      "city_id": "cairo",
+      "epithet": "尼罗古都，万商辐辏",
+      "position": "尼罗河谷与三角洲交界，连接地中海、红海、非洲内陆与西亚。",
+      "history": "开罗于969年成为法蒂玛王朝新都，随后发展为跨越欧洲、亚洲与非洲贸易网络的重要中心。中世纪城市的宗教学校、市场和工匠街区高度集中，尼罗河运输又使粮食与远途商品持续汇入。",
+      "sights": "爱资哈尔清真寺与学府延续城市学术传统；伊本·图伦清真寺、城堡及历史市集保存中世纪城市肌理。",
+      "historical_period": "法蒂玛至马穆鲁克时期，重点为10至15世纪",
+      "modern_reference": "埃及开罗历史城区",
+      "source_refs": [
+        {
+          "title": "Historic Cairo",
+          "url": "https://whc.unesco.org/en/list/89/"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "jeddah",
+      "city_id": "jeddah",
+      "epithet": "红海门户，朝觐商港",
+      "position": "红海东岸，作为海港连接印度洋航路与麦加内陆通道。",
+      "history": "吉达自7世纪起成为通往麦加的重要港口和朝觐门户，也承接印度洋贸易。来自亚洲、非洲和中东的商旅、货物与建筑传统在此汇聚，形成多文化港城以及适应红海气候的珊瑚石高层住宅。",
+      "sights": "历史城区保存珊瑚石塔楼住宅、商栈和传统市集；港口与朝觐通道共同体现城市的双重职能。",
+      "historical_period": "伊斯兰早期至中世纪，重点为7世纪以后",
+      "modern_reference": "沙特阿拉伯吉达历史城区",
+      "source_refs": [
+        {
+          "title": "Historic Jeddah, the Gate to Makkah",
+          "url": "https://whc.unesco.org/en/list/1361/"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "dagon",
+      "city_id": "dagon",
+      "epithet": "金塔旧聚，仰光前身",
+      "position": "今仰光一带、仰光河水系附近，以瑞光大金塔所在山丘为历史核心。",
+      "history": "可靠资料把大光描述为后来仰光所在地的一处小型聚落和宗教中心，直至18世纪中叶才在扩建后成为港口城市。若将其直接写成古代海上丝路大港会产生时代错置，因此现阶段只介绍其宗教聚落身份。",
+      "sights": "瑞光大金塔所在圣丘是最明确的历史地标；港城码头和大规模海贸景观须按18世纪以后年代处理。",
+      "historical_period": "历史身份待裁决；可靠城市化节点主要在18世纪中叶以后",
+      "modern_reference": "缅甸仰光；大光为其早期聚落名称",
+      "source_refs": [
+        {
+          "title": "About Yangon Port | Myanma Port Authority",
+          "url": "https://www.mpa.gov.mm/about/"
+        },
+        {
+          "title": "Shwedagon Pagoda on Singuttara Hill",
+          "url": "https://whc.unesco.org/en/tentativelists/6367/"
+        }
+      ],
+      "verification_status": "CONTENT_BLOCKED"
+    },
+    {
+      "id": "quanzhou",
+      "city_id": "quanzhou",
+      "epithet": "刺桐古港，海丝巨埠",
+      "position": "福建东南沿海、晋江下游入海区域，联通内陆产区与远洋航线。",
+      "history": "泉州在宋元时期发展为世界性海洋商贸中心。港口、航道、桥梁、生产基地和多元宗教设施共同支撑瓷器、茶叶、丝织品等商品外运，并接纳来自东南亚、南亚和西亚的商人与文化。",
+      "sights": "开元寺双塔是古港天际线地标；洛阳桥连接港区交通，九日山祈风石刻记录商船依据信风启航。",
+      "historical_period": "宋元时期，重点为10至14世纪",
+      "modern_reference": "中国福建省泉州市",
+      "source_refs": [
+        {
+          "title": "Quanzhou: Emporium of the World in Song-Yuan China",
+          "url": "https://whc.unesco.org/en/list/1561/"
+        }
+      ],
+      "verification_status": "SOURCE_VERIFIED"
+    }
+  ]
+}

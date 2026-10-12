@@ -1,0 +1,95 @@
+{
+  "base": "v16_mild_clouds3",
+  "camera": {
+    "dof_enabled": false
+  },
+  "sky": {
+    "shader": "res://tools/traveler/lookdev_baghdad/lookdev_sunset_sky.gdshader",
+    "zenith_color": [
+      0.3,
+      0.26,
+      0.54
+    ],
+    "mid_color": [
+      0.86,
+      0.44,
+      0.4
+    ],
+    "mid_height": 0.18,
+    "horizon_color": [
+      1.0,
+      0.6,
+      0.24
+    ],
+    "horizon_falloff": 0.2,
+    "ground_horizon_color": [
+      0.8,
+      0.44,
+      0.24
+    ],
+    "ground_bottom_color": [
+      0.22,
+      0.14,
+      0.18
+    ],
+    "sun_disc_color": [
+      1.0,
+      0.92,
+      0.72
+    ],
+    "sun_disc_energy": 3.4,
+    "sun_radius_deg": 1.0,
+    "sun_halo_radius_deg": 14.0,
+    "sun_halo_strength": 0.5,
+    "cloud_opacity": 0.0,
+    "cumulus_enabled": 1.0,
+    "cloud_contrast": 2.0,
+    "cloud_b_base_el": 0.05,
+    "cloud_b_top_el": 0.3,
+    "cloud_b_scale": [
+      7.0,
+      6.0
+    ],
+    "cloud_b_offset": [
+      11.3,
+      2.9
+    ],
+    "cloud_b_coverage": 0.45,
+    "cloud_b_alpha": 0.97,
+    "cloud_a_base_el": 0.28,
+    "cloud_a_top_el": 0.62,
+    "cloud_a_scale": [
+      5.5,
+      5.0
+    ],
+    "cloud_a_offset": [
+      3.1,
+      7.7
+    ],
+    "cloud_a_coverage": 0.4,
+    "cloud_a_alpha": 0.88,
+    "cloud_lit_color": [
+      1.0,
+      0.86,
+      0.7
+    ],
+    "cloud_shadow_color": [
+      0.42,
+      0.24,
+      0.42
+    ],
+    "cloud_rim_color": [
+      1.0,
+      0.8,
+      0.4
+    ],
+    "cloud_rim_strength": 2.0,
+    "cloud_rim_step": 0.12,
+    "cloud_sun_sigma_deg": 60.0,
+    "cloud_prox_floor": 0.45,
+    "cloud_underglow": 0.25,
+    "cloud_edge_soft": 0.14,
+    "cloud_shade_softness": 1.2,
+    "cloud_core_darkening": 0.45
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "base": "v22_blaze_final",
+  "sky": {
+    "shader": "res://tools/traveler/lookdev_baghdad/lookdev_sky_warp.gdshader",
+    "zenith_color": [
+      0.3,
+      0.26,
+      0.54
+    ],
+    "mid_color": [
+      0.86,
+      0.44,
+      0.4
+    ],
+    "mid_height": 0.18,
+    "horizon_color": [
+      1.0,
+      0.66,
+      0.34
+    ],
+    "horizon_falloff": 0.12,
+    "ground_horizon_color": [
+      0.8,
+      0.44,
+      0.24
+    ],
+    "ground_bottom_color": [
+      0.22,
+      0.14,
+      0.18
+    ],
+    "sun_disc_color": [
+      1.0,
+      0.92,
+      0.72
+    ],
+    "sun_disc_energy": 3.4,
+    "sun_radius_deg": 1.0,
+    "sun_halo_radius_deg": 14.0,
+    "sun_halo_strength": 0.5,
+    "cloud_opacity": 0.0,
+    "cumulus_enabled": 1.0,
+    "sky_sun_color": [
+      1.0,
+      0.92,
+      0.66
+    ],
+    "sky_warm_color": [
+      1.0,
+      0.72,
+      0.36
+    ],
+    "sky_mid_color": [
+      0.97,
+      0.66,
+      0.58
+    ],
+    "sky_blue_color": [
+      0.38,
+      0.6,
+      0.9
+    ],
+    "sky_sun_deg": 7.0,
+    "sky_warm_deg": 12.0,
+    "sky_mid_deg": 22.0,
+    "sky_blue_deg": 32.0,
+    "haze_far_color": [
+      0.95,
+      0.6,
+      0.5
+    ],
+    "haze_strength": 0.9,
+    "zenith_blue_boost": 0.3,
+    "zenith_el_start": 0.22,
+    "zenith_el_end": 0.55,
+    "cloud_el_floor": 0.25,
+    "cloud_lod_px": 0.00065,
+    "cloud_warp_freq": 1.0,
+    "cloud_warp_amp": 0.35,
+    "cloud_detail_freq": 3.0,
+    "cloud_detail_amp": 0.24,
+    "cloud_row_freq": 3.5,
+    "cloud_row_strength": 0.25,
+    "cloud_contrast": 2.0,
+    "cloud_edge_soft": 0.14,
+    "cloud_rim_step": 0.12,
+    "cloud_shade_softness": 0.5,
+    "cloud_core_darkening": 0.5,
+    "cloud_sun_clear": 0.45,
+    "cloud_sun_sigma_deg": 30.0,
+    "cloud_prox_floor": 0.35,
+    "cloud_underglow": 0.3,
+    "cloud_lit_near": [
+      1.0,
+      0.82,
+      0.5
+    ],
+    "cloud_lit_far": [
+      0.95,
+      0.66,
+      0.62
+    ],
+    "cloud_shadow_near": [
+      0.6,
+      0.33,
+      0.28
+    ],
+    "cloud_shadow_far": [
+      0.52,
+      0.4,
+      0.56
+    ],
+    "cloud_rim_color": [
+      1.0,
+      0.85,
+      0.42
+    ],
+    "cloud_rim_strength": 1.4,
+    "cloud_b_scale": [
+      2.0,
+      3.5
+    ],
+    "cloud_b_offset": [
+      11.3,
+      2.9
+    ],
+    "cloud_b_coverage_low": 0.58,
+    "cloud_b_coverage_high": 0.4,
+    "cloud_b_alpha": 0.95,
+    "cloud_b_el_in0": 0.05,
+    "cloud_b_el_in1": 0.1,
+    "cloud_b_el_out0": 0.42,
+    "cloud_b_el_out1": 0.58,
+    "cloud_a_scale": [
+      3.0,
+      5.0
+    ],
+    "cloud_a_offset": [
+      3.1,
+      7.7
+    ],
+    "cloud_a_coverage_low": 0.34,
+    "cloud_a_coverage_high": 0.26,
+    "cloud_a_alpha": 0.8,
+    "cloud_a_el_in0": 0.2,
+    "cloud_a_el_in1": 0.32,
+    "cloud_a_el_out0": 0.62,
+    "cloud_a_el_out1": 0.8
+  }
+}

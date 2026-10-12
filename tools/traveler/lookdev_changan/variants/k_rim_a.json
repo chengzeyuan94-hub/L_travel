@@ -1,0 +1,84 @@
+{
+  "base": "k0_baseline",
+  "light": {
+    "sunel": -12.0,
+    "sunaz": 244.0,
+    "color": [
+      1.0,
+      0.72,
+      0.44
+    ],
+    "energy": 0.8
+  },
+  "surface": {
+    "shader": "res://tools/traveler/lookdev_changan/atlas_surface_dusk_rim.gdshader",
+    "sun_wrap": 0.35,
+    "rim_strength": 1.6,
+    "rim_power": 3.5,
+    "rim_back_min": 0.15,
+    "rim_back_max": 0.75,
+    "rim_side_min": -0.05,
+    "rim_side_max": 0.35,
+    "rim_tint": [
+      1.0,
+      1.0,
+      0.8
+    ],
+    "rim_albedo_mix": 0.3,
+    "rim_up_start": 0.5,
+    "rim_up_end": 0.8,
+    "rim_sun_only": 1.0
+  },
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_changan/changan_extra_rim.gd",
+      "cfg": {
+        "targets": [
+          {
+            "root": "character",
+            "match": "tripo_node",
+            "color": [
+              1.0,
+              0.78,
+              0.45
+            ],
+            "intensity": 1.4,
+            "power": 2.5,
+            "dir_weight": 0.8,
+            "back_min": -0.2,
+            "back_max": 0.6,
+            "fade_start": 100.0,
+            "fade_end": 200.0
+          },
+          {
+            "path": "CliffBuddha",
+            "color": [
+              1.0,
+              0.74,
+              0.42
+            ],
+            "intensity": 1.2,
+            "power": 3.0,
+            "dir_weight": 0.85,
+            "fade_start": 30.0,
+            "fade_end": 90.0
+          },
+          {
+            "path": "FarBackdrop/MassifBandMerged",
+            "color": [
+              1.0,
+              0.72,
+              0.5
+            ],
+            "intensity": 0.9,
+            "power": 2.5,
+            "dir_weight": 0.85,
+            "fade_start": 40.0,
+            "fade_end": 170.0,
+            "fade_min": 0.4
+          }
+        ]
+      }
+    }
+  ]
+}

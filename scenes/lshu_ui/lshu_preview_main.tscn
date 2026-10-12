@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/lshu_ui/lshu_preview_main.gd" id="1_main"]
+[ext_resource type="PackedScene" path="res://scenes/lshu_ui/lshu_title_screen.tscn" id="2_start_screen"]
+[ext_resource type="PackedScene" path="res://scenes/lshu_ui/lshu_setup_screen.tscn" id="3_player_setup"]
+[ext_resource type="PackedScene" path="res://scenes/game_screen.tscn" id="4_game_screen"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_main")
+
+[node name="StartScreen" parent="." instance=ExtResource("2_start_screen")]
+unique_name_in_owner = true
+
+[node name="PlayerSetupScreen" parent="." instance=ExtResource("3_player_setup")]
+unique_name_in_owner = true
+
+[node name="GameScreen" parent="." instance=ExtResource("4_game_screen")]
+unique_name_in_owner = true

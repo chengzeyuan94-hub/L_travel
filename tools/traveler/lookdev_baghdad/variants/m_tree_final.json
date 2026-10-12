@@ -1,0 +1,113 @@
+{
+  "base": "t_combo_geo",
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_baghdad/lookdev_extra_drift.gd",
+      "cfg": {
+        "seed": 20260923,
+        "cast_shadow": false,
+        "max_triangles": 29000,
+        "main": {
+          "region": [
+            -10.0,
+            10.0,
+            4.4,
+            24.0
+          ],
+          "crest_angle_deg": 16.0,
+          "lee_toward_camera": true,
+          "size_depth": [
+            5.0,
+            20.0
+          ],
+          "spacing_near": 0.8,
+          "spacing_far": 0.4,
+          "len_near": 2.0,
+          "len_far": 0.8,
+          "gap_near": 0.6,
+          "gap_far": 0.3,
+          "h_near": 0.085,
+          "h_far": 0.035,
+          "stoss_ratio": 4.5,
+          "lee_ratio": 1.9,
+          "lee_split": 0.45,
+          "foot_ratio": 1.6,
+          "lee_foot_tone": 0.18,
+          "cap_ratio": 0.35,
+          "cap_drop": 0.9,
+          "cap_boost": 1.16,
+          "seg_len_u": 0.28,
+          "max_seg": 8,
+          "wobble_u": 0.3,
+          "crescent": 1.0,
+          "crest_jitter_u": 0.05,
+          "bury_u": 0.004,
+          "lee_tone": 1.04
+        },
+        "ripples": {
+          "region": [
+            -9.0,
+            9.0,
+            4.5,
+            16.0
+          ],
+          "crest_angle_deg": 9.0,
+          "lee_toward_camera": true,
+          "size_depth": [
+            5.0,
+            15.0
+          ],
+          "spacing_near": 0.26,
+          "spacing_far": 0.2,
+          "len_near": 0.8,
+          "len_far": 0.45,
+          "gap_near": 0.35,
+          "gap_far": 0.2,
+          "h_near": 0.04,
+          "h_far": 0.02,
+          "stoss_ratio": 4.0,
+          "lee_ratio": 1.3,
+          "cap_ratio": 0.3,
+          "cap_drop": 0.9,
+          "cap_boost": 1.12,
+          "seg_len_u": 0.15,
+          "max_seg": 6,
+          "wobble_u": 0.12,
+          "crescent": 0.8,
+          "crest_jitter_u": 0.02,
+          "bury_u": 0.003,
+          "lee_tone": 1.03,
+          "lee_foot_tone": 0.12,
+          "lee_split": 0.5,
+          "foot_ratio": 1.4
+        },
+        "facet_tone_jitter": 0.05
+      }
+    },
+    {
+      "script": "res://tools/traveler/lookdev_baghdad/lookdev_extra_scatter.gd",
+      "cfg": {
+        "seed": 20260923,
+        "pebble_count": 10000,
+        "patch_count": 1800,
+        "grass_count": 300,
+        "cluster_count": 80
+      }
+    },
+    {
+      "script": "res://tools/traveler/lookdev_baghdad/lookdev_extra_tree.gd",
+      "cfg": {
+        "wind": {
+          "sway_tip_u": 0.06,
+          "shadow_flutter_scale": 0.1
+        },
+        "leaves": {
+          "amount": 26,
+          "lifetime_s": 13.0,
+          "preprocess_s": 13.0,
+          "backlight_strength": 0.08
+        }
+      }
+    }
+  ]
+}

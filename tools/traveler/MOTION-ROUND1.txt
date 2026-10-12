@@ -1,0 +1,38 @@
+TASK-MOTION-001 round one reproduction (wind only)
+
+Prerequisite: the merged Atlas GLBs are restored as described in README.md.
+Static lookdev backdrop: python3 tools/traveler/prepare_lookdev_assets.py
+Then run Godot --headless --path . --import once. This is import only.
+
+Rebuild resources in a REAL WINDOW:
+Godot --path . --script res://tools/traveler/build_atlas_scene.gd -- --report=res://docs/reports/traveler-motion-001/godot-build.json
+
+Capture B FIRST, then A (stop if any B pair has nonzero live cells):
+Godot --path . --fixed-fps 30 --script res://scripts/traveler/motion_gate_runner.gd -- --look --dusk --far --view=changan --motion-mode=B --motion-output=res://docs/reports/traveler-motion-001/B
+Godot --path . --fixed-fps 30 --script res://scripts/traveler/motion_gate_runner.gd -- --look --dusk --far --view=changan --motion-mode=A --motion-output=res://docs/reports/traveler-motion-001/A
+
+python3 tools/traveler/motion_gate.py docs/reports/traveler-motion-001/B --grid 12x7 --pix 6 --cell 0.004 --json docs/reports/traveler-motion-001/motion-gate-B.json
+python3 tools/traveler/motion_gate.py docs/reports/traveler-motion-001/A --grid 12x7 --pix 6 --cell 0.004 --json docs/reports/traveler-motion-001/motion-gate-A.json
+The reference defaults to 0.005, but motion_params.json is authoritative (0.004).
+Run motion_verdict.py docs/reports/traveler-motion-001 with Python + Pillow + NumPy.
+It writes motion-verdict-AB.json. This is ONLY the A/B verdict, not S2 or CP1.
+
+S1b:
+Godot --path . --script res://tools/traveler/probe_instance_origins.gd -- --look --dusk --far --view=changan
+S3 signal-only check (no rendering; headless is correct here):
+Godot --headless --path . --script res://tools/traveler/motion_signal_probe.gd
+
+Exact-time stills / CP1:
+Godot --path . --fixed-fps 30 --script res://tools/traveler/motion_stills.gd -- --look --dusk --far --view=changan --wind-preset=recommended --still-times=0,1.43 --still-prefix=res://docs/reports/traveler-motion-001/S2-pair
+Presets: legacy (old linear model .014), recommended (.017 cantilever), strong (.024 cantilever).
+--movie-frames=360 saves 12 seconds at 30 fps. --probe-tree isolates the recorded
+gold-detail instance for diagnostic segmentation; --probe-part=crown/canopy/trunk
+selects whole crown / top 10% of crown / top 10% of the actual brown upper stem.
+Probe lighting is flat diagnostic lighting; only unmodified scene captures are
+used by A/B. Water's existing clock is frozen identically in A and B.
+
+All render captures use a 1920x1080 SubViewport. Project viewport stays 1280x720.
+Each PNG has a same-name JSON recording image_size and viewport_size.
+The 60-second sequence is A/f0000.png ... A/f0060.png (1-second spacing).
+Check exit_code=0 AND ERROR=0 AND SCRIPT ERROR=0 for every Godot command.
+No cloud animation, fire, particles, light drift, water motion additions or audio.

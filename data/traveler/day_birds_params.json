@@ -1,0 +1,65 @@
+{
+  "schema": "silkroad.traveler-day-birds.v1",
+  "enabled": false,
+  "status": "cancelled",
+  "count": 7,
+  "seed": 20260919,
+  "cycle_s": 96.0,
+  "crossing_s": 9.0,
+  "start_x_u": -12.0,
+  "end_x_u": 14.0,
+  "sky_y_u": 3.3,
+  "camera_depth_u": 12.0,
+  "formation": {
+    "trailing_step_u": 0.31,
+    "vertical_step_u": 0.1,
+    "position_jitter_u": 0.065,
+    "depth_jitter_u": 0.25
+  },
+  "shape": {
+    "wing_span_u": 5.9,
+    "body_length_u": 3.62,
+    "body_width_u": 1.16,
+    "wing_chord_u": 0.0,
+    "color_srgb": "#F5F2EA",
+    "asset_path": "res://assets/traveler/goose_lowpoly_export.glb",
+    "asset_model_dimensions_u": [
+      3.62,
+      5.9,
+      2.693
+    ],
+    "bird_scale": 0.09,
+    "projected_wingspan_px_target": [
+      45,
+      70
+    ]
+  },
+  "flap": {
+    "hz": 0.73,
+    "lift_ratio": 0.52,
+    "glide_fraction": 0.28,
+    "bob_u": 0.045,
+    "bob_hz": 0.21
+  },
+  "custom_aabb": {
+    "position": [
+      -15.5,
+      2.5,
+      -15.0
+    ],
+    "size": [
+      32.0,
+      2.5,
+      6.0
+    ]
+  },
+  "layer": {
+    "placement": "One world-fixed flock plane at 12 camera-forward units, in front of all frozen mountain bands and above the skyline; imported approved goose mesh is rotated in shader to face the camera while crossing.",
+    "occlusion": "Normal opaque depth testing stays enabled. Every installed mountain vertex is projected on camera forward to report the exact minimum depth and front-of-mountain margin.",
+    "camera": "Read only; initial frozen camera basis is copied to the component transform. Neither camera nor frozen scenery is changed.",
+    "quiet_schedule": "A nine-second crossing followed by 87 seconds without a flock. Every bird has an independent flap phase and a brief glide in each wing cycle.",
+    "freeze": "No TIME, process callback, tween, physics or random update; all movement uses externally supplied anim_t. B repeats the exact same time and geometry.",
+    "frustum_clipping": "Custom AABB expanded for x crossing -12..14, y sky band and z depth ±asset extent; static instance origin remains inside AABB for the full crossing.",
+    "source_model": "Approved four-view reference -> Blender editable source -> goose_lowpoly_export.glb; one MultiMeshInstance3D uses the imported mesh."
+  }
+}

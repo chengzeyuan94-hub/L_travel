@@ -1,0 +1,32 @@
+{
+  "acts": [
+    {
+      "id": "changan",
+      "missing": []
+    },
+    {
+      "id": "panti",
+      "missing": []
+    },
+    {
+      "id": "baghdad",
+      "missing": []
+    },
+    {
+      "id": "lshu",
+      "missing": []
+    }
+  ],
+  "engine": {
+    "build": "official",
+    "hash": "a13da4feb8d8aefc283c3763d33a2f170a18d541",
+    "hex": 263937,
+    "major": 4,
+    "minor": 7,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.7.1-stable (official)",
+    "timestamp": 0
+  },
+  "scope": "Cleaned public source dependency audit; not a GUI acceptance claim"
+}

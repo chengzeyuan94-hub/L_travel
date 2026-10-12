@@ -1,0 +1,157 @@
+{
+  "ruleset_id": "lshu_configurable_v1",
+  "edition_id": "user_confirmed_v1",
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "tea",
+      "display_name": "茶叶",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_tea_128.png",
+      "source_asset": "existing_project_asset",
+      "source_sha256": "748addb79c2cf4bf3e4368821c4e6cb48642070693aa5992247f527639ae8973",
+      "runtime_sha256": "748addb79c2cf4bf3e4368821c4e6cb48642070693aa5992247f527639ae8973"
+    },
+    {
+      "id": "silk",
+      "display_name": "丝绸",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_silk_128.png",
+      "source_asset": "existing_project_asset",
+      "source_sha256": "57926be440f79b3e737745f7e2ce5b05562f65a0e9d1db404bd5ef68eccd1e7e",
+      "runtime_sha256": "57926be440f79b3e737745f7e2ce5b05562f65a0e9d1db404bd5ef68eccd1e7e"
+    },
+    {
+      "id": "agarwood",
+      "display_name": "沉香",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_agarwood_128.png",
+      "source_asset": "silk-road-goods-pack/icons_384/good_agarwood_384.png",
+      "source_sha256": "0ca3fce619fec51652e04a29f2b471719dadde4e48726434e14155910e48af50",
+      "runtime_sha256": "9a395dbdffcb9c65759f07c5381f4c2b8649ab055b3359f3b87d42e1edb5e66f"
+    },
+    {
+      "id": "perfume",
+      "display_name": "香水",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_perfume_128.png",
+      "source_asset": "silk-road-goods-pack/icons_384/good_perfume_384.png",
+      "source_sha256": "c00dfc4bc1ee1da39d4cc60865d4f06911e48896cf30750ace45147f446b9896",
+      "runtime_sha256": "917f75587e3c950389a196b0fecea2ea0edfa1e40cea5e874b88011f2065d5e7"
+    },
+    {
+      "id": "jade",
+      "display_name": "和田玉",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_jade_128.png",
+      "source_asset": "existing_project_asset",
+      "source_sha256": "ec501d7a7b7f55659255241286f2e4e66130980727786a43d475af7fd19b7032",
+      "runtime_sha256": "ec501d7a7b7f55659255241286f2e4e66130980727786a43d475af7fd19b7032"
+    },
+    {
+      "id": "horse",
+      "display_name": "骏马",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_horse_128.png",
+      "source_asset": "silk-road-goods-pack/icons_384/good_horse_384.png",
+      "source_sha256": "b6607e5f6e5b40e13b0aea7ba5397f907010954228d46242fdb112c881072cc0",
+      "runtime_sha256": "a5e3486791290ae7b3d07c6d7f4de1a450599633742e5f6f3a2e22d9f86d3425"
+    },
+    {
+      "id": "frankincense",
+      "display_name": "乳香",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_frankincense_128.png",
+      "source_asset": "silk-road-goods-pack/icons_384/good_frankincense_384.png",
+      "source_sha256": "d072835ff18af81a40475e15a5164b1cfc8ef871e963604fd81f5b71fce90ef1",
+      "runtime_sha256": "d2844ef84fc075109a8701ceed814ba48983176cab2f3337a035ea1bec0a520f"
+    },
+    {
+      "id": "porcelain",
+      "display_name": "陶瓷",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_porcelain_128.png",
+      "source_asset": "existing_project_asset",
+      "source_sha256": "62e587be5df758d04b04c840f7d23e0843520988f4b64f0848c6519fecae5574",
+      "runtime_sha256": "62e587be5df758d04b04c840f7d23e0843520988f4b64f0848c6519fecae5574"
+    },
+    {
+      "id": "black_pepper",
+      "display_name": "黑胡椒",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_black_pepper_128.png",
+      "source_asset": "silk-road-goods-pack/icons_384/good_black_pepper_384.png",
+      "source_sha256": "fa70e58eef1f88add589d30e49fe4963d4a9196ca816b674893e0d6d3bf942c9",
+      "runtime_sha256": "4602981b95dc30c544482b00617b5c9c9c5687a4bd0650930c99f4042d4dab00"
+    },
+    {
+      "id": "dates",
+      "display_name": "椰枣",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_dates_128.png",
+      "source_asset": "silk-road-goods-pack/icons_384/good_dates_384.png",
+      "source_sha256": "3c9fe6cd0afbf8ccb78e77c2520b4e9e8cac1238b22cbb161ce3fb12717b725b",
+      "runtime_sha256": "6b9bb57a745c14c9fd7ab68aefa163ca96b3edbe971d87d25938c5e2666da4f3"
+    },
+    {
+      "id": "gems",
+      "display_name": "宝石",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_gems_128.png",
+      "source_asset": "silk-road-goods-pack/icons_384/good_gems_384.png",
+      "source_sha256": "214b27577fb4b314c21213fa44804bda214678dbc946928a967503285aaeb8b5",
+      "runtime_sha256": "a7a476c658aac8838fdf632f34c76f7990b0f8f9a677d5023c4ecaa6e3fc21e9"
+    },
+    {
+      "id": "ginseng",
+      "display_name": "高丽参",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_ginseng_128.png",
+      "source_asset": "silk-road-goods-pack/icons_384/good_ginseng_384.png",
+      "source_sha256": "c2c46607d8c1938bc5e146e2f132593a05a4533cda6d21843d61985111d8ad3a",
+      "runtime_sha256": "59912c684de48d4e417a1d80581d5496dc57b971f21545aebd849eff4c3b42ea"
+    },
+    {
+      "id": "lacquerware",
+      "display_name": "漆器",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_lacquerware_128.png",
+      "source_asset": "silk-road-goods-pack/icons_384/good_lacquerware_384.png",
+      "source_sha256": "bac351b3db4ec3a5e9f8e478837505f162bdb98131e80ae701197abf0dfe9319",
+      "runtime_sha256": "924154e13563429756b59a618c126e0ee28ef0f47889f85885f7d8a24cf931db"
+    },
+    {
+      "id": "glass",
+      "display_name": "玻璃",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_glass_128.png",
+      "source_asset": "silk-road-goods-pack/icons_384/good_glassware_384.png",
+      "source_sha256": "3ae4d43481f5a4bb5707eb7a6114426a455e662ef99b31fa7c69804ebc231f17",
+      "runtime_sha256": "c0f1aa4ff77ee06c57722890b2abb608a1a0cf3037522050d6fac57624efe9df"
+    },
+    {
+      "id": "ivory",
+      "display_name": "象牙",
+      "supply_total": 0,
+      "unresolved_fields": [],
+      "sprite": "res://assets/game/goods/good_ivory_128.png",
+      "source_asset": "silk-road-goods-pack/icons_384/good_ivory_384.png",
+      "source_sha256": "c2c34580fab77535b30168ea51331b2afbf9c6c410b501d78b6d3f4f563420b1",
+      "runtime_sha256": "a62e843da3236fb881e2d481bbb036317e5bc51e684d89fc1d4793deb4a7983e"
+    }
+  ]
+}

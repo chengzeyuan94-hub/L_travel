@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/player_setup_screen.tscn" id="1_base"]
+[ext_resource type="Script" path="res://scripts/lshu_ui/lshu_setup_screen.gd" id="2_script"]
+
+[node name="PlayerSetupScreen" instance=ExtResource("1_base")]
+script = ExtResource("2_script")

@@ -1,0 +1,8695 @@
+{
+  "pack_id": "world_hover_preview_v1",
+  "presentation_only": true,
+  "frame_count": 32,
+  "cities": [
+    {
+      "id": "yumenguan",
+      "display_name": "玉门关",
+      "idle": "res://assets/game/cities/world_hover_preview/yumenguan/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/yumenguan/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "01-yumen-pass-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          124,
+          376,
+          900,
+          901
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            250.0,
+            37.0,
+            248.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            230.0,
+            36.0,
+            225.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            222.0,
+            37.0,
+            223.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            227.0,
+            38.0,
+            225.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            222.0,
+            40.0,
+            222.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            221.0,
+            41.0,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            221.0,
+            42.0,
+            222.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            220.0,
+            41.0,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            219.0,
+            43.0,
+            220.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            219.0,
+            41.5,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            222.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            221.0,
+            42.0,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            222.0,
+            42.0,
+            223.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            221.0,
+            42.0,
+            222.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            222.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            219.0,
+            41.0,
+            220.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            219.0,
+            41.0,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            219.0,
+            41.0,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            220.0,
+            41.0,
+            222.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            220.0,
+            41.0,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            220.0,
+            41.0,
+            222.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            221.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            220.0,
+            41.0,
+            222.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            221.0,
+            41.0,
+            222.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            227.0,
+            39.0,
+            227.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            229.0,
+            39.0,
+            229.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            237.0,
+            36.0,
+            234.0
+          ],
+          "bbox": [
+            12,
+            43,
+            254,
+            207
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-9407- 玉门关4秒无缝循环动画。  两张上传图片是同一座玉门关的开始帧和结束帧。主城墙....mp4"
+    },
+    {
+      "id": "ancient_rome",
+      "display_name": "古罗马城",
+      "idle": "res://assets/game/cities/world_hover_preview/ancient_rome/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/ancient_rome/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "02-ancient-rome-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          123,
+          260,
+          901,
+          900
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            255.0,
+            39.0,
+            254.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            243.0,
+            44.0,
+            239.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            239.0,
+            44.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            239.0,
+            44.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            237.0,
+            45.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            237.0,
+            46.0,
+            240.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            238.0,
+            46.0,
+            240.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            238.0,
+            45.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            238.0,
+            46.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            237.0,
+            46.0,
+            240.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            237.0,
+            46.0,
+            240.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            237.0,
+            46.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            237.0,
+            46.0,
+            240.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            237.0,
+            46.0,
+            239.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            237.0,
+            46.0,
+            239.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            238.0,
+            45.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            238.0,
+            46.0,
+            240.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            238.0,
+            45.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            237.0,
+            45.0,
+            240.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            237.0,
+            45.0,
+            240.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            237.0,
+            46.0,
+            240.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            237.0,
+            46.0,
+            240.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            238.0,
+            46.0,
+            240.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            238.0,
+            45.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            239.0,
+            46.0,
+            242.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            239.0,
+            46.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            239.0,
+            46.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            240.0,
+            46.0,
+            242.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            239.0,
+            45.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            238.0,
+            46.0,
+            241.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            239.0,
+            45.0,
+            242.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            240.0,
+            44.0,
+            242.0
+          ],
+          "bbox": [
+            10,
+            35,
+            250,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-4260-古罗马城4秒无缝循环动画。  斗兽场、凯旋门、石柱神殿及所有石质结构完全静止。仅....mp4"
+    },
+    {
+      "id": "constantinople",
+      "display_name": "君士坦丁堡",
+      "idle": "res://assets/game/cities/world_hover_preview/constantinople/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/constantinople/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "03-constantinople-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          123,
+          246,
+          901,
+          900
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            252.0,
+            37.0,
+            250.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            221
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            223.0,
+            43.0,
+            217.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            216.0,
+            44.0,
+            215.5
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            219.0,
+            45.0,
+            218.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            213.0,
+            47.0,
+            215.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            211.0,
+            49.0,
+            212.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            212.0,
+            50.0,
+            211.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            208.0,
+            52.0,
+            210.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            207.0,
+            51.0,
+            208.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            205.0,
+            51.0,
+            208.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            207.0,
+            53.0,
+            207.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            206.0,
+            53.0,
+            208.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            205.0,
+            53.0,
+            206.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            205.0,
+            53.0,
+            207.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            207.0,
+            53.0,
+            208.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            205.0,
+            54.0,
+            208.0
+          ],
+          "bbox": [
+            13,
+            26,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            204.0,
+            53.0,
+            206.0
+          ],
+          "bbox": [
+            13,
+            19,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            203.0,
+            54.0,
+            207.0
+          ],
+          "bbox": [
+            13,
+            19,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            204.0,
+            55.0,
+            205.0
+          ],
+          "bbox": [
+            13,
+            21,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            203.0,
+            55.0,
+            206.0
+          ],
+          "bbox": [
+            13,
+            24,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            201.0,
+            53.0,
+            204.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            202.0,
+            54.0,
+            205.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            204.0,
+            55.0,
+            205.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            204.0,
+            55.0,
+            207.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            203.0,
+            53.0,
+            206.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            204.0,
+            53.0,
+            207.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            206.0,
+            54.0,
+            206.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            206.0,
+            53.0,
+            209.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            208.0,
+            51.0,
+            209.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            216.0,
+            46.0,
+            217.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            220.0,
+            46.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            222
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            236.0,
+            37.0,
+            234.0
+          ],
+          "bbox": [
+            13,
+            27,
+            244,
+            221
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-2777-君士坦丁堡4秒无缝循环动画。  中央穹顶、半穹顶、城墙、塔楼和全部建筑主体完全静....mp4"
+    },
+    {
+      "id": "changan",
+      "display_name": "长安",
+      "idle": "res://assets/game/cities/world_hover_preview/changan/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/changan/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "04-changan-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          123,
+          302,
+          901,
+          901
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            250.0,
+            37.0,
+            250.0
+          ],
+          "bbox": [
+            7,
+            41,
+            254,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            226.0,
+            41.0,
+            221.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            217.0,
+            42.0,
+            219.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            218.0,
+            45.0,
+            220.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            210.0,
+            50.0,
+            217.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            207.0,
+            52.0,
+            214.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            209.0,
+            54.0,
+            214.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            205.0,
+            56.0,
+            214.0
+          ],
+          "bbox": [
+            7,
+            36,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            201.0,
+            57.0,
+            210.0
+          ],
+          "bbox": [
+            7,
+            34,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            200.0,
+            57.0,
+            211.0
+          ],
+          "bbox": [
+            7,
+            40,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            201.0,
+            59.0,
+            209.0
+          ],
+          "bbox": [
+            7,
+            40,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            199.0,
+            59.0,
+            211.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            198.0,
+            59.0,
+            209.0
+          ],
+          "bbox": [
+            7,
+            40,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            198.0,
+            59.0,
+            210.0
+          ],
+          "bbox": [
+            7,
+            40,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            200.0,
+            60.0,
+            211.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            200.0,
+            60.0,
+            212.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            199.0,
+            59.0,
+            210.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            198.0,
+            60.0,
+            210.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            199.0,
+            61.0,
+            210.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            198.0,
+            60.0,
+            210.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            197.0,
+            60.0,
+            208.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            198.0,
+            60.0,
+            209.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            198.0,
+            61.0,
+            209.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            199.0,
+            61.0,
+            210.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            198.0,
+            60.0,
+            208.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            198.0,
+            59.0,
+            209.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            200.0,
+            60.0,
+            209.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            201.0,
+            58.0,
+            211.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            204.0,
+            53.0,
+            212.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            215.0,
+            46.0,
+            221.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            221.0,
+            44.0,
+            227.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            240.0,
+            36.0,
+            239.0
+          ],
+          "bbox": [
+            7,
+            41,
+            255,
+            231
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-4682-长安4秒无缝循环动画。  中央城门楼、左右阙楼、城墙、台阶和青绿色屋顶完全静止。....mp4"
+    },
+    {
+      "id": "pantuo",
+      "display_name": "盘橐城",
+      "idle": "res://assets/game/cities/world_hover_preview/pantuo/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/pantuo/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "05-pantuo-city-v2-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          128,
+          370,
+          896,
+          901
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            255.0,
+            40.0,
+            255.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            250.0,
+            46.0,
+            242.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            249.0,
+            46.0,
+            246.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            249.0,
+            45.0,
+            249.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            246.0,
+            46.0,
+            247.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            246.0,
+            46.0,
+            247.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            246.0,
+            47.0,
+            246.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            247.0,
+            46.0,
+            247.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            246.0,
+            47.0,
+            246.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            245.0,
+            47.0,
+            245.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            246.0,
+            47.0,
+            245.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            246.0,
+            47.0,
+            245.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            246.0,
+            47.0,
+            244.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            245.0,
+            46.0,
+            244.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            245.0,
+            46.0,
+            244.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            246.0,
+            46.0,
+            245.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            246.0,
+            47.0,
+            245.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            246.0,
+            46.0,
+            245.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            246.0,
+            47.0,
+            245.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            246.0,
+            47.0,
+            245.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            245.0,
+            47.0,
+            244.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            245.0,
+            47.0,
+            244.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            245.0,
+            46.0,
+            244.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            246.0,
+            46.0,
+            245.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            247.0,
+            46.0,
+            245.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            247.0,
+            46.0,
+            246.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            247.0,
+            46.0,
+            245.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            247.0,
+            46.0,
+            246.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            247.0,
+            46.0,
+            246.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            247.0,
+            46.0,
+            247.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            248.0,
+            46.0,
+            247.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            249.0,
+            45.0,
+            248.0
+          ],
+          "bbox": [
+            9,
+            37,
+            248,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-5616-盘橐城4秒无缝循环动画： 中央三层行政门楼、宫城建筑、仓库、回廊、拱门和防御塔全....mp4"
+    },
+    {
+      "id": "baghdad",
+      "display_name": "巴格达",
+      "idle": "res://assets/game/cities/world_hover_preview/baghdad/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/baghdad/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "06-baghdad-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          124,
+          348,
+          901,
+          901
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            250.0,
+            37.0,
+            250.0
+          ],
+          "bbox": [
+            15,
+            43,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            232.0,
+            36.0,
+            232.0
+          ],
+          "bbox": [
+            15,
+            40,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            223.0,
+            36.0,
+            229.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            228.0,
+            37.0,
+            232.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            223.0,
+            39.5,
+            229.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            223.0,
+            40.0,
+            229.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            223.0,
+            42.0,
+            229.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            223.0,
+            41.0,
+            230.0
+          ],
+          "bbox": [
+            15,
+            38,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            222.0,
+            41.0,
+            229.0
+          ],
+          "bbox": [
+            15,
+            38,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            220.0,
+            41.0,
+            228.0
+          ],
+          "bbox": [
+            15,
+            38,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            221.0,
+            42.0,
+            228.0
+          ],
+          "bbox": [
+            15,
+            38,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            221.0,
+            41.0,
+            228.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            220.0,
+            41.0,
+            227.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            222.0,
+            41.0,
+            229.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            222.0,
+            42.0,
+            228.0
+          ],
+          "bbox": [
+            15,
+            38,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            222.0,
+            41.0,
+            229.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            221.0,
+            41.0,
+            228.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            228.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            227.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            227.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            220.0,
+            41.0,
+            226.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            220.0,
+            41.0,
+            227.0
+          ],
+          "bbox": [
+            15,
+            38,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            227.0
+          ],
+          "bbox": [
+            15,
+            38,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            221.0,
+            41.0,
+            228.0
+          ],
+          "bbox": [
+            15,
+            38,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            221.0,
+            41.0,
+            228.0
+          ],
+          "bbox": [
+            15,
+            38,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            221.0,
+            41.0,
+            228.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            221.0,
+            42.0,
+            227.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            221.0,
+            41.0,
+            228.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            223.0,
+            40.0,
+            228.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            229.0,
+            39.0,
+            233.0
+          ],
+          "bbox": [
+            15,
+            39,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            230.0,
+            39.0,
+            234.0
+          ],
+          "bbox": [
+            15,
+            40,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            239.0,
+            36.0,
+            238.0
+          ],
+          "bbox": [
+            15,
+            41,
+            242,
+            202
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-8355-巴格达4秒无缝循环动画。  圆形城墙、主城门、内部庭院、蓝绿色穹顶和所有塔楼完全....mp4"
+    },
+    {
+      "id": "delhi",
+      "display_name": "德里",
+      "idle": "res://assets/game/cities/world_hover_preview/delhi/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/delhi/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "07-delhi-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          123,
+          151,
+          900,
+          901
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            251.0,
+            37.0,
+            250.0
+          ],
+          "bbox": [
+            23,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            230.0,
+            41.0,
+            226.0
+          ],
+          "bbox": [
+            22,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            225.0,
+            41.0,
+            226.0
+          ],
+          "bbox": [
+            22,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            228.0,
+            43.0,
+            228.0
+          ],
+          "bbox": [
+            22,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            222.0,
+            45.0,
+            225.0
+          ],
+          "bbox": [
+            22,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            223.0,
+            46.0,
+            225.0
+          ],
+          "bbox": [
+            22,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            223.0,
+            48.0,
+            225.0
+          ],
+          "bbox": [
+            22,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            222.0,
+            48.0,
+            224.0
+          ],
+          "bbox": [
+            22,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            220.0,
+            47.0,
+            222.0
+          ],
+          "bbox": [
+            22,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            219.0,
+            47.0,
+            222.0
+          ],
+          "bbox": [
+            22,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            219.0,
+            49.0,
+            222.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            219.0,
+            49.0,
+            222.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            217.0,
+            48.0,
+            221.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            219.0,
+            48.0,
+            223.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            220.0,
+            49.0,
+            223.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            219.0,
+            49.0,
+            223.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            218.0,
+            48.0,
+            222.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            218.0,
+            49.0,
+            222.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            219.0,
+            50.0,
+            222.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            219.0,
+            49.0,
+            222.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            217.0,
+            49.0,
+            221.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            217.0,
+            49.0,
+            221.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            218.0,
+            50.0,
+            221.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            219.0,
+            49.0,
+            222.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            218.0,
+            49.0,
+            221.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            218.0,
+            48.0,
+            221.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            218.0,
+            49.0,
+            221.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            218.0,
+            49.0,
+            221.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            218.0,
+            48.0,
+            221.0
+          ],
+          "bbox": [
+            22,
+            32,
+            233,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            222.0,
+            46.0,
+            223.0
+          ],
+          "bbox": [
+            22,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            224.0,
+            46.0,
+            227.0
+          ],
+          "bbox": [
+            22,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            238.0,
+            37.0,
+            237.0
+          ],
+          "bbox": [
+            22,
+            32,
+            232,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-9078-德里4秒无缝循环动画。  红砂岩主门、中央高墙、左右小穹顶和全部防御结构完全静止....mp4"
+    },
+    {
+      "id": "geumseong",
+      "display_name": "金城",
+      "idle": "res://assets/game/cities/world_hover_preview/geumseong/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/geumseong/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "08-geumseong-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          123,
+          317,
+          901,
+          901
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            251.0,
+            37.0,
+            249.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            227.0,
+            40.0,
+            223.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            218.0,
+            41.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            223.0,
+            41.0,
+            224.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            220.0,
+            42.0,
+            223.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            220.0,
+            44.0,
+            222.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            221.0,
+            45.0,
+            222.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            221.0,
+            45.0,
+            223.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            219.0,
+            44.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            218.0,
+            45.0,
+            220.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            218.0,
+            45.0,
+            220.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            218.0,
+            45.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            218.0,
+            44.0,
+            220.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            219.0,
+            44.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            219.0,
+            44.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            219.0,
+            44.0,
+            222.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            220.0,
+            44.0,
+            222.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            219.0,
+            44.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            219.0,
+            44.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            219.0,
+            44.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            218.0,
+            44.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            218.0,
+            44.0,
+            220.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            218.0,
+            45.0,
+            220.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            219.0,
+            44.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            218.0,
+            44.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            218.0,
+            44.0,
+            221.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            218.0,
+            45.0,
+            220.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            218.0,
+            45.0,
+            220.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            219.0,
+            44.0,
+            220.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            224.0,
+            42.0,
+            223.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            226.0,
+            42.0,
+            226.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            238.0,
+            36.0,
+            236.0
+          ],
+          "bbox": [
+            13,
+            45,
+            243,
+            217
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-6416-金城4秒无缝循环动画。  灰瓦宫殿、木柱、回廊、石塔和全部屋顶结构完全静止。仅制....mp4"
+    },
+    {
+      "id": "chenla",
+      "display_name": "真腊",
+      "idle": "res://assets/game/cities/world_hover_preview/chenla/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/chenla/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "09-chenla-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          123,
+          128,
+          901,
+          900
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            253.0,
+            38.0,
+            249.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            226.0,
+            42.0,
+            219.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            216.0,
+            44.0,
+            218.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            221.0,
+            44.0,
+            221.0
+          ],
+          "bbox": [
+            26,
+            20,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            217.0,
+            46.0,
+            219.0
+          ],
+          "bbox": [
+            26,
+            19,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            218.0,
+            46.0,
+            220.0
+          ],
+          "bbox": [
+            26,
+            19,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            219.0,
+            47.0,
+            220.0
+          ],
+          "bbox": [
+            26,
+            19,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            219.0,
+            47.0,
+            221.0
+          ],
+          "bbox": [
+            26,
+            19,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            218.0,
+            47.0,
+            219.0
+          ],
+          "bbox": [
+            26,
+            19,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            217.0,
+            47.0,
+            219.0
+          ],
+          "bbox": [
+            26,
+            19,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            217.0,
+            48.0,
+            218.0
+          ],
+          "bbox": [
+            26,
+            20,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            217.0,
+            47.0,
+            219.0
+          ],
+          "bbox": [
+            26,
+            20,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            216.0,
+            47.0,
+            217.0
+          ],
+          "bbox": [
+            26,
+            20,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            218.0,
+            47.0,
+            220.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            218.0,
+            47.0,
+            220.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            219.0,
+            47.0,
+            221.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            218.0,
+            46.0,
+            220.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            218.0,
+            47.0,
+            221.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            218.0,
+            48.0,
+            220.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            217.0,
+            47.0,
+            220.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            216.0,
+            47.0,
+            219.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            217.0,
+            47.0,
+            219.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            217.0,
+            48.0,
+            219.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            218.0,
+            47.0,
+            221.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            218.0,
+            47.0,
+            220.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            219.0,
+            47.0,
+            221.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            218.0,
+            47.0,
+            220.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            218.0,
+            46.0,
+            220.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            221.0,
+            44.0,
+            221.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            228.0,
+            42.0,
+            227.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            230.0,
+            41.0,
+            230.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            238.0,
+            37.0,
+            235.0
+          ],
+          "bbox": [
+            26,
+            21,
+            232,
+            226
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-8572-真腊4秒无缝循环动画。  中央高塔、左右副塔、石阶、墙体和所有高棉式建筑结构完全....mp4"
+    },
+    {
+      "id": "aden",
+      "display_name": "阿丹国",
+      "idle": "res://assets/game/cities/world_hover_preview/aden/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/aden/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "10-aden-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          124,
+          190,
+          901,
+          900
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            251.0,
+            37.0,
+            249.0
+          ],
+          "bbox": [
+            21,
+            35,
+            233,
+            229
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            234.0,
+            37.0,
+            228.0
+          ],
+          "bbox": [
+            21,
+            20,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            225.0,
+            37.0,
+            225.0
+          ],
+          "bbox": [
+            21,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            228.0,
+            38.0,
+            227.0
+          ],
+          "bbox": [
+            21,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            222.0,
+            40.0,
+            224.0
+          ],
+          "bbox": [
+            21,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            221.0,
+            44.0,
+            222.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            221.0,
+            45.0,
+            221.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            218.0,
+            46.0,
+            222.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            217.0,
+            46.0,
+            221.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            216.0,
+            47.0,
+            220.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            216.0,
+            48.0,
+            219.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            216.0,
+            47.0,
+            219.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            214.0,
+            47.0,
+            218.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            216.0,
+            48.0,
+            220.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            216.0,
+            49.0,
+            219.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            216.0,
+            49.0,
+            221.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            216.0,
+            48.0,
+            220.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            215.0,
+            49.0,
+            219.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            215.0,
+            50.0,
+            219.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            214.0,
+            49.0,
+            220.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            213.0,
+            49.0,
+            217.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            213.0,
+            50.0,
+            217.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            214.0,
+            51.0,
+            218.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            213.0,
+            51.0,
+            219.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            213.0,
+            50.0,
+            218.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            213.0,
+            50.0,
+            217.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            214.0,
+            50.0,
+            217.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            214.0,
+            49.0,
+            218.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            215.0,
+            46.0,
+            219.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            221.0,
+            43.0,
+            223.0
+          ],
+          "bbox": [
+            20,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            223.0,
+            43.0,
+            226.0
+          ],
+          "bbox": [
+            21,
+            19,
+            233,
+            230
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            235.0,
+            36.0,
+            235.0
+          ],
+          "bbox": [
+            21,
+            19,
+            233,
+            229
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-4647- 阿丹国4秒无缝循环动画。  石质港口城堡、中央门楼、左右塔楼、城墙及台阶完全静....mp4"
+    },
+    {
+      "id": "heijo_kyo",
+      "display_name": "平城京",
+      "idle": "res://assets/game/cities/world_hover_preview/heijo_kyo/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/heijo_kyo/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "11-heijo-kyo-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          123,
+          356,
+          901,
+          901
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            248.0,
+            37.0,
+            245.0
+          ],
+          "bbox": [
+            14,
+            56,
+            240,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            218.0,
+            48.0,
+            208.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            210.0,
+            51.0,
+            208.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            213.0,
+            53.0,
+            211.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            208.0,
+            54.0,
+            209.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            210.0,
+            55.0,
+            209.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            211.0,
+            56.0,
+            210.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            210.0,
+            56.0,
+            210.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            208.0,
+            55.0,
+            208.0
+          ],
+          "bbox": [
+            13,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            207.0,
+            55.0,
+            207.0
+          ],
+          "bbox": [
+            11,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            209.0,
+            57.0,
+            207.0
+          ],
+          "bbox": [
+            11,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            208.0,
+            56.0,
+            208.0
+          ],
+          "bbox": [
+            13,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            207.0,
+            56.0,
+            207.0
+          ],
+          "bbox": [
+            14,
+            55,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            208.0,
+            57.0,
+            209.0
+          ],
+          "bbox": [
+            14,
+            50,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            209.0,
+            57.0,
+            208.0
+          ],
+          "bbox": [
+            14,
+            51,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            208.0,
+            57.0,
+            210.0
+          ],
+          "bbox": [
+            14,
+            52,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            207.0,
+            55.0,
+            208.0
+          ],
+          "bbox": [
+            14,
+            54,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            207.0,
+            56.0,
+            208.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            208.0,
+            57.0,
+            208.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            207.0,
+            57.0,
+            209.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            206.0,
+            56.0,
+            207.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            206.0,
+            56.0,
+            207.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            207.0,
+            58.0,
+            207.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            207.0,
+            57.0,
+            208.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            207.0,
+            56.0,
+            207.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            207.0,
+            56.0,
+            207.0
+          ],
+          "bbox": [
+            11,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            208.0,
+            57.0,
+            207.0
+          ],
+          "bbox": [
+            11,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            207.0,
+            56.0,
+            207.0
+          ],
+          "bbox": [
+            12,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            209.0,
+            54.0,
+            208.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            216.0,
+            50.0,
+            215.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            219.0,
+            51.0,
+            219.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            237.0,
+            40.0,
+            234.0
+          ],
+          "bbox": [
+            14,
+            56,
+            241,
+            215
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-3987- 平城京4秒无缝循环动画。  中央宫殿、左右回廊、红色木柱、白墙、灰色屋顶及台阶....mp4"
+    },
+    {
+      "id": "sri_lanka",
+      "display_name": "狮子国",
+      "idle": "res://assets/game/cities/world_hover_preview/sri_lanka/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/sri_lanka/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "12-sri-lanka-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          123,
+          117,
+          901,
+          901
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            251.0,
+            37.0,
+            247.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            232.5,
+            35.0,
+            225.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            219.0,
+            33.0,
+            220.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            222.0,
+            35.0,
+            223.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            215.0,
+            37.0,
+            218.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            213.0,
+            38.0,
+            216.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            214.0,
+            39.0,
+            216.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            210.0,
+            40.5,
+            215.0
+          ],
+          "bbox": [
+            18,
+            15,
+            236,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            207.5,
+            40.0,
+            212.0
+          ],
+          "bbox": [
+            18,
+            15,
+            236,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            205.0,
+            41.0,
+            210.0
+          ],
+          "bbox": [
+            18,
+            15,
+            236,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            205.0,
+            42.0,
+            210.0
+          ],
+          "bbox": [
+            18,
+            15,
+            236,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            204.0,
+            42.0,
+            210.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            203.0,
+            42.0,
+            208.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            204.0,
+            43.0,
+            210.0
+          ],
+          "bbox": [
+            18,
+            14,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            205.0,
+            44.0,
+            209.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            204.0,
+            44.0,
+            210.0
+          ],
+          "bbox": [
+            18,
+            14,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            203.0,
+            43.0,
+            208.0
+          ],
+          "bbox": [
+            18,
+            14,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            202.0,
+            43.0,
+            208.0
+          ],
+          "bbox": [
+            18,
+            14,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            202.0,
+            44.0,
+            208.0
+          ],
+          "bbox": [
+            18,
+            14,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            201.0,
+            44.0,
+            208.0
+          ],
+          "bbox": [
+            18,
+            14,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            201.0,
+            43.0,
+            208.0
+          ],
+          "bbox": [
+            18,
+            14,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            202.0,
+            43.0,
+            208.0
+          ],
+          "bbox": [
+            18,
+            14,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            203.0,
+            44.0,
+            208.0
+          ],
+          "bbox": [
+            18,
+            14,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            203.0,
+            44.0,
+            209.0
+          ],
+          "bbox": [
+            18,
+            14,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            203.0,
+            43.0,
+            209.0
+          ],
+          "bbox": [
+            18,
+            14,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            205.0,
+            42.0,
+            210.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            208.0,
+            42.0,
+            211.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            210.0,
+            41.0,
+            215.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            215.0,
+            39.0,
+            217.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            224.0,
+            37.0,
+            224.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            227.0,
+            37.0,
+            227.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            240.0,
+            36.0,
+            236.0
+          ],
+          "bbox": [
+            18,
+            15,
+            235,
+            233
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-4157-狮子国4秒无缝循环动画。  中央白色佛塔、金色塔刹、环形基座、台阶和附属建筑完全....mp4"
+    },
+    {
+      "id": "cairo",
+      "display_name": "开罗",
+      "idle": "res://assets/game/cities/world_hover_preview/cairo/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/cairo/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "13-cairo-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          124,
+          204,
+          901,
+          901
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            253.0,
+            38.0,
+            249.0
+          ],
+          "bbox": [
+            13,
+            35,
+            242,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            229.0,
+            40.0,
+            222.0
+          ],
+          "bbox": [
+            13,
+            33,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            223.0,
+            39.0,
+            220.0
+          ],
+          "bbox": [
+            13,
+            33,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            227.0,
+            40.0,
+            222.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            220.0,
+            44.0,
+            218.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            218.0,
+            47.0,
+            215.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            218.0,
+            48.0,
+            215.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            216.0,
+            50.0,
+            215.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            214.0,
+            49.0,
+            212.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            213.0,
+            50.0,
+            212.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            214.0,
+            51.0,
+            212.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            214.0,
+            51.0,
+            214.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            212.0,
+            51.0,
+            211.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            213.0,
+            51.0,
+            214.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            215.0,
+            52.0,
+            214.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            214.0,
+            52.0,
+            214.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            213.0,
+            51.0,
+            212.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            213.0,
+            51.0,
+            213.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            213.0,
+            52.0,
+            213.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            212.0,
+            52.0,
+            213.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            211.0,
+            51.0,
+            211.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            212.0,
+            52.0,
+            212.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            213.0,
+            53.0,
+            212.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            213.0,
+            53.0,
+            213.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            212.0,
+            52.0,
+            212.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            213.0,
+            50.0,
+            213.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            214.0,
+            51.0,
+            213.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            215.0,
+            49.0,
+            215.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            218.0,
+            46.0,
+            215.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            226.0,
+            41.0,
+            223.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            229.0,
+            41.0,
+            227.0
+          ],
+          "bbox": [
+            13,
+            32,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            242.0,
+            36.0,
+            237.0
+          ],
+          "bbox": [
+            13,
+            33,
+            243,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-9509-开罗4秒无缝循环动画。  方形城堡、主拱门、穹顶、宣礼塔和全部石墙完全静止。仅制....mp4"
+    },
+    {
+      "id": "jeddah",
+      "display_name": "吉达",
+      "idle": "res://assets/game/cities/world_hover_preview/jeddah/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/jeddah/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "14-jeddah-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          124,
+          162,
+          901,
+          900
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            254.0,
+            38.0,
+            251.0
+          ],
+          "bbox": [
+            33,
+            49,
+            229,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            227.0,
+            42.0,
+            222.0
+          ],
+          "bbox": [
+            33,
+            48,
+            229,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            213.0,
+            45.0,
+            216.0
+          ],
+          "bbox": [
+            33,
+            37,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            218.0,
+            46.0,
+            219.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            214.0,
+            48.0,
+            217.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            214.0,
+            48.0,
+            217.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            215.0,
+            50.0,
+            218.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            215.0,
+            49.0,
+            219.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            213.0,
+            49.0,
+            217.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            212.0,
+            49.0,
+            216.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            213.0,
+            50.0,
+            215.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            213.0,
+            50.0,
+            217.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            212.0,
+            49.0,
+            216.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            213.0,
+            49.0,
+            218.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            215.0,
+            50.0,
+            218.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            215.0,
+            50.0,
+            219.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            215.0,
+            49.0,
+            218.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            214.0,
+            49.0,
+            218.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            214.0,
+            50.0,
+            217.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            213.0,
+            50.0,
+            218.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            212.0,
+            50.0,
+            216.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            213.0,
+            50.0,
+            217.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            213.0,
+            52.0,
+            217.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            214.0,
+            51.0,
+            218.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            214.0,
+            49.0,
+            218.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            214.0,
+            49.0,
+            218.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            215.0,
+            50.0,
+            217.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            214.0,
+            49.0,
+            217.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            216.0,
+            47.0,
+            218.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            223.0,
+            44.0,
+            224.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            225.0,
+            44.0,
+            227.0
+          ],
+          "bbox": [
+            33,
+            34,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            237.0,
+            37.0,
+            236.0
+          ],
+          "bbox": [
+            33,
+            36,
+            230,
+            235
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-2571-吉达4秒无缝循环动画。  珊瑚石建筑、木质凸窗、城门、方形塔楼和码头木柱完全静止....mp4"
+    },
+    {
+      "id": "dagon",
+      "display_name": "大光",
+      "idle": "res://assets/game/cities/world_hover_preview/dagon/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/dagon/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "15-dagon-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          141,
+          102,
+          882,
+          901
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            252.0,
+            37.0,
+            248.0
+          ],
+          "bbox": [
+            27,
+            10,
+            237,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            224.0,
+            40.0,
+            219.0
+          ],
+          "bbox": [
+            27,
+            10,
+            237,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            216.0,
+            39.0,
+            216.0
+          ],
+          "bbox": [
+            27,
+            10,
+            237,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            218.0,
+            42.0,
+            219.0
+          ],
+          "bbox": [
+            27,
+            10,
+            238,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            209.0,
+            46.0,
+            214.0
+          ],
+          "bbox": [
+            27,
+            10,
+            240,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            208.0,
+            47.0,
+            213.0
+          ],
+          "bbox": [
+            26,
+            10,
+            241,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            210.0,
+            49.0,
+            213.0
+          ],
+          "bbox": [
+            26,
+            10,
+            242,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            207.0,
+            50.0,
+            213.0
+          ],
+          "bbox": [
+            27,
+            10,
+            243,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            205.0,
+            49.0,
+            212.0
+          ],
+          "bbox": [
+            26,
+            10,
+            243,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            204.0,
+            49.0,
+            211.0
+          ],
+          "bbox": [
+            27,
+            10,
+            243,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            204.0,
+            50.0,
+            211.0
+          ],
+          "bbox": [
+            27,
+            10,
+            243,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            204.0,
+            50.0,
+            212.0
+          ],
+          "bbox": [
+            27,
+            10,
+            242,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            203.0,
+            49.0,
+            210.0
+          ],
+          "bbox": [
+            27,
+            10,
+            241,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            203.0,
+            49.0,
+            212.0
+          ],
+          "bbox": [
+            27,
+            10,
+            242,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            205.0,
+            50.0,
+            212.0
+          ],
+          "bbox": [
+            27,
+            10,
+            242,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            204.0,
+            50.0,
+            212.0
+          ],
+          "bbox": [
+            26,
+            10,
+            243,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            203.0,
+            50.0,
+            211.0
+          ],
+          "bbox": [
+            27,
+            10,
+            243,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            203.0,
+            50.0,
+            210.0
+          ],
+          "bbox": [
+            27,
+            10,
+            243,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            203.0,
+            51.0,
+            210.0
+          ],
+          "bbox": [
+            27,
+            10,
+            243,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            202.0,
+            51.0,
+            210.0
+          ],
+          "bbox": [
+            27,
+            10,
+            242,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            201.0,
+            50.0,
+            209.0
+          ],
+          "bbox": [
+            27,
+            10,
+            242,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            202.0,
+            50.0,
+            210.0
+          ],
+          "bbox": [
+            27,
+            10,
+            241,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            204.0,
+            52.0,
+            210.0
+          ],
+          "bbox": [
+            27,
+            10,
+            241,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            203.0,
+            52.0,
+            211.0
+          ],
+          "bbox": [
+            27,
+            10,
+            242,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            202.0,
+            50.0,
+            210.0
+          ],
+          "bbox": [
+            27,
+            10,
+            242,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            203.0,
+            50.0,
+            210.0
+          ],
+          "bbox": [
+            26,
+            10,
+            242,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            205.0,
+            50.0,
+            210.0
+          ],
+          "bbox": [
+            26,
+            10,
+            242,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            206.0,
+            49.0,
+            212.0
+          ],
+          "bbox": [
+            26,
+            10,
+            241,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            212.0,
+            45.0,
+            215.0
+          ],
+          "bbox": [
+            27,
+            10,
+            239,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            225.0,
+            40.0,
+            223.0
+          ],
+          "bbox": [
+            27,
+            10,
+            237,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            229.0,
+            40.0,
+            229.0
+          ],
+          "bbox": [
+            27,
+            10,
+            237,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            241.0,
+            36.0,
+            236.0
+          ],
+          "bbox": [
+            26,
+            10,
+            237,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-5239-大光4秒无缝循环动画。  中央金色佛塔、层叠屋顶、围墙、入口台阶和所有附属建筑完....mp4"
+    },
+    {
+      "id": "quanzhou",
+      "display_name": "泉州",
+      "idle": "res://assets/game/cities/world_hover_preview/quanzhou/idle.png",
+      "atlas": "res://assets/game/cities/world_hover_preview/quanzhou/hover_32f.png",
+      "frame_count": 32,
+      "columns": 8,
+      "frame_size": [
+        256,
+        256
+      ],
+      "fps": 8.0,
+      "idle_meta": {
+        "source_file": "16-quanzhou-1024.png",
+        "key_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox": [
+          128,
+          101,
+          896,
+          899
+        ],
+        "magenta_residue_ratio": 0.0
+      },
+      "frames": [
+        {
+          "source_file": "frame_00.png",
+          "key_rgb": [
+            249.0,
+            37.0,
+            248.0
+          ],
+          "bbox": [
+            22,
+            20,
+            230,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 0
+        },
+        {
+          "source_file": "frame_01.png",
+          "key_rgb": [
+            218.0,
+            43.0,
+            214.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 1
+        },
+        {
+          "source_file": "frame_02.png",
+          "key_rgb": [
+            210.0,
+            45.0,
+            213.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            237
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 2
+        },
+        {
+          "source_file": "frame_03.png",
+          "key_rgb": [
+            214.0,
+            46.0,
+            217.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            238
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 3
+        },
+        {
+          "source_file": "frame_04.png",
+          "key_rgb": [
+            210.0,
+            47.0,
+            215.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            239
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 4
+        },
+        {
+          "source_file": "frame_05.png",
+          "key_rgb": [
+            211.0,
+            49.0,
+            215.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            239
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 5
+        },
+        {
+          "source_file": "frame_06.png",
+          "key_rgb": [
+            212.0,
+            50.0,
+            215.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 6
+        },
+        {
+          "source_file": "frame_07.png",
+          "key_rgb": [
+            211.0,
+            50.0,
+            216.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            239
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 7
+        },
+        {
+          "source_file": "frame_08.png",
+          "key_rgb": [
+            210.0,
+            49.0,
+            213.0
+          ],
+          "bbox": [
+            21,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 8
+        },
+        {
+          "source_file": "frame_09.png",
+          "key_rgb": [
+            208.0,
+            49.0,
+            213.0
+          ],
+          "bbox": [
+            21,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 9
+        },
+        {
+          "source_file": "frame_10.png",
+          "key_rgb": [
+            210.0,
+            51.0,
+            213.0
+          ],
+          "bbox": [
+            21,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 10
+        },
+        {
+          "source_file": "frame_11.png",
+          "key_rgb": [
+            209.0,
+            51.0,
+            215.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            241
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 11
+        },
+        {
+          "source_file": "frame_12.png",
+          "key_rgb": [
+            208.0,
+            50.0,
+            214.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            239
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 12
+        },
+        {
+          "source_file": "frame_13.png",
+          "key_rgb": [
+            210.0,
+            50.0,
+            215.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 13
+        },
+        {
+          "source_file": "frame_14.png",
+          "key_rgb": [
+            211.0,
+            50.0,
+            215.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 14
+        },
+        {
+          "source_file": "frame_15.png",
+          "key_rgb": [
+            211.0,
+            50.0,
+            217.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 15
+        },
+        {
+          "source_file": "frame_16.png",
+          "key_rgb": [
+            210.0,
+            49.0,
+            215.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 16
+        },
+        {
+          "source_file": "frame_17.png",
+          "key_rgb": [
+            209.0,
+            50.0,
+            214.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            241
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 17
+        },
+        {
+          "source_file": "frame_18.png",
+          "key_rgb": [
+            210.0,
+            51.0,
+            214.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            241
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 18
+        },
+        {
+          "source_file": "frame_19.png",
+          "key_rgb": [
+            210.0,
+            50.0,
+            215.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 19
+        },
+        {
+          "source_file": "frame_20.png",
+          "key_rgb": [
+            207.0,
+            50.0,
+            214.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 20
+        },
+        {
+          "source_file": "frame_21.png",
+          "key_rgb": [
+            207.0,
+            50.0,
+            213.0
+          ],
+          "bbox": [
+            21,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 21
+        },
+        {
+          "source_file": "frame_22.png",
+          "key_rgb": [
+            209.0,
+            52.0,
+            214.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 22
+        },
+        {
+          "source_file": "frame_23.png",
+          "key_rgb": [
+            209.0,
+            52.0,
+            216.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 23
+        },
+        {
+          "source_file": "frame_24.png",
+          "key_rgb": [
+            208.0,
+            51.0,
+            215.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            240
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 24
+        },
+        {
+          "source_file": "frame_25.png",
+          "key_rgb": [
+            208.0,
+            51.0,
+            214.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            239
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 25
+        },
+        {
+          "source_file": "frame_26.png",
+          "key_rgb": [
+            209.0,
+            51.0,
+            213.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            239
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 26
+        },
+        {
+          "source_file": "frame_27.png",
+          "key_rgb": [
+            209.0,
+            51.0,
+            215.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            239
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 27
+        },
+        {
+          "source_file": "frame_28.png",
+          "key_rgb": [
+            210.0,
+            49.0,
+            214.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            238
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 28
+        },
+        {
+          "source_file": "frame_29.png",
+          "key_rgb": [
+            216.0,
+            45.0,
+            220.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 29
+        },
+        {
+          "source_file": "frame_30.png",
+          "key_rgb": [
+            219.0,
+            45.0,
+            224.0
+          ],
+          "bbox": [
+            22,
+            20,
+            231,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 30
+        },
+        {
+          "source_file": "frame_31.png",
+          "key_rgb": [
+            233.0,
+            37.0,
+            234.0
+          ],
+          "bbox": [
+            22,
+            20,
+            230,
+            236
+          ],
+          "magenta_residue_ratio": 0.0,
+          "index": 31
+        }
+      ],
+      "source_video_file": "jimeng-2026-07-30-6765-泉州4秒无缝循环动画。  红砖港城门、中央灰瓦屋顶、左右双塔、拱门、木质码头结构....mp4"
+    }
+  ]
+}

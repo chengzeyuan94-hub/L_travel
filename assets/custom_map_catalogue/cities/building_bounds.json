@@ -1,0 +1,197 @@
+{
+  "source": "tools/map_catalogue/run_archetype_model.py (building-only archetype models; centre already at the origin)",
+  "cities": {
+    "kiln_town": {
+      "building_width": 4.139,
+      "building_depth": 3.22,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "windcatcher_town": {
+      "building_width": 3.755,
+      "building_depth": 3.116,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "yurt_market": {
+      "building_width": 4.011,
+      "building_depth": 3.856,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "lighthouse_port": {
+      "building_width": 3.902,
+      "building_depth": 3.164,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "blue_dome_bazaar": {
+      "building_width": 4.102,
+      "building_depth": 3.644,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "canal_town": {
+      "building_width": 4.315,
+      "building_depth": 4.139,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "stilt_village": {
+      "building_width": 4.222,
+      "building_depth": 3.71,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "caravanserai_town": {
+      "building_width": 3.726,
+      "building_depth": 3.497,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "paper_village": {
+      "building_width": 4.422,
+      "building_depth": 4.054,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "oasis_citadel": {
+      "building_width": 3.67,
+      "building_depth": 3.025,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "rock_cut_town": {
+      "building_width": 4.013,
+      "building_depth": 3.429,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "snow_tower_village": {
+      "building_width": 3.528,
+      "building_depth": 2.962,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "fairy_chimney_town": {
+      "building_width": 3.947,
+      "building_depth": 3.126,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "grape_oasis": {
+      "building_width": 4.149,
+      "building_depth": 3.396,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "colonnade_city": {
+      "building_width": 4.383,
+      "building_depth": 3.535,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "windmill_hill_town": {
+      "building_width": 4.069,
+      "building_depth": 3.518,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "snow_monastery_town": {
+      "building_width": 3.895,
+      "building_depth": 3.175,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "tulou_village": {
+      "building_width": 4.069,
+      "building_depth": 3.353,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "ghat_town": {
+      "building_width": 3.816,
+      "building_depth": 3.118,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "lagoon_town": {
+      "building_width": 4.137,
+      "building_depth": 3.327,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "drum_tower_village": {
+      "building_width": 3.95,
+      "building_depth": 3.468,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "shipyard_port": {
+      "building_width": 4.114,
+      "building_depth": 3.881,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "pine_hill_town": {
+      "building_width": 4.09,
+      "building_depth": 3.487,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "noria_town": {
+      "building_width": 4.38,
+      "building_depth": 3.486,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    }
+  }
+}

@@ -1,0 +1,951 @@
+{
+  "schema": "lshu.postcard_lines.v1",
+  "version": "2026-09-24 draft 1",
+  "status": "draft: Claude 起草，Carlos 改定。所有概率与窗口都是起点值，随时可调，不作为验收门槛。",
+  "voice": {
+    "who": "L叔：戴大眼镜的中年大叔，温和、话少、有点冷幽默，偶尔自嘲。",
+    "rules": [
+      "第一人称，短句，一行只说一件事，每行以句号结尾。",
+      "每行不超过 limits.max_line_chars 个字符（含标点）。",
+      "分类互不越界，这样任意两类拼在一起都不打架：时段句只写光、天色、空气；活动句只写他在做的事；地貌句只写脚下、水、石、雪、沙和这类地方的气味声音；路上句只写赶路；回家句只写家。",
+      "不写地名、城名、编号、数字、日期；地名由邮戳负责。",
+      "不写署名，「L」由界面落款。",
+      "不用表情符号，不用网络流行语。"
+    ]
+  },
+  "signature": {
+    "text": "L",
+    "rendered_by": "ui",
+    "note": "句子里从不出现署名或「L叔」。"
+  },
+  "limits": {
+    "max_line_chars": 26,
+    "max_card_chars": 50,
+    "max_lines_per_card": 2,
+    "no_repeat_window_cards": 20
+  },
+  "input_contract": {
+    "note": "组合一张明信片时，导演脚本需要给出下面这些上下文。字段按列出的顺序取第一个非空值；pool.* 指 data/traveler/lshu/pool.json 里这一站的条目，tile.* 指该地块的 lshu.tile.v1 JSON。本文件不认识任何地块或地点编号。",
+    "slot": {
+      "required": true,
+      "values": [
+        "morning",
+        "day",
+        "sunset",
+        "night"
+      ],
+      "source": "拍明信片那一刻的循环时钟时段（loop.json 的光照时段窗口），不用配方里的 light 字段。",
+      "aliases": {
+        "dusk": "sunset",
+        "evening": "sunset",
+        "noon": "day",
+        "dawn": "morning"
+      }
+    },
+    "kit": {
+      "required": true,
+      "source": [
+        "pool.kit",
+        "tile.kit.mode",
+        "tile.kit.id"
+      ],
+      "note": "取值可以是字符串或 0–3 的整数，按 kits.*.aliases 归一。Godot 的 JSON 会把整数读成 float，比较前先转成 int。"
+    },
+    "biome": {
+      "required": true,
+      "source": [
+        "pool.biome",
+        "tile.place.theme"
+      ],
+      "note": "网页配方的 theme：snow / desert / autumn / harbor；也接受 terrain_resolve.from_biome 里列出的别名。"
+    },
+    "landform": {
+      "required": false,
+      "source": [
+        "pool.landform",
+        "tile.place.landform"
+      ]
+    },
+    "city": {
+      "required": false,
+      "source": [
+        "pool.city_id",
+        "tile.place.city"
+      ],
+      "note": "pool.city_id 是 city_lore_v1.json 的 city_id；tile.place.city 是城市中文名，经 cities.json 的 display_name 换成 id。两者都空就是自然地点。"
+    },
+    "postcard_terrain": {
+      "required": false,
+      "source": [
+        "pool.postcard_terrain"
+      ],
+      "note": "可选的覆盖值，Array[String]，取值为 terrain_groups 的键。给了就不再推算地貌组。"
+    },
+    "place_name": {
+      "required": true,
+      "source": [
+        "pool.place_name",
+        "tile.place.name"
+      ],
+      "note": "只给邮戳用，不进句子。"
+    },
+    "sub": {
+      "required": false,
+      "source": [
+        "pool.sub"
+      ],
+      "note": "网页 places[].sub。只对自然地点当邮戳副题用；城市地点的 sub 是免责说明，不用。"
+    },
+    "is_home": {
+      "required": true,
+      "source": [
+        "pool.is_home",
+        "stop.home"
+      ]
+    },
+    "is_overnight": {
+      "required": true,
+      "source": [
+        "stop.night"
+      ]
+    },
+    "after_long_road": {
+      "required": true,
+      "source": [
+        "stop.long_road"
+      ],
+      "note": "到这一站之前走的是「远路」（loop.json 的长路段）。"
+    },
+    "minutes_since_arrive": {
+      "required": true,
+      "source": [
+        "(card_unix - stop.arrive) / 60"
+      ]
+    },
+    "history": {
+      "required": true,
+      "source": [
+        "save.postcards[-20:].line_ids"
+      ],
+      "note": "最近 20 张明信片用过的句子编号。"
+    },
+    "rng": {
+      "required": true,
+      "source": [
+        "hash(save.seed, leg_index, card_index_in_leg, step)"
+      ],
+      "note": "只要求同一存档、同一站、同一张卡结果一致；不要求和 Python 参考实现逐位相同。"
+    }
+  },
+  "kits": {
+    "look": {
+      "label": "远望",
+      "aliases": [
+        "look",
+        0
+      ]
+    },
+    "camp": {
+      "label": "扎营",
+      "aliases": [
+        "camp",
+        1
+      ]
+    },
+    "tea": {
+      "label": "喝茶",
+      "aliases": [
+        "tea",
+        2
+      ]
+    },
+    "bloom": {
+      "label": "拾花",
+      "aliases": [
+        "bloom",
+        "encounter",
+        3
+      ]
+    }
+  },
+  "terrain_groups": {
+    "snow": {
+      "label": "雪"
+    },
+    "desert": {
+      "label": "沙"
+    },
+    "grass": {
+      "label": "草木"
+    },
+    "harbour": {
+      "label": "水岸"
+    },
+    "rock": {
+      "label": "山石"
+    },
+    "city": {
+      "label": "城"
+    }
+  },
+  "terrain_resolve": {
+    "note": "一站的地貌标签 = postcard_terrain（若给出）；否则 = [city（若是城市地点）] + from_landform[landform] + from_biome[biome]，去重。与地点编号同名的地形取值故意不列；需要时在 pool.json 里用 postcard_terrain 补。",
+    "from_biome": {
+      "snow": "snow",
+      "desert": "desert",
+      "sand": "desert",
+      "autumn": "grass",
+      "grass": "grass",
+      "forest": "grass",
+      "harbor": "harbour",
+      "harbour": "harbour",
+      "water": "harbour",
+      "rock": "rock"
+    },
+    "from_landform": {
+      "ridge": "rock",
+      "ruin": "rock",
+      "basin": "rock",
+      "headland": "rock",
+      "dune": "desert",
+      "grove": "grass",
+      "shore": "harbour"
+    },
+    "fallback": "grass",
+    "pick": {
+      "city_weight": 0.5,
+      "note": "城市地点抽到「城」的概率 0.5，其余概率在自然标签之间平分；自然地点在自己的标签之间平分。"
+    }
+  },
+  "compose": {
+    "summary": "每张明信片 1–2 句。先定主句的类别，再按概率补一句别的类别；两句不同类、不共享母题、不重复最近 20 张用过的句子；按固定顺序排好，用换行连接。",
+    "steps": [
+      "1. 归一上下文：slot、kit 按别名归一；按 terrain_resolve 得到地貌标签。",
+      "2. 定主句类别：is_home 为真 → home。否则 after_long_road 为真且 minutes_since_arrive ≤ 20 时，以 primary.road_after_long_road.p 取 road。否则 minutes_since_arrive ≤ 10 时，以 primary.road_fresh_arrival.p 取 road。仍未定的，按 primary.weights（过夜站用 primary.weights_overnight）在 terrain 与 kit 之间抽。",
+      "3. 选主句：terrain 类先按 terrain_resolve.pick 抽一个地貌组，kit 类用当前配景，然后在该组里抽一句。",
+      "4. 是否补第二句：以 second_line.p（home 用 second_line.p_home）决定；补的话按 second_line.weights_by_primary[主句类别] 抽类别，且不能和主句同类。time 类用当前 slot 的句组。",
+      "5. 过滤：候选句先去掉 history 里出现过的；再去掉 avoid 命中当前上下文的（写法 slot:xxx / terrain:xxx / kit:xxx，terrain 指本张卡实际抽中的地貌组或该站全部地貌标签）；第二句还要去掉与主句共享 motifs 的。",
+      "6. 兜底：某组过滤后为空时，忽略 history，取该组里最久没用过的一句（仍遵守 avoid 和母题）；还是空的话，主句忽略母题，第二句直接放弃。",
+      "7. 超长：两句连起来超过 limits.max_card_chars 时，换一次第二句；仍超长就只留主句。",
+      "8. 排序与连接：按 card_order 排，用 joiner 连接。把两句的 id 写进这张明信片的 line_ids，供之后的去重。"
+    ],
+    "primary": {
+      "road_after_long_road": {
+        "p": 0.7,
+        "max_minutes_since_arrive": 20
+      },
+      "road_fresh_arrival": {
+        "p": 0.1,
+        "max_minutes_since_arrive": 10
+      },
+      "weights": {
+        "terrain": 0.5,
+        "kit": 0.5
+      },
+      "weights_overnight": {
+        "terrain": 0.4,
+        "kit": 0.6
+      }
+    },
+    "second_line": {
+      "p": 0.65,
+      "p_home": 0.5,
+      "weights_by_primary": {
+        "terrain": {
+          "time": 0.6,
+          "kit": 0.4
+        },
+        "kit": {
+          "time": 0.6,
+          "terrain": 0.4
+        },
+        "road": {
+          "time": 0.5,
+          "terrain": 0.5
+        },
+        "home": {
+          "time": 1.0
+        }
+      }
+    },
+    "card_order": [
+      "time",
+      "road",
+      "home",
+      "terrain",
+      "kit"
+    ],
+    "joiner": "\n",
+    "away_card": {
+      "note": "「你不在的时候」小卡：地名清单由导演脚本给出，本文件只提供一句 road 类的话，不加时段句，同样遵守 20 张去重。",
+      "category": "road",
+      "lines": 1
+    }
+  },
+  "stamp": {
+    "note": "邮戳不在句库里生成句子，这里只记录取数规则，供界面使用。",
+    "title_source": [
+      "pool.place_name",
+      "tile.place.name"
+    ],
+    "date_format": "{year}年{month}月{day}日",
+    "slot_labels": {
+      "morning": "晨",
+      "day": "昼",
+      "sunset": "昏",
+      "night": "夜"
+    },
+    "home_mark": "家",
+    "caption": {
+      "city": "城市地点：city_lore 的称号（epithet）。",
+      "natural": "自然地点：pool.sub（网页 places[].sub），没有就不写。",
+      "never": "城市地点不用网页的 sub，那是免责说明。"
+    },
+    "city_lookup": {
+      "lore_file": "res://data/rulesets/lshu_configurable_v1/presentation/city_lore_v1.json",
+      "cities_file": "res://data/rulesets/lshu_configurable_v1/cities.json",
+      "id_from": [
+        "pool.city_id",
+        "cities_file items[].id where items[].display_name == tile.place.city"
+      ],
+      "match": "lore_file items[].city_id == id",
+      "field": "items[].epithet",
+      "status_field": "items[].verification_status",
+      "blocked_status": "CONTENT_BLOCKED",
+      "blocked_policy": "omit",
+      "blocked_note": "称号处于 CONTENT_BLOCKED 的城市，邮戳只写地名、不写称号，等 Carlos 裁决后把 blocked_policy 改成 show 即可。两个文件都只读。"
+    }
+  },
+  "lines": {
+    "time": {
+      "morning": [
+        {
+          "id": "t.mor.01",
+          "text": "天刚亮，光从侧面照过来，什么都显得很新。"
+        },
+        {
+          "id": "t.mor.02",
+          "text": "起得早，影子比我还长。",
+          "motifs": [
+            "shadow"
+          ]
+        },
+        {
+          "id": "t.mor.03",
+          "text": "早上的风有点凉，正好把人吹醒。",
+          "motifs": [
+            "wind"
+          ]
+        },
+        {
+          "id": "t.mor.04",
+          "text": "天一点点亮起来，我没急着动。"
+        },
+        {
+          "id": "t.mor.05",
+          "text": "早起没什么好处，就是能看见天是怎么亮的。"
+        },
+        {
+          "id": "t.mor.06",
+          "text": "清早的空气吸一口，像喝了半杯凉水。",
+          "motifs": [
+            "drink"
+          ]
+        }
+      ],
+      "day": [
+        {
+          "id": "t.day.01",
+          "text": "日头正好，晒得人有点犯困。",
+          "motifs": [
+            "sun"
+          ]
+        },
+        {
+          "id": "t.day.02",
+          "text": "日头高，影子短，东西都老老实实待在原地。",
+          "motifs": [
+            "sun",
+            "shadow"
+          ]
+        },
+        {
+          "id": "t.day.03",
+          "text": "天很亮，眯着眼睛看，远处也清楚。",
+          "motifs": [
+            "far"
+          ]
+        },
+        {
+          "id": "t.day.04",
+          "text": "太阳在头顶，我找了块阴凉歇着。",
+          "motifs": [
+            "sun"
+          ]
+        },
+        {
+          "id": "t.day.05",
+          "text": "白天长，走不走都来得及。"
+        },
+        {
+          "id": "t.day.06",
+          "text": "光很足，这时候拍照，连我都显得精神。"
+        }
+      ],
+      "sunset": [
+        {
+          "id": "t.sun.01",
+          "text": "太阳往下走，什么都镀了一层旧铜色。",
+          "motifs": [
+            "sun"
+          ]
+        },
+        {
+          "id": "t.sun.02",
+          "text": "傍晚的光最会哄人，看什么都顺眼。"
+        },
+        {
+          "id": "t.sun.03",
+          "text": "天边红了一阵，又慢慢灰下去。"
+        },
+        {
+          "id": "t.sun.04",
+          "text": "影子拉得老长，好像比我还想赶路。",
+          "motifs": [
+            "shadow"
+          ]
+        },
+        {
+          "id": "t.sun.05",
+          "text": "日落前那一会儿，风也变软了。",
+          "motifs": [
+            "wind"
+          ]
+        },
+        {
+          "id": "t.sun.06",
+          "text": "这时候的光不等人，多看一眼就少一点。"
+        }
+      ],
+      "night": [
+        {
+          "id": "t.nig.01",
+          "text": "天黑透了，星星比我想的多。",
+          "motifs": [
+            "star"
+          ]
+        },
+        {
+          "id": "t.nig.02",
+          "text": "夜里很静，能听见自己喝水的声音。",
+          "motifs": [
+            "drink"
+          ]
+        },
+        {
+          "id": "t.nig.03",
+          "text": "把灯拨亮一点，看了会儿天，又拨暗了。",
+          "motifs": [
+            "lamp"
+          ]
+        },
+        {
+          "id": "t.nig.04",
+          "text": "夜里风小了，只剩一点凉。",
+          "motifs": [
+            "wind"
+          ]
+        },
+        {
+          "id": "t.nig.05",
+          "text": "睡前摘了眼镜，天上的星星就糊成一片。",
+          "motifs": [
+            "glasses",
+            "star"
+          ]
+        },
+        {
+          "id": "t.nig.06",
+          "text": "夜深了，这一天走得不算多，也不算少。"
+        }
+      ]
+    },
+    "kit": {
+      "look": [
+        {
+          "id": "k.look.01",
+          "text": "站着看了很久，也说不清在看什么。"
+        },
+        {
+          "id": "k.look.02",
+          "text": "往远处望，望不到头，这样挺好。",
+          "motifs": [
+            "far"
+          ]
+        },
+        {
+          "id": "k.look.03",
+          "text": "眼镜擦了两遍，远处还是有点模糊。是远处的问题。",
+          "motifs": [
+            "glasses",
+            "far"
+          ]
+        },
+        {
+          "id": "k.look.04",
+          "text": "站得高一点，心里就宽一点。"
+        },
+        {
+          "id": "k.look.05",
+          "text": "没什么要紧事，就在这儿多站一会儿。"
+        },
+        {
+          "id": "k.look.06",
+          "text": "看了一会儿远处，回头发现来的路也挺好看。",
+          "motifs": [
+            "far",
+            "path"
+          ]
+        }
+      ],
+      "camp": [
+        {
+          "id": "k.camp.01",
+          "text": "帐篷搭得有点歪，睡起来倒不碍事。",
+          "motifs": [
+            "tent"
+          ]
+        },
+        {
+          "id": "k.camp.02",
+          "text": "火生起来了，先烤手，再烤脸。",
+          "motifs": [
+            "fire"
+          ]
+        },
+        {
+          "id": "k.camp.03",
+          "text": "锅里煮着东西，闻着比吃着香。"
+        },
+        {
+          "id": "k.camp.04",
+          "text": "添了两根柴，火噼啪响了一阵，像是在回话。",
+          "motifs": [
+            "fire"
+          ]
+        },
+        {
+          "id": "k.camp.05",
+          "text": "包一打开，东西摊了一地，收起来又得费点工夫。"
+        },
+        {
+          "id": "k.camp.06",
+          "text": "守着火，腿脚才想起来今天走了多远。",
+          "motifs": [
+            "fire",
+            "legs"
+          ]
+        }
+      ],
+      "tea": [
+        {
+          "id": "k.tea.01",
+          "text": "坐下泡了一壶茶，热气把眼镜糊住了。",
+          "motifs": [
+            "drink",
+            "glasses"
+          ]
+        },
+        {
+          "id": "k.tea.02",
+          "text": "茶有点烫，正好慢慢喝。",
+          "motifs": [
+            "drink"
+          ]
+        },
+        {
+          "id": "k.tea.03",
+          "text": "茶叶在杯里转了几圈，才肯沉下去。",
+          "motifs": [
+            "drink"
+          ]
+        },
+        {
+          "id": "k.tea.04",
+          "text": "喝茶不为解渴，是给自己找个坐下的理由。",
+          "motifs": [
+            "drink"
+          ]
+        },
+        {
+          "id": "k.tea.05",
+          "text": "茶是路上换来的，味道一般，我喝得很认真。",
+          "motifs": [
+            "drink",
+            "earnest"
+          ]
+        },
+        {
+          "id": "k.tea.06",
+          "text": "第二杯比第一杯淡，我也比刚才松快。",
+          "motifs": [
+            "drink"
+          ]
+        }
+      ],
+      "bloom": [
+        {
+          "id": "k.bloom.01",
+          "text": "路边摘了几朵小花，叫不出名字，就叫路边花。",
+          "motifs": [
+            "flower"
+          ],
+          "avoid": [
+            "terrain:snow"
+          ]
+        },
+        {
+          "id": "k.bloom.02",
+          "text": "捡了些小东西，拿在手里，倒不知道往哪儿放。"
+        },
+        {
+          "id": "k.bloom.03",
+          "text": "蹲下去看一朵花，起身的时候膝盖先响了。",
+          "motifs": [
+            "flower",
+            "legs"
+          ],
+          "avoid": [
+            "terrain:snow"
+          ]
+        },
+        {
+          "id": "k.bloom.04",
+          "text": "捡到一块好看的小石头，揣进兜里，兜又沉了一点。",
+          "motifs": [
+            "stone"
+          ]
+        },
+        {
+          "id": "k.bloom.05",
+          "text": "手里捧着东西，走路就慢了，慢一点也好。"
+        },
+        {
+          "id": "k.bloom.06",
+          "text": "花夹进本子里，等它干了，就是这一站的书签。",
+          "motifs": [
+            "flower"
+          ],
+          "avoid": [
+            "terrain:snow"
+          ]
+        }
+      ]
+    },
+    "terrain": {
+      "snow": [
+        {
+          "id": "g.snow.01",
+          "text": "雪踩上去吱吱响，走一步，响一声。"
+        },
+        {
+          "id": "g.snow.02",
+          "text": "眼镜一冷一热就起雾，看雪全凭想象。",
+          "motifs": [
+            "glasses"
+          ]
+        },
+        {
+          "id": "g.snow.03",
+          "text": "雪地很亮，亮得人说话都不好意思大声。"
+        },
+        {
+          "id": "g.snow.04",
+          "text": "呼出来的气是白的，像在跟自己说话。"
+        },
+        {
+          "id": "g.snow.05",
+          "text": "雪把声音都收走了，只剩一点风。",
+          "motifs": [
+            "wind"
+          ]
+        },
+        {
+          "id": "g.snow.06",
+          "text": "手冻得有点僵，字写歪了，你将就看。"
+        }
+      ],
+      "desert": [
+        {
+          "id": "g.desert.01",
+          "text": "沙子很细，鞋里、兜里、眼镜缝里都有。",
+          "motifs": [
+            "glasses"
+          ]
+        },
+        {
+          "id": "g.desert.02",
+          "text": "走在沙上，一步退半步，也算往前。"
+        },
+        {
+          "id": "g.desert.03",
+          "text": "风一吹，脚印就没了，好像我没来过。",
+          "motifs": [
+            "wind"
+          ]
+        },
+        {
+          "id": "g.desert.04",
+          "text": "这里干得很，水要一口一口省着喝。",
+          "motifs": [
+            "drink"
+          ]
+        },
+        {
+          "id": "g.desert.05",
+          "text": "远处的沙丘一道一道，像被人梳过。",
+          "motifs": [
+            "far"
+          ]
+        },
+        {
+          "id": "g.desert.06",
+          "text": "这里空，空得让人想唱两句，想想还是算了。"
+        }
+      ],
+      "grass": [
+        {
+          "id": "g.grass.01",
+          "text": "草长得正好，踩上去软软的。"
+        },
+        {
+          "id": "g.grass.02",
+          "text": "树叶沙沙响，像在议论我这个过路的。"
+        },
+        {
+          "id": "g.grass.03",
+          "text": "空气里有青草味，还有一点泥土味。"
+        },
+        {
+          "id": "g.grass.04",
+          "text": "林子不深，走进去就听不见别的声音了。"
+        },
+        {
+          "id": "g.grass.05",
+          "text": "裤脚沾了草籽，一路带着走，也算帮它们搬了家。"
+        },
+        {
+          "id": "g.grass.06",
+          "text": "树底下落了一层叶子，踩上去有点可惜。"
+        }
+      ],
+      "harbour": [
+        {
+          "id": "g.harbour.01",
+          "text": "水声一直在，听久了，反倒觉得安静。"
+        },
+        {
+          "id": "g.harbour.02",
+          "text": "风里有股咸味，眼镜片上也蒙了一层。",
+          "motifs": [
+            "wind",
+            "glasses"
+          ]
+        },
+        {
+          "id": "g.harbour.03",
+          "text": "岸边的船一晃一晃，看久了我也有点晕。"
+        },
+        {
+          "id": "g.harbour.04",
+          "text": "浪一下一下拍过来，不紧不慢，跟我走路差不多。"
+        },
+        {
+          "id": "g.harbour.05",
+          "text": "水边的石头都磨圆了，没棱没角，挺好。",
+          "motifs": [
+            "stone"
+          ]
+        },
+        {
+          "id": "g.harbour.06",
+          "text": "看水的人总是待得比别人久一点，我也一样。"
+        }
+      ],
+      "rock": [
+        {
+          "id": "g.rock.01",
+          "text": "岩壁很高，在它跟前，人就小了。"
+        },
+        {
+          "id": "g.rock.02",
+          "text": "石头上一层一层的纹，像年轮，年头更多。",
+          "motifs": [
+            "stone"
+          ]
+        },
+        {
+          "id": "g.rock.03",
+          "text": "敲了敲石头，它没理我。",
+          "motifs": [
+            "stone"
+          ]
+        },
+        {
+          "id": "g.rock.04",
+          "text": "对着石壁咳嗽一声，回声比我还响。"
+        },
+        {
+          "id": "g.rock.05",
+          "text": "石缝里长出一棵小草，比我能吃苦。"
+        },
+        {
+          "id": "g.rock.06",
+          "text": "石头路硌脚，得看着脚下，风景只好一会儿再看。",
+          "motifs": [
+            "stone",
+            "path"
+          ]
+        }
+      ],
+      "city": [
+        {
+          "id": "g.city.01",
+          "text": "石阶被人走得发亮，我也添了几步。"
+        },
+        {
+          "id": "g.city.02",
+          "text": "以前的人在这儿造了这么多东西，我连帐篷都搭不正。",
+          "motifs": [
+            "tent"
+          ]
+        },
+        {
+          "id": "g.city.03",
+          "text": "石头上刻着我看不懂的字，我看得很认真。",
+          "motifs": [
+            "earnest"
+          ]
+        },
+        {
+          "id": "g.city.04",
+          "text": "塔尖、屋顶、台阶，一样样看过去，脖子有点酸。"
+        },
+        {
+          "id": "g.city.05",
+          "text": "这里的路弯来弯去，我认路的本事又没派上用场。",
+          "motifs": [
+            "path"
+          ]
+        },
+        {
+          "id": "g.city.06",
+          "text": "在这么老的地方，我算年轻的。"
+        }
+      ]
+    },
+    "road": [
+      {
+        "id": "r.01",
+        "text": "走了挺长一段路，鞋底又薄了一层。",
+        "motifs": [
+          "shoes"
+        ]
+      },
+      {
+        "id": "r.02",
+        "text": "路上没什么好说的，就是一步一步走。"
+      },
+      {
+        "id": "r.03",
+        "text": "走错了一个岔口，多看了一片风景，不亏。",
+        "motifs": [
+          "path"
+        ]
+      },
+      {
+        "id": "r.04",
+        "text": "一个人赶路，话都说给自己听。"
+      },
+      {
+        "id": "r.05",
+        "text": "背包越走越轻，地图越走越皱。"
+      },
+      {
+        "id": "r.06",
+        "text": "一路顶着风走，风大概也有它要去的地方。",
+        "motifs": [
+          "wind"
+        ]
+      },
+      {
+        "id": "r.07",
+        "text": "走累了就坐下，看看走过的路，再接着走。",
+        "motifs": [
+          "path"
+        ]
+      },
+      {
+        "id": "r.08",
+        "text": "这段路很长，长到把想了很久的事都想完了。"
+      },
+      {
+        "id": "r.09",
+        "text": "路上最想写信，到了反倒忘了要说什么。"
+      },
+      {
+        "id": "r.10",
+        "text": "腿脚比前几年慢了，好在路也不催我。",
+        "motifs": [
+          "legs"
+        ]
+      }
+    ],
+    "home": [
+      {
+        "id": "h.01",
+        "text": "回家了。先烧一壶水，别的明天再说。",
+        "avoid": [
+          "slot:morning"
+        ]
+      },
+      {
+        "id": "h.02",
+        "text": "门推开时响了一声，像是认出我了。",
+        "avoid": [
+          "slot:morning"
+        ]
+      },
+      {
+        "id": "h.03",
+        "text": "屋里的东西都在原处，就是灰多了一层。"
+      },
+      {
+        "id": "h.04",
+        "text": "鞋脱在门口，这一趟它比我辛苦。",
+        "motifs": [
+          "shoes"
+        ]
+      },
+      {
+        "id": "h.05",
+        "text": "在自己家里，坐着都比别处踏实。"
+      },
+      {
+        "id": "h.06",
+        "text": "把这趟捡的小东西摆上窗台，窗台快放不下了。"
+      },
+      {
+        "id": "h.07",
+        "text": "炉子生上火，屋里慢慢有了木头的味道。",
+        "motifs": [
+          "fire"
+        ]
+      },
+      {
+        "id": "h.08",
+        "text": "歇一晚就走。出门的人，回家也是为了再出门。"
+      }
+    ]
+  }
+}

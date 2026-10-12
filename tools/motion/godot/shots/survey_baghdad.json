@@ -1,0 +1,92 @@
+{
+  "target": "baghdad",
+  "duration": 5.0,
+  "warmup_frames": 45,
+  "baghdad": {
+    "start": 18.0,
+    "rate": 0.0
+  },
+  "note": "vantage survey at dusk (cycle t=18 held: rate 0): act framing, potato close-up, low up at the tree, side, pulled back",
+  "camera": {
+    "mode": "keys",
+    "space": "world",
+    "interp": "linear",
+    "keys": [
+      {
+        "t": 0,
+        "pos": [
+          0.0,
+          0.18,
+          0.0
+        ],
+        "look": [
+          0.0,
+          1.99,
+          9.835
+        ],
+        "fov": 40,
+        "ease": "hold"
+      },
+      {
+        "t": 1,
+        "pos": [
+          0.2,
+          0.36,
+          2.05
+        ],
+        "look": [
+          0.4,
+          0.33,
+          2.87
+        ],
+        "fov": 35,
+        "ease": "hold"
+      },
+      {
+        "t": 2,
+        "pos": [
+          0.1,
+          0.06,
+          0.6
+        ],
+        "look": [
+          0.3,
+          1.8,
+          7.0
+        ],
+        "fov": 45,
+        "ease": "hold"
+      },
+      {
+        "t": 3,
+        "pos": [
+          1.6,
+          0.45,
+          2.3
+        ],
+        "look": [
+          0.4,
+          0.35,
+          2.9
+        ],
+        "fov": 35,
+        "ease": "hold"
+      },
+      {
+        "t": 4,
+        "pos": [
+          0.0,
+          0.9,
+          -1.6
+        ],
+        "look": [
+          0.3,
+          0.5,
+          5.0
+        ],
+        "fov": 40,
+        "ease": "hold"
+      }
+    ]
+  }
+}

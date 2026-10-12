@@ -1,0 +1,61 @@
+{
+  "target": "lshu",
+  "duration": 3.0,
+  "warmup_frames": 45,
+  "args_extra": [
+    "--tile=D05",
+    "--light=sunset"
+  ],
+  "note": "demo: 20 degree orbit around the floating tile 长安石窟 (tile centre ~[0,1.4,0], radius 28.4, pitch 37.8)",
+  "camera": {
+    "mode": "keys",
+    "space": "world",
+    "interp": "catmull",
+    "keys": [
+      {
+        "t": 0.0,
+        "pos": [
+          14.6,
+          18.37,
+          17.46
+        ],
+        "look": [
+          0.0,
+          0.9,
+          0.0
+        ],
+        "fov": 22,
+        "ease": "linear"
+      },
+      {
+        "t": 1.5,
+        "pos": [
+          11.42,
+          18.37,
+          19.6
+        ],
+        "look": [
+          0.0,
+          0.9,
+          0.0
+        ],
+        "fov": 21,
+        "ease": "linear"
+      },
+      {
+        "t": 3.0,
+        "pos": [
+          7.95,
+          18.37,
+          21.31
+        ],
+        "look": [
+          0.0,
+          0.9,
+          0.0
+        ],
+        "fov": 20
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "base": "m_final",
+  "description": "merger probe (not a deliverable): night/sunset key angular 0.8",
+  "common": {},
+  "lights": {
+    "night": {
+      "sun": {
+        "angular_distance_deg": 0.8
+      }
+    },
+    "sunset": {
+      "sun": {
+        "angular_distance_deg": 0.8
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "source": "real Blender mesh geometry; no texture planes",
+  "coastline_layout_reference_sha256": "3eabed9856d01b5a57f5cd1c24c7b3cad46720ef100b3ee7219fc61ce451a020",
+  "projection": {
+    "scale": 0.01,
+    "center": [
+      2048,
+      681.5
+    ],
+    "land_y": 0.08,
+    "water_y": 0.03
+  },
+  "rules_geometry_unchanged": true,
+  "terrain_objects": 9,
+  "terrain_triangles": 15242,
+  "water_triangles": 2636,
+  "material_count": 22
+}

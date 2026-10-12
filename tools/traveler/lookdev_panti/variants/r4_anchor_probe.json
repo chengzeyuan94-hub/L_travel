@@ -1,0 +1,10 @@
+{
+  "static": {
+    "extra_scripts": [
+      {
+        "script": "res://tools/traveler/lookdev_panti/r4_anchor_probe.gd",
+        "cfg": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "target": "board",
+  "duration": 6.0,
+  "warmup_frames": 60,
+  "board_ready_frames": 60,
+  "board_feed": "clean",
+  "note": "vantage survey of the 3D merchant board (perspective): 长安, 泉州 harbour, 罗马/君士坦丁堡, whole board, 盘橐 mountains, 狮子国/阿丹 sea",
+  "camera": {
+    "mode": "keys",
+    "space": "world",
+    "interp": "linear",
+    "projection": "perspective",
+    "far": 800,
+    "keys": [
+      {
+        "t": 0,
+        "pos": [
+          84.0,
+          6.5,
+          29.0
+        ],
+        "look": [
+          87.7,
+          0.9,
+          19.5
+        ],
+        "fov": 34,
+        "ease": "hold"
+      },
+      {
+        "t": 1,
+        "pos": [
+          100.0,
+          5.0,
+          38.0
+        ],
+        "look": [
+          103.7,
+          1.0,
+          28.1
+        ],
+        "fov": 34,
+        "ease": "hold"
+      },
+      {
+        "t": 2,
+        "pos": [
+          15.0,
+          14.0,
+          36.0
+        ],
+        "look": [
+          20.0,
+          0.9,
+          17.0
+        ],
+        "fov": 38,
+        "ease": "hold"
+      },
+      {
+        "t": 3,
+        "pos": [
+          64.0,
+          70.0,
+          110.0
+        ],
+        "look": [
+          64.0,
+          0.0,
+          28.0
+        ],
+        "fov": 40,
+        "ease": "hold"
+      },
+      {
+        "t": 4,
+        "pos": [
+          58.0,
+          6.0,
+          22.0
+        ],
+        "look": [
+          59.7,
+          1.5,
+          11.7
+        ],
+        "fov": 36,
+        "ease": "hold"
+      },
+      {
+        "t": 5,
+        "pos": [
+          60.0,
+          10.0,
+          68.0
+        ],
+        "look": [
+          62.0,
+          0.5,
+          50.0
+        ],
+        "fov": 38,
+        "ease": "hold"
+      }
+    ]
+  }
+}

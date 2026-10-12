@@ -1,0 +1,6 @@
+{
+  "base": "v16_mild_clouds3",
+  "camera": {
+    "dof_enabled": false
+  }
+}

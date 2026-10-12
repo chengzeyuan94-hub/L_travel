@@ -1,0 +1,60 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="旅行L叔-资源工坊"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="LShuTravel-Open-v0.2.4"
+config/version="0.2.4-public.1"
+run/main_scene="res://scenes/map_workshop/map_workshop_main.tscn"
+run/main_scene.lshu_release="res://tools/merchant_board_claude_play.tscn"
+config/name.lshu_release="旅行L叔"
+run/main_scene.lshu_map_workshop="res://scenes/map_workshop/map_workshop_main.tscn"
+config/name.lshu_map_workshop="旅行L叔-资源工坊"
+config/icon.lshu_map_workshop="res://scenes/map_workshop/map_workshop_icon_1024.png"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://assets/game/app/app_icon_1024.png"
+boot_splash/bg_color=Color(0.16862746, 0.14117648, 0.1254902, 1)
+boot_splash/image="res://assets/game/app/boot_splash.png"
+boot_splash/stretch_mode=4
+
+[autoload]
+
+GameState="*res://scripts/game_state.gd"
+AudioManager="*res://scripts/audio/audio_manager.gd"
+SoundDirector="*res://scripts/audio/sound_director.gd"
+PadInput="*res://scripts/pad/pad_input.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[editor]
+
+import/blender/enabled=false
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/lshu_export_gate/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method.mobile="mobile"
+textures/vram_compression/import_etc2_astc=true
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=3
+anti_aliasing/quality/msaa_3d=2
+
+[stage3_final]
+
+data_directory_name="LShuTravel-Open-v0.2.4"

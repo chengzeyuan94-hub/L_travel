@@ -1,0 +1,9 @@
+{
+  "base": "v1_dusk",
+  "rim": {
+    "amount": 0.7,
+    "tint": 0.2,
+    "tree": true,
+    "character": true
+  }
+}

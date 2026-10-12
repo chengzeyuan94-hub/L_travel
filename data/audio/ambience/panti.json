@@ -1,0 +1,67 @@
+{
+  "schema": "silkroad.ambience-mix.v1",
+  "scene": "panti",
+  "note": "第二幕「盘橐」环境声起点值（方案 §3.6），不是冻结值，随时可调。驱动量 w = panti_period_transition.weight（0 清晨，1 午夜，8 秒过渡）。volume_db 是播放器音量，实听 ≈ 文件响度（约 −30 LUFS）+ volume_db + master_db。",
+  "master_db": 2.8,
+  "master_note": "整体抬 2.8 dB：按方案各层数值实录约 −29.9 LUFS，抬完落在 −27 左右（旅人四幕目标 −26 到 −28）",
+  "fade_in_s": 3.0,
+  "follow_s": 0.25,
+  "wind": {
+    "sound": "wind_open_bed_loop_v1",
+    "morning_db": -2.0,
+    "midnight_db": -5.0
+  },
+  "hiss": {
+    "sound": "breeze_hiss_bed_loop_v1",
+    "db": -6.0,
+    "note": "高空嘶风，音量 × (1 − w)，到午夜完全消失"
+  },
+  "fire": {
+    "sound": "campfire_bed_loop_v1",
+    "morning_db": -5.0,
+    "midnight_db": -1.0,
+    "note": "常驻，夜里火更旺"
+  },
+  "birds": {
+    "sounds": [
+      "bird_call_v1",
+      "bird_call_v2",
+      "bird_call_v3",
+      "bird_call_v4",
+      "bird_call_v5"
+    ],
+    "interval_s": [
+      18.0,
+      40.0
+    ],
+    "volume_db": [
+      -18.0,
+      -14.0
+    ],
+    "pitch": [
+      0.95,
+      1.05
+    ],
+    "first_delay_s": 5.0,
+    "max_weight": 0.3,
+    "note": "晨鸟只在 w < max_weight 时叫"
+  },
+  "meteor_dings": {
+    "enabled": true,
+    "sound": "bell_small_ding_v1",
+    "pitches": [
+      1.5,
+      1.68,
+      2.0
+    ],
+    "volume_db": -22.0,
+    "min_star_weight": 0.05,
+    "note": "跟 panti_night_sky 的流星时间表同步（周期与起点读 data/traveler/panti_meteors.json）；音量再乘上画面里流星的可见度 smoothstep(0.3, 0.9, w)"
+  },
+  "fallback_weight": {
+    "morning": 0.0,
+    "day": 0.0,
+    "sunset": 0.5,
+    "midnight": 1.0
+  }
+}

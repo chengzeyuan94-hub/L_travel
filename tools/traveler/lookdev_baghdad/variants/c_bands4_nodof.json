@@ -1,0 +1,6 @@
+{
+  "base": "c_bands4",
+  "camera": {
+    "dof_enabled": false
+  }
+}

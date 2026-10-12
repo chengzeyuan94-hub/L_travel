@@ -1,0 +1,25 @@
+{
+  "id": "fine_snow",
+  "source": "incoming_map_fx/jimeng-2026-07-22-3695-基于输入图生成纯粒子动画。完整保留纯黑背景，不得补画山峰、地面、天空或任何场景。....mp4",
+  "source_duration_seconds": 5.0865,
+  "decoder": "avfoundation",
+  "background_mode": "black",
+  "fps": 8.0,
+  "frame_count": 40,
+  "frame_size": [
+    480,
+    270
+  ],
+  "columns": 8,
+  "rows": 5,
+  "atlas": "res://assets/map_fx/generated/fine_snow/fine_snow_atlas.png",
+  "crop_source_pixels": [
+    0,
+    0,
+    1024,
+    576
+  ],
+  "alpha_noise_threshold": 28.0,
+  "alpha_peak": 204.0,
+  "loop_mode": "crossfade"
+}

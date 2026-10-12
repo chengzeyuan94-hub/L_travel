@@ -1,0 +1,81 @@
+{
+  "schema": "silkroad.panti-camp-character.v1",
+  "bones": 49,
+  "triangles": 18367,
+  "standing_rest_height_before_normalization_u": 0.9995116964091721,
+  "normalization_scale": 1.0004885421477128,
+  "standing_rest_height_after_normalization_u": 1.0,
+  "intended_world_scale": 0.6375,
+  "chosen_seconds": 0.5166666666666667,
+  "quiet_window_seconds": [
+    0.016666666666666666,
+    1.0166666666666666
+  ],
+  "quiet_window_rms_step_mean_u": 0.0002967946603655974,
+  "landmarks": {
+    "coordinate_system": "Godot +Y up, +Z forward; pose origin is current feet floor, standing rest height normalized to 1.0",
+    "front_direction": [
+      0,
+      0,
+      1
+    ],
+    "seat_contact_local": [
+      0.004507055040448904,
+      0.13439008593559265,
+      -0.009475672126023306
+    ],
+    "hips_bone_local": [
+      0.0009003552841022611,
+      0.20575925707817078,
+      8.131541108014062e-05
+    ],
+    "left_sole_local": [
+      0.08889557421207428,
+      9.960032798517204e-12,
+      0.1149526834487915
+    ],
+    "right_sole_local": [
+      -0.05877869203686714,
+      0.00036138182622380555,
+      0.0993223562836647
+    ],
+    "head_top_local": [
+      0.03752850741147995,
+      0.8369554281234741,
+      -0.0016585876001045108
+    ],
+    "bounds_godot": {
+      "min": [
+        -0.20097671449184418,
+        9.960032798517204e-12,
+        -0.17714470624923706
+      ],
+      "max": [
+        0.2027190625667572,
+        0.8369554281234741,
+        0.3021828234195709
+      ]
+    },
+    "seat_contact_method": "Lower surface of rear pelvis, x within 0.105u and depth within [-0.025,+0.105]u of Hips in Blender coordinates, excluding knees; check stump fit visually."
+  },
+  "outline_excluded_vertices": 2331,
+  "outline_excluded_part": "same glasses component as approved character style",
+  "audit": {
+    "sample_hz": 60,
+    "pose_samples": 537,
+    "all_finite": true,
+    "max_triangle_edge_u": 0.14115148658409288,
+    "rest_max_triangle_edge_u": 0.1154706399271351,
+    "max_frame_vertex_step_u": 0.01017967745305749,
+    "weight_sum_min": 0.9999998807907104,
+    "weight_sum_max": 1.0000001471489668,
+    "weight_sum_max_error": 1.471489667892456e-07,
+    "max_pose_bounds_size_u": [
+      0.4228239953517914,
+      0.5384218543767929,
+      0.8409313585143536
+    ]
+  },
+  "production_spike_prevention": "Static evaluated mesh, no skeleton, no animation mixer, no run or walk clips",
+  "motion_source": "Independent procedural sine motion in public release; no external keyframes included"
+}

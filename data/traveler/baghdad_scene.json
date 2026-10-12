@@ -1,0 +1,1454 @@
+{
+  "schema": "silkroad.baghdad-scene.v1",
+  "stage": "sunset-composition-checkpoint",
+  "view": "baghdad",
+  "default_period": "noon",
+  "studio_render": {
+    "background_color": [
+      0.88,
+      0.86,
+      0.82
+    ],
+    "ambient_color": [
+      0.77,
+      0.8,
+      0.84
+    ],
+    "ambient_energy": 0.58,
+    "key_color": [
+      1.0,
+      0.96,
+      0.87
+    ],
+    "key_energy": 1.35,
+    "fill_color": [
+      0.78,
+      0.86,
+      1.0
+    ],
+    "fill_energy": 0.42,
+    "rim_color": [
+      1.0,
+      0.66,
+      0.42
+    ],
+    "rim_energy": 0.28,
+    "ssao_radius": 0.3,
+    "ssao_intensity": 1.0,
+    "sdfgi_energy": 0.6,
+    "sdfgi_bounce_feedback": 0.7,
+    "dof": 12.0,
+    "dof_transition": 8.0,
+    "exposure": 1.0
+  },
+  "coordinate_system": "Stage X screen-right / Y up / Z away from camera. stage_point mirrors X into Godot world.",
+  "camera": {
+    "position": [
+      0,
+      0.18,
+      0
+    ],
+    "look_at": [
+      0,
+      2.0207563277850094,
+      10
+    ],
+    "fov_vertical_deg": 40.0,
+    "near_u": 0.03,
+    "far_u": 500.0
+  },
+  "assets": {
+    "arch": "res://assets/traveler/baghdad/ancient+stone+arch+3d+model.fbx",
+    "tree": "res://assets/traveler/baghdad/low-poly+tree+3d+model.fbx",
+    "mosque": "res://assets/traveler/baghdad/desert+mosque+3d+model.fbx"
+  },
+  "arch": {
+    "stage_position": [
+      0,
+      0,
+      2.7
+    ],
+    "yaw_deg": 180,
+    "opening_height_u": 2.55,
+    "source_opening_height_u": 0.58403122425,
+    "measurement_status": "S1: vertical X=0 cross-section through all source depth; floor y=0 to inner central keystone y=.58403122425. FRONT faces source +Z, 180deg yaw faces the camera."
+  },
+  "tree": {
+    "stage_position": [
+      1.6,
+      0.32,
+      13.2
+    ],
+    "yaw_deg": 0,
+    "height_u": 7.65,
+    "asset_note": "Replacement low-poly tree supplied 2026-09-22; authored stage position and height_u unchanged."
+  },
+  "skyline": {
+    "height_u": 3.825,
+    "instances": [
+      {
+        "id": "1",
+        "stage_position": [
+          5.9,
+          1.15,
+          34
+        ],
+        "yaw_deg": 0.0,
+        "height_scale": 1.0,
+        "cast_shadow": false
+      },
+      {
+        "id": "2",
+        "stage_position": [
+          9.4,
+          1.3,
+          37
+        ],
+        "yaw_deg": 22.5,
+        "height_scale": 0.935,
+        "cast_shadow": false
+      },
+      {
+        "id": "3",
+        "stage_position": [
+          12.9,
+          1.5,
+          40
+        ],
+        "yaw_deg": 45.0,
+        "height_scale": 0.87,
+        "cast_shadow": false
+      },
+      {
+        "id": "4",
+        "stage_position": [
+          14.9,
+          1.6,
+          38
+        ],
+        "yaw_deg": 67.5,
+        "height_scale": 0.8049999999999999,
+        "cast_shadow": false
+      },
+      {
+        "id": "5",
+        "stage_position": [
+          16.9,
+          1.8,
+          43
+        ],
+        "yaw_deg": 90.0,
+        "height_scale": 0.74,
+        "cast_shadow": false
+      },
+      {
+        "id": "6",
+        "stage_position": [
+          20.9,
+          1.8,
+          45
+        ],
+        "yaw_deg": 112.5,
+        "height_scale": 0.675,
+        "cast_shadow": false
+      }
+    ],
+    "layout_adjustment_20260921": {
+      "screen_left_fraction": 0.2,
+      "screen_up_fraction": 0.15,
+      "stage_shift_x": -5.8,
+      "stage_shift_y": 4.4,
+      "basis": "camera-projected screen displacement at skyline depth; stage X is screen-right and Y is up"
+    },
+    "layout_adjustment_20260922": {
+      "screen_left_fraction": 0.2,
+      "screen_up_fraction": 0.0,
+      "stage_shift_x": -5.8,
+      "stage_shift_y": 0.0,
+      "basis": "restore previous horizontal line while retaining prior screen-left shift"
+    }
+  },
+  "mountains": {
+    "builder": "res://scripts/traveler/baghdad/baghdad_mountain_layer.gd",
+    "placement_note": "Five authored desert bands sit behind the TreeOfLife and mosque skyline. Increasing stage Z moves a band farther from the camera; each foot is snapped to ground_surface.height_at.",
+    "layers": [
+      {
+        "id": "far_a_wide",
+        "asset": "res://assets/traveler/baghdad/mountains/low-poly+mountain+3d+model.glb",
+        "stage_position": [
+          -15.0,
+          0.0,
+          130.0
+        ],
+        "height_u": 5.0,
+        "yaw_deg": 0.0,
+        "far_tint_mix": 0.45,
+        "far_tint": [
+          0.82,
+          0.78,
+          0.78
+        ]
+      },
+      {
+        "id": "far_d_spires",
+        "asset": "res://assets/traveler/baghdad/mountains/mountain+range+3d+model.glb",
+        "stage_position": [
+          -32.0,
+          0.0,
+          122.0
+        ],
+        "height_u": 6.0,
+        "yaw_deg": -7.0,
+        "far_tint_mix": 0.38,
+        "far_tint": [
+          0.81,
+          0.76,
+          0.75
+        ]
+      },
+      {
+        "id": "mid_c_plateau",
+        "asset": "res://assets/traveler/baghdad/mountains/desert+mesa+3d+model.glb",
+        "stage_position": [
+          24.0,
+          0.0,
+          106.0
+        ],
+        "height_u": 5.2,
+        "yaw_deg": 8.0,
+        "far_tint_mix": 0.22,
+        "far_tint": [
+          0.83,
+          0.76,
+          0.71
+        ]
+      },
+      {
+        "id": "mid_b_pair",
+        "asset": "res://assets/traveler/baghdad/mountains/desert+mountain+3d+model (1).glb",
+        "stage_position": [
+          -10.0,
+          0.0,
+          82.0
+        ],
+        "height_u": 7.0,
+        "yaw_deg": 0.0,
+        "far_tint_mix": 0.1,
+        "far_tint": [
+          0.87,
+          0.74,
+          0.64
+        ]
+      },
+      {
+        "id": "mid_d_three_peak",
+        "asset": "res://assets/traveler/baghdad/mountains/low-poly+mountains+3d+model.glb",
+        "stage_position": [
+          24.0,
+          0.0,
+          78.0
+        ],
+        "height_u": 6.2,
+        "yaw_deg": 12.0,
+        "far_tint_mix": 0.08,
+        "far_tint": [
+          0.88,
+          0.72,
+          0.59
+        ]
+      }
+    ]
+  },
+  "character": {
+    "scene": "res://scenes/traveler/action2_character.tscn",
+    "stage_position": [
+      -0.47,
+      0,
+      1.75
+    ],
+    "yaw_deg": -25,
+    "height_u": 0.6375,
+    "pose": "idle",
+    "pose_time_s": 0,
+    "outline_width_multiplier": 0.5
+  },
+  "ground": {
+    "size_u": [
+      140,
+      160
+    ],
+    "center_stage": [
+      0,
+      -0.004,
+      40
+    ],
+    "albedo": [
+      0.84,
+      0.67,
+      0.45
+    ],
+    "builder": "res://scripts/traveler/baghdad/baghdad_ground.gd",
+    "base_y_u": -0.008,
+    "relief": {
+      "seed": 20260921,
+      "x_bands": [
+        [
+          -90,
+          -24,
+          6
+        ],
+        [
+          -24,
+          -6,
+          2
+        ],
+        [
+          -6,
+          6,
+          0.6
+        ],
+        [
+          6,
+          24,
+          1.5
+        ],
+        [
+          24,
+          90,
+          6
+        ]
+      ],
+      "z_bands": [
+        [
+          -2,
+          6,
+          0.6
+        ],
+        [
+          6,
+          24,
+          1.5
+        ],
+        [
+          24,
+          80,
+          3
+        ],
+        [
+          80,
+          220,
+          14
+        ]
+      ],
+      "broad_undulation": {
+        "enabled": true,
+        "amplitude_u": 0.36,
+        "secondary_amplitude_u": 0.19,
+        "x_frequency": 0.075,
+        "z_frequency": 0.042,
+        "blend_start_z": 7.0,
+        "blend_end_z": 36.0,
+        "secondary_x_frequency": 0.045,
+        "secondary_z_frequency": 0.063,
+        "tertiary_amplitude_u": 0.1,
+        "tertiary_x_frequency": 0.13,
+        "tertiary_z_frequency": 0.086
+      },
+      "ridges": [
+        {
+          "center": [
+            -7,
+            11
+          ],
+          "radius": [
+            14,
+            5
+          ],
+          "height_u": 0.9,
+          "angle_deg": -18
+        },
+        {
+          "center": [
+            9,
+            20
+          ],
+          "radius": [
+            17,
+            7
+          ],
+          "height_u": 1.3,
+          "angle_deg": 18
+        },
+        {
+          "center": [
+            -19,
+            35
+          ],
+          "radius": [
+            26,
+            11
+          ],
+          "height_u": 0.85,
+          "angle_deg": -15
+        },
+        {
+          "center": [
+            20,
+            53
+          ],
+          "radius": [
+            30,
+            13
+          ],
+          "height_u": 1.05,
+          "angle_deg": 12
+        },
+        {
+          "center": [
+            -35,
+            85
+          ],
+          "radius": [
+            40,
+            16
+          ],
+          "height_u": 3.7,
+          "angle_deg": -8
+        },
+        {
+          "center": [
+            -25,
+            60
+          ],
+          "radius": [
+            40,
+            26
+          ],
+          "height_u": 1.6,
+          "angle_deg": -18
+        },
+        {
+          "center": [
+            37,
+            91
+          ],
+          "radius": [
+            55,
+            35
+          ],
+          "height_u": 4.4,
+          "angle_deg": 10
+        },
+        {
+          "center": [
+            -13,
+            17
+          ],
+          "radius": [
+            11,
+            5
+          ],
+          "height_u": 0.55,
+          "angle_deg": 14
+        },
+        {
+          "center": [
+            13,
+            27
+          ],
+          "radius": [
+            13,
+            6
+          ],
+          "height_u": 0.72,
+          "angle_deg": -20
+        },
+        {
+          "center": [
+            -28,
+            45
+          ],
+          "radius": [
+            24,
+            10
+          ],
+          "height_u": 1.15,
+          "angle_deg": -12
+        },
+        {
+          "center": [
+            2,
+            53
+          ],
+          "radius": [
+            23,
+            12
+          ],
+          "height_u": 1.25,
+          "angle_deg": 16
+        },
+        {
+          "center": [
+            -46,
+            75
+          ],
+          "radius": [
+            35,
+            18
+          ],
+          "height_u": 2.1,
+          "angle_deg": -10
+        },
+        {
+          "center": [
+            48,
+            80
+          ],
+          "radius": [
+            42,
+            20
+          ],
+          "height_u": 2.25,
+          "angle_deg": 12
+        }
+      ],
+      "contacts": [
+        {
+          "center": [
+            -0.47,
+            1.75
+          ],
+          "radius_u": 0.22,
+          "transition_u": 0.3,
+          "height_u": 0
+        },
+        {
+          "center": [
+            1.6,
+            13.2
+          ],
+          "radius_u": 1.2,
+          "transition_u": 2,
+          "height_u": 0.32
+        },
+        {
+          "center": [
+            0.0,
+            2.7
+          ],
+          "radius_u": 0.68,
+          "transition_u": 0.55,
+          "height_u": 0.0
+        },
+        {
+          "center": [
+            0.43,
+            3.5
+          ],
+          "radius_u": 0.42,
+          "transition_u": 0.55,
+          "height_u": 0.0
+        }
+      ],
+      "foreground": {
+        "blend_start_z": 3.8,
+        "blend_end_z": 8.5,
+        "note": "Keep the camp, character and arch approach readable before the first dune shoulder."
+      },
+      "shallow_sand": {
+        "amplitude_u": 0.016,
+        "fade_distance_u": 6.5,
+        "note": "Subtle faceted sand relief near the foreground; height is shared with prop contact sampling."
+      },
+      "detail_revision_20260922": {
+        "purpose": "more visible low-frequency desert relief and additional medium dune shoulders",
+        "grid_refinement": "x 6..24 at 1.5u; z 24..80 at 3u; far z 80..220 at 14u",
+        "added_ridges": 6,
+        "foreground_contact_patches": "arch, character, tree and fire retained/extended",
+        "height_sampling": "ground script returns barycentric height on jittered render triangles"
+      }
+    },
+    "ambient_bounce_energy": 0.08
+  },
+  "scope": {
+    "static_sunset_only": true,
+    "motion": false,
+    "interaction": false,
+    "main_assets_decimation": false
+  },
+  "supporting_props_builder": "res://scripts/traveler/baghdad/baghdad_supporting_props.gd",
+  "supporting_props": {
+    "rocks": [
+      {
+        "id": "front_left",
+        "asset": "res://assets/traveler/baghdad/props/rock+3d+model (1).glb",
+        "position": [
+          -0.82,
+          0,
+          1.8
+        ],
+        "width_u": 0.36,
+        "size": [
+          0.36,
+          0.1656,
+          0.23399999999999999
+        ],
+        "yaw_deg": 24,
+        "bury_u": 0.016,
+        "shadow": true
+      },
+      {
+        "id": "front_right",
+        "asset": "res://assets/traveler/baghdad/props/faceted+rock+3d+model.glb",
+        "position": [
+          0.88,
+          0,
+          1.75
+        ],
+        "width_u": 0.47,
+        "size": [
+          0.47,
+          0.2162,
+          0.3055
+        ],
+        "yaw_deg": -24,
+        "bury_u": 0.025,
+        "shadow": true
+      },
+      {
+        "id": "right_cluster",
+        "asset": "res://assets/traveler/baghdad/props/rock+pile+3d+model (2).glb",
+        "position": [
+          0.94,
+          0,
+          3.1
+        ],
+        "width_u": 0.42,
+        "size": [
+          0.42,
+          0.1932,
+          0.273
+        ],
+        "yaw_deg": 42,
+        "bury_u": 0.022,
+        "shadow": true
+      },
+      {
+        "id": "left_cluster",
+        "asset": "res://assets/traveler/baghdad/props/rock+pile+3d+model (1).glb",
+        "position": [
+          -0.44,
+          0,
+          4.6
+        ],
+        "width_u": 0.35,
+        "size": [
+          0.35,
+          0.161,
+          0.22749999999999998
+        ],
+        "yaw_deg": -38,
+        "bury_u": 0.02,
+        "shadow": true
+      },
+      {
+        "id": "trail_left",
+        "asset": "res://assets/traveler/baghdad/props/rock+3d+model (1).glb",
+        "position": [
+          -0.15,
+          0,
+          5.3
+        ],
+        "width_u": 0.14,
+        "size": [
+          0.14,
+          0.06440000000000001,
+          0.09100000000000001
+        ],
+        "yaw_deg": 92,
+        "bury_u": 0.009,
+        "shadow": true
+      },
+      {
+        "id": "trail_right",
+        "asset": "res://assets/traveler/baghdad/props/rock+boulder+3d+model.glb",
+        "position": [
+          1.1,
+          0,
+          5.5
+        ],
+        "width_u": 0.23,
+        "size": [
+          0.23,
+          0.1058,
+          0.14950000000000002
+        ],
+        "yaw_deg": 16,
+        "bury_u": 0.018,
+        "shadow": true
+      },
+      {
+        "id": "tree_left",
+        "asset": "res://assets/traveler/baghdad/props/rock+pile+3d+model (2).glb",
+        "position": [
+          0.1,
+          0,
+          11.2
+        ],
+        "width_u": 0.55,
+        "size": [
+          0.55,
+          0.25300000000000006,
+          0.35750000000000004
+        ],
+        "yaw_deg": -9,
+        "bury_u": 0.04,
+        "shadow": true
+      },
+      {
+        "id": "tree_right",
+        "asset": "res://assets/traveler/baghdad/props/rock+3d+model.glb",
+        "position": [
+          3.15,
+          0,
+          14.3
+        ],
+        "width_u": 0.32,
+        "size": [
+          0.32,
+          0.1472,
+          0.20800000000000002
+        ],
+        "yaw_deg": -45,
+        "bury_u": 0.04,
+        "shadow": true
+      },
+      {
+        "id": "dune_left_mid",
+        "asset": "res://assets/traveler/baghdad/props/faceted+rock+3d+model.glb",
+        "position": [
+          -3.2,
+          0,
+          8.4
+        ],
+        "width_u": 0.42,
+        "yaw_deg": 18,
+        "bury_u": 0.035,
+        "shadow": true
+      },
+      {
+        "id": "dune_right_mid",
+        "asset": "res://assets/traveler/baghdad/props/rock+3d+model.glb",
+        "position": [
+          3.5,
+          0,
+          9.2
+        ],
+        "width_u": 0.34,
+        "yaw_deg": -32,
+        "bury_u": 0.028,
+        "shadow": true
+      },
+      {
+        "id": "path_left_small",
+        "asset": "res://assets/traveler/baghdad/props/rock+boulder+3d+model.glb",
+        "position": [
+          -2.5,
+          0,
+          16.8
+        ],
+        "width_u": 0.22,
+        "yaw_deg": 64,
+        "bury_u": 0.018,
+        "shadow": true
+      },
+      {
+        "id": "path_right_small",
+        "asset": "res://assets/traveler/baghdad/props/rock+3d+model (1).glb",
+        "position": [
+          3.2,
+          0,
+          18.5
+        ],
+        "width_u": 0.28,
+        "yaw_deg": -12,
+        "bury_u": 0.022,
+        "shadow": true
+      },
+      {
+        "id": "front_left_pebble",
+        "asset": "res://assets/traveler/baghdad/props/rock+3d+model.glb",
+        "position": [
+          -2.85,
+          0,
+          3.65
+        ],
+        "width_u": 0.16,
+        "size": [
+          0.16,
+          0.0736,
+          0.104
+        ],
+        "yaw_deg": 38,
+        "bury_u": 0.012,
+        "ground_snap": true,
+        "shadow": true
+      },
+      {
+        "id": "front_right_pebble",
+        "asset": "res://assets/traveler/baghdad/props/rock+3d+model (1).glb",
+        "position": [
+          1.72,
+          0,
+          4.65
+        ],
+        "width_u": 0.14,
+        "size": [
+          0.14,
+          0.0644,
+          0.091
+        ],
+        "yaw_deg": -18,
+        "bury_u": 0.01,
+        "ground_snap": true,
+        "shadow": true
+      },
+      {
+        "id": "path_left_flat",
+        "asset": "res://assets/traveler/baghdad/props/faceted+rock+3d+model.glb",
+        "position": [
+          -2.65,
+          0,
+          6.8
+        ],
+        "width_u": 0.25,
+        "size": [
+          0.25,
+          0.115,
+          0.1625
+        ],
+        "yaw_deg": 64,
+        "bury_u": 0.018,
+        "ground_snap": true,
+        "shadow": true
+      },
+      {
+        "id": "path_right_flat",
+        "asset": "res://assets/traveler/baghdad/props/rock+boulder+3d+model.glb",
+        "position": [
+          2.65,
+          0,
+          7.25
+        ],
+        "width_u": 0.2,
+        "size": [
+          0.2,
+          0.092,
+          0.13
+        ],
+        "yaw_deg": -35,
+        "bury_u": 0.015,
+        "ground_snap": true,
+        "shadow": true
+      },
+      {
+        "id": "dune_left_cap",
+        "asset": "res://assets/traveler/baghdad/props/rock+pile+3d+model (1).glb",
+        "position": [
+          -4.75,
+          0,
+          9.8
+        ],
+        "width_u": 0.34,
+        "size": [
+          0.34,
+          0.1564,
+          0.221
+        ],
+        "yaw_deg": 28,
+        "bury_u": 0.028,
+        "ground_snap": true,
+        "shadow": true
+      },
+      {
+        "id": "dune_right_cap",
+        "asset": "res://assets/traveler/baghdad/props/rock+3d+model.glb",
+        "position": [
+          4.75,
+          0,
+          10.6
+        ],
+        "width_u": 0.3,
+        "size": [
+          0.3,
+          0.138,
+          0.195
+        ],
+        "yaw_deg": -42,
+        "bury_u": 0.025,
+        "ground_snap": true,
+        "shadow": true
+      },
+      {
+        "id": "tree_left_small",
+        "asset": "res://assets/traveler/baghdad/props/rock+3d+model (1).glb",
+        "position": [
+          -2.55,
+          0,
+          13.6
+        ],
+        "width_u": 0.28,
+        "size": [
+          0.28,
+          0.1288,
+          0.182
+        ],
+        "yaw_deg": -8,
+        "bury_u": 0.022,
+        "ground_snap": true,
+        "shadow": true
+      },
+      {
+        "id": "tree_right_small",
+        "asset": "res://assets/traveler/baghdad/props/faceted+rock+3d+model.glb",
+        "position": [
+          4.0,
+          0,
+          13.1
+        ],
+        "width_u": 0.24,
+        "size": [
+          0.24,
+          0.1104,
+          0.156
+        ],
+        "yaw_deg": 51,
+        "bury_u": 0.02,
+        "ground_snap": true,
+        "shadow": true
+      },
+      {
+        "id": "mid_left_boulder",
+        "asset": "res://assets/traveler/baghdad/props/rock+boulder+3d+model.glb",
+        "position": [
+          -5.35,
+          0,
+          17.8
+        ],
+        "width_u": 0.38,
+        "size": [
+          0.38,
+          0.1748,
+          0.247
+        ],
+        "yaw_deg": -20,
+        "bury_u": 0.035,
+        "ground_snap": true,
+        "shadow": true
+      },
+      {
+        "id": "mid_right_boulder",
+        "asset": "res://assets/traveler/baghdad/props/rock+pile+3d+model (2).glb",
+        "position": [
+          5.1,
+          0,
+          18.9
+        ],
+        "width_u": 0.34,
+        "size": [
+          0.34,
+          0.1564,
+          0.221
+        ],
+        "yaw_deg": 18,
+        "bury_u": 0.03,
+        "ground_snap": true,
+        "shadow": true
+      },
+      {
+        "id": "far_left_scree",
+        "asset": "res://assets/traveler/baghdad/props/rock+3d+model.glb",
+        "position": [
+          -7.2,
+          0,
+          24.6
+        ],
+        "width_u": 0.44,
+        "size": [
+          0.44,
+          0.2024,
+          0.286
+        ],
+        "yaw_deg": 12,
+        "bury_u": 0.042,
+        "ground_snap": true,
+        "shadow": true
+      },
+      {
+        "id": "far_right_scree",
+        "asset": "res://assets/traveler/baghdad/props/rock+3d+model (1).glb",
+        "position": [
+          7.2,
+          0,
+          25.8
+        ],
+        "width_u": 0.4,
+        "size": [
+          0.4,
+          0.184,
+          0.26
+        ],
+        "yaw_deg": -27,
+        "bury_u": 0.04,
+        "ground_snap": true,
+        "shadow": true
+      }
+    ],
+    "palms": [
+      {
+        "position": [
+          -1.45,
+          0,
+          11.5
+        ],
+        "height_u": 1.1,
+        "yaw_deg": 17.0,
+        "id": "palm_00",
+        "asset": "res://assets/traveler/baghdad/props/palm+tree+3d+model (2).glb",
+        "bury_u": 0.014,
+        "shadow": false
+      },
+      {
+        "position": [
+          -1.05,
+          0,
+          17.5
+        ],
+        "height_u": 1.35,
+        "yaw_deg": 78.0,
+        "id": "palm_01",
+        "asset": "res://assets/traveler/baghdad/props/palm+tree+3d+model.glb",
+        "bury_u": 0.014,
+        "shadow": false
+      },
+      {
+        "position": [
+          -3.8,
+          0,
+          28
+        ],
+        "height_u": 0.92,
+        "yaw_deg": 91.0,
+        "id": "palm_04",
+        "asset": "res://assets/traveler/baghdad/props/palm+tree+3d+model (2).glb",
+        "bury_u": 0.014,
+        "shadow": false
+      }
+    ],
+    "rock_color": "#967052",
+    "palm_trunk_color": "#443020",
+    "palm_leaf_color": "#30452B",
+    "fire": {
+      "enabled": true,
+      "position": [
+        0.43,
+        0,
+        3.5
+      ],
+      "height_u": 0.3825,
+      "width_u": 0.46,
+      "yaw_deg": -12.0,
+      "light_energy": 0.12,
+      "light_range_u": 0.72,
+      "asset": "res://assets/traveler/baghdad/props/pile+of+logs+3d+model.glb",
+      "bury_u": 0.015
+    },
+    "tufts": [
+      {
+        "position": [
+          -3.15,
+          0.0,
+          2.35
+        ],
+        "height_u": 0.16,
+        "yaw_deg": 22.0
+      },
+      {
+        "position": [
+          -2.55,
+          0.0,
+          2.12
+        ],
+        "height_u": 0.11,
+        "yaw_deg": -15.0
+      },
+      {
+        "position": [
+          2.92,
+          0.0,
+          2.38
+        ],
+        "height_u": 0.14,
+        "yaw_deg": 40.0
+      },
+      {
+        "position": [
+          3.42,
+          0.0,
+          2.08
+        ],
+        "height_u": 0.1,
+        "yaw_deg": -28.0
+      },
+      {
+        "position": [
+          -1.92,
+          0.0,
+          4.92
+        ],
+        "height_u": 0.13,
+        "yaw_deg": 63.0
+      }
+    ],
+    "tuft_color": "#646039",
+    "hand_prop": {
+      "enabled": true,
+      "bone": "mixamorig_RightHand",
+      "offset_stage": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flower_height_u": 0.11,
+      "potato_radius_u": 0.018,
+      "parts": [
+        {
+          "id": "held_flowering_potato",
+          "asset": "res://assets/traveler/baghdad/props/potted plant 3d model/potted+plant+3d+model.fbx",
+          "height_u": 0.15,
+          "position": [
+            0,
+            -0.036,
+            -0.015
+          ],
+          "pivot": "bottom",
+          "yaw_deg": -25,
+          "shadow": true
+        },
+        {
+          "id": "held_sprouting_potato",
+          "asset": "res://assets/traveler/baghdad/props/potato 3d model/potato+3d+model.fbx",
+          "width_u": 0.064,
+          "position": [
+            -0.026,
+            -0.018,
+            -0.02
+          ],
+          "pivot": "center",
+          "yaw_deg": 30,
+          "shadow": true
+        }
+      ]
+    },
+    "use_supplied_assets": true,
+    "plants": [
+      {
+        "id": "potato_near_fire",
+        "asset": "res://assets/traveler/baghdad/props/low-poly asteroid 3d model/low-poly+asteroid+3d+model.fbx",
+        "width_u": 0.05,
+        "position": [
+          0.14,
+          0,
+          3.4
+        ],
+        "yaw_deg": 18,
+        "bury_u": 0.002,
+        "shadow": true
+      }
+    ],
+    "surface_details": {
+      "enabled": true,
+      "seed": 20260922,
+      "pebble_color": "#9B7850",
+      "pebble_bury_ratio": 0.07,
+      "ripple_enabled": false,
+      "ripple_albedo_scale": 0.14,
+      "ripple_ground_lift_u": 0.0015,
+      "ripple_segments": 8,
+      "exclusions": [
+        {
+          "center": [
+            -0.47,
+            1.75
+          ],
+          "radius_u": 1.45
+        },
+        {
+          "center": [
+            0.43,
+            3.5
+          ],
+          "radius_u": 1.1
+        },
+        {
+          "center": [
+            0.0,
+            2.7
+          ],
+          "radius_u": 1.9
+        },
+        {
+          "center": [
+            0.0,
+            6.0
+          ],
+          "radius_u": 1.0
+        }
+      ],
+      "pebble_clusters": [
+        {
+          "id": "foreground_left",
+          "center": [
+            -3.15,
+            4.1
+          ],
+          "radius": [
+            0.72,
+            0.34
+          ],
+          "count": 14,
+          "width_u": [
+            0.035,
+            0.085
+          ]
+        },
+        {
+          "id": "foreground_right",
+          "center": [
+            2.55,
+            4.85
+          ],
+          "radius": [
+            0.78,
+            0.4
+          ],
+          "count": 13,
+          "width_u": [
+            0.032,
+            0.08
+          ]
+        },
+        {
+          "id": "dune_left",
+          "center": [
+            -4.05,
+            8.35
+          ],
+          "radius": [
+            0.95,
+            0.52
+          ],
+          "count": 12,
+          "width_u": [
+            0.038,
+            0.105
+          ]
+        },
+        {
+          "id": "dune_right",
+          "center": [
+            4.25,
+            8.95
+          ],
+          "radius": [
+            0.88,
+            0.48
+          ],
+          "count": 11,
+          "width_u": [
+            0.035,
+            0.095
+          ]
+        },
+        {
+          "id": "tree_left_scree",
+          "center": [
+            -3.85,
+            13.75
+          ],
+          "radius": [
+            1.05,
+            0.62
+          ],
+          "count": 14,
+          "width_u": [
+            0.045,
+            0.125
+          ]
+        },
+        {
+          "id": "tree_right_scree",
+          "center": [
+            4.55,
+            14.8
+          ],
+          "radius": [
+            1.0,
+            0.58
+          ],
+          "count": 12,
+          "width_u": [
+            0.04,
+            0.115
+          ]
+        },
+        {
+          "id": "mid_left_scree",
+          "center": [
+            -5.75,
+            18.9
+          ],
+          "radius": [
+            1.25,
+            0.78
+          ],
+          "count": 15,
+          "width_u": [
+            0.05,
+            0.145
+          ]
+        },
+        {
+          "id": "mid_right_scree",
+          "center": [
+            5.8,
+            20.7
+          ],
+          "radius": [
+            1.35,
+            0.82
+          ],
+          "count": 15,
+          "width_u": [
+            0.045,
+            0.135
+          ]
+        }
+      ],
+      "sand_ripple_patches": [
+        {
+          "id": "foreground_left_ripples",
+          "center": [
+            -3.75,
+            3.75
+          ],
+          "length_u": 2.2,
+          "width_u": 0.5,
+          "height_u": 0.026,
+          "spacing_u": 0.12,
+          "count": 4,
+          "yaw_deg": 12,
+          "curve_u": 0.025
+        },
+        {
+          "id": "foreground_right_ripples",
+          "center": [
+            2.95,
+            4.65
+          ],
+          "length_u": 2.35,
+          "width_u": 0.52,
+          "height_u": 0.029,
+          "spacing_u": 0.13,
+          "count": 4,
+          "yaw_deg": -18,
+          "curve_u": 0.035
+        },
+        {
+          "id": "dune_left_ripples",
+          "center": [
+            -3.65,
+            7.4
+          ],
+          "length_u": 2.9,
+          "width_u": 0.64,
+          "height_u": 0.034,
+          "spacing_u": 0.15,
+          "count": 5,
+          "yaw_deg": 20,
+          "curve_u": 0.05
+        },
+        {
+          "id": "dune_right_ripples",
+          "center": [
+            3.95,
+            8.1
+          ],
+          "length_u": 2.75,
+          "width_u": 0.6,
+          "height_u": 0.032,
+          "spacing_u": 0.15,
+          "count": 5,
+          "yaw_deg": -24,
+          "curve_u": 0.045
+        },
+        {
+          "id": "mid_left_ripples",
+          "center": [
+            -4.8,
+            12.2
+          ],
+          "length_u": 3.5,
+          "width_u": 0.74,
+          "height_u": 0.04,
+          "spacing_u": 0.18,
+          "count": 5,
+          "yaw_deg": 14,
+          "curve_u": 0.07
+        },
+        {
+          "id": "mid_right_ripples",
+          "center": [
+            5.15,
+            13.8
+          ],
+          "length_u": 3.2,
+          "width_u": 0.7,
+          "height_u": 0.038,
+          "spacing_u": 0.18,
+          "count": 5,
+          "yaw_deg": -16,
+          "curve_u": 0.06
+        },
+        {
+          "id": "far_left_ripples",
+          "center": [
+            -6.4,
+            18.2
+          ],
+          "length_u": 4.1,
+          "width_u": 0.8,
+          "height_u": 0.044,
+          "spacing_u": 0.22,
+          "count": 5,
+          "yaw_deg": 10,
+          "curve_u": 0.08
+        },
+        {
+          "id": "far_right_ripples",
+          "center": [
+            6.4,
+            20.0
+          ],
+          "length_u": 4.0,
+          "width_u": 0.78,
+          "height_u": 0.042,
+          "spacing_u": 0.22,
+          "count": 5,
+          "yaw_deg": -12,
+          "curve_u": 0.075
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,444 @@
+{
+  "static": {
+    "extra_scripts": [
+      {
+        "script": "res://tools/traveler/lookdev_panti/c_warm_bounce.gd",
+        "cfg": {
+          "layers": {
+            "ground": 11,
+            "camp": 12,
+            "castle": 13,
+            "rocks": 14
+          },
+          "rock_override": true,
+          "lights": [
+            {
+              "name": "C_BounceCamp",
+              "type": "dir",
+              "mask": [
+                "camp",
+                "rocks",
+                "char"
+              ],
+              "dir": {
+                "right": -0.25,
+                "up": -0.6,
+                "toward_cam": 0.75
+              },
+              "color": [
+                1.0,
+                0.93,
+                0.84
+              ]
+            },
+            {
+              "name": "C_BounceCastle",
+              "type": "dir",
+              "mask": [
+                "castle"
+              ],
+              "dir": {
+                "right": -0.15,
+                "up": -0.8,
+                "toward_cam": 0.55
+              },
+              "color": [
+                1.0,
+                0.93,
+                0.84
+              ]
+            },
+            {
+              "name": "C_FirePool",
+              "type": "omni",
+              "mask": [
+                "ground"
+              ],
+              "anchor": {
+                "node": "fire"
+              },
+              "offset": {
+                "up": 0.14
+              },
+              "range": 1.9,
+              "attenuation": 1.3,
+              "specular": 0.2,
+              "color": [
+                1.0,
+                0.66,
+                0.34
+              ],
+              "follow": "fire"
+            },
+            {
+              "name": "C_FireReach",
+              "type": "omni",
+              "mask": [
+                "camp"
+              ],
+              "anchor": {
+                "node": "fire"
+              },
+              "offset": {
+                "up": 0.12
+              },
+              "range": 2.2,
+              "attenuation": 1.3,
+              "specular": 0.2,
+              "color": [
+                1.0,
+                0.58,
+                0.28
+              ],
+              "follow": "fire"
+            },
+            {
+              "name": "C_FireBounce",
+              "type": "omni",
+              "mask": [
+                "camp",
+                "char"
+              ],
+              "anchor": {
+                "node": "fire"
+              },
+              "offset": {
+                "right": -0.14,
+                "up": -0.14,
+                "toward_cam": 0.45
+              },
+              "range": 1.1,
+              "attenuation": 1.2,
+              "specular": 0.1,
+              "color": [
+                1.0,
+                0.62,
+                0.36
+              ],
+              "follow": "fire"
+            },
+            {
+              "name": "C_WallGlowL",
+              "type": "omni",
+              "mask": [
+                "castle"
+              ],
+              "anchor": {
+                "screen": [
+                  835,
+                  812
+                ],
+                "on": "castle"
+              },
+              "offset": {
+                "toward_cam": 0.3,
+                "up": -0.16
+              },
+              "range": 1.4,
+              "attenuation": 1.6,
+              "specular": 0.2,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:left-market"
+            },
+            {
+              "name": "C_WallGlowLG",
+              "type": "omni",
+              "mask": [
+                "castle"
+              ],
+              "anchor": {
+                "screen": [
+                  985,
+                  812
+                ],
+                "on": "castle"
+              },
+              "offset": {
+                "toward_cam": 0.3,
+                "up": -0.16
+              },
+              "range": 1.4,
+              "attenuation": 1.6,
+              "specular": 0.2,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:gate-interior"
+            },
+            {
+              "name": "C_WallGlowGF",
+              "type": "omni",
+              "mask": [
+                "castle"
+              ],
+              "anchor": {
+                "screen": [
+                  1105,
+                  812
+                ],
+                "on": "castle"
+              },
+              "offset": {
+                "toward_cam": 0.3,
+                "up": -0.16
+              },
+              "range": 1.4,
+              "attenuation": 1.6,
+              "specular": 0.2,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:front-market"
+            },
+            {
+              "name": "C_WallGlowT",
+              "type": "omni",
+              "mask": [
+                "castle"
+              ],
+              "anchor": {
+                "screen": [
+                  1320,
+                  812
+                ],
+                "on": "castle"
+              },
+              "offset": {
+                "toward_cam": 0.7,
+                "up": -0.16
+              },
+              "range": 2.0,
+              "attenuation": 1.3,
+              "specular": 0.2,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:front-market"
+            },
+            {
+              "name": "C_WallGlowR",
+              "type": "omni",
+              "mask": [
+                "castle"
+              ],
+              "anchor": {
+                "screen": [
+                  1590,
+                  812
+                ],
+                "on": "castle"
+              },
+              "offset": {
+                "toward_cam": 0.7,
+                "up": -0.16
+              },
+              "range": 2.0,
+              "attenuation": 1.3,
+              "specular": 0.2,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:right-market"
+            },
+            {
+              "name": "C_PoolGate",
+              "type": "omni",
+              "mask": [
+                "ground"
+              ],
+              "anchor": {
+                "spill": "gate-interior"
+              },
+              "offset": {
+                "toward_cam": 0.55,
+                "up": -0.12
+              },
+              "range": 2.3,
+              "attenuation": 1.3,
+              "specular": 0.25,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:gate-interior"
+            },
+            {
+              "name": "C_PoolLeft",
+              "type": "omni",
+              "mask": [
+                "ground"
+              ],
+              "anchor": {
+                "spill": "left-market"
+              },
+              "offset": {
+                "toward_cam": 0.55,
+                "up": -0.12
+              },
+              "range": 1.9,
+              "attenuation": 1.3,
+              "specular": 0.25,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:left-market"
+            },
+            {
+              "name": "C_PoolFront",
+              "type": "omni",
+              "mask": [
+                "ground"
+              ],
+              "anchor": {
+                "spill": "front-market"
+              },
+              "offset": {
+                "toward_cam": 0.55,
+                "up": -0.12
+              },
+              "range": 1.9,
+              "attenuation": 1.3,
+              "specular": 0.25,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:front-market"
+            },
+            {
+              "name": "C_PoolRight",
+              "type": "omni",
+              "mask": [
+                "ground"
+              ],
+              "anchor": {
+                "spill": "right-market"
+              },
+              "offset": {
+                "toward_cam": 0.55,
+                "up": -0.12
+              },
+              "range": 1.9,
+              "attenuation": 1.3,
+              "specular": 0.25,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:right-market"
+            },
+            {
+              "name": "C_WidePoolGate",
+              "type": "omni",
+              "mask": [
+                "ground"
+              ],
+              "anchor": {
+                "spill": "gate-interior"
+              },
+              "offset": {
+                "toward_cam": 1.3,
+                "up": 1.1
+              },
+              "range": 5.0,
+              "attenuation": 0.9,
+              "specular": 0.25,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:gate-interior"
+            },
+            {
+              "name": "C_WidePoolLeft",
+              "type": "omni",
+              "mask": [
+                "ground"
+              ],
+              "anchor": {
+                "spill": "left-market"
+              },
+              "offset": {
+                "toward_cam": 1.3,
+                "up": 1.1
+              },
+              "range": 4.2,
+              "attenuation": 0.9,
+              "specular": 0.25,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:left-market"
+            },
+            {
+              "name": "C_WidePoolFront",
+              "type": "omni",
+              "mask": [
+                "ground"
+              ],
+              "anchor": {
+                "spill": "front-market"
+              },
+              "offset": {
+                "toward_cam": 1.3,
+                "up": 1.1
+              },
+              "range": 4.4,
+              "attenuation": 0.9,
+              "specular": 0.25,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:front-market"
+            },
+            {
+              "name": "C_WidePoolRight",
+              "type": "omni",
+              "mask": [
+                "ground"
+              ],
+              "anchor": {
+                "spill": "right-market"
+              },
+              "offset": {
+                "toward_cam": 1.3,
+                "up": 1.1
+              },
+              "range": 4.2,
+              "attenuation": 0.9,
+              "specular": 0.25,
+              "color": [
+                1.0,
+                0.66,
+                0.38
+              ],
+              "follow": "breath:right-market"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

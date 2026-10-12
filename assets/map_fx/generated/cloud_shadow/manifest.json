@@ -1,0 +1,25 @@
+{
+  "id": "cloud_shadow",
+  "source": "incoming_map_fx/jimeng-2026-07-22-7324-纯白背景上的独立遮罩动画，固定镜头。画面中只有数块边缘柔和、断续分布的浅灰色云影....mp4",
+  "source_duration_seconds": 4.0945,
+  "decoder": "avfoundation",
+  "background_mode": "white",
+  "fps": 8.0,
+  "frame_count": 32,
+  "frame_size": [
+    480,
+    183
+  ],
+  "columns": 8,
+  "rows": 4,
+  "atlas": "res://assets/map_fx/generated/cloud_shadow/cloud_shadow_atlas.png",
+  "crop_source_pixels": [
+    98,
+    118,
+    926,
+    354
+  ],
+  "alpha_noise_threshold": 8.0,
+  "alpha_peak": 79.333,
+  "loop_mode": "ping_pong"
+}

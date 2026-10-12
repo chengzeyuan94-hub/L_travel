@@ -1,0 +1,142 @@
+{
+  "format": 1,
+  "reference_map_size": [
+    2048,
+    1153
+  ],
+  "generated_effects": [
+    "cloud_shadow",
+    "fine_snow",
+    "valley_mist",
+    "desert_dust",
+    "sea_glints"
+  ],
+  "missing_effects": [],
+  "effects": {
+    "cloud_shadow": {
+      "id": "cloud_shadow",
+      "source": "incoming_map_fx/jimeng-2026-07-22-7324-纯白背景上的独立遮罩动画，固定镜头。画面中只有数块边缘柔和、断续分布的浅灰色云影....mp4",
+      "source_duration_seconds": 4.0945,
+      "decoder": "avfoundation",
+      "background_mode": "white",
+      "fps": 8.0,
+      "frame_count": 32,
+      "frame_size": [
+        480,
+        183
+      ],
+      "columns": 8,
+      "rows": 4,
+      "atlas": "res://assets/map_fx/generated/cloud_shadow/cloud_shadow_atlas.png",
+      "crop_source_pixels": [
+        98,
+        118,
+        926,
+        354
+      ],
+      "alpha_noise_threshold": 8.0,
+      "alpha_peak": 79.333,
+      "loop_mode": "ping_pong"
+    },
+    "fine_snow": {
+      "id": "fine_snow",
+      "source": "incoming_map_fx/jimeng-2026-07-22-3695-基于输入图生成纯粒子动画。完整保留纯黑背景，不得补画山峰、地面、天空或任何场景。....mp4",
+      "source_duration_seconds": 5.0865,
+      "decoder": "avfoundation",
+      "background_mode": "black",
+      "fps": 8.0,
+      "frame_count": 40,
+      "frame_size": [
+        480,
+        270
+      ],
+      "columns": 8,
+      "rows": 5,
+      "atlas": "res://assets/map_fx/generated/fine_snow/fine_snow_atlas.png",
+      "crop_source_pixels": [
+        0,
+        0,
+        1024,
+        576
+      ],
+      "alpha_noise_threshold": 28.0,
+      "alpha_peak": 204.0,
+      "loop_mode": "crossfade"
+    },
+    "valley_mist": {
+      "id": "valley_mist",
+      "source": "incoming_map_fx/jimeng-2026-07-22-4399-基于输入图生成独立的自然薄雾特效动画。 固定镜头，完整保持纯黑背景。画面中只出现....mp4",
+      "source_duration_seconds": 5.0835,
+      "decoder": "avfoundation",
+      "background_mode": "black",
+      "fps": 8.0,
+      "frame_count": 40,
+      "frame_size": [
+        480,
+        161
+      ],
+      "columns": 8,
+      "rows": 5,
+      "atlas": "res://assets/map_fx/generated/valley_mist/valley_mist_atlas.png",
+      "crop_source_pixels": [
+        0,
+        123,
+        1024,
+        343
+      ],
+      "alpha_noise_threshold": 24.0,
+      "alpha_peak": 151.0,
+      "loop_mode": "crossfade"
+    },
+    "desert_dust": {
+      "id": "desert_dust",
+      "source": "incoming_map_fx/jimeng-2026-07-22-5268-基于输入图生成独立的风沙特效动画。 固定镜头，完整保持纯黑背景。画面中只出现清晰....mp4",
+      "source_duration_seconds": 5.0835,
+      "decoder": "avfoundation",
+      "background_mode": "black",
+      "fps": 8.0,
+      "frame_count": 40,
+      "frame_size": [
+        480,
+        270
+      ],
+      "columns": 8,
+      "rows": 5,
+      "atlas": "res://assets/map_fx/generated/desert_dust/desert_dust_atlas.png",
+      "crop_source_pixels": [
+        0,
+        0,
+        1024,
+        576
+      ],
+      "alpha_noise_threshold": 4.0,
+      "alpha_peak": 230.0,
+      "loop_mode": "crossfade"
+    },
+    "sea_glints": {
+      "id": "sea_glints",
+      "source": "incoming_map_fx/jimeng-2026-07-22-6007-纯黑背景上的独立游戏特效素材，固定镜头。画面中只有稀疏分布的短小弧形水面闪光和极....mp4",
+      "source_duration_seconds": 4.0945,
+      "decoder": "avfoundation",
+      "background_mode": "black",
+      "fps": 8.0,
+      "frame_count": 32,
+      "frame_size": [
+        480,
+        268
+      ],
+      "columns": 8,
+      "rows": 4,
+      "atlas": "res://assets/map_fx/generated/sea_glints/sea_glints_atlas.png",
+      "crop_source_pixels": [
+        0,
+        4,
+        1024,
+        572
+      ],
+      "alpha_noise_threshold": 4.0,
+      "alpha_peak": 252.0,
+      "loop_mode": "ping_pong"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "static": {
+    "extra_scripts": [
+      {
+        "script": "res://tools/traveler/lookdev_panti/panti_extra_inventory.gd"
+      }
+    ]
+  }
+}

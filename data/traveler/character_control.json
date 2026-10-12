@@ -1,0 +1,121 @@
+{
+  "schema": "silkroad.traveler-character-control.v2",
+  "height_px": 70,
+  "grid_px": 12,
+  "walk_px_s": 44,
+  "walk_accel_px_s2": 250,
+  "stop_decel_px_s2": 330,
+  "turn_smoothing": 14.0,
+  "spawn_normalized": [
+    0.39,
+    0.9
+  ],
+  "boundary_normalized": [
+    [
+      0.3271,
+      0.8435
+    ],
+    [
+      0.3495,
+      0.838
+    ],
+    [
+      0.3859,
+      0.8407
+    ],
+    [
+      0.425,
+      0.8491
+    ],
+    [
+      0.4568,
+      0.8509
+    ],
+    [
+      0.4823,
+      0.8824
+    ],
+    [
+      0.4948,
+      0.9167
+    ],
+    [
+      0.5125,
+      0.9676
+    ],
+    [
+      0.5073,
+      0.9833
+    ],
+    [
+      0.4729,
+      0.9907
+    ],
+    [
+      0.4141,
+      0.9833
+    ],
+    [
+      0.3651,
+      0.9806
+    ],
+    [
+      0.3359,
+      0.9676
+    ],
+    [
+      0.3089,
+      0.9472
+    ],
+    [
+      0.2969,
+      0.9222
+    ],
+    [
+      0.2979,
+      0.8935
+    ],
+    [
+      0.3068,
+      0.8676
+    ]
+  ],
+  "reference": "Action2: blue polygon from reference 1; gate target from reference 2 after excluding its bottom annotation. Native 1920x1080 coordinates.",
+  "controls": "day: automatic walk/idle inside blue boundary; building click starts day/dusk transition",
+  "walk_stance_u_s": 0.62,
+  "dusk_fill_energy": 0.45,
+  "dusk_rim_energy": 0.28,
+  "dusk_gate_screen": [
+    1040,
+    919
+  ],
+  "dusk_gate_radius_px": 75,
+  "roam_idle_min_s": 1.2,
+  "roam_idle_max_s": 3.5,
+  "gate_entry_screen": [
+    936,
+    990
+  ],
+  "gait_calibration": "Action2 30fps walk, floor contact foot -Z velocity median: left .5897 / right .6577 local u/s. Combined .62; movement determines playback rate.",
+  "gate_waypoints_screen": [
+    [
+      948,
+      956
+    ],
+    [
+      955,
+      922
+    ],
+    [
+      1005,
+      910
+    ]
+  ],
+  "transit_half_width_px": 36,
+  "collision": {
+    "radius_u": 0.11,
+    "height_u": 0.43,
+    "sole_clearance_u": 0.015,
+    "max_step_u": 0.08
+  }
+}

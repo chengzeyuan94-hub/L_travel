@@ -1,0 +1,29 @@
+{
+  "target": "home",
+  "duration": 3.0,
+  "warmup_frames": 30,
+  "seed": 3,
+  "note": "demo: 2D push from the full title illustration toward L叔 (centre in 1920x1080 output px)",
+  "camera": {
+    "mode": "keys",
+    "keys": [
+      {
+        "t": 0.0,
+        "zoom": 1.0,
+        "center": [
+          960,
+          540
+        ],
+        "ease": "inOutCubic"
+      },
+      {
+        "t": 3.0,
+        "zoom": 1.35,
+        "center": [
+          1110,
+          600
+        ]
+      }
+    ]
+  }
+}

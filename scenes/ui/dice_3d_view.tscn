@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/dice_3d_view.gd" id="1_script"]
+
+[node name="Dice3DView" type="Control"]
+custom_minimum_size = Vector2(120, 112)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 120.0
+offset_bottom = 112.0
+script = ExtResource("1_script")

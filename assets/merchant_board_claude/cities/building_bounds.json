@@ -1,0 +1,133 @@
+{
+  "source": "docs/design/merchant-board-claude-20260923/cities/contact-sheet.png audit; centre = -translation fix",
+  "cities": {
+    "rome": {
+      "building_width": 4.49,
+      "building_depth": 3.4,
+      "building_centre_xz": [
+        0.279,
+        -0.262
+      ]
+    },
+    "constantinople": {
+      "building_width": 4.13,
+      "building_depth": 2.8,
+      "building_centre_xz": [
+        0,
+        0.49
+      ]
+    },
+    "cairo": {
+      "building_width": 4.12,
+      "building_depth": 2.99,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "jeddah": {
+      "building_width": 3.67,
+      "building_depth": 3.05,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "aden": {
+      "building_width": 3.45,
+      "building_depth": 3.02,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "baghdad": {
+      "building_width": 3.74,
+      "building_depth": 3.37,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "panti": {
+      "building_width": 4.6,
+      "building_depth": 2.99,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "yumenguan": {
+      "building_width": 4.58,
+      "building_depth": 3.13,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "delhi": {
+      "building_width": 4.15,
+      "building_depth": 3.01,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "simhala": {
+      "building_width": 3.52,
+      "building_depth": 2.73,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "changan": {
+      "building_width": 4.68,
+      "building_depth": 3.0,
+      "building_centre_xz": [
+        0,
+        0.279
+      ]
+    },
+    "dagon": {
+      "building_width": 3.98,
+      "building_depth": 3.06,
+      "building_centre_xz": [
+        0,
+        0.24
+      ]
+    },
+    "chenla": {
+      "building_width": 4.06,
+      "building_depth": 2.67,
+      "building_centre_xz": [
+        0,
+        0.737
+      ]
+    },
+    "quanzhou": {
+      "building_width": 5.24,
+      "building_depth": 3.92,
+      "building_centre_xz": [
+        0,
+        0
+      ]
+    },
+    "geumseong": {
+      "building_width": 4.27,
+      "building_depth": 3.31,
+      "building_centre_xz": [
+        0,
+        0.416
+      ]
+    },
+    "heijokyo": {
+      "building_width": 4.27,
+      "building_depth": 3.33,
+      "building_centre_xz": [
+        0,
+        0.404
+      ]
+    }
+  }
+}

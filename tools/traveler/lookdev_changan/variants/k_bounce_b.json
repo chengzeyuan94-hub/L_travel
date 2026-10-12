@@ -1,0 +1,128 @@
+{
+  "base": "k0_baseline",
+  "surface": {
+    "shader": "res://tools/traveler/lookdev_changan/atlas_surface_dusk_bounce.gdshader",
+    "bounce_strength": 0.26,
+    "bounce_ground_color": [
+      1.0,
+      0.55,
+      0.28
+    ],
+    "bounce_sky_color": [
+      0.42,
+      0.48,
+      0.9
+    ],
+    "bounce_sky_mix": 0.4,
+    "bounce_floor": 0.03,
+    "lamp_bounce_strength": 0.6,
+    "lamp_bounce_radius": 2.4,
+    "lamp_bounce_height": 0.55,
+    "lamp_bounce_color": [
+      1.0,
+      0.58,
+      0.28
+    ],
+    "glaze_radius": 3.2,
+    "glaze_roughness": 0.55,
+    "glaze_specular": 0.4,
+    "glaze_sun_spec": 1.5,
+    "glaze_shininess": 24.0,
+    "glaze_spec_tint": [
+      1.0,
+      0.82,
+      0.66
+    ],
+    "glaze_sky_strength": 0.35,
+    "glaze_f0": 0.04,
+    "glaze_fresnel_power": 4.0,
+    "glaze_sky_horizon": [
+      1.0,
+      0.55,
+      0.45
+    ],
+    "glaze_sky_zenith": [
+      0.34,
+      0.28,
+      0.58
+    ],
+    "glaze_sky_sun": [
+      1.0,
+      0.66,
+      0.38
+    ],
+    "glaze_sky_sun_power": 5.0,
+    "glaze_gold_spec": 2.0,
+    "glaze_gold_shininess": 10.0
+  },
+  "env": {
+    "ssil_intensity": 1.4,
+    "ssil_radius": 1.2
+  },
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_changan/changan_extra_bounce.gd",
+      "cfg": {
+        "temple_path": "Cities/changan/changan",
+        "glaze_center_lift": 0.8,
+        "court_offset": 1.4,
+        "snow": {
+          "sheen_color": [
+            1.0,
+            0.7,
+            0.62
+          ],
+          "sheen_strength": 0.28,
+          "face_amount": 0.5,
+          "lobe_amount": 0.8,
+          "lobe_power": 10.0,
+          "fres_amount": 0.5,
+          "fres_power": 3.0
+        },
+        "character": {
+          "energy": 0.9,
+          "range": 0.6,
+          "lift": -0.04,
+          "toward_court": 0.2,
+          "color": [
+            1.0,
+            0.6,
+            0.32
+          ]
+        },
+        "cliff_rig": {
+          "path": "CliffBuddha",
+          "layer": 65536,
+          "lights": [
+            {
+              "color": [
+                1.0,
+                0.58,
+                0.32
+              ],
+              "energy": 0.28,
+              "dir": {
+                "right": 0.55,
+                "toward_cam": 0.6,
+                "up": -0.35
+              }
+            },
+            {
+              "color": [
+                0.52,
+                0.56,
+                1.0
+              ],
+              "energy": 0.14,
+              "dir": {
+                "right": 0.1,
+                "toward_cam": 0.2,
+                "up": 1.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

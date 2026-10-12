@@ -1,0 +1,23 @@
+{
+  "base": "baseline",
+  "description": "Hook-contract demo: baseline + modules/example_rim_hook.gd (rim light on landmark/tree/rock roles, per light).",
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_lshu/modules/example_rim_hook.gd",
+      "cfg": {
+        "roles": [
+          "landmark",
+          "tree",
+          "rock",
+          "prop"
+        ],
+        "rim_color": "#ffe2c0",
+        "rim_strength": {
+          "default": 0.08,
+          "sunset": 0.18,
+          "night": 0.05
+        }
+      }
+    }
+  ]
+}

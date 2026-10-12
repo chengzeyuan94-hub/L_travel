@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "board": {
+    "width": 60.0,
+    "depth": 20.0
+  },
+  "cities": [
+    {
+      "id": "sample_baghdad",
+      "city_id": "baghdad",
+      "node_id": "baghdad",
+      "asset_id": "city_blue_dome",
+      "position": [
+        -9,
+        0,
+        -1
+      ],
+      "rotation_y": 0,
+      "scale": 1
+    },
+    {
+      "id": "sample_panti",
+      "city_id": "panti",
+      "node_id": "panti",
+      "asset_id": "city_caravanserai",
+      "position": [
+        1,
+        0,
+        -1
+      ],
+      "rotation_y": 0,
+      "scale": 1
+    },
+    {
+      "id": "sample_changan",
+      "city_id": "changan",
+      "node_id": "changan",
+      "asset_id": "city_chinese",
+      "position": [
+        10,
+        0,
+        -1
+      ],
+      "rotation_y": 0,
+      "scale": 1
+    }
+  ],
+  "logic_nodes": [
+    {
+      "id": "sample_stop_1",
+      "node_id": "land_baghdad_panti_01",
+      "position": [
+        -6,
+        0,
+        1.8
+      ]
+    },
+    {
+      "id": "sample_stop_2",
+      "node_id": "land_baghdad_panti_02",
+      "position": [
+        -2.5,
+        0,
+        2
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "sample_route_0",
+      "edge_id": "edge_land_baghdad__land_baghdad_panti_01",
+      "from_node": "baghdad",
+      "to_node": "land_baghdad_panti_01",
+      "type": "land",
+      "points": [
+        [
+          -8,
+          0,
+          1.8
+        ]
+      ]
+    },
+    {
+      "id": "sample_route_1",
+      "edge_id": "edge_land_land_baghdad_panti_01__land_baghdad_panti_02",
+      "from_node": "land_baghdad_panti_01",
+      "to_node": "land_baghdad_panti_02",
+      "type": "land",
+      "points": []
+    },
+    {
+      "id": "sample_route_2",
+      "edge_id": "edge_land_land_baghdad_panti_02__panti",
+      "from_node": "land_baghdad_panti_02",
+      "to_node": "panti",
+      "type": "land",
+      "points": []
+    }
+  ],
+  "decorations": [
+    {
+      "id": "sample_ridge",
+      "asset_id": "mountain_snow",
+      "position": [
+        -1,
+        0,
+        -5
+      ],
+      "rotation_y": 0,
+      "scale": 1.2
+    },
+    {
+      "id": "sample_palm",
+      "asset_id": "palm",
+      "position": [
+        -11,
+        0,
+        0.6
+      ],
+      "rotation_y": 0.3,
+      "scale": 0.85
+    },
+    {
+      "id": "sample_coast",
+      "asset_id": "coast",
+      "position": [
+        9,
+        0.03,
+        3.7
+      ],
+      "rotation_y": 0,
+      "scale": 1.6
+    },
+    {
+      "id": "sample_ship",
+      "asset_id": "ship",
+      "position": [
+        9,
+        0.01,
+        4.5
+      ],
+      "rotation_y": 1.0,
+      "scale": 0.85
+    },
+    {
+      "id": "sample_tree",
+      "asset_id": "broadleaf",
+      "position": [
+        12,
+        0,
+        -2
+      ],
+      "rotation_y": 0,
+      "scale": 1
+    }
+  ],
+  "visual_settings": {
+    "night": false,
+    "camera_yaw": -0.12217304763960307,
+    "camera_pitch": 1.0122909661567112,
+    "camera_size": 92.2127659574468,
+    "camera_target": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "base": "baseline",
+  "description": "L3 measurement-only variant: baseline look + the L3 findability probe (all L3 features off). Used as the 'before' numbers.",
+  "common": {
+    "l3": {
+      "character": {
+        "face_camera_max_deg": 180.0,
+        "rim": {
+          "enabled": false
+        },
+        "contact": {
+          "enabled": false
+        },
+        "cup": {
+          "enabled": false
+        },
+        "blossom": {
+          "enabled": false
+        }
+      },
+      "fire": {
+        "enabled": false
+      },
+      "smoke": {
+        "chimney": {
+          "enabled": false
+        },
+        "fire": {
+          "enabled": false
+        }
+      },
+      "lanterns": {
+        "enabled": false
+      }
+    }
+  },
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_lshu/modules/l3_life.gd",
+      "cfg": {
+        "measure": true
+      }
+    }
+  ]
+}

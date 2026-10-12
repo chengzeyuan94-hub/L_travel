@@ -1,0 +1,11 @@
+[gd_resource type="SystemFont" load_steps=2 format=3]
+
+[sub_resource type="SystemFont" id="SystemFont_cjk_fallback"]
+font_names = PackedStringArray("Hiragino Sans GB", "Heiti SC", "Songti SC")
+font_weight = 500
+
+[resource]
+font_names = PackedStringArray("PingFang SC", "Hiragino Sans GB", "Heiti SC", "STHeiti", "Songti SC")
+font_weight = 500
+allow_system_fallback = true
+fallbacks = Array[Font]([SubResource("SystemFont_cjk_fallback")])

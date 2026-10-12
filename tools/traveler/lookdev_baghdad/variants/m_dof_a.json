@@ -1,0 +1,8 @@
+{
+  "base": "t_combo_geo",
+  "camera": {
+    "dof_far_distance": 16.0,
+    "dof_far_transition": 8.0,
+    "dof_blur_amount": 0.08
+  }
+}

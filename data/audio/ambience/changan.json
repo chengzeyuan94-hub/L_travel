@@ -1,0 +1,91 @@
+{
+  "_note": "第一幕 长安 环境音参数（方案 §3.5）。起点值，不是冻结值，可以随时改；改完重开场景就生效。db 都是 volume_db，玩家实际听到的 = 文件响度 + 这里的值。t = look_profile.current_period_t（0 白天，1 黄昏）。",
+  "master_db": 3.5,
+  "_master_note": "整场一起加减（所有底床和点缀）。方案原值合计实测白天 −30.4、黄昏 −32.6 LUFS，比 §2.2 的 −26 到 −28 低，所以整体 +3.5，黄昏再把秋叶（−4→−3）和火光（−10→−7）各提一点，白天鸟 0→−1；调完实测白天约 −26、黄昏约 −27.6（含钟声）",
+  "fade_in_s": 3.0,
+  "leaves_bed": {
+    "sound": "wind_leaves_bed_loop_v1",
+    "day_db": -2.0,
+    "dusk_db": -3.0,
+    "follow_visual_gust_db": 1.5,
+    "_note": "秋叶哗哗，常驻；按 t 从 day_db 插值到 dusk_db；follow_visual_gust_db 让音量跟着画面里树的风（motion_director.gust）起伏 ±这么多 dB，填 0 就关掉"
+  },
+  "low_wind": {
+    "sound": "wind_open_bed_loop_v1",
+    "db": -12.0,
+    "_note": "低频风，常驻补底"
+  },
+  "day_birds": {
+    "sound": "birds_day_bed_loop_v1",
+    "db": -1.0,
+    "_note": "白天鸟底床，振幅 × (1 − t)，跟 8 s 过渡走"
+  },
+  "campfire": {
+    "sound": "campfire_bed_loop_v1",
+    "db": -7.0,
+    "_note": "城门火光，振幅 × t（和 DuskFire 同一个 t）"
+  },
+  "gusts": {
+    "sounds": [
+      "wind_leaves_gust_v1"
+    ],
+    "interval_s": [
+      14,
+      32
+    ],
+    "db": [
+      -9,
+      -4
+    ],
+    "pitch": [
+      0.94,
+      1.06
+    ],
+    "dusk_offset_db": -2.0,
+    "_note": "阵风随机点缀；黄昏时整体再降 dusk_offset_db × t"
+  },
+  "dusk_calls": {
+    "sounds": [
+      "bird_call_v1",
+      "bird_call_v2",
+      "bird_call_v3",
+      "bird_call_v4",
+      "bird_call_v5"
+    ],
+    "interval_s": [
+      25,
+      50
+    ],
+    "db": [
+      -16,
+      -12
+    ],
+    "pitch": [
+      0.95,
+      1.05
+    ],
+    "min_t": 0.5,
+    "_note": "黄昏零星鸟叫，t > min_t 时才有"
+  },
+  "temple_bell": {
+    "sound": "temple_bell_v1",
+    "db": [
+      -11,
+      -9
+    ],
+    "pitch": [
+      0.98,
+      1.02
+    ],
+    "first_s": 6.0,
+    "interval_s": [
+      70,
+      130
+    ],
+    "on_bow": true,
+    "min_gap_s": 4.0,
+    "dusk_strikes": 3,
+    "strike_gap_s": 5.5,
+    "_note": "远钟：开场 first_s 秒一下；之后每 interval_s 随机一下；L叔 在城门鞠躬时马上一下（离上一下不到 min_gap_s 就不重复）；过渡到黄昏落定后连敲 dusk_strikes 下，间隔 strike_gap_s"
+  }
+}

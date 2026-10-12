@@ -1,0 +1,51 @@
+{
+  "schema": "silkroad.carrying-pose.v1",
+  "coordinates": "Godot: Y up, +Z forward, unit height, feet at y=0, X/Z bounds centered",
+  "bones": {
+    "LeftHand": [
+      0.07675012201070786,
+      0.4674869775772095,
+      0.11562993377447128
+    ],
+    "RightHand": [
+      -0.10680165886878967,
+      0.4833928644657135,
+      0.14036254584789276
+    ],
+    "LeftHandMiddle1": [
+      0.05740388482809067,
+      0.4882330298423767,
+      0.1996324360370636
+    ],
+    "RightHandMiddle1": [
+      -0.1093612089753151,
+      0.523240327835083,
+      0.21999704837799072
+    ],
+    "LeftFoot": [
+      0.059003546833992004,
+      0.07817927747964859,
+      0.004169474355876446
+    ],
+    "RightFoot": [
+      -0.09125764667987823,
+      0.07861876487731934,
+      -0.01679946295917034
+    ],
+    "LeftPalm": [
+      0.0641750767827034,
+      0.48097190260887146,
+      0.17023155093193054
+    ],
+    "RightPalm": [
+      -0.10846536606550217,
+      0.5092936754226685,
+      0.19212497770786285
+    ]
+  },
+  "vertices": 9698,
+  "materials": [
+    "tripo_mat_5fd74650"
+  ],
+  "motion_source": "Independent procedural sine motion in public release; no external keyframes included"
+}

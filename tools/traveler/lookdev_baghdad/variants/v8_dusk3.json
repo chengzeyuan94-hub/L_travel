@@ -1,0 +1,123 @@
+{
+  "light": {
+    "sunel": -8.5,
+    "sunaz": -16.5,
+    "color": [
+      1.0,
+      0.66,
+      0.36
+    ],
+    "energy": 3.4,
+    "angular_distance": 1.0,
+    "cool_fill_energy": 0.45,
+    "cool_fill_color": [
+      0.5,
+      0.5,
+      0.78
+    ]
+  },
+  "env": {
+    "fog_light_color": [
+      1.0,
+      0.64,
+      0.4
+    ],
+    "fog_density": 0.3,
+    "fog_aerial_perspective": 0.32,
+    "glow_intensity": 0.45,
+    "glow_bloom": 0.28,
+    "ambient_light_color": [
+      0.5,
+      0.42,
+      0.56
+    ],
+    "ambient_light_energy": 0.42,
+    "adjustment_saturation": 1.1,
+    "adjustment_contrast": 1.04,
+    "tonemap_white": 1.7
+  },
+  "sky": {
+    "shader": "res://tools/traveler/lookdev_baghdad/lookdev_sunset_sky.gdshader",
+    "zenith_color": [
+      0.3,
+      0.26,
+      0.54
+    ],
+    "mid_color": [
+      0.86,
+      0.44,
+      0.4
+    ],
+    "mid_height": 0.18,
+    "horizon_color": [
+      1.0,
+      0.6,
+      0.24
+    ],
+    "horizon_falloff": 0.2,
+    "ground_horizon_color": [
+      0.8,
+      0.44,
+      0.24
+    ],
+    "ground_bottom_color": [
+      0.22,
+      0.14,
+      0.18
+    ],
+    "sun_disc_color": [
+      1.0,
+      0.92,
+      0.72
+    ],
+    "sun_disc_energy": 3.4,
+    "sun_radius_deg": 1.0,
+    "sun_halo_radius_deg": 14.0,
+    "sun_halo_strength": 0.5,
+    "cloud_opacity": 0.0,
+    "cumulus_enabled": 1.0,
+    "cloud_b_base_el": 0.06,
+    "cloud_b_top_el": 0.3,
+    "cloud_b_scale": [
+      2.6,
+      4.5
+    ],
+    "cloud_b_offset": [
+      11.3,
+      2.9
+    ],
+    "cloud_b_coverage": 0.58,
+    "cloud_b_alpha": 0.95,
+    "cloud_a_base_el": 0.3,
+    "cloud_a_top_el": 0.62,
+    "cloud_a_scale": [
+      2.0,
+      3.5
+    ],
+    "cloud_a_offset": [
+      3.1,
+      7.7
+    ],
+    "cloud_a_coverage": 0.42,
+    "cloud_a_alpha": 0.7,
+    "cloud_lit_color": [
+      1.0,
+      0.85,
+      0.68
+    ],
+    "cloud_shadow_color": [
+      0.36,
+      0.22,
+      0.36
+    ],
+    "cloud_rim_color": [
+      1.0,
+      0.8,
+      0.4
+    ],
+    "cloud_rim_strength": 2.2,
+    "cloud_rim_step": 0.09,
+    "cloud_sun_sigma_deg": 50.0,
+    "cloud_underglow": 0.3
+  }
+}

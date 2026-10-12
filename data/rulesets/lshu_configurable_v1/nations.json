@@ -1,0 +1,87 @@
+{
+  "ruleset_id": "lshu_configurable_v1",
+  "edition_id": "user_confirmed_v1",
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "yumenguan",
+      "display_name": "玉门关",
+      "primary_city_id": "yumenguan"
+    },
+    {
+      "id": "rome",
+      "display_name": "古罗马城",
+      "primary_city_id": "rome"
+    },
+    {
+      "id": "constantinople",
+      "display_name": "君士坦丁堡",
+      "primary_city_id": "constantinople"
+    },
+    {
+      "id": "changan",
+      "display_name": "长安",
+      "primary_city_id": "changan"
+    },
+    {
+      "id": "panti",
+      "display_name": "盘橐城",
+      "primary_city_id": "panti"
+    },
+    {
+      "id": "baghdad",
+      "display_name": "巴格达",
+      "primary_city_id": "baghdad"
+    },
+    {
+      "id": "delhi",
+      "display_name": "德里",
+      "primary_city_id": "delhi"
+    },
+    {
+      "id": "geumseong",
+      "display_name": "金城",
+      "primary_city_id": "geumseong"
+    },
+    {
+      "id": "chenla",
+      "display_name": "真腊",
+      "primary_city_id": "chenla"
+    },
+    {
+      "id": "aden",
+      "display_name": "阿丹国",
+      "primary_city_id": "aden"
+    },
+    {
+      "id": "heijokyo",
+      "display_name": "平城京",
+      "primary_city_id": "heijokyo"
+    },
+    {
+      "id": "simhala",
+      "display_name": "狮子国",
+      "primary_city_id": "simhala"
+    },
+    {
+      "id": "cairo",
+      "display_name": "开罗",
+      "primary_city_id": "cairo"
+    },
+    {
+      "id": "jeddah",
+      "display_name": "吉达",
+      "primary_city_id": "jeddah"
+    },
+    {
+      "id": "dagon",
+      "display_name": "大光",
+      "primary_city_id": "dagon"
+    },
+    {
+      "id": "quanzhou",
+      "display_name": "泉州",
+      "primary_city_id": "quanzhou"
+    }
+  ]
+}

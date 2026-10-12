@@ -1,0 +1,88 @@
+{
+  "target": "panti",
+  "duration": 5.0,
+  "warmup_frames": 45,
+  "note": "vantage survey: act framing, L叔+fire, fire macro, toward the fortress, wide high",
+  "camera": {
+    "mode": "keys",
+    "space": "world",
+    "interp": "linear",
+    "keys": [
+      {
+        "t": 0,
+        "pos": [
+          7.7157,
+          0.2526,
+          15.3793
+        ],
+        "look": [
+          -2.1619,
+          3.4034,
+          1.5434
+        ],
+        "fov": 40,
+        "ease": "hold"
+      },
+      {
+        "t": 1,
+        "pos": [
+          6.75,
+          0.42,
+          14.75
+        ],
+        "look": [
+          5.7,
+          0.28,
+          13.6
+        ],
+        "fov": 35,
+        "ease": "hold"
+      },
+      {
+        "t": 2,
+        "pos": [
+          6.35,
+          0.2,
+          14.05
+        ],
+        "look": [
+          5.86,
+          0.16,
+          13.47
+        ],
+        "fov": 30,
+        "ease": "hold"
+      },
+      {
+        "t": 3,
+        "pos": [
+          5.2,
+          0.6,
+          11.8
+        ],
+        "look": [
+          -1.6,
+          1.2,
+          -3.7
+        ],
+        "fov": 32,
+        "ease": "hold"
+      },
+      {
+        "t": 4,
+        "pos": [
+          11.0,
+          3.0,
+          20.0
+        ],
+        "look": [
+          0.0,
+          1.5,
+          2.0
+        ],
+        "fov": 42,
+        "ease": "hold"
+      }
+    ]
+  }
+}

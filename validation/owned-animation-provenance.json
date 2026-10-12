@@ -1,0 +1,13 @@
+{
+  "schema": "ltravel.owned-motion.v1",
+  "assets": [
+    {
+      "sha256": "f5bed14fee8b13d4dbdb92da18a5aef812de52362bc9a377c2a808d571626b1a",
+      "path": "assets/piece_presets/lshu_defaults/f5bed14fee8b13d4dbdb92da18a5aef812de52362bc9a377c2a808d571626b1a.glb",
+      "motion_source": "Project-authored local quadruped rig and procedural gait, 2026-10-05",
+      "source_record": "lshu-camel-opus-gait-v3-20261005/source/build_local_quadruped.py",
+      "rig": "CamelLocalQuadruped24",
+      "external_motion_samples": false
+    }
+  ]
+}

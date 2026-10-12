@@ -1,0 +1,46 @@
+{
+  "target": "board",
+  "duration": 3.0,
+  "warmup_frames": 60,
+  "board_ready_frames": 60,
+  "board_feed": "clean",
+  "note": "demo: perspective fly-over of the 3D merchant board toward 长安 (clean 3D feed: no HUD, no 2D plaques)",
+  "camera": {
+    "mode": "keys",
+    "space": "world",
+    "interp": "catmull",
+    "projection": "perspective",
+    "far": 600,
+    "keys": [
+      {
+        "t": 0.0,
+        "pos": [
+          70.0,
+          16.0,
+          44.0
+        ],
+        "look": [
+          84.0,
+          0.0,
+          22.0
+        ],
+        "fov": 38,
+        "ease": "inOutSine"
+      },
+      {
+        "t": 3.0,
+        "pos": [
+          80.5,
+          7.5,
+          31.0
+        ],
+        "look": [
+          87.7,
+          0.9,
+          19.5
+        ],
+        "fov": 34
+      }
+    ]
+  }
+}

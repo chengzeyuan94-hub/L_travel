@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "cities": {
+    "jingdezhen": {
+      "name": "景德镇",
+      "specialty": "qinghuaci",
+      "model": "res://art-src/expansion-packs/jingdezhen-qinghuaci-v01/models/jingdezhen.glb"
+    }
+  },
+  "goods": {
+    "qinghuaci": {
+      "name": "青花瓷",
+      "icon": "res://art-src/expansion-packs/jingdezhen-qinghuaci-v01/icons/qinghuaci.png"
+    }
+  },
+  "pieces": {}
+}

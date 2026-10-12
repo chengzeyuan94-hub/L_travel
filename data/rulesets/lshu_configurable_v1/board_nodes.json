@@ -1,0 +1,1555 @@
+{
+  "ruleset_id": "lshu_configurable_v1",
+  "edition_id": "user_confirmed_v1",
+  "schema_version": 1,
+  "logical_size": [
+    4096,
+    1363
+  ],
+  "source_topology": "res://data/rulesets/lshu_configurable_v1/presentation/world_map_topology_v1.json",
+  "source_topology_sha256": "440188ac28992a2d5a38f7e47e0e9382683dba7c747ac4ca1df79b6228e5649f",
+  "source_corridors_sha256": "76fb64c9322ba39239119afcbc5b23fd77992b938112d1b77e4616985cd498d1",
+  "id_normalizations": {
+    "ancient_rome": "rome",
+    "pantuo": "panti"
+  },
+  "items": [
+    {
+      "id": "yumenguan",
+      "node_type": "CITY",
+      "city_id": "yumenguan",
+      "map_position": [
+        2440.5,
+        348.5
+      ],
+      "position_px": [
+        2440.5,
+        348.5
+      ],
+      "route_anchors": {
+        "LAND": [
+          2440.5,
+          348.5
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "yumenguan",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "rome",
+      "node_type": "CITY",
+      "city_id": "rome",
+      "map_position": [
+        387.585,
+        183.614
+      ],
+      "position_px": [
+        387.585,
+        183.614
+      ],
+      "route_anchors": {
+        "LAND": [
+          387.585,
+          183.614
+        ],
+        "SEA": [
+          387.585,
+          183.614
+        ]
+      },
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "presentation_stop_id": "ancient_rome",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "constantinople",
+      "node_type": "CITY",
+      "city_id": "constantinople",
+      "map_position": [
+        693.0,
+        296.0
+      ],
+      "position_px": [
+        693.0,
+        296.0
+      ],
+      "route_anchors": {
+        "LAND": [
+          693.0,
+          296.0
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "constantinople",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "changan",
+      "node_type": "CITY",
+      "city_id": "changan",
+      "map_position": [
+        2789.0,
+        504.0
+      ],
+      "position_px": [
+        2789.0,
+        504.0
+      ],
+      "route_anchors": {
+        "LAND": [
+          2789.0,
+          504.0
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "changan",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "panti",
+      "node_type": "CITY",
+      "city_id": "panti",
+      "map_position": [
+        1921.5,
+        334.5
+      ],
+      "position_px": [
+        1921.5,
+        334.5
+      ],
+      "route_anchors": {
+        "LAND": [
+          1921.5,
+          334.5
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "pantuo",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "baghdad",
+      "node_type": "CITY",
+      "city_id": "baghdad",
+      "map_position": [
+        1416.5,
+        558.0
+      ],
+      "position_px": [
+        1416.5,
+        558.0
+      ],
+      "route_anchors": {
+        "LAND": [
+          1416.5,
+          558.0
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "baghdad",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "delhi",
+      "node_type": "CITY",
+      "city_id": "delhi",
+      "map_position": [
+        2117.5,
+        663.0
+      ],
+      "position_px": [
+        2117.5,
+        663.0
+      ],
+      "route_anchors": {
+        "LAND": [
+          2117.5,
+          663.0
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "delhi",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "geumseong",
+      "node_type": "CITY",
+      "city_id": "geumseong",
+      "map_position": [
+        3497.0,
+        310.0
+      ],
+      "position_px": [
+        3497.0,
+        310.0
+      ],
+      "route_anchors": {
+        "LAND": [
+          3497.0,
+          310.0
+        ],
+        "SEA": [
+          3497.0,
+          310.0
+        ]
+      },
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "presentation_stop_id": "geumseong",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "chenla",
+      "node_type": "CITY",
+      "city_id": "chenla",
+      "map_position": [
+        3103.5,
+        781.0
+      ],
+      "position_px": [
+        3103.5,
+        781.0
+      ],
+      "route_anchors": {
+        "SEA": [
+          3103.5,
+          781.0
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "chenla",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "aden",
+      "node_type": "CITY",
+      "city_id": "aden",
+      "map_position": [
+        1227.56,
+        1084.932
+      ],
+      "position_px": [
+        1227.56,
+        1084.932
+      ],
+      "route_anchors": {
+        "SEA": [
+          1227.56,
+          1084.932
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "aden",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "heijokyo",
+      "node_type": "CITY",
+      "city_id": "heijokyo",
+      "map_position": [
+        3730.0,
+        477.0
+      ],
+      "position_px": [
+        3730.0,
+        477.0
+      ],
+      "route_anchors": {
+        "SEA": [
+          3730.0,
+          477.0
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "heijokyo",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "simhala",
+      "node_type": "CITY",
+      "city_id": "simhala",
+      "map_position": [
+        2251.585,
+        978.114
+      ],
+      "position_px": [
+        2251.585,
+        978.114
+      ],
+      "route_anchors": {
+        "LAND": [
+          2251.585,
+          978.114
+        ],
+        "SEA": [
+          2251.585,
+          978.114
+        ]
+      },
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "presentation_stop_id": "simhala",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "cairo",
+      "node_type": "CITY",
+      "city_id": "cairo",
+      "map_position": [
+        746.0,
+        575.0
+      ],
+      "position_px": [
+        746.0,
+        575.0
+      ],
+      "route_anchors": {
+        "SEA": [
+          746.0,
+          575.0
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "cairo",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "jeddah",
+      "node_type": "CITY",
+      "city_id": "jeddah",
+      "map_position": [
+        1236.5,
+        693.5
+      ],
+      "position_px": [
+        1236.5,
+        693.5
+      ],
+      "route_anchors": {
+        "LAND": [
+          1236.5,
+          693.5
+        ],
+        "SEA": [
+          1236.5,
+          693.5
+        ]
+      },
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "presentation_stop_id": "jeddah",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "dagon",
+      "node_type": "CITY",
+      "city_id": "dagon",
+      "map_position": [
+        2622.5,
+        874.5
+      ],
+      "position_px": [
+        2622.5,
+        874.5
+      ],
+      "route_anchors": {
+        "SEA": [
+          2622.5,
+          874.5
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "dagon",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "quanzhou",
+      "node_type": "CITY",
+      "city_id": "quanzhou",
+      "map_position": [
+        3103.585,
+        614.114
+      ],
+      "position_px": [
+        3103.585,
+        614.114
+      ],
+      "route_anchors": {
+        "LAND": [
+          3103.585,
+          614.114
+        ],
+        "SEA": [
+          3103.585,
+          614.114
+        ]
+      },
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "presentation_stop_id": "quanzhou",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_rome_constantinople_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        535.133871,
+        186.864769
+      ],
+      "position_px": [
+        535.133871,
+        186.864769
+      ],
+      "route_anchors": {
+        "LAND": [
+          535.133871,
+          186.864769
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_rome_constantinople_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_rome_constantinople_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        652.086623,
+        271.382305
+      ],
+      "position_px": [
+        652.086623,
+        271.382305
+      ],
+      "route_anchors": {
+        "LAND": [
+          652.086623,
+          271.382305
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_rome_constantinople_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_constantinople_baghdad_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        957.568869,
+        395.036279
+      ],
+      "position_px": [
+        957.568869,
+        395.036279
+      ],
+      "route_anchors": {
+        "LAND": [
+          957.568869,
+          395.036279
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_constantinople_baghdad_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_constantinople_baghdad_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        1225.482914,
+        486.436361
+      ],
+      "position_px": [
+        1225.482914,
+        486.436361
+      ],
+      "route_anchors": {
+        "LAND": [
+          1225.482914,
+          486.436361
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_constantinople_baghdad_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_baghdad_jeddah_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        1420.200297,
+        595.834598
+      ],
+      "position_px": [
+        1420.200297,
+        595.834598
+      ],
+      "route_anchors": {
+        "LAND": [
+          1420.200297,
+          595.834598
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_baghdad_jeddah_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_baghdad_jeddah_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        1334.115828,
+        586.679955
+      ],
+      "position_px": [
+        1334.115828,
+        586.679955
+      ],
+      "route_anchors": {
+        "LAND": [
+          1334.115828,
+          586.679955
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_baghdad_jeddah_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_baghdad_panti_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        1604.755167,
+        527.809025
+      ],
+      "position_px": [
+        1604.755167,
+        527.809025
+      ],
+      "route_anchors": {
+        "LAND": [
+          1604.755167,
+          527.809025
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_baghdad_panti_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_baghdad_panti_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        1736.258647,
+        391.733833
+      ],
+      "position_px": [
+        1736.258647,
+        391.733833
+      ],
+      "route_anchors": {
+        "LAND": [
+          1736.258647,
+          391.733833
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_baghdad_panti_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_panti_yumenguan_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        2049.08241,
+        301.540211
+      ],
+      "position_px": [
+        2049.08241,
+        301.540211
+      ],
+      "route_anchors": {
+        "LAND": [
+          2049.08241,
+          301.540211
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_panti_yumenguan_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_panti_yumenguan_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        2283.21455,
+        302.258887
+      ],
+      "position_px": [
+        2283.21455,
+        302.258887
+      ],
+      "route_anchors": {
+        "LAND": [
+          2283.21455,
+          302.258887
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_panti_yumenguan_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_panti_delhi_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        1857.736193,
+        449.429601
+      ],
+      "position_px": [
+        1857.736193,
+        449.429601
+      ],
+      "route_anchors": {
+        "LAND": [
+          1857.736193,
+          449.429601
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_panti_delhi_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_panti_delhi_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        1980.635476,
+        565.482619
+      ],
+      "position_px": [
+        1980.635476,
+        565.482619
+      ],
+      "route_anchors": {
+        "LAND": [
+          1980.635476,
+          565.482619
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_panti_delhi_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_delhi_simhala_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        2139.47736,
+        743.688621
+      ],
+      "position_px": [
+        2139.47736,
+        743.688621
+      ],
+      "route_anchors": {
+        "LAND": [
+          2139.47736,
+          743.688621
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_delhi_simhala_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_delhi_simhala_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        2227.763885,
+        854.067101
+      ],
+      "position_px": [
+        2227.763885,
+        854.067101
+      ],
+      "route_anchors": {
+        "LAND": [
+          2227.763885,
+          854.067101
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_delhi_simhala_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_yumenguan_changan_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        2582.003187,
+        391.488137
+      ],
+      "position_px": [
+        2582.003187,
+        391.488137
+      ],
+      "route_anchors": {
+        "LAND": [
+          2582.003187,
+          391.488137
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_yumenguan_changan_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_yumenguan_changan_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        2715.405002,
+        462.877212
+      ],
+      "position_px": [
+        2715.405002,
+        462.877212
+      ],
+      "route_anchors": {
+        "LAND": [
+          2715.405002,
+          462.877212
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_yumenguan_changan_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_changan_quanzhou_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        2886.19124,
+        567.993045
+      ],
+      "position_px": [
+        2886.19124,
+        567.993045
+      ],
+      "route_anchors": {
+        "LAND": [
+          2886.19124,
+          567.993045
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_changan_quanzhou_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_changan_quanzhou_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        2991.272367,
+        608.96352
+      ],
+      "position_px": [
+        2991.272367,
+        608.96352
+      ],
+      "route_anchors": {
+        "LAND": [
+          2991.272367,
+          608.96352
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_changan_quanzhou_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_changan_geumseong_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        3067.027054,
+        421.992959
+      ],
+      "position_px": [
+        3067.027054,
+        421.992959
+      ],
+      "route_anchors": {
+        "LAND": [
+          3067.027054,
+          421.992959
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_changan_geumseong_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "land_changan_geumseong_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        3284.887537,
+        214.73095
+      ],
+      "position_px": [
+        3284.887537,
+        214.73095
+      ],
+      "route_anchors": {
+        "LAND": [
+          3284.887537,
+          214.73095
+        ]
+      },
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "land_changan_geumseong_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_rome_cairo_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        501.05134,
+        351.556983
+      ],
+      "position_px": [
+        501.05134,
+        351.556983
+      ],
+      "route_anchors": {
+        "SEA": [
+          501.05134,
+          351.556983
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_rome_cairo_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_rome_cairo_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        562.144686,
+        537.434314
+      ],
+      "position_px": [
+        562.144686,
+        537.434314
+      ],
+      "route_anchors": {
+        "SEA": [
+          562.144686,
+          537.434314
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_rome_cairo_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_cairo_jeddah_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        848.563718,
+        581.463055
+      ],
+      "position_px": [
+        848.563718,
+        581.463055
+      ],
+      "route_anchors": {
+        "SEA": [
+          848.563718,
+          581.463055
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_cairo_jeddah_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_cairo_jeddah_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        937.69776,
+        680.849973
+      ],
+      "position_px": [
+        937.69776,
+        680.849973
+      ],
+      "route_anchors": {
+        "SEA": [
+          937.69776,
+          680.849973
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_cairo_jeddah_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_jeddah_aden_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        1077.607206,
+        892.267689
+      ],
+      "position_px": [
+        1077.607206,
+        892.267689
+      ],
+      "route_anchors": {
+        "SEA": [
+          1077.607206,
+          892.267689
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_jeddah_aden_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_jeddah_aden_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        1124.744379,
+        957.558788
+      ],
+      "position_px": [
+        1124.744379,
+        957.558788
+      ],
+      "route_anchors": {
+        "SEA": [
+          1124.744379,
+          957.558788
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_jeddah_aden_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_aden_simhala_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        1570.064697,
+        1204.069313
+      ],
+      "position_px": [
+        1570.064697,
+        1204.069313
+      ],
+      "route_anchors": {
+        "SEA": [
+          1570.064697,
+          1204.069313
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_aden_simhala_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_aden_simhala_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        1917.996619,
+        1136.068793
+      ],
+      "position_px": [
+        1917.996619,
+        1136.068793
+      ],
+      "route_anchors": {
+        "SEA": [
+          1917.996619,
+          1136.068793
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_aden_simhala_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_simhala_dagon_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        2354.967081,
+        1180.900936
+      ],
+      "position_px": [
+        2354.967081,
+        1180.900936
+      ],
+      "route_anchors": {
+        "SEA": [
+          2354.967081,
+          1180.900936
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_simhala_dagon_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_simhala_dagon_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        2452.886806,
+        1004.774565
+      ],
+      "position_px": [
+        2452.886806,
+        1004.774565
+      ],
+      "route_anchors": {
+        "SEA": [
+          2452.886806,
+          1004.774565
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_simhala_dagon_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_dagon_chenla_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        2933.259325,
+        1151.90579
+      ],
+      "position_px": [
+        2933.259325,
+        1151.90579
+      ],
+      "route_anchors": {
+        "SEA": [
+          2933.259325,
+          1151.90579
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_dagon_chenla_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_dagon_chenla_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        3052.412749,
+        1056.109609
+      ],
+      "position_px": [
+        3052.412749,
+        1056.109609
+      ],
+      "route_anchors": {
+        "SEA": [
+          3052.412749,
+          1056.109609
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_dagon_chenla_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_chenla_quanzhou_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        3224.310513,
+        734.478354
+      ],
+      "position_px": [
+        3224.310513,
+        734.478354
+      ],
+      "route_anchors": {
+        "SEA": [
+          3224.310513,
+          734.478354
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_chenla_quanzhou_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_chenla_quanzhou_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        3219.868542,
+        682.484006
+      ],
+      "position_px": [
+        3219.868542,
+        682.484006
+      ],
+      "route_anchors": {
+        "SEA": [
+          3219.868542,
+          682.484006
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_chenla_quanzhou_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_quanzhou_geumseong_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        3400.818189,
+        454.290448
+      ],
+      "position_px": [
+        3400.818189,
+        454.290448
+      ],
+      "route_anchors": {
+        "SEA": [
+          3400.818189,
+          454.290448
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_quanzhou_geumseong_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_quanzhou_geumseong_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        3409.20645,
+        362.930611
+      ],
+      "position_px": [
+        3409.20645,
+        362.930611
+      ],
+      "route_anchors": {
+        "SEA": [
+          3409.20645,
+          362.930611
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_quanzhou_geumseong_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_quanzhou_heijokyo_01",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        3511.346579,
+        555.207263
+      ],
+      "position_px": [
+        3511.346579,
+        555.207263
+      ],
+      "route_anchors": {
+        "SEA": [
+          3511.346579,
+          555.207263
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_quanzhou_heijokyo_01",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    },
+    {
+      "id": "sea_quanzhou_heijokyo_02",
+      "node_type": "ROAD",
+      "city_id": null,
+      "map_position": [
+        3669.943079,
+        521.196935
+      ],
+      "position_px": [
+        3669.943079,
+        521.196935
+      ],
+      "route_anchors": {
+        "SEA": [
+          3669.943079,
+          521.196935
+        ]
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "presentation_stop_id": "sea_quanzhou_heijokyo_02",
+      "content_tags": [
+        "original_rule",
+        "formal_world_map"
+      ]
+    }
+  ]
+}

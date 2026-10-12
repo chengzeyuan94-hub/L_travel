@@ -1,0 +1,44 @@
+[
+  {
+    "file": "jingdezhen.glb",
+    "bytes": 1182032,
+    "sha256": "c6f59532809f2d64cc0c043153e52d29256ea750739f8ad7906f592add5a59b2",
+    "triangles": 9368,
+    "mesh_nodes": 15,
+    "materials": 34,
+    "bounds_min": [
+      -1.7275,
+      0,
+      -1.41125
+    ],
+    "bounds_max": [
+      1.7275,
+      1.644,
+      1.41125
+    ],
+    "textures": 0,
+    "embedded_vertex_colors": true,
+    "external_dependencies": []
+  },
+  {
+    "file": "qinghuaci-icon-source.glb",
+    "bytes": 153140,
+    "sha256": "927a85db81913b239ea8777edd7db0a464b42bee4ad995f915175258c40c7a51",
+    "triangles": 1220,
+    "mesh_nodes": 2,
+    "materials": 7,
+    "bounds_min": [
+      -0.36,
+      0,
+      -0.36035948214855273
+    ],
+    "bounds_max": [
+      0.36,
+      1.12,
+      0.36035948214855273
+    ],
+    "textures": 0,
+    "embedded_vertex_colors": true,
+    "external_dependencies": []
+  }
+]

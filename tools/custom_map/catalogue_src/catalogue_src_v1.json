@@ -1,0 +1,3353 @@
+{
+  "schema": "lshu.map_catalogue_src.v1",
+  "catalogue_version": 1,
+  "provenance": "由 docs/design/map-editor-20260930/work/catalogue/catalogue.json（2026-10-01 目录定稿：24 个原型、24 种特产、东西名池的卡面文字）转成；WP6a 补了模板用的称呼 / 四字别称 / 原型风貌、每座真实城市的图鉴文字和 https 来源、按宿主 × 类型分的补城名单、第一批名单和灰盒占位。之后直接改本文件，再跑 tools/custom_map/build_catalogue.gd。 2026-10-01 整合：assets 显式连接 me-assets 的语义名模型/缩略图/按交通卡图及实物图标；仅实际首批8原型与8特产标 shipped，原 first_batch 保留最初计划，未完成链保持 draft。",
+  "defaults": {
+    "foot": 3.4,
+    "status": "draft",
+    "fallback_graybox_model": "res://assets/game/lowpoly/cities/delhi.glb"
+  },
+  "first_batch": {
+    "archetypes": [
+      "aw03_blue_dome_bazaar",
+      "aw01_oasis_citadel",
+      "aw06_lighthouse_port",
+      "aw04_windcatcher_town",
+      "ae01_kiln_town",
+      "ae02_canal_town",
+      "ae12_shipyard_port",
+      "ae07_grape_oasis"
+    ],
+    "specialties": [
+      "saffron",
+      "pomegranate",
+      "olive_oil",
+      "pistachio",
+      "kaolin",
+      "oil_paper_umbrella",
+      "folding_fan",
+      "raisins"
+    ]
+  },
+  "archetypes": [
+    {
+      "id": "ae01_kiln_town",
+      "title": "瓷窑古镇",
+      "style_side": "E",
+      "fits": [
+        "LAND",
+        "SEA"
+      ],
+      "status": "shipped",
+      "default_specialty": "kaolin",
+      "noun": "窑火小城",
+      "epithet4": "千年窑火",
+      "scenery": "长长的龙窑顺着山坡往上爬，两根烟囱冒着白烟。",
+      "historical_period": "唐宋以来的窑业城镇",
+      "graybox_model": "res://assets/game/lowpoly/cities/changan.glb",
+      "asset_id": "kiln_town",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/kiln_town.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/kiln_town.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/kiln_town_camel_1024x768.png",
+          "SEA": "res://assets/custom_map_catalogue/cards/kiln_town_ship_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a porcelain kiln town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Chinese porcelain-making town of roughly the Song to Ming dynasties, beside a small river",
+        "LANDMARKS": "a long brick dragon kiln climbing a gentle green hillside in stepped arched segments (the signature landmark); two tall square brick chimneys of egg-shaped kilns breathing soft white smoke; open-fronted workshops with brick-red and ochre tile roofs; neat towers of cylindrical clay saggars; racks of pale unfired bowls drying in the sun; a small riverside wharf",
+        "LOCAL_LIFE": "Small chibi potters in plain aprons throw bowls on kick wheels, one paints simple cobalt-blue flowers on a white vase, a chibi porter carries two straw-wrapped bundles on a bamboo shoulder pole, a flat river boat waits at the wharf",
+        "LIGHT": "warm late-afternoon golden light with a faint rosy glow from the kiln mouths, soft peach sky with a few cream clouds",
+        "LSHU_SIDE": "left",
+        "LSHU_ACTION": "standing beside a drying rack of pale unfired bowls, pointing up at the stepped dragon kiln with one hand and shading his glasses from the warm kiln glow with the other, grinning smugly",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands just behind him, chewing calmly.",
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the little wharf right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "景德镇",
+          "德化",
+          "龙泉",
+          "越州",
+          "长沙",
+          "磁州"
+        ],
+        "silhouette_120px": "一条斜着往上爬的分节长窑 + 两根并排的砖烟囱（已有 16 城和其余 23 个原型都没有烟囱）",
+        "dominant_colour_zh": "窑砖红",
+        "composition": {
+          "main": "斜着爬坡的分节龙窑（宽度过半）",
+          "secondary": [
+            "两根并排的砖烟囱（顶上一团白烟）",
+            "砖红、赭色瓦顶的敞口作坊",
+            "一摞匣钵和一排晾坯架"
+          ],
+          "trees": "两丛竹子",
+          "secondary_count": 3
+        },
+        "distinct_from_existing": "已有 16 城没有烟囱，也没有斜着爬坡的长窑；作坊瓦顶用砖红、赭色，不用长安、泉州、金城、平城京那种深灰、青灰瓦。",
+        "water_trough": null,
+        "look_zh": "依坡而上的分节龙窑是主体，旁边两根冒白烟的蛋形窑砖烟囱，一间砖红、赭色瓦顶的敞口作坊，一摞匣钵和一排晾坯架，两丛竹子。砖红、赭、烟灰、瓷白点蓝。",
+        "look": "Porcelain kiln town as a low-poly building-only cluster. Main mass (at least half the footprint width): a long 'dragon kiln' - a low arched brick tunnel kiln rising diagonally in 8-10 stepped segments on short stone footings, small arched stoke-holes along its side. Secondary masses (no more than three): two tall square brick chimneys of egg-shaped kilns standing side by side, each topped by a small low-poly puff of white smoke; one open-fronted workshop with brick-red and ochre tile roofs (not grey) and a potter's wheel inside; one neat tower of cylindrical clay saggars beside a rack of pale unfired bowls. Signature trees: two bamboo clumps. Palette: kiln-brick red-orange, ochre tiles, soot grey, porcelain white with cobalt-blue accents, bamboo green. Footprint aspect no more than 1.5:1. Silhouette: the diagonal stepped kiln plus two vertical chimneys; none of the 16 existing cities and no other archetype has chimneys.",
+        "palette": [
+          "kiln-brick red-orange",
+          "ochre roof tiles",
+          "soot grey",
+          "porcelain white",
+          "cobalt blue accents",
+          "bamboo green"
+        ],
+        "card_summary_zh": "L叔站在晾坯架边，一手指着爬坡的长窑，一手替眼镜挡住窑火的光，窑工在拉坯、画青花。",
+        "card_renders_needed": [
+          "BOAT",
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}是一座烧瓷器的城镇。窑工把白色瓷土捏成碗和瓶，送进窑里烧成瓷器，再运往远方。",
+        "curated_scenery_template": "长长的窑顺着山坡一节节往上爬，高高的烟囱冒着白烟，河边码头堆满瓷器。"
+      }
+    },
+    {
+      "id": "ae02_canal_town",
+      "title": "运河水乡",
+      "style_side": "E",
+      "fits": [
+        "LAND",
+        "SEA"
+      ],
+      "status": "shipped",
+      "default_specialty": "oil_paper_umbrella",
+      "noun": "运河水乡",
+      "epithet4": "小桥流水",
+      "scenery": "白墙黑瓦沿河排开，石拱桥下小船慢慢划过。",
+      "historical_period": "隋唐大运河开通以后的水乡",
+      "graybox_model": "res://assets/game/lowpoly/cities/quanzhou.glb",
+      "asset_id": "canal_town",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/canal_town.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/canal_town.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/canal_town_camel_1024x768.png",
+          "SEA": "res://assets/custom_map_catalogue/cards/canal_town_ship_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a canal water town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Jiangnan-style Chinese water town of the Song to Ming dynasties, criss-crossed by canals",
+        "LANDMARKS": "a tall humped single-arch stone bridge over a calm canal (the signature landmark); rows of whitewashed two-storey houses with black tile roofs and stepped horse-head gables along both banks; dark wooden lattice windows; stone steps down to the water; weeping willows",
+        "LOCAL_LIFE": "Small chibi townsfolk in simple jackets cross the bridge, a chibi boatman sculls a black-canopied boat under the arch, a row of red lanterns glows along the eaves, a chibi child feeds ducks from the stone steps",
+        "LIGHT": "soft misty late-afternoon light just after a spring shower, pearly peach sky with a hint of lilac, gentle reflections in the canal",
+        "LSHU_SIDE": "right",
+        "LSHU_ACTION": "standing at the top of the humped bridge, leaning on the parapet and waving down at the boatman sculling under the arch, grinning smugly",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles rests on its folded knees at the foot of the bridge.",
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the stone steps of the canal right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "苏州",
+          "杭州",
+          "扬州",
+          "绍兴",
+          "嘉兴",
+          "乌镇"
+        ],
+        "silhouette_120px": "两排短短的白墙黑瓦马头墙民居夹着一段石砌水槽，正中一座高高拱起的石拱桥，檐下一排放大的红灯笼",
+        "dominant_colour_zh": "白墙黑瓦 + 灯笼红",
+        "composition": {
+          "main": "两排短短的白墙黑瓦马头墙民居，夹着一段带水的石砌水槽（宽度过半）",
+          "secondary": [
+            "跨在水槽上的高拱石桥",
+            "檐下一排放大的红灯笼",
+            "两条乌篷船"
+          ],
+          "trees": "三棵垂柳",
+          "secondary_count": 3
+        },
+        "distinct_from_existing": "长安、金城、平城京、泉州都是深灰或青灰瓦大殿加红柱；这里是矮白墙民居、阶梯马头墙和一座高拱桥。再用一排红灯笼和柳绿，把它和竹溪纸乡、其余灰瓦原型分开。",
+        "water_trough": "一段石砌运河水槽：有石沿、有水，面积不超过占地的 25%，不伸到模型边缘；拱桥跨在它上面。",
+        "look_zh": "一段带水的石砌水槽（算建筑，不是地台）两边是两排两层白墙黑瓦民居和阶梯马头墙（马头墙只有这个原型用），水槽上跨一座高拱石桥，檐下一排放大的红灯笼，两条乌篷船，三棵垂柳。白、黛黑、灯笼红、柳绿。",
+        "look": "Canal water town as a low-poly building-only cluster. Main mass (at least half the footprint width): two short rows of two-storey whitewashed houses with charcoal-black tile roofs and stepped 'horse-head' gable walls (only this archetype uses horse-head gables), facing each other across a short stone canal trough that holds a strip of water - the trough is part of the architecture, no more than 25% of the footprint, not a slab, and it does not reach the model edge. Secondary masses (no more than three): one steep humped single-arch stone bridge spanning the trough and rising above the eaves; a row of oversized red lanterns along the eaves; two black-canopied wupeng boats moored in the trough. Signature trees: three weeping willows. Palette: whitewash, charcoal black, lantern red, willow green, grey stone. Footprint aspect no more than 1.5:1. Silhouette: a white-and-black block with one high arched bridge hump and a line of red dots.",
+        "palette": [
+          "whitewash",
+          "charcoal-black roof tiles",
+          "lantern red",
+          "willow green",
+          "grey stone",
+          "teal water in the stone trough"
+        ],
+        "card_summary_zh": "L叔站在拱桥顶上，趴着桥栏朝桥洞下的乌篷船挥手，檐下一排红灯笼，雨后薄雾。",
+        "card_renders_needed": [
+          "BOAT",
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}是一座河道纵横的水乡。人们沿河而居，出门常常坐船，粮食和货物也靠水路运进运出。",
+        "curated_scenery_template": "白墙黑瓦沿河排开，石拱桥高高拱起，小船从桥洞下慢悠悠地划过。"
+      }
+    },
+    {
+      "id": "ae03_drum_tower_village",
+      "title": "鼓楼侗寨",
+      "style_side": "E",
+      "fits": [
+        "LAND"
+      ],
+      "status": "draft",
+      "default_specialty": "tung_oil",
+      "noun": "侗家山寨",
+      "epithet4": "风雨鼓楼",
+      "scenery": "风雨桥横跨小河，鼓楼的屋檐一层压着一层。",
+      "historical_period": "南方山地的木构村寨",
+      "graybox_model": "res://assets/game/lowpoly/cities/heijokyo.glb",
+      "asset_id": "drum_tower_village",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/drum_tower_village.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/drum_tower_village.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/drum_tower_village_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a Dong mountain village with a covered bridge and a drum tower",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a hill village of southwest China, timeless rural setting",
+        "LANDMARKS": "a long covered wind-and-rain bridge with several small pavilion roofs over a clear stream (the signature landmark); a squat fir-tree-shaped drum tower with many stacked eaves edged in white; pale timber stilt houses on the slope; silvery rice terraces stepping down the hill like a staircase of mirrors; clumps of feathery bamboo",
+        "LOCAL_LIFE": "Small chibi villagers in indigo jackets and headscarves chat and weave on the benches of the covered bridge, a chibi child leads a water buffalo along a terrace edge, a few ducks paddle in the paddy water",
+        "LIGHT": "warm golden late-afternoon light with soft mountain mist in the valleys, peach and mint sky",
+        "LSHU_SIDE": "left",
+        "LSHU_ACTION": "sitting on the bench of the covered bridge with his legs swinging, counting the white-edged eaves of the drum tower with one raised finger, a smug grin",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands at the end of the bridge, sniffing a bamboo leaf."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "桂林",
+          "龙胜",
+          "三江",
+          "从江",
+          "黎平",
+          "肇兴"
+        ],
+        "silhouette_120px": "一条又长又平、顶着三到五个亭子的风雨桥 + 一座白边、矮胖的杉树形鼓楼",
+        "dominant_colour_zh": "浅杉木黄",
+        "composition": {
+          "main": "横跨整块占地的长风雨桥（桥上三到五个亭顶）",
+          "secondary": [
+            "一座矮胖、白边、浅杉木色的杉树形鼓楼（高度不超过桥长的六成）",
+            "两座浅杉木色吊脚木楼"
+          ],
+          "trees": "三丛竹子",
+          "secondary_count": 2
+        },
+        "distinct_from_existing": "平城京的木塔又高又细、深红褐色；这里的鼓楼矮胖、浅杉木色、每层白边，而且主体是横着的长廊桥。",
+        "water_trough": null,
+        "look_zh": "侗寨：一条横跨整块占地的风雨桥是主体（桥上三到五个亭顶），一座下宽上尖、像杉树的矮胖鼓楼（高度不超过桥长的六成，每层檐口一道白边），两座浅杉木色吊脚木楼，竹丛。浅杉木黄、白檐边、深灰小瓦、竹绿。梯田只画在卡面插画里，不进棋盘模型。",
+        "look": "Mountain village of the Dong people as a low-poly building-only cluster. Main mass (spanning the full footprint width): a long, flat covered 'wind-and-rain' bridge on two or three stone piers, carrying three to five small pavilion roofs along its length. Secondary masses (no more than three): one short, broad drum tower shaped like a fir tree - wide at the base, tapering to a point, no taller than 0.6 of the bridge length, every stacked eave edged with a bold white line; two light fir-wood stilt houses with dark grey shingle roofs. Signature trees: three clumps of feathery bamboo. Palette: light fir-wood yellow (not dark brown), white eave lines, dark grey roofs, bamboo green. Rice terraces appear only in the card illustration, not in the board model. Footprint aspect no more than 1.5:1. Silhouette: a long horizontal roofed bridge beside a squat white-striped cone; Heijokyo's pagoda is tall, slender and dark red-brown, this tower is short, wide and pale.",
+        "palette": [
+          "light fir-wood yellow",
+          "white eave edges",
+          "dark grey shingle roofs",
+          "bamboo green",
+          "indigo cloth accents"
+        ],
+        "card_summary_zh": "L叔坐在风雨桥的长凳上晃着腿，伸出一根手指数鼓楼有几层白边屋檐，远处是梯田。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}藏在青山绿水之间。人们在山坡上开出层层梯田，用木头和竹子盖房，还会编各种竹器。",
+        "curated_scenery_template": "长长的风雨桥横跨清清的小河，桥上立着几座小亭子；鼓楼的屋檐一层压着一层。"
+      }
+    },
+    {
+      "id": "ae04_stilt_village",
+      "title": "高脚水村",
+      "style_side": "E",
+      "fits": [
+        "SEA"
+      ],
+      "status": "shipped",
+      "default_specialty": "star_anise",
+      "noun": "高脚水村",
+      "epithet4": "水上人家",
+      "scenery": "细长木桩撑起草顶小屋，小船在屋底下穿来穿去。",
+      "historical_period": "南海沿岸的水上村落",
+      "graybox_model": "res://assets/game/lowpoly/cities/chenla.glb",
+      "asset_id": "stilt_village",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/stilt_village.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/stilt_village.png",
+        "card_art_by_route": {
+          "SEA": "res://assets/custom_map_catalogue/cards/stilt_village_ship_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a tropical stilt-house water village",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Southeast Asian river-mouth trading village of the maritime Silk Road era",
+        "LANDMARKS": "a village of bamboo-and-timber houses on tall thin stilts above calm green water (the signature landmark); steep palm-thatch roofs with upturned ridge ends; zig-zag plank walkways; a small floating market of canoes heaped with fruit and spice baskets; slender coconut palms",
+        "LOCAL_LIFE": "Small chibi villagers in wrapped sarongs and conical hats paddle long narrow canoes, a chibi grandma sells fruit from her canoe, a chibi kid fishes from a walkway with a tiny net, a white egret stands on a post",
+        "LIGHT": "warm golden late-afternoon light with a light humid haze, peach and pale turquoise sky",
+        "LSHU_SIDE": "right",
+        "LSHU_ACTION": "standing on a plank walkway, leaning over the rail and waving down at a chibi grandma paddling her fruit canoe below, who waves back, a smug happy grin",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored to a stilt post right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "交州",
+          "占城",
+          "满剌加",
+          "渤泥",
+          "阿瑜陀耶",
+          "景洪"
+        ],
+        "silhouette_120px": "一座站在细长高腿上的大草顶长屋 + 两座高脚小屋：屋下满是竖线",
+        "dominant_colour_zh": "草金",
+        "composition": {
+          "main": "一座站在细长高腿上的大草顶长屋（宽度过半）",
+          "secondary": [
+            "两座高脚小屋",
+            "之字形木栈道",
+            "一条带小篷的长条小船"
+          ],
+          "trees": "三棵椰子树",
+          "secondary_count": 3
+        },
+        "distinct_from_existing": "已有 16 城没有高脚屋；和大光、真腊的尖塔相比，这里是矮宽的草顶加一排排细腿。",
+        "water_trough": null,
+        "look_zh": "一座立在两三倍屋高细木桩上的竹木草顶长屋是主体（屋脊两头上翘），两座高脚小屋，之字形木栈道，一条带小篷的长条小船，三棵椰子树。草金、竹米、柚木棕、棕榈绿。",
+        "look": "Tropical water village as a low-poly building-only cluster. Main mass (at least half the footprint width): one long stilt longhouse of woven bamboo and timber raised on very tall thin stilts (two to three times the house height), with a steep palm-thatch roof whose ridge ends curl upward and an open veranda used as a small market hall. Secondary masses (no more than three): two small stilt huts; a zig-zag plank walkway on posts linking them; one long narrow canoe with a small canopy tied to a post. Signature trees: three slim coconut palms. No water plane: it is a sea archetype that always sits at the coast, next to the board's own sea. Palette: thatch straw-gold, bamboo cream, teak brown, palm green. Footprint aspect no more than 1.5:1. Silhouette: a big peaked thatch roof standing on many thin vertical legs.",
+        "palette": [
+          "thatch straw-gold",
+          "bamboo cream",
+          "weathered teak brown",
+          "palm green",
+          "turquoise accents"
+        ],
+        "card_summary_zh": "L叔站在木栈道上，扶着栏杆朝下面划船卖水果的老奶奶挥手，老奶奶也朝他挥手。",
+        "card_renders_needed": [
+          "BOAT"
+        ],
+        "curated_intro_template": "{城名}是建在水边的村镇。房子立在高高的木桩上，涨水也不怕；人们划着小船赶集、捕鱼、做买卖。",
+        "curated_scenery_template": "细长的木桩撑起一座座草顶小屋，木板小路弯弯曲曲，小船在屋子底下穿来穿去。"
+      }
+    },
+    {
+      "id": "ae05_snow_monastery_town",
+      "title": "雪山寺城",
+      "style_side": "E",
+      "fits": [
+        "LAND"
+      ],
+      "status": "draft",
+      "default_specialty": "highland_barley",
+      "noun": "雪山寺城",
+      "epithet4": "雪域金顶",
+      "scenery": "白墙寺院沿山坡层层叠起，金顶闪闪，经幡飘动。",
+      "historical_period": "吐蕃时期以来的高原城镇",
+      "graybox_model": "res://assets/game/lowpoly/cities/delhi.glb",
+      "asset_id": "snow_monastery_town",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/snow_monastery_town.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/snow_monastery_town.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/snow_monastery_town_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a highland monastery town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a town on a high snowy plateau, timeless setting",
+        "LANDMARKS": "a large whitewashed monastery with sloping walls climbing a rocky hillside in stepped tiers, a maroon band under the rooflines and small gleaming golden roofs (the signature landmark); white bell-shaped stupas; colourful prayer flags fluttering between poles; flat-roofed white village houses; snowy peaks behind",
+        "LOCAL_LIFE": "Small chibi villagers in thick wool robes and felt hats lead a pair of shaggy yaks carrying plain cream bundles, a chibi girl carries a wooden churn, golden barley fields ripple in the valley",
+        "LIGHT": "crisp clear late-afternoon golden light, deep turquoise-blue sky with a few bright cream clouds",
+        "LSHU_SIDE": "left",
+        "LSHU_ACTION": "standing on a stone path wrapped in a borrowed thick woollen scarf, laughing as a shaggy yak nuzzles his satchel, one hand steadying his glasses",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles and a cream wool blanket stands behind him, its breath puffing in the cold air."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "逻些",
+          "日喀则",
+          "江孜",
+          "夏河",
+          "甘孜",
+          "列城"
+        ],
+        "silhouette_120px": "一大块向内收分、层层叠起的白色梯形建筑，每层檐下一道绛红，顶上一点金",
+        "dominant_colour_zh": "白 + 绛红",
+        "composition": {
+          "main": "向内收分、三四层叠起的白色大寺院（宽度过半，顶上小金顶）",
+          "secondary": [
+            "两座小白塔",
+            "挂五彩经幡的木杆",
+            "两座平顶白房"
+          ],
+          "trees": "无（高原）",
+          "secondary_count": 3
+        },
+        "distinct_from_existing": "盘橐城也是白墙带红，但它是直墙、雉堞和角楼；这里是向内收分的梯形白墙，每层檐下一道绛红，顶上一点金。狮子国、大光的主体是圆顶佛塔，这里的白塔只是小配件。",
+        "water_trough": null,
+        "look_zh": "白墙向内收分、三四层叠起的大寺院是主体（檐下一道绛红，小金顶），两座小白塔，挂五彩经幡的木杆，两座平顶白房，屋檐积雪。白、绛红、金、石灰。",
+        "look": "Highland monastery town as a low-poly building-only cluster. Main mass (at least half the footprint width): a large whitewashed monastery whose thick inward-sloping walls rise in three or four stacked tiers (the tiers are the building itself, no rock base), a dark maroon band under each roofline, rows of small black-framed windows, and a small gilded roof with gold ornaments on the top tier. Secondary masses (no more than three): two small white bell-shaped stupas; two poles strung with small coloured prayer flags; two flat-roofed white houses with stacked firewood on the roofs. Snow caps on roof edges. No trees. Palette: chalk white, maroon, gold, stone grey. Footprint aspect no more than 1.5:1. Silhouette: a broad white stepped trapezoid banded in maroon and crowned with gold; Panti is vertical white walls with crenellations and corner towers, this one slopes inward and has no crenellations.",
+        "palette": [
+          "chalk white",
+          "maroon",
+          "gold",
+          "stone grey",
+          "red-yellow-green-blue-white flag dots"
+        ],
+        "card_summary_zh": "L叔围着借来的厚羊毛围巾，一头牦牛在拱他的挎包，他扶着眼镜哈哈笑，身后是白墙金顶的寺院。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}坐落在雪山脚下的高原上，天气寒冷，空气稀薄。人们种青稞、养牦牛，寺院是城里最高大的建筑。",
+        "curated_scenery_template": "白墙寺院沿山坡一层层叠上去，金顶闪闪发亮，五彩经幡在风中飘动。"
+      }
+    },
+    {
+      "id": "ae06_yurt_market",
+      "title": "草原毡房",
+      "style_side": "E",
+      "fits": [
+        "LAND"
+      ],
+      "status": "shipped",
+      "default_specialty": "cheese",
+      "noun": "草原集镇",
+      "epithet4": "毡房如云",
+      "scenery": "白色毡房像蘑菇一样散在草地上，彩旗在木杆上飘。",
+      "historical_period": "游牧帝国时代的草原集镇",
+      "graybox_model": "res://assets/game/lowpoly/cities/panti.glb",
+      "asset_id": "yurt_market",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/yurt_market.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/yurt_market.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/yurt_market_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a grassland yurt market",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a nomad market camp on the northern steppe of the Mongol-era Silk Road",
+        "LANDMARKS": "a ring of round white felt yurts with domed roofs and bright painted wooden doors around one larger blue-trimmed yurt (the signature landmark); wooden carts with big spoked wheels; trading stalls with striped awnings; rolling green steppe to the horizon",
+        "LOCAL_LIFE": "Small chibi herders in long belted robes and pointed felt hats trade bundles of wool and strings of dried milk curds, a chibi child rides a small pony in a circle, a flock of fluffy sheep grazes nearby",
+        "LIGHT": "warm golden late-afternoon light over wide grassland, huge pale-blue sky with long cream clouds",
+        "LSHU_SIDE": "right",
+        "LSHU_ACTION": "sitting cross-legged on a felt mat at the doorway of the big yurt, clapping and cheering as a chibi child rides a small pony in a circle, one eyebrow raised in a smug grin",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles lies folded on the grass behind him."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "哈拉和林",
+          "元上都",
+          "呼和浩特",
+          "锡林浩特",
+          "伊宁"
+        ],
+        "silhouette_120px": "一座很大的蓝边圆顶汗帐 + 两三座小白毡房 + 一根挂彩带的高木杆",
+        "dominant_colour_zh": "毡白 + 天蓝",
+        "composition": {
+          "main": "一座很大的蓝边圆顶汗帐（宽度过半）",
+          "secondary": [
+            "两三座小白毡房",
+            "一根挂彩带的高木杆",
+            "一辆大轮勒勒车"
+          ],
+          "trees": "无（草原）",
+          "secondary_count": 3
+        },
+        "distinct_from_existing": "已有 16 城没有落地的软圆顶；巴格达的蓝圆顶是砖顶、立在米白方楼上，这里是白毡圆顶直接落在草地上。",
+        "water_trough": null,
+        "look_zh": "一座很大的蓝色花边圆顶毡帐是主体（红橙彩绘木门、小门廊），两三座小白毡房，一根挂彩带的高木杆，一辆大轮勒勒车。毡白、天蓝、红橙木门、木棕。",
+        "look": "Grassland market camp as a low-poly building-only cluster. Main mass (at least half the footprint width): one large khan's yurt with a blue patterned band, a taller crown, a red-orange painted wooden door and a small awning porch. Secondary masses (no more than three): two or three small round white felt yurts with low domed roofs; one tall wooden pole with coloured ribbons; one wooden ox-cart with big spoked wheels. No trees (open steppe). Palette: felt cream-white, sky-blue bands, red-orange doors, wood brown. Footprint aspect no more than 1.5:1. Silhouette: one big soft dome with a few small domes and a tall ribbon pole.",
+        "palette": [
+          "felt cream-white",
+          "sky-blue bands",
+          "red-orange painted doors",
+          "natural wood",
+          "grass-green accents"
+        ],
+        "card_summary_zh": "L叔盘腿坐在大毡帐门口的毡垫上，拍着手给骑小马转圈的小孩加油。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}在辽阔的草原上。牧民赶着牛羊，哪里草好就搬到哪里；每逢集市，四方商人都来交换马匹、毛毡和奶食。",
+        "curated_scenery_template": "一座座白色毡房像蘑菇一样散在草地上，彩色木门朝着太阳，马儿在一旁吃草。"
+      }
+    },
+    {
+      "id": "ae07_grape_oasis",
+      "title": "葡萄绿洲",
+      "style_side": "E",
+      "fits": [
+        "LAND"
+      ],
+      "status": "draft",
+      "default_specialty": "raisins",
+      "noun": "葡萄绿洲",
+      "epithet4": "沙漠绿洲",
+      "scenery": "葡萄架连成绿色长廊，土坯晾房墙上满是小孔。",
+      "historical_period": "汉唐时期的西域绿洲",
+      "graybox_model": "res://assets/game/lowpoly/cities/yumenguan.glb",
+      "asset_id": "grape_oasis",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/grape_oasis.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/grape_oasis.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/grape_oasis_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a desert-oasis grape town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; an oasis town of the Western Regions on the Silk Road, around the Tang dynasty",
+        "LANDMARKS": "square mud-brick raisin-drying houses whose walls are full of neat diamond-shaped air holes (the signature landmark); long shady grape trellises heavy with pale green bunches; flat-roofed mud-brick houses with carved blue doors; tall white-trunked poplars; red striped bare hills shimmering behind",
+        "LOCAL_LIFE": "Small chibi farmers in embroidered caps and long coats carry flat baskets of green grapes, a chibi girl hangs grape bunches inside a drying house, a little donkey cart waits in the lane, a clear water channel runs along the lane",
+        "LIGHT": "bright warm late-afternoon golden light, hot apricot sky fading to pale turquoise, a gentle heat shimmer",
+        "LSHU_SIDE": "left",
+        "LSHU_ACTION": "standing on tiptoe under the grape trellis as a smiling chibi grape grower on a small ladder hands him a bunch of pale green grapes; he takes it happily, one cheek already bulging with a grape",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands in the shade of the trellis behind him."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "高昌",
+          "哈密",
+          "龟兹",
+          "焉耆",
+          "鄯善"
+        ],
+        "silhouette_120px": "一座墙上满是菱形透风孔的大土坯晾房 + 一条长长的绿色葡萄架",
+        "dominant_colour_zh": "葡萄叶绿 + 土坯黄",
+        "composition": {
+          "main": "一座墙上满是菱形透风孔的大土坯晾房（宽度过半）",
+          "secondary": [
+            "一条长长的绿色葡萄架长廊",
+            "一座平顶土坯房（蓝色雕花木门）",
+            "一座小圆顶门楼"
+          ],
+          "trees": "三棵白杨",
+          "secondary_count": 3
+        },
+        "distinct_from_existing": "玉门关是橙黄方院加高烽楼；这里的土坯楼满墙菱形小孔，旁边一长条绿色葡萄架，第一眼是绿色。",
+        "water_trough": null,
+        "look_zh": "一座墙上布满菱形透风孔的大土坯晾房是主体，一条长长的绿色葡萄架长廊，一座蓝色雕花木门的平顶土坯房，一座小圆顶门楼，三棵白杨。葡萄叶绿、土坯黄、浅翠、白杨白。",
+        "look": "Desert-oasis grape town as a low-poly building-only cluster. Main mass (at least half the footprint width): one big square raisin-drying house of mud brick whose walls are full of neat diamond-shaped ventilation holes, like a giant brick lantern. Secondary masses (no more than three): one long green grape-trellis arcade hung with pale green bunches; one flat-roofed mud-brick house with a carved turquoise wooden door; one small domed mud-brick gatehouse. Signature trees: three tall slim white-trunked poplars. Palette: grape-leaf green, warm tan mud brick, pale jade, white poplar bark. Footprint aspect no more than 1.5:1. Silhouette: a perforated brick cube plus a long green pergola band.",
+        "palette": [
+          "grape-leaf green",
+          "warm tan mud brick",
+          "pale jade grapes",
+          "white poplar trunks",
+          "turquoise door accents"
+        ],
+        "card_summary_zh": "葡萄农站在小梯子上递给L叔一串浅绿的葡萄，他踮脚接住，腮帮已经鼓着一颗，身后是满墙小孔的晾房。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}是沙漠边上的一片绿洲。夏天又热又干，人们引来雪山融水浇灌田地，种出又甜又多的葡萄。",
+        "curated_scenery_template": "葡萄架连成绿色长廊，土坯晾房的墙上布满小孔，热风吹过，把葡萄慢慢晾成葡萄干。"
+      }
+    },
+    {
+      "id": "ae08_tulou_village",
+      "title": "土楼山乡",
+      "style_side": "E",
+      "fits": [
+        "LAND"
+      ],
+      "status": "draft",
+      "default_specialty": "sugarcane",
+      "noun": "土楼山乡",
+      "epithet4": "圆楼人家",
+      "scenery": "厚厚的土墙围成大圆圈，屋檐一圈压着一圈。",
+      "historical_period": "闽西南山区的土楼聚落",
+      "graybox_model": "res://assets/game/lowpoly/cities/geumseong.glb",
+      "asset_id": "tulou_village",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/tulou_village.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/tulou_village.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/tulou_village_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a mountain village of round earthen tulou buildings",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Hakka mountain village in southern China, timeless rural setting",
+        "LANDMARKS": "a giant round rammed-earth tulou like a huge ring with a continuous dark tiled roof and an open courtyard in the middle (the signature landmark); a square tulou right beside it; terraced tea and rice fields on the green hills; bamboo groves and banana plants",
+        "LOCAL_LIFE": "Small chibi villagers in simple indigo clothes carry baskets through the arched gate, a chibi cook stirs a big pot over a courtyard stove, chickens peck around the well, laundry hangs on bamboo poles along the inner galleries",
+        "LIGHT": "warm golden late-afternoon light, soft peach sky with a few cream clouds over misty green hills",
+        "LSHU_SIDE": "right",
+        "LSHU_ACTION": "standing in the arched gateway of the round tulou with his head tilted back and one hand on his glasses, waving up at chibi villagers who lean out and wave back from the galleries high above",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands just outside the gate."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "永定",
+          "南靖",
+          "华安",
+          "平和",
+          "龙岩"
+        ],
+        "silhouette_120px": "一个外圈是黛黑大瓦檐的圆环土楼 + 紧挨着一座方土楼（一圆一方）",
+        "dominant_colour_zh": "偏橙夯土黄 + 黛黑瓦圈",
+        "composition": {
+          "main": "一座巨大的圆土楼（连续的黛黑大瓦檐、偏橙夯土墙，宽度过半）",
+          "secondary": [
+            "紧贴着的一座方土楼",
+            "一座小瓦房"
+          ],
+          "trees": "两棵芭蕉、一丛竹子",
+          "secondary_count": 2
+        },
+        "distinct_from_existing": "古罗马城是米白、一圈连拱、没有屋顶的圆环；这里外圈是连续的黛黑大瓦檐，外墙偏橙、只开高处小窗，旁边还紧贴一座方楼。验收时要和罗马的去地台版并排截图比一次。",
+        "water_trough": null,
+        "look_zh": "一座巨大的圆形夯土楼是主体：外墙偏橙的夯土黄，只在高处开小窗、不开连拱，顶上一圈连续的黛黑大瓦檐；紧挨着一座方形土楼（一圆一方），一座小瓦房，两棵芭蕉、一丛竹子。",
+        "look": "Hakka earthen-building village as a low-poly building-only cluster. Main mass (at least half the footprint width): one big round rammed-earth tulou, a thick ring three to four storeys high; the outer wall is orange-leaning rammed-earth yellow (not cream), solid, with only tiny windows high up and one arched gate - no arcades. Seen from the 0.76 board camera the ring must read as one continuous band of dark charcoal tiles (a wide overhanging ring roof); the open courtyard shows inner wooden galleries and a small ancestral hall. Secondary masses (no more than three): one square tulou set right against it (one round, one square); one small tiled farm house. Signature trees: two banana plants and one bamboo clump. Palette: orange rammed-earth yellow, charcoal roof tiles, timber brown, bamboo green. Footprint aspect no more than 1.5:1. Silhouette: a dark-roofed ring with a square block beside it; Rome's Colosseum is a cream ring of arcades with no roof.",
+        "palette": [
+          "orange-leaning rammed-earth yellow",
+          "charcoal roof tiles",
+          "timber brown",
+          "bamboo green",
+          "banana-leaf green"
+        ],
+        "card_summary_zh": "L叔站在圆土楼的拱门口，扶着眼镜仰起头，朝楼上回廊里探头挥手的人挥手，鸡在井边啄食。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}是一处山间村落。一个大家族常常住在同一座圆形或方形的大土楼里，几十户人家共用一个院子。",
+        "curated_scenery_template": "厚厚的夯土墙围成一个大圆圈，屋檐一圈压着一圈，院子中间是祠堂和水井。"
+      }
+    },
+    {
+      "id": "ae09_paper_village",
+      "title": "竹溪纸乡",
+      "style_side": "E",
+      "fits": [
+        "LAND"
+      ],
+      "status": "draft",
+      "default_specialty": "xuan_paper",
+      "noun": "纸乡古镇",
+      "epithet4": "溪畔纸乡",
+      "scenery": "村口立着石牌坊，木架上晾满一张张白纸。",
+      "historical_period": "唐代以来的造纸之乡",
+      "graybox_model": "res://assets/game/lowpoly/cities/changan.glb",
+      "asset_id": "paper_village",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/paper_village.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/paper_village.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/paper_village_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a paper-making village in the green hills",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a mountain village in the green hills of southern Anhui of the Song to Ming dynasties, known for fine paper",
+        "LANDMARKS": "a row of tall grey stone memorial archways of different heights at the village entrance, with plain blank beams (the signature landmark); behind them long rows of wooden frames hung with bright white paper sheets drying in the sun; a small paper workshop with a low roof; a clear stream and bamboo groves",
+        "LOCAL_LIFE": "Small chibi papermakers in plain aprons lift a bamboo screen out of a vat, a chibi worker smooths a wet white sheet onto a drying wall, a chibi porter carries a bundle of tree bark, a stone footbridge crosses the stream",
+        "LIGHT": "soft warm late-afternoon light with a little mountain mist, peach and pale jade sky",
+        "LSHU_SIDE": "left",
+        "LSHU_ACTION": "standing under the tallest stone archway with his head tilted far back, one hand steadying his glasses as he admires the carved beams, a delighted smug smile",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands beside the stone archways."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "宣城",
+          "泾县",
+          "歙县",
+          "黟县",
+          "婺源",
+          "富阳"
+        ],
+        "silhouette_120px": "三座高低不同的灰石牌坊 + 后面两三排挂满白纸的晾纸架（竖牌坊 + 白色方片阵）",
+        "dominant_colour_zh": "纸白 + 灰石",
+        "composition": {
+          "main": "村口三座高低不同的灰石牌坊（宽度过半）",
+          "secondary": [
+            "后面两三排挂满白纸的晾纸架",
+            "一间小纸坊",
+            "一座小石板桥"
+          ],
+          "trees": "三丛竹子",
+          "secondary_count": 3
+        },
+        "distinct_from_existing": "已有 16 城没有牌坊；靠竖直的灰石门和大面积纸白来认，也和运河水乡（白墙黑瓦马头墙）分开。",
+        "water_trough": null,
+        "look_zh": "村口三座高低不同的灰石牌坊是主体（横梁无字），后面两三排挂满白纸的木晾纸架，纸白占大面积，一间小纸坊，一座小石板桥，三丛竹子。灰石、纸白、竹绿、木棕。不用马头墙。",
+        "look": "Paper-making village as a low-poly building-only cluster. Main mass (at least half the footprint width): a row of three tall grey stone memorial archways (pailou) of different heights, with carved beams and small stone roofs, all blank with no inscriptions. Secondary masses (no more than three): behind them two or three long rows of wooden drying frames hung with bright white paper sheets, so that paper white covers a large area of the model; one small open paper workshop with a low roof; one small stone footbridge. Signature trees: three bamboo clumps. No horse-head gable houses (those belong to the canal town). Palette: paper white, grey stone, bamboo green, timber brown. Footprint aspect no more than 1.5:1. Silhouette: tall vertical stone gates in front of a field of white rectangles.",
+        "palette": [
+          "paper white",
+          "grey stone",
+          "bamboo green",
+          "timber brown",
+          "a little charcoal roof tile"
+        ],
+        "card_summary_zh": "L叔站在最高的石牌坊下，扶着眼镜仰头看雕花横梁，身后纸坊工匠在捞纸、晾纸。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}是青山绿水间的一座古镇。这里溪水清澈，工匠把树皮和竹子泡成纸浆，捞出一张张好纸。",
+        "curated_scenery_template": "村口立着高高低低的石牌坊，牌坊后面的木架上，一张张白纸晾得整整齐齐。"
+      }
+    },
+    {
+      "id": "ae10_pine_hill_town",
+      "title": "松林山城",
+      "style_side": "E",
+      "fits": [
+        "LAND"
+      ],
+      "status": "draft",
+      "default_specialty": "pine_nuts",
+      "noun": "松林山城",
+      "epithet4": "红松林海",
+      "scenery": "红松围着小城，高高的石灯幢立在城中。",
+      "historical_period": "渤海国时代的北方山城",
+      "graybox_model": "res://assets/game/lowpoly/cities/geumseong.glb",
+      "asset_id": "pine_hill_town",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/pine_hill_town.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/pine_hill_town.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/pine_hill_town_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a northern pine-forest hill town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a town in the forested hills of northeast Asia around the Tang dynasty",
+        "LANDMARKS": "a giant carved stone lantern with an octagonal lotus base, a lantern chamber and a small stone roof, standing in a forest clearing (the signature landmark); small log cabins of horizontal stacked logs with steep shingle roofs; stacks of firewood; forests of tall straight pines on the hills",
+        "LOCAL_LIFE": "Small chibi townsfolk in padded jackets carry bundles of firewood down from the forest, a chibi woodcutter stacks logs, a red squirrel sits on a branch, a cart of firewood rolls along the path",
+        "LIGHT": "clear golden late-afternoon autumn light, soft apricot sky with a pale mint top, a few maple leaves glowing red",
+        "LSHU_SIDE": "right",
+        "LSHU_ACTION": "sitting on a pine stump at the foot of the giant stone lantern, tilting his head up at it while a red squirrel perches on his satchel and copies his pose, a smug gentle smile",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands under the pines behind him."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "渤海上京",
+          "敦化",
+          "吉林",
+          "集安",
+          "延吉"
+        ],
+        "silhouette_120px": "一根巨大的石灯幢 + 围在脚下的横纹原木屋 + 尖尖的红松",
+        "dominant_colour_zh": "树皮褐 + 深松绿",
+        "composition": {
+          "main": "放大到地标尺度的渤海石灯幢，连同围在它脚下、紧挨着的三四座横纹原木屋（读成一组，宽度过半）",
+          "secondary": [
+            "一个柴垛"
+          ],
+          "trees": "三棵红松",
+          "secondary_count": 1
+        },
+        "distinct_from_existing": "长安、金城是红柱灰瓦大殿，这里去掉了城门楼和红柱；泉州有一座白色多层石塔，这里的石灯幢是灰色、只有一个灯室、带莲花座，旁边是横纹原木屋。",
+        "water_trough": null,
+        "look_zh": "放大到地标尺度的渤海石灯幢是主体（八角莲花座、灯室、石顶，约占全城高度七成），脚下围着三四座井干式原木屋（横向原木墙、树皮褐、陡坡顶），一个柴垛，三棵又高又直的红松。树皮褐、石灰、深松绿。去掉城门楼、红柱和烟囱。",
+        "look": "Northern pine-forest town as a low-poly building-only cluster. Main mass: one Balhae-style stone lantern blown up to landmark scale - an octagonal lotus-petal base, a stout stone shaft, a lantern chamber with four openings and a small stone roof with an upturned finial - about 0.7 of the whole model's height, with three or four small log cabins huddled right at its foot (walls of horizontal stacked logs in bark brown, steep shingle roofs), so lantern and cabins read as one group across at least half the footprint width. Secondary masses (no more than three): one stack of firewood. Signature trees: three tall straight Korean pines with dark conical crowns. No gate pavilion, no red pillars, no chimneys. Palette: bark brown, lime grey stone, deep pine green. Footprint aspect no more than 1.5:1. Silhouette: one giant stone lantern above horizontal-striped cabins and pointed pines.",
+        "palette": [
+          "bark brown log walls",
+          "lime grey granite",
+          "deep pine green",
+          "weathered shingle grey",
+          "moss green accents"
+        ],
+        "card_summary_zh": "L叔坐在大石灯幢脚下的松树桩上仰头看，一只小松鼠蹲在他的挎包上学他的样子。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}在北方的山林之间，冬天漫长寒冷。人们上山采松子、挖山货，用木头和石头建起结实的房屋。",
+        "curated_scenery_template": "高大的红松围着小城，城中立着一座高高的石灯幢，原木小屋的屋顶又尖又陡。"
+      }
+    },
+    {
+      "id": "ae11_ghat_town",
+      "title": "石阶河城",
+      "style_side": "E",
+      "fits": [
+        "LAND",
+        "SEA"
+      ],
+      "status": "draft",
+      "default_specialty": "cotton",
+      "noun": "石阶河城",
+      "epithet4": "河坛石阶",
+      "scenery": "宽宽的石阶一级级伸进河水，台阶顶上有小神庙。",
+      "historical_period": "古印度恒河流域的城市",
+      "graybox_model": "res://assets/game/lowpoly/cities/simhala.glb",
+      "asset_id": "ghat_town",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/ghat_town.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/ghat_town.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/ghat_town_camel_1024x768.png",
+          "SEA": "res://assets/custom_map_catalogue/cards/ghat_town_ship_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "an ancient Indian riverside town with broad stone steps",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a town on a great river of northern India in the era of the Gupta kingdoms and later",
+        "LANDMARKS": "broad cream stone ghat steps descending into a wide calm river (the signature landmark); one small cream temple with a short curved spire and a saffron flag at the top of the steps; flat-roofed houses with little domed rooftop pavilions; long lines of indigo and turmeric cloth drying in the sun",
+        "LOCAL_LIFE": "Small chibi townsfolk in light cotton tunics, saris and turbans wash cloth and fill brass water pots at the steps, a chibi weaver works a small handloom under an awning, a little wooden boat rows past, a sacred cow naps on the top step",
+        "LIGHT": "warm golden late-afternoon light with a soft haze over the river, coral-peach sky with a few cream clouds",
+        "LSHU_SIDE": "left",
+        "LSHU_ACTION": "sitting on a ghat step with his boots resting on the step just above the water, eyes happily closed behind his glasses as the coloured cloth lines flutter above him",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands on the top step behind him.",
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the lowest ghat step right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "华氏城",
+          "瓦拉纳西",
+          "阿约提亚",
+          "曲女城",
+          "哈里德瓦尔"
+        ],
+        "silhouette_120px": "一整片占满宽度的横条纹宽石阶下到一个小石池 + 一座矮小的奶白神庙和藏红花旗",
+        "dominant_colour_zh": "奶白石 + 靛蓝、姜黄彩布",
+        "composition": {
+          "main": "占满宽度的奶白宽石阶（至少十级），下到一个带水的小石池",
+          "secondary": [
+            "一座矮小的奶白神庙（插藏红花橙旗，不到台阶总高一半）",
+            "一座带小圆顶亭的平顶房",
+            "几条靛蓝、姜黄的晾布绳"
+          ],
+          "trees": "一两棵菩提树",
+          "secondary_count": 3
+        },
+        "distinct_from_existing": "真腊是橙褐色的蜂巢形高塔；这里神庙只留一座、很矮、奶白色，主体是横条纹的宽台阶。德里是深红砂岩拱廊，这里是奶白石配靛蓝、姜黄彩布。",
+        "water_trough": "台阶下的小石池（kund）：有石沿、有水，面积不超过占地的 25%，不伸到模型边缘。",
+        "look_zh": "占满整块占地宽度的奶白宽石阶是主体（至少十级，从棋盘相机看是一整片横条纹），台阶下到一个带水的小石池（算建筑），台阶顶上只有一座矮小的奶白神庙（不到台阶总高的一半，插藏红花橙旗），一座带小圆顶亭的平顶房，几条靛蓝、姜黄晾布绳，一两棵菩提树。奶白石、靛蓝、姜黄、藏红花橙。",
+        "look": "Indian riverside ghat town as a low-poly building-only cluster. Main mass (spanning the full footprint width): a broad flight of cream stone ghat steps in at least 10 wide tiers, so the board camera sees one big field of horizontal stripes; the steps go down into a small square stone tank (kund) holding water - the tank is part of the architecture, no more than 25% of the footprint, not a slab, and it does not reach the model edge. Secondary masses (no more than three): one small cream temple with a short curved spire and a saffron-orange flag, lower than half the total height of the steps; one flat-roofed house with a small domed rooftop pavilion; long lines of drying cloth in indigo and turmeric stretched across the steps. Signature trees: one or two peepal trees. No sandstone orange (that is Chenla's colour). Palette: cream stone, indigo, turmeric, saffron orange. Footprint aspect no more than 1.5:1. Silhouette: a wide striped stair with coloured cloth lines and one small spire.",
+        "palette": [
+          "cream stone",
+          "indigo cloth",
+          "turmeric yellow cloth",
+          "saffron orange flags",
+          "river blue-grey water in the stone tank"
+        ],
+        "card_summary_zh": "L叔坐在河边石阶上，靴子搁在贴着水面的台阶上，闭着眼享受，头顶的彩布在风里飘。",
+        "card_renders_needed": [
+          "BOAT",
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}是大河边的一座古城。人们每天沿着石阶下到河边洗衣、打水，河上的船把棉布和粮食运往各地。",
+        "curated_scenery_template": "宽宽的石阶一级级伸进河水，台阶顶上立着小小的神庙，彩色棉布在风里晾晒。"
+      }
+    },
+    {
+      "id": "ae12_shipyard_port",
+      "title": "船坞港城",
+      "style_side": "E",
+      "fits": [
+        "SEA"
+      ],
+      "status": "draft",
+      "default_specialty": "folding_fan",
+      "noun": "船坞港城",
+      "epithet4": "千帆船坞",
+      "scenery": "船台上立着没完工的大船骨架，码头上桅杆林立。",
+      "historical_period": "唐宋时期的造船海港",
+      "graybox_model": "res://assets/game/lowpoly/cities/dagon.glb",
+      "asset_id": "shipyard_port",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/shipyard_port.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/shipyard_port.png",
+        "card_art_by_route": {
+          "SEA": "res://assets/custom_map_catalogue/cards/shipyard_port_ship_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a shipbuilding port town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Chinese seaport with shipyards on the maritime Silk Road, around the Song and Yuan dynasties",
+        "LANDMARKS": "a big half-built wooden junk on a slipway with its curved ribs showing and a tall A-frame crane of lashed poles (the signature landmark); a finished junk with rust-red battened sails at the quay; tiled warehouses; stacks of timber; a calm harbour with more sails beyond",
+        "LOCAL_LIFE": "Small chibi shipwrights in headscarves saw planks and hammer wooden pegs, a chibi painter brushes a glossy coat along a hull, chibi dockworkers roll barrels and carry plain bundles up a gangplank, seagulls perch on the crane",
+        "LIGHT": "warm golden late-afternoon light, peach sky shading to pale turquoise over the sea, a few fluffy cream clouds",
+        "LSHU_SIDE": "right",
+        "LSHU_ACTION": "standing on the slipway beside the ribs of the half-built ship, holding a wide brush and proudly admiring the shiny stripe he just brushed along a plank",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the shipyard quay right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "广州",
+          "登州",
+          "明州",
+          "福州"
+        ],
+        "silhouette_120px": "船台上一艘露着一根根肋骨的大木船壳 + 上方的人字木吊杆",
+        "dominant_colour_zh": "木棕 + 红褐帆",
+        "composition": {
+          "main": "船台上一艘露着肋骨的半成品大木船，连同上方的人字木吊杆（宽度过半）",
+          "secondary": [
+            "一艘挂红褐竹骨帆的成船",
+            "一座瓦顶仓库",
+            "一堆木料"
+          ],
+          "trees": "无",
+          "secondary_count": 3
+        },
+        "distinct_from_existing": "已有 16 城都没有船体骨架和吊杆；和泉州相比，这里没有大殿和白塔，主体是一艘露肋骨的船。",
+        "water_trough": null,
+        "look_zh": "船台上一艘半完工、露着肋骨的大木帆船和上方的人字木吊杆是主体，旁边一艘挂红褐色竹骨帆的成船，一座瓦顶仓库，一堆木料。木棕、红褐帆、灰瓦、焦油黑。",
+        "look": "Shipbuilding port town as a low-poly building-only cluster. Main mass (at least half the footprint width): a big half-built wooden junk hull on a timber slipway, its curved ribs showing on one side like a whale skeleton, with a tall A-frame wooden crane of lashed poles above it. Secondary masses (no more than three): one finished junk with two rust-red battened sails at a short wooden quay; one tiled warehouse with wide doors; one stack of timber planks. No trees. No water plane: it is a sea archetype that always sits at the coast. Palette: timber brown, rust-red sails, grey tiles, tar black. Footprint aspect no more than 1.5:1. Silhouette: a ship hull with exposed ribs plus crane poles.",
+        "palette": [
+          "timber brown",
+          "rust-red battened sails",
+          "grey roof tiles",
+          "tar black",
+          "rope beige"
+        ],
+        "card_summary_zh": "L叔站在船台上，拿着大刷子，得意地看自己给船板刷出的一道亮光，身后是露着肋骨的大船。",
+        "card_renders_needed": [
+          "BOAT"
+        ],
+        "curated_intro_template": "{城名}是一座靠海的港城，也是造船的地方。工匠用木料造出大帆船，刷上油防水，驶向远方的海港。",
+        "curated_scenery_template": "船台上立着还没完工的大船骨架，码头上桅杆林立，海风里飘着新木头的香味。"
+      }
+    },
+    {
+      "id": "aw01_oasis_citadel",
+      "title": "花园塔城",
+      "style_side": "W",
+      "fits": [
+        "LAND"
+      ],
+      "status": "draft",
+      "default_specialty": "pomegranate",
+      "noun": "花园塔城",
+      "epithet4": "阶梯花园",
+      "scenery": "土黄色的城堡一层层堆高，每层都种满果树。",
+      "historical_period": "中亚的绿洲古城",
+      "graybox_model": "res://assets/game/lowpoly/cities/baghdad.glb",
+      "asset_id": "oasis_citadel",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/oasis_citadel.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/oasis_citadel.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/oasis_citadel_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "an oasis garden-citadel town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Persian or Central Asian oasis town on the Silk Road, around the 9th to 14th century",
+        "LANDMARKS": "a tall stepped pyramid of mud-brick houses with trailing greenery, grapevines and fruit trees on every terrace, crowned by a square keep (the signature landmark); a round blue cistern with a stone rim; tall white-trunked poplars and mulberry trees; golden dunes in the distance",
+        "LOCAL_LIFE": "Small chibi townsfolk in long robes and turbans fill clay jars at the cistern, a chibi gardener waters the terrace plants from a jug, a caravan of camels rests under the poplars",
+        "LIGHT": "warm golden late-afternoon light, apricot sky with a faint pale-blue top and a few thin cream clouds",
+        "LSHU_SIDE": "left",
+        "LSHU_ACTION": "sitting on a low mud wall in the shade of a poplar, looking up and waving at the keep at the top of the terraces, a pleased smug smile",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles kneels in the poplar shade beside him."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "赫拉特",
+          "希瓦",
+          "巴姆",
+          "梅尔夫",
+          "布哈拉"
+        ],
+        "silhouette_120px": "一座高过宽的阶梯土城，每层平台垂满绿植和果树，顶上一座方塔（绿色占四成以上）",
+        "dominant_colour_zh": "绿",
+        "composition": {
+          "main": "高过宽的阶梯土城，每层平台垂满绿植和果树，顶上一座方塔（宽度过半）",
+          "secondary": [
+            "一个石沿圆形蓄水池（带小圆顶）"
+          ],
+          "trees": "两棵白杨",
+          "secondary_count": 1
+        },
+        "distinct_from_existing": "玉门关（橙黄方院 + 高烽楼，宽而矮）、盘橐城（白墙雉堞 + 角楼）、开罗（方墙 + 一座塔）都有围墙；这里去掉雉堞围墙和圆角楼，体量高过宽，绿色占四成以上。",
+        "water_trough": null,
+        "look_zh": "土坯房屋一层层向上收成高过宽的阶梯塔城是主体，每层平台都种满垂下来的绿植、葡萄藤、石榴树和桑树，顶端一座方形主楼；旁边一个石沿圆形蓄水池（池沿算建筑），两棵白杨。去掉雉堞围墙和圆角楼，也不种椰枣。",
+        "look": "Oasis garden-citadel as a low-poly building-only cluster. Main mass (at least half the footprint width, and taller than it is wide): a stepped pyramid of mud-brick buildings rising in four or five terraces to a tall square keep; every terrace is planted with trailing greenery, grapevines, pomegranate and mulberry trees spilling over the edges, so that green covers at least 40% of what the board camera sees. No crenellated wall and no round corner towers (those read as Panti or Yumenguan). Secondary masses (no more than three): one round stone-rimmed cistern with a small dome (the rim is architecture, not a slab). Signature trees: two tall white-trunked poplars. No date palms (too cold for Herat, Khiva or Merv). Palette: garden green, mud ochre, poplar green, pomegranate red dots, turquoise pool rim. Footprint aspect no more than 1.5:1. Silhouette: a tall green-draped stepped tower with a square keep on top.",
+        "palette": [
+          "garden green (at least 40% of what the board camera sees)",
+          "sun-baked mud ochre",
+          "poplar green",
+          "pomegranate red dots",
+          "turquoise pool rim"
+        ],
+        "card_summary_zh": "L叔坐在白杨树荫下的矮土墙上，仰头朝阶梯顶上的方塔挥手。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}是沙漠里的一座绿洲城。城里靠泉水和地下水渠生活，穿越沙漠的商队在这里歇脚、喝水、补给。",
+        "curated_scenery_template": "土黄色的城堡一层层堆高，每层都种满果树和葡萄藤；城边白杨围着一汪清池。"
+      }
+    },
+    {
+      "id": "aw02_caravanserai_town",
+      "title": "驿站商城",
+      "style_side": "W",
+      "fits": [
+        "LAND"
+      ],
+      "status": "shipped",
+      "default_specialty": "melon",
+      "noun": "驿站商城",
+      "epithet4": "驼铃客栈",
+      "scenery": "方方正正的大客栈围着院子，驼铃声不断。",
+      "historical_period": "商队驿站兴盛的中世纪",
+      "graybox_model": "res://assets/game/lowpoly/cities/panti.glb",
+      "asset_id": "caravanserai_town",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/caravanserai_town.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/caravanserai_town.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/caravanserai_town_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a caravanserai town on a desert trade road",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Silk Road caravan stop in Persia, Central Asia or Syria, around the 11th to 14th century",
+        "LANDMARKS": "a big square caravanserai of red-brown baked brick with pointed-arch arcades around a courtyard full of kneeling camels (the signature landmark); a plain brick arched gateway; a domed water cistern; the desert road stretching away with a line of camels",
+        "LOCAL_LIFE": "Small chibi merchants in robes and turbans unload plain bundles in the courtyard, chibi camels kneel and drink from a trough, a chibi boy leads a baby camel, a small stall sells flatbread",
+        "LIGHT": "warm golden late-afternoon light, honey-apricot sky with a few thin cream clouds",
+        "LSHU_SIDE": "right",
+        "LSHU_ACTION": "standing in the courtyard between the kneeling camels, patting one on the nose while another cranes its long neck to sniff his satchel, a smug grin",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles kneels in the courtyard just behind him."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "希瓦",
+          "布哈拉",
+          "大不里士",
+          "阿勒颇",
+          "开塞利",
+          "梅尔夫"
+        ],
+        "silhouette_120px": "一个红褐烧砖的低矮方院，院里一排跪卧的大骆驼和彩色货包（靠驼队认，不靠高门）",
+        "dominant_colour_zh": "红褐烧砖",
+        "composition": {
+          "main": "红褐烧砖的低矮方院客栈（一圈尖拱廊，院里一排大骆驼和彩色货包，宽度过半）",
+          "secondary": [
+            "门外一座砖砌蓄水圆顶",
+            "一个条纹篷小货摊"
+          ],
+          "trees": "两棵桑树",
+          "secondary_count": 2
+        },
+        "distinct_from_existing": "玉门关是橙黄方院加一座高烽楼；这里是红褐砖、没有高塔、门不比墙高多少，靠院里一排大骆驼来认。也不再用蓝顶巴扎那种彩砖门楼。",
+        "water_trough": null,
+        "look_zh": "四四方方的红褐烧砖商队客栈是主体：矮墙一圈尖拱廊房，正面一道朴素的砖拱门（不贴彩砖，也不比墙高多少），院子敞开，院里一排跪卧的骆驼和彩色货包做得很大；门外一座砖砌蓄水圆顶，一个条纹篷小货摊，两棵桑树。",
+        "look": "Caravanserai town as a low-poly building-only cluster. Main mass (at least half the footprint width): a large square caravanserai of red-brown fired brick (Central Asian baked brick, not sand yellow) - a low wide courtyard building ringed by rooms behind a rhythm of pointed-arch arcades, with one plain brick arched gateway in the front wall (no turquoise tile frame, hardly taller than the walls). The open courtyard is the point: a row of four big kneeling camels and piles of colourful cloth bundles, scaled up so they read from the board camera. Secondary masses (no more than three): one domed brick water cistern outside the gate; one small market stall with a striped awning. Signature trees: two mulberry trees. Palette: red-brown brick, camel beige, bundle red/indigo/saffron, dark wood. Footprint aspect no more than 1.5:1. Silhouette: a low red-brown square ring full of camels. Yumenguan is an orange-tan courtyard with a tall watchtower; this one has no tower and is read by its caravan.",
+        "palette": [
+          "red-brown fired brick (Central Asian baked brick, not sand yellow)",
+          "camel beige",
+          "bundle red, indigo and saffron",
+          "pale mortar lines",
+          "dark wood doors"
+        ],
+        "card_summary_zh": "L叔站在院子里一排跪卧的骆驼中间，摸摸这头的鼻子，那头伸长脖子闻他的挎包。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}是商队必经的驿站城。城里有围着大院子的客栈，商人住在房间里，骆驼和货物在院中过夜。",
+        "curated_scenery_template": "方方正正的红砖大客栈围着宽宽的院子，院里跪着一排骆驼，驼铃声从早响到晚。"
+      }
+    },
+    {
+      "id": "aw03_blue_dome_bazaar",
+      "title": "蓝顶巴扎",
+      "style_side": "W",
+      "fits": [
+        "LAND"
+      ],
+      "status": "shipped",
+      "default_specialty": "saffron",
+      "noun": "集市古城",
+      "epithet4": "彩砖门楼",
+      "scenery": "高大的门楼贴满彩色瓷砖，门后圆顶闪着蓝光。",
+      "historical_period": "中世纪中亚的集市城",
+      "graybox_model": "res://assets/game/lowpoly/cities/baghdad.glb",
+      "asset_id": "blue_dome_bazaar",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/blue_dome_bazaar.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/blue_dome_bazaar.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/blue_dome_bazaar_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a bazaar town with a great tiled portal",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Silk Road trading city of Central Asia or Persia, around the 12th to 14th century, famous for glazed tilework",
+        "LANDMARKS": "a huge flat portal covered in cobalt and turquoise geometric tiles with no lettering, flanked by two slender towers (the signature landmark); one ribbed turquoise dome peeking out behind it; a covered bazaar under small brick domes; market lanes with striped awnings",
+        "LOCAL_LIFE": "Small chibi merchants in embroidered robes and round caps sell heaps of spices, dried apricots and nuts, a chibi girl carries a basket of flowers, pigeons flutter over the portal",
+        "LIGHT": "warm golden late-afternoon light making the domes glow, soft apricot sky with a pale turquoise top",
+        "LSHU_SIDE": "left",
+        "LSHU_ACTION": "standing in the market lane with his head tilted back, gazing up at the glowing tiled portal and dome so intently that his glasses flash with reflected turquoise light, a smug amazed smile",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands behind him, peering curiously at the spice heaps."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "撒马尔罕",
+          "布哈拉",
+          "赫拉特",
+          "伊斯法罕",
+          "马什哈德"
+        ],
+        "silhouette_120px": "一面方方正正的彩砖大门楼 + 两根细塔，门后露一个比门楼矮的瓜棱顶",
+        "dominant_colour_zh": "钴蓝 + 松石绿",
+        "composition": {
+          "main": "方方正正的彩砖大门楼，两侧两根细高塔（宽度过半）",
+          "secondary": [
+            "门楼后面一个比它矮的蓝绿瓜棱圆顶",
+            "一段顶着三个小砖圆顶的有顶集市"
+          ],
+          "trees": "两棵悬铃木",
+          "secondary_count": 2
+        },
+        "distinct_from_existing": "巴格达是米白方楼顶一个大蓝圆顶；这里主体是扁平方正的彩砖门楼和两根细塔，圆顶只留一个，而且比门楼矮。",
+        "water_trough": null,
+        "look_zh": "一座方方正正的彩砖大门楼是主体（钴蓝、松石绿、白色几何纹，无字），两侧两根细高塔柱；门楼后面只露一个比它矮的蓝绿瓜棱圆顶，旁边一段顶着三个小砖圆顶的有顶集市，两棵悬铃木。钴蓝、松石绿、白、砖色。",
+        "look": "Blue-tile bazaar town as a low-poly building-only cluster. Main mass (at least half the footprint width): one huge flat rectangular tiled portal (pishtaq) covered in cobalt, turquoise and white geometric patterns (no calligraphy, no letters) with a tall pointed-arch recess, flanked by two slender minaret-like towers. Secondary masses (no more than three): one ribbed melon-shaped turquoise dome on a short drum set behind the portal and lower than it; one short covered bazaar block roofed with three small brick domes over arched shop fronts with striped awnings. Signature trees: two plane trees. Palette: cobalt, turquoise, white, sand brick. Footprint aspect no more than 1.5:1. Silhouette: a tall flat tiled front between two thin towers, one dome peeking out behind; Baghdad is a cream block topped by a big blue dome, which this archetype does not have.",
+        "palette": [
+          "cobalt blue",
+          "turquoise",
+          "white tile patterns",
+          "sand-coloured brick",
+          "saffron and red market awnings"
+        ],
+        "card_summary_zh": "L叔站在集市里仰头看发光的彩砖门楼和蓝绿圆顶，看得眼镜都反光了。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}是一座热闹的集市城。有顶棚的大巴扎连着一条条小巷，香料、干果和水果在这里买卖。",
+        "curated_scenery_template": "高大的门楼贴满彩色瓷砖，花纹像万花筒一样；门后的蓝绿圆顶闪闪发亮。"
+      }
+    },
+    {
+      "id": "aw04_windcatcher_town",
+      "title": "风塔之城",
+      "style_side": "W",
+      "fits": [
+        "LAND",
+        "SEA"
+      ],
+      "status": "shipped",
+      "default_specialty": "pistachio",
+      "noun": "风塔土城",
+      "epithet4": "捕风之城",
+      "scenery": "方形捕风塔立在土黄色屋顶上，把凉风引进屋。",
+      "historical_period": "波斯高原的沙漠城镇",
+      "graybox_model": "res://assets/game/lowpoly/cities/jeddah.glb",
+      "asset_id": "windcatcher_town",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/windcatcher_town.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/windcatcher_town.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/windcatcher_town_camel_1024x768.png",
+          "SEA": "res://assets/custom_map_catalogue/cards/windcatcher_town_ship_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a desert town of windcatcher towers",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Persian desert or Gulf-coast town, around the 10th to 15th century",
+        "LANDMARKS": "a giant stepped cone ice-house with a long shading wall (the signature landmark); a few tall square windcatcher towers with vertical slots rising above low domed mud houses; narrow shady lanes; orchards at the edge of town",
+        "LOCAL_LIFE": "Small chibi townsfolk in long robes rest in the cool shade under a windcatcher, a chibi farmer tends an orchard, a donkey carries water jars along a lane",
+        "LIGHT": "bright warm late-afternoon golden light, clear apricot sky, dry desert air",
+        "LSHU_SIDE": "right",
+        "LSHU_ACTION": "standing right under a windcatcher with his hair tuft and hoodie strings blowing in the cool breeze, eyes closed in bliss and arms spread wide",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands in the shade beside him.",
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the little harbour right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "亚兹德",
+          "克尔曼",
+          "卡尚",
+          "霍尔木兹",
+          "锡拉夫"
+        ],
+        "silhouette_120px": "一座占半块地、全城最高的土黄阶梯圆锥冰窖 + 一段长墙 + 两三座矮一些的竖缝方塔",
+        "dominant_colour_zh": "土黄（唯一的土黄原型）",
+        "composition": {
+          "main": "巨大的土黄阶梯圆锥冰窖和一段挡阴长墙（全城最高、占地一半）",
+          "secondary": [
+            "两三座带竖缝的方形捕风塔（都比冰窖矮）",
+            "一小片土黄小圆顶房"
+          ],
+          "trees": "三棵开心果树",
+          "secondary_count": 2
+        },
+        "distinct_from_existing": "吉达、阿丹国是一排米白高方楼，所以捕风塔只留两三座、都比冰窖矮；狮子国的佛塔是光滑灰圆顶加金刹，冰窖是土黄、分级、没有塔刹，旁边还有一段长墙。",
+        "water_trough": null,
+        "look_zh": "一座巨大的土黄阶梯圆锥冰窖和一段挡阴长墙是主体（占地一半、全城最高），两三座带竖缝的方形捕风塔（都比冰窖矮），一小片土黄小圆顶房，三棵开心果树。土黄是它独有的主色。",
+        "look": "Windcatcher town as a low-poly building-only cluster. Main mass (at least half the footprint, and the tallest element): one huge stepped cone ice-house (yakhchal) of earth-yellow mud plaster with a long shading wall beside it. Secondary masses (no more than three): two or three square windcatcher towers with vertical slots near the top, all clearly lower than the ice-house; a small cluster of low mud houses with small domed roofs. Signature trees: three small pistachio trees. Palette: earth-yellow mud, sand, ochre, pistachio green. Footprint aspect no more than 1.5:1. Silhouette: one giant stepped earth cone with a long wall and a few short slotted towers. Jeddah and Aden are rows of tall cream tower-houses, so the towers stay few and short; Simhala's stupa is a smooth grey dome with a gold spire, while this cone is stepped, earth-yellow and has no spire.",
+        "palette": [
+          "earth-yellow mud plaster (the only earth-yellow archetype)",
+          "sand",
+          "pale ochre",
+          "pistachio green trees",
+          "turquoise door accents"
+        ],
+        "card_summary_zh": "L叔站在捕风塔下张开双臂，头发和兜帽绳被凉风吹起，闭着眼一脸享受，旁边是大圆锥冰窖。",
+        "card_renders_needed": [
+          "BOAT",
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}在炎热干燥的地方。为了凉快，人们在屋顶建起捕风塔把风引进屋里，还挖地下水渠把远山的水引来。",
+        "curated_scenery_template": "一座座方形捕风塔立在土黄色屋顶上，旁边的圆锥形冰窖把冬天的冰一直存到夏天。"
+      }
+    },
+    {
+      "id": "aw05_rock_cut_town",
+      "title": "红崖石城",
+      "style_side": "W",
+      "fits": [
+        "LAND"
+      ],
+      "status": "draft",
+      "default_specialty": "copper_jug",
+      "noun": "红崖石城",
+      "epithet4": "玫瑰石城",
+      "scenery": "整块岩壁上雕出高大的门廊和石柱。",
+      "historical_period": "纳巴泰人的商队时代",
+      "graybox_model": "res://assets/game/lowpoly/cities/cairo.glb",
+      "asset_id": "rock_cut_town",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/rock_cut_town.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/rock_cut_town.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/rock_cut_town_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a rock-cut desert caravan town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a caravan town carved into red sandstone cliffs on the incense road, around the 1st century",
+        "LANDMARKS": "a tall two-storey colonnaded facade crowned by a round pavilion with a stone urn, carved straight into a rose-red sandstone cliff (the signature landmark); smaller carved doorways along the rock walls; a narrow winding gorge opening onto a sunny plaza",
+        "LOCAL_LIFE": "Small chibi caravan traders in long robes and headscarves lead camels out of the gorge, a chibi water carrier fills a jar from a channel cut into the rock, a chibi kid chases a goat",
+        "LIGHT": "warm golden late-afternoon light making the rock glow rose-pink, apricot sky with a few thin cream clouds",
+        "LSHU_SIDE": "left",
+        "LSHU_ACTION": "standing in the plaza with his head tilted far back to take in the huge carved facade, one hand holding his glasses on, mouth in a small impressed 'o'",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands in the gorge mouth behind him."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "佩特拉",
+          "玛甸沙勒",
+          "米拉",
+          "费特希耶"
+        ],
+        "silhouette_120px": "一整块占满地块的玫瑰红岩体，正面雕出顶上有石瓮的两层柱廊门脸",
+        "dominant_colour_zh": "玫瑰红",
+        "composition": {
+          "main": "放大到占满占地的玫瑰红整块岩体，正面雕出顶上有石瓮的两层柱廊门脸",
+          "secondary": [
+            "一块雕着小门脸的小岩块",
+            "两顶米色帐篷"
+          ],
+          "trees": "一两棵金合欢",
+          "secondary_count": 2
+        },
+        "distinct_from_existing": "德里是深红褐砂岩拱廊和高塔，颜色更深；这里是浅一些的玫瑰红整块岩体。门脸去掉三角山花，和列柱古城的神庙分开。",
+        "water_trough": null,
+        "look_zh": "一整块放大到占满占地的玫瑰红砂岩巨石是主体（地标本身，不是地台），正面雕出两层柱廊门脸，上层是顶着石瓮的圆亭，不做三角山花；旁边一块雕着小门脸的小岩块，岩下两顶米色帐篷，一两棵金合欢。玫瑰红、鲑粉、深红阴影、帐篷米色。",
+        "look": "Rock-cut desert town as a low-poly building-only cluster. Main mass (filling the footprint width): one free-standing monolith of rose-red sandstone (the landmark object itself, not a ground slab), enlarged so the rock mass dominates, whose front is carved into a two-storey colonnaded facade: six columns below, and above them a small round pavilion (tholos) crowned by a stone urn - no triangular pediment. Secondary masses (no more than three): one smaller rock block with a simple carved doorway; two cream caravan tents. Signature trees: one or two acacia trees. Palette: rose-red sandstone, salmon pink, deep red shadows, cream. Footprint aspect no more than 1.5:1. Silhouette: a rough rose-red rock mass with a flat carved face topped by an urn. Delhi is dark maroon-brown arcades; this is lighter rose-pink rock.",
+        "palette": [
+          "rose-red sandstone",
+          "salmon pink",
+          "deep shadow red",
+          "tent cream",
+          "acacia green"
+        ],
+        "card_summary_zh": "L叔站在峡谷口的小广场上，扶着眼镜使劲仰头，看岩壁上整块雕出的两层柱廊。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}藏在红色砂岩的峡谷里。古人直接在山崖上凿出房屋和神庙，商队在这里歇脚，再把香料运往四方。",
+        "curated_scenery_template": "整块岩壁上雕出高大的门廊和石柱，太阳一照，玫瑰色的石头闪着暖光。"
+      }
+    },
+    {
+      "id": "aw06_lighthouse_port",
+      "title": "灯塔港城",
+      "style_side": "W",
+      "fits": [
+        "SEA"
+      ],
+      "status": "shipped",
+      "default_specialty": "olive_oil",
+      "noun": "灯塔港城",
+      "epithet4": "灯塔照海",
+      "scenery": "高高的灯塔站在防波堤尽头，顶上燃着火盆。",
+      "historical_period": "罗马时代的地中海港口",
+      "graybox_model": "res://assets/game/lowpoly/cities/rome.glb",
+      "asset_id": "lighthouse_port",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/lighthouse_port.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/lighthouse_port.png",
+        "card_art_by_route": {
+          "SEA": "res://assets/custom_map_catalogue/cards/lighthouse_port_ship_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a Mediterranean lighthouse harbour city",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a busy Mediterranean seaport of the Roman and Byzantine era",
+        "LANDMARKS": "a very tall three-stage stone lighthouse with a square base, an octagonal middle and a round top crowned by a glowing fire bowl, standing at the end of a breakwater (the signature landmark); whitewashed flat-roofed harbour houses with Mediterranean-blue doors and shutters; a long white warehouse; rows of terracotta amphorae",
+        "LOCAL_LIFE": "Small chibi sailors and merchants in tunics roll amphorae up gangplanks, a chibi fisherman mends a net, merchant ships with plain cream sails glide in past the lighthouse, seagulls circle",
+        "LIGHT": "warm golden late-afternoon light, peach sky shading to deep Mediterranean blue over the sea, a few fluffy cream clouds",
+        "LSHU_SIDE": "right",
+        "LSHU_ACTION": "standing on tiptoe on the stone quay, one hand shading his eyes as he gazes out at the fire glowing on top of the lighthouse, a smug delighted grin",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the stone quay right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "迦太基",
+          "亚历山大港",
+          "士麦那",
+          "特拉比松",
+          "热那亚"
+        ],
+        "silhouette_120px": "一座特别高的三段式灯塔（方-八角-圆，顶上一盆火），脚下是白墙蓝门的港口",
+        "dominant_colour_zh": "白墙 + 地中海蓝",
+        "composition": {
+          "main": "防波堤上的三段式大灯塔（顶上火盆），塔底连着一座白墙蓝门的长仓库（读成一组，宽度过半）",
+          "secondary": [
+            "三座白墙蓝窗的平顶港房（算一组）",
+            "码头上一排陶罐",
+            "一条米色帆的小帆船"
+          ],
+          "trees": "两棵橄榄树",
+          "secondary_count": 3
+        },
+        "distinct_from_existing": "开罗是米白方院加一根细宣礼塔；这里的塔更粗、分三段、顶上有火，而且立在白墙蓝门的建筑上，第一眼是白和蓝。",
+        "water_trough": null,
+        "look_zh": "防波堤上一座三段式大灯塔是主体（方形底座、八角中段、圆形顶段、火盆，塔底连着一座白墙蓝门的长仓库），三座白墙、地中海蓝门窗的平顶港房，码头上一排陶罐，一条米色帆的小帆船，两棵橄榄树。白、地中海蓝、石灰米、陶土、火橙。",
+        "look": "Mediterranean lighthouse port as a low-poly building-only cluster. Main mass (at least half the footprint width): a short stone mole carrying a very tall three-stage lighthouse - square base, octagonal middle, round top stage with a glowing fire bowl, about three times the height of any other building - whose square base is joined to a long whitewashed warehouse with Mediterranean-blue doors. Secondary masses (no more than three): three flat-roofed whitewashed harbour houses with Mediterranean-blue doors, shutters and roof trims (one group); a row of terracotta amphorae on the quay; one small sailing ship with a cream sail. Signature trees: two olive trees. No water plane: it is a sea archetype that always sits at the coast. Palette: whitewash, Mediterranean blue, cream limestone, terracotta, fire orange. Footprint aspect no more than 1.5:1. Silhouette: one tall stepped tower with a flame above a white-and-blue harbour; Cairo is a cream block with a slim minaret.",
+        "palette": [
+          "whitewash walls",
+          "Mediterranean blue doors, shutters and roof trims",
+          "cream limestone",
+          "terracotta amphorae",
+          "fire orange"
+        ],
+        "card_summary_zh": "L叔在码头上踮起脚、手搭凉棚，眺望灯塔顶上的火光，海鸥绕着桅杆飞。",
+        "card_renders_needed": [
+          "BOAT"
+        ],
+        "curated_intro_template": "{城名}是一座海边大港。高高的灯塔夜里点起火光，指引商船安全进港，码头上各地的货物堆积如山。",
+        "curated_scenery_template": "三层灯塔站在防波堤尽头，最顶上燃着火盆；港湾里帆船进进出出，海鸥绕着桅杆飞。"
+      }
+    },
+    {
+      "id": "aw07_lagoon_town",
+      "title": "海上水城",
+      "style_side": "W",
+      "fits": [
+        "SEA"
+      ],
+      "status": "draft",
+      "default_specialty": "amber",
+      "noun": "海上水城",
+      "epithet4": "百岛水城",
+      "scenery": "尖拱窗的宫殿排在运河两边，钟楼高高耸立。",
+      "historical_period": "中世纪的地中海商港",
+      "graybox_model": "res://assets/game/lowpoly/cities/constantinople.glb",
+      "asset_id": "lagoon_town",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/lagoon_town.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/lagoon_town.png",
+        "card_art_by_route": {
+          "SEA": "res://assets/custom_map_catalogue/cards/lagoon_town_ship_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a lagoon city of canals and palaces",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a medieval Mediterranean merchant republic built on islands in a lagoon, around the 13th to 15th century",
+        "LANDMARKS": "a slender brick bell tower with a green pyramid cap rising over a lagoon city (the signature landmark); rose-pink and cream palaces with pointed Gothic windows lining a canal; humped stone footbridges; striped mooring poles",
+        "LOCAL_LIFE": "Small chibi townsfolk in medieval tunics and caps cross a bridge, a chibi gondolier in a striped shirt poles a black gondola, a chibi merchant arranges plain bundles at a canal-side stall, pigeons in a small square",
+        "LIGHT": "warm golden late-afternoon light reflected in the canal, soft peach and lavender sky with a few cream clouds",
+        "LSHU_SIDE": "left",
+        "LSHU_ACTION": "standing at the top of a humped stone footbridge with his hands behind his head, gazing up at the tall brick bell tower while a black gondola glides under the bridge, his glasses glinting in the golden light",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at a striped mooring pole right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "威尼斯",
+          "基奥贾",
+          "格拉多",
+          "布拉诺"
+        ],
+        "silhouette_120px": "一排尖拱窗的粉色宫殿 + 一座细高的红砖钟楼（绿尖顶）+ 一条黑色贡多拉",
+        "dominant_colour_zh": "玫瑰粉 + 砖红",
+        "composition": {
+          "main": "一排尖拱窗的粉色、奶白宫殿，一头升起细高的红砖钟楼（绿尖顶，读成一组，宽度过半）",
+          "secondary": [
+            "一座驼背石桥",
+            "几根条纹系船桩",
+            "一条黑色贡多拉"
+          ],
+          "trees": "无",
+          "secondary_count": 3
+        },
+        "distinct_from_existing": "君士坦丁堡是红褐大圆顶教堂，所以这里去掉圆顶教堂；阿丹国是鲑粉色方窗高楼加红顶，这里靠尖拱窗、绿尖顶钟楼和黑色贡多拉来分开。",
+        "water_trough": null,
+        "look_zh": "运河边一排粉色、奶白色尖拱窗宫殿是主体（木桩基础露出），一头升起一座细高的红砖钟楼（绿色尖顶），一座驼背石桥，条纹系船桩，一条黑色贡多拉。去掉带圆顶的大教堂。玫瑰粉、奶白、砖红、铜绿。",
+        "look": "Lagoon city as a low-poly building-only cluster. Main mass (at least half the footprint width): a row of four-storey palazzos in rose pink and cream with pointed Gothic arched windows and loggias, standing on visible wooden piles, with a slender brick bell tower (campanile) with a green pyramid cap rising from one end, about three times the house height. Secondary masses (no more than three): one humped stone footbridge; a few striped mooring poles; one black gondola. No domed church (that reads as Constantinople). No trees. No water plane: it is a sea archetype that always sits at the coast. Palette: rose pink, cream, brick red, copper green. Footprint aspect no more than 1.5:1. Silhouette: a pink pointed-arch block with a thin red tower and a green spire.",
+        "palette": [
+          "rose pink",
+          "cream",
+          "brick red",
+          "copper green",
+          "lagoon teal accents"
+        ],
+        "card_summary_zh": "L叔站在驼背石桥上，双手枕在脑后，仰头看高高的红砖钟楼，桥下划过一条贡多拉。",
+        "card_renders_needed": [
+          "BOAT"
+        ],
+        "curated_intro_template": "{城名}建在浅海湾里的许多小岛上。房子立在打进泥里的木桩上，河道就是街道，人们出门都要坐船。",
+        "curated_scenery_template": "尖拱窗的宫殿排在运河两边，高高的钟楼俯瞰全城，小船从一座座石桥下穿过。"
+      }
+    },
+    {
+      "id": "aw08_fairy_chimney_town",
+      "title": "蘑菇石村",
+      "style_side": "W",
+      "fits": [
+        "LAND"
+      ],
+      "status": "draft",
+      "default_specialty": "carpet",
+      "noun": "蘑菇石村",
+      "epithet4": "石柱山谷",
+      "scenery": "一根根石柱像大蘑菇，石壁上开着圆圆的门窗。",
+      "historical_period": "拜占庭时代的岩洞村落",
+      "graybox_model": "res://assets/game/lowpoly/cities/aden.glb",
+      "asset_id": "fairy_chimney_town",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/fairy_chimney_town.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/fairy_chimney_town.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/fairy_chimney_town_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a cave town of fairy-chimney rock cones",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a highland valley town of Anatolia on a caravan road, around the 11th to 13th century",
+        "LANDMARKS": "tall peach-pink rock cones with dark caps like giant mushrooms, carved with round doors, windows and dovecote holes (the signature landmark); a small carved chapel front; a green valley with grape vines and apricot trees; a snowy volcano far away",
+        "LOCAL_LIFE": "Small chibi villagers in woollen vests and headscarves chat at a cave door, a chibi grandma spins wool on the doorstep, pigeons fly from the dovecote holes, a donkey carries grape baskets",
+        "LIGHT": "warm golden late-afternoon light turning the rocks peach-pink, soft apricot sky with a few cream clouds",
+        "LSHU_SIDE": "right",
+        "LSHU_ACTION": "standing at the foot of the tallest rock cone, peeking in through a round carved doorway with one hand on the door frame, then turning back to the viewer with a smug grin as a pigeon lands on his satchel",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands beside a rock cone, looking up at the pigeons."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "开塞利",
+          "格雷梅",
+          "于尔居普",
+          "内夫谢希尔"
+        ],
+        "silhouette_120px": "三根粉桃色尖石柱（一高两矮），顶着深色小帽子，像三朵大蘑菇",
+        "dominant_colour_zh": "粉桃色",
+        "composition": {
+          "main": "一根又粗又高的粉桃色石柱（顶着深色玄武岩帽，凿着圆门圆窗和鸽子洞，宽度过半）",
+          "secondary": [
+            "两根矮一些的石柱（其中一根凿着小教堂门脸）",
+            "一段葡萄架"
+          ],
+          "trees": "两棵杏树",
+          "secondary_count": 2
+        },
+        "distinct_from_existing": "真腊是橙色、带棱纹的蜂巢形塔，没有帽子；这里的石柱更光滑、更粉，顶着深色石帽，身上开着圆门圆窗。",
+        "water_trough": null,
+        "look_zh": "一根又粗又高的粉桃色凝灰岩石柱是主体（顶着深色玄武岩帽，凿着圆门圆窗、鸽子洞和木阳台），旁边两根矮一些的石柱（其中一根凿着小教堂门脸），一段葡萄架，两棵杏树。粉桃、奶白、深色石帽、葡萄叶绿。",
+        "look": "Fairy-chimney cave town as a low-poly building-only cluster. Main mass (at least half the footprint width): one big, broad rock cone of peach-pink tuff (like Cappadocia's Rose Valley) topped with a dark flat basalt cap, carved with round doors, small windows, rows of tiny dovecote holes and wooden balconies. Secondary masses (no more than three): two shorter cones with dark caps beside it (three cones in all, one tall and two short), one of them carved with a small chapel front with an arched door; one grape trellis. Signature trees: two apricot trees. Palette: peach-pink tuff, cream, dark basalt caps, vine green, wood brown. Footprint aspect no more than 1.5:1. Silhouette: three mushroom-like cones with dark caps; Chenla's towers are orange ribbed beehives with no caps.",
+        "palette": [
+          "peach-pink tuff (like Cappadocia's Rose Valley)",
+          "cream tuff",
+          "dark basalt caps",
+          "vine green",
+          "wood-brown balconies"
+        ],
+        "card_summary_zh": "L叔站在最高那根石柱脚下，扶着圆门往里张望，回头得意地笑，一只鸽子落在他的挎包上。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}在火山灰堆成的高原上。风雨把软石头雕成一根根尖石柱，人们在石柱和山崖里凿洞，当作房子和仓库。",
+        "curated_scenery_template": "一根根石柱顶着深色的“帽子”，像大蘑菇一样站在山谷里，石壁上开着圆圆的门窗。"
+      }
+    },
+    {
+      "id": "aw09_windmill_hill_town",
+      "title": "风车山镇",
+      "style_side": "W",
+      "fits": [
+        "LAND",
+        "SEA"
+      ],
+      "status": "draft",
+      "default_specialty": "fig",
+      "noun": "风车山镇",
+      "epithet4": "风车山岗",
+      "scenery": "白色圆塔风车站成一排，三角帆布转个不停。",
+      "historical_period": "地中海海岛的山镇",
+      "graybox_model": "res://assets/game/lowpoly/cities/rome.glb",
+      "asset_id": "windmill_hill_town",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/windmill_hill_town.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/windmill_hill_town.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/windmill_hill_town_camel_1024x768.png",
+          "SEA": "res://assets/custom_map_catalogue/cards/windmill_hill_town_ship_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a windy hilltop windmill town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Mediterranean hill or island town, around the 13th to 15th century",
+        "LANDMARKS": "three round white stone windmills, one big and two small, with conical caps and triangular canvas sails turning in the wind on a ridge (the signature landmark); small white cube houses with sky-blue doors; fig trees and a round stone threshing floor; the blue sea glimpsed below",
+        "LOCAL_LIFE": "Small chibi millers in aprons carry sacks of flour, a chibi girl lays fruit out to dry on a reed mat, a donkey waits by the mill door, white flour dust puffs in the breeze",
+        "LIGHT": "bright warm late-afternoon golden light, clear peach sky over a deep blue sea, a few fluffy cream clouds",
+        "LSHU_SIDE": "left",
+        "LSHU_ACTION": "standing on the windy ridge holding his glasses on with one hand as his hood flaps in the wind, pointing up at the turning sails with the other, laughing smugly",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands beside the mill with its fur ruffled by the wind.",
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at a little stone jetty below the hill right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "米科诺斯",
+          "罗得岛",
+          "伊拉克利翁",
+          "孔苏埃格拉"
+        ],
+        "silhouette_120px": "三座白色圆塔风车（一大两小），挂着三角帆布叶",
+        "dominant_colour_zh": "白 + 赭",
+        "composition": {
+          "main": "三座白色圆塔风车（一大两小，站在一起，宽度过半）",
+          "secondary": [
+            "三座白墙赭顶小方房（算一组）",
+            "一个圆形石打谷场"
+          ],
+          "trees": "两棵无花果树",
+          "secondary_count": 2
+        },
+        "distinct_from_existing": "已有 16 城没有风车；尖尖的三角帆布叶是独有的轮廓。",
+        "water_trough": null,
+        "look_zh": "三座白色圆石塔风车是主体（一大两小，圆锥木顶、八片三角帆布叶），三座白墙赭顶小方房，一个圆形石打谷场，两棵无花果树。白、赭、帆布米、天蓝点缀。",
+        "look": "Windmill hill town as a low-poly building-only cluster. Main mass (at least half the footprint width): three round whitewashed stone tower windmills standing together - one big and two small - each with a conical wooden cap and eight triangular canvas sails on wooden spars, sails set at different angles. Secondary masses (no more than three): three small cube houses with whitewash walls, ochre roofs and sky-blue doors (one group); one round stone threshing floor. Signature trees: two broad fig trees. Palette: white, ochre, canvas beige, sky-blue accents. Footprint aspect no more than 1.5:1. Silhouette: round towers with spiky triangular sails.",
+        "palette": [
+          "whitewash",
+          "ochre roofs",
+          "canvas beige sails",
+          "wood brown",
+          "sky-blue door accents",
+          "fig-leaf green"
+        ],
+        "card_summary_zh": "L叔站在大风的山脊上，一手按住眼镜，兜帽被风吹得乱飘，一手指着转个不停的风车哈哈笑。",
+        "card_renders_needed": [
+          "BOAT",
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}是一座迎着大风的山镇。人们在山脊上建起一排风车，借风力把麦子磨成面粉，山坡上还种满果树。",
+        "curated_scenery_template": "白色圆塔风车站成一排，三角帆布转个不停；山坡上的小白房子前晒着无花果。"
+      }
+    },
+    {
+      "id": "aw10_noria_town",
+      "title": "水车河城",
+      "style_side": "W",
+      "fits": [
+        "LAND"
+      ],
+      "status": "draft",
+      "default_specialty": "papyrus",
+      "noun": "水车河城",
+      "epithet4": "水车吱呀",
+      "scenery": "比房子还高的木水车在河边吱呀转动。",
+      "historical_period": "中世纪的叙利亚河城",
+      "graybox_model": "res://assets/game/lowpoly/cities/cairo.glb",
+      "asset_id": "noria_town",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/noria_town.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/noria_town.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/noria_town_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a river town of giant wooden water wheels",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a riverside town of the Levant or al-Andalus, around the 10th to 14th century",
+        "LANDMARKS": "giant wooden water wheels, taller than the houses, turning slowly beside a stone aqueduct (the signature landmark); little buckets on the rims pouring water into a raised stone channel; stone houses with white domes; tall cypresses and clumps of reeds along the riverbank",
+        "LOCAL_LIFE": "Small chibi farmers in light robes guide water into green fields, a chibi miller carries a sack across the quay, a small boat with a plain cream sail drifts past, a heron wades in the shallows",
+        "LIGHT": "warm golden late-afternoon light glittering in the falling water, honey-apricot sky with a few cream clouds",
+        "LSHU_SIDE": "right",
+        "LSHU_ACTION": "standing on the stone quay with his head tilted back, watching water spill from the buckets of the turning wheel and holding out one hand to catch the sparkling drops, a delighted smug grin",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands on the riverbank behind him."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "阿斯旺",
+          "哈马",
+          "科尔多瓦",
+          "托莱多"
+        ],
+        "silhouette_120px": "两个比房子还高、立着的巨大木轮 + 一段石拱水槽",
+        "dominant_colour_zh": "深木褐",
+        "composition": {
+          "main": "两座并排立在石砌引水渠上的巨大木水车，连着一段三四个拱的石水槽（宽度过半）",
+          "secondary": [
+            "三座白色小圆顶石房（算一组）",
+            "一段石埠头"
+          ],
+          "trees": "两棵柏树、一丛芦苇",
+          "secondary_count": 2
+        },
+        "distinct_from_existing": "已有 16 城没有立着的大轮子；深木褐的大圆轮是第一眼的颜色和形状。",
+        "water_trough": "水车脚下的一段石砌引水渠：有石沿、有水，面积不超过占地的 25%，不伸到模型边缘；水车立在渠上。",
+        "look_zh": "两座并排立在石砌引水渠上的巨大木水车是主体（比房子还高，轮缘一圈小水斗），连着一段三四个拱的石砌高水槽；三座白色小圆顶石房，一段石埠头，两棵柏树、一丛芦苇。深木褐、石米、圆顶白。",
+        "look": "River water-wheel town as a low-poly building-only cluster. Main mass (at least half the footprint width): two giant wooden water wheels (norias) standing upright side by side, each taller than the houses, with a ring of small wooden buckets around the rim, set on a short stone leat that holds water (part of the architecture, no more than 25% of the footprint, not a slab, not reaching the model edge), and joined to a stone aqueduct of three or four arches that carries a raised channel toward the houses. Secondary masses (no more than three): three stone houses with small white domes (one group); a stone quay. Signature trees: two tall cypresses and one clump of reeds. Palette: deep timber brown, limestone cream, white domes, cypress green. Footprint aspect no more than 1.5:1. Silhouette: big circles standing on edge beside arches.",
+        "palette": [
+          "deep weathered timber brown (the giant wheels)",
+          "limestone cream",
+          "whitewashed domes",
+          "cypress green",
+          "water blue in the leat"
+        ],
+        "card_summary_zh": "L叔站在河边石埠上仰头看大水车转，伸手去接水斗洒下来的亮晶晶的水珠。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}守着一条大河。河面比田地低，人们造了巨大的木水车，让河水推着它转，把水送进水渠浇田。",
+        "curated_scenery_template": "几座比房子还高的木水车在河边吱呀转动，水从高高的石砌水槽流进城里和田里。"
+      }
+    },
+    {
+      "id": "aw11_colonnade_city",
+      "title": "列柱古城",
+      "style_side": "W",
+      "fits": [
+        "LAND",
+        "SEA"
+      ],
+      "status": "draft",
+      "default_specialty": "laurel_soap",
+      "noun": "列柱古城",
+      "epithet4": "石柱长街",
+      "scenery": "高高的石台上立着神庙，门前一排石柱。",
+      "historical_period": "希腊罗马时代的古城",
+      "graybox_model": "res://assets/game/lowpoly/cities/rome.glb",
+      "asset_id": "colonnade_city",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/colonnade_city.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/colonnade_city.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/colonnade_city_camel_1024x768.png",
+          "SEA": "res://assets/custom_map_catalogue/cards/colonnade_city_ship_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "an ancient city of stone colonnades",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Greco-Roman city of the eastern Mediterranean, around the 1st to 3rd century",
+        "LANDMARKS": "a temple with a triangular pediment and a big terracotta-red roof on a high stepped podium, with a short colonnade of honey-coloured stone columns in front (the signature landmark); terracotta-roofed shops under the colonnade; silvery olive groves around the city",
+        "LOCAL_LIFE": "Small chibi townsfolk in tunics and draped mantles stroll under the colonnade, a chibi shopkeeper sweeps in front of a shop, a chibi kid rolls a hoop along the paved street",
+        "LIGHT": "warm golden late-afternoon light striping the street with column shadows, peach sky with a pale blue top",
+        "LSHU_SIDE": "left",
+        "LSHU_ACTION": "playing hide-and-seek among the columns, peeking out from behind one column with a smug grin at a giggling chibi kid who peeks out from behind another",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands between the columns just behind him, poking its head around a column too.",
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at a stone quay at the end of the street right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "雅典",
+          "帕尔米拉",
+          "安条克",
+          "杰拉什",
+          "阿帕米亚"
+        ],
+        "silhouette_120px": "高石台基上一座赭红大瓦顶的山花神庙 + 前面一段短柱廊",
+        "dominant_colour_zh": "赭红瓦 + 蜂蜜石",
+        "composition": {
+          "main": "高石台基上一座赭红大瓦顶的山花神庙（蜂蜜石，宽度过半）",
+          "secondary": [
+            "前面一段六到八根柱的短柱廊",
+            "柱廊下两间赭红瓦小铺子"
+          ],
+          "trees": "三棵橄榄树",
+          "secondary_count": 2
+        },
+        "distinct_from_existing": "古罗马城是米白圆环；这里去掉半圆剧场（它就是半个斗兽场），改用蜂蜜石和大面积赭红瓦顶。红崖石城的门脸去掉了三角山花，所以三角山花只在这里出现。",
+        "water_trough": null,
+        "look_zh": "高石台基上一座带三角山花、六根前柱的神庙是主体（大面积赭红瓦顶，石材用偏暖的蜂蜜石，不用象牙白），前面一段六到八根柱的短柱廊，柱廊下两间赭红瓦小铺子，三棵橄榄树。去掉半圆剧场和长柱廊街。",
+        "look": "Classical temple town as a low-poly building-only cluster. Main mass (at least half the footprint width): one temple on a tall stepped podium (the podium is part of the building, not a ground slab) with six front columns, a triangular pediment and a large, clearly visible terracotta-red tiled roof; the stone is warm honey limestone, not ivory white. Secondary masses (no more than three): one short colonnade of six to eight columns carrying a stone beam in front of it; two small shops with terracotta roofs under the colonnade. Signature trees: three olive trees. No semicircular theatre (it reads as half of Rome's Colosseum) and no long colonnaded street. Palette: terracotta red, honey limestone, olive green. Footprint aspect no more than 1.5:1. Silhouette: a big red-roofed temple on a high base with a short row of columns.",
+        "palette": [
+          "terracotta-red roof tiles",
+          "honey limestone",
+          "warm sandstone columns",
+          "olive green",
+          "soft blue shadows"
+        ],
+        "card_summary_zh": "L叔在柱子之间和当地小孩玩捉迷藏，从一根柱子后面探出头得意地笑。",
+        "card_renders_needed": [
+          "BOAT",
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}是一座石头砌成的古城。宽阔的大街两旁立着长长的柱廊，商人在柱廊下摆摊，人们在广场上聚会。",
+        "curated_scenery_template": "高高的石台上立着红瓦神庙，门前一排石柱，城外种着成片的橄榄树。"
+      }
+    },
+    {
+      "id": "aw12_snow_tower_village",
+      "title": "雪谷石塔",
+      "style_side": "W",
+      "fits": [
+        "LAND"
+      ],
+      "status": "draft",
+      "default_specialty": "honey",
+      "noun": "石塔山村",
+      "epithet4": "雪山石塔",
+      "scenery": "方形石塔立在村子里，四周雪峰环绕。",
+      "historical_period": "高加索山区的石塔村",
+      "graybox_model": "res://assets/game/lowpoly/cities/constantinople.glb",
+      "asset_id": "snow_tower_village",
+      "assets": {
+        "model": "res://assets/custom_map_catalogue/cities/snow_tower_village.glb",
+        "thumb": "res://assets/custom_map_catalogue/thumbs/snow_tower_village.png",
+        "card_art_by_route": {
+          "LAND": "res://assets/custom_map_catalogue/cards/snow_tower_village_camel_1024x768.png"
+        }
+      },
+      "card_prompt": {
+        "CITY_EN": "a snowy mountain village of stone towers",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Caucasus mountain village near a Silk Road branch, around the 10th to 14th century",
+        "LANDMARKS": "a cluster of tall slender grey stone towers with small wooden roofs in a high valley (the signature landmark); stone houses with snowy slate roofs; a small stone chapel; snowy peaks all around; alpine meadows full of wildflowers on the lower slopes",
+        "LOCAL_LIFE": "Small chibi villagers in felt caps and woollen cloaks drive sheep up the flower meadow, a chibi grandma spins wool on a doorstep, a row of colourful wooden beehives stands by the meadow, a cute bee buzzes past",
+        "LIGHT": "crisp clear late-afternoon golden light on the snow, pale peach sky with a turquoise top",
+        "LSHU_SIDE": "right",
+        "LSHU_ACTION": "sitting on a stone wall with his legs dangling, craning his neck to count the stone towers, while a single tiny cute bee rests on his hair tuft",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles and a warm woollen blanket stands in the meadow behind him."
+        }
+      },
+      "production": {
+        "example_cities": [
+          "梅斯蒂亚",
+          "乌什古利",
+          "奥马洛",
+          "达尔特洛"
+        ],
+        "silhouette_120px": "一高两矮三座细高灰石方塔（塔顶小木坡顶、檐口积雪）",
+        "dominant_colour_zh": "灰石 + 雪白",
+        "composition": {
+          "main": "一高两矮三座细高灰石方塔，脚下连着一座石板顶矮石房（读成一组，宽度过半）",
+          "secondary": [
+            "一座圆锥顶小石教堂",
+            "一排彩色木蜂箱"
+          ],
+          "trees": "两棵冷杉",
+          "secondary_count": 2
+        },
+        "distinct_from_existing": "吉达、阿丹国是米白高楼加木格窗和阳台；这里是灰色、细得多、几乎没窗、顶上积雪的石塔。风塔之城的塔矮而土黄。",
+        "water_trough": null,
+        "look_zh": "一高两矮三座细高的灰色方石塔是主体（塔顶小木板坡顶，脚下连着一座石板顶矮石房），一座圆锥顶小石教堂，一排彩色木蜂箱，两棵深色冷杉，屋檐积雪。灰石、白雪、木棕、冷杉绿。",
+        "look": "Snowy mountain tower village as a low-poly building-only cluster. Main mass (at least half the footprint width): three slender square stone towers - one tall and two shorter, about four to five times as tall as they are wide - with tiny slit windows and small wooden pyramid roofs, joined at their feet by one low stone house with a slate roof so they read as one group. Secondary masses (no more than three): one small stone chapel with a conical roof; a row of colourful wooden beehives. Signature trees: two dark fir trees. Snow lies on every roof edge. Palette: grey fieldstone, snow white, weathered wood, fir green. Footprint aspect no more than 1.5:1. Silhouette: three tall thin grey towers; Jeddah and Aden are cream tower-houses with wooden balconies.",
+        "palette": [
+          "grey fieldstone",
+          "snow white",
+          "weathered wood",
+          "fir green",
+          "honey gold accents"
+        ],
+        "card_summary_zh": "L叔坐在石墙上晃着腿，仰头数石塔，一只小蜜蜂落在他头顶的小卷毛上。",
+        "card_renders_needed": [
+          "CAMEL"
+        ],
+        "curated_intro_template": "{城名}在高高的雪山谷地里。冬天常常大雪封路，人们用石头砌起高塔和房屋，夏天在山坡上放牧、养蜂。",
+        "curated_scenery_template": "一座座方形石塔立在村子里，塔顶盖着木板小屋顶；四周雪峰环绕，山坡上开满野花。"
+      }
+    }
+  ],
+  "specialties": [
+    {
+      "key": "kaolin",
+      "display_name": "高岭土",
+      "flavor_side": "E",
+      "hint": "烧瓷器用的白黏土，名字来自景德镇高岭村",
+      "status": "shipped",
+      "assets": {
+        "icon": "res://assets/game/goods/good_kaolin_128.png"
+      },
+      "production": {
+        "origin": "江西浮梁高岭村（景德镇东北）；福建德化等窑区也产优质瓷土",
+        "origin_note": "高岭村的瓷土让全世界都把瓷土叫 kaolin。历史上瓷土主要在国内运到窑场，远销的是烧好的瓷器（原版已有「陶瓷」），所以给窑业城镇的新特产选了原料而不是成品。",
+        "icon": "A few bricks of raw porcelain clay in warm off-white with a faint grey-pink tint, one brick snapped in half to show a dry powdery broken face, a small wooden paddle leaning against them, a few chalky crumbs. No blue seal, no blue-grey shading, no fired pottery. Silhouette: a low pile of pale bricks with one jagged broken edge and a stick.",
+        "icon_zh": "几块略带暖灰粉的白泥砖，一块掰断露出粉质断面，旁边斜靠一把小木铲",
+        "icon_distinct_from": "陶瓷（原版是白底蓝花的瓶子）——这里一点蓝色都没有，也不画烧好的瓷器；月桂皂（一块橄榄金方皂加肥皂泡）；棉花（枝上的蓬松白絮）；奶酪（挂成一串的奶疙瘩）"
+      }
+    },
+    {
+      "key": "oil_paper_umbrella",
+      "display_name": "油纸伞",
+      "flavor_side": "E",
+      "hint": "竹子做骨架，糊纸刷桐油，晴天遮阳雨天挡雨",
+      "status": "shipped",
+      "assets": {
+        "icon": "res://assets/game/goods/good_oil_paper_umbrella_128.png"
+      },
+      "production": {
+        "origin": "江南、四川、福建",
+        "origin_note": "竹骨架糊皮纸、刷桐油，唐宋已有，并随商船传到日本和东南亚；泸州、福州的油纸伞是明清时的名品。",
+        "icon": "An open oil-paper umbrella tilted about 20 degrees, persimmon-red oiled paper canopy showing the fine radiating bamboo ribs from below, a thin cream ring pattern near the rim (no writing), a dark bamboo shaft with a wrapped handle. Silhouette: a wide shallow dome on a long stick.",
+        "icon_zh": "一把撑开、微微倾斜的柿红色油纸伞，能看到竹骨",
+        "icon_distinct_from": "漆器（红色圆盒）、丝绸（红色布卷）——同为红色，但伞面加长柄的轮廓完全不同；折扇（米白平半圆、没有长柄）"
+      }
+    },
+    {
+      "key": "tung_oil",
+      "display_name": "桐油",
+      "flavor_side": "E",
+      "hint": "油桐果子榨出的油，刷在船上能防水",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_tung_oil_128.png"
+      },
+      "production": {
+        "origin": "四川、湖南、贵州、湖北、广西山区",
+        "origin_note": "桐油是古代造船、做伞和木构建筑的防水涂料：木帆船用桐油和石灰捻缝，侗寨的鼓楼、风雨桥也刷桐油防腐。",
+        "icon": "A leafy twig of the tung tree with two or three big round glossy green fruits (each with a small pointed tip), two broad heart-shaped leaves and one or two white-and-pink tung blossoms, plus a very small clay oil pot at its foot. Green dominates. No wooden bucket, no pool of amber oil. Silhouette: a leafy branch with big round green fruits.",
+        "icon_zh": "一枝油桐，挂着两三颗大青绿色圆果（带小尖），配心形大叶和一两朵白里透粉的桐花，脚边只有一个很小的陶油壶",
+        "icon_distinct_from": "乳香（棕色鼓肚罐加金顶）、宝箱（棕木箱加金属包角）、蜂蜜（亮金蜂巢）——这里绿色为主，不画木桶，也没有大片琥珀色；橄榄油（陶土双耳尖底罐）——两个名字都带「油」，靠一绿一陶土色分开"
+      }
+    },
+    {
+      "key": "star_anise",
+      "display_name": "八角",
+      "flavor_side": "E",
+      "hint": "像小星星的香料，炖肉煮汤都用得上",
+      "status": "shipped",
+      "assets": {
+        "icon": "res://assets/game/goods/good_star_anise_128.png"
+      },
+      "production": {
+        "origin": "广西西南部、交趾（今越南北部）",
+        "origin_note": "八角茴香原产这一带，是中餐和越南菜常用的香料。",
+        "icon": "Three oversized star-anise pods, each a crisp eight-pointed star of boat-shaped segments, rusty red-brown, one pod turned to show glossy amber seeds in its open segments. Silhouette: three bold stars.",
+        "icon_zh": "三颗放大的八角，八个尖角的星形，锈红棕色",
+        "icon_distinct_from": "黑胡椒（碗里一堆黑色小球）——这里是三颗大星形"
+      }
+    },
+    {
+      "key": "highland_barley",
+      "display_name": "青稞",
+      "flavor_side": "E",
+      "hint": "高原上耐寒的大麦，炒熟磨粉就是糌粑",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_highland_barley_128.png"
+      },
+      "production": {
+        "origin": "青藏高原（吐蕃、今西藏和青海）",
+        "origin_note": "青稞是高原上最耐寒的粮食，唐蕃古道上高原的粮食、盐和内地的茶常相交换。",
+        "icon": "A tied sheaf of six ears of highland barley with long upright whiskers (awns), golden-straw colour with a hint of blue-green on the grains, tied at the waist with a red woollen band. Silhouette: a sheaf fanning out at the top.",
+        "icon_zh": "一束用红毛线扎起来的青稞穗，长长的麦芒，金黄色",
+        "icon_distinct_from": "纸莎草（绿色放射状草头）——这里是金黄色麦穗，有长芒；甘蔗（紫绿竹节长秆）"
+      }
+    },
+    {
+      "key": "cheese",
+      "display_name": "奶酪",
+      "flavor_side": "E",
+      "hint": "牛羊奶做的奶食，晒干了能存很久",
+      "status": "shipped",
+      "assets": {
+        "icon": "res://assets/game/goods/good_cheese_128.png"
+      },
+      "production": {
+        "origin": "蒙古高原、北方草原",
+        "origin_note": "草原牧民把牛羊奶做成奶豆腐、奶疙瘩，晒干后便于储存和交换。",
+        "icon": "A string of creamy off-white dried milk-curd pieces (aaruul) threaded on a leather thong and hanging in a short loop, with one small rectangular block of pressed milk tofu beside it stamped with a simple flower pattern (no letters); pale milky cream with a light caramel tint on the edges. Silhouette: a hanging loop of small lumps plus a small patterned block.",
+        "icon_zh": "一串用皮绳穿起来的奶白色干奶疙瘩（边上带一点焦糖色），旁边一小块压着花纹的奶豆腐",
+        "icon_distinct_from": "茶叶（系绳的扁圆茶饼）——这里是挂成一串的小块；葡萄干（挂着的一串浅绿葡萄带叶子）——这里是奶白色、用皮绳穿成圈；高岭土（白泥砖）"
+      }
+    },
+    {
+      "key": "raisins",
+      "display_name": "葡萄干",
+      "flavor_side": "E",
+      "hint": "绿洲的葡萄晾干后又甜又耐放，好带上路",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_raisins_128.png"
+      },
+      "production": {
+        "origin": "吐鲁番盆地（高昌）、哈密、龟兹等西域绿洲",
+        "origin_note": "高昌的葡萄在唐代已很有名，晾房风干的葡萄干便于长途运输。",
+        "icon": "A hanging bunch of pale jade-green, slightly wrinkled grapes on a short brown vine stem with one broad grape leaf and a curly tendril. NOT in a bowl or basket. Silhouette: a hanging cone-shaped bunch.",
+        "icon_zh": "一串挂着的浅翠绿色微皱葡萄干，带一片葡萄叶",
+        "icon_distinct_from": "椰枣（碗里一堆深红棕色的枣）——这里是挂着的一整串、浅绿色、不放碗里；奶酪（皮绳穿的一圈奶白小块）"
+      }
+    },
+    {
+      "key": "sugarcane",
+      "display_name": "甘蔗",
+      "flavor_side": "E",
+      "hint": "又甜又脆的甘蔗，榨汁熬煮就成了蔗糖",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_sugarcane_128.png"
+      },
+      "production": {
+        "origin": "岭南（番禺即今广州）、交趾、福建、四川",
+        "origin_note": "岭南种甘蔗已有两千多年；唐太宗派人去印度学熬糖，南宋《糖霜谱》记载番禺（今广州）等地都能做糖霜。",
+        "icon": "Three tall stalks of sugarcane with clearly marked bamboo-like joints, banded purple and green, topped by a spray of long green leaves, with a small cone of brown sugar at their foot. Silhouette: tall segmented vertical canes.",
+        "icon_zh": "三根紫绿相间、带明显竹节的甘蔗秆，顶上一簇叶子，旁边一小块红糖锥",
+        "icon_distinct_from": "白银（灰色宽浅元宝）、黑胡椒（碗里黑色小球）——这里是竖直的节状长秆，原版 15 种货和其余 23 种新货里都没有；宣纸图标里的毛笔也是细杆，但只有一支、横放、没有节和叶子"
+      }
+    },
+    {
+      "key": "xuan_paper",
+      "display_name": "宣纸",
+      "flavor_side": "E",
+      "hint": "安徽宣州出的好纸，写字画画能保存很久",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_xuan_paper_128.png"
+      },
+      "production": {
+        "origin": "安徽宣州（今泾县一带）",
+        "origin_note": "以青檀树皮和稻草为原料，唐代已作贡品，因出自宣州而得名。",
+        "icon": "A neat stack of cream-white paper sheets with soft fibrous edges, the top sheet curling up at one corner, and one bamboo writing brush with a dark tip lying diagonally across the stack. No roll, no red cord. Silhouette: a flat white block crossed by a thin dark brush.",
+        "icon_zh": "一摞米白色宣纸，最上面一张卷起一角，纸上斜搁一支毛笔",
+        "icon_distinct_from": "丝绸（系金色蝴蝶结的红布卷）——这里没有纸卷和系带；纸莎草（以绿色植物为主）——一个读「笔」、一个读「草」；高岭土（白泥砖）"
+      }
+    },
+    {
+      "key": "pine_nuts",
+      "display_name": "松子",
+      "flavor_side": "E",
+      "hint": "红松塔里剥出的小坚果，又香又脆",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_pine_nuts_128.png"
+      },
+      "production": {
+        "origin": "东北山林、朝鲜半岛（新罗、渤海）",
+        "origin_note": "唐代文献常提到新罗松子，是东北亚进贡和交易的山货。",
+        "icon": "A large brown pine cone with open woody scales, and four cream-coloured pine nuts tumbling out beside it. Silhouette: a chunky scaled cone.",
+        "icon_zh": "一个大松塔，旁边滚出几颗米色松子",
+        "icon_distinct_from": "开心果（米色裂壳露绿仁）——这里主体是松塔"
+      }
+    },
+    {
+      "key": "cotton",
+      "display_name": "棉花",
+      "flavor_side": "E",
+      "hint": "软绵绵的白棉花，能纺成线、织成棉布",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_cotton_128.png"
+      },
+      "production": {
+        "origin": "印度（恒河流域、古吉拉特）；高昌也早有种植（白叠）",
+        "origin_note": "印度棉布是海上丝路的大宗货，英文 calico 就得名于印度港口古里（卡利卡特）。",
+        "icon": "A short brown branch with three open cotton bolls bursting with fluffy white fibre, each held by dry brown pointed bracts, one small green leaf. Silhouette: three white puffs on a twig.",
+        "icon_zh": "一根短枝上开着三朵雪白蓬松的棉桃",
+        "icon_distinct_from": "高岭土（白泥砖）、奶酪（皮绳穿的奶疙瘩）——这里是枝上蓬松的白絮"
+      }
+    },
+    {
+      "key": "folding_fan",
+      "display_name": "折扇",
+      "flavor_side": "E",
+      "hint": "能收能开的扇子，宋代从日本和高丽传来",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_folding_fan_128.png"
+      },
+      "production": {
+        "origin": "日本、高丽（北宋时经登州、明州传入中国）",
+        "origin_note": "折扇最早出自日本；988 年日本僧人向宋朝献过桧扇、蝙蝠扇（《宋史·日本传》），高丽使者也常拿折叠扇当礼物（郭若虚《图画见闻志》）。",
+        "icon": "A half-open folding fan: a cream paper leaf painted with simple blue-green mountains (no writing), dark bamboo ribs fanning out from a rivet, and a small red tassel hanging from the end. Silhouette: a flat half-disc with a tassel.",
+        "icon_zh": "一把半开的折扇，米白扇面画着青绿小山（无字），竹扇骨，扇尾挂一个小红穗",
+        "icon_distinct_from": "油纸伞（柿红圆伞面加长柄）——扇是平的半圆、没有长柄；宣纸（米白纸摞加毛笔）——扇面有青绿山水和扇骨"
+      }
+    },
+    {
+      "key": "pomegranate",
+      "display_name": "石榴",
+      "flavor_side": "W",
+      "hint": "从西域传来的水果，籽多多，酸酸甜甜",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_pomegranate_128.png"
+      },
+      "production": {
+        "origin": "波斯（安息）、中亚绿洲",
+        "origin_note": "石榴古称「安石榴」，因从安息（波斯）一带传入中原而得名。",
+        "icon": "A pomegranate cut in half, both halves facing the camera: white membranes divide glossy ruby seeds into clear compartments; coral-pink rind; a small leafy twig beside it; the little crown on top is kept but secondary. Silhouette: two round halves with a seed-grid face.",
+        "icon_zh": "对半切开的石榴，两半切面朝前，白色隔膜分出一格格红籽，珊瑚粉果皮，旁边一枝带叶小枝",
+        "icon_distinct_from": "漆器（饱和红色扁圆盒）、宝石（红色多面体）——切面里白隔膜分格的籽，这个纹理它们都没有；无花果（紫色水滴）"
+      }
+    },
+    {
+      "key": "melon",
+      "display_name": "甜瓜",
+      "flavor_side": "W",
+      "hint": "中亚绿洲的甜瓜，又大又香又甜",
+      "status": "shipped",
+      "assets": {
+        "icon": "res://assets/game/goods/good_melon_128.png"
+      },
+      "production": {
+        "origin": "花剌子模（今乌兹别克斯坦希瓦一带）、梅尔夫",
+        "origin_note": "中世纪花剌子模的甜瓜装在铅盒里、垫着冰，运去巴格达献给哈里发。",
+        "icon": "A big oval yellow-green melon covered with a raised cream net pattern, plus one crescent slice beside it showing juicy orange flesh and a line of pale seeds. Silhouette: a large oval plus a crescent.",
+        "icon_zh": "一个带网纹的黄绿色椭圆大甜瓜，旁边一牙橙色瓜瓤",
+        "icon_distinct_from": "石榴（切开的两半、红籽分格）——这里是黄绿色椭圆大瓜加一牙橙色瓜瓤"
+      }
+    },
+    {
+      "key": "saffron",
+      "display_name": "藏红花",
+      "flavor_side": "W",
+      "hint": "紫花里的红花丝，是很贵的香料和染料",
+      "status": "shipped",
+      "assets": {
+        "icon": "res://assets/game/goods/good_saffron_128.png"
+      },
+      "production": {
+        "origin": "波斯（呼罗珊）、克什米尔",
+        "origin_note": "名字里有「藏」，是因为它经西藏传入内地；其实原产波斯一带，并不产自西藏。",
+        "icon": "Two violet crocus flowers on short green stalks, each with three long bright-red stigma threads and yellow stamens sticking out, a few loose red threads on a small leaf. Silhouette: two cup-shaped purple flowers with red threads.",
+        "icon_zh": "两朵紫色番红花，中间伸出三根鲜红的花丝",
+        "icon_distinct_from": "无花果（紫色水滴形果子）——这里是花朵轮廓+红丝"
+      }
+    },
+    {
+      "key": "pistachio",
+      "display_name": "开心果",
+      "flavor_side": "W",
+      "hint": "壳会裂开像在笑的坚果，唐朝叫阿月浑子",
+      "status": "shipped",
+      "assets": {
+        "icon": "res://assets/game/goods/good_pistachio_128.png"
+      },
+      "production": {
+        "origin": "波斯（克尔曼、亚兹德一带）、中亚",
+        "origin_note": "唐代《本草拾遗》记作「阿月浑子」，说它产自西国。",
+        "icon": "Three oversized pistachios in cream-beige shells cracked open like little smiles, showing green-and-purple kernels, one kernel lying loose. Silhouette: three beige ovals with green slits.",
+        "icon_zh": "三颗放大的开心果，壳裂开像在笑，露出绿色果仁",
+        "icon_distinct_from": "松子（松塔）、黑胡椒（黑色小球）"
+      }
+    },
+    {
+      "key": "copper_jug",
+      "display_name": "铜壶",
+      "flavor_side": "W",
+      "hint": "红铜一锤一锤敲成的长嘴壶，结实耐用",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_copper_jug_128.png"
+      },
+      "production": {
+        "origin": "约旦费南一带的古铜矿，叙利亚和两河流域的铜器作坊",
+        "origin_note": "费南一带的铜矿从上古一直开采到罗马时代；西亚铜匠把铜片一锤一锤敲成壶和盆，沿商路卖到各地。",
+        "icon": "A plain hammered copper jug with a round belly covered in small hammer dimples, a long straight spout and a tall loop handle; warm reddish copper with soft highlights; no engraving, no lid. Silhouette: a round-bellied jug with a long spout and a loop handle.",
+        "icon_zh": "一把满是锤纹的红铜壶，圆肚子、长直嘴、高提梁",
+        "icon_distinct_from": "乳香（棕色鼓肚罐加金顶）——这里是红铜色，靠长嘴和高提梁认；香水（粉色圆瓶金盖）、玻璃（青绿色细颈瓶）"
+      }
+    },
+    {
+      "key": "olive_oil",
+      "display_name": "橄榄油",
+      "flavor_side": "W",
+      "hint": "橄榄榨出的油，能做菜、点灯，还能护肤",
+      "status": "shipped",
+      "assets": {
+        "icon": "res://assets/game/goods/good_olive_oil_128.png"
+      },
+      "production": {
+        "origin": "地中海沿岸（希腊、北非、叙利亚）",
+        "origin_note": "橄榄油装在双耳尖底陶罐里用船运，古罗马时北非是最大的产区。",
+        "icon": "A terracotta two-handled amphora with a pointed foot, a golden drop of oil running from its lip, and a sprig of silver-green olive leaves with dark green-black olives lying against it. Silhouette: a tall amphora with two handles.",
+        "icon_zh": "一只陶土色双耳尖底罐，罐口淌下一滴金油，旁边一枝橄榄",
+        "icon_distinct_from": "香水（粉色圆玻璃瓶）、玻璃（青绿色瓶）；桐油（绿色油桐枝）——两个名字都带「油」，靠一陶土色一绿分开"
+      }
+    },
+    {
+      "key": "amber",
+      "display_name": "琥珀",
+      "flavor_side": "W",
+      "hint": "古树的树脂埋在地下变成的化石，透亮金黄",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_amber_128.png"
+      },
+      "production": {
+        "origin": "波罗的海沿岸，经「琥珀之路」运到亚得里亚海边的阿奎莱亚和威尼斯",
+        "origin_note": "琥珀是古代树脂变成的化石，中国古书说它来自大秦、罽宾等西方国家。",
+        "icon": "One irregular rough chunk of translucent amber, darkened to a deep cognac orange-red, glossy on its broken faces and glowing softly from inside, with a tiny leaf trapped within. No pot, no facets, no cord. Silhouette: a single lumpy glowing chunk.",
+        "icon_zh": "一块不规则的粗琥珀，深干邑橙红色，断面发亮，里面封着一片小叶",
+        "icon_distinct_from": "蜂蜜（亮金色六角蜂巢）——这里颜色压深到橙红、形状是粗块；乳香（棕色罐里的金黄小粒）；宝石（多面切割）"
+      }
+    },
+    {
+      "key": "carpet",
+      "display_name": "地毯",
+      "flavor_side": "W",
+      "hint": "羊毛一个结一个结织成的毯子，花纹很漂亮",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_carpet_128.png"
+      },
+      "production": {
+        "origin": "波斯（大不里士）、安纳托利亚（开塞利）",
+        "origin_note": "用羊毛打结织成，波斯和安纳托利亚的地毯沿商路一直卖到欧洲和中国。",
+        "icon": "A small flat rug with one corner lifted as if gently floating, deep madder-red field, a cream-and-indigo central medallion, a blue patterned border and cream fringes at both short ends. NOT rolled. Silhouette: a flat tilted rectangle with fringes.",
+        "icon_zh": "一块微微飘起一角的小地毯，红底、中间蓝米色大花、两头流苏",
+        "icon_distinct_from": "丝绸（卷成一卷的红布）——这里是摊平的、带流苏的方毯"
+      }
+    },
+    {
+      "key": "fig",
+      "display_name": "无花果",
+      "flavor_side": "W",
+      "hint": "看不见花的甜果子，其实小花藏在果子里",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_fig_128.png"
+      },
+      "production": {
+        "origin": "地中海沿岸（北非、希腊、小亚细亚）",
+        "origin_note": "北非迦太基和小亚细亚士麦那的无花果在古代都很有名；晒干后可长途运输。",
+        "icon": "Two figs: one whole purple teardrop with a short stem, one cut in half showing a pink-red seedy inside with a cream rim, and one broad lobed green fig leaf behind. Silhouette: two teardrops and a big leaf.",
+        "icon_zh": "两个紫色水滴形无花果，一个切开露出粉红色果肉",
+        "icon_distinct_from": "藏红花（紫色花朵加红丝）——这里是水滴形果子；石榴（切开的两半、白隔膜分格的红籽）——无花果切面是粉红色、没有隔膜"
+      }
+    },
+    {
+      "key": "papyrus",
+      "display_name": "纸莎草",
+      "flavor_side": "W",
+      "hint": "古埃及人把这种水草压成纸来写字",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_papyrus_128.png"
+      },
+      "production": {
+        "origin": "埃及尼罗河流域",
+        "origin_note": "古埃及人把纸莎草茎切片压成纸，几千年里是地中海最通用的书写材料。",
+        "icon": "A clump of papyrus: three tall green triangular stalks topped by big feathery starburst heads filling about 70% of the icon, with a small cream papyrus sheet showing its crosshatch weave leaning in front. Silhouette: green starburst plant heads.",
+        "icon_zh": "一丛纸莎草（三根绿色三角茎，顶着放射状的大绿球，占七成画面），前面靠着一小张网格纹纸",
+        "icon_distinct_from": "宣纸（米白纸摞加毛笔）——这里一眼读成「草」；青稞（金黄麦穗）——这里是绿色放射状伞头"
+      }
+    },
+    {
+      "key": "laurel_soap",
+      "display_name": "月桂皂",
+      "flavor_side": "W",
+      "hint": "橄榄油和月桂油熬成的皂，洗手洗脸都行",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_laurel_soap_128.png"
+      },
+      "production": {
+        "origin": "叙利亚（阿勒颇最有名）",
+        "origin_note": "用橄榄油和月桂油熬制的古皂，中世纪就从叙利亚远销欧洲。「香皂」是近代才有的说法，而且和原版「香水」都带「香」字，所以叫月桂皂。",
+        "icon": "One chunky square bar of olive-gold laurel soap with a round stamped abstract seal (no letters), surrounded by three or four big soap bubbles with a rainbow sheen. Not stacked. Silhouette: one square bar among round bubbles.",
+        "icon_zh": "一块橄榄金色方皂（盖着圆形花纹印），周围飘着三四个带彩虹反光的大肥皂泡",
+        "icon_distinct_from": "高岭土（白泥砖）——这里只有一块、橄榄金色，靠大泡泡的圆轮廓来认；香水（粉色圆瓶）——改名后名字里也没有「香」字"
+      }
+    },
+    {
+      "key": "honey",
+      "display_name": "蜂蜜",
+      "flavor_side": "W",
+      "hint": "蜜蜂采花酿成的蜜，古人拿来做甜点",
+      "status": "draft",
+      "assets": {
+        "icon": "res://assets/game/goods/good_honey_128.png"
+      },
+      "production": {
+        "origin": "高加索（格鲁吉亚）、希腊（许美多斯山）",
+        "origin_note": "格鲁吉亚出土过几千年前的蜂蜜，希腊的百里香蜂蜜在古代就很出名。",
+        "icon": "A slab of golden hexagon honeycomb with a thick drip of honey, a wooden honey dipper resting across it, and one tiny round cute bee. Silhouette: a flat slab with hexagon cells plus a dipper.",
+        "icon_zh": "一块金黄色六角形蜂巢，淌着蜜，上面搁着木蜜勺和一只小蜜蜂",
+        "icon_distinct_from": "琥珀（深橙红粗块）、桐油（绿色油桐枝）——这里是亮金色的六角蜂巢加蜜勺"
+      }
+    }
+  ],
+  "known_names": [
+    {
+      "id": "venice",
+      "name": "威尼斯",
+      "side_hint": "W",
+      "route_hint": "SEA",
+      "auto_pick": true,
+      "archetype": "aw07_lagoon_town",
+      "specialty": "amber",
+      "intro": "威尼斯建在意大利东北部海湾里的一百多座小岛上，中世纪是地中海的贸易强国。马可·波罗就是威尼斯人。",
+      "scenery": "城里的街道就是运河，人们坐着贡多拉小船出门；一座座石桥把小岛连在一起。",
+      "text_from": "catalogue_final",
+      "epithet": "潟湖上的商业共和国",
+      "history": "威尼斯人在潟湖的小岛上打下木桩建城，中世纪发展成强大的航海商业共和国。威尼斯商船把地中海东岸运来的香料和丝绸转卖到欧洲各地。十三世纪，威尼斯商人马可·波罗随父亲和叔叔东行，回来后留下了著名的游记。",
+      "sights": "圣马可广场和圣马可大教堂是城市的中心，大运河两岸排着一座座宫殿，里亚尔托桥横跨运河。",
+      "historical_period": "中世纪，约9至15世纪",
+      "modern_reference": "意大利威尼斯",
+      "seed_xz": [
+        11.25,
+        12.469
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "carthage",
+      "name": "迦太基",
+      "side_hint": "W",
+      "route_hint": "SEA",
+      "auto_pick": true,
+      "archetype": "aw06_lighthouse_port",
+      "specialty": "fig",
+      "intro": "迦太基在北非地中海边，今突尼斯附近，由腓尼基航海商人建立，后来成为罗马在非洲最大的城市。",
+      "scenery": "海边有一圆一方两座港口，圆形港池中间还有座小岛；城外遍布橄榄树和无花果树。",
+      "text_from": "catalogue_final",
+      "epithet": "北非海岸的腓尼基古港",
+      "history": "迦太基由腓尼基航海商人建立，是地中海西部的商业强国。它和罗马打了三次布匿战争，公元前146年被罗马摧毁。后来罗马人在原地重建新城，迦太基又成为罗马阿非利加行省的首府，从这里运出粮食和橄榄油。",
+      "sights": "遗址上还能看到圆形的古军港和长方形的商港，海边有安东尼浴场的石柱，山丘上是古城区的遗迹。",
+      "historical_period": "公元前9世纪至罗马帝国时期",
+      "modern_reference": "突尼斯突尼斯市附近的迦太基遗址",
+      "seed_xz": [
+        10.25,
+        26.556
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "cyrene",
+      "name": "昔兰尼",
+      "side_hint": "W",
+      "route_hint": "SEA",
+      "auto_pick": true,
+      "archetype": "aw11_colonnade_city",
+      "specialty": "olive_oil",
+      "intro": "昔兰尼在今利比亚东部的高地上，是古希腊人在北非建立的城市，后来归罗马管辖，通过山下的港口和地中海各地通商。",
+      "scenery": "阿波罗神庙和宙斯神庙的石柱立在山坡上，柱廊大街通向广场；城外的高原上种满橄榄树。",
+      "text_from": "catalogue_final",
+      "epithet": "北非高原上的希腊古城",
+      "history": "昔兰尼约在公元前7世纪由希腊移民建立，是北非最重要的希腊城市之一。它通过山下的阿波罗尼亚港和地中海各地做生意，当地出产的罗盘草是很名贵的药材和调味品。后来昔兰尼归罗马管辖，城里修建了许多神庙和公共建筑。",
+      "sights": "山坡上有阿波罗圣所的神庙和泉水，宙斯神庙的巨大石柱，还有剧场和柱廊大街。",
+      "historical_period": "公元前7世纪至罗马帝国时期",
+      "modern_reference": "利比亚舍哈特附近的昔兰尼遗址",
+      "seed_xz": [
+        20.562,
+        26.688
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "kayseri",
+      "name": "开塞利",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw08_fairy_chimney_town",
+      "specialty": "carpet",
+      "intro": "开塞利在今土耳其中部高原，古时叫凯撒利亚。几百年前，往来的商队常在城外的大驿站里歇脚。",
+      "scenery": "城南立着积雪的埃尔吉耶斯火山；不远的山谷里，石柱像一根根大蘑菇，人们在里面凿出房间。",
+      "text_from": "catalogue_final",
+      "epithet": "火山脚下的高原商城",
+      "history": "开塞利古称凯撒利亚，是卡帕多奇亚地区的中心城市。塞尔柱时代，安纳托利亚的商路上修起许多商队驿站，开塞利附近就有规模很大的驿站，东来西往的商队在这里歇脚、交易。附近山谷里的岩洞村落和教堂，是早期基督徒在软岩里凿出来的。",
+      "sights": "城南耸立着积雪的埃尔吉耶斯火山；附近的格雷梅山谷里立着一根根石柱，岩壁上凿满了洞穴和教堂。",
+      "historical_period": "罗马时代至塞尔柱时期",
+      "modern_reference": "土耳其开塞利省开塞利市",
+      "seed_xz": [
+        31.062,
+        17.938
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "aleppo",
+      "name": "阿勒颇",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw02_caravanserai_town",
+      "specialty": "laurel_soap",
+      "intro": "阿勒颇在今叙利亚北部，是世界上最古老的城市之一。中世纪的商队从这里出发，把货物运到地中海边的港口。",
+      "scenery": "土黄色的城堡高踞在山丘上，城下的有顶集市又长又深，小巷里飘着月桂皂的味道。",
+      "text_from": "catalogue_final",
+      "epithet": "城堡高踞的古老商城",
+      "history": "阿勒颇是世界上一直有人居住的最古老城市之一，位于地中海和两河流域之间的商路上。中世纪时，从东方来的丝绸和香料在这里集散，城里建起了长长的有顶集市和许多商队客栈。阿勒颇出产的月桂皂也远销各地。",
+      "sights": "土黄色的阿勒颇城堡高踞在城中的山丘上，城下是又长又深的有顶集市，还有古老的大清真寺。",
+      "historical_period": "古代至中世纪",
+      "modern_reference": "叙利亚阿勒颇",
+      "seed_xz": [
+        34.094,
+        20.037
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "petra",
+      "name": "佩特拉",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw05_rock_cut_town",
+      "specialty": "copper_jug",
+      "intro": "佩特拉在今约旦南部的峡谷里，是纳巴泰人的都城，控制着运送乳香和香料的商队之路。",
+      "scenery": "穿过又窄又深的峡谷，就能看到玫瑰色岩壁上整块雕出的宝库，石柱和门廊都刻在岩石里。",
+      "text_from": "catalogue_final",
+      "epithet": "玫瑰色峡谷里的石城",
+      "history": "佩特拉是纳巴泰人的都城。纳巴泰人控制着从阿拉伯半岛运送乳香、没药和香料的商队之路，在峡谷的岩壁上直接凿出陵墓和神庙。公元106年，这里被并入罗马帝国。后来商路改道，城市渐渐冷落，直到近代才被重新发现。",
+      "sights": "走过又窄又深的西克峡谷，就能看到在玫瑰色岩壁上雕出的“宝库”；山上还有巨大的“修道院”和剧场。",
+      "historical_period": "公元前4世纪至罗马帝国时期",
+      "modern_reference": "约旦马安省佩特拉遗址",
+      "seed_xz": [
+        33.656,
+        27.037
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "tbilisi",
+      "name": "第比利斯",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw12_snow_tower_village",
+      "specialty": "honey",
+      "intro": "第比利斯在高加索山区，是格鲁吉亚的古城。城名的意思是“温暖的地方”，因为城里有冒热气的温泉。",
+      "scenery": "老城沿着山坡而建，山顶立着古老的石头城堡；北方的高加索雪山终年积雪。",
+      "text_from": "catalogue_final",
+      "epithet": "温泉边的高加索古都",
+      "history": "第比利斯在高加索山区的库拉河谷里。相传5世纪时，国王瓦赫坦在这里打猎，发现了温泉，就在此建城；6世纪起，它成为格鲁吉亚人王国的都城。它位于黑海和里海之间的商路上，各地商人经过这里，城里住着许多不同民族的居民。",
+      "sights": "老城沿着山坡而建，纳里卡拉古堡立在山顶；河边有冒着热气的硫磺温泉浴室。",
+      "historical_period": "5世纪至中世纪",
+      "modern_reference": "格鲁吉亚首都第比利斯",
+      "seed_xz": [
+        40.031,
+        12.731
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "hormuz",
+      "name": "霍尔木兹",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw04_windcatcher_town",
+      "specialty": "pistachio",
+      "intro": "霍尔木兹在波斯湾出口的海峡边，中世纪是东西方货物的大集散地。马可·波罗曾两次来到这里。",
+      "scenery": "岛上的土石红白相间，几乎没有淡水；波斯湾沿岸人家在屋顶竖起捕风塔，把海风引进屋里乘凉。",
+      "text_from": "catalogue_final",
+      "epithet": "波斯湾口的货物集散港",
+      "history": "霍尔木兹守着波斯湾的出口，是印度洋和波斯湾之间的大港。中世纪时，印度的香料、宝石和中国的瓷器在这里上岸，再由商队运往波斯各地。13世纪末，马可·波罗往返途中两次经过这里；14世纪初，王国迁到海峡中的小岛上，继续做海上生意。",
+      "sights": "海岛上的土石红白相间，海边留着古城堡的遗址；沿岸人家在屋顶竖起捕风塔，把海风引进屋里。",
+      "historical_period": "10世纪至14世纪",
+      "modern_reference": "伊朗霍尔木兹甘省霍尔木兹岛一带",
+      "seed_xz": [
+        50.781,
+        30.931
+      ],
+      "seed_from": "catalogue_final board3d_suggested",
+      "note": "目录定稿写的是海港；棋盘上波斯湾离所有能挂海路的宿主都超过 36 u 的路长上限，所以按陆路挂巴格达（风塔之城陆海两用）。"
+    },
+    {
+      "id": "khiva",
+      "name": "希瓦",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw02_caravanserai_town",
+      "specialty": "melon",
+      "intro": "希瓦在花剌子模绿洲，今乌兹别克斯坦西部，四周都是沙漠。穿越沙漠的商队到了这里，就能进城歇脚、补充粮水。",
+      "scenery": "高高的土黄色城墙围着内城，集市里人来人往；这里的甜瓜又大又甜，远近闻名。",
+      "text_from": "catalogue_final",
+      "epithet": "沙漠里的土城绿洲",
+      "history": "希瓦在花剌子模绿洲，是阿姆河下游的古城。穿越克孜勒库姆和卡拉库姆沙漠的商队，都要在花剌子模的绿洲城市里补充粮食和水。中世纪时，花剌子模出产的甜瓜十分有名，曾被装进铅盒、垫上冰块送往巴格达。",
+      "sights": "高大的土黄色城墙围着内城伊钦卡拉，城里的清真寺、宣礼塔和宫殿挨挨挤挤。",
+      "historical_period": "古代至中世纪（现存老城多为后世重建）",
+      "modern_reference": "乌兹别克斯坦花剌子模州希瓦",
+      "seed_xz": [
+        50.969,
+        12.775
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "herat",
+      "name": "赫拉特",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw01_oasis_citadel",
+      "specialty": "saffron",
+      "intro": "赫拉特在今阿富汗西部的河谷绿洲里，是连接波斯和中亚的商路要冲，也是呼罗珊地区的四大名城之一。",
+      "scenery": "土黄色的古城堡高踞城中，城外是果园和麦田；到了秋天，田里开满紫色的番红花。",
+      "text_from": "catalogue_final",
+      "epithet": "呼罗珊的河谷明珠",
+      "history": "赫拉特在哈里河谷的绿洲里，是连接波斯、中亚和印度的商路要冲，也是呼罗珊地区的名城。城里的古城堡相传最早可以追溯到亚历山大东征的时代。13世纪，城市曾被蒙古军队毁坏，后来又重建并兴盛起来。",
+      "sights": "土黄色的古城堡高踞城中，城墙上立着一座座圆塔楼；城外是果园、麦田和一道道水渠。",
+      "historical_period": "古代至中世纪",
+      "modern_reference": "阿富汗赫拉特",
+      "seed_xz": [
+        53.812,
+        21.787
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "samarkand",
+      "name": "撒马尔罕",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw03_blue_dome_bazaar",
+      "specialty": "pomegranate",
+      "intro": "撒马尔罕在今乌兹别克斯坦，是中亚最古老的城市之一。粟特商人从这里出发，把丝路生意一直做到长安。",
+      "scenery": "高大的彩砖门楼和蓝绿色的圆顶闪闪发亮，集市里水果堆成小山。",
+      "text_from": "catalogue_final",
+      "epithet": "粟特商人的丝路故乡",
+      "history": "撒马尔罕是中亚最古老的城市之一，古时是粟特人的中心。粟特商人擅长长途贸易，把生意从这里一直做到中国的长安。唐朝时，玄奘西行取经也经过这里，称它为“飒秣建国”。13世纪它毁于蒙古军队，后来在旧城旁边重建。",
+      "sights": "雷吉斯坦广场三面都是贴满彩砖的高大门楼，蓝绿色的圆顶在阳光下闪闪发亮。",
+      "historical_period": "公元前7世纪至中世纪",
+      "modern_reference": "乌兹别克斯坦撒马尔罕",
+      "seed_xz": [
+        54.062,
+        15.794
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "aswan",
+      "name": "阿斯旺",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": false,
+      "archetype": "aw10_noria_town",
+      "specialty": "papyrus",
+      "intro": "阿斯旺在埃及南部的尼罗河边，古时叫赛伊尼，是埃及通往南方努比亚的门户，船队和驼队在这里转运货物。",
+      "scenery": "尼罗河在这里被礁石分成许多小岛，白帆小船穿行其间；河岸上牛拉的木水车转个不停。",
+      "text_from": "catalogue_final",
+      "epithet": "尼罗河上的南方门户",
+      "history": "阿斯旺古称赛伊尼，在尼罗河第一瀑布附近，是古埃及南方的边城，也是通往努比亚的门户。船队和驼队在这里转运黄金、象牙和石料，附近采石场出产的花岗岩被运去修建神庙和方尖碑。",
+      "sights": "尼罗河被礁石分成许多小岛，菲莱神庙立在岛上；古采石场里还躺着一座没有完工的方尖碑。",
+      "historical_period": "古埃及至罗马时期",
+      "modern_reference": "埃及阿斯旺省阿斯旺",
+      "seed_xz": [
+        29.312,
+        38.281
+      ],
+      "seed_from": "catalogue_final board3d_suggested",
+      "note": "目录定稿把它放在西侧名池；按 R6，开罗只有海路、吉达的陆路要跨红海，阿斯旺没有能挂的陆路宿主，所以只「认得」、不参与补城。"
+    },
+    {
+      "id": "bukhara",
+      "name": "布哈拉",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw03_blue_dome_bazaar",
+      "specialty": "melon",
+      "intro": "布哈拉在今乌兹别克斯坦，是中亚的绿洲古城。九到十世纪萨曼王朝定都在这里，城里学者和商人云集。",
+      "scenery": "高高的卡扬宣礼塔俯瞰全城，带圆顶的集市连着一条条小巷。",
+      "text_from": "wp6a",
+      "epithet": "圆顶集市里的学问之城",
+      "history": "布哈拉是泽拉夫尚河下游的绿洲城市，和撒马尔罕一样是粟特人的故乡。9到10世纪，萨曼王朝以布哈拉为都城，这里成为伊斯兰世界的学术中心，著名医学家伊本·西那就在这一带长大。1220年，城市被成吉思汗攻破，后来又慢慢恢复。",
+      "sights": "12世纪建成的卡扬宣礼塔高四十多米，相传成吉思汗进城时也没有拆掉它；老城里还有几座带圆顶的集市。",
+      "historical_period": "古代至中世纪",
+      "modern_reference": "乌兹别克斯坦布哈拉州布哈拉",
+      "seed_xz": [
+        54.024,
+        14.775
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "yazd",
+      "name": "亚兹德",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw04_windcatcher_town",
+      "specialty": "pistachio",
+      "intro": "亚兹德在今伊朗中部的沙漠边上，是古老的商路驿城。马可·波罗路过时，记下了这里织造的丝织品。",
+      "scenery": "土黄色的城里竖着一座座捕风塔，地下水渠把远山的雪水引进城。",
+      "text_from": "wp6a",
+      "epithet": "沙漠里的捕风塔之城",
+      "history": "亚兹德位于伊朗高原中部，四周被沙漠环绕，是穿越沙漠的商队歇脚的绿洲城市。为了在干旱炎热的地方生活，人们挖地下水渠把雪山融水引进城，又在屋顶建起捕风塔引风降温。13世纪，马可·波罗路过这里，记下了当地织造的丝织品。",
+      "sights": "老城里土坯房屋挤在一起，屋顶竖着许多方形捕风塔；聚礼清真寺的高门楼贴着蓝色瓷砖。",
+      "historical_period": "中世纪",
+      "modern_reference": "伊朗亚兹德省亚兹德",
+      "seed_xz": [
+        49.228,
+        24.487
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "tabriz",
+      "name": "大不里士",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw02_caravanserai_town",
+      "specialty": "carpet",
+      "intro": "大不里士在今伊朗西北部，十三世纪是伊儿汗国的都城，东西方的商人和使节在这里往来不绝。",
+      "scenery": "巨大的有顶集市里巷道纵横，店铺里铺满地毯，驼队在客栈院子里卸货。",
+      "text_from": "wp6a",
+      "epithet": "伊儿汗国的繁华都城",
+      "history": "大不里士位于伊朗高原西北部，是连接波斯、安纳托利亚和高加索的交通要地。13世纪后期，蒙古人建立的伊儿汗国以这里为都城，城市空前繁荣。马可·波罗说这里是买卖各种货物的大商城，威尼斯和热那亚的商人也常来这里做生意。",
+      "sights": "大不里士有顶集市是世界上最大的有顶集市之一，砖砌的圆顶一个连着一个，里面有客栈、清真寺和学校。",
+      "historical_period": "13世纪至14世纪",
+      "modern_reference": "伊朗东阿塞拜疆省大不里士",
+      "seed_xz": [
+        43.84,
+        16.187
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "damascus",
+      "name": "大马士革",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw03_blue_dome_bazaar",
+      "specialty": "copper_jug",
+      "intro": "大马士革在今叙利亚，是世界上最古老的城市之一。七世纪倭马亚王朝定都在这里，这里成了商旅云集的大城。",
+      "scenery": "倭马亚大清真寺的宣礼塔高高耸立，集市里叮叮当当地敲着铜器。",
+      "text_from": "wp6a",
+      "epithet": "绿洲里的古老都城",
+      "history": "大马士革坐落在叙利亚沙漠边缘的古塔绿洲里，是世界上一直有人居住的最古老城市之一。661年起，倭马亚王朝以这里为都城，统治着从西班牙到中亚的辽阔土地。城里的工匠擅长打造金属器物，商队从这里出发，前往巴格达、麦加和地中海边的港口。",
+      "sights": "倭马亚大清真寺的墙上贴着金色的马赛克；老城里的直街和有顶集市人来人往。",
+      "historical_period": "古代至中世纪，重点为7至8世纪",
+      "modern_reference": "叙利亚首都大马士革",
+      "seed_xz": [
+        33.044,
+        23.846
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "antioch",
+      "name": "安条克",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw11_colonnade_city",
+      "specialty": "laurel_soap",
+      "intro": "安条克在今土耳其南部的奥龙特斯河边，由塞琉古王朝建立，罗马时代是东方最大的城市之一。",
+      "scenery": "宽阔的柱廊大街贯穿全城，两旁商铺林立，城后的山上筑着城墙。",
+      "text_from": "wp6a",
+      "epithet": "奥龙特斯河畔的罗马大城",
+      "history": "安条克建于公元前300年，是塞琉古王朝的都城。罗马时代，它和亚历山大港一样是帝国东部最大的城市之一，城里有一条长长的柱廊大街。从东方经叙利亚沙漠运来的丝绸和香料，常经过这里再运往地中海。",
+      "sights": "古城遗址出土了大量精美的马赛克地板；城边山崖上的圣彼得洞穴教堂，据说是最早的教堂之一。",
+      "historical_period": "公元前300年至中世纪",
+      "modern_reference": "土耳其哈塔伊省安塔基亚",
+      "seed_xz": [
+        32.613,
+        20.356
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "trebizond",
+      "name": "特拉比松",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw02_caravanserai_town",
+      "specialty": "honey",
+      "intro": "特拉比松就是今土耳其的特拉布宗，在黑海南岸，古希腊人在这里建城。从波斯来的商队在这里把货物装上船。",
+      "scenery": "城市依山面海，古城墙沿着两道深谷而建，港湾里停着帆船。",
+      "text_from": "wp6a",
+      "epithet": "黑海南岸的商路终点",
+      "history": "特拉比松由古希腊移民在公元前8世纪建立，后来归属罗马和拜占庭。1204年以后，这里成为特拉比松帝国的都城。从大不里士出发的商队翻山越岭来到这里，把丝绸和香料装船运往君士坦丁堡和意大利，城市因此繁荣起来。",
+      "sights": "老城建在两道深谷之间的台地上；圣索菲亚教堂里保存着拜占庭时代的壁画。",
+      "historical_period": "公元前8世纪至15世纪",
+      "modern_reference": "土耳其特拉布宗",
+      "seed_xz": [
+        35.671,
+        13.927
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "kabul",
+      "name": "喀布尔",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw01_oasis_citadel",
+      "specialty": "pomegranate",
+      "intro": "喀布尔在今阿富汗东部的山谷里，扼守通往印度的山口，是往来中亚和印度的商队必经之地。",
+      "scenery": "城市夹在群山之间，山坡上筑着古老的城墙，河谷里是一片片果园。",
+      "text_from": "wp6a",
+      "epithet": "群山怀抱的山口之城",
+      "history": "喀布尔位于兴都库什山南麓的河谷里，往东越过开伯尔山口，就能到达印度平原。从中亚来的商队和僧人翻过大山，常在这里歇脚，再南下印度。这座城历史悠久，几千年来多次易主，是佛教和各种文化交汇的地方。",
+      "sights": "老城南面山脊上的古城墙蜿蜒起伏；城里的巴布尔花园种满树木，一层层顺着山坡而下。",
+      "historical_period": "古代至中世纪",
+      "modern_reference": "阿富汗首都喀布尔",
+      "seed_xz": [
+        58.691,
+        21.554
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "ravenna",
+      "name": "拉文纳",
+      "side_hint": "W",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "aw11_colonnade_city",
+      "specialty": "olive_oil",
+      "intro": "拉文纳在今意大利东北部，五世纪时是西罗马帝国的都城，后来又归拜占庭帝国管辖。",
+      "scenery": "朴素的砖砌教堂里，墙上和穹顶上贴满金光闪闪的马赛克。",
+      "text_from": "wp6a",
+      "epithet": "金色马赛克的古都",
+      "history": "拉文纳靠近亚得里亚海，四周曾是沼泽，易守难攻。402年，西罗马帝国把都城迁到这里；帝国灭亡以后，它又先后成为东哥特王国的都城和拜占庭帝国在意大利的统治中心。城外的克拉塞港停泊着帝国的舰队，也迎接东方来的商船。",
+      "sights": "圣维塔莱教堂和加拉·普拉西提阿陵墓里，保存着五六世纪的彩色马赛克，画着皇帝、皇后和满天星空。",
+      "historical_period": "5世纪至8世纪",
+      "modern_reference": "意大利拉文纳",
+      "seed_xz": [
+        13.751,
+        16.686
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "sohar",
+      "name": "苏哈尔",
+      "side_hint": "W",
+      "route_hint": "SEA",
+      "auto_pick": true,
+      "archetype": "aw04_windcatcher_town",
+      "specialty": "copper_jug",
+      "intro": "苏哈尔在今阿曼北部的阿曼湾边，十世纪时是阿曼最大的港口，传说是航海家辛巴达的故乡。",
+      "scenery": "白色的城堡立在海边，港湾里停满三角帆船，码头上人来人往。",
+      "text_from": "wp6a",
+      "epithet": "辛巴达故乡的海港",
+      "history": "苏哈尔在阿曼湾沿岸，古称马宗，附近山区自古出产铜。中世纪时，它是阿曼最大、最繁华的港口，阿拉伯商船从这里出发，航行到印度、东南亚，甚至中国的广州。《一千零一夜》里航海家辛巴达的故事，也传说和这里有关。",
+      "sights": "海边的白色苏哈尔城堡保存至今；古港一带发掘出过从远方运来的陶瓷碎片。",
+      "historical_period": "中世纪，约9至10世纪最盛",
+      "modern_reference": "阿曼北巴提奈省苏哈尔",
+      "seed_xz": [
+        50.949,
+        34.645
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "berenice",
+      "name": "贝勒尼基",
+      "side_hint": "W",
+      "route_hint": "SEA",
+      "auto_pick": true,
+      "archetype": "aw06_lighthouse_port",
+      "specialty": "papyrus",
+      "intro": "贝勒尼基在今埃及东南的红海岸边，由托勒密王朝建立，罗马时代是通往印度的大港。",
+      "scenery": "海边沙丘间立着神庙和仓库，商船乘着季风开往印度。",
+      "text_from": "wp6a",
+      "epithet": "红海边通往印度的古港",
+      "history": "贝勒尼基约在公元前275年由托勒密二世建立，用他母亲的名字命名。罗马时代，商船每年乘季风从这里出发前往印度，运回胡椒、宝石和棉布，货物再由骆驼穿过东部沙漠运到尼罗河边。考古学家在遗址里发现过来自印度的胡椒和柚木。",
+      "sights": "遗址在荒凉的海岸上，残存着塞拉皮斯神庙的石墙和港口仓库的遗迹。",
+      "historical_period": "公元前3世纪至公元6世纪",
+      "modern_reference": "埃及红海省贝勒尼基遗址",
+      "seed_xz": [
+        32.506,
+        34.933
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "alexandria",
+      "name": "亚历山大港",
+      "side_hint": "W",
+      "route_hint": "SEA",
+      "auto_pick": false,
+      "archetype": "aw06_lighthouse_port",
+      "specialty": "papyrus",
+      "intro": "亚历山大港在今埃及北部的地中海边，由亚历山大大帝建立，古时以灯塔和图书馆闻名世界。",
+      "scenery": "港口外的法罗斯岛上立着高大的灯塔，夜里火光照着进港的商船。",
+      "text_from": "wp6a",
+      "epithet": "灯塔与图书馆的古都",
+      "history": "亚历山大港建于公元前331年，后来是托勒密王朝的都城。城外法罗斯岛上的灯塔是古代世界七大奇迹之一，城里的大图书馆收藏了大量书卷。罗马时代，它是地中海东部最大的港口，印度和阿拉伯运来的香料经红海和尼罗河转运到这里，再运往罗马。",
+      "sights": "古灯塔的原址上建起了盖特贝城堡；海边的新亚历山大图书馆纪念着古代的大图书馆。",
+      "historical_period": "公元前4世纪至罗马帝国时期",
+      "modern_reference": "埃及亚历山大省亚历山大",
+      "note": "目录定稿不放进名池：棋盘上离开罗太近。孩子起这个名字时仍然「认得」。"
+    },
+    {
+      "id": "gaochang",
+      "name": "高昌",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae07_grape_oasis",
+      "specialty": "raisins",
+      "intro": "高昌在今新疆吐鲁番，是丝绸之路上的绿洲古城。唐朝时，玄奘西行取经曾在这里停留讲经。",
+      "scenery": "火焰山的红色山岩在热浪里闪动，山下的葡萄沟一片翠绿，晾房把葡萄晾成葡萄干。",
+      "text_from": "catalogue_final",
+      "epithet": "火焰山下的绿洲古国",
+      "history": "高昌在吐鲁番盆地，汉代在这里屯田戍守，后来发展成高昌国，是丝绸之路北道上的重要绿洲。630年前后，玄奘西行路过这里，高昌王麴文泰热情挽留他讲经。640年唐朝在这里设立西州，吐鲁番的葡萄很早就十分有名。",
+      "sights": "高昌故城的夯土城墙还立在戈壁上；北边的火焰山红岩起伏，葡萄沟里满是葡萄架。",
+      "historical_period": "汉代至元代",
+      "modern_reference": "中国新疆吐鲁番市高昌故城",
+      "seed_xz": [
+        70.938,
+        8.969
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "karakorum",
+      "name": "哈拉和林",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae06_yurt_market",
+      "specialty": "cheese",
+      "intro": "哈拉和林在今蒙古国中部的鄂尔浑河谷，是蒙古帝国早期的都城，各国使节、商人和工匠都来过这里。",
+      "scenery": "辽阔的草原上，毡房像白蘑菇一样连成一片；牧民赶着马群和羊群，在城外的集市上交换货物。",
+      "text_from": "catalogue_final",
+      "epithet": "草原帝国的早期都城",
+      "history": "哈拉和林在蒙古高原的鄂尔浑河谷。1235年窝阔台汗在这里修建都城，城里有宫殿、市场和各种宗教的寺院，来自欧洲、中亚和中国的使节、商人和工匠都曾到过这里。忽必烈迁都以后，这里逐渐冷落。",
+      "sights": "古城遗址旁有额尔德尼召寺院，寺墙上立着一百多座白塔；城外是开阔的鄂尔浑河谷草原。",
+      "historical_period": "13世纪",
+      "modern_reference": "蒙古国前杭爱省哈拉和林",
+      "seed_xz": [
+        84.625,
+        5.688
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "lhasa",
+      "name": "逻些",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae05_snow_monastery_town",
+      "specialty": "highland_barley",
+      "intro": "逻些就是今天的拉萨，是吐蕃王朝的都城。唐朝时文成公主沿唐蕃古道来到这里，带来了中原的工匠和书籍。",
+      "scenery": "红山上建起了宫殿，城中有大昭寺，经幡在高原的风里飘动；河谷里种着青稞，牦牛慢慢走过。",
+      "text_from": "catalogue_final",
+      "epithet": "雪域高原上的吐蕃都城",
+      "history": "逻些就是今天的拉萨，7世纪松赞干布统一吐蕃后在这里建都。641年，唐朝的文成公主远嫁吐蕃，沿着唐蕃古道来到逻些，带来了工匠、书籍和佛像。唐蕃古道把长安和逻些连在一起，茶叶、丝绸和高原的马匹、药材在这条路上往来。",
+      "sights": "红山上的布达拉宫层层叠叠，老城中心是大昭寺，转经的人群沿着八廓街缓缓前行。",
+      "historical_period": "7世纪至9世纪（吐蕃王朝）",
+      "modern_reference": "中国西藏自治区拉萨市",
+      "seed_xz": [
+        78.125,
+        25.987
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "pataliputra",
+      "name": "华氏城",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae11_ghat_town",
+      "specialty": "cotton",
+      "intro": "华氏城在今印度东部的恒河岸边，是古印度好几个王朝的都城。一千六百年前，中国僧人法显曾在这里学习。",
+      "scenery": "宽阔的恒河缓缓流过，石阶一级级伸进河里，人们在河边洗衣、打水、晾晒棉布。",
+      "text_from": "catalogue_final",
+      "epithet": "恒河岸边的古印度都城",
+      "history": "华氏城在恒河南岸，是古印度摩揭陀国和孔雀王朝的都城，阿育王就在这里统治过几乎整个印度。四五世纪笈多王朝时，它依然繁荣。东晋高僧法显曾在这里住了三年，学习梵文、抄写佛经。",
+      "sights": "今天的巴特那城下埋着古都的遗址，出土过孔雀王朝大殿的石柱；宽阔的恒河从城北流过。",
+      "historical_period": "公元前5世纪至公元5世纪",
+      "modern_reference": "印度比哈尔邦巴特那",
+      "seed_xz": [
+        77.281,
+        32.725
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "changsha",
+      "name": "长沙",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae01_kiln_town",
+      "specialty": "tung_oil",
+      "intro": "长沙在湖南湘江边。唐朝时城外的铜官窑烧出大量彩绘瓷器，经江河运到海港，再卖到西亚。",
+      "scenery": "湘江边的山坡上，长长的窑顺坡而上，窑火通红；瓷碗上画着花鸟，还写着有趣的诗句。",
+      "text_from": "catalogue_final",
+      "epithet": "湘江边的彩瓷窑城",
+      "history": "长沙在湘江下游，秦代就设了长沙郡。唐朝时，城北的铜官窑烧出大量带彩绘和诗句的瓷器，沿湘江、长江运到扬州、广州等港口，再装船卖到东南亚和西亚。在印度尼西亚发现的唐代“黑石号”沉船上，就装着五万多件长沙窑瓷器。",
+      "sights": "湘江西岸的岳麓山林木葱郁，山下有岳麓书院；城北的铜官镇还留着唐代长沙窑的遗址。",
+      "historical_period": "唐代（长沙窑兴盛的时期）",
+      "modern_reference": "中国湖南省长沙市",
+      "seed_xz": [
+        96.219,
+        25.594
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "yangzhou",
+      "name": "扬州",
+      "side_hint": "E",
+      "route_hint": "SEA",
+      "auto_pick": true,
+      "archetype": "ae02_canal_town",
+      "specialty": "oil_paper_umbrella",
+      "intro": "扬州在长江和大运河交汇的地方。唐朝时这里是大商港，常住着阿拉伯和波斯商人，扬州高僧鉴真还东渡去了日本。",
+      "scenery": "城里河道纵横，石桥一座接一座；湖边杨柳依依，小船在桥下慢慢穿行。",
+      "text_from": "catalogue_final",
+      "epithet": "运河与长江交汇的名城",
+      "history": "扬州在长江北岸，大运河在这里和长江相交，是南北水运的枢纽。唐朝时扬州商业繁荣，城里住着许多阿拉伯和波斯商人，有“扬一益二”的说法。扬州大明寺的高僧鉴真六次东渡，终于到达日本，传去了佛法和建筑、医药知识。",
+      "sights": "瘦西湖边柳树成行，石桥一座连着一座；古运河从城边流过，大明寺立在蜀冈上。",
+      "historical_period": "隋唐至宋元",
+      "modern_reference": "中国江苏省扬州市",
+      "seed_xz": [
+        101.812,
+        19.6
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "xuancheng",
+      "name": "宣城",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae09_paper_village",
+      "specialty": "xuan_paper",
+      "intro": "宣城古称宣州，在今安徽南部。这一带出产的纸洁白柔韧，唐代就被选作贡品，因为出自宣州，所以叫宣纸。",
+      "scenery": "青山绿水之间，白墙黑瓦的村落依山而建；纸坊里，工匠把一张张湿纸贴在墙上烘干。",
+      "text_from": "catalogue_final",
+      "epithet": "宣纸得名的江南古城",
+      "history": "宣城古称宣州，在今安徽南部，东晋南朝时已是江南的名郡。唐代宣州一带出产的纸洁白柔韧、久放不坏，被选作贡品，因为出自宣州，所以叫宣纸。这一带还出产好笔，是有名的文房之乡。",
+      "sights": "敬亭山因为李白的诗“相看两不厌，只有敬亭山”而出名；泾县的纸坊里，工匠一张张捞纸、晒纸。",
+      "historical_period": "唐代以来",
+      "modern_reference": "中国安徽省宣城市",
+      "seed_xz": [
+        100.094,
+        20.956
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "balhae_sanggyeong",
+      "name": "渤海上京",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae10_pine_hill_town",
+      "specialty": "pine_nuts",
+      "intro": "上京龙泉府是渤海国的都城，在今黑龙江宁安。渤海国仿照唐朝长安修建都城，被称为“海东盛国”。",
+      "scenery": "城外是茂密的红松林和镜泊湖，城里古寺前立着一座高高的石灯幢，雕刻得十分精美。",
+      "text_from": "catalogue_final",
+      "epithet": "海东盛国的仿唐都城",
+      "history": "上京龙泉府是渤海国的都城，在今黑龙江宁安。渤海国和唐朝往来密切，派人到长安学习，都城也仿照长安修建，有宫城、皇城和棋盘一样的街道，被称为“海东盛国”。926年，渤海国被契丹所灭。",
+      "sights": "遗址上还能看到宫殿的石台基和城墙；兴隆寺里的石灯幢高约六米，是渤海国留下的珍品。",
+      "historical_period": "8世纪至10世纪",
+      "modern_reference": "中国黑龙江省宁安市渤海镇",
+      "seed_xz": [
+        108.625,
+        7.175
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "jiaozhou",
+      "name": "交州",
+      "side_hint": "E",
+      "route_hint": "SEA",
+      "auto_pick": true,
+      "archetype": "ae04_stilt_village",
+      "specialty": "star_anise",
+      "intro": "交州在今越南北部的红河三角洲，一千多年前就是南海航线上的重要港口，各地商船在这里停靠。",
+      "scenery": "红河带来肥沃的泥土，稻田一望无际；水边的高脚木屋下，小船载着香料往来。",
+      "text_from": "catalogue_final",
+      "epithet": "红河口的南海古港",
+      "history": "交州在红河三角洲，汉代设交趾郡，后来称交州，是中原王朝在南方的重要州郡。它地处南海航线上，东南亚和印度来的商船在这里停靠，运来香料、珍珠和象牙，佛教也经海路传到这里。",
+      "sights": "红河带来的泥土冲积成大片稻田；附近的古螺城城墙像螺壳一样一圈圈盘绕。",
+      "historical_period": "汉代至唐代",
+      "modern_reference": "越南北部红河三角洲，今河内一带",
+      "seed_xz": [
+        94.031,
+        33.119
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "side_hint": "E",
+      "route_hint": "SEA",
+      "auto_pick": true,
+      "archetype": "ae12_shipyard_port",
+      "specialty": "sugarcane",
+      "intro": "广州古称番禺，在珠江入海口，自秦汉起就是海上丝绸之路的大港，外国商船常常在这里靠岸。",
+      "scenery": "珠江边的船厂里，工匠正在造大木船；码头上堆满瓷器、蔗糖和香料，各国商人来来往往。",
+      "text_from": "catalogue_final",
+      "epithet": "海上丝路的千年大港",
+      "history": "广州古称番禺，秦汉时已是岭南的大城和海港。唐朝在这里设立市舶使，专门管理海外贸易，城里有专供外国商人居住的蕃坊。码头上，商船运来香料和象牙，又运走丝绸和瓷器。",
+      "sights": "珠江从城南流过，南海神庙立在江边；怀圣寺的光塔是古代商船进港的地标。",
+      "historical_period": "秦汉至宋元",
+      "modern_reference": "中国广东省广州市",
+      "seed_xz": [
+        97.656,
+        31.5
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "dengzhou",
+      "name": "登州",
+      "side_hint": "E",
+      "route_hint": "SEA",
+      "auto_pick": true,
+      "archetype": "ae12_shipyard_port",
+      "specialty": "folding_fan",
+      "intro": "登州在今山东蓬莱，是唐朝时通往朝鲜半岛和日本的出海口，新罗和日本的使者、商人常在这里上岸。",
+      "scenery": "海边山崖上立着蓬莱阁，传说八仙从这里过海；港湾里停满木船，商人摇着折扇上岸。",
+      "text_from": "catalogue_final",
+      "epithet": "通往新罗日本的出海口",
+      "history": "登州在山东半岛北端，唐朝时是通往朝鲜半岛和日本的重要港口，新罗和日本的使者、僧人、商人常在这里上岸。日本僧人圆仁入唐求法时，曾在登州一带的新罗人寺院里住过。北宋前期，高丽使者也多从登州往来。",
+      "sights": "海边山崖上立着蓬莱阁，相传八仙从这里过海；港湾里泊着渔船和木帆船。",
+      "historical_period": "唐代至北宋",
+      "modern_reference": "中国山东省蓬莱一带",
+      "seed_xz": [
+        101.844,
+        15.05
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "guilin",
+      "name": "桂林",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae03_drum_tower_village",
+      "specialty": "tung_oil",
+      "intro": "桂林在广西东北部。秦朝开凿的灵渠就在附近，连通湘江和漓江，让北方的船能一路南下到广州出海。",
+      "scenery": "漓江两岸奇峰林立，江上竹筏悠悠；山里的侗寨立着鼓楼，村民用竹子编出各种器物。",
+      "text_from": "catalogue_final",
+      "epithet": "山水甲天下的漓江古城",
+      "history": "桂林在广西东北部，秦始皇时开凿的灵渠就在附近。灵渠连通湘江和漓江，让北方的船能一路南下到珠江和广州。从此桂林成为中原通往岭南的水路要道，唐宋时是广西的政治中心。",
+      "sights": "漓江两岸奇峰林立，江上竹筏悠悠；附近山区的侗寨立着鼓楼和风雨桥。",
+      "historical_period": "秦代以来",
+      "modern_reference": "中国广西壮族自治区桂林市",
+      "seed_xz": [
+        94.812,
+        29.137
+      ],
+      "seed_from": "catalogue_final board3d_suggested"
+    },
+    {
+      "id": "calicut",
+      "name": "古里",
+      "side_hint": "E",
+      "route_hint": "SEA",
+      "auto_pick": true,
+      "archetype": "ae11_ghat_town",
+      "specialty": "cotton",
+      "intro": "古里就是今印度的科泽科德，在印度西南的马拉巴尔海岸，是香料贸易的大港，印度棉布也从这里运往各地。",
+      "scenery": "椰树林里藏着港口，码头上堆着成捆的棉布，各国商船在这里靠岸。",
+      "text_from": "wp6a",
+      "epithet": "马拉巴尔海岸的香料港",
+      "history": "古里在印度西南的马拉巴尔海岸，12世纪以后成为印度洋上最繁忙的港口之一，由当地的扎莫林王统治。阿拉伯、波斯和中国的商船都来这里交易胡椒、生姜和棉布，英语里“印花棉布”这个词就来自古里的名字。14世纪，旅行家伊本·白图泰到过这里。",
+      "sights": "海边沙滩平缓，港口旁有古老的清真寺和市场；城外的椰树和胡椒园一眼望不到边。",
+      "historical_period": "12世纪至15世纪",
+      "modern_reference": "印度喀拉拉邦科泽科德",
+      "seed_xz": [
+        67.365,
+        50.198
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "datong",
+      "name": "大同",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae06_yurt_market",
+      "specialty": "cheese",
+      "intro": "大同古称平城，在今山西北部。北魏前期在这里定都近百年，并在城西的武周山开凿了云冈石窟。",
+      "scenery": "高大的城墙围着古城，城西的山崖上凿满石窟，大佛静静端坐。",
+      "text_from": "wp6a",
+      "epithet": "石窟大佛守望的北魏旧都",
+      "history": "大同地处农耕地区和草原的交界。398年，北魏迁都平城，这里成为北方的政治中心近一百年。北魏皇室在城西武周山开凿云冈石窟，工匠融合了印度、中亚和中原的艺术风格。494年北魏迁都洛阳以后，平城仍是北方的军事重镇。",
+      "sights": "云冈石窟第二十窟的露天大佛高约十四米；城里的华严寺、善化寺保存着辽金时代的木构大殿。",
+      "historical_period": "北魏（4至5世纪）",
+      "modern_reference": "中国山西省大同市",
+      "seed_xz": [
+        93.173,
+        11.977
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "kucha",
+      "name": "龟兹",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae07_grape_oasis",
+      "specialty": "raisins",
+      "intro": "龟兹在今新疆库车一带，是丝路北道上的佛教古国，以音乐和舞蹈闻名，高僧鸠摩罗什就出生在这里。",
+      "scenery": "天山脚下的河谷里，崖壁上开凿着一排排石窟，窟里画满飞天和乐师。",
+      "text_from": "wp6a",
+      "epithet": "天山脚下的乐舞之国",
+      "history": "龟兹是塔里木盆地北缘的绿洲古国，汉代和西域都护府往来密切，唐朝在这里设立安西都护府。龟兹人信奉佛教，擅长音乐舞蹈，龟兹乐传入中原后大受欢迎。高僧鸠摩罗什出生在龟兹，后来到长安翻译了大量佛经。",
+      "sights": "克孜尔千佛洞开凿在渭干河边的崖壁上，洞窟里保存着彩色壁画；城外还有苏巴什佛寺遗址。",
+      "historical_period": "汉代至唐代",
+      "modern_reference": "中国新疆阿克苏地区库车市",
+      "seed_xz": [
+        67.678,
+        10.724
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "kaifeng",
+      "name": "开封",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae02_canal_town",
+      "specialty": "oil_paper_umbrella",
+      "intro": "开封古称汴京，是北宋的都城。汴河穿城而过，南方的粮食和货物顺着运河源源不断地运到这里。",
+      "scenery": "汴河上船只往来，虹桥上挤满行人，河岸边的店铺和饭馆一家挨着一家。",
+      "text_from": "wp6a",
+      "epithet": "清明上河图里的北宋都城",
+      "history": "开封地处中原腹地，战国时魏国曾在这里建都。北宋定都开封，称为东京，汴河连通大运河，南方的粮食、茶叶和海外来的香料都运到这里，城里人口超过百万。画家张择端的《清明上河图》，画的就是这时候汴河两岸的热闹景象。",
+      "sights": "开封铁塔用铁色琉璃砖砌成，已经站了九百多年；龙亭一带是北宋皇宫的旧址。",
+      "historical_period": "北宋（960—1127年）",
+      "modern_reference": "中国河南省开封市",
+      "seed_xz": [
+        94.518,
+        18.242
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "liangzhou",
+      "name": "凉州",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae07_grape_oasis",
+      "specialty": "raisins",
+      "intro": "凉州就是今甘肃武威，在河西走廊东段，汉武帝时设武威郡，是中原通往西域的第一座大城。",
+      "scenery": "祁连山的雪水浇灌出大片绿洲，城里商旅云集，驼铃声声。",
+      "text_from": "wp6a",
+      "epithet": "河西走廊上的边塞重镇",
+      "history": "凉州位于河西走廊东端，汉武帝设武威郡以后，一直是西北的军政中心和商业大城。东晋十六国时，前凉、后凉等政权曾在这里建都。唐代凉州十分繁华，西域的音乐和胡商聚集在这里，唐诗里的《凉州词》唱的就是这里的边塞风光。",
+      "sights": "雷台汉墓出土了青铜奔马“马踏飞燕”，如今是中国旅游的标志；城里还有古老的罗什寺塔。",
+      "historical_period": "汉代至唐代",
+      "modern_reference": "中国甘肃省武威市",
+      "seed_xz": [
+        84.372,
+        15.037
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "madurai",
+      "name": "马杜赖",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": true,
+      "archetype": "ae11_ghat_town",
+      "specialty": "cotton",
+      "intro": "马杜赖在今印度南部的韦盖河边，是古代潘地亚王国的都城，两千多年前就和罗马有生意往来。",
+      "scenery": "高大的彩色塔门上雕满神像，城里的集市堆满棉布和花环。",
+      "text_from": "wp6a",
+      "epithet": "南印度的古老神庙之城",
+      "history": "马杜赖是南印度最古老的城市之一，古时是潘地亚王国的都城。潘地亚王国控制着南方海边的采珠场，和罗马、希腊有海上贸易，南印度出土过许多罗马金币。古泰米尔语的桑伽姆诗歌，相传就是在马杜赖的诗人集会上编成的。",
+      "sights": "米纳克希神庙的塔门高高耸立，外墙上挤满彩色神像；城边的韦盖河缓缓流过。",
+      "historical_period": "公元前3世纪至14世纪",
+      "modern_reference": "印度泰米尔纳德邦马杜赖",
+      "seed_xz": [
+        69.038,
+        51.756
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "palembang",
+      "name": "巨港",
+      "side_hint": "E",
+      "route_hint": "SEA",
+      "auto_pick": true,
+      "archetype": "ae04_stilt_village",
+      "specialty": "sugarcane",
+      "intro": "巨港在今印度尼西亚苏门答腊岛东南，是七到十一世纪海上强国室利佛逝的中心，唐朝高僧义净曾在这里学习。",
+      "scenery": "宽阔的穆西河上漂着木排屋，高脚木屋沿河排开，小船穿梭不停。",
+      "text_from": "wp6a",
+      "epithet": "室利佛逝的海上佛国都城",
+      "history": "巨港位于苏门答腊岛的穆西河边，7至11世纪是室利佛逝王国的中心。室利佛逝控制着马六甲海峡一带的海路，往来中国和印度的商船都要在这里停靠。唐朝高僧义净往返印度时，曾在这里住了多年，学习梵文、翻译佛经。",
+      "sights": "穆西河两岸是高脚木屋和水上人家；城边出土过室利佛逝时代的佛像和石刻铭文。",
+      "historical_period": "7世纪至11世纪",
+      "modern_reference": "印度尼西亚南苏门答腊省巨港",
+      "seed_xz": [
+        95.027,
+        63.472
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "hakata",
+      "name": "博多",
+      "side_hint": "E",
+      "route_hint": "SEA",
+      "auto_pick": true,
+      "archetype": "ae12_shipyard_port",
+      "specialty": "folding_fan",
+      "intro": "博多在今日本福冈，是日本离亚洲大陆最近的港口。唐宋时，日本的使者、僧人和商人多从这里出海。",
+      "scenery": "博多湾里帆船进进出出，码头上商人来来往往，远处青山环抱。",
+      "text_from": "wp6a",
+      "epithet": "日本通往大陆的海上门户",
+      "history": "博多湾面向朝鲜半岛和中国，自古是日本对外交通的门户。奈良、平安时代，朝廷在这里设鸿胪馆，接待唐朝和新罗的使者、商人。宋代以后，许多中国商人在博多定居，带来了瓷器、铜钱和佛经。",
+      "sights": "鸿胪馆的遗址就在福冈城旧址里；博多的古寺承天寺，相传是宋朝商人出资修建的。",
+      "historical_period": "7世纪至14世纪",
+      "modern_reference": "日本福冈县福冈市博多区一带",
+      "seed_xz": [
+        111.681,
+        20.787
+      ],
+      "seed_from": "lon/lat fitted to the 16 original cities (affine + inverse-distance residuals, same method as the catalogue)"
+    },
+    {
+      "id": "jingdezhen",
+      "name": "景德镇",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": false,
+      "archetype": "ae01_kiln_town",
+      "specialty": "kaolin",
+      "intro": "景德镇是有名的瓷都，宋朝时以年号得名，附近高岭村的白泥就叫高岭土，是烧瓷最要紧的原料。",
+      "scenery": "龙窑顺着山坡往上爬，烟囱冒着青烟，河边堆满等着装船的白泥。",
+      "text_from": "wp6a",
+      "epithet": "窑火千年不熄的瓷都",
+      "history": "景德镇在江西东北部的昌江边，古称昌南镇。北宋景德年间，这里烧造的青白瓷得到皇帝赏识，镇子就以“景德”年号为名。元代朝廷在这里设立浮梁瓷局，瓷器沿江运到港口，远销海外。附近高岭村出产的瓷土又白又细，后来全世界都把这种瓷土叫作“高岭土”。",
+      "sights": "古窑民俗博览区里还能看到烧柴的古窑；御窑厂遗址出土了大量古代官窑瓷片。",
+      "historical_period": "宋元时期",
+      "modern_reference": "中国江西省景德镇市",
+      "note": "Carlos 的家乡示例（D4-A：默认特产高岭土），留给玩家自己加，不被系统补城抢用。"
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": false,
+      "archetype": "ae02_canal_town",
+      "specialty": "oil_paper_umbrella",
+      "intro": "杭州在大运河的南端，南宋时称临安，是当时的都城，也是世界上人口最多的城市之一。",
+      "scenery": "西湖上波光粼粼，断桥和苏堤横卧湖面，湖边游人撑着纸伞散步。",
+      "text_from": "wp6a",
+      "epithet": "西湖边的南宋都城",
+      "history": "杭州位于钱塘江口，隋朝开凿大运河以后，成为运河南端的重要城市。南宋把都城迁到杭州，称为临安，城里商铺林立、人口稠密。元代马可·波罗称它为“天城”，说它是世界上最美丽华贵的城市。",
+      "sights": "西湖三面环山，苏堤、白堤横跨湖上；灵隐寺藏在山林里，六和塔立在钱塘江边。",
+      "historical_period": "隋唐至宋元，重点为南宋",
+      "modern_reference": "中国浙江省杭州市"
+    },
+    {
+      "id": "mingzhou",
+      "name": "明州",
+      "side_hint": "E",
+      "route_hint": "SEA",
+      "auto_pick": false,
+      "archetype": "ae12_shipyard_port",
+      "specialty": "folding_fan",
+      "intro": "明州就是今浙江宁波，唐宋时是通往日本和高丽的大港，朝廷在这里设立市舶司管理海外贸易。",
+      "scenery": "三江口的码头上商船云集，工匠在船厂里造大木船，远处是舟山群岛。",
+      "text_from": "wp6a",
+      "epithet": "三江口的东海大港",
+      "history": "明州在余姚江、奉化江和甬江交汇的三江口，唐代开始成为重要海港。北宋时朝廷在这里设立市舶司，管理和日本、高丽之间的海上贸易，1074年以后高丽使者多从明州往来。许多日本僧人也从明州登岸，前往天台山等地求法。",
+      "sights": "天一阁是古老的私家藏书楼；三江口一带曾是繁忙的古码头，庆安会馆里供奉着航海的妈祖。",
+      "historical_period": "唐宋元时期",
+      "modern_reference": "中国浙江省宁波市"
+    },
+    {
+      "id": "luoyang",
+      "name": "洛阳",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": false,
+      "archetype": "ae09_paper_village",
+      "specialty": "xuan_paper",
+      "intro": "洛阳在黄河支流洛河边，东汉、北魏、隋唐等朝代都曾在这里建都，“洛阳纸贵”的故事就发生在这里。",
+      "scenery": "龙门石窟的大佛面朝伊河，城里牡丹盛开，街市上商旅往来。",
+      "text_from": "wp6a",
+      "epithet": "十三朝古都，牡丹花城",
+      "history": "洛阳地处中原，是中国历史上建都朝代最多的城市之一。东汉时，洛阳是丝绸之路东端的起点之一，佛教传入后在这里建起了白马寺。西晋文学家左思写成《三都赋》，人们争相抄写，一时纸价上涨，这就是“洛阳纸贵”。隋唐时洛阳是东都，运河把南北的货物都汇集到这里。",
+      "sights": "龙门石窟开凿在伊河两岸的山崖上，卢舍那大佛高约十七米；白马寺被称为中国第一座佛寺。",
+      "historical_period": "东汉至隋唐",
+      "modern_reference": "中国河南省洛阳市",
+      "note": "目录定稿不放进名池：棋盘上离长安太近。孩子起这个名字时仍然「认得」。"
+    },
+    {
+      "id": "dunhuang",
+      "name": "敦煌",
+      "side_hint": "E",
+      "route_hint": "LAND",
+      "auto_pick": false,
+      "archetype": "ae07_grape_oasis",
+      "specialty": "raisins",
+      "intro": "敦煌在今甘肃西北，是河西走廊西端的绿洲，出了阳关、玉门关就进入西域，莫高窟就在城东南。",
+      "scenery": "鸣沙山下的月牙泉像一弯新月，崖壁上凿满石窟，窟里画满飞天。",
+      "text_from": "wp6a",
+      "epithet": "鸣沙山下的石窟艺术宝库",
+      "history": "汉武帝设立敦煌郡，这里成为中原通往西域的门户，商队、使节和僧人都在这里补给。从4世纪起，人们在城东南鸣沙山的崖壁上开凿莫高窟，一直延续了一千年。20世纪初，藏经洞里发现了几万件古代写本和绢画，记录了丝路上各民族的生活。",
+      "sights": "莫高窟保存着七百多个洞窟和大片彩色壁画；鸣沙山环抱着月牙泉，沙丘下的泉水终年不干。",
+      "historical_period": "汉代至元代",
+      "modern_reference": "中国甘肃省敦煌市",
+      "note": "目录定稿不放进名池：棋盘上几乎和玉门关重叠。孩子起这个名字时仍然「认得」。"
+    }
+  ],
+  "partner_pool": {
+    "rome": {
+      "LAND": [
+        "ravenna"
+      ],
+      "SEA": [
+        "venice",
+        "carthage"
+      ]
+    },
+    "constantinople": {
+      "LAND": [
+        "kayseri",
+        "trebizond",
+        "antioch"
+      ]
+    },
+    "cairo": {
+      "SEA": [
+        "cyrene"
+      ]
+    },
+    "aden": {
+      "SEA": [
+        "sohar"
+      ]
+    },
+    "jeddah": {
+      "LAND": [
+        "petra",
+        "damascus"
+      ],
+      "SEA": [
+        "berenice"
+      ]
+    },
+    "baghdad": {
+      "LAND": [
+        "herat",
+        "tbilisi",
+        "aleppo",
+        "hormuz",
+        "tabriz",
+        "yazd"
+      ]
+    },
+    "panti": {
+      "LAND": [
+        "samarkand",
+        "khiva",
+        "bukhara",
+        "kabul"
+      ]
+    },
+    "delhi": {
+      "LAND": [
+        "pataliputra",
+        "lhasa"
+      ]
+    },
+    "simhala": {
+      "LAND": [
+        "madurai"
+      ],
+      "SEA": [
+        "calicut"
+      ]
+    },
+    "yumenguan": {
+      "LAND": [
+        "gaochang",
+        "karakorum",
+        "kucha",
+        "liangzhou"
+      ]
+    },
+    "dagon": {
+      "SEA": [
+        "palembang"
+      ]
+    },
+    "changan": {
+      "LAND": [
+        "changsha",
+        "guilin",
+        "xuancheng",
+        "kaifeng",
+        "datong"
+      ]
+    },
+    "chenla": {
+      "SEA": [
+        "jiaozhou",
+        "guangzhou"
+      ]
+    },
+    "geumseong": {
+      "LAND": [
+        "balhae_sanggyeong"
+      ],
+      "SEA": [
+        "dengzhou",
+        "yangzhou"
+      ]
+    },
+    "heijokyo": {
+      "SEA": [
+        "hakata"
+      ]
+    }
+  }
+}

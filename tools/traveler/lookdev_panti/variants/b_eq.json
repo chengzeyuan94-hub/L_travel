@@ -1,0 +1,12 @@
+{
+  "static": {
+    "extra_scripts": [
+      {
+        "script": "res://tools/traveler/lookdev_panti/b_snow_extra.gd",
+        "cfg": {
+          "uniforms": {}
+        }
+      }
+    ]
+  }
+}

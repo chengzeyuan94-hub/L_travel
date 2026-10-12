@@ -1,0 +1,159 @@
+{
+  "schema": "silkroad.day-clouds.v2",
+  "expected_cloud_count": 13,
+  "backdrop_path": "FarBackdrop",
+  "cloud_sets": [
+    "day",
+    "dusk"
+  ],
+  "style": "wispy_static_density",
+  "motion": {
+    "axis": "frozen_camera_right",
+    "direction": 1.0,
+    "band_split_target_back_u": 70.0,
+    "near": {
+      "speed_u_per_s": 0.084,
+      "minimum_wrap_half_span_u": 70.0
+    },
+    "far": {
+      "speed_u_per_s": 0.034,
+      "minimum_wrap_half_span_u": 120.0
+    },
+    "dusk_speed_multiplier": 1.12,
+    "transition_speed_multiplier": 16.0,
+    "wrap_margin_u": 2.0,
+    "wrap_rule": "Take the largest of the band's minimum half-span, the frozen horizontal frustum half-width at the farthest transformed mesh corner plus the full cloud half-extent plus margin, and the initial cloud center plus margin. Wrap only after the entire cloud is outside either screen edge."
+  },
+  "preservation": "Static density; node translation only. Two thirteen-cloud banks including four thinner accents per bank. Frozen camera and mountains unchanged.",
+  "layout": [
+    [
+      -38,
+      -58,
+      11,
+      4.6,
+      0
+    ],
+    [
+      -12,
+      -78,
+      15,
+      6.2,
+      2
+    ],
+    [
+      20,
+      -70,
+      13,
+      5,
+      1
+    ],
+    [
+      44,
+      -50,
+      10,
+      3.8,
+      2
+    ],
+    [
+      -56,
+      -44,
+      9,
+      3.2,
+      1
+    ],
+    [
+      6,
+      -104,
+      19,
+      7.4,
+      0
+    ],
+    [
+      30,
+      -96,
+      17,
+      6,
+      2
+    ],
+    [
+      -26,
+      -92,
+      17.5,
+      5.4,
+      1
+    ],
+    [
+      -2,
+      -40,
+      8,
+      2.6,
+      0
+    ]
+  ],
+  "card_width": 5.6,
+  "card_height": 1.8,
+  "palette": {
+    "day": {
+      "light": "fff0df",
+      "shade": "bbbdc7"
+    },
+    "dusk": {
+      "light": "ffcca8",
+      "shade": "99759e"
+    }
+  },
+  "accent_clouds": [
+    {
+      "screen": [
+        0.13,
+        0.085
+      ],
+      "depth": 72,
+      "size_px": [
+        300,
+        66
+      ],
+      "opacity": 0.42,
+      "shape": 1
+    },
+    {
+      "screen": [
+        0.4,
+        0.045
+      ],
+      "depth": 96,
+      "size_px": [
+        350,
+        56
+      ],
+      "opacity": 0.34,
+      "shape": 2
+    },
+    {
+      "screen": [
+        0.66,
+        0.09
+      ],
+      "depth": 82,
+      "size_px": [
+        250,
+        74
+      ],
+      "opacity": 0.48,
+      "shape": 3
+    },
+    {
+      "screen": [
+        0.88,
+        0.225
+      ],
+      "depth": 62,
+      "size_px": [
+        310,
+        50
+      ],
+      "opacity": 0.38,
+      "shape": 4
+    }
+  ]
+}

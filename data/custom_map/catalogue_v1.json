@@ -1,0 +1,3545 @@
+{
+  "archetypes": [
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.22,
+        "building_width": 4.139
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/kiln_town_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/kiln_town_camel_1024x768.png",
+        "SEA": "res://assets/custom_map_catalogue/cards/kiln_town_ship_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a porcelain kiln town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Chinese porcelain-making town of roughly the Song to Ming dynasties, beside a small river",
+        "LANDMARKS": "a long brick dragon kiln climbing a gentle green hillside in stepped arched segments (the signature landmark); two tall square brick chimneys of egg-shaped kilns breathing soft white smoke; open-fronted workshops with brick-red and ochre tile roofs; neat towers of cylindrical clay saggars; racks of pale unfired bowls drying in the sun; a small riverside wharf",
+        "LIGHT": "warm late-afternoon golden light with a faint rosy glow from the kiln mouths, soft peach sky with a few cream clouds",
+        "LOCAL_LIFE": "Small chibi potters in plain aprons throw bowls on kick wheels, one paints simple cobalt-blue flowers on a white vase, a chibi porter carries two straw-wrapped bundles on a bamboo shoulder pole, a flat river boat waits at the wharf",
+        "LSHU_ACTION": "standing beside a drying rack of pale unfired bowls, pointing up at the stepped dragon kiln with one hand and shading his glasses from the warm kiln glow with the other, grinning smugly",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the little wharf right beside him, two small plain cream cloth bundles on its deck.",
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands just behind him, chewing calmly."
+        }
+      },
+      "default_specialty": "kaolin",
+      "epithet4": "千年窑火",
+      "fits": [
+        "LAND",
+        "SEA"
+      ],
+      "foot": 3.4,
+      "historical_period": "唐宋以来的窑业城镇",
+      "id": "ae01_kiln_town",
+      "model": "res://assets/custom_map_catalogue/cities/kiln_town.glb",
+      "noun": "窑火小城",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/kiln_town/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "c124fb8fd115707392b2360b0bff340238a3ef7d6780c4b9d7c5fcb0891a1f43",
+        "source": "art-src/custom-map-catalogue/archetypes/kiln_town/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "8515ba0b7f472252b8a2617e0f4195bca0bbdcc394f339778be662537d319421",
+        "use_scope": "public"
+      },
+      "scenery": "长长的龙窑顺着山坡往上爬，两根烟囱冒着白烟。",
+      "status": "shipped",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/kiln_town.png",
+      "title": "瓷窑古镇"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 4.14,
+        "building_width": 4.315
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/canal_town_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/canal_town_camel_1024x768.png",
+        "SEA": "res://assets/custom_map_catalogue/cards/canal_town_ship_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a canal water town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Jiangnan-style Chinese water town of the Song to Ming dynasties, criss-crossed by canals",
+        "LANDMARKS": "a tall humped single-arch stone bridge over a calm canal (the signature landmark); rows of whitewashed two-storey houses with black tile roofs and stepped horse-head gables along both banks; dark wooden lattice windows; stone steps down to the water; weeping willows",
+        "LIGHT": "soft misty late-afternoon light just after a spring shower, pearly peach sky with a hint of lilac, gentle reflections in the canal",
+        "LOCAL_LIFE": "Small chibi townsfolk in simple jackets cross the bridge, a chibi boatman sculls a black-canopied boat under the arch, a row of red lanterns glows along the eaves, a chibi child feeds ducks from the stone steps",
+        "LSHU_ACTION": "standing at the top of the humped bridge, leaning on the parapet and waving down at the boatman sculling under the arch, grinning smugly",
+        "LSHU_SIDE": "right",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the stone steps of the canal right beside him, two small plain cream cloth bundles on its deck.",
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles rests on its folded knees at the foot of the bridge."
+        }
+      },
+      "default_specialty": "oil_paper_umbrella",
+      "epithet4": "小桥流水",
+      "fits": [
+        "LAND",
+        "SEA"
+      ],
+      "foot": 3.4,
+      "historical_period": "隋唐大运河开通以后的水乡",
+      "id": "ae02_canal_town",
+      "model": "res://assets/custom_map_catalogue/cities/canal_town.glb",
+      "noun": "运河水乡",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/canal_town/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "95881b28de7606d7e558ae46b8aab6d738ee11f89c3f5722c85d6c5c6301242b",
+        "source": "art-src/custom-map-catalogue/archetypes/canal_town/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "e4cba15035d4e5fb13b5d1c8f88631a9bb6e55f6f6b3fce73767ed6abdb2c02f",
+        "use_scope": "public"
+      },
+      "scenery": "白墙黑瓦沿河排开，石拱桥下小船慢慢划过。",
+      "status": "shipped",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/canal_town.png",
+      "title": "运河水乡"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.468,
+        "building_width": 3.95
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/drum_tower_village_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/drum_tower_village_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a Dong mountain village with a covered bridge and a drum tower",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a hill village of southwest China, timeless rural setting",
+        "LANDMARKS": "a long covered wind-and-rain bridge with several small pavilion roofs over a clear stream (the signature landmark); a squat fir-tree-shaped drum tower with many stacked eaves edged in white; pale timber stilt houses on the slope; silvery rice terraces stepping down the hill like a staircase of mirrors; clumps of feathery bamboo",
+        "LIGHT": "warm golden late-afternoon light with soft mountain mist in the valleys, peach and mint sky",
+        "LOCAL_LIFE": "Small chibi villagers in indigo jackets and headscarves chat and weave on the benches of the covered bridge, a chibi child leads a water buffalo along a terrace edge, a few ducks paddle in the paddy water",
+        "LSHU_ACTION": "sitting on the bench of the covered bridge with his legs swinging, counting the white-edged eaves of the drum tower with one raised finger, a smug grin",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands at the end of the bridge, sniffing a bamboo leaf."
+        }
+      },
+      "default_specialty": "tung_oil",
+      "epithet4": "风雨鼓楼",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "南方山地的木构村寨",
+      "id": "ae03_drum_tower_village",
+      "model": "res://assets/custom_map_catalogue/cities/drum_tower_village.glb",
+      "noun": "侗家山寨",
+      "placeholder": false,
+      "scenery": "风雨桥横跨小河，鼓楼的屋檐一层压着一层。",
+      "status": "draft",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/drum_tower_village.png",
+      "title": "鼓楼侗寨"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.71,
+        "building_width": 4.222
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/stilt_village_ship_1024x768.png",
+      "card_art_by_route": {
+        "SEA": "res://assets/custom_map_catalogue/cards/stilt_village_ship_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a tropical stilt-house water village",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Southeast Asian river-mouth trading village of the maritime Silk Road era",
+        "LANDMARKS": "a village of bamboo-and-timber houses on tall thin stilts above calm green water (the signature landmark); steep palm-thatch roofs with upturned ridge ends; zig-zag plank walkways; a small floating market of canoes heaped with fruit and spice baskets; slender coconut palms",
+        "LIGHT": "warm golden late-afternoon light with a light humid haze, peach and pale turquoise sky",
+        "LOCAL_LIFE": "Small chibi villagers in wrapped sarongs and conical hats paddle long narrow canoes, a chibi grandma sells fruit from her canoe, a chibi kid fishes from a walkway with a tiny net, a white egret stands on a post",
+        "LSHU_ACTION": "standing on a plank walkway, leaning over the rail and waving down at a chibi grandma paddling her fruit canoe below, who waves back, a smug happy grin",
+        "LSHU_SIDE": "right",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored to a stilt post right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "default_specialty": "star_anise",
+      "epithet4": "水上人家",
+      "fits": [
+        "SEA"
+      ],
+      "foot": 3.4,
+      "historical_period": "南海沿岸的水上村落",
+      "id": "ae04_stilt_village",
+      "model": "res://assets/custom_map_catalogue/cities/stilt_village.glb",
+      "noun": "高脚水村",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/stilt_village/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "2a4a98b06c61c96911e4dae2ca2206331862a2ebe3ce802eeef65c12be3c8768",
+        "source": "art-src/custom-map-catalogue/archetypes/stilt_village/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "cde09ba43dc793b6ae30ecbeecab79840f351b6dc850ce4e4987d9894418c98b",
+        "use_scope": "public"
+      },
+      "scenery": "细长木桩撑起草顶小屋，小船在屋底下穿来穿去。",
+      "status": "shipped",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/stilt_village.png",
+      "title": "高脚水村"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.175,
+        "building_width": 3.895
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/snow_monastery_town_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/snow_monastery_town_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a highland monastery town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a town on a high snowy plateau, timeless setting",
+        "LANDMARKS": "a large whitewashed monastery with sloping walls climbing a rocky hillside in stepped tiers, a maroon band under the rooflines and small gleaming golden roofs (the signature landmark); white bell-shaped stupas; colourful prayer flags fluttering between poles; flat-roofed white village houses; snowy peaks behind",
+        "LIGHT": "crisp clear late-afternoon golden light, deep turquoise-blue sky with a few bright cream clouds",
+        "LOCAL_LIFE": "Small chibi villagers in thick wool robes and felt hats lead a pair of shaggy yaks carrying plain cream bundles, a chibi girl carries a wooden churn, golden barley fields ripple in the valley",
+        "LSHU_ACTION": "standing on a stone path wrapped in a borrowed thick woollen scarf, laughing as a shaggy yak nuzzles his satchel, one hand steadying his glasses",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles and a cream wool blanket stands behind him, its breath puffing in the cold air."
+        }
+      },
+      "default_specialty": "highland_barley",
+      "epithet4": "雪域金顶",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "吐蕃时期以来的高原城镇",
+      "id": "ae05_snow_monastery_town",
+      "model": "res://assets/custom_map_catalogue/cities/snow_monastery_town.glb",
+      "noun": "雪山寺城",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/snow_monastery_town/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "91fe8d49d3b308af78787b89714bbb3c0bf4c4aa1335913ddebcc4eecfeaadbe",
+        "source": "art-src/custom-map-catalogue/archetypes/snow_monastery_town/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "e014ffe774f50f17a418ebb816ef80b632ba988a09580ffd63ce58ecf1332acd",
+        "use_scope": "public"
+      },
+      "scenery": "白墙寺院沿山坡层层叠起，金顶闪闪，经幡飘动。",
+      "status": "shipped",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/snow_monastery_town.png",
+      "title": "雪山寺城"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.856,
+        "building_width": 4.011
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/yurt_market_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/yurt_market_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a grassland yurt market",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a nomad market camp on the northern steppe of the Mongol-era Silk Road",
+        "LANDMARKS": "a ring of round white felt yurts with domed roofs and bright painted wooden doors around one larger blue-trimmed yurt (the signature landmark); wooden carts with big spoked wheels; trading stalls with striped awnings; rolling green steppe to the horizon",
+        "LIGHT": "warm golden late-afternoon light over wide grassland, huge pale-blue sky with long cream clouds",
+        "LOCAL_LIFE": "Small chibi herders in long belted robes and pointed felt hats trade bundles of wool and strings of dried milk curds, a chibi child rides a small pony in a circle, a flock of fluffy sheep grazes nearby",
+        "LSHU_ACTION": "sitting cross-legged on a felt mat at the doorway of the big yurt, clapping and cheering as a chibi child rides a small pony in a circle, one eyebrow raised in a smug grin",
+        "LSHU_SIDE": "right",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles lies folded on the grass behind him."
+        }
+      },
+      "default_specialty": "cheese",
+      "epithet4": "毡房如云",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "游牧帝国时代的草原集镇",
+      "id": "ae06_yurt_market",
+      "model": "res://assets/custom_map_catalogue/cities/yurt_market.glb",
+      "noun": "草原集镇",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/yurt_market/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "97df78215a2190837de3ea324e1d2a910c87c4ce45370ea185f4b0941114452e",
+        "source": "art-src/custom-map-catalogue/archetypes/yurt_market/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "7108538f90b115a402feac6edee700b4fa2d605e32b7bd451957eeaae4a3fcfd",
+        "use_scope": "public"
+      },
+      "scenery": "白色毡房像蘑菇一样散在草地上，彩旗在木杆上飘。",
+      "status": "shipped",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/yurt_market.png",
+      "title": "草原毡房"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.396,
+        "building_width": 4.149
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/grape_oasis_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/grape_oasis_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a desert-oasis grape town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; an oasis town of the Western Regions on the Silk Road, around the Tang dynasty",
+        "LANDMARKS": "square mud-brick raisin-drying houses whose walls are full of neat diamond-shaped air holes (the signature landmark); long shady grape trellises heavy with pale green bunches; flat-roofed mud-brick houses with carved blue doors; tall white-trunked poplars; red striped bare hills shimmering behind",
+        "LIGHT": "bright warm late-afternoon golden light, hot apricot sky fading to pale turquoise, a gentle heat shimmer",
+        "LOCAL_LIFE": "Small chibi farmers in embroidered caps and long coats carry flat baskets of green grapes, a chibi girl hangs grape bunches inside a drying house, a little donkey cart waits in the lane, a clear water channel runs along the lane",
+        "LSHU_ACTION": "standing on tiptoe under the grape trellis as a smiling chibi grape grower on a small ladder hands him a bunch of pale green grapes; he takes it happily, one cheek already bulging with a grape",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands in the shade of the trellis behind him."
+        }
+      },
+      "default_specialty": "raisins",
+      "epithet4": "沙漠绿洲",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "汉唐时期的西域绿洲",
+      "id": "ae07_grape_oasis",
+      "model": "res://assets/custom_map_catalogue/cities/grape_oasis.glb",
+      "noun": "葡萄绿洲",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/grape_oasis/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "f8e2d4e561a5db46345efae1945ed8dbeb6dc657c862fa872881bcf2375e97f0",
+        "source": "art-src/custom-map-catalogue/archetypes/grape_oasis/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "8fc13cbbbfb2ba09c05393e1bf83054c5e6e7bda8fec53657bf9f625935cccc3",
+        "use_scope": "public"
+      },
+      "scenery": "葡萄架连成绿色长廊，土坯晾房墙上满是小孔。",
+      "status": "shipped",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/grape_oasis.png",
+      "title": "葡萄绿洲"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.353,
+        "building_width": 4.069
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/tulou_village_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/tulou_village_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a mountain village of round earthen tulou buildings",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Hakka mountain village in southern China, timeless rural setting",
+        "LANDMARKS": "a giant round rammed-earth tulou like a huge ring with a continuous dark tiled roof and an open courtyard in the middle (the signature landmark); a square tulou right beside it; terraced tea and rice fields on the green hills; bamboo groves and banana plants",
+        "LIGHT": "warm golden late-afternoon light, soft peach sky with a few cream clouds over misty green hills",
+        "LOCAL_LIFE": "Small chibi villagers in simple indigo clothes carry baskets through the arched gate, a chibi cook stirs a big pot over a courtyard stove, chickens peck around the well, laundry hangs on bamboo poles along the inner galleries",
+        "LSHU_ACTION": "standing in the arched gateway of the round tulou with his head tilted back and one hand on his glasses, waving up at chibi villagers who lean out and wave back from the galleries high above",
+        "LSHU_SIDE": "right",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands just outside the gate."
+        }
+      },
+      "default_specialty": "sugarcane",
+      "epithet4": "圆楼人家",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "闽西南山区的土楼聚落",
+      "id": "ae08_tulou_village",
+      "model": "res://assets/custom_map_catalogue/cities/tulou_village.glb",
+      "noun": "土楼山乡",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/tulou_village/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "3848565a6478e8731fe594d2b5c1a9012d54440f702c1233b8f7f1fdcde86dee",
+        "source": "art-src/custom-map-catalogue/archetypes/tulou_village/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "df5c8149c713bc4d374eb4d9f1dd5839d57dabde42f4997573f359f6842efa53",
+        "use_scope": "public"
+      },
+      "scenery": "厚厚的土墙围成大圆圈，屋檐一圈压着一圈。",
+      "status": "shipped",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/tulou_village.png",
+      "title": "土楼山乡"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 4.054,
+        "building_width": 4.422
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/paper_village_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/paper_village_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a paper-making village in the green hills",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a mountain village in the green hills of southern Anhui of the Song to Ming dynasties, known for fine paper",
+        "LANDMARKS": "a row of tall grey stone memorial archways of different heights at the village entrance, with plain blank beams (the signature landmark); behind them long rows of wooden frames hung with bright white paper sheets drying in the sun; a small paper workshop with a low roof; a clear stream and bamboo groves",
+        "LIGHT": "soft warm late-afternoon light with a little mountain mist, peach and pale jade sky",
+        "LOCAL_LIFE": "Small chibi papermakers in plain aprons lift a bamboo screen out of a vat, a chibi worker smooths a wet white sheet onto a drying wall, a chibi porter carries a bundle of tree bark, a stone footbridge crosses the stream",
+        "LSHU_ACTION": "standing under the tallest stone archway with his head tilted far back, one hand steadying his glasses as he admires the carved beams, a delighted smug smile",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands beside the stone archways."
+        }
+      },
+      "default_specialty": "xuan_paper",
+      "epithet4": "溪畔纸乡",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "唐代以来的造纸之乡",
+      "id": "ae09_paper_village",
+      "model": "res://assets/custom_map_catalogue/cities/paper_village.glb",
+      "noun": "纸乡古镇",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/paper_village/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "53e19f7707ad27e91088cc8446bf3f75a3e2bb6f4de9f13ac8d563523180bc94",
+        "source": "art-src/custom-map-catalogue/archetypes/paper_village/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "6ec70e634a29bc2f22bba7cbe5704153eed552f87ee8abe4eb8de0dde95a0d81",
+        "use_scope": "public"
+      },
+      "scenery": "村口立着石牌坊，木架上晾满一张张白纸。",
+      "status": "shipped",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/paper_village.png",
+      "title": "竹溪纸乡"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.487,
+        "building_width": 4.09
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/pine_hill_town_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/pine_hill_town_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a northern pine-forest hill town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a town in the forested hills of northeast Asia around the Tang dynasty",
+        "LANDMARKS": "a giant carved stone lantern with an octagonal lotus base, a lantern chamber and a small stone roof, standing in a forest clearing (the signature landmark); small log cabins of horizontal stacked logs with steep shingle roofs; stacks of firewood; forests of tall straight pines on the hills",
+        "LIGHT": "clear golden late-afternoon autumn light, soft apricot sky with a pale mint top, a few maple leaves glowing red",
+        "LOCAL_LIFE": "Small chibi townsfolk in padded jackets carry bundles of firewood down from the forest, a chibi woodcutter stacks logs, a red squirrel sits on a branch, a cart of firewood rolls along the path",
+        "LSHU_ACTION": "sitting on a pine stump at the foot of the giant stone lantern, tilting his head up at it while a red squirrel perches on his satchel and copies his pose, a smug gentle smile",
+        "LSHU_SIDE": "right",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands under the pines behind him."
+        }
+      },
+      "default_specialty": "pine_nuts",
+      "epithet4": "红松林海",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "渤海国时代的北方山城",
+      "id": "ae10_pine_hill_town",
+      "model": "res://assets/custom_map_catalogue/cities/pine_hill_town.glb",
+      "noun": "松林山城",
+      "placeholder": false,
+      "scenery": "红松围着小城，高高的石灯幢立在城中。",
+      "status": "draft",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/pine_hill_town.png",
+      "title": "松林山城"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.118,
+        "building_width": 3.816
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/ghat_town_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/ghat_town_camel_1024x768.png",
+        "SEA": "res://assets/custom_map_catalogue/cards/ghat_town_ship_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "an ancient Indian riverside town with broad stone steps",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a town on a great river of northern India in the era of the Gupta kingdoms and later",
+        "LANDMARKS": "broad cream stone ghat steps descending into a wide calm river (the signature landmark); one small cream temple with a short curved spire and a saffron flag at the top of the steps; flat-roofed houses with little domed rooftop pavilions; long lines of indigo and turmeric cloth drying in the sun",
+        "LIGHT": "warm golden late-afternoon light with a soft haze over the river, coral-peach sky with a few cream clouds",
+        "LOCAL_LIFE": "Small chibi townsfolk in light cotton tunics, saris and turbans wash cloth and fill brass water pots at the steps, a chibi weaver works a small handloom under an awning, a little wooden boat rows past, a sacred cow naps on the top step",
+        "LSHU_ACTION": "sitting on a ghat step with his boots resting on the step just above the water, eyes happily closed behind his glasses as the coloured cloth lines flutter above him",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the lowest ghat step right beside him, two small plain cream cloth bundles on its deck.",
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands on the top step behind him."
+        }
+      },
+      "default_specialty": "cotton",
+      "epithet4": "河坛石阶",
+      "fits": [
+        "LAND",
+        "SEA"
+      ],
+      "foot": 3.4,
+      "historical_period": "古印度恒河流域的城市",
+      "id": "ae11_ghat_town",
+      "model": "res://assets/custom_map_catalogue/cities/ghat_town.glb",
+      "noun": "石阶河城",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/ghat_town/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "780e405ac5cc82401cd4cb87ace68f67a0ce7b6fec239111d850eb8e5bbb0386",
+        "source": "art-src/custom-map-catalogue/archetypes/ghat_town/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "bd1b5e415a8bf63f1f54577385c473546745eb8e731764d6c06d99dfbb0045f8",
+        "use_scope": "public"
+      },
+      "scenery": "宽宽的石阶一级级伸进河水，台阶顶上有小神庙。",
+      "status": "shipped",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/ghat_town.png",
+      "title": "石阶河城"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.881,
+        "building_width": 4.114
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/shipyard_port_ship_1024x768.png",
+      "card_art_by_route": {
+        "SEA": "res://assets/custom_map_catalogue/cards/shipyard_port_ship_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a shipbuilding port town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Chinese seaport with shipyards on the maritime Silk Road, around the Song and Yuan dynasties",
+        "LANDMARKS": "a big half-built wooden junk on a slipway with its curved ribs showing and a tall A-frame crane of lashed poles (the signature landmark); a finished junk with rust-red battened sails at the quay; tiled warehouses; stacks of timber; a calm harbour with more sails beyond",
+        "LIGHT": "warm golden late-afternoon light, peach sky shading to pale turquoise over the sea, a few fluffy cream clouds",
+        "LOCAL_LIFE": "Small chibi shipwrights in headscarves saw planks and hammer wooden pegs, a chibi painter brushes a glossy coat along a hull, chibi dockworkers roll barrels and carry plain bundles up a gangplank, seagulls perch on the crane",
+        "LSHU_ACTION": "standing on the slipway beside the ribs of the half-built ship, holding a wide brush and proudly admiring the shiny stripe he just brushed along a plank",
+        "LSHU_SIDE": "right",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the shipyard quay right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "default_specialty": "folding_fan",
+      "epithet4": "千帆船坞",
+      "fits": [
+        "SEA"
+      ],
+      "foot": 3.4,
+      "historical_period": "唐宋时期的造船海港",
+      "id": "ae12_shipyard_port",
+      "model": "res://assets/custom_map_catalogue/cities/shipyard_port.glb",
+      "noun": "船坞港城",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/shipyard_port/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "3093caa179e5ae7b99d614ffa300894b739fdb9860a5b73b8f175032ebd0c890",
+        "source": "art-src/custom-map-catalogue/archetypes/shipyard_port/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "cbc80b76c281d4ddaccd5839ac928f484dfffef67e6495d73d523aba67fdb2ea",
+        "use_scope": "public"
+      },
+      "scenery": "船台上立着没完工的大船骨架，码头上桅杆林立。",
+      "status": "shipped",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/shipyard_port.png",
+      "title": "船坞港城"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.025,
+        "building_width": 3.67
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/oasis_citadel_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/oasis_citadel_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "an oasis garden-citadel town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Persian or Central Asian oasis town on the Silk Road, around the 9th to 14th century",
+        "LANDMARKS": "a tall stepped pyramid of mud-brick houses with trailing greenery, grapevines and fruit trees on every terrace, crowned by a square keep (the signature landmark); a round blue cistern with a stone rim; tall white-trunked poplars and mulberry trees; golden dunes in the distance",
+        "LIGHT": "warm golden late-afternoon light, apricot sky with a faint pale-blue top and a few thin cream clouds",
+        "LOCAL_LIFE": "Small chibi townsfolk in long robes and turbans fill clay jars at the cistern, a chibi gardener waters the terrace plants from a jug, a caravan of camels rests under the poplars",
+        "LSHU_ACTION": "sitting on a low mud wall in the shade of a poplar, looking up and waving at the keep at the top of the terraces, a pleased smug smile",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles kneels in the poplar shade beside him."
+        }
+      },
+      "default_specialty": "pomegranate",
+      "epithet4": "阶梯花园",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "中亚的绿洲古城",
+      "id": "aw01_oasis_citadel",
+      "model": "res://assets/custom_map_catalogue/cities/oasis_citadel.glb",
+      "noun": "花园塔城",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/oasis_citadel/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "65b910cf9f8190ae1470e48c4cca82816f5055d7e5a34d175d1376a71df257fb",
+        "source": "art-src/custom-map-catalogue/archetypes/oasis_citadel/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "ff71aaf5e42379eb6c5185add8aaaa8d149b008fcd8a1826fbd0e9e299a11a7f",
+        "use_scope": "public"
+      },
+      "scenery": "土黄色的城堡一层层堆高，每层都种满果树。",
+      "status": "shipped",
+      "style_side": "W",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/oasis_citadel.png",
+      "title": "花园塔城"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.497,
+        "building_width": 3.726
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/caravanserai_town_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/caravanserai_town_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a caravanserai town on a desert trade road",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Silk Road caravan stop in Persia, Central Asia or Syria, around the 11th to 14th century",
+        "LANDMARKS": "a big square caravanserai of red-brown baked brick with pointed-arch arcades around a courtyard full of kneeling camels (the signature landmark); a plain brick arched gateway; a domed water cistern; the desert road stretching away with a line of camels",
+        "LIGHT": "warm golden late-afternoon light, honey-apricot sky with a few thin cream clouds",
+        "LOCAL_LIFE": "Small chibi merchants in robes and turbans unload plain bundles in the courtyard, chibi camels kneel and drink from a trough, a chibi boy leads a baby camel, a small stall sells flatbread",
+        "LSHU_ACTION": "standing in the courtyard between the kneeling camels, patting one on the nose while another cranes its long neck to sniff his satchel, a smug grin",
+        "LSHU_SIDE": "right",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles kneels in the courtyard just behind him."
+        }
+      },
+      "default_specialty": "melon",
+      "epithet4": "驼铃客栈",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "商队驿站兴盛的中世纪",
+      "id": "aw02_caravanserai_town",
+      "model": "res://assets/custom_map_catalogue/cities/caravanserai_town.glb",
+      "noun": "驿站商城",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/caravanserai_town/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "64224c091467229187fb7e034287a954de1e2e9ee2a49f1ff1abacbdb4f95c6e",
+        "source": "art-src/custom-map-catalogue/archetypes/caravanserai_town/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "af67cc198bbe3581c84e5e9955d5599ed9e98cc77470663c4900a7827adbda0a",
+        "use_scope": "public"
+      },
+      "scenery": "方方正正的大客栈围着院子，驼铃声不断。",
+      "status": "shipped",
+      "style_side": "W",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/caravanserai_town.png",
+      "title": "驿站商城"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.644,
+        "building_width": 4.102
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/blue_dome_bazaar_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/blue_dome_bazaar_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a bazaar town with a great tiled portal",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Silk Road trading city of Central Asia or Persia, around the 12th to 14th century, famous for glazed tilework",
+        "LANDMARKS": "a huge flat portal covered in cobalt and turquoise geometric tiles with no lettering, flanked by two slender towers (the signature landmark); one ribbed turquoise dome peeking out behind it; a covered bazaar under small brick domes; market lanes with striped awnings",
+        "LIGHT": "warm golden late-afternoon light making the domes glow, soft apricot sky with a pale turquoise top",
+        "LOCAL_LIFE": "Small chibi merchants in embroidered robes and round caps sell heaps of spices, dried apricots and nuts, a chibi girl carries a basket of flowers, pigeons flutter over the portal",
+        "LSHU_ACTION": "standing in the market lane with his head tilted back, gazing up at the glowing tiled portal and dome so intently that his glasses flash with reflected turquoise light, a smug amazed smile",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands behind him, peering curiously at the spice heaps."
+        }
+      },
+      "default_specialty": "saffron",
+      "epithet4": "彩砖门楼",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "中世纪中亚的集市城",
+      "id": "aw03_blue_dome_bazaar",
+      "model": "res://assets/custom_map_catalogue/cities/blue_dome_bazaar.glb",
+      "noun": "集市古城",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/blue_dome_bazaar/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "6facb78fa9e8473af684e656e5c347ef0e0ff021f919223141298b209dc7cf85",
+        "source": "art-src/custom-map-catalogue/archetypes/blue_dome_bazaar/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "bb0db53bfc41e14ae063932e039e74ad138ec0454c01fed899f0fe53d638ba5e",
+        "use_scope": "public"
+      },
+      "scenery": "高大的门楼贴满彩色瓷砖，门后圆顶闪着蓝光。",
+      "status": "shipped",
+      "style_side": "W",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/blue_dome_bazaar.png",
+      "title": "蓝顶巴扎"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.116,
+        "building_width": 3.755
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/windcatcher_town_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/windcatcher_town_camel_1024x768.png",
+        "SEA": "res://assets/custom_map_catalogue/cards/windcatcher_town_ship_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a desert town of windcatcher towers",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Persian desert or Gulf-coast town, around the 10th to 15th century",
+        "LANDMARKS": "a giant stepped cone ice-house with a long shading wall (the signature landmark); a few tall square windcatcher towers with vertical slots rising above low domed mud houses; narrow shady lanes; orchards at the edge of town",
+        "LIGHT": "bright warm late-afternoon golden light, clear apricot sky, dry desert air",
+        "LOCAL_LIFE": "Small chibi townsfolk in long robes rest in the cool shade under a windcatcher, a chibi farmer tends an orchard, a donkey carries water jars along a lane",
+        "LSHU_ACTION": "standing right under a windcatcher with his hair tuft and hoodie strings blowing in the cool breeze, eyes closed in bliss and arms spread wide",
+        "LSHU_SIDE": "right",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the little harbour right beside him, two small plain cream cloth bundles on its deck.",
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands in the shade beside him."
+        }
+      },
+      "default_specialty": "pistachio",
+      "epithet4": "捕风之城",
+      "fits": [
+        "LAND",
+        "SEA"
+      ],
+      "foot": 3.4,
+      "historical_period": "波斯高原的沙漠城镇",
+      "id": "aw04_windcatcher_town",
+      "model": "res://assets/custom_map_catalogue/cities/windcatcher_town.glb",
+      "noun": "风塔土城",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/windcatcher_town/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "791c98af70d8822fcb0b59ebcebd16273403e5ee93e9c312100d3b96fb1ea445",
+        "source": "art-src/custom-map-catalogue/archetypes/windcatcher_town/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "2fbdb4b7f982adbee78d49be152cfca1acae554017646e20a27289cd6d10d1b4",
+        "use_scope": "public"
+      },
+      "scenery": "方形捕风塔立在土黄色屋顶上，把凉风引进屋。",
+      "status": "shipped",
+      "style_side": "W",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/windcatcher_town.png",
+      "title": "风塔之城"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.429,
+        "building_width": 4.013
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/rock_cut_town_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/rock_cut_town_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a rock-cut desert caravan town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a caravan town carved into red sandstone cliffs on the incense road, around the 1st century",
+        "LANDMARKS": "a tall two-storey colonnaded facade crowned by a round pavilion with a stone urn, carved straight into a rose-red sandstone cliff (the signature landmark); smaller carved doorways along the rock walls; a narrow winding gorge opening onto a sunny plaza",
+        "LIGHT": "warm golden late-afternoon light making the rock glow rose-pink, apricot sky with a few thin cream clouds",
+        "LOCAL_LIFE": "Small chibi caravan traders in long robes and headscarves lead camels out of the gorge, a chibi water carrier fills a jar from a channel cut into the rock, a chibi kid chases a goat",
+        "LSHU_ACTION": "standing in the plaza with his head tilted far back to take in the huge carved facade, one hand holding his glasses on, mouth in a small impressed 'o'",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands in the gorge mouth behind him."
+        }
+      },
+      "default_specialty": "copper_jug",
+      "epithet4": "玫瑰石城",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "纳巴泰人的商队时代",
+      "id": "aw05_rock_cut_town",
+      "model": "res://assets/custom_map_catalogue/cities/rock_cut_town.glb",
+      "noun": "红崖石城",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/rock_cut_town/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "8b48ba865b3c881d4684d956b79911ad4a90cfa6f6e0dbd7753005b5780f97b8",
+        "source": "art-src/custom-map-catalogue/archetypes/rock_cut_town/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "09e4dc422439dc0f34c50ca5656f65bd0b92b97bbb5cb8bdf4eb90b455f06f76",
+        "use_scope": "public"
+      },
+      "scenery": "整块岩壁上雕出高大的门廊和石柱。",
+      "status": "shipped",
+      "style_side": "W",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/rock_cut_town.png",
+      "title": "红崖石城"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.164,
+        "building_width": 3.902
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/lighthouse_port_ship_1024x768.png",
+      "card_art_by_route": {
+        "SEA": "res://assets/custom_map_catalogue/cards/lighthouse_port_ship_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a Mediterranean lighthouse harbour city",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a busy Mediterranean seaport of the Roman and Byzantine era",
+        "LANDMARKS": "a very tall three-stage stone lighthouse with a square base, an octagonal middle and a round top crowned by a glowing fire bowl, standing at the end of a breakwater (the signature landmark); whitewashed flat-roofed harbour houses with Mediterranean-blue doors and shutters; a long white warehouse; rows of terracotta amphorae",
+        "LIGHT": "warm golden late-afternoon light, peach sky shading to deep Mediterranean blue over the sea, a few fluffy cream clouds",
+        "LOCAL_LIFE": "Small chibi sailors and merchants in tunics roll amphorae up gangplanks, a chibi fisherman mends a net, merchant ships with plain cream sails glide in past the lighthouse, seagulls circle",
+        "LSHU_ACTION": "standing on tiptoe on the stone quay, one hand shading his eyes as he gazes out at the fire glowing on top of the lighthouse, a smug delighted grin",
+        "LSHU_SIDE": "right",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the stone quay right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "default_specialty": "olive_oil",
+      "epithet4": "灯塔照海",
+      "fits": [
+        "SEA"
+      ],
+      "foot": 3.4,
+      "historical_period": "罗马时代的地中海港口",
+      "id": "aw06_lighthouse_port",
+      "model": "res://assets/custom_map_catalogue/cities/lighthouse_port.glb",
+      "noun": "灯塔港城",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/lighthouse_port/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "8abb95903a1a31f5a4f7fe52accd7dc330ae7f032848e1329a1db047fa85ce7d",
+        "source": "art-src/custom-map-catalogue/archetypes/lighthouse_port/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "3f6539a295f42393884619f9df1fbd1d40fa181879503c83f8e2dfa9cde46a10",
+        "use_scope": "public"
+      },
+      "scenery": "高高的灯塔站在防波堤尽头，顶上燃着火盆。",
+      "status": "shipped",
+      "style_side": "W",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/lighthouse_port.png",
+      "title": "灯塔港城"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.327,
+        "building_width": 4.137
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/lagoon_town_ship_1024x768.png",
+      "card_art_by_route": {
+        "SEA": "res://assets/custom_map_catalogue/cards/lagoon_town_ship_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a lagoon city of canals and palaces",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a medieval Mediterranean merchant republic built on islands in a lagoon, around the 13th to 15th century",
+        "LANDMARKS": "a slender brick bell tower with a green pyramid cap rising over a lagoon city (the signature landmark); rose-pink and cream palaces with pointed Gothic windows lining a canal; humped stone footbridges; striped mooring poles",
+        "LIGHT": "warm golden late-afternoon light reflected in the canal, soft peach and lavender sky with a few cream clouds",
+        "LOCAL_LIFE": "Small chibi townsfolk in medieval tunics and caps cross a bridge, a chibi gondolier in a striped shirt poles a black gondola, a chibi merchant arranges plain bundles at a canal-side stall, pigeons in a small square",
+        "LSHU_ACTION": "standing at the top of a humped stone footbridge with his hands behind his head, gazing up at the tall brick bell tower while a black gondola glides under the bridge, his glasses glinting in the golden light",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at a striped mooring pole right beside him, two small plain cream cloth bundles on its deck."
+        }
+      },
+      "default_specialty": "amber",
+      "epithet4": "百岛水城",
+      "fits": [
+        "SEA"
+      ],
+      "foot": 3.4,
+      "historical_period": "中世纪的地中海商港",
+      "id": "aw07_lagoon_town",
+      "model": "res://assets/custom_map_catalogue/cities/lagoon_town.glb",
+      "noun": "海上水城",
+      "placeholder": false,
+      "scenery": "尖拱窗的宫殿排在运河两边，钟楼高高耸立。",
+      "status": "draft",
+      "style_side": "W",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/lagoon_town.png",
+      "title": "海上水城"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.126,
+        "building_width": 3.947
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/fairy_chimney_town_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/fairy_chimney_town_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a cave town of fairy-chimney rock cones",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a highland valley town of Anatolia on a caravan road, around the 11th to 13th century",
+        "LANDMARKS": "tall peach-pink rock cones with dark caps like giant mushrooms, carved with round doors, windows and dovecote holes (the signature landmark); a small carved chapel front; a green valley with grape vines and apricot trees; a snowy volcano far away",
+        "LIGHT": "warm golden late-afternoon light turning the rocks peach-pink, soft apricot sky with a few cream clouds",
+        "LOCAL_LIFE": "Small chibi villagers in woollen vests and headscarves chat at a cave door, a chibi grandma spins wool on the doorstep, pigeons fly from the dovecote holes, a donkey carries grape baskets",
+        "LSHU_ACTION": "standing at the foot of the tallest rock cone, peeking in through a round carved doorway with one hand on the door frame, then turning back to the viewer with a smug grin as a pigeon lands on his satchel",
+        "LSHU_SIDE": "right",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands beside a rock cone, looking up at the pigeons."
+        }
+      },
+      "default_specialty": "carpet",
+      "epithet4": "石柱山谷",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "拜占庭时代的岩洞村落",
+      "id": "aw08_fairy_chimney_town",
+      "model": "res://assets/custom_map_catalogue/cities/fairy_chimney_town.glb",
+      "noun": "蘑菇石村",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/fairy_chimney_town/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "03a597c80ebf906195634df62bb3fe86e1f5d48eb0d414c5eefe221c6f95beaa",
+        "source": "art-src/custom-map-catalogue/archetypes/fairy_chimney_town/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "d0a608333e2a7bfe9c9b58916ed438823067ce59b851492e215664e7b017b97e",
+        "use_scope": "public"
+      },
+      "scenery": "一根根石柱像大蘑菇，石壁上开着圆圆的门窗。",
+      "status": "shipped",
+      "style_side": "W",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/fairy_chimney_town.png",
+      "title": "蘑菇石村"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.518,
+        "building_width": 4.07
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/windmill_hill_town_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/windmill_hill_town_camel_1024x768.png",
+        "SEA": "res://assets/custom_map_catalogue/cards/windmill_hill_town_ship_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a windy hilltop windmill town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Mediterranean hill or island town, around the 13th to 15th century",
+        "LANDMARKS": "three round white stone windmills, one big and two small, with conical caps and triangular canvas sails turning in the wind on a ridge (the signature landmark); small white cube houses with sky-blue doors; fig trees and a round stone threshing floor; the blue sea glimpsed below",
+        "LIGHT": "bright warm late-afternoon golden light, clear peach sky over a deep blue sea, a few fluffy cream clouds",
+        "LOCAL_LIFE": "Small chibi millers in aprons carry sacks of flour, a chibi girl lays fruit out to dry on a reed mat, a donkey waits by the mill door, white flour dust puffs in the breeze",
+        "LSHU_ACTION": "standing on the windy ridge holding his glasses on with one hand as his hood flaps in the wind, pointing up at the turning sails with the other, laughing smugly",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at a little stone jetty below the hill right beside him, two small plain cream cloth bundles on its deck.",
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands beside the mill with its fur ruffled by the wind."
+        }
+      },
+      "default_specialty": "fig",
+      "epithet4": "风车山岗",
+      "fits": [
+        "LAND",
+        "SEA"
+      ],
+      "foot": 3.4,
+      "historical_period": "地中海海岛的山镇",
+      "id": "aw09_windmill_hill_town",
+      "model": "res://assets/custom_map_catalogue/cities/windmill_hill_town.glb",
+      "noun": "风车山镇",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/windmill_hill_town/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "2bbc244d3d4ebd97f98f1d51b58ff887a65ca698e5995aa0e6850dcb0c9c72be",
+        "source": "art-src/custom-map-catalogue/archetypes/windmill_hill_town/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "2370aea88123edacbf0d601522f57081d8fef24fed3be57e602adbe98b3bc3fe",
+        "use_scope": "public"
+      },
+      "scenery": "白色圆塔风车站成一排，三角帆布转个不停。",
+      "status": "shipped",
+      "style_side": "W",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/windmill_hill_town.png",
+      "title": "风车山镇"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.486,
+        "building_width": 4.38
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/noria_town_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/noria_town_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a river town of giant wooden water wheels",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a riverside town of the Levant or al-Andalus, around the 10th to 14th century",
+        "LANDMARKS": "giant wooden water wheels, taller than the houses, turning slowly beside a stone aqueduct (the signature landmark); little buckets on the rims pouring water into a raised stone channel; stone houses with white domes; tall cypresses and clumps of reeds along the riverbank",
+        "LIGHT": "warm golden late-afternoon light glittering in the falling water, honey-apricot sky with a few cream clouds",
+        "LOCAL_LIFE": "Small chibi farmers in light robes guide water into green fields, a chibi miller carries a sack across the quay, a small boat with a plain cream sail drifts past, a heron wades in the shallows",
+        "LSHU_ACTION": "standing on the stone quay with his head tilted back, watching water spill from the buckets of the turning wheel and holding out one hand to catch the sparkling drops, a delighted smug grin",
+        "LSHU_SIDE": "right",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands on the riverbank behind him."
+        }
+      },
+      "default_specialty": "papyrus",
+      "epithet4": "水车吱呀",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "中世纪的叙利亚河城",
+      "id": "aw10_noria_town",
+      "model": "res://assets/custom_map_catalogue/cities/noria_town.glb",
+      "noun": "水车河城",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/noria_town/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "3f264664c2eb7fd27fbe4e6664ded10c92630b4de229d3967c36b7aa4770f724",
+        "source": "art-src/custom-map-catalogue/archetypes/noria_town/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "aa66dfc5b03acda4b51f6dc9460509f7cba39cb6ebba9ca93414045884e331ef",
+        "use_scope": "public"
+      },
+      "scenery": "比房子还高的木水车在河边吱呀转动。",
+      "status": "shipped",
+      "style_side": "W",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/noria_town.png",
+      "title": "水车河城"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 3.535,
+        "building_width": 4.383
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/colonnade_city_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/colonnade_city_camel_1024x768.png",
+        "SEA": "res://assets/custom_map_catalogue/cards/colonnade_city_ship_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "an ancient city of stone colonnades",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Greco-Roman city of the eastern Mediterranean, around the 1st to 3rd century",
+        "LANDMARKS": "a temple with a triangular pediment and a big terracotta-red roof on a high stepped podium, with a short colonnade of honey-coloured stone columns in front (the signature landmark); terracotta-roofed shops under the colonnade; silvery olive groves around the city",
+        "LIGHT": "warm golden late-afternoon light striping the street with column shadows, peach sky with a pale blue top",
+        "LOCAL_LIFE": "Small chibi townsfolk in tunics and draped mantles stroll under the colonnade, a chibi shopkeeper sweeps in front of a shop, a chibi kid rolls a hoop along the paved street",
+        "LSHU_ACTION": "playing hide-and-seek among the columns, peeking out from behind one column with a smug grin at a giggling chibi kid who peeks out from behind another",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at a stone quay at the end of the street right beside him, two small plain cream cloth bundles on its deck.",
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands between the columns just behind him, poking its head around a column too."
+        }
+      },
+      "default_specialty": "laurel_soap",
+      "epithet4": "石柱长街",
+      "fits": [
+        "LAND",
+        "SEA"
+      ],
+      "foot": 3.4,
+      "historical_period": "希腊罗马时代的古城",
+      "id": "aw11_colonnade_city",
+      "model": "res://assets/custom_map_catalogue/cities/colonnade_city.glb",
+      "noun": "列柱古城",
+      "placeholder": false,
+      "scenery": "高高的石台上立着神庙，门前一排石柱。",
+      "status": "draft",
+      "style_side": "W",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/colonnade_city.png",
+      "title": "列柱古城"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_depth": 2.962,
+        "building_width": 3.528
+      },
+      "card_art": "res://assets/custom_map_catalogue/cards/snow_tower_village_camel_1024x768.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/cards/snow_tower_village_camel_1024x768.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a snowy mountain village of stone towers",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Caucasus mountain village near a Silk Road branch, around the 10th to 14th century",
+        "LANDMARKS": "a cluster of tall slender grey stone towers with small wooden roofs in a high valley (the signature landmark); stone houses with snowy slate roofs; a small stone chapel; snowy peaks all around; alpine meadows full of wildflowers on the lower slopes",
+        "LIGHT": "crisp clear late-afternoon golden light on the snow, pale peach sky with a turquoise top",
+        "LOCAL_LIFE": "Small chibi villagers in felt caps and woollen cloaks drive sheep up the flower meadow, a chibi grandma spins wool on a doorstep, a row of colourful wooden beehives stands by the meadow, a cute bee buzzes past",
+        "LSHU_ACTION": "sitting on a stone wall with his legs dangling, craning his neck to count the stone towers, while a single tiny cute bee rests on his hair tuft",
+        "LSHU_SIDE": "right",
+        "TRANSPORT_PROP": {
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles and a warm woollen blanket stands in the meadow behind him."
+        }
+      },
+      "default_specialty": "honey",
+      "epithet4": "雪山石塔",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "高加索山区的石塔村",
+      "id": "aw12_snow_tower_village",
+      "model": "res://assets/custom_map_catalogue/cities/snow_tower_village.glb",
+      "noun": "石塔山村",
+      "placeholder": false,
+      "provenance": {
+        "card_art_scope": "previous generated illustration, landmark/type/ID reviewed; not a mesh-exact image or public-license claim",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "model_report": "art-src/custom-map-catalogue/archetypes/snow_tower_village/model-report.json",
+        "review": "actual PackedScene/production build_city bounds-scale/yaw0 and distinctive landmark reviewed; thumbnail re-rendered from same pose",
+        "runtime_model_sha256": "ca52caef90c76b623d3ff2b2f5ac29c43b4532134ea3213156074e9d17169145",
+        "source": "art-src/custom-map-catalogue/archetypes/snow_tower_village/build.py",
+        "source_kind": "local_procedural_blender_geometry_guided_by_generated_concept",
+        "thumbnail_runtime_sha256": "32fe10dd800bf00598374ce6f3e3a689dcdf08dc8f8d42be40855b14fe35c7b6",
+        "use_scope": "public"
+      },
+      "scenery": "方形石塔立在村子里，四周雪峰环绕。",
+      "status": "shipped",
+      "style_side": "W",
+      "thumb": "res://assets/custom_map_catalogue/thumbs/snow_tower_village.png",
+      "title": "雪谷石塔"
+    },
+    {
+      "bounds": {
+        "building_centre_xz": [
+          0.0,
+          0.0
+        ],
+        "building_width": 3.45499992370605,
+        "min": [
+          -1.72749996185303,
+          0.0,
+          -1.41124999523163
+        ],
+        "size": [
+          3.45499992370605,
+          1.64400005340576,
+          2.82249999046326
+        ]
+      },
+      "card_art": "res://assets/custom_map_catalogue/jw/jingdezhen_city.png",
+      "card_art_by_route": {
+        "LAND": "res://assets/custom_map_catalogue/jw/jingdezhen_city.png"
+      },
+      "card_prompt": {
+        "CITY_EN": "a porcelain kiln town",
+        "ERA_HINT": "an imaginary, unnamed place of this kind rather than a portrait of any real city; a Chinese porcelain-making town of roughly the Song to Ming dynasties, beside a small river",
+        "LANDMARKS": "a long brick dragon kiln climbing a gentle green hillside in stepped arched segments (the signature landmark); two tall square brick chimneys of egg-shaped kilns breathing soft white smoke; open-fronted workshops with brick-red and ochre tile roofs; neat towers of cylindrical clay saggars; racks of pale unfired bowls drying in the sun; a small riverside wharf",
+        "LIGHT": "warm late-afternoon golden light with a faint rosy glow from the kiln mouths, soft peach sky with a few cream clouds",
+        "LOCAL_LIFE": "Small chibi potters in plain aprons throw bowls on kick wheels, one paints simple cobalt-blue flowers on a white vase, a chibi porter carries two straw-wrapped bundles on a bamboo shoulder pole, a flat river boat waits at the wharf",
+        "LSHU_ACTION": "standing beside a drying rack of pale unfired bowls, pointing up at the stepped dragon kiln with one hand and shading his glasses from the warm kiln glow with the other, grinning smugly",
+        "LSHU_SIDE": "left",
+        "TRANSPORT_PROP": {
+          "BOAT": "His small cute low-poly wooden trading boat with a plain cream sail is moored at the little wharf right beside him, two small plain cream cloth bundles on its deck.",
+          "CAMEL": "A small cute low-poly two-humped camel with cream saddle blankets and two small plain cream cloth bundles stands just behind him, chewing calmly."
+        }
+      },
+      "default_specialty": "kaolin",
+      "epithet4": "千年窑火",
+      "fits": [
+        "LAND"
+      ],
+      "foot": 3.4,
+      "historical_period": "唐宋以来的窑业城镇",
+      "id": "jw_jingdezhen",
+      "model": "res://assets/custom_map_catalogue/jw/models/jingdezhen.glb",
+      "noun": "窑火小城",
+      "placeholder": false,
+      "scenery": "长长的龙窑顺着山坡往上爬，两根烟囱冒着白烟。",
+      "status": "shipped",
+      "style_side": "E",
+      "thumb": "res://assets/custom_map_catalogue/jw/jingdezhen_city.png",
+      "title": "景德镇"
+    }
+  ],
+  "build": {
+    "counts": {
+      "archetypes": 24.0,
+      "known_names": 48.0,
+      "placeholder_archetypes": 0.0,
+      "placeholder_specialties": 4,
+      "shipped_archetypes": 20,
+      "shipped_specialties": 20,
+      "specialties": 24.0
+    },
+    "layout_sha256": "3e52929761bdf271cf98d3017596dd9158aadb1af9432546107bad5ac86e6a22",
+    "preset_check": "geo_rules",
+    "private_visual_review": {
+      "batch": "stage3_batch2",
+      "economy": "existing goods IDs/supply and TradeGen unchanged",
+      "excluded_private_jw_from_generic_count": true,
+      "generic_cities": 20,
+      "generic_specialties": 20,
+      "public_license_assertion": false,
+      "remaining_draft": 4
+    },
+    "reach_cache": "assets/custom_map/terrain/reach_3e529297.res",
+    "source": "tools/custom_map/catalogue_src/catalogue_src_v1.json",
+    "tool": "tools/custom_map/build_catalogue.gd"
+  },
+  "catalogue_version": 1.0,
+  "fallback_town": {
+    "bounds": {
+      "building_centre_xz": [
+        0.0,
+        0.0
+      ],
+      "building_depth": 1.8,
+      "building_width": 2.1
+    },
+    "foot": 3.4,
+    "model": "res://assets/merchant_board_claude/catalogue/_fallback_town.glb",
+    "placeholder": true
+  },
+  "first_batch": {
+    "archetypes": [
+      "aw03_blue_dome_bazaar",
+      "aw01_oasis_citadel",
+      "aw06_lighthouse_port",
+      "aw04_windcatcher_town",
+      "ae01_kiln_town",
+      "ae02_canal_town",
+      "ae12_shipyard_port",
+      "ae07_grape_oasis"
+    ],
+    "specialties": [
+      "saffron",
+      "pomegranate",
+      "olive_oil",
+      "pistachio",
+      "kaolin",
+      "oil_paper_umbrella",
+      "folding_fan",
+      "raisins"
+    ]
+  },
+  "generator": "tools/custom_map/build_catalogue.gd",
+  "known_names": [
+    {
+      "archetype": "aw07_lagoon_town",
+      "auto_pick": true,
+      "epithet": "潟湖上的商业共和国",
+      "historical_period": "中世纪，约9至15世纪",
+      "history": "威尼斯人在潟湖的小岛上打下木桩建城，中世纪发展成强大的航海商业共和国。威尼斯商船把地中海东岸运来的香料和丝绸转卖到欧洲各地。十三世纪，威尼斯商人马可·波罗随父亲和叔叔东行，回来后留下了著名的游记。",
+      "id": "venice",
+      "intro": "威尼斯建在意大利东北部海湾里的一百多座小岛上，中世纪是地中海的贸易强国。马可·波罗就是威尼斯人。",
+      "modern_reference": "意大利威尼斯",
+      "name": "威尼斯",
+      "route_hint": "SEA",
+      "scenery": "城里的街道就是运河，人们坐着贡多拉小船出门；一座座石桥把小岛连在一起。",
+      "side_hint": "W",
+      "sights": "圣马可广场和圣马可大教堂是城市的中心，大运河两岸排着一座座宫殿，里亚尔托桥横跨运河。",
+      "specialty": "amber"
+    },
+    {
+      "archetype": "aw06_lighthouse_port",
+      "auto_pick": true,
+      "epithet": "北非海岸的腓尼基古港",
+      "historical_period": "公元前9世纪至罗马帝国时期",
+      "history": "迦太基由腓尼基航海商人建立，是地中海西部的商业强国。它和罗马打了三次布匿战争，公元前146年被罗马摧毁。后来罗马人在原地重建新城，迦太基又成为罗马阿非利加行省的首府，从这里运出粮食和橄榄油。",
+      "id": "carthage",
+      "intro": "迦太基在北非地中海边，今突尼斯附近，由腓尼基航海商人建立，后来成为罗马在非洲最大的城市。",
+      "modern_reference": "突尼斯突尼斯市附近的迦太基遗址",
+      "name": "迦太基",
+      "route_hint": "SEA",
+      "scenery": "海边有一圆一方两座港口，圆形港池中间还有座小岛；城外遍布橄榄树和无花果树。",
+      "side_hint": "W",
+      "sights": "遗址上还能看到圆形的古军港和长方形的商港，海边有安东尼浴场的石柱，山丘上是古城区的遗迹。",
+      "specialty": "fig"
+    },
+    {
+      "archetype": "aw11_colonnade_city",
+      "auto_pick": true,
+      "epithet": "北非高原上的希腊古城",
+      "historical_period": "公元前7世纪至罗马帝国时期",
+      "history": "昔兰尼约在公元前7世纪由希腊移民建立，是北非最重要的希腊城市之一。它通过山下的阿波罗尼亚港和地中海各地做生意，当地出产的罗盘草是很名贵的药材和调味品。后来昔兰尼归罗马管辖，城里修建了许多神庙和公共建筑。",
+      "id": "cyrene",
+      "intro": "昔兰尼在今利比亚东部的高地上，是古希腊人在北非建立的城市，后来归罗马管辖，通过山下的港口和地中海各地通商。",
+      "modern_reference": "利比亚舍哈特附近的昔兰尼遗址",
+      "name": "昔兰尼",
+      "route_hint": "SEA",
+      "scenery": "阿波罗神庙和宙斯神庙的石柱立在山坡上，柱廊大街通向广场；城外的高原上种满橄榄树。",
+      "side_hint": "W",
+      "sights": "山坡上有阿波罗圣所的神庙和泉水，宙斯神庙的巨大石柱，还有剧场和柱廊大街。",
+      "specialty": "olive_oil"
+    },
+    {
+      "archetype": "aw08_fairy_chimney_town",
+      "auto_pick": true,
+      "epithet": "火山脚下的高原商城",
+      "historical_period": "罗马时代至塞尔柱时期",
+      "history": "开塞利古称凯撒利亚，是卡帕多奇亚地区的中心城市。塞尔柱时代，安纳托利亚的商路上修起许多商队驿站，开塞利附近就有规模很大的驿站，东来西往的商队在这里歇脚、交易。附近山谷里的岩洞村落和教堂，是早期基督徒在软岩里凿出来的。",
+      "id": "kayseri",
+      "intro": "开塞利在今土耳其中部高原，古时叫凯撒利亚。几百年前，往来的商队常在城外的大驿站里歇脚。",
+      "modern_reference": "土耳其开塞利省开塞利市",
+      "name": "开塞利",
+      "route_hint": "LAND",
+      "scenery": "城南立着积雪的埃尔吉耶斯火山；不远的山谷里，石柱像一根根大蘑菇，人们在里面凿出房间。",
+      "side_hint": "W",
+      "sights": "城南耸立着积雪的埃尔吉耶斯火山；附近的格雷梅山谷里立着一根根石柱，岩壁上凿满了洞穴和教堂。",
+      "specialty": "carpet"
+    },
+    {
+      "archetype": "aw02_caravanserai_town",
+      "auto_pick": true,
+      "epithet": "城堡高踞的古老商城",
+      "historical_period": "古代至中世纪",
+      "history": "阿勒颇是世界上一直有人居住的最古老城市之一，位于地中海和两河流域之间的商路上。中世纪时，从东方来的丝绸和香料在这里集散，城里建起了长长的有顶集市和许多商队客栈。阿勒颇出产的月桂皂也远销各地。",
+      "id": "aleppo",
+      "intro": "阿勒颇在今叙利亚北部，是世界上最古老的城市之一。中世纪的商队从这里出发，把货物运到地中海边的港口。",
+      "modern_reference": "叙利亚阿勒颇",
+      "name": "阿勒颇",
+      "route_hint": "LAND",
+      "scenery": "土黄色的城堡高踞在山丘上，城下的有顶集市又长又深，小巷里飘着月桂皂的味道。",
+      "side_hint": "W",
+      "sights": "土黄色的阿勒颇城堡高踞在城中的山丘上，城下是又长又深的有顶集市，还有古老的大清真寺。",
+      "specialty": "laurel_soap"
+    },
+    {
+      "archetype": "aw05_rock_cut_town",
+      "auto_pick": true,
+      "epithet": "玫瑰色峡谷里的石城",
+      "historical_period": "公元前4世纪至罗马帝国时期",
+      "history": "佩特拉是纳巴泰人的都城。纳巴泰人控制着从阿拉伯半岛运送乳香、没药和香料的商队之路，在峡谷的岩壁上直接凿出陵墓和神庙。公元106年，这里被并入罗马帝国。后来商路改道，城市渐渐冷落，直到近代才被重新发现。",
+      "id": "petra",
+      "intro": "佩特拉在今约旦南部的峡谷里，是纳巴泰人的都城，控制着运送乳香和香料的商队之路。",
+      "modern_reference": "约旦马安省佩特拉遗址",
+      "name": "佩特拉",
+      "route_hint": "LAND",
+      "scenery": "穿过又窄又深的峡谷，就能看到玫瑰色岩壁上整块雕出的宝库，石柱和门廊都刻在岩石里。",
+      "side_hint": "W",
+      "sights": "走过又窄又深的西克峡谷，就能看到在玫瑰色岩壁上雕出的“宝库”；山上还有巨大的“修道院”和剧场。",
+      "specialty": "copper_jug"
+    },
+    {
+      "archetype": "aw12_snow_tower_village",
+      "auto_pick": true,
+      "epithet": "温泉边的高加索古都",
+      "historical_period": "5世纪至中世纪",
+      "history": "第比利斯在高加索山区的库拉河谷里。相传5世纪时，国王瓦赫坦在这里打猎，发现了温泉，就在此建城；6世纪起，它成为格鲁吉亚人王国的都城。它位于黑海和里海之间的商路上，各地商人经过这里，城里住着许多不同民族的居民。",
+      "id": "tbilisi",
+      "intro": "第比利斯在高加索山区，是格鲁吉亚的古城。城名的意思是“温暖的地方”，因为城里有冒热气的温泉。",
+      "modern_reference": "格鲁吉亚首都第比利斯",
+      "name": "第比利斯",
+      "route_hint": "LAND",
+      "scenery": "老城沿着山坡而建，山顶立着古老的石头城堡；北方的高加索雪山终年积雪。",
+      "side_hint": "W",
+      "sights": "老城沿着山坡而建，纳里卡拉古堡立在山顶；河边有冒着热气的硫磺温泉浴室。",
+      "specialty": "honey"
+    },
+    {
+      "archetype": "aw04_windcatcher_town",
+      "auto_pick": true,
+      "epithet": "波斯湾口的货物集散港",
+      "historical_period": "10世纪至14世纪",
+      "history": "霍尔木兹守着波斯湾的出口，是印度洋和波斯湾之间的大港。中世纪时，印度的香料、宝石和中国的瓷器在这里上岸，再由商队运往波斯各地。13世纪末，马可·波罗往返途中两次经过这里；14世纪初，王国迁到海峡中的小岛上，继续做海上生意。",
+      "id": "hormuz",
+      "intro": "霍尔木兹在波斯湾出口的海峡边，中世纪是东西方货物的大集散地。马可·波罗曾两次来到这里。",
+      "modern_reference": "伊朗霍尔木兹甘省霍尔木兹岛一带",
+      "name": "霍尔木兹",
+      "route_hint": "LAND",
+      "scenery": "岛上的土石红白相间，几乎没有淡水；波斯湾沿岸人家在屋顶竖起捕风塔，把海风引进屋里乘凉。",
+      "side_hint": "W",
+      "sights": "海岛上的土石红白相间，海边留着古城堡的遗址；沿岸人家在屋顶竖起捕风塔，把海风引进屋里。",
+      "specialty": "pistachio"
+    },
+    {
+      "archetype": "aw02_caravanserai_town",
+      "auto_pick": true,
+      "epithet": "沙漠里的土城绿洲",
+      "historical_period": "古代至中世纪（现存老城多为后世重建）",
+      "history": "希瓦在花剌子模绿洲，是阿姆河下游的古城。穿越克孜勒库姆和卡拉库姆沙漠的商队，都要在花剌子模的绿洲城市里补充粮食和水。中世纪时，花剌子模出产的甜瓜十分有名，曾被装进铅盒、垫上冰块送往巴格达。",
+      "id": "khiva",
+      "intro": "希瓦在花剌子模绿洲，今乌兹别克斯坦西部，四周都是沙漠。穿越沙漠的商队到了这里，就能进城歇脚、补充粮水。",
+      "modern_reference": "乌兹别克斯坦花剌子模州希瓦",
+      "name": "希瓦",
+      "route_hint": "LAND",
+      "scenery": "高高的土黄色城墙围着内城，集市里人来人往；这里的甜瓜又大又甜，远近闻名。",
+      "side_hint": "W",
+      "sights": "高大的土黄色城墙围着内城伊钦卡拉，城里的清真寺、宣礼塔和宫殿挨挨挤挤。",
+      "specialty": "melon"
+    },
+    {
+      "archetype": "aw01_oasis_citadel",
+      "auto_pick": true,
+      "epithet": "呼罗珊的河谷明珠",
+      "historical_period": "古代至中世纪",
+      "history": "赫拉特在哈里河谷的绿洲里，是连接波斯、中亚和印度的商路要冲，也是呼罗珊地区的名城。城里的古城堡相传最早可以追溯到亚历山大东征的时代。13世纪，城市曾被蒙古军队毁坏，后来又重建并兴盛起来。",
+      "id": "herat",
+      "intro": "赫拉特在今阿富汗西部的河谷绿洲里，是连接波斯和中亚的商路要冲，也是呼罗珊地区的四大名城之一。",
+      "modern_reference": "阿富汗赫拉特",
+      "name": "赫拉特",
+      "route_hint": "LAND",
+      "scenery": "土黄色的古城堡高踞城中，城外是果园和麦田；到了秋天，田里开满紫色的番红花。",
+      "side_hint": "W",
+      "sights": "土黄色的古城堡高踞城中，城墙上立着一座座圆塔楼；城外是果园、麦田和一道道水渠。",
+      "specialty": "saffron"
+    },
+    {
+      "archetype": "aw03_blue_dome_bazaar",
+      "auto_pick": true,
+      "epithet": "粟特商人的丝路故乡",
+      "historical_period": "公元前7世纪至中世纪",
+      "history": "撒马尔罕是中亚最古老的城市之一，古时是粟特人的中心。粟特商人擅长长途贸易，把生意从这里一直做到中国的长安。唐朝时，玄奘西行取经也经过这里，称它为“飒秣建国”。13世纪它毁于蒙古军队，后来在旧城旁边重建。",
+      "id": "samarkand",
+      "intro": "撒马尔罕在今乌兹别克斯坦，是中亚最古老的城市之一。粟特商人从这里出发，把丝路生意一直做到长安。",
+      "modern_reference": "乌兹别克斯坦撒马尔罕",
+      "name": "撒马尔罕",
+      "route_hint": "LAND",
+      "scenery": "高大的彩砖门楼和蓝绿色的圆顶闪闪发亮，集市里水果堆成小山。",
+      "side_hint": "W",
+      "sights": "雷吉斯坦广场三面都是贴满彩砖的高大门楼，蓝绿色的圆顶在阳光下闪闪发亮。",
+      "specialty": "pomegranate"
+    },
+    {
+      "archetype": "aw10_noria_town",
+      "auto_pick": false,
+      "epithet": "尼罗河上的南方门户",
+      "historical_period": "古埃及至罗马时期",
+      "history": "阿斯旺古称赛伊尼，在尼罗河第一瀑布附近，是古埃及南方的边城，也是通往努比亚的门户。船队和驼队在这里转运黄金、象牙和石料，附近采石场出产的花岗岩被运去修建神庙和方尖碑。",
+      "id": "aswan",
+      "intro": "阿斯旺在埃及南部的尼罗河边，古时叫赛伊尼，是埃及通往南方努比亚的门户，船队和驼队在这里转运货物。",
+      "modern_reference": "埃及阿斯旺省阿斯旺",
+      "name": "阿斯旺",
+      "route_hint": "LAND",
+      "scenery": "尼罗河在这里被礁石分成许多小岛，白帆小船穿行其间；河岸上牛拉的木水车转个不停。",
+      "side_hint": "W",
+      "sights": "尼罗河被礁石分成许多小岛，菲莱神庙立在岛上；古采石场里还躺着一座没有完工的方尖碑。",
+      "specialty": "papyrus"
+    },
+    {
+      "archetype": "aw03_blue_dome_bazaar",
+      "auto_pick": true,
+      "epithet": "圆顶集市里的学问之城",
+      "historical_period": "古代至中世纪",
+      "history": "布哈拉是泽拉夫尚河下游的绿洲城市，和撒马尔罕一样是粟特人的故乡。9到10世纪，萨曼王朝以布哈拉为都城，这里成为伊斯兰世界的学术中心，著名医学家伊本·西那就在这一带长大。1220年，城市被成吉思汗攻破，后来又慢慢恢复。",
+      "id": "bukhara",
+      "intro": "布哈拉在今乌兹别克斯坦，是中亚的绿洲古城。九到十世纪萨曼王朝定都在这里，城里学者和商人云集。",
+      "modern_reference": "乌兹别克斯坦布哈拉州布哈拉",
+      "name": "布哈拉",
+      "route_hint": "LAND",
+      "scenery": "高高的卡扬宣礼塔俯瞰全城，带圆顶的集市连着一条条小巷。",
+      "side_hint": "W",
+      "sights": "12世纪建成的卡扬宣礼塔高四十多米，相传成吉思汗进城时也没有拆掉它；老城里还有几座带圆顶的集市。",
+      "specialty": "melon"
+    },
+    {
+      "archetype": "aw04_windcatcher_town",
+      "auto_pick": true,
+      "epithet": "沙漠里的捕风塔之城",
+      "historical_period": "中世纪",
+      "history": "亚兹德位于伊朗高原中部，四周被沙漠环绕，是穿越沙漠的商队歇脚的绿洲城市。为了在干旱炎热的地方生活，人们挖地下水渠把雪山融水引进城，又在屋顶建起捕风塔引风降温。13世纪，马可·波罗路过这里，记下了当地织造的丝织品。",
+      "id": "yazd",
+      "intro": "亚兹德在今伊朗中部的沙漠边上，是古老的商路驿城。马可·波罗路过时，记下了这里织造的丝织品。",
+      "modern_reference": "伊朗亚兹德省亚兹德",
+      "name": "亚兹德",
+      "route_hint": "LAND",
+      "scenery": "土黄色的城里竖着一座座捕风塔，地下水渠把远山的雪水引进城。",
+      "side_hint": "W",
+      "sights": "老城里土坯房屋挤在一起，屋顶竖着许多方形捕风塔；聚礼清真寺的高门楼贴着蓝色瓷砖。",
+      "specialty": "pistachio"
+    },
+    {
+      "archetype": "aw02_caravanserai_town",
+      "auto_pick": true,
+      "epithet": "伊儿汗国的繁华都城",
+      "historical_period": "13世纪至14世纪",
+      "history": "大不里士位于伊朗高原西北部，是连接波斯、安纳托利亚和高加索的交通要地。13世纪后期，蒙古人建立的伊儿汗国以这里为都城，城市空前繁荣。马可·波罗说这里是买卖各种货物的大商城，威尼斯和热那亚的商人也常来这里做生意。",
+      "id": "tabriz",
+      "intro": "大不里士在今伊朗西北部，十三世纪是伊儿汗国的都城，东西方的商人和使节在这里往来不绝。",
+      "modern_reference": "伊朗东阿塞拜疆省大不里士",
+      "name": "大不里士",
+      "route_hint": "LAND",
+      "scenery": "巨大的有顶集市里巷道纵横，店铺里铺满地毯，驼队在客栈院子里卸货。",
+      "side_hint": "W",
+      "sights": "大不里士有顶集市是世界上最大的有顶集市之一，砖砌的圆顶一个连着一个，里面有客栈、清真寺和学校。",
+      "specialty": "carpet"
+    },
+    {
+      "archetype": "aw03_blue_dome_bazaar",
+      "auto_pick": true,
+      "epithet": "绿洲里的古老都城",
+      "historical_period": "古代至中世纪，重点为7至8世纪",
+      "history": "大马士革坐落在叙利亚沙漠边缘的古塔绿洲里，是世界上一直有人居住的最古老城市之一。661年起，倭马亚王朝以这里为都城，统治着从西班牙到中亚的辽阔土地。城里的工匠擅长打造金属器物，商队从这里出发，前往巴格达、麦加和地中海边的港口。",
+      "id": "damascus",
+      "intro": "大马士革在今叙利亚，是世界上最古老的城市之一。七世纪倭马亚王朝定都在这里，这里成了商旅云集的大城。",
+      "modern_reference": "叙利亚首都大马士革",
+      "name": "大马士革",
+      "route_hint": "LAND",
+      "scenery": "倭马亚大清真寺的宣礼塔高高耸立，集市里叮叮当当地敲着铜器。",
+      "side_hint": "W",
+      "sights": "倭马亚大清真寺的墙上贴着金色的马赛克；老城里的直街和有顶集市人来人往。",
+      "specialty": "copper_jug"
+    },
+    {
+      "archetype": "aw11_colonnade_city",
+      "auto_pick": true,
+      "epithet": "奥龙特斯河畔的罗马大城",
+      "historical_period": "公元前300年至中世纪",
+      "history": "安条克建于公元前300年，是塞琉古王朝的都城。罗马时代，它和亚历山大港一样是帝国东部最大的城市之一，城里有一条长长的柱廊大街。从东方经叙利亚沙漠运来的丝绸和香料，常经过这里再运往地中海。",
+      "id": "antioch",
+      "intro": "安条克在今土耳其南部的奥龙特斯河边，由塞琉古王朝建立，罗马时代是东方最大的城市之一。",
+      "modern_reference": "土耳其哈塔伊省安塔基亚",
+      "name": "安条克",
+      "route_hint": "LAND",
+      "scenery": "宽阔的柱廊大街贯穿全城，两旁商铺林立，城后的山上筑着城墙。",
+      "side_hint": "W",
+      "sights": "古城遗址出土了大量精美的马赛克地板；城边山崖上的圣彼得洞穴教堂，据说是最早的教堂之一。",
+      "specialty": "laurel_soap"
+    },
+    {
+      "archetype": "aw02_caravanserai_town",
+      "auto_pick": true,
+      "epithet": "黑海南岸的商路终点",
+      "historical_period": "公元前8世纪至15世纪",
+      "history": "特拉比松由古希腊移民在公元前8世纪建立，后来归属罗马和拜占庭。1204年以后，这里成为特拉比松帝国的都城。从大不里士出发的商队翻山越岭来到这里，把丝绸和香料装船运往君士坦丁堡和意大利，城市因此繁荣起来。",
+      "id": "trebizond",
+      "intro": "特拉比松就是今土耳其的特拉布宗，在黑海南岸，古希腊人在这里建城。从波斯来的商队在这里把货物装上船。",
+      "modern_reference": "土耳其特拉布宗",
+      "name": "特拉比松",
+      "route_hint": "LAND",
+      "scenery": "城市依山面海，古城墙沿着两道深谷而建，港湾里停着帆船。",
+      "side_hint": "W",
+      "sights": "老城建在两道深谷之间的台地上；圣索菲亚教堂里保存着拜占庭时代的壁画。",
+      "specialty": "honey"
+    },
+    {
+      "archetype": "aw01_oasis_citadel",
+      "auto_pick": true,
+      "epithet": "群山怀抱的山口之城",
+      "historical_period": "古代至中世纪",
+      "history": "喀布尔位于兴都库什山南麓的河谷里，往东越过开伯尔山口，就能到达印度平原。从中亚来的商队和僧人翻过大山，常在这里歇脚，再南下印度。这座城历史悠久，几千年来多次易主，是佛教和各种文化交汇的地方。",
+      "id": "kabul",
+      "intro": "喀布尔在今阿富汗东部的山谷里，扼守通往印度的山口，是往来中亚和印度的商队必经之地。",
+      "modern_reference": "阿富汗首都喀布尔",
+      "name": "喀布尔",
+      "route_hint": "LAND",
+      "scenery": "城市夹在群山之间，山坡上筑着古老的城墙，河谷里是一片片果园。",
+      "side_hint": "W",
+      "sights": "老城南面山脊上的古城墙蜿蜒起伏；城里的巴布尔花园种满树木，一层层顺着山坡而下。",
+      "specialty": "pomegranate"
+    },
+    {
+      "archetype": "aw11_colonnade_city",
+      "auto_pick": true,
+      "epithet": "金色马赛克的古都",
+      "historical_period": "5世纪至8世纪",
+      "history": "拉文纳靠近亚得里亚海，四周曾是沼泽，易守难攻。402年，西罗马帝国把都城迁到这里；帝国灭亡以后，它又先后成为东哥特王国的都城和拜占庭帝国在意大利的统治中心。城外的克拉塞港停泊着帝国的舰队，也迎接东方来的商船。",
+      "id": "ravenna",
+      "intro": "拉文纳在今意大利东北部，五世纪时是西罗马帝国的都城，后来又归拜占庭帝国管辖。",
+      "modern_reference": "意大利拉文纳",
+      "name": "拉文纳",
+      "route_hint": "LAND",
+      "scenery": "朴素的砖砌教堂里，墙上和穹顶上贴满金光闪闪的马赛克。",
+      "side_hint": "W",
+      "sights": "圣维塔莱教堂和加拉·普拉西提阿陵墓里，保存着五六世纪的彩色马赛克，画着皇帝、皇后和满天星空。",
+      "specialty": "olive_oil"
+    },
+    {
+      "archetype": "aw04_windcatcher_town",
+      "auto_pick": true,
+      "epithet": "辛巴达故乡的海港",
+      "historical_period": "中世纪，约9至10世纪最盛",
+      "history": "苏哈尔在阿曼湾沿岸，古称马宗，附近山区自古出产铜。中世纪时，它是阿曼最大、最繁华的港口，阿拉伯商船从这里出发，航行到印度、东南亚，甚至中国的广州。《一千零一夜》里航海家辛巴达的故事，也传说和这里有关。",
+      "id": "sohar",
+      "intro": "苏哈尔在今阿曼北部的阿曼湾边，十世纪时是阿曼最大的港口，传说是航海家辛巴达的故乡。",
+      "modern_reference": "阿曼北巴提奈省苏哈尔",
+      "name": "苏哈尔",
+      "route_hint": "SEA",
+      "scenery": "白色的城堡立在海边，港湾里停满三角帆船，码头上人来人往。",
+      "side_hint": "W",
+      "sights": "海边的白色苏哈尔城堡保存至今；古港一带发掘出过从远方运来的陶瓷碎片。",
+      "specialty": "copper_jug"
+    },
+    {
+      "archetype": "aw06_lighthouse_port",
+      "auto_pick": true,
+      "epithet": "红海边通往印度的古港",
+      "historical_period": "公元前3世纪至公元6世纪",
+      "history": "贝勒尼基约在公元前275年由托勒密二世建立，用他母亲的名字命名。罗马时代，商船每年乘季风从这里出发前往印度，运回胡椒、宝石和棉布，货物再由骆驼穿过东部沙漠运到尼罗河边。考古学家在遗址里发现过来自印度的胡椒和柚木。",
+      "id": "berenice",
+      "intro": "贝勒尼基在今埃及东南的红海岸边，由托勒密王朝建立，罗马时代是通往印度的大港。",
+      "modern_reference": "埃及红海省贝勒尼基遗址",
+      "name": "贝勒尼基",
+      "route_hint": "SEA",
+      "scenery": "海边沙丘间立着神庙和仓库，商船乘着季风开往印度。",
+      "side_hint": "W",
+      "sights": "遗址在荒凉的海岸上，残存着塞拉皮斯神庙的石墙和港口仓库的遗迹。",
+      "specialty": "papyrus"
+    },
+    {
+      "archetype": "aw06_lighthouse_port",
+      "auto_pick": false,
+      "epithet": "灯塔与图书馆的古都",
+      "historical_period": "公元前4世纪至罗马帝国时期",
+      "history": "亚历山大港建于公元前331年，后来是托勒密王朝的都城。城外法罗斯岛上的灯塔是古代世界七大奇迹之一，城里的大图书馆收藏了大量书卷。罗马时代，它是地中海东部最大的港口，印度和阿拉伯运来的香料经红海和尼罗河转运到这里，再运往罗马。",
+      "id": "alexandria",
+      "intro": "亚历山大港在今埃及北部的地中海边，由亚历山大大帝建立，古时以灯塔和图书馆闻名世界。",
+      "modern_reference": "埃及亚历山大省亚历山大",
+      "name": "亚历山大港",
+      "route_hint": "SEA",
+      "scenery": "港口外的法罗斯岛上立着高大的灯塔，夜里火光照着进港的商船。",
+      "side_hint": "W",
+      "sights": "古灯塔的原址上建起了盖特贝城堡；海边的新亚历山大图书馆纪念着古代的大图书馆。",
+      "specialty": "papyrus"
+    },
+    {
+      "archetype": "ae07_grape_oasis",
+      "auto_pick": true,
+      "epithet": "火焰山下的绿洲古国",
+      "historical_period": "汉代至元代",
+      "history": "高昌在吐鲁番盆地，汉代在这里屯田戍守，后来发展成高昌国，是丝绸之路北道上的重要绿洲。630年前后，玄奘西行路过这里，高昌王麴文泰热情挽留他讲经。640年唐朝在这里设立西州，吐鲁番的葡萄很早就十分有名。",
+      "id": "gaochang",
+      "intro": "高昌在今新疆吐鲁番，是丝绸之路上的绿洲古城。唐朝时，玄奘西行取经曾在这里停留讲经。",
+      "modern_reference": "中国新疆吐鲁番市高昌故城",
+      "name": "高昌",
+      "route_hint": "LAND",
+      "scenery": "火焰山的红色山岩在热浪里闪动，山下的葡萄沟一片翠绿，晾房把葡萄晾成葡萄干。",
+      "side_hint": "E",
+      "sights": "高昌故城的夯土城墙还立在戈壁上；北边的火焰山红岩起伏，葡萄沟里满是葡萄架。",
+      "specialty": "raisins"
+    },
+    {
+      "archetype": "ae06_yurt_market",
+      "auto_pick": true,
+      "epithet": "草原帝国的早期都城",
+      "historical_period": "13世纪",
+      "history": "哈拉和林在蒙古高原的鄂尔浑河谷。1235年窝阔台汗在这里修建都城，城里有宫殿、市场和各种宗教的寺院，来自欧洲、中亚和中国的使节、商人和工匠都曾到过这里。忽必烈迁都以后，这里逐渐冷落。",
+      "id": "karakorum",
+      "intro": "哈拉和林在今蒙古国中部的鄂尔浑河谷，是蒙古帝国早期的都城，各国使节、商人和工匠都来过这里。",
+      "modern_reference": "蒙古国前杭爱省哈拉和林",
+      "name": "哈拉和林",
+      "route_hint": "LAND",
+      "scenery": "辽阔的草原上，毡房像白蘑菇一样连成一片；牧民赶着马群和羊群，在城外的集市上交换货物。",
+      "side_hint": "E",
+      "sights": "古城遗址旁有额尔德尼召寺院，寺墙上立着一百多座白塔；城外是开阔的鄂尔浑河谷草原。",
+      "specialty": "cheese"
+    },
+    {
+      "archetype": "ae05_snow_monastery_town",
+      "auto_pick": true,
+      "epithet": "雪域高原上的吐蕃都城",
+      "historical_period": "7世纪至9世纪（吐蕃王朝）",
+      "history": "逻些就是今天的拉萨，7世纪松赞干布统一吐蕃后在这里建都。641年，唐朝的文成公主远嫁吐蕃，沿着唐蕃古道来到逻些，带来了工匠、书籍和佛像。唐蕃古道把长安和逻些连在一起，茶叶、丝绸和高原的马匹、药材在这条路上往来。",
+      "id": "lhasa",
+      "intro": "逻些就是今天的拉萨，是吐蕃王朝的都城。唐朝时文成公主沿唐蕃古道来到这里，带来了中原的工匠和书籍。",
+      "modern_reference": "中国西藏自治区拉萨市",
+      "name": "逻些",
+      "route_hint": "LAND",
+      "scenery": "红山上建起了宫殿，城中有大昭寺，经幡在高原的风里飘动；河谷里种着青稞，牦牛慢慢走过。",
+      "side_hint": "E",
+      "sights": "红山上的布达拉宫层层叠叠，老城中心是大昭寺，转经的人群沿着八廓街缓缓前行。",
+      "specialty": "highland_barley"
+    },
+    {
+      "archetype": "ae11_ghat_town",
+      "auto_pick": true,
+      "epithet": "恒河岸边的古印度都城",
+      "historical_period": "公元前5世纪至公元5世纪",
+      "history": "华氏城在恒河南岸，是古印度摩揭陀国和孔雀王朝的都城，阿育王就在这里统治过几乎整个印度。四五世纪笈多王朝时，它依然繁荣。东晋高僧法显曾在这里住了三年，学习梵文、抄写佛经。",
+      "id": "pataliputra",
+      "intro": "华氏城在今印度东部的恒河岸边，是古印度好几个王朝的都城。一千六百年前，中国僧人法显曾在这里学习。",
+      "modern_reference": "印度比哈尔邦巴特那",
+      "name": "华氏城",
+      "route_hint": "LAND",
+      "scenery": "宽阔的恒河缓缓流过，石阶一级级伸进河里，人们在河边洗衣、打水、晾晒棉布。",
+      "side_hint": "E",
+      "sights": "今天的巴特那城下埋着古都的遗址，出土过孔雀王朝大殿的石柱；宽阔的恒河从城北流过。",
+      "specialty": "cotton"
+    },
+    {
+      "archetype": "ae01_kiln_town",
+      "auto_pick": true,
+      "epithet": "湘江边的彩瓷窑城",
+      "historical_period": "唐代（长沙窑兴盛的时期）",
+      "history": "长沙在湘江下游，秦代就设了长沙郡。唐朝时，城北的铜官窑烧出大量带彩绘和诗句的瓷器，沿湘江、长江运到扬州、广州等港口，再装船卖到东南亚和西亚。在印度尼西亚发现的唐代“黑石号”沉船上，就装着五万多件长沙窑瓷器。",
+      "id": "changsha",
+      "intro": "长沙在湖南湘江边。唐朝时城外的铜官窑烧出大量彩绘瓷器，经江河运到海港，再卖到西亚。",
+      "modern_reference": "中国湖南省长沙市",
+      "name": "长沙",
+      "route_hint": "LAND",
+      "scenery": "湘江边的山坡上，长长的窑顺坡而上，窑火通红；瓷碗上画着花鸟，还写着有趣的诗句。",
+      "side_hint": "E",
+      "sights": "湘江西岸的岳麓山林木葱郁，山下有岳麓书院；城北的铜官镇还留着唐代长沙窑的遗址。",
+      "specialty": "tung_oil"
+    },
+    {
+      "archetype": "ae02_canal_town",
+      "auto_pick": true,
+      "epithet": "运河与长江交汇的名城",
+      "historical_period": "隋唐至宋元",
+      "history": "扬州在长江北岸，大运河在这里和长江相交，是南北水运的枢纽。唐朝时扬州商业繁荣，城里住着许多阿拉伯和波斯商人，有“扬一益二”的说法。扬州大明寺的高僧鉴真六次东渡，终于到达日本，传去了佛法和建筑、医药知识。",
+      "id": "yangzhou",
+      "intro": "扬州在长江和大运河交汇的地方。唐朝时这里是大商港，常住着阿拉伯和波斯商人，扬州高僧鉴真还东渡去了日本。",
+      "modern_reference": "中国江苏省扬州市",
+      "name": "扬州",
+      "route_hint": "SEA",
+      "scenery": "城里河道纵横，石桥一座接一座；湖边杨柳依依，小船在桥下慢慢穿行。",
+      "side_hint": "E",
+      "sights": "瘦西湖边柳树成行，石桥一座连着一座；古运河从城边流过，大明寺立在蜀冈上。",
+      "specialty": "oil_paper_umbrella"
+    },
+    {
+      "archetype": "ae09_paper_village",
+      "auto_pick": true,
+      "epithet": "宣纸得名的江南古城",
+      "historical_period": "唐代以来",
+      "history": "宣城古称宣州，在今安徽南部，东晋南朝时已是江南的名郡。唐代宣州一带出产的纸洁白柔韧、久放不坏，被选作贡品，因为出自宣州，所以叫宣纸。这一带还出产好笔，是有名的文房之乡。",
+      "id": "xuancheng",
+      "intro": "宣城古称宣州，在今安徽南部。这一带出产的纸洁白柔韧，唐代就被选作贡品，因为出自宣州，所以叫宣纸。",
+      "modern_reference": "中国安徽省宣城市",
+      "name": "宣城",
+      "route_hint": "LAND",
+      "scenery": "青山绿水之间，白墙黑瓦的村落依山而建；纸坊里，工匠把一张张湿纸贴在墙上烘干。",
+      "side_hint": "E",
+      "sights": "敬亭山因为李白的诗“相看两不厌，只有敬亭山”而出名；泾县的纸坊里，工匠一张张捞纸、晒纸。",
+      "specialty": "xuan_paper"
+    },
+    {
+      "archetype": "ae10_pine_hill_town",
+      "auto_pick": true,
+      "epithet": "海东盛国的仿唐都城",
+      "historical_period": "8世纪至10世纪",
+      "history": "上京龙泉府是渤海国的都城，在今黑龙江宁安。渤海国和唐朝往来密切，派人到长安学习，都城也仿照长安修建，有宫城、皇城和棋盘一样的街道，被称为“海东盛国”。926年，渤海国被契丹所灭。",
+      "id": "balhae_sanggyeong",
+      "intro": "上京龙泉府是渤海国的都城，在今黑龙江宁安。渤海国仿照唐朝长安修建都城，被称为“海东盛国”。",
+      "modern_reference": "中国黑龙江省宁安市渤海镇",
+      "name": "渤海上京",
+      "route_hint": "LAND",
+      "scenery": "城外是茂密的红松林和镜泊湖，城里古寺前立着一座高高的石灯幢，雕刻得十分精美。",
+      "side_hint": "E",
+      "sights": "遗址上还能看到宫殿的石台基和城墙；兴隆寺里的石灯幢高约六米，是渤海国留下的珍品。",
+      "specialty": "pine_nuts"
+    },
+    {
+      "archetype": "ae04_stilt_village",
+      "auto_pick": true,
+      "epithet": "红河口的南海古港",
+      "historical_period": "汉代至唐代",
+      "history": "交州在红河三角洲，汉代设交趾郡，后来称交州，是中原王朝在南方的重要州郡。它地处南海航线上，东南亚和印度来的商船在这里停靠，运来香料、珍珠和象牙，佛教也经海路传到这里。",
+      "id": "jiaozhou",
+      "intro": "交州在今越南北部的红河三角洲，一千多年前就是南海航线上的重要港口，各地商船在这里停靠。",
+      "modern_reference": "越南北部红河三角洲，今河内一带",
+      "name": "交州",
+      "route_hint": "SEA",
+      "scenery": "红河带来肥沃的泥土，稻田一望无际；水边的高脚木屋下，小船载着香料往来。",
+      "side_hint": "E",
+      "sights": "红河带来的泥土冲积成大片稻田；附近的古螺城城墙像螺壳一样一圈圈盘绕。",
+      "specialty": "star_anise"
+    },
+    {
+      "archetype": "ae12_shipyard_port",
+      "auto_pick": true,
+      "epithet": "海上丝路的千年大港",
+      "historical_period": "秦汉至宋元",
+      "history": "广州古称番禺，秦汉时已是岭南的大城和海港。唐朝在这里设立市舶使，专门管理海外贸易，城里有专供外国商人居住的蕃坊。码头上，商船运来香料和象牙，又运走丝绸和瓷器。",
+      "id": "guangzhou",
+      "intro": "广州古称番禺，在珠江入海口，自秦汉起就是海上丝绸之路的大港，外国商船常常在这里靠岸。",
+      "modern_reference": "中国广东省广州市",
+      "name": "广州",
+      "route_hint": "SEA",
+      "scenery": "珠江边的船厂里，工匠正在造大木船；码头上堆满瓷器、蔗糖和香料，各国商人来来往往。",
+      "side_hint": "E",
+      "sights": "珠江从城南流过，南海神庙立在江边；怀圣寺的光塔是古代商船进港的地标。",
+      "specialty": "sugarcane"
+    },
+    {
+      "archetype": "ae12_shipyard_port",
+      "auto_pick": true,
+      "epithet": "通往新罗日本的出海口",
+      "historical_period": "唐代至北宋",
+      "history": "登州在山东半岛北端，唐朝时是通往朝鲜半岛和日本的重要港口，新罗和日本的使者、僧人、商人常在这里上岸。日本僧人圆仁入唐求法时，曾在登州一带的新罗人寺院里住过。北宋前期，高丽使者也多从登州往来。",
+      "id": "dengzhou",
+      "intro": "登州在今山东蓬莱，是唐朝时通往朝鲜半岛和日本的出海口，新罗和日本的使者、商人常在这里上岸。",
+      "modern_reference": "中国山东省蓬莱一带",
+      "name": "登州",
+      "route_hint": "SEA",
+      "scenery": "海边山崖上立着蓬莱阁，传说八仙从这里过海；港湾里停满木船，商人摇着折扇上岸。",
+      "side_hint": "E",
+      "sights": "海边山崖上立着蓬莱阁，相传八仙从这里过海；港湾里泊着渔船和木帆船。",
+      "specialty": "folding_fan"
+    },
+    {
+      "archetype": "ae03_drum_tower_village",
+      "auto_pick": true,
+      "epithet": "山水甲天下的漓江古城",
+      "historical_period": "秦代以来",
+      "history": "桂林在广西东北部，秦始皇时开凿的灵渠就在附近。灵渠连通湘江和漓江，让北方的船能一路南下到珠江和广州。从此桂林成为中原通往岭南的水路要道，唐宋时是广西的政治中心。",
+      "id": "guilin",
+      "intro": "桂林在广西东北部。秦朝开凿的灵渠就在附近，连通湘江和漓江，让北方的船能一路南下到广州出海。",
+      "modern_reference": "中国广西壮族自治区桂林市",
+      "name": "桂林",
+      "route_hint": "LAND",
+      "scenery": "漓江两岸奇峰林立，江上竹筏悠悠；山里的侗寨立着鼓楼，村民用竹子编出各种器物。",
+      "side_hint": "E",
+      "sights": "漓江两岸奇峰林立，江上竹筏悠悠；附近山区的侗寨立着鼓楼和风雨桥。",
+      "specialty": "tung_oil"
+    },
+    {
+      "archetype": "ae11_ghat_town",
+      "auto_pick": true,
+      "epithet": "马拉巴尔海岸的香料港",
+      "historical_period": "12世纪至15世纪",
+      "history": "古里在印度西南的马拉巴尔海岸，12世纪以后成为印度洋上最繁忙的港口之一，由当地的扎莫林王统治。阿拉伯、波斯和中国的商船都来这里交易胡椒、生姜和棉布，英语里“印花棉布”这个词就来自古里的名字。14世纪，旅行家伊本·白图泰到过这里。",
+      "id": "calicut",
+      "intro": "古里就是今印度的科泽科德，在印度西南的马拉巴尔海岸，是香料贸易的大港，印度棉布也从这里运往各地。",
+      "modern_reference": "印度喀拉拉邦科泽科德",
+      "name": "古里",
+      "route_hint": "SEA",
+      "scenery": "椰树林里藏着港口，码头上堆着成捆的棉布，各国商船在这里靠岸。",
+      "side_hint": "E",
+      "sights": "海边沙滩平缓，港口旁有古老的清真寺和市场；城外的椰树和胡椒园一眼望不到边。",
+      "specialty": "cotton"
+    },
+    {
+      "archetype": "ae06_yurt_market",
+      "auto_pick": true,
+      "epithet": "石窟大佛守望的北魏旧都",
+      "historical_period": "北魏（4至5世纪）",
+      "history": "大同地处农耕地区和草原的交界。398年，北魏迁都平城，这里成为北方的政治中心近一百年。北魏皇室在城西武周山开凿云冈石窟，工匠融合了印度、中亚和中原的艺术风格。494年北魏迁都洛阳以后，平城仍是北方的军事重镇。",
+      "id": "datong",
+      "intro": "大同古称平城，在今山西北部。北魏前期在这里定都近百年，并在城西的武周山开凿了云冈石窟。",
+      "modern_reference": "中国山西省大同市",
+      "name": "大同",
+      "route_hint": "LAND",
+      "scenery": "高大的城墙围着古城，城西的山崖上凿满石窟，大佛静静端坐。",
+      "side_hint": "E",
+      "sights": "云冈石窟第二十窟的露天大佛高约十四米；城里的华严寺、善化寺保存着辽金时代的木构大殿。",
+      "specialty": "cheese"
+    },
+    {
+      "archetype": "ae07_grape_oasis",
+      "auto_pick": true,
+      "epithet": "天山脚下的乐舞之国",
+      "historical_period": "汉代至唐代",
+      "history": "龟兹是塔里木盆地北缘的绿洲古国，汉代和西域都护府往来密切，唐朝在这里设立安西都护府。龟兹人信奉佛教，擅长音乐舞蹈，龟兹乐传入中原后大受欢迎。高僧鸠摩罗什出生在龟兹，后来到长安翻译了大量佛经。",
+      "id": "kucha",
+      "intro": "龟兹在今新疆库车一带，是丝路北道上的佛教古国，以音乐和舞蹈闻名，高僧鸠摩罗什就出生在这里。",
+      "modern_reference": "中国新疆阿克苏地区库车市",
+      "name": "龟兹",
+      "route_hint": "LAND",
+      "scenery": "天山脚下的河谷里，崖壁上开凿着一排排石窟，窟里画满飞天和乐师。",
+      "side_hint": "E",
+      "sights": "克孜尔千佛洞开凿在渭干河边的崖壁上，洞窟里保存着彩色壁画；城外还有苏巴什佛寺遗址。",
+      "specialty": "raisins"
+    },
+    {
+      "archetype": "ae02_canal_town",
+      "auto_pick": true,
+      "epithet": "清明上河图里的北宋都城",
+      "historical_period": "北宋（960—1127年）",
+      "history": "开封地处中原腹地，战国时魏国曾在这里建都。北宋定都开封，称为东京，汴河连通大运河，南方的粮食、茶叶和海外来的香料都运到这里，城里人口超过百万。画家张择端的《清明上河图》，画的就是这时候汴河两岸的热闹景象。",
+      "id": "kaifeng",
+      "intro": "开封古称汴京，是北宋的都城。汴河穿城而过，南方的粮食和货物顺着运河源源不断地运到这里。",
+      "modern_reference": "中国河南省开封市",
+      "name": "开封",
+      "route_hint": "LAND",
+      "scenery": "汴河上船只往来，虹桥上挤满行人，河岸边的店铺和饭馆一家挨着一家。",
+      "side_hint": "E",
+      "sights": "开封铁塔用铁色琉璃砖砌成，已经站了九百多年；龙亭一带是北宋皇宫的旧址。",
+      "specialty": "oil_paper_umbrella"
+    },
+    {
+      "archetype": "ae07_grape_oasis",
+      "auto_pick": true,
+      "epithet": "河西走廊上的边塞重镇",
+      "historical_period": "汉代至唐代",
+      "history": "凉州位于河西走廊东端，汉武帝设武威郡以后，一直是西北的军政中心和商业大城。东晋十六国时，前凉、后凉等政权曾在这里建都。唐代凉州十分繁华，西域的音乐和胡商聚集在这里，唐诗里的《凉州词》唱的就是这里的边塞风光。",
+      "id": "liangzhou",
+      "intro": "凉州就是今甘肃武威，在河西走廊东段，汉武帝时设武威郡，是中原通往西域的第一座大城。",
+      "modern_reference": "中国甘肃省武威市",
+      "name": "凉州",
+      "route_hint": "LAND",
+      "scenery": "祁连山的雪水浇灌出大片绿洲，城里商旅云集，驼铃声声。",
+      "side_hint": "E",
+      "sights": "雷台汉墓出土了青铜奔马“马踏飞燕”，如今是中国旅游的标志；城里还有古老的罗什寺塔。",
+      "specialty": "raisins"
+    },
+    {
+      "archetype": "ae11_ghat_town",
+      "auto_pick": true,
+      "epithet": "南印度的古老神庙之城",
+      "historical_period": "公元前3世纪至14世纪",
+      "history": "马杜赖是南印度最古老的城市之一，古时是潘地亚王国的都城。潘地亚王国控制着南方海边的采珠场，和罗马、希腊有海上贸易，南印度出土过许多罗马金币。古泰米尔语的桑伽姆诗歌，相传就是在马杜赖的诗人集会上编成的。",
+      "id": "madurai",
+      "intro": "马杜赖在今印度南部的韦盖河边，是古代潘地亚王国的都城，两千多年前就和罗马有生意往来。",
+      "modern_reference": "印度泰米尔纳德邦马杜赖",
+      "name": "马杜赖",
+      "route_hint": "LAND",
+      "scenery": "高大的彩色塔门上雕满神像，城里的集市堆满棉布和花环。",
+      "side_hint": "E",
+      "sights": "米纳克希神庙的塔门高高耸立，外墙上挤满彩色神像；城边的韦盖河缓缓流过。",
+      "specialty": "cotton"
+    },
+    {
+      "archetype": "ae04_stilt_village",
+      "auto_pick": true,
+      "epithet": "室利佛逝的海上佛国都城",
+      "historical_period": "7世纪至11世纪",
+      "history": "巨港位于苏门答腊岛的穆西河边，7至11世纪是室利佛逝王国的中心。室利佛逝控制着马六甲海峡一带的海路，往来中国和印度的商船都要在这里停靠。唐朝高僧义净往返印度时，曾在这里住了多年，学习梵文、翻译佛经。",
+      "id": "palembang",
+      "intro": "巨港在今印度尼西亚苏门答腊岛东南，是七到十一世纪海上强国室利佛逝的中心，唐朝高僧义净曾在这里学习。",
+      "modern_reference": "印度尼西亚南苏门答腊省巨港",
+      "name": "巨港",
+      "route_hint": "SEA",
+      "scenery": "宽阔的穆西河上漂着木排屋，高脚木屋沿河排开，小船穿梭不停。",
+      "side_hint": "E",
+      "sights": "穆西河两岸是高脚木屋和水上人家；城边出土过室利佛逝时代的佛像和石刻铭文。",
+      "specialty": "sugarcane"
+    },
+    {
+      "archetype": "ae12_shipyard_port",
+      "auto_pick": true,
+      "epithet": "日本通往大陆的海上门户",
+      "historical_period": "7世纪至14世纪",
+      "history": "博多湾面向朝鲜半岛和中国，自古是日本对外交通的门户。奈良、平安时代，朝廷在这里设鸿胪馆，接待唐朝和新罗的使者、商人。宋代以后，许多中国商人在博多定居，带来了瓷器、铜钱和佛经。",
+      "id": "hakata",
+      "intro": "博多在今日本福冈，是日本离亚洲大陆最近的港口。唐宋时，日本的使者、僧人和商人多从这里出海。",
+      "modern_reference": "日本福冈县福冈市博多区一带",
+      "name": "博多",
+      "route_hint": "SEA",
+      "scenery": "博多湾里帆船进进出出，码头上商人来来往往，远处青山环抱。",
+      "side_hint": "E",
+      "sights": "鸿胪馆的遗址就在福冈城旧址里；博多的古寺承天寺，相传是宋朝商人出资修建的。",
+      "specialty": "folding_fan"
+    },
+    {
+      "archetype": "ae01_kiln_town",
+      "auto_pick": false,
+      "epithet": "窑火千年不熄的瓷都",
+      "historical_period": "宋元时期",
+      "history": "景德镇在江西东北部的昌江边，古称昌南镇。北宋景德年间，这里烧造的青白瓷得到皇帝赏识，镇子就以“景德”年号为名。元代朝廷在这里设立浮梁瓷局，瓷器沿江运到港口，远销海外。附近高岭村出产的瓷土又白又细，后来全世界都把这种瓷土叫作“高岭土”。",
+      "id": "jingdezhen",
+      "intro": "景德镇是有名的瓷都，宋朝时以年号得名，附近高岭村的白泥就叫高岭土，是烧瓷最要紧的原料。",
+      "modern_reference": "中国江西省景德镇市",
+      "name": "景德镇",
+      "route_hint": "LAND",
+      "scenery": "龙窑顺着山坡往上爬，烟囱冒着青烟，河边堆满等着装船的白泥。",
+      "side_hint": "E",
+      "sights": "古窑民俗博览区里还能看到烧柴的古窑；御窑厂遗址出土了大量古代官窑瓷片。",
+      "specialty": "kaolin"
+    },
+    {
+      "archetype": "ae02_canal_town",
+      "auto_pick": false,
+      "epithet": "西湖边的南宋都城",
+      "historical_period": "隋唐至宋元，重点为南宋",
+      "history": "杭州位于钱塘江口，隋朝开凿大运河以后，成为运河南端的重要城市。南宋把都城迁到杭州，称为临安，城里商铺林立、人口稠密。元代马可·波罗称它为“天城”，说它是世界上最美丽华贵的城市。",
+      "id": "hangzhou",
+      "intro": "杭州在大运河的南端，南宋时称临安，是当时的都城，也是世界上人口最多的城市之一。",
+      "modern_reference": "中国浙江省杭州市",
+      "name": "杭州",
+      "route_hint": "LAND",
+      "scenery": "西湖上波光粼粼，断桥和苏堤横卧湖面，湖边游人撑着纸伞散步。",
+      "side_hint": "E",
+      "sights": "西湖三面环山，苏堤、白堤横跨湖上；灵隐寺藏在山林里，六和塔立在钱塘江边。",
+      "specialty": "oil_paper_umbrella"
+    },
+    {
+      "archetype": "ae12_shipyard_port",
+      "auto_pick": false,
+      "epithet": "三江口的东海大港",
+      "historical_period": "唐宋元时期",
+      "history": "明州在余姚江、奉化江和甬江交汇的三江口，唐代开始成为重要海港。北宋时朝廷在这里设立市舶司，管理和日本、高丽之间的海上贸易，1074年以后高丽使者多从明州往来。许多日本僧人也从明州登岸，前往天台山等地求法。",
+      "id": "mingzhou",
+      "intro": "明州就是今浙江宁波，唐宋时是通往日本和高丽的大港，朝廷在这里设立市舶司管理海外贸易。",
+      "modern_reference": "中国浙江省宁波市",
+      "name": "明州",
+      "route_hint": "SEA",
+      "scenery": "三江口的码头上商船云集，工匠在船厂里造大木船，远处是舟山群岛。",
+      "side_hint": "E",
+      "sights": "天一阁是古老的私家藏书楼；三江口一带曾是繁忙的古码头，庆安会馆里供奉着航海的妈祖。",
+      "specialty": "folding_fan"
+    },
+    {
+      "archetype": "ae09_paper_village",
+      "auto_pick": false,
+      "epithet": "十三朝古都，牡丹花城",
+      "historical_period": "东汉至隋唐",
+      "history": "洛阳地处中原，是中国历史上建都朝代最多的城市之一。东汉时，洛阳是丝绸之路东端的起点之一，佛教传入后在这里建起了白马寺。西晋文学家左思写成《三都赋》，人们争相抄写，一时纸价上涨，这就是“洛阳纸贵”。隋唐时洛阳是东都，运河把南北的货物都汇集到这里。",
+      "id": "luoyang",
+      "intro": "洛阳在黄河支流洛河边，东汉、北魏、隋唐等朝代都曾在这里建都，“洛阳纸贵”的故事就发生在这里。",
+      "modern_reference": "中国河南省洛阳市",
+      "name": "洛阳",
+      "route_hint": "LAND",
+      "scenery": "龙门石窟的大佛面朝伊河，城里牡丹盛开，街市上商旅往来。",
+      "side_hint": "E",
+      "sights": "龙门石窟开凿在伊河两岸的山崖上，卢舍那大佛高约十七米；白马寺被称为中国第一座佛寺。",
+      "specialty": "xuan_paper"
+    },
+    {
+      "archetype": "ae07_grape_oasis",
+      "auto_pick": false,
+      "epithet": "鸣沙山下的石窟艺术宝库",
+      "historical_period": "汉代至元代",
+      "history": "汉武帝设立敦煌郡，这里成为中原通往西域的门户，商队、使节和僧人都在这里补给。从4世纪起，人们在城东南鸣沙山的崖壁上开凿莫高窟，一直延续了一千年。20世纪初，藏经洞里发现了几万件古代写本和绢画，记录了丝路上各民族的生活。",
+      "id": "dunhuang",
+      "intro": "敦煌在今甘肃西北，是河西走廊西端的绿洲，出了阳关、玉门关就进入西域，莫高窟就在城东南。",
+      "modern_reference": "中国甘肃省敦煌市",
+      "name": "敦煌",
+      "route_hint": "LAND",
+      "scenery": "鸣沙山下的月牙泉像一弯新月，崖壁上凿满石窟，窟里画满飞天。",
+      "side_hint": "E",
+      "sights": "莫高窟保存着七百多个洞窟和大片彩色壁画；鸣沙山环抱着月牙泉，沙丘下的泉水终年不干。",
+      "specialty": "raisins"
+    }
+  ],
+  "partner_pool": {
+    "aden": {
+      "SEA": [
+        "sohar"
+      ]
+    },
+    "baghdad": {
+      "LAND": [
+        "herat",
+        "tbilisi",
+        "aleppo",
+        "hormuz",
+        "tabriz",
+        "yazd"
+      ]
+    },
+    "cairo": {
+      "SEA": [
+        "cyrene"
+      ]
+    },
+    "changan": {
+      "LAND": [
+        "changsha",
+        "guilin",
+        "xuancheng",
+        "kaifeng",
+        "datong"
+      ]
+    },
+    "chenla": {
+      "SEA": [
+        "jiaozhou",
+        "guangzhou"
+      ]
+    },
+    "constantinople": {
+      "LAND": [
+        "kayseri",
+        "trebizond",
+        "antioch"
+      ]
+    },
+    "dagon": {
+      "SEA": [
+        "palembang"
+      ]
+    },
+    "delhi": {
+      "LAND": [
+        "pataliputra",
+        "lhasa"
+      ]
+    },
+    "geumseong": {
+      "LAND": [
+        "balhae_sanggyeong"
+      ],
+      "SEA": [
+        "dengzhou",
+        "yangzhou"
+      ]
+    },
+    "heijokyo": {
+      "SEA": [
+        "hakata"
+      ]
+    },
+    "jeddah": {
+      "LAND": [
+        "petra",
+        "damascus"
+      ],
+      "SEA": [
+        "berenice"
+      ]
+    },
+    "panti": {
+      "LAND": [
+        "samarkand",
+        "khiva",
+        "bukhara",
+        "kabul"
+      ]
+    },
+    "rome": {
+      "LAND": [
+        "ravenna"
+      ],
+      "SEA": [
+        "venice",
+        "carthage"
+      ]
+    },
+    "simhala": {
+      "LAND": [
+        "madurai"
+      ],
+      "SEA": [
+        "calicut"
+      ]
+    },
+    "yumenguan": {
+      "LAND": [
+        "gaochang",
+        "karakorum",
+        "kucha",
+        "liangzhou"
+      ]
+    }
+  },
+  "preset_slots": {
+    "changan": {
+      "LAND": [
+        {
+          "for_name": "changsha",
+          "moved_from_seed": 4.73,
+          "rotation": 0.0,
+          "route": {
+            "handles": [
+              [
+                88.414,
+                24.391
+              ]
+            ],
+            "stop_t": [
+              0.333,
+              0.667
+            ]
+          },
+          "route_checked": true,
+          "searched": true,
+          "x": 93.375,
+          "z": 29.375
+        },
+        {
+          "for_name": "xuancheng",
+          "nudged": 1.65,
+          "rotation": 0.0,
+          "route": {
+            "handles": [],
+            "stop_t": [
+              0.333,
+              0.667
+            ]
+          },
+          "route_checked": true,
+          "x": 99.125,
+          "z": 19.625
+        },
+        {
+          "for_name": "datong",
+          "nudged": 1.35,
+          "rotation": 0.0,
+          "route": {
+            "handles": [
+              [
+                88.434,
+                16.578
+              ],
+              [
+                90.543,
+                14.453
+              ],
+              [
+                91.602,
+                12.859
+              ],
+              [
+                91.684,
+                12.078
+              ]
+            ],
+            "stop_t": [
+              0.333,
+              0.667
+            ]
+          },
+          "route_checked": true,
+          "x": 93.125,
+          "z": 10.625
+        }
+      ]
+    },
+    "constantinople": {
+      "LAND": [
+        {
+          "for_name": "",
+          "rotation": 0.0,
+          "route": {
+            "handles": [
+              [
+                24.434,
+                11.328
+              ],
+              [
+                26.297,
+                9.457
+              ],
+              [
+                28.703,
+                8.379
+              ],
+              [
+                32.297,
+                8.371
+              ],
+              [
+                34.234,
+                7.375
+              ]
+            ],
+            "stop_t": [
+              0.333,
+              0.667
+            ]
+          },
+          "route_checked": true,
+          "searched": true,
+          "x": 40.375,
+          "z": 8.625
+        }
+      ]
+    },
+    "delhi": {
+      "LAND": [
+        {
+          "for_name": "",
+          "rotation": 0.0,
+          "route": {
+            "handles": [
+              [
+                69.793,
+                30.797
+              ]
+            ],
+            "stop_t": [
+              0.333,
+              0.667
+            ]
+          },
+          "route_checked": true,
+          "searched": true,
+          "x": 63.625,
+          "z": 24.625
+        }
+      ]
+    },
+    "jeddah": {
+      "LAND": [
+        {
+          "for_name": "petra",
+          "nudged": 1.43,
+          "rotation": 0.0,
+          "route": {
+            "handles": [],
+            "stop_t": [
+              0.333,
+              0.667
+            ]
+          },
+          "route_checked": true,
+          "x": 33.875,
+          "z": 25.625
+        }
+      ]
+    },
+    "layout_sha256": "3e52929761bdf271cf98d3017596dd9158aadb1af9432546107bad5ac86e6a22",
+    "panti": {
+      "LAND": [
+        {
+          "for_name": "",
+          "rotation": 0.0,
+          "route": {
+            "handles": [
+              [
+                65.609,
+                11.102
+              ]
+            ],
+            "stop_t": [
+              0.333,
+              0.667
+            ]
+          },
+          "route_checked": true,
+          "searched": true,
+          "x": 68.875,
+          "z": 7.875
+        }
+      ]
+    },
+    "rome": {
+      "SEA": [
+        {
+          "for_name": "",
+          "rotation": 0.0,
+          "route": {
+            "handles": [
+              [
+                16.375,
+                24.375
+              ],
+              [
+                21.016,
+                25.016
+              ]
+            ],
+            "stop_t": [
+              0.333,
+              0.667
+            ]
+          },
+          "route_checked": true,
+          "searched": true,
+          "x": 18.625,
+          "z": 28.625
+        }
+      ]
+    },
+    "simhala": {
+      "SEA": [
+        {
+          "for_name": "",
+          "rotation": 0.0,
+          "route": {
+            "handles": [
+              [
+                66.625,
+                52.125
+              ],
+              [
+                61.109,
+                52.086
+              ],
+              [
+                52.484,
+                43.484
+              ]
+            ],
+            "stop_t": [
+              0.333,
+              0.667
+            ]
+          },
+          "route_checked": true,
+          "searched": true,
+          "x": 48.125,
+          "z": 41.625
+        }
+      ]
+    },
+    "yumenguan": {
+      "LAND": [
+        {
+          "for_name": "karakorum",
+          "nudged": 0.06,
+          "rotation": 0.0,
+          "route": {
+            "handles": [],
+            "stop_t": [
+              0.333,
+              0.667
+            ]
+          },
+          "route_checked": true,
+          "x": 84.625,
+          "z": 5.625
+        }
+      ]
+    }
+  },
+  "preset_slots_conflicts": [],
+  "schema": "lshu.map_catalogue.v1",
+  "source": "tools/custom_map/catalogue_src/catalogue_src_v1.json",
+  "specialties": [
+    {
+      "display_name": "高岭土",
+      "flavor_side": "E",
+      "hint": "烧瓷器用的白黏土，名字来自景德镇高岭村",
+      "icon": "res://assets/game/goods/good_kaolin_128.png",
+      "key": "kaolin",
+      "placeholder": false,
+      "provenance": {
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "existing actual icon reviewed at 48/96px; source identity independently traced",
+        "source": "art-src/custom-map-catalogue/specialties/kaolin/asset.py",
+        "source_kind": "existing_local_procedural_blender_render",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "油纸伞",
+      "flavor_side": "E",
+      "hint": "竹子做骨架，糊纸刷桐油，晴天遮阳雨天挡雨",
+      "icon": "res://assets/game/goods/good_oil_paper_umbrella_128.png",
+      "key": "oil_paper_umbrella",
+      "placeholder": false,
+      "provenance": {
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "existing actual icon reviewed at 48/96px; source identity independently traced",
+        "source": "art-src/custom-map-catalogue/specialties/oil_paper_umbrella/asset.py",
+        "source_kind": "existing_local_procedural_blender_render",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "桐油",
+      "flavor_side": "E",
+      "hint": "油桐果子榨出的油，刷在船上能防水",
+      "icon": "res://assets/custom_map/graybox/goods/tung_oil.png",
+      "key": "tung_oil",
+      "placeholder": true,
+      "status": "draft",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "八角",
+      "flavor_side": "E",
+      "hint": "像小星星的香料，炖肉煮汤都用得上",
+      "icon": "res://assets/game/goods/good_star_anise_128.png",
+      "key": "star_anise",
+      "placeholder": false,
+      "provenance": {
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "existing actual icon reviewed at 48/96px; source identity independently traced",
+        "source": "art-src/custom-map-catalogue/specialties/star_anise/asset.py",
+        "source_kind": "existing_local_procedural_blender_render",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "青稞",
+      "flavor_side": "E",
+      "hint": "高原上耐寒的大麦，炒熟磨粉就是糌粑",
+      "icon": "res://assets/game/goods/good_highland_barley_128.png",
+      "key": "highland_barley",
+      "placeholder": false,
+      "provenance": {
+        "generator": "tools/map_catalogue/batch2_private_goods.py",
+        "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "20-resource contact at actual 48/96px; distinguishable subject, no placeholder",
+        "runtime_sha256": "8ca787cb8ca67d65439fe89ad8927e838a34363e7de7a697be965a2246b0ee30",
+        "source": "tools/map_catalogue/batch2_goods_source/highland_barley.svg",
+        "source_kind": "local_procedural_faceted_vector",
+        "source_sha256": "c7bff9bbfb18e9765e09369c2d35c42c93d1507e103afa9391c18cf0faea9d31",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "奶酪",
+      "flavor_side": "E",
+      "hint": "牛羊奶做的奶食，晒干了能存很久",
+      "icon": "res://assets/game/goods/good_cheese_128.png",
+      "key": "cheese",
+      "placeholder": false,
+      "provenance": {
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "existing actual icon reviewed at 48/96px; source identity independently traced",
+        "source": "art-src/custom-map-catalogue/specialties/cheese/asset.py",
+        "source_kind": "existing_local_procedural_blender_render",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "葡萄干",
+      "flavor_side": "E",
+      "hint": "绿洲的葡萄晾干后又甜又耐放，好带上路",
+      "icon": "res://assets/game/goods/good_raisins_128.png",
+      "key": "raisins",
+      "placeholder": false,
+      "provenance": {
+        "generator": "tools/map_catalogue/batch2_private_goods.py",
+        "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "20-resource contact at actual 48/96px; distinguishable subject, no placeholder",
+        "runtime_sha256": "1d66bbb43b927f526bbdda99b6d8f9a3a2871d2ce243b245bd5bfe5180115813",
+        "source": "tools/map_catalogue/batch2_goods_source/raisins.svg",
+        "source_kind": "local_procedural_faceted_vector",
+        "source_sha256": "63b804a0c6cf28fe6b04dc5bb27913790aceb4353f33325b09c307d3c9d3b5a3",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "甘蔗",
+      "flavor_side": "E",
+      "hint": "又甜又脆的甘蔗，榨汁熬煮就成了蔗糖",
+      "icon": "res://assets/game/goods/good_sugarcane_128.png",
+      "key": "sugarcane",
+      "placeholder": false,
+      "provenance": {
+        "generator": "tools/map_catalogue/batch2_private_goods.py",
+        "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "20-resource contact at actual 48/96px; distinguishable subject, no placeholder",
+        "runtime_sha256": "fb6756a27c843772db2ca2598cf8b8231b920ccc6952a98fbaae4ae8a466d35c",
+        "source": "tools/map_catalogue/batch2_goods_source/sugarcane.svg",
+        "source_kind": "local_procedural_faceted_vector",
+        "source_sha256": "398186c1c1ca5953a34914b37676027f12d89b44c73e236c63163c733da4a5e8",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "宣纸",
+      "flavor_side": "E",
+      "hint": "安徽宣州出的好纸，写字画画能保存很久",
+      "icon": "res://assets/game/goods/good_xuan_paper_128.png",
+      "key": "xuan_paper",
+      "placeholder": false,
+      "provenance": {
+        "generator": "tools/map_catalogue/batch2_private_goods.py",
+        "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "20-resource contact at actual 48/96px; distinguishable subject, no placeholder",
+        "runtime_sha256": "bb19780a034b778ac01c9523eabb315323fc9398a5ee3f46c3bb42cb4e749eb1",
+        "source": "tools/map_catalogue/batch2_goods_source/xuan_paper.svg",
+        "source_kind": "local_procedural_faceted_vector",
+        "source_sha256": "8ea0ffd6c8fb873f6a2466e5255fe7f219c9fbedf2ce5e2b021292a911de7b18",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "松子",
+      "flavor_side": "E",
+      "hint": "红松塔里剥出的小坚果，又香又脆",
+      "icon": "res://assets/custom_map/graybox/goods/pine_nuts.png",
+      "key": "pine_nuts",
+      "placeholder": true,
+      "status": "draft",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "棉花",
+      "flavor_side": "E",
+      "hint": "软绵绵的白棉花，能纺成线、织成棉布",
+      "icon": "res://assets/game/goods/good_cotton_128.png",
+      "key": "cotton",
+      "placeholder": false,
+      "provenance": {
+        "generator": "tools/map_catalogue/batch2_private_goods.py",
+        "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "20-resource contact at actual 48/96px; distinguishable subject, no placeholder",
+        "runtime_sha256": "c12dee556a561a2314532a4668bea3c72b4f4f746a3cf78e4b67684d4b0b92c2",
+        "source": "tools/map_catalogue/batch2_goods_source/cotton.svg",
+        "source_kind": "local_procedural_faceted_vector",
+        "source_sha256": "736e3b61520b13e58928915176fbe6f467a5051e87c7759d2346dc2336cad3a1",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "折扇",
+      "flavor_side": "E",
+      "hint": "能收能开的扇子，宋代从日本和高丽传来",
+      "icon": "res://assets/game/goods/good_folding_fan_128.png",
+      "key": "folding_fan",
+      "placeholder": false,
+      "provenance": {
+        "generator": "tools/map_catalogue/batch2_private_goods.py",
+        "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "20-resource contact at actual 48/96px; distinguishable subject, no placeholder",
+        "runtime_sha256": "1dbeb21d14ce2456d739296cdf7b2dde5bce542385a68d6daf8233658d08e0c1",
+        "source": "tools/map_catalogue/batch2_goods_source/folding_fan.svg",
+        "source_kind": "local_procedural_faceted_vector",
+        "source_sha256": "3440b54194e5c4ba2eb504c97b97ee6c18171843b11c9c5c369319ae2967b956",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "石榴",
+      "flavor_side": "W",
+      "hint": "从西域传来的水果，籽多多，酸酸甜甜",
+      "icon": "res://assets/game/goods/good_pomegranate_128.png",
+      "key": "pomegranate",
+      "placeholder": false,
+      "provenance": {
+        "generator": "tools/map_catalogue/batch2_private_goods.py",
+        "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "20-resource contact at actual 48/96px; distinguishable subject, no placeholder",
+        "runtime_sha256": "da5983d524327f8682d719a56b3e820ae2014877314c737f7be34ca43d627da8",
+        "source": "tools/map_catalogue/batch2_goods_source/pomegranate.svg",
+        "source_kind": "local_procedural_faceted_vector",
+        "source_sha256": "25dec14afbd42fe5fc5846e8a21426e27697c2266b8d331c2b2a90e4df2654bc",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "甜瓜",
+      "flavor_side": "W",
+      "hint": "中亚绿洲的甜瓜，又大又香又甜",
+      "icon": "res://assets/game/goods/good_melon_128.png",
+      "key": "melon",
+      "placeholder": false,
+      "provenance": {
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "existing actual icon reviewed at 48/96px; source identity independently traced",
+        "source": "art-src/custom-map-catalogue/specialties/melon/asset.py",
+        "source_kind": "existing_local_procedural_blender_render",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "藏红花",
+      "flavor_side": "W",
+      "hint": "紫花里的红花丝，是很贵的香料和染料",
+      "icon": "res://assets/game/goods/good_saffron_128.png",
+      "key": "saffron",
+      "placeholder": false,
+      "provenance": {
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "existing actual icon reviewed at 48/96px; source identity independently traced",
+        "source": "art-src/custom-map-catalogue/specialties/saffron/asset.py",
+        "source_kind": "existing_local_procedural_blender_render",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "开心果",
+      "flavor_side": "W",
+      "hint": "壳会裂开像在笑的坚果，唐朝叫阿月浑子",
+      "icon": "res://assets/game/goods/good_pistachio_128.png",
+      "key": "pistachio",
+      "placeholder": false,
+      "provenance": {
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "existing actual icon reviewed at 48/96px; source identity independently traced",
+        "source": "art-src/custom-map-catalogue/specialties/pistachio/asset.py",
+        "source_kind": "existing_local_procedural_blender_render",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "铜壶",
+      "flavor_side": "W",
+      "hint": "红铜一锤一锤敲成的长嘴壶，结实耐用",
+      "icon": "res://assets/game/goods/good_copper_jug_128.png",
+      "key": "copper_jug",
+      "placeholder": false,
+      "provenance": {
+        "generator": "tools/map_catalogue/batch2_private_goods.py",
+        "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "20-resource contact at actual 48/96px; distinguishable subject, no placeholder",
+        "runtime_sha256": "0ba74f7265299a40b90465ae43c5912890ababe1e53cd75c90bc960f20b8767a",
+        "source": "tools/map_catalogue/batch2_goods_source/copper_jug.svg",
+        "source_kind": "local_procedural_faceted_vector",
+        "source_sha256": "fbc4de67aa21332d305816e6e70e7b656276cd18f6087a782f1aa65fedca6c68",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "橄榄油",
+      "flavor_side": "W",
+      "hint": "橄榄榨出的油，能做菜、点灯，还能护肤",
+      "icon": "res://assets/game/goods/good_olive_oil_128.png",
+      "key": "olive_oil",
+      "placeholder": false,
+      "provenance": {
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "existing actual icon reviewed at 48/96px; source identity independently traced",
+        "source": "art-src/custom-map-catalogue/specialties/olive_oil/asset.py",
+        "source_kind": "existing_local_procedural_blender_render",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "琥珀",
+      "flavor_side": "W",
+      "hint": "古树的树脂埋在地下变成的化石，透亮金黄",
+      "icon": "res://assets/custom_map/graybox/goods/amber.png",
+      "key": "amber",
+      "placeholder": true,
+      "status": "draft",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "地毯",
+      "flavor_side": "W",
+      "hint": "羊毛一个结一个结织成的毯子，花纹很漂亮",
+      "icon": "res://assets/game/goods/good_carpet_128.png",
+      "key": "carpet",
+      "placeholder": false,
+      "provenance": {
+        "generator": "tools/map_catalogue/batch2_private_goods.py",
+        "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "20-resource contact at actual 48/96px; distinguishable subject, no placeholder",
+        "runtime_sha256": "2ec3f06a435beb1183472fe6bc5a32161e565c49b7ebf7ef4a3e7a6ba5bca0c0",
+        "source": "tools/map_catalogue/batch2_goods_source/carpet.svg",
+        "source_kind": "local_procedural_faceted_vector",
+        "source_sha256": "7b6d21bbbf149ea31ae07199a8883c999d2c5cfd84e95884dc6fe710b4c37cd4",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "无花果",
+      "flavor_side": "W",
+      "hint": "看不见花的甜果子，其实小花藏在果子里",
+      "icon": "res://assets/game/goods/good_fig_128.png",
+      "key": "fig",
+      "placeholder": false,
+      "provenance": {
+        "generator": "tools/map_catalogue/batch2_private_goods.py",
+        "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "20-resource contact at actual 48/96px; distinguishable subject, no placeholder",
+        "runtime_sha256": "c5f121eb7043d26d630589123be9117c981d05403402c297a61a2049619c08a2",
+        "source": "tools/map_catalogue/batch2_goods_source/fig.svg",
+        "source_kind": "local_procedural_faceted_vector",
+        "source_sha256": "e0793298c4e435e19569b46014c25def2f0c3781596e2497a4955985eb8acd3f",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "纸莎草",
+      "flavor_side": "W",
+      "hint": "古埃及人把这种水草压成纸来写字",
+      "icon": "res://assets/game/goods/good_papyrus_128.png",
+      "key": "papyrus",
+      "placeholder": false,
+      "provenance": {
+        "generator": "tools/map_catalogue/batch2_private_goods.py",
+        "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "20-resource contact at actual 48/96px; distinguishable subject, no placeholder",
+        "runtime_sha256": "c3612e5dd026aab67b4e33d0cabcb6c882454e12c96899c5b1428160bec53295",
+        "source": "tools/map_catalogue/batch2_goods_source/papyrus.svg",
+        "source_kind": "local_procedural_faceted_vector",
+        "source_sha256": "36384021bf273b7b3e46eb88fba7b29545c931bbfa758c0260ddd1ab42691f4c",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "月桂皂",
+      "flavor_side": "W",
+      "hint": "橄榄油和月桂油熬成的皂，洗手洗脸都行",
+      "icon": "res://assets/custom_map/graybox/goods/laurel_soap.png",
+      "key": "laurel_soap",
+      "placeholder": true,
+      "status": "draft",
+      "supply_total": 10.0
+    },
+    {
+      "display_name": "蜂蜜",
+      "flavor_side": "W",
+      "hint": "蜜蜂采花酿成的蜜，古人拿来做甜点",
+      "icon": "res://assets/game/goods/good_honey_128.png",
+      "key": "honey",
+      "placeholder": false,
+      "provenance": {
+        "generator": "tools/map_catalogue/batch2_private_goods.py",
+        "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5",
+        "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+        "review": "20-resource contact at actual 48/96px; distinguishable subject, no placeholder",
+        "runtime_sha256": "36682249efd96ae179fbfecafc485a38cf737cdde73fca0357c3e8b7f0b69d86",
+        "source": "tools/map_catalogue/batch2_goods_source/honey.svg",
+        "source_kind": "local_procedural_faceted_vector",
+        "source_sha256": "44787825626c69862908f0e6671d1992baffb0a8238d6472b3a134b8c6fcfe8f",
+        "use_scope": "public"
+      },
+      "status": "shipped",
+      "supply_total": 10.0
+    }
+  ],
+  "topologies_v1": {
+    "geo_checked": "geo_rules",
+    "legal_one_pair": 46.0,
+    "one_pair": [
+      {
+        "east": [
+          "changan",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:changan:LAND:w1|w1:aden:SEA:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "aden",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "chenla",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:chenla:SEA:w1|w1:aden:SEA:e1",
+        "new_city_steps": 15.0,
+        "preset_both_sides": false,
+        "west": [
+          "aden",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:geumseong:LAND:w1|w1:aden:SEA:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "aden",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:geumseong:SEA:w1|w1:aden:SEA:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "aden",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "yumenguan",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:yumenguan:LAND:w1|w1:aden:SEA:e1",
+        "new_city_steps": 18.0,
+        "preset_both_sides": false,
+        "west": [
+          "aden",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "changan",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:changan:LAND:w1|w1:baghdad:LAND:e1",
+        "new_city_steps": 15.0,
+        "preset_both_sides": false,
+        "west": [
+          "baghdad",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "chenla",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:chenla:SEA:w1|w1:baghdad:LAND:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "baghdad",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "dagon",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:dagon:SEA:w1|w1:baghdad:LAND:e1",
+        "new_city_steps": 18.0,
+        "preset_both_sides": false,
+        "west": [
+          "baghdad",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "simhala",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:simhala:LAND:w1|w1:baghdad:LAND:e1",
+        "new_city_steps": 15.0,
+        "preset_both_sides": false,
+        "west": [
+          "baghdad",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "simhala",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:simhala:SEA:w1|w1:baghdad:LAND:e1",
+        "new_city_steps": 15.0,
+        "preset_both_sides": false,
+        "west": [
+          "baghdad",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "changan",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:changan:LAND:w1|w1:cairo:SEA:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "cairo",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "chenla",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:chenla:SEA:w1|w1:cairo:SEA:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "cairo",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "dagon",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:dagon:SEA:w1|w1:cairo:SEA:e1",
+        "new_city_steps": 18.0,
+        "preset_both_sides": false,
+        "west": [
+          "cairo",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:geumseong:LAND:w1|w1:cairo:SEA:e1",
+        "new_city_steps": 24.0,
+        "preset_both_sides": false,
+        "west": [
+          "cairo",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:geumseong:SEA:w1|w1:cairo:SEA:e1",
+        "new_city_steps": 24.0,
+        "preset_both_sides": false,
+        "west": [
+          "cairo",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "heijokyo",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:heijokyo:SEA:w1|w1:cairo:SEA:e1",
+        "new_city_steps": 27.0,
+        "preset_both_sides": false,
+        "west": [
+          "cairo",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "changan",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:changan:LAND:w1|w1:constantinople:LAND:e1",
+        "new_city_steps": 18.0,
+        "preset_both_sides": true,
+        "west": [
+          "constantinople",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "chenla",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:chenla:SEA:w1|w1:constantinople:LAND:e1",
+        "new_city_steps": 24.0,
+        "preset_both_sides": false,
+        "west": [
+          "constantinople",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "dagon",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:dagon:SEA:w1|w1:constantinople:LAND:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "constantinople",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "delhi",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:delhi:LAND:w1|w1:constantinople:LAND:e1",
+        "new_city_steps": 15.0,
+        "preset_both_sides": true,
+        "west": [
+          "constantinople",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:geumseong:LAND:w1|w1:constantinople:LAND:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "constantinople",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:geumseong:SEA:w1|w1:constantinople:LAND:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "constantinople",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "heijokyo",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:heijokyo:SEA:w1|w1:constantinople:LAND:e1",
+        "new_city_steps": 24.0,
+        "preset_both_sides": false,
+        "west": [
+          "constantinople",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "changan",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:changan:LAND:w1|w1:jeddah:LAND:e1",
+        "new_city_steps": 18.0,
+        "preset_both_sides": true,
+        "west": [
+          "jeddah",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "chenla",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:chenla:SEA:w1|w1:jeddah:LAND:e1",
+        "new_city_steps": 18.0,
+        "preset_both_sides": false,
+        "west": [
+          "jeddah",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "dagon",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:dagon:SEA:w1|w1:jeddah:LAND:e1",
+        "new_city_steps": 15.0,
+        "preset_both_sides": false,
+        "west": [
+          "jeddah",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "delhi",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:delhi:LAND:w1|w1:jeddah:LAND:e1",
+        "new_city_steps": 15.0,
+        "preset_both_sides": true,
+        "west": [
+          "jeddah",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:geumseong:LAND:w1|w1:jeddah:LAND:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "jeddah",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:geumseong:SEA:w1|w1:jeddah:LAND:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "jeddah",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "yumenguan",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:yumenguan:LAND:w1|w1:jeddah:LAND:e1",
+        "new_city_steps": 15.0,
+        "preset_both_sides": true,
+        "west": [
+          "jeddah",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "changan",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:changan:LAND:w1|w1:jeddah:SEA:e1",
+        "new_city_steps": 18.0,
+        "preset_both_sides": false,
+        "west": [
+          "jeddah",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "chenla",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:chenla:SEA:w1|w1:jeddah:SEA:e1",
+        "new_city_steps": 18.0,
+        "preset_both_sides": false,
+        "west": [
+          "jeddah",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "dagon",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:dagon:SEA:w1|w1:jeddah:SEA:e1",
+        "new_city_steps": 15.0,
+        "preset_both_sides": false,
+        "west": [
+          "jeddah",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "delhi",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:delhi:LAND:w1|w1:jeddah:SEA:e1",
+        "new_city_steps": 15.0,
+        "preset_both_sides": false,
+        "west": [
+          "jeddah",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:geumseong:LAND:w1|w1:jeddah:SEA:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "jeddah",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:geumseong:SEA:w1|w1:jeddah:SEA:e1",
+        "new_city_steps": 21.0,
+        "preset_both_sides": false,
+        "west": [
+          "jeddah",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "yumenguan",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:yumenguan:LAND:w1|w1:jeddah:SEA:e1",
+        "new_city_steps": 15.0,
+        "preset_both_sides": false,
+        "west": [
+          "jeddah",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "dagon",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:dagon:SEA:w1|w1:panti:LAND:e1",
+        "new_city_steps": 15.0,
+        "preset_both_sides": false,
+        "west": [
+          "panti",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "chenla",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:chenla:SEA:w1|w1:rome:LAND:e1",
+        "new_city_steps": 24.0,
+        "preset_both_sides": false,
+        "west": [
+          "rome",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:geumseong:LAND:w1|w1:rome:LAND:e1",
+        "new_city_steps": 24.0,
+        "preset_both_sides": false,
+        "west": [
+          "rome",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:geumseong:SEA:w1|w1:rome:LAND:e1",
+        "new_city_steps": 24.0,
+        "preset_both_sides": false,
+        "west": [
+          "rome",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "heijokyo",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:heijokyo:SEA:w1|w1:rome:LAND:e1",
+        "new_city_steps": 27.0,
+        "preset_both_sides": false,
+        "west": [
+          "rome",
+          "LAND"
+        ]
+      },
+      {
+        "east": [
+          "chenla",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:chenla:SEA:w1|w1:rome:SEA:e1",
+        "new_city_steps": 24.0,
+        "preset_both_sides": false,
+        "west": [
+          "rome",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "LAND"
+        ],
+        "key": "topo_v1|e1:geumseong:LAND:w1|w1:rome:SEA:e1",
+        "new_city_steps": 24.0,
+        "preset_both_sides": false,
+        "west": [
+          "rome",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "geumseong",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:geumseong:SEA:w1|w1:rome:SEA:e1",
+        "new_city_steps": 24.0,
+        "preset_both_sides": false,
+        "west": [
+          "rome",
+          "SEA"
+        ]
+      },
+      {
+        "east": [
+          "heijokyo",
+          "SEA"
+        ],
+        "key": "topo_v1|e1:heijokyo:SEA:w1|w1:rome:SEA:e1",
+        "new_city_steps": 27.0,
+        "preset_both_sides": false,
+        "west": [
+          "rome",
+          "SEA"
+        ]
+      }
+    ],
+    "with_presets": 5.0,
+    "with_presets_no_doubt": 5.0
+  }
+}

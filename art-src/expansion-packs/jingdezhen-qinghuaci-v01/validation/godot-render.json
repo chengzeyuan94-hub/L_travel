@@ -1,0 +1,87 @@
+{
+  "assets": [
+    {
+      "aabb_position": [
+        -1.72749996185303,
+        0.0,
+        -1.41124999523163
+      ],
+      "aabb_size": [
+        3.45499992370605,
+        1.64400005340576,
+        2.82249999046326
+      ],
+      "asset": "jingdezhen",
+      "gltf_import_error": 0,
+      "materials": 76,
+      "mesh_instances": 15,
+      "scene_pack_error": 0,
+      "scene_save_error": 0,
+      "surfaces": 76,
+      "surfaces_without_vertex_colors": 0,
+      "views": [
+        {
+          "path": "/tmp/jingdezhen-qinghuaci-v01/previews/jingdezhen-three-quarter.png",
+          "save_error": 0
+        },
+        {
+          "path": "/tmp/jingdezhen-qinghuaci-v01/previews/jingdezhen-front.png",
+          "save_error": 0
+        },
+        {
+          "path": "/tmp/jingdezhen-qinghuaci-v01/previews/jingdezhen-back.png",
+          "save_error": 0
+        }
+      ]
+    },
+    {
+      "aabb_position": [
+        -0.360000014305115,
+        0.0,
+        -0.360359489917755
+      ],
+      "aabb_size": [
+        0.720000028610229,
+        1.12000000476837,
+        0.72071897983551
+      ],
+      "alpha": {
+        "extent": [
+          247,
+          85,
+          529,
+          854
+        ],
+        "occupied_pixels": 310377,
+        "partial_pixels": 1788,
+        "transparent_pixels": 738199
+      },
+      "asset": "qinghuaci-icon-source",
+      "gltf_import_error": 0,
+      "materials": 7,
+      "mesh_instances": 2,
+      "scene_pack_error": 0,
+      "scene_save_error": 0,
+      "surfaces": 7,
+      "surfaces_without_vertex_colors": 0,
+      "views": [
+        {
+          "path": "/tmp/jingdezhen-qinghuaci-v01/icons/qinghuaci.png",
+          "save_error": 0
+        }
+      ]
+    }
+  ],
+  "engine": {
+    "build": "official",
+    "hash": "a13da4feb8d8aefc283c3763d33a2f170a18d541",
+    "hex": 263937,
+    "major": 4,
+    "minor": 7,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.7.1-stable (official)",
+    "timestamp": 0
+  },
+  "renderer": "Apple M1 Ultra"
+}

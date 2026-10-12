@@ -1,0 +1,136 @@
+{
+  "schema": "world_city_hover_calibration_v1",
+  "source_document": "all地图.pxd",
+  "coordinate_space": "world_map_4096x1363_y_down",
+  "note": "Presentation-only visible rectangles after applying each PXD city layer scale. No topology or route geometry is stored here.",
+  "cities": {
+    "yumenguan": {
+      "static_visible_rect_px": [
+        2387.0,
+        231.0,
+        150.0,
+        101.414
+      ]
+    },
+    "ancient_rome": {
+      "static_visible_rect_px": [
+        362.478,
+        388.0,
+        150.0,
+        123.779
+      ]
+    },
+    "constantinople": {
+      "static_visible_rect_px": [
+        722.5,
+        204.5,
+        150.0,
+        126.478
+      ]
+    },
+    "changan": {
+      "static_visible_rect_px": [
+        2773.0,
+        368.055,
+        150.0,
+        115.488
+      ]
+    },
+    "pantuo": {
+      "static_visible_rect_px": [
+        1839.958,
+        204.5,
+        160.542,
+        111.0
+      ]
+    },
+    "baghdad": {
+      "static_visible_rect_px": [
+        1375.0,
+        431.0,
+        150.0,
+        106.62
+      ]
+    },
+    "delhi": {
+      "static_visible_rect_px": [
+        2185.0,
+        687.0,
+        150.0,
+        144.794
+      ]
+    },
+    "geumseong": {
+      "static_visible_rect_px": [
+        3460.5,
+        348.68,
+        150.0,
+        112.789
+      ]
+    },
+    "chenla": {
+      "static_visible_rect_px": [
+        2923.0,
+        855.0,
+        150.0,
+        149.229
+      ]
+    },
+    "aden": {
+      "static_visible_rect_px": [
+        1201.0,
+        1110.0,
+        150.0,
+        137.082
+      ]
+    },
+    "heijokyo": {
+      "static_visible_rect_px": [
+        3697.0,
+        320.0,
+        150.0,
+        105.27
+      ]
+    },
+    "simhala": {
+      "static_visible_rect_px": [
+        2195.939,
+        1103.0,
+        150.0,
+        151.35
+      ]
+    },
+    "cairo": {
+      "static_visible_rect_px": [
+        744.5,
+        584.0,
+        150.0,
+        134.383
+      ]
+    },
+    "jeddah": {
+      "static_visible_rect_px": [
+        1069.5,
+        760.953,
+        150.0,
+        142.481
+      ]
+    },
+    "dagon": {
+      "static_visible_rect_px": [
+        2706.0,
+        774.0,
+        150.0,
+        161.943
+      ]
+    },
+    "quanzhou": {
+      "static_visible_rect_px": [
+        3249.828,
+        537.5,
+        150.0,
+        156.047
+      ]
+    }
+  }
+}

@@ -1,0 +1,445 @@
+{
+  "ruleset_id": "lshu_configurable_v1",
+  "edition_id": "user_confirmed_v1",
+  "schema_version": 1,
+  "source_package": "Project-owned city illustrations",
+  "expected_counts": {
+    "items": 13,
+    "existing_coverage": 3,
+    "cities": 16,
+    "land_events": 0,
+    "sea_events": 0
+  },
+  "incremental_asset_ids": [
+    "yf064_illustration_city_rome",
+    "yf064_illustration_city_constantinople",
+    "yf064_illustration_city_panti",
+    "yf064_illustration_city_baghdad",
+    "yf064_illustration_city_delhi",
+    "yf064_illustration_city_geumseong",
+    "yf064_illustration_city_chenla",
+    "yf064_illustration_city_aden",
+    "yf064_illustration_city_heijokyo",
+    "yf064_illustration_city_simhala",
+    "yf064_illustration_city_cairo",
+    "yf064_illustration_city_jeddah",
+    "yf064_illustration_city_dagon"
+  ],
+  "items": [
+    {
+      "id": "yf064_illustration_city_rome",
+      "entity_type": "CITY",
+      "entity_id": "rome",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_rome_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "508c39845c2c771759c433f258c97289fc792b5ef1fec0a08961193c8f6e99b0",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_ancient_rome_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "6d3ea5c65e8a2c9fbc18806ade88bf96090fa81af3b00ef8f1f64cd7278b6381",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "rome",
+      "source_key": "ancient_rome",
+      "board_node_alias": "ancient_rome",
+      "source_master": "art-src/cards-v2/masters/city_rome_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_constantinople",
+      "entity_type": "CITY",
+      "entity_id": "constantinople",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_constantinople_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "b4eb0f9c718cb6adb82b0b0ff258c23535cd6b31d7a4f8fbbc264fdb6a9b31c4",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_constantinople_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "8d496c7e66aa83ac9c89226dedf6d5a1c3da742f8dfcaea3631efbdaa138f4f8",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "constantinople",
+      "source_key": "constantinople",
+      "board_node_alias": "constantinople",
+      "source_master": "art-src/cards-v2/masters/city_constantinople_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_panti",
+      "entity_type": "CITY",
+      "entity_id": "panti",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_panti_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "f0944e40236642ed6399342b5a069d5bf28bacc70c1deb344782f315267f11fa",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_pantuo_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "d9a18de6d63cbf88519f57bc8f895bbda23fab0301ef5dc76279546d84af25b3",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "panti",
+      "source_key": "pantuo",
+      "board_node_alias": "pantuo",
+      "source_master": "art-src/cards-v2/masters/city_panti_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_baghdad",
+      "entity_type": "CITY",
+      "entity_id": "baghdad",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_baghdad_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "2de132072956b14105ac947084296037b2c8074cae0e57149e08901ce31fde43",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_baghdad_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "7688f409a64fda5577527413e2beb781698123c1a145f888521796b3601f6c73",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "baghdad",
+      "source_key": "baghdad",
+      "board_node_alias": "baghdad",
+      "source_master": "art-src/cards-v2/masters/city_baghdad_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_delhi",
+      "entity_type": "CITY",
+      "entity_id": "delhi",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_delhi_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "051cf51d6d061314754426d49a64c529ceb78157ac8bb8134166abb786979221",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_delhi_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "3698d3f4b917ffc94609a241655e3974b5b45c30767c932694fa773b2b86a5d5",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "delhi",
+      "source_key": "delhi",
+      "board_node_alias": "delhi",
+      "source_master": "art-src/cards-v2/masters/city_delhi_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_geumseong",
+      "entity_type": "CITY",
+      "entity_id": "geumseong",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_geumseong_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "fb8252951f7af3213badd9413f4c909767414e2d0ed3c1354b55a358d2bef940",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_geumseong_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "071233cbd4e72896a177fb289717492e95dff99b69e7f4f2c8ff7cfe486b1b8a",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "geumseong",
+      "source_key": "geumseong",
+      "board_node_alias": "geumseong",
+      "source_master": "art-src/cards-v2/masters/city_geumseong_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_chenla",
+      "entity_type": "CITY",
+      "entity_id": "chenla",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_chenla_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "aabd9809101e258a9a41a199de21c13b3a27c11f84a63b92e2897d0d6c404d8a",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_chenla_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "61878d2e414202e2fbc132addcdad4af0a83da5f7046e49c7c6e8a45e093db78",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "chenla",
+      "source_key": "chenla",
+      "board_node_alias": "chenla",
+      "source_master": "art-src/cards-v2/masters/city_chenla_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_aden",
+      "entity_type": "CITY",
+      "entity_id": "aden",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_aden_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "e7af0c2a5728b79cc2ddb3baa8d7fbe75988e92e96a9da5684491bcc003fb9ce",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_aden_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "cfb4ec4db3023fea56cdd5b2887d6ada5416c82cea8d8077d28d9ab710875220",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "aden",
+      "source_key": "aden",
+      "board_node_alias": "aden",
+      "source_master": "art-src/cards-v2/masters/city_aden_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_heijokyo",
+      "entity_type": "CITY",
+      "entity_id": "heijokyo",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_heijokyo_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "6b490a6642abd736d54414910e1f8333a231c796559ef0eaeef8b4f831dac934",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_heijokyo_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "525d5594567963153bec02cab26ddbca1250982fbbd305452b5e96ac48ecb65b",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "heijokyo",
+      "source_key": "heijokyo",
+      "board_node_alias": "heijokyo",
+      "source_master": "art-src/cards-v2/masters/city_heijokyo_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_simhala",
+      "entity_type": "CITY",
+      "entity_id": "simhala",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_simhala_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "fe525b2ec63e7ff44ccc3ad59182466e3d272b0241e6157e9d93b199b1f146d3",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_simhala_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "0d6a12712163daad2359673d3fa17954f013db80e97c2d37f1d48cd5b23160d1",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "simhala",
+      "source_key": "simhala",
+      "board_node_alias": "simhala",
+      "source_master": "art-src/cards-v2/masters/city_simhala_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_cairo",
+      "entity_type": "CITY",
+      "entity_id": "cairo",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_cairo_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "0fa52bd7a8461db9afad006164a9bfdf2ed169161c8b9914d04ccae463c7e26a",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_cairo_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "5d607d116599595f1f1fde378189aaaba558aefeb1676022a746b7df814e3c85",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "cairo",
+      "source_key": "cairo",
+      "board_node_alias": "cairo",
+      "source_master": "art-src/cards-v2/masters/city_cairo_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_jeddah",
+      "entity_type": "CITY",
+      "entity_id": "jeddah",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_jeddah_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "33e7eaf4cf49c6e4c283dcc43c2a0c4dcc433a16277cd34a20919e4609f2462b",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_jeddah_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "65de93d56262305ff4900370d57ff547fd4c0b6c5d03710a998f1e32d31fcc81",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "jeddah",
+      "source_key": "jeddah",
+      "board_node_alias": "jeddah",
+      "source_master": "art-src/cards-v2/masters/city_jeddah_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_dagon",
+      "entity_type": "CITY",
+      "entity_id": "dagon",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_dagon_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "b0e1a57521d2fc856cf6332746a7d40eca79f87e33abe2db155bbf4b5066c942",
+      "source_kind": "ai_generated_card_v2",
+      "source_package": "千年丝路_城市与事件插画增量资产_v2.zip",
+      "source_package_member": "千年丝路_城市与事件插画增量资产_v2/城市插画_13张/city_illustration_dagon_1448x1086.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "4ff6f19a53ed19ead4fe035bcb44a777909a7ffc4694d2b5f99c9fb51d83d2a8",
+      "incremental_asset": true,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "dagon",
+      "source_key": "dagon",
+      "board_node_alias": "dagon",
+      "source_master": "art-src/cards-v2/masters/city_dagon_1024x768_master.png"
+    }
+  ],
+  "existing_coverage": [
+    {
+      "id": "yf064_illustration_city_yumenguan",
+      "entity_type": "CITY",
+      "entity_id": "yumenguan",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_yumenguan_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "47ff0b7b779ba8aeb28421026ef3541c5f26684c1acbf25d28134fbb6c39674c",
+      "source_kind": "ai_generated_card_v2",
+      "source_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_yumenguan_1024x768.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "0c3393df7baf976ccfad1adefb6f077fc5adff34dfc2fdce92c8b9a23b145a0c",
+      "incremental_asset": false,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "yumenguan",
+      "source_key": "yumenguan",
+      "board_node_alias": "yumenguan",
+      "source_master": "art-src/cards-v2/masters/city_yumenguan_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_changan",
+      "entity_type": "CITY",
+      "entity_id": "changan",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_changan_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "9b87cc3614466336042c66b5a37bb9a59e5de8e131e44119f4362e6acd8e1e6d",
+      "source_kind": "ai_generated_card_v2",
+      "source_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_changan_1024x768.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "61dbe8869a1e9a242a75b157aed3b50ce52b4ca0b319db68c45cfe08b5c68c1f",
+      "incremental_asset": false,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "changan",
+      "source_key": "changan",
+      "board_node_alias": "changan",
+      "source_master": "art-src/cards-v2/masters/city_changan_1024x768_master.png"
+    },
+    {
+      "id": "yf064_illustration_city_quanzhou",
+      "entity_type": "CITY",
+      "entity_id": "quanzhou",
+      "runtime_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_quanzhou_1024x768.png",
+      "runtime_size": [
+        1024,
+        768
+      ],
+      "runtime_sha256": "d7b0457e7791da0234ed764473cf370e4da615920f9361249485abe0b30d9e1a",
+      "source_kind": "ai_generated_card_v2",
+      "source_path": "res://assets/game/content/lshu_configurable_v1/cards_v2/cities/city_quanzhou_1024x768.png",
+      "source_size": [
+        1536,
+        1152
+      ],
+      "source_sha256": "2a137cece89a6d6c075aadef10169d557e081313370831a779a18d310c46fbfa",
+      "incremental_asset": false,
+      "art_review_status": "approved_ai_card_v2",
+      "asset_role": "CITY_ILLUSTRATION",
+      "formal_owner_id": "quanzhou",
+      "source_key": "quanzhou",
+      "board_node_alias": "quanzhou",
+      "source_master": "art-src/cards-v2/masters/city_quanzhou_1024x768_master.png"
+    }
+  ]
+}

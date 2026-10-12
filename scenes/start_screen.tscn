@@ -1,0 +1,121 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Theme" path="res://assets/ui_theme.tres" id="1_theme"]
+[ext_resource type="Script" path="res://scripts/start_screen.gd" id="2_script"]
+[ext_resource type="Texture2D" path="res://assets/title/layers/title_background_clean_v2.png" id="3_bg"]
+[ext_resource type="Script" path="res://scripts/ui/start_screen_effects.gd" id="4_effects"]
+
+[node name="StartScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_theme")
+script = ExtResource("2_script")
+
+[node name="BackgroundClip" type="Control" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="BackgroundRoot" type="Control" parent="BackgroundClip"]
+unique_name_in_owner = true
+layout_mode = 0
+mouse_filter = 2
+
+[node name="BackgroundTexture" type="TextureRect" parent="BackgroundClip/BackgroundRoot"]
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("3_bg")
+expand_mode = 1
+stretch_mode = 0
+texture_filter = 1
+
+[node name="AmbientOverlay" type="ColorRect" parent="BackgroundClip/BackgroundRoot"]
+unique_name_in_owner = true
+layout_mode = 0
+mouse_filter = 2
+color = Color(1, 0.92, 0.72, 1)
+modulate = Color(1, 1, 1, 0)
+
+[node name="EffectsLayer" type="Control" parent="BackgroundClip/BackgroundRoot"]
+unique_name_in_owner = true
+clip_contents = true
+layout_mode = 0
+mouse_filter = 2
+script = ExtResource("4_effects")
+
+[node name="TitleUIRoot" type="Control" parent="BackgroundClip/BackgroundRoot"]
+unique_name_in_owner = true
+layout_mode = 0
+mouse_filter = 2
+
+[node name="HangingTitleScroll" type="TextureRect" parent="BackgroundClip/BackgroundRoot/TitleUIRoot"]
+unique_name_in_owner = true
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 0
+texture_filter = 2
+
+[node name="SloganTexture" type="TextureRect" parent="BackgroundClip/BackgroundRoot/TitleUIRoot"]
+unique_name_in_owner = true
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 0
+texture_filter = 2
+
+[node name="FocusSeal" type="TextureRect" parent="BackgroundClip/BackgroundRoot/TitleUIRoot"]
+unique_name_in_owner = true
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 0
+texture_filter = 2
+
+[node name="NewGameButton" type="TextureButton" parent="BackgroundClip/BackgroundRoot/TitleUIRoot"]
+unique_name_in_owner = true
+layout_mode = 0
+focus_mode = 0
+ignore_texture_size = true
+stretch_mode = 0
+texture_filter = 2
+mouse_default_cursor_shape = 2
+
+[node name="QuitButton" type="TextureButton" parent="BackgroundClip/BackgroundRoot/TitleUIRoot"]
+unique_name_in_owner = true
+layout_mode = 0
+focus_mode = 0
+ignore_texture_size = true
+stretch_mode = 0
+texture_filter = 2
+mouse_default_cursor_shape = 2
+
+[node name="VersionLabel" type="Control" parent="BackgroundClip/BackgroundRoot/TitleUIRoot"]
+unique_name_in_owner = true
+clip_contents = true
+layout_mode = 0
+mouse_filter = 2
+
+[node name="Text" type="Label" parent="BackgroundClip/BackgroundRoot/TitleUIRoot/VersionLabel"]
+layout_mode = 0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.28, 0.2, 0.12, 0.55)
+theme_override_font_sizes/font_size = 8
+text = "v0.2.0-dev"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="TitleBGM" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+volume_db = -40.0
+autoplay = false
+bus = &"Master"

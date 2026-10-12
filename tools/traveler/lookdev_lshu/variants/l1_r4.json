@@ -1,0 +1,35 @@
+{
+  "base": "l1_r3",
+  "description": "L1 round 4: night only. Fire and lamp pools stay orange and compact (no white-out on snow, no pink on sand): yellower fire, lower energy, shorter range; bloom threshold raised so only real emitters (windows, flames) bloom; moon slightly less violet so moonlit sand reads cool-neutral instead of lavender.",
+  "lights": {
+    "night": {
+      "sun": {
+        "color": "#a8bff8",
+        "energy": 0.8
+      },
+      "sky": {
+        "ambient_top": "#3d5c9c",
+        "ambient_horizon": "#27385e",
+        "ambient_bottom": "#161d36"
+      },
+      "env": {
+        "glow": {
+          "intensity": 0.8,
+          "hdr_threshold": 1.3
+        }
+      },
+      "fires": {
+        "light_color": "#ff8a3a",
+        "light_energy": 0.6,
+        "light_range": 2.8,
+        "light_attenuation": 1.8
+      },
+      "lamps": {
+        "light_color": "#ffb060",
+        "light_energy": 0.6,
+        "light_range": 2.6,
+        "light_attenuation": 1.8
+      }
+    }
+  }
+}

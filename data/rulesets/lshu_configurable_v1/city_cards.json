@@ -1,0 +1,167 @@
+{
+  "ruleset_id": "lshu_configurable_v1",
+  "edition_id": "user_confirmed_v1",
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "yumenguan",
+      "city_id": "yumenguan",
+      "card_number": 1,
+      "starting_transport": "CAMEL",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_yumenguan"
+    },
+    {
+      "id": "rome",
+      "city_id": "rome",
+      "card_number": 2,
+      "starting_transport": "CAMEL",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_rome"
+    },
+    {
+      "id": "constantinople",
+      "city_id": "constantinople",
+      "card_number": 3,
+      "starting_transport": "CAMEL",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_constantinople"
+    },
+    {
+      "id": "changan",
+      "city_id": "changan",
+      "card_number": 4,
+      "starting_transport": "CAMEL",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_changan"
+    },
+    {
+      "id": "panti",
+      "city_id": "panti",
+      "card_number": 5,
+      "starting_transport": "CAMEL",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_panti"
+    },
+    {
+      "id": "baghdad",
+      "city_id": "baghdad",
+      "card_number": 6,
+      "starting_transport": "CAMEL",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_baghdad"
+    },
+    {
+      "id": "delhi",
+      "city_id": "delhi",
+      "card_number": 7,
+      "starting_transport": "CAMEL",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_delhi"
+    },
+    {
+      "id": "geumseong",
+      "city_id": "geumseong",
+      "card_number": 8,
+      "starting_transport": "CAMEL",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_geumseong"
+    },
+    {
+      "id": "chenla",
+      "city_id": "chenla",
+      "card_number": 9,
+      "starting_transport": "SHIP",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_chenla"
+    },
+    {
+      "id": "aden",
+      "city_id": "aden",
+      "card_number": 10,
+      "starting_transport": "SHIP",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_aden"
+    },
+    {
+      "id": "heijokyo",
+      "city_id": "heijokyo",
+      "card_number": 11,
+      "starting_transport": "SHIP",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_heijokyo"
+    },
+    {
+      "id": "simhala",
+      "city_id": "simhala",
+      "card_number": 12,
+      "starting_transport": "SHIP",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_simhala"
+    },
+    {
+      "id": "cairo",
+      "city_id": "cairo",
+      "card_number": 13,
+      "starting_transport": "SHIP",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_cairo"
+    },
+    {
+      "id": "jeddah",
+      "city_id": "jeddah",
+      "card_number": 14,
+      "starting_transport": "SHIP",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_jeddah"
+    },
+    {
+      "id": "dagon",
+      "city_id": "dagon",
+      "card_number": 15,
+      "starting_transport": "SHIP",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_dagon"
+    },
+    {
+      "id": "quanzhou",
+      "city_id": "quanzhou",
+      "card_number": 16,
+      "starting_transport": "SHIP",
+      "starting_grant": {
+        "entries": []
+      },
+      "illustration_id": "yf064_illustration_city_quanzhou"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "file": "jingdezhen.glb",
+    "header_chunks_accessors_finite_unit_normals": "PASS",
+    "external_resources": 0
+  },
+  {
+    "file": "qinghuaci-icon-source.glb",
+    "header_chunks_accessors_finite_unit_normals": "PASS",
+    "external_resources": 0
+  },
+  {
+    "file": "icons/qinghuaci-128.png",
+    "width": 128,
+    "height": 128,
+    "bit_depth": 8,
+    "color_type": 6,
+    "png_crc": "PASS"
+  },
+  {
+    "file": "icons/qinghuaci.png",
+    "width": 1024,
+    "height": 1024,
+    "bit_depth": 8,
+    "color_type": 6,
+    "png_crc": "PASS"
+  },
+  {
+    "file": "icons/qinghuaci-256.png",
+    "width": 256,
+    "height": 256,
+    "bit_depth": 8,
+    "color_type": 6,
+    "png_crc": "PASS"
+  },
+  {
+    "file": "previews/qinghuaci-checkerboard.png",
+    "width": 1024,
+    "height": 1024,
+    "bit_depth": 8,
+    "color_type": 6,
+    "png_crc": "PASS"
+  },
+  {
+    "file": "previews/jingdezhen-front.png",
+    "width": 1200,
+    "height": 1200,
+    "bit_depth": 8,
+    "color_type": 6,
+    "png_crc": "PASS"
+  },
+  {
+    "file": "previews/jingdezhen-three-quarter.png",
+    "width": 1200,
+    "height": 1200,
+    "bit_depth": 8,
+    "color_type": 6,
+    "png_crc": "PASS"
+  },
+  {
+    "file": "previews/jingdezhen-back.png",
+    "width": 1200,
+    "height": 1200,
+    "bit_depth": 8,
+    "color_type": 6,
+    "png_crc": "PASS"
+  }
+]

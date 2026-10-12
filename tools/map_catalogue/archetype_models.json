@@ -1,0 +1,548 @@
+{
+  "schema": "lshu_map_catalogue_archetype_models_v2",
+  "note": "Per-archetype modelling hints for the archetype model chain (tools/map_catalogue/archetype_prompts.py, archetype_gen.py, run_archetype_model.py, godot_ortho_check.gd). The catalogue (docs/design/map-editor-20260930/work/catalogue/catalogue.json) stays the source of look / composition / palette; this file adds what the chain needs on top, for EVERY archetype: style_refs (DERIVED board renders of the SAME side that anchor the style, made by render_board_refs.py into art-src/custom-map-catalogue/refs/derived/), compare_cities (the 2-3 same-side shipped cities it is closest to; the Godot side-by-side shows them first, then every other same-side city), a plan layout written for the BOARD camera, what each of the four orthographic views must show, and allow (the boats, carts, animals and quays its look is built around; people are never allowed). Blender convention: front = Blender -Y = glTF +Z (south, toward the board camera); LEFT view looks from -X (front of the model on the right of the picture), RIGHT view looks from +X (front on the left). On the merchant board every city is turned by CITY_YAW -0.44 rad and seen from the south 43.5 deg above, i.e. from 25 deg to the RIGHT of the model's front (front + right/east side visible) - the DERIVED renders are from the front-LEFT, the opposite side. A form that climbs toward the right comes toward the board camera and reads flat; make it climb toward the LEFT. Tall parts go to the back, low parts to the front. Footprint aspect <= 1.3 (DESIGN 3.13.5), trees and lamp posts included. Entries canal_town, stilt_village and blue_dome_bazaar were re-synced on 2026-10-01 with their FINAL batch-1 models (see each build.py header), so a re-run of their concept / four-view reproduces the model that shipped. Batch-1 lesson: a four-view sheet follows the views text literally, including a mirrored LEFT / RIGHT (blue_dome_bazaar's RIGHT text had the portal on the wrong side and both sheets came back mirrored), so every views text uses the convention above: in LEFT the model's back is on the picture's left and its left (-X) side is nearest; in RIGHT the model's front is on the picture's left and its right (+X) side is nearest. Optional per-archetype 'board_notes' are for the modeller only (build.py / Blender / Godot checks); they are NOT sent to the image model. defaults.board_notes_common applies to every archetype.",
+  "defaults": {
+    "board_cities_by_side": {
+      "west": [
+        "rome",
+        "constantinople",
+        "cairo",
+        "jeddah",
+        "aden",
+        "baghdad",
+        "panti"
+      ],
+      "east": [
+        "delhi",
+        "simhala",
+        "yumenguan",
+        "dagon",
+        "changan",
+        "chenla",
+        "quanzhou",
+        "geumseong",
+        "heijokyo"
+      ]
+    },
+    "board_cities_by_side_note": "catalogue rules.side_split: formal board x < 2048 = west (x_2d * 32 in assets/merchant_board_claude/board_layout.json)",
+    "style_refs": {
+      "east": [
+        "chenla",
+        "changan"
+      ],
+      "west": [
+        "cairo",
+        "constantinople"
+      ]
+    },
+    "compare_cities": {
+      "east": [
+        "quanzhou",
+        "changan",
+        "chenla"
+      ],
+      "west": [
+        "cairo",
+        "constantinople",
+        "rome"
+      ]
+    },
+    "concept_size": "1536x1024",
+    "fourview_size": "1536x1024",
+    "board_foot": 3.75,
+    "aspect_max": 1.3,
+    "views": {
+      "FRONT": "looking straight at the main face of the cluster (the side a visitor walks up to)",
+      "BACK": "looking straight at the opposite side, so the FRONT view mirrored left-to-right with the far elements now in front",
+      "LEFT": "looking from the left end of the FRONT view, so the front of the cluster is on the RIGHT of this picture",
+      "RIGHT": "looking from the right end of the FRONT view, so the front of the cluster is on the LEFT of this picture"
+    },
+    "concept_camera": "draw it as the game board shows it (NOT from the references' angle): a three-quarter view from the front-RIGHT, about 25 degrees to the right of straight-on and about 40 degrees above, so the front and the RIGHT side of the cluster are visible, with almost no perspective.",
+    "board_notes_common": [
+      "Board height: the shipped cities stand 1.65 (rome) to 3.61 (baghdad) on the board, most 2.5-3.5; board height = model height x 3.75 / model width_x, so aim for a model height of about 0.65-0.9 x the footprint width (board about 2.4-3.4). run_archetype_model.py reports board_height_at_foot_3_75 and prints a NOTE outside 1.65-3.61. A 'very tall' landmark still stays at or below the tallest shipped city unless the departure is written in build.py (lighthouse_port at 3.96 is the only exception so far).",
+      "Occlusion: the board camera looks toward the back-LEFT, so anything standing back-left of a taller mass sits on that mass's silhouette or disappears behind it (yurt_market's back-left yurt, blue_dome_bazaar's first dome, canal_town's first willows). Secondary masses and trees go to the front, the right, or the back-right; a tree stands where its trunk shows and never directly behind the landmark on the camera's line of sight.",
+      "Sand-ground contrast: the board is warm sand. Sand, cream, tan, ochre or peach masses dissolve at 45 px (windcatcher_town was the weakest of batch 1) unless framed by a clearly darker or lighter edge: a light ledge on every step or terrace, a dark roof or cap, dark openings. Use a mud / stone tone a step deeper than the concept's pale one if the 45 px strip loses the outline.",
+      "Thin parts (spars, poles, strings, ropes, railings) vanish below 120 px: whatever carries the 120 px silhouette (sails, pailou roofs, prayer flags, cloth lines) is built as broad flat panels, with thin parts only as detail.",
+      "Night glow: at least three door / window materials matching the board regex (Dark, DeepArch, Entry_Reveal, EaveUnderside ...), placed on the FRONT and RIGHT faces the camera sees; red / coloured lanterns are not 'Lamp' materials (the twilight preset turns 'Lamp' pale yellow; canal_town CT_LanternRed).",
+      "Judge every round on 04-godot-board-compare.png (same-side cities, default zoom, 120 px, 45 px), not on the Blender iso render (it is taken from the opposite, front-left side)."
+    ]
+  },
+  "archetypes": {
+    "kiln_town": {
+      "style_refs": [
+        "chenla",
+        "changan"
+      ],
+      "compare_cities": [
+        "chenla",
+        "quanzhou",
+        "changan"
+      ],
+      "layout": "Plan layout (compact, about 1.25 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The dragon kiln is the backbone: it runs across almost the whole width a little behind the centre line, from its LOW end at the RIGHT (an arched fire mouth in a small brick end wall) to its HIGH end at the LEFT (a small square brick exhaust stack), every segment one clear step higher than the one before it, each resting on its own block of coursed stone footing so the footings form a staircase under the kiln; its top edge is a steep diagonal staircase climbing from the lower right up to the upper left, and its high end stands well above the workshop's roof ridge. The two tall plain square brick chimneys (slightly tapered, a darker band near the top, open tops) stand side by side on one small squat brick kiln house directly BEHIND the kiln's low (right) end; they are the tallest things in the cluster, each breathing a small puff of white smoke. The open-fronted workshop stands IN FRONT of the upper (left) half of the kiln, low enough that the raised kiln still shows above its roof; its open front faces the viewer. The saggar tower (a pile of separate round clay saggars) and the drying rack of pale bowls stand in front of the kiln's low (right) end, beside the fire mouth. One bamboo clump behind the high (left) end of the kiln, one behind the chimney house at the right, both inside the footprint. Two small stone lamp posts with glowing lanterns at the front corners. Brick surfaces carry proud brick courses, the stone footings show coursed blocks.",
+      "views": {
+        "FRONT": "the kiln's long side with a row of small dark arched stoke-holes, stepping up from the RIGHT (low end, fire mouth) to the LEFT (high end, square exhaust stack on the tallest stone footing); the two chimneys rise behind the kiln's right part; the workshop's open front, with the potter's wheel inside, faces the viewer on the left, in front of the kiln; saggar tower and bowl rack at the front right",
+        "BACK": "the mirror of the front: the kiln steps up from the LEFT (low end) to the RIGHT (high end); the chimney house and the two chimneys stand in the foreground on the left; the workshop's closed back wall shows behind the kiln on the right",
+        "LEFT": "looking at the kiln's HIGH end head-on: the square exhaust stack on top of the tallest stone footing in the middle; the workshop on the RIGHT side of the picture (it is at the front), the chimneys rising behind on the LEFT side (they are at the back), the bamboo clump beside the exhaust end",
+        "RIGHT": "looking at the kiln's LOW end head-on: the arched fire mouth in the middle, the kiln's end arches stepping up straight behind it; the saggar tower and the bowl rack on the LEFT side of the picture (they are at the front); the chimneys and their kiln house on the RIGHT side (they are at the back)"
+      }
+    },
+    "canal_town": {
+      "style_refs": [
+        "changan",
+        "quanzhou"
+      ],
+      "compare_cities": [
+        "changan",
+        "geumseong",
+        "heijokyo"
+      ],
+      "layout": "Plan layout (compact, about 1.05 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The stone canal trough runs FRONT-TO-BACK through the middle (along the camera's line of sight), with a landing and a few stone steps at each end, stopping short of both the front and the back edge. On each side of it stands a row of two-storey whitewashed houses on a grey stone plinth course, each row split by a narrow alley into a FRONT house and a slightly taller BACK house; the black tile roofs run front-to-back and every house end (front, both sides of the alley, back) is a stepped horse-head gable wall with black tile copings and upturned tips, a black-tiled drip course across every gable at the storey line. The steep humped single-arch grey stone bridge crosses the canal left-to-right between the two alleys, its arch facing the camera, its stairs running down into the alleys, its parapet clearly higher than the front eaves. Canal-side facades: timber shopfronts under a narrow pent roof on the ground floor, lattice windows above, a line of oversized red lanterns under the main eave; a second line of larger red lanterns hangs from short timber arms under the RIGHT row's OUTER eave, which faces the board camera. Each alley ends in a small arched gate in its row's outer wall (the right one faces the camera). Two small black-canopied wupeng boats in the trough, staggered: one near the front steps, one poking under the arch. Three weeping willows standing where their trunks show from the board camera: the front-left corner, the back end of the canal (seen through the gap behind the bridge), and just outside the right row's back-right corner. Two small stone lamp posts at the front corners of the canal steps.",
+      "views": {
+        "FRONT": "looking down the canal: the front horse-head gables of both house rows, the back houses' gables a little higher behind them; between them the front steps, the landing and one boat, the humped bridge crossing from left to right with its full arch visible and the second boat under it, its parapet above the front eaves; the front-left willow on the left, the canal-end willow rising behind the bridge, the back-right willow behind the right row; red lanterns along the canal-side eaves",
+        "BACK": "the mirror of the front: the back gables of both rows, the trough's back steps, the bridge arch seen from behind with the canal-end willow in front of it in the middle; the back-right willow now on the LEFT, the front-left willow behind on the right",
+        "LEFT": "the long outer wall of the LEFT row: the back house on the LEFT, the front house on the RIGHT, lattice and small dark windows, the alley's small arched gate in the middle with the bridge stairs rising behind it, stepped gables at both ends and at the alley; a willow at each end, a lamp post at the front (RIGHT)",
+        "RIGHT": "the long outer wall of the RIGHT row: the front house on the LEFT, the back house on the RIGHT, the alley's small arched gate in the middle with the bridge stairs behind it, a row of big red lanterns under the eave of each house; a lamp post at the front (LEFT), a willow at each end"
+      },
+      "allow": {
+        "life": "two small black-canopied wupeng boats, empty, moored in the stone trough"
+      }
+    },
+    "drum_tower_village": {
+      "style_refs": [
+        "heijokyo",
+        "quanzhou"
+      ],
+      "compare_cities": [
+        "heijokyo",
+        "geumseong",
+        "quanzhou"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The long flat covered wind-and-rain bridge runs LEFT-TO-RIGHT across the whole width in the FRONT half, on two or three squat stone piers with open space under the deck, its long open gallery side facing the camera and its three to five small pavilion roofs (dark grey shingles, white eave edges) in a row along the top, the middle one a little higher. The squat fir-tree-shaped drum tower stands BEHIND the bridge, left of centre, wide at the base and tapering to a point in about seven stacked eaves, every eave a thick bold white stripe so it reads as a white-striped cone from far away; clearly taller than the bridge's pavilions but no taller than 0.6 of the bridge length. The two light fir-wood stilt houses with dark grey roofs stand behind the bridge at the RIGHT, one a little behind the other, both clear of the tower. Three bamboo clumps: back-right, at the right beside the bridge's right end, and at the left beside the bridge's left end (none directly behind the tower). Two small stone lamp posts at the bridge's two front corners.",
+      "views": {
+        "FRONT": "the bridge's long side across the picture: squat stone piers, the open covered gallery and the row of small pavilion roofs; behind it, left of centre, the squat white-striped drum tower rising well above the roofs; the two stilt houses behind the right half; bamboo at both bridge ends",
+        "BACK": "the mirror of the front: the two stilt houses on the LEFT and the drum tower right of centre, now in front of the bridge, whose pavilion roofs show behind them",
+        "LEFT": "looking along the bridge from its left end: the bridge's end pavilion head-on on the RIGHT (front), the drum tower nearer on the LEFT (it stands behind the bridge), the stilt houses further back behind it, a bamboo clump at the bridge end",
+        "RIGHT": "looking along the bridge from its right end: the bridge's end pavilion head-on on the LEFT (front) with a bamboo clump beside it, the two stilt houses on their stilts on the RIGHT (back), the drum tower rising behind them"
+      },
+      "board_notes": "The bridge sets the width, so keep its pavilion roofs tall enough (deck about 0.6-0.7, roofs to about 1.3) and the tower about 2.2-2.4 on a ~4 wide footprint (board about 2.1-2.3): otherwise the village is as flat as rome / panti. Light fir wood on sand: the dark grey roofs and white eave stripes carry the contrast, check the 45 px strip. Compare with heijokyo's slim dark pagoda at 120 px."
+    },
+    "stilt_village": {
+      "style_refs": [
+        "dagon",
+        "simhala"
+      ],
+      "compare_cities": [
+        "dagon",
+        "chenla",
+        "simhala"
+      ],
+      "layout": "Plan layout (compact, about 1.15 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The long stilt longhouse stands across the BACK half, its long side facing the camera, raised on three rows of very tall thin teak legs (about three times its wall height) with open space under it, so the camera sees the forest of legs; its steep straw-gold palm-thatch roof runs its ridge left-to-right, laid in overlapping courses with a darker ragged lip on every course, and both ridge ends curl up into hooks; along its front an open veranda market with turquoise awnings between two closed end rooms, and a long steep ladder from the veranda down to the walkway in the middle. Two small stilt huts with front-to-back ridges, both lower than the longhouse: one at the LEFT, a little in front of the longhouse's left end, its door on its right side facing the walkway; one at the FRONT-RIGHT, its door and small porch facing the front. A zig-zag plank walkway on posts, three straight legs like a Z, runs from the left hut east to the foot of the ladder, then south, then east to the right hut's porch, with a short spur to the mooring post at the front-left; rope-wrapped turquoise corner posts, two small lamp posts on it. One long narrow canoe with an arched thatch canopy is tied to the mooring post at the FRONT-LEFT. Three slim coconut palms: back-left and back-right (their crowns above the roof's two ends) and one at the right behind the right hut.",
+      "views": {
+        "FRONT": "the longhouse's long front high on its thin legs: the open veranda with turquoise awnings between the two closed end rooms, the coursed thatch roof with both ridge ends hooked up, the ladder in the middle; the left hut on the left and the front-right hut on the right, both with their gables to the viewer, the walkway and two lamp posts between them, the canoe at the front left; palms at both back corners and at the right",
+        "BACK": "the longhouse's closed back wall with two small shuttered windows filling the picture high on its legs, the huts, walkway, lamp posts and canoe seen between the legs, palms in front at both ends",
+        "LEFT": "the longhouse's steep gable end with its hooked ridge end on its tall legs on the LEFT (back), two palms beside it; the left hut side-on on the RIGHT (front), its hooked roof lower than the longhouse, the walkway and a lamp post in front of it, the canoe's bow at the far right",
+        "RIGHT": "the longhouse's steep gable end on its tall legs on the RIGHT (back), the palms beside it; the front-right hut side-on on the LEFT (front), the walkway and lamp posts around it, the canoe at the far left"
+      },
+      "allow": {
+        "life": "one long narrow wooden canoe with a small canopy, empty, tied to a walkway post",
+        "quay": "the zig-zag plank walkway on thin posts"
+      }
+    },
+    "snow_monastery_town": {
+      "style_refs": [
+        "simhala",
+        "yumenguan"
+      ],
+      "compare_cities": [
+        "simhala",
+        "dagon",
+        "yumenguan"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The whitewashed monastery is the main mass, left of centre: three or four stacked tiers with thick inward-sloping walls, each tier set further BACK and a little further LEFT than the one below it so the stack climbs toward the back-left and every tier's front and right faces are seen; a broad dark maroon band under each roofline (broad enough to read as a stripe from far away), rows of small black-framed windows on the front and right faces, a small gilded roof with gold ornaments on the top tier. The two small white bell-shaped stupas stand at the front-right. The two flat-roofed white houses with firewood stacked on their roofs stand at the right, one behind the other, lower than the monastery's first tier. Two poles with small coloured prayer flags stand at the front-left and back-right, the flags on broad strings or long vertical banners so they read as colour. Snow caps on every roof edge. No trees. Two small stone lamp posts at the front.",
+      "views": {
+        "FRONT": "the monastery's stepped front left of centre: tiers of sloping white wall with maroon bands and black-framed windows rising to the gilded roof on top; the two stupas at the front right, the white houses behind them at the right; the front-left prayer-flag pole on the left",
+        "BACK": "the back of the monastery tiers (fewer windows), now right of centre, stepping up toward the viewer's right; the white houses on the left, the back-right prayer-flag pole in front on the left",
+        "LEFT": "the monastery's left side nearest, its sloping tier walls stepping up toward the LEFT (back); the front-left prayer-flag pole in front on the RIGHT, the stupas and houses hidden behind",
+        "RIGHT": "the two stupas in front on the LEFT (front), the two white houses nearest in the middle and on the right; behind them the monastery's right side with windows, its tiers stepping up toward the RIGHT (back) to the gilded roof; the back-right prayer-flag pole on the RIGHT"
+      },
+      "board_notes": "Top of the gilded roof about 2.8-3.2 on a ~4 wide footprint (board about 2.7-3.1, level with simhala / dagon). The maroon bands and dark windows are what separate it from panti's white walls at 45 px; check that they survive at 120 / 45 px."
+    },
+    "yurt_market": {
+      "style_refs": [
+        "yumenguan",
+        "simhala"
+      ],
+      "compare_cities": [
+        "yumenguan",
+        "simhala",
+        "delhi"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The big khan's yurt stands left of centre, its red-orange painted door and small awning porch turned toward the front-RIGHT so the camera looks straight at the door; a wide sky-blue patterned band round its wall and a taller crown on its dome. Two or three small round white felt yurts with low domes stand around it: one behind at the right, one at the back-left, one small one at the front-left. The tall wooden pole with coloured ribbons stands BEHIND the big yurt at the left so it rises clear above the dome. The wooden ox-cart (no ox) stands at the front-right, turned side-on to the camera so both big spoked wheels read as circles, its shafts resting on the ground pointing right. No trees. Two small lamp posts at the front.",
+      "views": {
+        "FRONT": "the big yurt's wall with the sky-blue band and the red-orange door with its porch facing the viewer, left of centre; the ribbon pole rising behind it; small yurts at the sides; the cart side-on at the front right showing both wheels",
+        "BACK": "the backs of the yurts, the ribbon pole in front of the big dome, the cart behind at the left",
+        "LEFT": "the big yurt from its left with a small yurt in front of it on the RIGHT, the ribbon pole on the LEFT",
+        "RIGHT": "the cart end-on at the front (LEFT of the picture), the small back-right yurt on the RIGHT, the big yurt's door turned half toward the viewer"
+      },
+      "allow": {
+        "life": "one empty wooden cart with two big spoked wheels (no ox, no driver)"
+      }
+    },
+    "grape_oasis": {
+      "style_refs": [
+        "yumenguan",
+        "delhi"
+      ],
+      "compare_cities": [
+        "yumenguan",
+        "delhi",
+        "simhala"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The big square mud-brick raisin-drying house stands left of centre, its FRONT and RIGHT walls turned to the camera and completely covered in neat rows of dark diamond-shaped ventilation holes, a darker brick base course and a light parapet on its flat roof framing the perforated walls. The long green grape-trellis arcade runs from the drying house's right wall toward the RIGHT edge in the front half, wooden posts under a flat, deep-green leafy roof hung with pale green bunches, its long side facing the camera. The flat-roofed mud-brick house with the carved turquoise door stands at the back-right, behind the trellis, its door facing the front. The small domed mud-brick gatehouse stands at the front-left corner. Three tall slim white-trunked poplars: back-right (behind the turquoise-door house), at the right end of the trellis, and at the left beside the drying house's left wall, so all three trunks show from the board camera. Two small lamp posts at the front.",
+      "views": {
+        "FRONT": "the drying house's front wall full of dark diamond holes on the left, the long green trellis with hanging bunches running to the right, the domed gatehouse at the front left, the turquoise-door house behind the trellis; poplars at the left, at the trellis end and behind at the right",
+        "BACK": "the flat-roofed house's back wall in front on the LEFT with a poplar, the drying house's back wall with diamond holes on the RIGHT, the trellis behind them",
+        "LEFT": "the drying house's left wall full of diamond holes, the left poplar in front of it, the domed gatehouse in front on the RIGHT",
+        "RIGHT": "the trellis end-on at the front (LEFT of the picture) with a poplar, the turquoise-door house behind on the RIGHT with a poplar, the drying house's right wall full of diamond holes in the middle behind the trellis"
+      },
+      "board_notes": "Tan mud brick on sand is the windcatcher_town risk: the dark holes, the darker base course and the green trellis roof must carry the outline at 45 px. Drying house about 2.0-2.3 tall, poplars to about 3.0 (board about 2.6-2.9)."
+    },
+    "tulou_village": {
+      "style_refs": [
+        "yumenguan",
+        "heijokyo"
+      ],
+      "compare_cities": [
+        "yumenguan",
+        "changan",
+        "geumseong"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The big round rammed-earth tulou fills the left two thirds: a thick ring three to four storeys high, orange-leaning rammed-earth yellow outer wall with a darker stone footing, only tiny windows high up and one arched gate facing the front-RIGHT toward the camera; its wide overhanging charcoal tile roof reads as one continuous dark ring; the ring is low and wide enough that from 40 degrees above the camera sees into the open courtyard with the inner wooden galleries and a small ancestral hall in the middle. The square tulou stands right against the ring at the back-right, a little lower, with its own dark hipped tile roof. The small tiled farm house stands at the front-right. Two banana plants at the front-left and front-right, one bamboo clump at the left beside the ring (not behind it). Two small lamp posts beside the gate.",
+      "views": {
+        "FRONT": "the big round tulou's curved outer wall with tiny high windows and the arched gate, its dark ring roof on top; the square tulou behind at the right, the farm house in front at the right, banana plants at both front corners, the bamboo at the left",
+        "BACK": "the square tulou in front on the left, the round tulou's ring behind on the right, the bamboo at the right",
+        "LEFT": "the round tulou's curved wall filling the picture, the bamboo clump in front of it in the middle, a banana plant on the RIGHT (front)",
+        "RIGHT": "the farm house at the front (LEFT of the picture) with a banana plant, the square tulou at the back (RIGHT), the round tulou's ring behind them"
+      },
+      "board_notes": "The catalogue asks for a side-by-side with rome's building-only render (a west city, so it is not in the same-side compare strip): put art-src/custom-map-catalogue/refs/derived/rome.png next to 03-blender-iso.png and check the dark ring roof and the square block separate them at 120 px. Ring about 1.4-1.7 tall on a ~4 wide footprint (board about 1.9-2.3) so the courtyard stays visible; do not push it taller than that."
+    },
+    "paper_village": {
+      "style_refs": [
+        "geumseong",
+        "changan"
+      ],
+      "compare_cities": [
+        "changan",
+        "geumseong",
+        "heijokyo"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The three tall grey stone memorial archways (pailou) stand in a staggered row across the FRONT half, all facing the camera, of different heights: the tallest on the LEFT, the middle one centre, the lowest at the right. Each is a broad three-bay gate with four stout square pillars and stacked wide dark-grey stone roofs with upturned corners, plain blank beams, no inscriptions, so together they span more than half the width. Behind them two or three long rows of wooden drying frames hung with bright white paper sheets run left-to-right, each row a step further back and a little higher, the sheets facing the camera with thin dark frame lines between them, so a big field of white rectangles shows above and between the archways. The small open paper workshop with a low charcoal roof stands at the back-right. The small stone footbridge (a low hump, no water under it) stands at the front-right. Three bamboo clumps: back-right, at the right beside the workshop, and at the left beside the tallest archway. Two small lamp posts at the front.",
+      "views": {
+        "FRONT": "the three grey stone archways side by side, tallest on the left, lowest on the right; the rows of white paper sheets behind and between them; the workshop behind at the right; the footbridge at the front right; bamboo at the left and at the right",
+        "BACK": "the rows of white paper frames in front, the archways behind them, the workshop and bamboo on the left",
+        "LEFT": "the archways end-on (narrow, with their stacked roofs) on the RIGHT (front), the tallest nearest, the paper frames end-on behind them, the left bamboo clump nearest",
+        "RIGHT": "the footbridge and the lowest archway end-on on the LEFT (front), the workshop at the back on the RIGHT with bamboo, the paper frames end-on between"
+      },
+      "board_notes": "Tallest pailou about 2.2-2.5 on a ~4 wide footprint (board about 2.1-2.4). A pailou one post thick disappears from the board camera: build the stacked roofs wide and the pillars stout, and check the three gates still read as three at 120 px. Paper sheets are flat panels (one material, Paper white), frames thin."
+    },
+    "pine_hill_town": {
+      "style_refs": [
+        "geumseong",
+        "heijokyo"
+      ],
+      "compare_cities": [
+        "geumseong",
+        "changan",
+        "quanzhou"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The giant stone lantern stands a little left of centre and a little behind the middle, about 0.7 of the whole model's height: octagonal lotus-petal base, stout shaft, lantern chamber with four dark openings (one facing the front, one facing the right), small stone roof with an upturned finial. Three or four small log cabins huddle round its foot, all lower than the lantern's shaft: one at the front-left, one at the front-right, one at the right, their horizontal log walls facing the camera, steep shingle roofs. The firewood stack stands at the front-right corner. Three tall straight Korean pines with dark conical crowns: one at the left edge and two at the back-right, none standing behind the lantern (from the camera's side a tree behind it would sit on its silhouette). Two small stone lamp posts at the front.",
+      "views": {
+        "FRONT": "the giant stone lantern left of centre with its lotus base, shaft, lit chamber opening and small roof; log cabins at its foot to the left and right; the firewood stack at the front right; a pine at the left edge, two pines behind at the right",
+        "BACK": "the lantern from behind with the cabins now behind it, the two back-right pines in front on the left, the left pine at the right",
+        "LEFT": "the left pine nearest in the middle, the lantern behind it, the front-left cabin on the RIGHT (front), the two back-right pines far behind on the LEFT",
+        "RIGHT": "the right cabin and the firewood stack on the LEFT (front), the two back-right pines nearest on the RIGHT (back), the lantern behind the cabins in the middle"
+      },
+      "board_notes": "Lantern about 2.6-3.0 on a ~4 wide footprint (board about 2.5-2.9). The chamber's openings are a night-glow material, so the lantern itself lights at dusk. Check at 120 px that the pines do not merge with the lantern's roof."
+    },
+    "ghat_town": {
+      "style_refs": [
+        "delhi",
+        "simhala"
+      ],
+      "compare_cities": [
+        "delhi",
+        "chenla",
+        "simhala"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The broad cream stone ghat steps span the whole width and descend TOWARD THE CAMERA in at least ten wide tiers (the top at the back, the bottom at the front), each riser a clearly darker stone shade than its tread, so the camera sees one big field of bold horizontal stripes. At the bottom front-centre the steps go down into the small square stone tank (kund) with water, its stone rim all round, not reaching the front edge. The small cream temple with a short curved spire and a saffron-orange flag stands on the top of the steps at the back-left; the flat-roofed house with the small domed rooftop pavilion stands on top at the back-right. Long broad strips of drying cloth in indigo and turmeric hang on lines between short posts across the middle of the steps and lie spread flat along two or three treads, so the colours read from above. One peepal tree at the right end of the steps, halfway up, its trunk in view. Two small lamp posts at the top of the steps.",
+      "views": {
+        "FRONT": "the wide staircase of stripes descending toward the viewer into the small stone tank at the bottom centre; the small temple with its curved spire and flag at the top left, the house with its rooftop pavilion at the top right, cloth lines and spread cloth across the middle, the peepal at the right",
+        "BACK": "the back walls of the temple and the house on top of the high back edge of the step block, the temple on the right, the peepal's crown at the left",
+        "LEFT": "the side of the step block as a stepped triangle rising from the RIGHT (front, low) to the LEFT (back, high), the temple on top at the left",
+        "RIGHT": "the side of the step block as a stepped triangle rising from the LEFT (front, low) to the RIGHT (back, high), the peepal nearest halfway up, the house with its rooftop pavilion on top at the right"
+      },
+      "board_notes": "Cream stone on sand is the lowest-contrast combination in batch 2: the darker risers, the teal tank, the indigo / turmeric cloth and the saffron flag must carry it at 45 px (see windcatcher_town). Steps top about 1.3-1.6, temple spire to about 2.3-2.6 on a ~4 wide footprint (board about 2.2-2.5); a lower model reads as a slab. The step block's side faces (the right one faces the camera) are ashlar with a stepped edge, not a plinth, and the lowest tread starts at z = 0."
+    },
+    "shipyard_port": {
+      "style_refs": [
+        "quanzhou",
+        "dagon"
+      ],
+      "compare_cities": [
+        "quanzhou",
+        "dagon",
+        "chenla"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The big half-built wooden junk hull lies on its timber slipway across the FRONT-LEFT half, its length running left-to-right with the bow at the right, the curved ribs exposed on its FRONT side (facing the camera) like a whale skeleton, planked on the back side, dark tar-black keel and wales. The tall A-frame crane is a pair of sheer legs: exactly two long lashed light-timber poles (not a four-legged pyramid) whose feet stand on the ground IN FRONT of the hull's stern and bow and which lean BACK over the hull, crossed and rope-lashed at an apex above it (higher than everything except the finished junk's masts), with one crossbar, two guy ropes running back behind the hull to ground stakes, and a pulley block lowering a bundle of planks into the hull (a plane leaning away from the board camera reads far taller than one leaning toward it). The finished junk with two rust-red battened sails stands beside a short wooden quay at the BACK-RIGHT, its hull resting level on the ground (flat bottom at the ground line, no water), its length running left-to-right so its sails face the camera. The tiled warehouse with wide doors stands at the back-left. The stack of timber planks stands at the front-right. No trees. Two small lamp posts at the quay's two front corners, well apart.",
+      "views": {
+        "FRONT": "the half-built hull side-on with its ribs exposed, the two-legged A-frame crane over it (one A, its feet in front of the stern and the bow); the finished junk's two rust-red sails at the back right; the warehouse behind at the left; the timber stack at the front right",
+        "BACK": "the planked back side of the hull, the warehouse in front on the right, the finished junk and its quay in front on the left",
+        "LEFT": "the hull stern-on on its slipway on the RIGHT (front), one crane pole rising from its foot in front of it and leaning back over it to the apex, its guy rope running down behind to a stake (a 人 shape, not a second A), the warehouse nearest on the LEFT (back), the finished junk's sails far behind",
+        "RIGHT": "the hull's bow on the LEFT (front) with the timber stack nearest in front of it, one crane pole rising from its foot in front of the bow and leaning back to the apex, its guy rope running down behind (a 人 shape), the finished junk end-on and its quay on the RIGHT (back), its sails edge-on"
+      },
+      "allow": {
+        "life": "the half-built junk hull on its slipway and one finished junk with two rust-red battened sails, both empty, the finished one standing level on the ground beside the quay (no water under it)",
+        "quay": "a short wooden quay on posts beside the finished junk and the timber slipway under the hull"
+      },
+      "board_notes": "Mast tops about 3.0-3.3 on a ~4 wide footprint (board about 2.8-3.1). The ribs must stay readable as separate curved bars at 120 px: fewer, thicker ribs (8-10) rather than many thin ones. Rust-red sails are broad flat panels with dark battens, not a mesh of lines."
+    },
+    "oasis_citadel": {
+      "style_refs": [
+        "baghdad",
+        "panti"
+      ],
+      "compare_cities": [
+        "panti",
+        "cairo",
+        "baghdad"
+      ],
+      "layout": "Plan layout (compact, about 1.1 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The stepped pyramid of mud-brick buildings stands left of centre and fills most of the footprint: four or five terraces, each set back on all sides from the one below, rising to a tall square keep, the whole stepped mass taller than it is wide; every terrace edge carries a light parapet ledge, and every terrace (the front and right faces above all) is planted with trailing greenery, grapevines, pomegranate and mulberry trees spilling over the edges so the camera sees green on every step. No crenellated wall, no round corner towers. At the front-right stands a small round domed cistern: a closed stone drum with a stone rim at its foot and a small dome on top (a building, no open water). Two tall white-trunked poplars: back-right, and at the left edge beside the terraces. Two small lamp posts at the front.",
+      "views": {
+        "FRONT": "the stepped mud-brick terraces rising to the square keep, light ledges and green spilling over every terrace edge; the round domed cistern at the front right; a poplar at the left, one behind at the right",
+        "BACK": "the back of the terraces and the keep, the back-right poplar in front on the left, the cistern hidden",
+        "LEFT": "the terraces stepping up to the keep, the left poplar nearest in the middle, greenery on every step",
+        "RIGHT": "the cistern in front on the LEFT, the terraces and keep behind, the back-right poplar on the RIGHT"
+      },
+      "board_notes": "'Taller than wide' is the stepped mass, not the whole model: stepped mass about 2.4-2.8 wide, keep top about 3.2-3.4, footprint about 3.6-3.9 wide with the poplars (board about 3.2-3.5, not above baghdad's 3.61). Green must be at least 40 % of what the board camera sees: check it on 03-blender-board.png. The domed cistern is the catalogue's stone-rimmed cistern built closed so the no-water rule holds."
+    },
+    "caravanserai_town": {
+      "style_refs": [
+        "cairo",
+        "constantinople"
+      ],
+      "compare_cities": [
+        "panti",
+        "cairo",
+        "baghdad"
+      ],
+      "layout": "Plan layout (compact, about 1.15 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The square red-brown baked-brick caravanserai fills most of the footprint: a courtyard ringed by rooms. Its FRONT wing is only one low storey so the camera looks over it into the courtyard; the back and left wings are a little taller, and their inner courtyard faces carry the rhythm of pointed-arch arcades (seen by the camera). One plain brick arched gateway in the middle of the front wall, hardly taller than the walls. In the courtyard a row of four big kneeling camels runs left-to-right, side-on to the camera, with piles of red, indigo and saffron cloth bundles beside them, all scaled up to read from the board. The domed brick water cistern stands outside the gate at the front-right. The small market stall with a striped awning stands against the right wall. Two mulberry trees at the back-left and back-right corners. Two small lamp posts beside the gate.",
+      "views": {
+        "FRONT": "the low front wall with the plain brick arched gateway in the middle; over it, the courtyard with the four kneeling camels side-on and the colourful bundles, the arcades of the back wing behind them; the domed cistern at the front right",
+        "BACK": "the taller back wing's outer wall, mulberry trees at both corners",
+        "LEFT": "the left wing's outer wall, the courtyard hidden, a mulberry tree at the back (LEFT)",
+        "RIGHT": "the right wall with the striped market stall against it, the domed cistern at the front (LEFT)"
+      },
+      "allow": {
+        "life": "a row of four big kneeling camels resting in the courtyard (no riders, no loads on them)"
+      }
+    },
+    "blue_dome_bazaar": {
+      "style_refs": [
+        "baghdad",
+        "cairo"
+      ],
+      "compare_cities": [
+        "baghdad",
+        "cairo",
+        "constantinople"
+      ],
+      "layout": "Plan layout (compact, about 1.15 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The huge flat rectangular tiled portal (pishtaq) stands left of centre at the front, its tiled face to the camera: a cobalt field of white eight-point stars and turquoise diamonds inside a white border (no calligraphy, no letters), a turquoise frame round a deep tall pointed-arch recess with a lit door and a small grille window at its back; plain sand brick on its back. Two slender octagonal minarets are engaged at its two ends, taller than it: tiled shaft sections in cobalt and turquoise between sand rings, an arcaded gallery, a turquoise cap with a gold finial. Behind the portal a low sand-brick hall carries the ribbed melon-shaped turquoise dome on a short arcaded drum, set behind the portal's RIGHT end over the corner where the hall meets the bazaar and lower than the portal's top, so from the board camera it peeks out just right of the right minaret. Right of the portal the covered bazaar block runs FRONT-TO-BACK: three small terracotta brick domes in a row on its flat roof, a small arched window in its short front end wall, and on its RIGHT side (the side the board camera sees) three pointed open shop bays with striped saffron-and-red awnings over spice stalls, sacks and jars in front. Two plane trees: front-left beside the left minaret, and back-right behind the bazaar's back end (clear of the dome's silhouette). Two small lamp posts at the front.",
+      "views": {
+        "FRONT": "the flat tiled portal with its pointed-arch recess between the two slender minarets, left of centre; the turquoise dome peeking out just right of the right minaret, lower than the portal's top; on the right the bazaar block's short front end wall with a small arched window and a brick dome above it; the front-left plane tree at the left, lamp posts in front",
+        "BACK": "the plain sand-brick back of the portal on the RIGHT between its two minarets, the low hall in front of it; the turquoise dome on its drum left of centre; the bazaar block's back end with a brick dome on the far LEFT; a plane tree at each end",
+        "LEFT": "the portal edge-on on the RIGHT (front) with the left minaret nearest; the hall's plain side wall with a small arched window running to the LEFT (back), the turquoise dome above it, the bazaar's brick domes peeking behind; a plane tree at each end, a lamp post at the front",
+        "RIGHT": "the bazaar block's long right side across the picture: three pointed open shop bays with striped awnings and spice stalls under its three brick domes; the right minaret on the LEFT (front) rising above it, the turquoise dome behind above the middle; a plane tree on the RIGHT (back), a lamp post on the LEFT"
+      }
+    },
+    "windcatcher_town": {
+      "style_refs": [
+        "aden",
+        "jeddah"
+      ],
+      "compare_cities": [
+        "jeddah",
+        "aden",
+        "baghdad"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The huge stepped cone ice-house (yakhchal) of earth-yellow mud plaster is the tallest thing, left of centre, covering about half the footprint, its rings of steps facing the camera; the long shading wall runs left-to-right BEHIND it, its top stepped, clearly lower than the cone. Two or three square windcatcher towers with vertical slots near the top stand in the right half, all clearly lower than the ice-house, slots facing the camera. A small cluster of low mud houses with small domed roofs gathers at their feet in the front-right. Three small pistachio trees: front-left, front-centre and right. Two small lamp posts at the front.",
+      "views": {
+        "FRONT": "the big stepped earth cone left of centre with the long wall behind it; the slotted windcatcher towers and the low domed houses on the right; small pistachio trees in front",
+        "BACK": "the long wall in front across the picture, the cone rising above it, the towers on the left",
+        "LEFT": "the cone's rounded steps on the RIGHT (front), the end of the long wall behind on the LEFT",
+        "RIGHT": "the windcatcher towers and the domed houses on the LEFT (front), the cone behind them on the RIGHT"
+      }
+    },
+    "rock_cut_town": {
+      "style_refs": [
+        "rome",
+        "aden"
+      ],
+      "compare_cities": [
+        "rome",
+        "cairo",
+        "aden"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The free-standing monolith of rose-red sandstone fills the back and most of the width, rough and faceted on its top and right side, highest at the back-left and stepping down toward the right so its faceted right side faces the camera, with darker red strata bands; its FRONT face is carved into the two-storey colonnaded facade: six columns below, and above them the small round pavilion (tholos) crowned by a stone urn, no triangular pediment, the carved face facing the camera straight on and set a little into the rock with deep dark shadows behind the columns. The smaller rock block with a simple carved doorway stands at the front-right, its doorway facing front-right. The two cream caravan tents with red-brown stripes stand at the front-left. Two flat-topped acacia trees at the left and right edges. Two small lamp posts in front of the facade.",
+      "views": {
+        "FRONT": "the rose-red rock mass with the carved two-storey colonnaded facade and the urn-topped round pavilion in the middle; the smaller rock block with its doorway at the front right, two tents at the front left, acacias at both edges",
+        "BACK": "the rough back of the rock mass, highest on the right, the tents and small block hidden or peeking at the sides",
+        "LEFT": "the rock mass's rough left side, highest on the LEFT (back), the tents and an acacia in front on the RIGHT",
+        "RIGHT": "the small rock block with its doorway on the LEFT (front), an acacia nearest, the big rock's rough right side stepping up toward the RIGHT (back)"
+      },
+      "board_notes": "The monolith is the landmark, not a plinth: it has no flat top slab and the lowest point is z = 0. Rock top about 2.6-3.0 on a ~4 wide footprint (board about 2.4-2.8). Also compare against refs/derived/delhi.png (east, so not in the same-side strip): the lighter rose-red and the urn-topped tholos must separate it from delhi's dark red arcades. The facade's recesses are night-glow materials."
+    },
+    "lighthouse_port": {
+      "style_refs": [
+        "cairo",
+        "rome"
+      ],
+      "compare_cities": [
+        "cairo",
+        "aden",
+        "jeddah"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The very tall three-stage stone lighthouse (square base, octagonal middle, round top stage with a glowing fire bowl) stands at the BACK-LEFT on the end of a short stone mole, about three times the height of any other building. Its square base is joined to the long whitewashed warehouse with Mediterranean-blue doors, which runs from it along the back toward the right. The three flat-roofed whitewashed harbour houses with blue doors, shutters and roof trims form one group in the front-left and centre, lower than the warehouse. A row of terracotta amphorae stands along the stone quay edge at the front. The small sailing ship with a cream sail is moored at the right side of the quay, its sail facing the camera. Two olive trees at the front-left and right. Two small lamp posts on the quay.",
+      "views": {
+        "FRONT": "the tall three-stage lighthouse at the back left with its fire bowl, the long white warehouse with blue doors behind, the white harbour houses in front, the amphorae along the quay, the ship's cream sail at the right",
+        "BACK": "the warehouse's back wall across the picture, the lighthouse at the right rising far above",
+        "LEFT": "the lighthouse and the warehouse end-on at the back (LEFT), the harbour houses in front (RIGHT), an olive tree",
+        "RIGHT": "the ship and its sail on the LEFT (front), the warehouse end-on behind, the lighthouse far behind rising above"
+      },
+      "allow": {
+        "life": "one small sailing ship with a cream sail moored at the quay, empty deck",
+        "quay": "the short stone mole under the lighthouse and the stone quay edge along the harbour houses"
+      }
+    },
+    "lagoon_town": {
+      "style_refs": [
+        "constantinople",
+        "rome"
+      ],
+      "compare_cities": [
+        "constantinople",
+        "aden",
+        "rome"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The palazzos form an L: a row of two or three four-storey palazzos in rose pink and cream across the BACK, facades facing the camera, with pointed Gothic arched windows (dark openings with white stone frames) and loggias, and one more palazzo turning forward along the RIGHT side, its facade facing right toward the camera; all stand on visible wooden piles along their front edges. The slender brick campanile with a green pyramid cap rises at the BACK-LEFT corner, about two and a half to three times the palazzo height, the tallest thing by far but slim. The humped stone footbridge stands at the front-left, turned side-on so its hump reads. A few striped mooring poles stand along the front, with the black gondola moored between them, side-on to the camera. No trees. Two small lamp posts on the landing.",
+      "views": {
+        "FRONT": "the row of pink and cream palazzos with pointed Gothic windows on wooden piles, the right-hand palazzo turning forward at the right, the slender brick campanile with its green cap at the back left, the footbridge at the front left, striped poles and the black gondola along the front",
+        "BACK": "the plain backs of the palazzo row, the right-hand palazzo's back end on the LEFT, the campanile at the RIGHT",
+        "LEFT": "the campanile nearest on the LEFT (back) rising far above the palazzo row's left end, the footbridge end-on nearest on the RIGHT (front), the right-hand palazzo far behind",
+        "RIGHT": "the right-hand palazzo's long facade on piles across the picture, its front end on the LEFT; the gondola's prow and a striped pole in front on the LEFT (front); the back row end-on behind on the RIGHT, the campanile rising far behind at the RIGHT (back)"
+      },
+      "allow": {
+        "life": "one black gondola, empty, moored between the striped poles",
+        "quay": "the wooden piles under the palazzos, the striped mooring poles and a low stone landing step along the front"
+      },
+      "board_notes": "Height cap: campanile top at most about 0.9 x the footprint width (board about 3.4, below baghdad's 3.61; lighthouse_port's 3.96 was the one deliberate exception), so the palazzos are four SHORT storeys (about 1.2-1.4 on a ~4 wide footprint) and the campanile about 3.2-3.5. Rose pink must not read as aden's salmon tower-houses at 120 px: the white-framed pointed windows and the green cap carry it. The gondola sits flat on the ground line (no water)."
+    },
+    "fairy_chimney_town": {
+      "style_refs": [
+        "rome",
+        "constantinople"
+      ],
+      "compare_cities": [
+        "constantinople",
+        "rome",
+        "aden"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The big broad peach-pink tuff cone stands left of centre and toward the back, topped with a dark flat basalt cap, its FRONT and RIGHT faces carved with round doors, small windows, rows of tiny dovecote holes and little wooden balconies, cream tuff bands across it. The two shorter capped cones stand apart from it with clear gaps between all three, so the three caps read separately: one at the front-right with a small chapel front and an arched door carved into it facing the camera; one at the back-right. The grape trellis stands at the front-left. Two apricot trees: at the left edge, and at the right between the two short cones. Two small lamp posts at the front.",
+      "views": {
+        "FRONT": "the tall pink cone with its dark cap, round doors, windows, dovecote holes and balconies; the short chapel cone with its carved arched front at the front right, the other short cone behind right, gaps between all three; the trellis at the front left, apricot trees at the left and right",
+        "BACK": "the backs of the three cones, fewer openings, the back-right cone in front on the LEFT, the trellis at the right",
+        "LEFT": "the tall cone with openings nearest, the trellis in front on the RIGHT, the left apricot tree nearest in front of the cone",
+        "RIGHT": "the chapel cone on the LEFT (front), the back-right cone on the RIGHT, an apricot tree between them, the tall cone behind in the middle"
+      },
+      "board_notes": "Peach-pink tuff on sand: keep the tuff a clearly pinker, slightly deeper tone than the board sand and let the dark caps and dark openings carry the 45 px outline. Tall cone about 2.8-3.1 on a ~4 wide footprint (board about 2.6-2.9), short cones about 0.55-0.65 of it. Compare against chenla at 120 px (ribbed orange towers without caps)."
+    },
+    "windmill_hill_town": {
+      "style_refs": [
+        "rome",
+        "cairo"
+      ],
+      "compare_cities": [
+        "rome",
+        "cairo",
+        "jeddah"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The three round whitewashed stone tower windmills stand along the BACK half: the big one left of centre, the two small ones at the back-right and at the left, each with a dark conical wooden cap and eight broad triangular canvas sails (a light off-white canvas, paler than sand) stretched on dark wooden spars; the sail wheels are turned toward the front-RIGHT so the camera sees them nearly face-on as spiky stars, set at different angles, and no sail wheel overlaps another's from the camera. The three small whitewashed cube houses with ochre roofs and sky-blue doors form one group in the front-left and centre. The round stone threshing floor (a low built stone ring, not a slab) lies at the front-right. Two broad fig trees at the front-left corner and the right. Two small lamp posts at the front.",
+      "views": {
+        "FRONT": "the three white round windmills behind, the big one left of centre, their triangular sails spread like stars facing the viewer; the white cube houses in front; the round threshing floor at the front right",
+        "BACK": "the backs of the windmills, sails seen from behind, the houses hidden",
+        "LEFT": "the windmills with their sail wheels seen nearly edge-on as thin spikes, the left one nearest, the houses in front on the RIGHT, the front-left fig nearest on the RIGHT",
+        "RIGHT": "the threshing floor and a fig tree on the LEFT (front), the windmills behind with sails half-turned, the back-right mill nearest on the RIGHT"
+      },
+      "board_notes": "The sail spans count in the footprint (aspect <= 1.3): sail radius about 0.55-0.75 x the tower height, big mill with its top sail tip about 3.0-3.3 on a ~4 wide footprint (board about 2.8-3.1). Sails are flat triangular panels with a dark spar edge; thin spars alone vanish at 120 px and beige canvas vanishes into the sand at 45 px."
+    },
+    "noria_town": {
+      "style_refs": [
+        "cairo",
+        "baghdad"
+      ],
+      "compare_cities": [
+        "baghdad",
+        "cairo",
+        "rome"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The two giant dark-timber water wheels stand upright side by side left of centre, each taller than the houses, their faces turned to the camera so both read as full open circles with a ring of small wooden buckets on the rim and bold spokes; their lower edges dip into the short stone leat that runs left-to-right in front of the houses (water only inside its stone rim, not reaching the model edge). From the top of the wheels a stone aqueduct of three or four arches, facing the camera, carries a raised channel to the RIGHT toward the three stone houses with small white domes, which stand as one group at the back-right. A short stone quay edges the leat at the front-right. Two tall dark cypresses: one at the far left edge and one at the back-right beside the houses, neither behind the wheels (the wheels must read as open circles against the ground). One clump of reeds at the leat's left end. Two small lamp posts on the quay.",
+      "views": {
+        "FRONT": "the two big wheels as full circles side by side on the left, standing in the stone leat; the arched aqueduct running from their tops to the right toward the white-domed houses at the back right; a cypress at the far left and one behind the houses",
+        "BACK": "the backs of the houses and the aqueduct on the LEFT, the wheels behind on the right, a cypress at each side",
+        "LEFT": "the wheels edge-on as tall thin ellipses one behind the other, the left cypress nearest, the leat's end and the reeds on the RIGHT (front)",
+        "RIGHT": "the stone quay on the LEFT (front), the white-domed houses and their cypress on the RIGHT (back), the aqueduct end-on between them, the wheels edge-on behind in the middle"
+      },
+      "allow": {
+        "quay": "one short stone quay beside the leat"
+      },
+      "board_notes": "Wheel diameter about 2.2-2.5, aqueduct channel at the wheel tops, domes about 1.2-1.4, total about 2.6-2.9 on a ~4 wide footprint (board about 2.5-2.8). Rims and spokes thick enough to stay circles at 45 px (8-12 spokes, rim about 0.08 deep). Leat water at most 25 % of the footprint."
+    },
+    "colonnade_city": {
+      "style_refs": [
+        "rome",
+        "constantinople"
+      ],
+      "compare_cities": [
+        "rome",
+        "constantinople",
+        "cairo"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The temple stands left of centre and toward the back on its tall stepped podium, its six front columns and triangular pediment facing the camera, dark shadowed cella wall and door behind the columns, its big terracotta-red tiled roof running front-to-back so the camera sees the whole long right slope of the roof; the podium steps (light treads, darker risers) come down at the front. The short colonnade of six to eight columns carrying a stone beam stands in the front-right, lower than the podium top, running left-to-right; the two small shops with terracotta roofs sit behind its columns. Three olive trees: front-left, at the left edge beside the podium, and back-right. Two small lamp posts at the foot of the podium steps.",
+      "views": {
+        "FRONT": "the temple on its stepped podium with six columns and the pediment, the red roof behind; the short colonnade and the two little shops at the front right; olive trees at the left and behind at the right",
+        "BACK": "the temple's back pediment and roof on the right, the colonnade and shops hidden at the left, the back-right olive in front on the left",
+        "LEFT": "the temple's long left side with its columns and the red roof slope, the podium, the left olive nearest, the front-left olive in front on the RIGHT",
+        "RIGHT": "the colonnade end-on and the shops on the LEFT (front), the temple's long right side and roof behind, the back-right olive on the RIGHT"
+      },
+      "board_notes": "Honey limestone on sand needs the red roof to be a big share of the board view and the cella behind the columns dark (night-glow). Roof ridge about 2.6-3.0 on a ~4 wide footprint (board about 2.5-2.8). The pediment appears only here among the catalogue models (rock_cut_town has none)."
+    },
+    "snow_tower_village": {
+      "style_refs": [
+        "constantinople",
+        "rome"
+      ],
+      "compare_cities": [
+        "jeddah",
+        "aden",
+        "constantinople"
+      ],
+      "layout": "Plan layout (compact, about 1.2 : 1), as the board camera sees it (from the front-RIGHT, 25 degrees off straight-on, about 40 degrees above: the FRONT and the RIGHT side face the camera, things further back stand higher in the picture, so tall parts go to the back and low parts to the front where they cannot hide the landmark). The three slender square grey stone towers (four to five times as tall as wide, tiny slit windows, small wooden pyramid roofs with snow on the eaves) stand along the BACK in a left-to-right row with clear gaps between them: the tallest at the back-left, the two shorter ones at the back-centre and back-right, one low stone house with a snowy slate roof joining their feet so they read as one group. The small stone chapel with a conical roof stands at the front-right. A row of colourful wooden beehives stands at the front-left. Two dark fir trees: at the left edge and at the right edge behind the chapel (not in front of it). Snow on every roof edge. Two small lamp posts at the front.",
+      "views": {
+        "FRONT": "three tall thin grey towers at the back, tallest on the left, joined by a low stone house; the conical-roofed chapel at the front right, the colourful beehive row at the front left; firs at both edges",
+        "BACK": "the towers now with the tallest on the right, the low house in front of them",
+        "LEFT": "the towers overlapping, tallest nearest, the left fir nearest, the beehives on the RIGHT (front)",
+        "RIGHT": "the chapel on the LEFT (front), the right fir behind it, the towers behind, the back-right tower nearest"
+      },
+      "board_notes": "Tallest tower about 3.0-3.3 on a ~3.8 wide footprint (board about 2.9-3.3), the others about 0.7 and 0.55 of it; tower width at least about 0.55 so each still shows as a bar at 45 px. Slit windows are night-glow materials on the front and right faces."
+    }
+  }
+}

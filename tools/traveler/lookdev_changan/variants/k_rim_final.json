@@ -1,0 +1,117 @@
+{
+  "base": "k0_baseline",
+  "light": {
+    "sunel": -11.0,
+    "sunaz": 247.0,
+    "color": [
+      1.0,
+      0.66,
+      0.38
+    ],
+    "energy": 0.72
+  },
+  "surface": {
+    "shader": "res://tools/traveler/lookdev_changan/atlas_surface_dusk_rim.gdshader",
+    "sun_wrap": 0.2,
+    "rim_strength": 0.0
+  },
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_changan/changan_extra_rim.gd",
+      "cfg": {
+        "massif_key": {
+          "path": "FarBackdrop/MassifBandMerged",
+          "layer_bit": 19,
+          "color": [
+            1.0,
+            0.72,
+            0.6
+          ],
+          "energy": 0.35
+        },
+        "targets": [
+          {
+            "kind": "atlas",
+            "exclude": [
+              "grass",
+              "seabed",
+              "Sea",
+              "ocean_edge"
+            ],
+            "cull_exempt": [
+              "terrain"
+            ],
+            "cull_dist": 30.0,
+            "rim_strength": 3.0,
+            "rim_width_px": 3.0,
+            "gap_lo": 0.06,
+            "gap_hi": 0.25,
+            "back_min": 0.0,
+            "back_max": 0.7,
+            "side_min": -0.35,
+            "side_max": 0.25,
+            "color": [
+              1.0,
+              0.95,
+              0.8
+            ],
+            "rim_albedo_mix": 0.35,
+            "up_start": 0.85,
+            "up_end": 0.97,
+            "fade_start": 12.0,
+            "fade_end": 24.0,
+            "fade_min": 0.0
+          },
+          {
+            "root": "character",
+            "match": "tripo_node",
+            "mode": "fresnel",
+            "color": [
+              1.0,
+              0.78,
+              0.45
+            ],
+            "intensity": 2.0,
+            "power": 2.2,
+            "dir_weight": 0.8,
+            "back_min": -0.2,
+            "back_max": 0.6,
+            "fade_start": 100.0,
+            "fade_end": 200.0
+          },
+          {
+            "path": "CliffBuddha",
+            "mode": "edge",
+            "rim_strength": 1.6,
+            "rim_albedo_mix": 0.0,
+            "color": [
+              1.0,
+              0.9,
+              0.7
+            ],
+            "rim_width_px": 3.0,
+            "fade_start": 30.0,
+            "fade_end": 90.0
+          },
+          {
+            "path": "FarBackdrop/MassifBandMerged",
+            "mode": "edge",
+            "rim_strength": 0.6,
+            "rim_albedo_mix": 0.0,
+            "color": [
+              1.0,
+              0.88,
+              0.72
+            ],
+            "rim_width_px": 2.5,
+            "gap_lo": 0.03,
+            "gap_hi": 0.15,
+            "fade_start": 50.0,
+            "fade_end": 170.0,
+            "fade_min": 0.35
+          }
+        ]
+      }
+    }
+  ]
+}

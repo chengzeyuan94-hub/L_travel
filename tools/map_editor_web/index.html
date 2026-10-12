@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>旅人场景 · 地图摆放器</title>
+<style>
+  :root{
+    --bg:#1b1d22; --panel:#23262d; --panel2:#2b2f38; --line:#363b45;
+    --ink:#e8eaee; --dim:#9aa2b1; --accent:#ffb43d; --accent2:#4da3ff;
+    --ok:#4ec77f; --warn:#ff6b6b;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);
+    font:14px/1.5 -apple-system,"PingFang SC","Helvetica Neue",Arial,sans-serif;overflow:hidden}
+  button{font:inherit;color:var(--ink);background:var(--panel2);border:1px solid var(--line);
+    border-radius:7px;padding:7px 12px;cursor:pointer}
+  button:hover{background:#343945}
+  button.on{background:var(--accent);color:#2a1d00;border-color:var(--accent);font-weight:600}
+  button.primary{background:var(--accent2);color:#04203d;border-color:var(--accent2);font-weight:600}
+  button.danger{background:#3a2226;border-color:#5b2b32;color:#ffb3b3}
+  input[type=number],input[type=text]{width:100%;font:inherit;color:var(--ink);
+    background:#171a1f;border:1px solid var(--line);border-radius:6px;padding:6px 8px}
+  input:focus{outline:2px solid var(--accent2);outline-offset:-1px}
+
+  #app{display:grid;grid-template-columns:238px 1fr 244px;grid-template-rows:52px 1fr 34px;height:100%}
+
+  /* 顶栏 */
+  #top{grid-column:1/4;display:flex;align-items:center;gap:8px;padding:0 12px;
+    background:var(--panel);border-bottom:1px solid var(--line)}
+  #top .sp{flex:1}
+  #top .group{display:flex;gap:4px;background:#1a1d23;padding:4px;border-radius:9px;border:1px solid var(--line)}
+  #status{font-size:12.5px;color:var(--dim);max-width:430px;text-align:right}
+
+  /* 左：分类 + 列表 */
+  #left{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+  #cats{display:flex;flex-wrap:wrap;gap:4px;padding:8px;border-bottom:1px solid var(--line)}
+  #cats button{padding:5px 9px;font-size:12.5px;border-radius:6px}
+  #list{flex:1;overflow:auto;padding:6px}
+  #list .row{display:flex;align-items:center;gap:6px;padding:6px 8px;border-radius:6px;cursor:pointer;
+    font-size:13px;color:var(--dim)}
+  #list .row:hover{background:#2c313b}
+  #list .row.sel{background:rgba(255,180,61,.16);color:var(--accent);font-weight:600}
+  #list .row .t{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  #list .row .n{font-size:11px;opacity:.6;font-variant-numeric:tabular-nums}
+  #palette{border-top:1px solid var(--line);padding:8px}
+  #palette h4{margin:0 0 6px;font-size:12px;color:var(--dim);font-weight:600}
+  #palette .p{display:flex;flex-wrap:wrap;gap:4px}
+  #palette .p button{padding:5px 8px;font-size:12px}
+
+  /* 中：画布 */
+  #mid{position:relative;min-width:0;min-height:0}
+  #cv{display:block;width:100%;height:100%}
+  #drop{position:absolute;inset:0;display:none;align-items:center;justify-content:center;
+    background:rgba(77,163,255,.16);border:3px dashed var(--accent2);font-size:20px;font-weight:600;
+    pointer-events:none}
+  #drop.show{display:flex}
+  #hintbox{position:absolute;left:12px;top:12px;background:rgba(20,22,27,.82);border:1px solid var(--line);
+    border-radius:9px;padding:9px 12px;font-size:12.5px;color:var(--dim);max-width:330px;line-height:1.65}
+  #hintbox b{color:var(--ink)}
+  #placing{position:absolute;left:50%;top:12px;transform:translateX(-50%);display:none;
+    background:var(--accent);color:#2a1d00;font-weight:600;border-radius:9px;padding:8px 14px;font-size:13px}
+  #placing.show{display:block}
+
+  /* 右：数字 */
+  #right{background:var(--panel);border-left:1px solid var(--line);overflow:auto;padding:10px}
+  #right h3{margin:2px 0 10px;font-size:13px;color:var(--accent)}
+  #right .none{color:var(--dim);font-size:13px;line-height:1.8}
+  .fld{margin-bottom:9px}
+  .fld label{display:block;font-size:11.5px;color:var(--dim);margin-bottom:3px}
+  .xyz{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px}
+  .xyz .c{position:relative}
+  .xyz .c span{position:absolute;left:7px;top:6px;font-size:10px;color:#6b7383;pointer-events:none}
+  .xyz .c input{padding-left:19px}
+  hr{border:0;border-top:1px solid var(--line);margin:12px 0}
+
+  /* 实机渲染对比窗口 */
+  #shot{position:absolute;inset:0;display:none;flex-direction:column;background:#101216;z-index:5}
+  #shot.show{display:flex}
+  #shotBar{display:flex;align-items:center;gap:8px;padding:7px 10px;background:var(--panel);
+    border-bottom:1px solid var(--line);font-size:13px}
+  #shotBar button{padding:5px 10px;font-size:12.5px}
+  #shotTitle{color:var(--accent);font-weight:600}
+  #shotView{position:relative;flex:1;min-height:0;overflow:hidden;background:#0b0d10}
+  #shotView img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+  #shotCur{clip-path:inset(0 0 0 0)}
+  #shotEdge{position:absolute;top:0;bottom:0;width:2px;background:var(--accent);opacity:.85;
+    pointer-events:none;display:none}
+  #shotNums{padding:7px 10px;background:var(--panel);border-top:1px solid var(--line);
+    font-size:12px;color:var(--dim);font-variant-numeric:tabular-nums;line-height:1.7;
+    max-height:96px;overflow:auto}
+  #shotNums b{color:var(--ink)}
+  #shotNums .up{color:#ff9d6b}
+  #shotNums .dn{color:var(--ok)}
+
+  /* 底 */
+  #bot{grid-column:1/4;display:flex;align-items:center;gap:14px;padding:0 12px;background:var(--panel);
+    border-top:1px solid var(--line);font-size:12px;color:var(--dim)}
+  .k{background:#171a1f;border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:11px}
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+}}
+</script>
+</head>
+<body>
+<div id="app">
+
+  <div id="top">
+    <div class="group">
+      <button id="m-move" class="on" title="拖箭头移动">移动</button>
+      <button id="m-rot" title="拖圆环旋转">旋转</button>
+      <button id="m-scale" title="拖方块缩放">缩放</button>
+    </div>
+    <div class="group">
+      <button id="b-frame" title="把镜头对准选中的东西">对准选中</button>
+      <button id="b-cam" title="回到游戏里那个机位">游戏机位</button>
+      <button id="b-top" title="从上往下看，方便摆位置">俯视</button>
+    </div>
+    <div class="group">
+      <button id="b-undo" title="撤销上一步">撤销</button>
+      <button id="b-hide" title="隐藏选中条目：从数组移进 editor_hidden，游戏里不出现，随时可恢复">隐藏</button>
+      <button id="b-del" class="danger" title="真删除，不可恢复（一般用隐藏就够）">删除</button>
+    </div>
+    <div class="group">
+      <label for="f-import" id="l-import" style="cursor:pointer;padding:7px 12px;border-radius:7px;
+        background:var(--panel2);border:1px solid var(--line);font-size:14px">导入模型</label>
+      <input id="f-import" type="file" accept=".glb,.gltf,.fbx" multiple style="display:none">
+      <select id="addTarget" style="font:inherit;color:var(--ink);background:#171a1f;
+        border:1px solid var(--line);border-radius:7px;padding:6px 8px"></select>
+    </div>
+    <div class="group">
+      <button id="b-ridges" class="on" title="沙丘块的半透明蓝盘会挡视线，可以隐藏">沙丘块</button>
+      <button id="b-ground" class="on" title="隐藏地形预览">地形</button>
+    </div>
+    <div class="group">
+      <button id="b-render" class="primary" title="用引擎真渲一张（约 5 秒），不写线上文件">实机渲染</button>
+      <select id="renderPreset" style="font:inherit;color:var(--ink);background:#171a1f;
+        border:1px solid var(--line);border-radius:7px;padding:6px 8px"></select>
+    </div>
+    <div class="group" id="sceneSel"></div>
+    <span id="srcTag" style="font-size:12px;padding:4px 8px;border-radius:6px"></span>
+    <div class="sp"></div>
+    <div id="status">正在载入…</div>
+    <button id="b-save" class="primary">保存到副本</button>
+    <button id="b-save-live" class="danger" title="直接改游戏正在读的那个文件">写入线上</button>
+  </div>
+
+  <div id="left">
+    <div id="cats"></div>
+    <div id="list"></div>
+  </div>
+
+  <div id="mid">
+    <canvas id="cv"></canvas>
+    <div id="hintbox">
+      <b>点模型就选中</b>，选中的会亮起来并出现手柄。<br>
+      点空白处 = 取消选中，<b>不会</b>生成任何东西。<br>
+      <b>转镜头</b>：按住 <span class="k">Alt</span> 拖左键（和 C4D 一样）。<br>
+      <b>平移</b>：Alt + 中键　<b>推拉</b>：滚轮<br>
+      <b>隐藏</b>是安全做法：条目被移进 <b>editor_hidden</b>，游戏里不出现，
+      在左侧「已隐藏」里一键恢复到原位。<b>删除</b>是真删、不可恢复。<br>
+      <b>导入模型</b>可以点按钮或直接把文件拖进画面。以上都只在<b>保存时</b>才写进文件。<br>
+      导入的文件会拷进 <b>assets/traveler/&lt;场景&gt;/props/</b> 并追加到你选的那一类，
+      所以游戏侧不改代码就能读到（自带贴图的 <b>.glb</b> 最稳）。<br>
+      保存默认写到 <b>*.edited.json 副本</b>，不动线上文件。
+    </div>
+    <div id="placing"></div>
+    <div id="camTag" style="position:absolute;left:50%;bottom:12px;transform:translateX(-50%);
+      display:none;background:rgba(255,107,107,.92);color:#2a0b0b;font-weight:600;font-size:12.5px;
+      padding:6px 12px;border-radius:8px;pointer-events:none;z-index:4">⚠</div>
+    <div id="drop">松手就放进场景</div>
+
+    <div id="shot">
+      <div id="shotBar">
+        <span id="shotTitle">实机渲染</span>
+        <span class="sp" style="flex:1"></span>
+        <label id="wipeLab" style="font-size:12px;color:var(--dim)">对比
+          <input id="wipe" type="range" min="0" max="100" value="100" style="width:180px;vertical-align:middle">
+        </label>
+        <button id="shotSwap" title="左右互换">互换</button>
+        <button id="shotClose">关闭</button>
+      </div>
+      <div id="shotView">
+        <img id="shotPrev" alt="上一次">
+        <img id="shotCur" alt="本次">
+        <div id="shotEdge"></div>
+      </div>
+      <div id="shotNums"></div>
+    </div>
+  </div>
+
+  <div id="right">
+    <div id="props"><div class="none">还没选中东西。<br>在画面里点一个模型，或者从左边列表里点一行。</div></div>
+  </div>
+
+  <div id="bot">
+    <span>键盘（可选，和 C4D 一致）：<span class="k">E</span> 移动 <span class="k">R</span> 旋转 <span class="k">T</span> 缩放 <span class="k">⌘Z</span> 撤销</span>
+    <span class="sp" style="flex:1"></span>
+    <span id="counts"></span>
+  </div>
+
+</div>
+<script type="module" src="/app.js"></script>
+</body>
+</html>

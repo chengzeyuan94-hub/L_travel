@@ -1,0 +1,6 @@
+{
+  "base": "c_dir5",
+  "camera": {
+    "dof_enabled": false
+  }
+}

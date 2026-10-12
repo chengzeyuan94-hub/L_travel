@@ -1,0 +1,218 @@
+{
+  "manifest_version": 1,
+  "description": "《丝路商旅》正式交接门禁清单。串行执行，窗口类测试互斥，ERROR/leak/非零退出码一律视为失败。",
+  "baseline": {
+    "branch": "feat/night1-ui-motion",
+    "recorded_at_commit": "b10724dc224bb5a56f467912172fc3bcaaad5407",
+    "godot": "4.7.1.stable.official",
+    "note": "expect_passed 为该 commit 上实测基线；数量变化必须有对应任务单，不得静默调整。"
+  },
+  "failure_patterns": {
+    "script_error": [
+      "SCRIPT ERROR",
+      "Parser Error",
+      "Invalid call",
+      "Cannot call method"
+    ],
+    "leak": [
+      "ObjectDB instances leaked at exit",
+      "resources still in use at exit",
+      "Leaked instance"
+    ],
+    "assertion": [
+      "^FAIL: "
+    ]
+  },
+  "stages": [
+    {
+      "id": "import",
+      "title": "资源导入",
+      "kind": "godot_headless",
+      "args": [
+        "--import"
+      ],
+      "group": "boot"
+    },
+    {
+      "id": "main_scene",
+      "title": "主场景解析",
+      "kind": "godot_headless",
+      "args": [
+        "--quit-after",
+        "10"
+      ],
+      "group": "boot"
+    },
+    {
+      "id": "tool_formal_board",
+      "title": "正式棋盘生成器校验",
+      "kind": "python",
+      "script": "tools/promote_formal_board.py",
+      "args": [
+        "--check"
+      ],
+      "expect_stdout": "nodes=54 edges=57 interchanges=5",
+      "group": "tools"
+    },
+    {
+      "id": "tool_world_map_topology",
+      "title": "世界地图拓扑校验",
+      "kind": "python",
+      "script": "tools/promote_world_map_topology.py",
+      "args": [
+        "--check"
+      ],
+      "expect_stdout": "stops=54 edges=57",
+      "group": "tools"
+    },
+    {
+      "id": "tool_map_corridor_generation",
+      "title": "规则节点与美术曲线分离回归",
+      "kind": "python",
+      "script": "tests/test_map_corridor_generation.py",
+      "group": "tools",
+      "note": "PHYSICAL-024: 8 unittest cases; byte-identical rebuild, path sample refinement does not add moves, invalid city/hint/seat semantics rejected."
+    },
+    {
+      "id": "board_corridor_contract_tests",
+      "title": "原版城市走廊两点三步与错误拓扑拒绝",
+      "kind": "godot_scene",
+      "scene": "res://tests/board_corridor_contract_tests.tscn",
+      "expect_passed": 28,
+      "group": "rules",
+      "note": "PHYSICAL-024: same-count shortcuts, ordinary stop junctions, swapped city endpoints, one shared city seat, finite geometry and short-distance display scaling."
+    },
+    {
+      "id": "original_rule_p0_tests",
+      "title": "原版规则 P0",
+      "kind": "godot_scene",
+      "scene": "res://tests/original_rule_p0_tests.tscn",
+      "expect_passed": 182,
+      "group": "rules"
+    },
+    {
+      "id": "original_rule_p1_data_tests",
+      "title": "原版规则 P1 数据（含事实账本哈希门禁）",
+      "kind": "godot_scene",
+      "scene": "res://tests/original_rule_p1_data_tests.tscn",
+      "expect_passed": 2583,
+      "group": "rules"
+    },
+    {
+      "id": "formal_board_promote_tests",
+      "title": "正式棋盘晋升",
+      "kind": "godot_scene",
+      "scene": "res://tests/formal_board_promote_tests.tscn",
+      "expect_passed": 2628,
+      "group": "rules",
+      "note": "PHYSICAL-024: two hints per city corridor; verifies all 19 corridors in both directions using real movement, three steps pass and two steps fail."
+    },
+    {
+      "id": "formal_trade_matrix_006_tests",
+      "title": "正式贸易矩阵",
+      "kind": "godot_scene",
+      "scene": "res://tests/formal_trade_matrix_006_tests.tscn",
+      "expect_passed": 15344,
+      "group": "rules"
+    },
+    {
+      "id": "formal_event_exchange_human_e2e",
+      "title": "真人事件交换 E2E",
+      "kind": "godot_scene",
+      "scene": "res://tests/formal_event_exchange_human_e2e.tscn",
+      "expect_passed": 47,
+      "group": "rules"
+    },
+    {
+      "id": "formal_ai_controller_e2e_tests",
+      "title": "AI 控制器 E2E",
+      "kind": "godot_scene",
+      "scene": "res://tests/formal_ai_controller_e2e_tests.tscn",
+      "expect_passed": 41,
+      "group": "rules"
+    },
+    {
+      "id": "formal_game_screen_integration_tests",
+      "title": "正式球形星球对局页集成",
+      "kind": "godot_scene",
+      "scene": "res://tests/formal_game_screen_integration_tests.tscn",
+      "expect_passed": 144,
+      "note": "PHYSICAL-024: production sphere integration on 54 nodes / 57 edges, preserved pre-existing UI coverage; 144/0 measured in this task.",
+      "group": "rules"
+    },
+    {
+      "id": "lowpoly_world_tests",
+      "title": "球形小星球、真实3D资源与交互",
+      "kind": "godot_scene",
+      "scene": "res://tests/lowpoly_world_tests.tscn",
+      "expect_passed": 166,
+      "note": "PHYSICAL-024: all existing lowpoly checks plus 54 visible markers, one marker per interchange city, both transport eligibility and click paths; 166/0 measured.",
+      "group": "rules"
+    },
+    {
+      "id": "planet_actor_motion_tests",
+      "title": "球面载具尾迹、扬尘、停泊和生命周期",
+      "kind": "godot_scene",
+      "scene": "res://tests/planet_actor_motion_tests.tscn",
+      "expect_passed": 31,
+      "group": "rules",
+      "note": "PLANET-VARIATION-007：新增扬尘/船尾迹、世界空间转弯、自然消散/取消清理、船待机轻摇、隐藏冻结；31项，含实际模型后缘和尘粒离地回归。"
+    },
+    {
+      "id": "planet_route_geometry_tests",
+      "title": "球面商道斜接、合批与回转几何",
+      "kind": "godot_headless",
+      "args": [
+        "--script",
+        "res://tests/planet_route_geometry_tests.gd"
+      ],
+      "expect_passed": 21,
+      "group": "rules",
+      "note": "TASK-PLANET-DENSITY-017: shared-index joins, bounded sharp/reverse fallback, sphere radius, complete formal route geometry. Adds one stage to previous16; old test semantics unchanged."
+    },
+    {
+      "id": "planet_corridor_layer_tests",
+      "title": "走廊地物配置、缓存、隐藏和失败恢复",
+      "kind": "godot_scene",
+      "scene": "res://tests/planet_corridor_layer_tests.tscn",
+      "expect_passed": 22,
+      "group": "rules",
+      "note": "TASK-PLANET-DENSITY-017：新增独立静态层生命周期、异常配置与资源停用恢复；原阶段语义不变。"
+    },
+    {
+      "id": "formal_main_flow_e2e",
+      "title": "标题→设置→正式开局（真实窗口）",
+      "kind": "godot_scene",
+      "scene": "res://tests/formal_main_flow_e2e.tscn",
+      "windowed": true,
+      "expect_passed": 29,
+      "group": "window"
+    },
+    {
+      "id": "formal_ui_full_game_e2e",
+      "title": "正式 UI 完整局（真实窗口）",
+      "kind": "godot_scene",
+      "scene": "res://tests/formal_ui_full_game_e2e.tscn",
+      "windowed": true,
+      "group": "window"
+    },
+    {
+      "id": "formal_full_game_stress_tests",
+      "title": "100 seed 正式完整局压力",
+      "kind": "godot_scene",
+      "scene": "res://tests/formal_full_game_stress_tests.tscn",
+      "expect_passed": 10,
+      "quiet": true,
+      "quiet_keep_patterns": [
+        "FORMAL_STRESS_SUMMARY",
+        "STRESS_PROGRESS",
+        "DETERMINISM_PROGRESS",
+        "RESULTS:",
+        "^FAIL: ",
+        "seed"
+      ],
+      "group": "stress",
+      "note": "完整日志始终落盘保留生产诊断；quiet 只压缩控制台与摘要，不修改被测代码。复现单个失败种子用 SILKROAD_STRESS_SEED=<seed>。"
+    }
+  ]
+}

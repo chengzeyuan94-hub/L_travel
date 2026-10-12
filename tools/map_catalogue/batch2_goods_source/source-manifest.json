@@ -1,0 +1,233 @@
+{
+  "records": [
+    {
+      "goods_id": "highland_barley",
+      "source": "tools/map_catalogue/batch2_goods_source/highland_barley.svg",
+      "source_sha256": "c7bff9bbfb18e9765e09369c2d35c42c93d1507e103afa9391c18cf0faea9d31",
+      "source_kind": "local_procedural_vector",
+      "scope": "CC-BY-4.0 owner-authorized public release",
+      "parameters": {
+        "viewbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "palette": "warm faceted physical goods",
+        "generator": "tools/map_catalogue/batch2_private_goods.py"
+      },
+      "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+      "use_scope": "public"
+    },
+    {
+      "goods_id": "raisins",
+      "source": "tools/map_catalogue/batch2_goods_source/raisins.svg",
+      "source_sha256": "63b804a0c6cf28fe6b04dc5bb27913790aceb4353f33325b09c307d3c9d3b5a3",
+      "source_kind": "local_procedural_vector",
+      "scope": "CC-BY-4.0 owner-authorized public release",
+      "parameters": {
+        "viewbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "palette": "warm faceted physical goods",
+        "generator": "tools/map_catalogue/batch2_private_goods.py"
+      },
+      "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+      "use_scope": "public"
+    },
+    {
+      "goods_id": "sugarcane",
+      "source": "tools/map_catalogue/batch2_goods_source/sugarcane.svg",
+      "source_sha256": "398186c1c1ca5953a34914b37676027f12d89b44c73e236c63163c733da4a5e8",
+      "source_kind": "local_procedural_vector",
+      "scope": "CC-BY-4.0 owner-authorized public release",
+      "parameters": {
+        "viewbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "palette": "warm faceted physical goods",
+        "generator": "tools/map_catalogue/batch2_private_goods.py"
+      },
+      "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+      "use_scope": "public"
+    },
+    {
+      "goods_id": "xuan_paper",
+      "source": "tools/map_catalogue/batch2_goods_source/xuan_paper.svg",
+      "source_sha256": "8ea0ffd6c8fb873f6a2466e5255fe7f219c9fbedf2ce5e2b021292a911de7b18",
+      "source_kind": "local_procedural_vector",
+      "scope": "CC-BY-4.0 owner-authorized public release",
+      "parameters": {
+        "viewbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "palette": "warm faceted physical goods",
+        "generator": "tools/map_catalogue/batch2_private_goods.py"
+      },
+      "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+      "use_scope": "public"
+    },
+    {
+      "goods_id": "cotton",
+      "source": "tools/map_catalogue/batch2_goods_source/cotton.svg",
+      "source_sha256": "736e3b61520b13e58928915176fbe6f467a5051e87c7759d2346dc2336cad3a1",
+      "source_kind": "local_procedural_vector",
+      "scope": "CC-BY-4.0 owner-authorized public release",
+      "parameters": {
+        "viewbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "palette": "warm faceted physical goods",
+        "generator": "tools/map_catalogue/batch2_private_goods.py"
+      },
+      "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+      "use_scope": "public"
+    },
+    {
+      "goods_id": "folding_fan",
+      "source": "tools/map_catalogue/batch2_goods_source/folding_fan.svg",
+      "source_sha256": "3440b54194e5c4ba2eb504c97b97ee6c18171843b11c9c5c369319ae2967b956",
+      "source_kind": "local_procedural_vector",
+      "scope": "CC-BY-4.0 owner-authorized public release",
+      "parameters": {
+        "viewbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "palette": "warm faceted physical goods",
+        "generator": "tools/map_catalogue/batch2_private_goods.py"
+      },
+      "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+      "use_scope": "public"
+    },
+    {
+      "goods_id": "pomegranate",
+      "source": "tools/map_catalogue/batch2_goods_source/pomegranate.svg",
+      "source_sha256": "25dec14afbd42fe5fc5846e8a21426e27697c2266b8d331c2b2a90e4df2654bc",
+      "source_kind": "local_procedural_vector",
+      "scope": "CC-BY-4.0 owner-authorized public release",
+      "parameters": {
+        "viewbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "palette": "warm faceted physical goods",
+        "generator": "tools/map_catalogue/batch2_private_goods.py"
+      },
+      "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+      "use_scope": "public"
+    },
+    {
+      "goods_id": "copper_jug",
+      "source": "tools/map_catalogue/batch2_goods_source/copper_jug.svg",
+      "source_sha256": "fbc4de67aa21332d305816e6e70e7b656276cd18f6087a782f1aa65fedca6c68",
+      "source_kind": "local_procedural_vector",
+      "scope": "CC-BY-4.0 owner-authorized public release",
+      "parameters": {
+        "viewbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "palette": "warm faceted physical goods",
+        "generator": "tools/map_catalogue/batch2_private_goods.py"
+      },
+      "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+      "use_scope": "public"
+    },
+    {
+      "goods_id": "carpet",
+      "source": "tools/map_catalogue/batch2_goods_source/carpet.svg",
+      "source_sha256": "7b6d21bbbf149ea31ae07199a8883c999d2c5cfd84e95884dc6fe710b4c37cd4",
+      "source_kind": "local_procedural_vector",
+      "scope": "CC-BY-4.0 owner-authorized public release",
+      "parameters": {
+        "viewbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "palette": "warm faceted physical goods",
+        "generator": "tools/map_catalogue/batch2_private_goods.py"
+      },
+      "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+      "use_scope": "public"
+    },
+    {
+      "goods_id": "fig",
+      "source": "tools/map_catalogue/batch2_goods_source/fig.svg",
+      "source_sha256": "e0793298c4e435e19569b46014c25def2f0c3781596e2497a4955985eb8acd3f",
+      "source_kind": "local_procedural_vector",
+      "scope": "CC-BY-4.0 owner-authorized public release",
+      "parameters": {
+        "viewbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "palette": "warm faceted physical goods",
+        "generator": "tools/map_catalogue/batch2_private_goods.py"
+      },
+      "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+      "use_scope": "public"
+    },
+    {
+      "goods_id": "papyrus",
+      "source": "tools/map_catalogue/batch2_goods_source/papyrus.svg",
+      "source_sha256": "36384021bf273b7b3e46eb88fba7b29545c931bbfa758c0260ddd1ab42691f4c",
+      "source_kind": "local_procedural_vector",
+      "scope": "CC-BY-4.0 owner-authorized public release",
+      "parameters": {
+        "viewbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "palette": "warm faceted physical goods",
+        "generator": "tools/map_catalogue/batch2_private_goods.py"
+      },
+      "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+      "use_scope": "public"
+    },
+    {
+      "goods_id": "honey",
+      "source": "tools/map_catalogue/batch2_goods_source/honey.svg",
+      "source_sha256": "44787825626c69862908f0e6671d1992baffb0a8238d6472b3a134b8c6fcfe8f",
+      "source_kind": "local_procedural_vector",
+      "scope": "CC-BY-4.0 owner-authorized public release",
+      "parameters": {
+        "viewbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "palette": "warm faceted physical goods",
+        "generator": "tools/map_catalogue/batch2_private_goods.py"
+      },
+      "license_status": "CC-BY-4.0 owner-authorized public release 2026-10-12",
+      "use_scope": "public"
+    }
+  ],
+  "generator_sha256": "f45332f8a781bbdeab37d52679ba1ee9e551e20205ec11004c148b595e4cd8d5"
+}

@@ -1,0 +1,130 @@
+{
+  "schema": "lshu.actor_motion.v1",
+  "note": "L叔 motion on a tile (scripts/traveler/lshu/lshu_actor_motion.gd). Every number is a starting point, not a gate. Times are seconds on the caller's clock; distances are metres.",
+  "walk": {
+    "speed_scale": 1.0,
+    "accel_s": 0.45,
+    "decel_s": 0.6,
+    "blend_in_s": 0.35,
+    "blend_out_s": 0.45,
+    "fade_in_m": 0.7,
+    "fade_out_m": 0.7,
+    "align_m": 0.55,
+    "align_max_deg": 50.0,
+    "heading_back_m": 0.12,
+    "heading_ahead_m": 0.2,
+    "stand_y_offset_m": 0.005,
+    "contact_lo_m": 0.012,
+    "contact_hi_m": 0.04,
+    "leg_ik": true,
+    "ground_adjust_max_m": 0.15,
+    "ik_lift_max_m": 0.3,
+    "swing_ahead_m": 0.12,
+    "slow_k": 0.8,
+    "slow_from_grade": 0.2,
+    "slow_min": 0.55,
+    "slow_span_m": 0.3
+  },
+  "turn": {
+    "small_deg": 12.0,
+    "step_anim_deg": 45.0,
+    "min_s": 0.45,
+    "idle_s_per_rad": 0.35,
+    "anim_min_frac": 0.6,
+    "anim_blend_s": 0.12
+  },
+  "pose_blend_s": 0.5,
+  "route": {
+    "cell_m": 0.1,
+    "margin_m": 1.2,
+    "body_radius_m": 0.12,
+    "clearance_m": 0.3,
+    "near_cost": 1.5,
+    "off_path_cost": 1.7,
+    "max_step_m": 0.22,
+    "climb_m": 0.16,
+    "ray_step_up_m": 0.35,
+    "water_margin_m": 0.015,
+    "tree_frac": 0.6,
+    "edge_limit_m": 3.9,
+    "candidates": 10,
+    "candidate_spacing_m": 0.25,
+    "goal_search_m": 0.6,
+    "stand_push_max_m": 0.45,
+    "resample_m": 0.04,
+    "smooth_passes": 2,
+    "seat_front_m": 0.03,
+    "tent_gap_m": 0.12,
+    "height_smooth_m": 0.25,
+    "rim_m": 3.96,
+    "stance_radius_m": 0.18,
+    "open_ground_tol_m": 0.03,
+    "bridge_min_m": 0.12,
+    "flat_tol_m": 0.05,
+    "slope_cost": 1.5,
+    "max_grade": 1.25,
+    "foot_step_up_m": 0.18,
+    "ground_ray_up_m": 0.6,
+    "ground_cell_m": 0.1,
+    "prop_frac": 0.85,
+    "obstacle_roles": [
+      "fire",
+      "lamp",
+      "seat",
+      "prop",
+      "shelter",
+      "detail",
+      "dock_prop",
+      "boat",
+      "rock"
+    ]
+  },
+  "click": {
+    "turn_max_deg": 45.0,
+    "turn_s": 0.45,
+    "bow_blend_in_s": 0.25,
+    "bow_blend_out_s": 0.35,
+    "head_turn_s": 0.5,
+    "nod_count": 2,
+    "nod_deg": 16.0,
+    "nod_cycle_s": 0.75,
+    "nod_hold_s": 0.25,
+    "yaw_split": {
+      "Spine2": 0.2,
+      "Neck": 0.35,
+      "Head": 0.45
+    },
+    "pitch_split": {
+      "Neck": 0.4,
+      "Head": 0.6
+    },
+    "pad_px": 10.0
+  },
+  "focus": {
+    "ease_in_s": 1.4,
+    "hold_s": 8.0,
+    "ease_out_s": 1.6,
+    "zoom": 0.42,
+    "chest_frac": 0.55
+  },
+  "doze": {
+    "period_s": 7.0,
+    "droop_deg": 22.0,
+    "rest_deg": 4.0,
+    "lift_frac": 0.15,
+    "blend_s": 2.0
+  },
+  "tent": {
+    "fade_out_m": 0.45,
+    "fade_in_m": 0.45
+  },
+  "wander": {
+    "hold_min_s": 8.0,
+    "face_landmark": true,
+    "stop_short_max_m": 0.8,
+    "step_stop_m": 0.05,
+    "min_m": 1.0,
+    "stop_back_m": 0.4,
+    "side_check_m": 0.18
+  }
+}

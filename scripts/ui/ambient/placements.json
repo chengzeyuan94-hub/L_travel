@@ -1,0 +1,97 @@
+{
+  "schema": "silkroad.ambient-placements.v1",
+  "sheep": [
+    [
+      2759.0,
+      329.0
+    ],
+    [
+      2839.0,
+      329.0
+    ],
+    [
+      2879.0,
+      389.0
+    ]
+  ],
+  "gull_groups": [
+    [
+      3284.4,
+      827.8
+    ],
+    [
+      1418.5,
+      724.0
+    ]
+  ],
+  "moored_boats": [
+    [
+      3284.4,
+      827.8
+    ],
+    [
+      1456.1,
+      740.4
+    ],
+    [
+      256.8,
+      334.7
+    ]
+  ],
+  "windmill": [
+    2032.5,
+    728.0
+  ],
+  "flags": [
+    [
+      2540.5,
+      273.5
+    ],
+    [
+      1821.5,
+      239.5
+    ]
+  ],
+  "rain_cloud": [
+    2220.0,
+    1120.0
+  ],
+  "whale_lon_lat": [
+    -160.0,
+    30.0
+  ],
+  "ice_lon_lat": [
+    [
+      -125.0,
+      74.0
+    ],
+    [
+      -50.0,
+      74.2
+    ],
+    [
+      65.0,
+      -73.8
+    ],
+    [
+      138.0,
+      -74.0
+    ]
+  ],
+  "sheep_yaws": [
+    0.45,
+    -0.65,
+    2.25
+  ],
+  "sheep_ground_heights": [
+    0.0764895,
+    0.0760327,
+    0.0761208
+  ],
+  "flag_ground_heights": [
+    0.077401,
+    0.0772341
+  ],
+  "windmill_ground_height": 0.0887464,
+  "ground_sampling_note": "Radial triangle intersection of exported terrain.glb; four rotated sheep hooves, flag base hexagon and windmill foundation heptagon. Roots embed 0.4 mm to prevent hovering."
+}

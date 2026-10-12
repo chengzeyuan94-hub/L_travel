@@ -1,0 +1,12 @@
+{
+  "morning": {
+    "env": {
+      "ssil_enabled": false
+    }
+  },
+  "midnight": {
+    "env": {
+      "ssil_enabled": false
+    }
+  }
+}

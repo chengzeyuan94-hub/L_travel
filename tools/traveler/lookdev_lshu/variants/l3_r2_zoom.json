@@ -1,0 +1,14 @@
+{
+  "base": "l3_r2",
+  "description": "L3 debug close-up of l3_r2 (inspection only).",
+  "extra_scripts_replace": true,
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_lshu/modules/l3_life.gd",
+      "cfg": {
+        "measure": false,
+        "zoom_m": 7.0
+      }
+    }
+  ]
+}

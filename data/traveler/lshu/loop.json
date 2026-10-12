@@ -1,0 +1,215 @@
+{
+  "schema": "lshu.loop.v1",
+  "note": "第四幕「L叔在哪儿」节奏数值。全部是起点，看过实机随时可调，不作为验收门槛。时刻一律是本机当地时间 HH:MM；时长单位写在键名里。这里不许出现任何地块、地点或素材编号。",
+  "decisions": {
+    "loop": "旅蛙式（决定 1 推荐 A）：点到他只算鞠躬彩蛋，没有找人玩法",
+    "stay": "每站 30–60 分钟（决定 2 推荐 B）",
+    "home": "pool.json 的 home 条目（默认雪林木屋那块现成地块），代码里不写死",
+    "road": "路上时屏幕留着刚离开的那块空地"
+  },
+  "tz_offset_minutes": null,
+  "stop": {
+    "stay_min": [
+      30,
+      60
+    ],
+    "arrive_walk_s": [
+      20,
+      40
+    ],
+    "leave_walk_s": [
+      20,
+      40
+    ]
+  },
+  "road": {
+    "min": [
+      4,
+      12
+    ],
+    "long_chance": 0.15,
+    "long_min": [
+      30,
+      60
+    ]
+  },
+  "night": {
+    "no_departure_after": "21:30",
+    "departures_resume": "07:00",
+    "doze_from": "21:30",
+    "tent_at": "23:30",
+    "back_to_fire": "06:30",
+    "overnight_depart": [
+      "07:00",
+      "08:30"
+    ]
+  },
+  "trip": {
+    "stops": [
+      12,
+      24
+    ],
+    "home_after": "16:00",
+    "max_stops": 40
+  },
+  "home": {
+    "depart": [
+      "08:00",
+      "11:00"
+    ],
+    "whole_place": true
+  },
+  "first_launch": {
+    "depart_after_min": [
+      5,
+      15
+    ],
+    "settled_for_min": 60
+  },
+  "postcards": {
+    "day_chance": 0.25,
+    "overnight_chance": 0.4,
+    "home_chance": 0.4,
+    "window": [
+      0.2,
+      0.8
+    ],
+    "shots": {
+      "far": 0.4,
+      "mid": 0.4,
+      "back": 0.2
+    },
+    "max_catchup": 3,
+    "max_pending": 3
+  },
+  "catchup": {
+    "max_stops": 3000,
+    "live_gap_s": 180,
+    "away_card_after_s": 7200,
+    "away_card_places": 8
+  },
+  "wander": {
+    "enabled": true,
+    "count": [
+      0,
+      2
+    ],
+    "stand_min": [
+      1,
+      3
+    ],
+    "walk_s": 25,
+    "min_window_min": 12
+  },
+  "planner": {
+    "avoid_recent": 4,
+    "recent_keep": 8,
+    "layout_repeat_factor": 0.25,
+    "tile_repeat_factor": 0.5,
+    "layout_classes": {
+      "0": "center",
+      "1": "left",
+      "2": "right",
+      "3": "left",
+      "4": "center",
+      "5": "right"
+    }
+  },
+  "kits": {
+    "names": [
+      "look",
+      "camp",
+      "tea",
+      "encounter"
+    ],
+    "aliases": {
+      "bloom": "encounter"
+    },
+    "fire": {
+      "camp": 3,
+      "tea": 2
+    },
+    "night_band_needs_fire": true,
+    "unlisted_weight": 0.2,
+    "by_time": [
+      {
+        "from": "05:30",
+        "to": "10:30",
+        "weights": {
+          "look": 5,
+          "encounter": 2,
+          "tea": 2,
+          "camp": 1
+        }
+      },
+      {
+        "from": "10:30",
+        "to": "14:00",
+        "weights": {
+          "encounter": 4,
+          "look": 4,
+          "tea": 1,
+          "camp": 1
+        }
+      },
+      {
+        "from": "14:00",
+        "to": "17:30",
+        "weights": {
+          "tea": 5,
+          "look": 2,
+          "encounter": 2,
+          "camp": 1
+        }
+      },
+      {
+        "from": "17:30",
+        "to": "05:30",
+        "weights": {
+          "camp": 5,
+          "tea": 3,
+          "look": 1,
+          "encounter": 1
+        }
+      }
+    ]
+  },
+  "light": {
+    "note": "四档预设按本机时钟插值。blend_min 是以该档起点为中心的过渡时长（20–40 分钟）。",
+    "bands": [
+      {
+        "preset": "morning",
+        "from": "05:30",
+        "blend_min": 40
+      },
+      {
+        "preset": "day",
+        "from": "08:00",
+        "blend_min": 30
+      },
+      {
+        "preset": "sunset",
+        "from": "17:00",
+        "blend_min": 30
+      },
+      {
+        "preset": "night",
+        "from": "19:30",
+        "blend_min": 40
+      }
+    ]
+  },
+  "log": {
+    "cap": 500
+  },
+  "save": {
+    "dir": "ShanheLvren/lshu_where",
+    "scaled_dir": "ShanheLvren/lshu_where_scaled",
+    "write_every_s": 300,
+    "lock_stale_s": 900,
+    "resolve_every_s": 2
+  },
+  "debug": {
+    "clock_scale_arg": "--lshu-clock-scale="
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "base": "l1_r2",
+  "description": "L1 round 3: r2 + visible tilt-shift band (hero stays sharp, far corner and front skirt soften), crisper day key with less ambient, sunset sun de-neoned, night fire tamed to an orange pool (no white-out on snow) and bloom limited to real emitters, SSAO reaches lit crevices.",
+  "common": {
+    "camera": {
+      "dof": {
+        "far_enabled": true,
+        "far_offset": 2.5,
+        "far_transition": 4.0,
+        "near_enabled": true,
+        "near_offset": 2.0,
+        "near_transition": 2.5,
+        "amount": 0.18
+      }
+    },
+    "env": {
+      "ssao": {
+        "light_affect": 0.35
+      }
+    }
+  },
+  "lights": {
+    "morning": {
+      "sun": {
+        "angular_distance_deg": 1.2
+      }
+    },
+    "day": {
+      "sun": {
+        "energy": 1.95,
+        "angular_distance_deg": 0.8
+      },
+      "env": {
+        "exposure": 0.94
+      },
+      "sky": {
+        "ambient_energy": 0.58
+      }
+    },
+    "sunset": {
+      "sun": {
+        "color": "#ffad66",
+        "energy": 2.0,
+        "angular_distance_deg": 1.5
+      },
+      "env": {
+        "adjust": {
+          "saturation": 1.02
+        }
+      }
+    },
+    "night": {
+      "env": {
+        "adjust": {
+          "saturation": 1.08
+        },
+        "glow": {
+          "intensity": 0.8,
+          "hdr_threshold": 1.05
+        }
+      },
+      "fires": {
+        "light_color": "#ff6a1a",
+        "light_energy": 0.9,
+        "light_range": 3.2,
+        "light_attenuation": 1.6
+      },
+      "lamps": {
+        "light_energy": 1.0
+      }
+    }
+  }
+}

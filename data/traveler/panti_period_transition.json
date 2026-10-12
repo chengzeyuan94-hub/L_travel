@@ -1,0 +1,12 @@
+{
+  "schema": "silkroad.panti-period-transition.v1",
+  "authorization": "Carlos: 清晨与深夜过渡动画8秒，星河闪动、城灯明暗、2–3道流星。",
+  "duration_s": 8.0,
+  "curve": "smoothstep",
+  "sky_flow_degrees": 26.0,
+  "sky_flow_note": "During transition only: rotate the celestial sky in world azimuth, then ease to the accepted midnight orientation. Geometry and camera stay fixed.",
+  "castle_lights_begin": 0.28,
+  "castle_lights_full": 0.88,
+  "input": "Click the campfire or press 1 for morning / 2 for midnight. Reverse from current blend; repeated same target is ignored.",
+  "clock": "Shared weather clock; pause holds transition, twinkle, meteors and lamp breathing."
+}

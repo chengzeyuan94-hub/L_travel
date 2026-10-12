@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>Motion toolkit demo — transparent title layer</title>
+<!-- Demo for tools/motion/html/render.mjs: Canvas2D + WebGL + DOM/CSS text in the game's CJK faces, transparent.
+     node tools/motion/html/render.mjs tools/motion/html/demo/demo_title.html --out <dir> --frames 0:90 --alpha -->
+<link rel="stylesheet" href="/__motion/fonts.css">
+<style>
+  html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+  canvas { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+  #title { position: absolute; left: 0; right: 0; top: 330px; text-align: center; font-family: var(--font-headline);
+    font-size: 168px; letter-spacing: 12px; color: #fff4dc; line-height: 1;
+    text-shadow: 0 0 28px rgba(255, 170, 80, .75), 0 6px 0 #6b3a1f, 0 10px 24px rgba(40, 18, 6, .55); }
+  #title span { display: inline-block; opacity: 0; transform: translateY(40px) scale(.9);
+    animation: rise 0.9s cubic-bezier(.2, .9, .2, 1.15) forwards; }
+  #title span:nth-child(1) { animation-delay: 0.30s; } #title span:nth-child(2) { animation-delay: 0.42s; }
+  #title span:nth-child(3) { animation-delay: 0.54s; } #title span:nth-child(4) { animation-delay: 0.66s; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  #sub { position: absolute; left: 0; right: 0; top: 540px; text-align: center; font-family: var(--font-body); font-weight: 700;
+    font-size: 44px; letter-spacing: 10px; color: #ffe9c4; opacity: 0; animation: fade 1s ease-out 1.1s forwards;
+    text-shadow: 0 2px 10px rgba(40, 18, 6, .7); }
+  @keyframes fade { from { opacity: 0; letter-spacing: 30px; } to { opacity: .95; letter-spacing: 10px; } }
+</style>
+</head>
+<body>
+<canvas id="gl" width="1920" height="1080"></canvas>
+<canvas id="c2d" width="1920" height="1080"></canvas>
+<div id="title"><span>长</span><span>安</span><span>旅</span><span>人</span></div>
+<div id="sub">秋日黄昏 · 城门与灯笼</div>
+<script type="module">
+import { ease, clamp, prog, rng, env, noise1, fontsReady } from "/__motion/motion.js";
+
+const W = 1920, H = 1080;
+// ---------------------------------------------------------------- WebGL: lantern-light motes (additive, premultiplied alpha)
+const gl = document.getElementById("gl").getContext("webgl2", { premultipliedAlpha: true, alpha: true, preserveDrawingBuffer: true, antialias: true });
+const vs = `#version 300 es
+in vec4 a; // x, y, size, alpha
+uniform vec2 res;
+out float va;
+void main() { va = a.w; gl_Position = vec4(a.x / res.x * 2.0 - 1.0, 1.0 - a.y / res.y * 2.0, 0.0, 1.0); gl_PointSize = a.z; }`;
+const fs = `#version 300 es
+precision highp float;
+in float va;
+out vec4 o;
+void main() {
+  vec2 p = gl_PointCoord * 2.0 - 1.0;
+  float d = dot(p, p);
+  float core = exp(-d * 9.0), halo = exp(-d * 2.2) * 0.35;
+  vec3 col = mix(vec3(1.0, 0.55, 0.18), vec3(1.0, 0.92, 0.7), core);
+  float a = (core + halo) * va;
+  o = vec4(col * a, a); // premultiplied
+}`;
+function sh(type, src) { const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s)); return s; }
+const prog_ = gl.createProgram();
+gl.attachShader(prog_, sh(gl.VERTEX_SHADER, vs)); gl.attachShader(prog_, sh(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(prog_);
+const buf = gl.createBuffer();
+const N = 140;
+const R = rng(7);
+const motes = Array.from({ length: N }, () => ({ x: R() * W, y: 600 + R() * 600, sp: 40 + R() * 90, sz: 6 + R() * 26, ph: R() * 10, a: 0.25 + R() * 0.75 }));
+function drawGL(t) {
+  gl.viewport(0, 0, W, H);
+  gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT);
+  gl.enable(gl.BLEND); gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+  const data = new Float32Array(N * 4);
+  motes.forEach((m, k) => {
+    const y = ((m.y - t * m.sp) % 1300 + 1300) % 1300 - 150;
+    const x = m.x + noise1(t * 0.4 + m.ph, k) * 40;
+    const fl = 0.75 + 0.25 * Math.sin(t * 6 + m.ph * 3);
+    data.set([x, y, m.sz, m.a * fl * clamp(t / 0.8)], k * 4);
+  });
+  gl.useProgram(prog_);
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.bufferData(gl.ARRAY_BUFFER, data, gl.DYNAMIC_DRAW);
+  const loc = gl.getAttribLocation(prog_, "a");
+  gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 4, gl.FLOAT, false, 0, 0);
+  gl.uniform2f(gl.getUniformLocation(prog_, "res"), W, H);
+  gl.drawArrays(gl.POINTS, 0, N);
+}
+
+// ---------------------------------------------------------------- Canvas2D: stamp frame, route line, postmark
+const c = document.getElementById("c2d").getContext("2d");
+function stampPath(x, y, w, h, r, step) {
+  c.beginPath();
+  c.moveTo(x, y);
+  for (let px = x; px < x + w; px += step) c.arc(px + step / 2, y, r, Math.PI, 0, true);
+  for (let py = y; py < y + h; py += step) c.arc(x + w, py + step / 2, r, -Math.PI / 2, Math.PI / 2, true);
+  for (let px = x + w; px > x; px -= step) c.arc(px - step / 2, y + h, r, 0, Math.PI, true);
+  for (let py = y + h; py > y; py -= step) c.arc(x, py - step / 2, r, Math.PI / 2, -Math.PI / 2, true);
+  c.closePath();
+}
+function draw2D(t) {
+  c.clearRect(0, 0, W, H);
+  // stamp frame (perforated edge) scales in with a spring
+  const u = ease.spring(prog(t, 0.0, 1.2), 10, 0.5);
+  c.save();
+  c.translate(W / 2, 470); c.scale(0.6 + 0.4 * u, 0.6 + 0.4 * u); c.rotate((1 - u) * -0.08); c.translate(-W / 2, -470);
+  c.globalAlpha = clamp(t / 0.25);
+  stampPath(560, 250, 800, 440, 11, 40);
+  c.lineWidth = 5; c.strokeStyle = "rgba(255, 236, 200, 0.9)"; c.setLineDash([]); c.stroke();
+  c.restore();
+  // dashed silk-road route drawing on
+  const k = ease.inOutCubic(prog(t, 0.8, 2.4));
+  c.save();
+  c.beginPath(); c.moveTo(430, 820); c.bezierCurveTo(760, 700, 1060, 930, 1490, 760);
+  c.setLineDash([22, 16]); c.lineDashOffset = -t * 40; c.lineWidth = 7; c.lineCap = "round"; c.strokeStyle = "#ffd98a";
+  const len = 1150;
+  c.save(); c.beginPath(); c.rect(0, 0, 430 + (1490 - 430) * k, H); c.clip();
+  c.beginPath(); c.moveTo(430, 820); c.bezierCurveTo(760, 700, 1060, 930, 1490, 760); c.stroke(); c.restore();
+  c.restore();
+  // postmark stamp thumps in at 2.2 s
+  const pm = prog(t, 2.2, 2.45);
+  if (pm > 0) {
+    const s = 1.6 - 0.6 * ease.outBack(pm, 2.2);
+    c.save();
+    c.translate(1480, 740); c.rotate(-0.21); c.scale(s, s); c.globalAlpha = 0.9 * clamp(pm * 3);
+    c.strokeStyle = "#c8452c"; c.lineWidth = 6;
+    c.beginPath(); c.arc(0, 0, 70, 0, Math.PI * 2); c.stroke();
+    c.beginPath(); c.arc(0, 0, 54, 0, Math.PI * 2); c.lineWidth = 2; c.stroke();
+    c.fillStyle = "#c8452c"; c.font = "34px 'Wawati SC'"; c.textAlign = "center"; c.textBaseline = "middle";
+    c.fillText("长安", 0, -8);
+    c.font = "700 16px 'Yuanti SC', MotionYuanti"; c.fillText("丝路 · 秋", 0, 26);
+    c.restore();
+  }
+}
+
+window.setupScene = async () => { await fontsReady(); };
+window.renderFrame = async (i, fps) => {
+  const t = i / fps;
+  drawGL(t);
+  draw2D(t);
+  // CSS keyframes for #title / #sub are seeked to t by the renderer after this returns
+};
+// debug: which faces resolved
+window.fontReport = () => ({ wawati: document.fonts.check("40px 'Wawati SC'"), yuanti: document.fonts.check("40px 'Yuanti SC'"), motionYuanti: document.fonts.check("40px MotionYuanti") });
+</script>
+</body>
+</html>

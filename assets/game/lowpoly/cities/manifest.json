@@ -1,0 +1,281 @@
+{
+  "generator": "tools/lowpoly/build_cities.py",
+  "blender_version": "5.2.1 LTS",
+  "style": "original flat-shaded cultural miniatures",
+  "city_count": 16,
+  "total_triangles": 19130,
+  "cities": [
+    {
+      "city_id": "yumenguan",
+      "bbox_blender_xyz": [
+        2.1,
+        1.45833,
+        1.07333
+      ],
+      "mesh_count": 8,
+      "material_count": 8,
+      "vertices": 473,
+      "triangles": 746,
+      "ground_z": 0.0,
+      "display_name": "玉门关",
+      "starting_transport": "CAMEL",
+      "interchange": false,
+      "glb_bytes": 46500
+    },
+    {
+      "city_id": "rome",
+      "bbox_blender_xyz": [
+        2.1,
+        1.53243,
+        0.76054
+      ],
+      "mesh_count": 5,
+      "material_count": 5,
+      "vertices": 1924,
+      "triangles": 3360,
+      "ground_z": 0.0,
+      "display_name": "古罗马城",
+      "starting_transport": "CAMEL",
+      "interchange": true,
+      "glb_bytes": 163468
+    },
+    {
+      "city_id": "constantinople",
+      "bbox_blender_xyz": [
+        2.1,
+        1.69167,
+        1.16083
+      ],
+      "mesh_count": 6,
+      "material_count": 6,
+      "vertices": 770,
+      "triangles": 1282,
+      "ground_z": 0.0,
+      "display_name": "君士坦丁堡",
+      "starting_transport": "CAMEL",
+      "interchange": false,
+      "glb_bytes": 71244
+    },
+    {
+      "city_id": "changan",
+      "bbox_blender_xyz": [
+        2.1,
+        1.60263,
+        1.00468
+      ],
+      "mesh_count": 8,
+      "material_count": 8,
+      "vertices": 604,
+      "triangles": 986,
+      "ground_z": 0.0,
+      "display_name": "长安",
+      "starting_transport": "CAMEL",
+      "interchange": false,
+      "glb_bytes": 56296
+    },
+    {
+      "city_id": "panti",
+      "bbox_blender_xyz": [
+        2.1,
+        1.47568,
+        0.73216
+      ],
+      "mesh_count": 8,
+      "material_count": 8,
+      "vertices": 498,
+      "triangles": 780,
+      "ground_z": 0.0,
+      "display_name": "盘橐城",
+      "starting_transport": "CAMEL",
+      "interchange": false,
+      "glb_bytes": 46892
+    },
+    {
+      "city_id": "baghdad",
+      "bbox_blender_xyz": [
+        2.1,
+        1.7027,
+        0.93081
+      ],
+      "mesh_count": 5,
+      "material_count": 5,
+      "vertices": 642,
+      "triangles": 1062,
+      "ground_z": 0.0,
+      "display_name": "巴格达",
+      "starting_transport": "CAMEL",
+      "interchange": false,
+      "glb_bytes": 58228
+    },
+    {
+      "city_id": "delhi",
+      "bbox_blender_xyz": [
+        2.1,
+        1.8,
+        1.326
+      ],
+      "mesh_count": 6,
+      "material_count": 6,
+      "vertices": 641,
+      "triangles": 1121,
+      "ground_z": 0.0,
+      "display_name": "德里",
+      "starting_transport": "CAMEL",
+      "interchange": false,
+      "glb_bytes": 59236
+    },
+    {
+      "city_id": "geumseong",
+      "bbox_blender_xyz": [
+        2.1,
+        1.60816,
+        0.81789
+      ],
+      "mesh_count": 5,
+      "material_count": 5,
+      "vertices": 606,
+      "triangles": 997,
+      "ground_z": 0.0,
+      "display_name": "金城",
+      "starting_transport": "CAMEL",
+      "interchange": true,
+      "glb_bytes": 54932
+    },
+    {
+      "city_id": "chenla",
+      "bbox_blender_xyz": [
+        2.1,
+        1.69167,
+        1.24833
+      ],
+      "mesh_count": 8,
+      "material_count": 8,
+      "vertices": 511,
+      "triangles": 804,
+      "ground_z": 0.0,
+      "display_name": "真腊",
+      "starting_transport": "SHIP",
+      "interchange": false,
+      "glb_bytes": 47644
+    },
+    {
+      "city_id": "aden",
+      "bbox_blender_xyz": [
+        2.1,
+        1.63354,
+        0.945
+      ],
+      "mesh_count": 8,
+      "material_count": 8,
+      "vertices": 585,
+      "triangles": 950,
+      "ground_z": 0.0,
+      "display_name": "阿丹国",
+      "starting_transport": "SHIP",
+      "interchange": false,
+      "glb_bytes": 54272
+    },
+    {
+      "city_id": "heijokyo",
+      "bbox_blender_xyz": [
+        2.1,
+        1.64595,
+        1.10789
+      ],
+      "mesh_count": 8,
+      "material_count": 8,
+      "vertices": 533,
+      "triangles": 845,
+      "ground_z": 0.0,
+      "display_name": "平城京",
+      "starting_transport": "SHIP",
+      "interchange": false,
+      "glb_bytes": 51276
+    },
+    {
+      "city_id": "simhala",
+      "bbox_blender_xyz": [
+        2.1,
+        1.7027,
+        1.09541
+      ],
+      "mesh_count": 7,
+      "material_count": 7,
+      "vertices": 489,
+      "triangles": 799,
+      "ground_z": 0.0,
+      "display_name": "狮子国",
+      "starting_transport": "SHIP",
+      "interchange": true,
+      "glb_bytes": 45476
+    },
+    {
+      "city_id": "cairo",
+      "bbox_blender_xyz": [
+        2.1,
+        1.69167,
+        1.1375
+      ],
+      "mesh_count": 7,
+      "material_count": 7,
+      "vertices": 492,
+      "triangles": 802,
+      "ground_z": 0.0,
+      "display_name": "开罗",
+      "starting_transport": "SHIP",
+      "interchange": false,
+      "glb_bytes": 46472
+    },
+    {
+      "city_id": "jeddah",
+      "bbox_blender_xyz": [
+        2.1,
+        1.62431,
+        1.11381
+      ],
+      "mesh_count": 7,
+      "material_count": 7,
+      "vertices": 582,
+      "triangles": 856,
+      "ground_z": 0.0,
+      "display_name": "吉达",
+      "starting_transport": "SHIP",
+      "interchange": true,
+      "glb_bytes": 52500
+    },
+    {
+      "city_id": "dagon",
+      "bbox_blender_xyz": [
+        2.1,
+        1.75,
+        1.19583
+      ],
+      "mesh_count": 7,
+      "material_count": 7,
+      "vertices": 460,
+      "triangles": 800,
+      "ground_z": 0.0,
+      "display_name": "大光",
+      "starting_transport": "SHIP",
+      "interchange": false,
+      "glb_bytes": 45108
+    },
+    {
+      "city_id": "quanzhou",
+      "bbox_blender_xyz": [
+        2.1,
+        1.65789,
+        1.1125
+      ],
+      "mesh_count": 8,
+      "material_count": 8,
+      "vertices": 2482,
+      "triangles": 2940,
+      "ground_z": 0.0,
+      "display_name": "泉州",
+      "starting_transport": "SHIP",
+      "interchange": true,
+      "glb_bytes": 154596
+    }
+  ]
+}

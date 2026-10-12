@@ -1,0 +1,116 @@
+{
+  "base": "k0_baseline",
+  "surface": {
+    "shader": "res://tools/traveler/lookdev_changan/atlas_surface_dusk_ground.gdshader"
+  },
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_changan/changan_extra_ground.gd",
+      "cfg": {
+        "terrain": {
+          "ground_v2": 1.0,
+          "ground_v2_fade_start": 14.0,
+          "ground_v2_fade_end": 40.0,
+          "ground_v2_far_keep": 0.35,
+          "ground_patch_scale": 0.3,
+          "ground_patch_amount": 0.9,
+          "ground_patch_warp": 1.2,
+          "ground_ochre": [
+            1.16,
+            1.0,
+            0.78
+          ],
+          "ground_green": [
+            0.86,
+            1.0,
+            1.02
+          ],
+          "ground_rust": [
+            1.14,
+            0.84,
+            0.72
+          ],
+          "ground_rust_amount": 0.75,
+          "ground_warm_mul": [
+            1.05,
+            1.0,
+            0.95
+          ],
+          "ground_cool_mul": [
+            0.93,
+            0.97,
+            1.07
+          ],
+          "ground_facet_jitter": 0.05,
+          "ground_fine_fade_start": 9.0,
+          "ground_fine_fade_end": 22.0,
+          "ground_clod_scale": 6.5,
+          "ground_clod_amount": 0.08,
+          "ground_clod_edge": 0.05,
+          "ground_grain2_scale": 21.0,
+          "ground_grain2_amount": 0.08,
+          "ground_leaf_density": 0.07,
+          "ground_leaf_mix": 0.7
+        },
+        "d_min": 5.0,
+        "d_max": 28.0,
+        "far_fade_d": 18.0,
+        "leaf_count": 7500,
+        "leaf_size": 0.055,
+        "leaf_plate_mul": 0.5,
+        "leaf_base": 0.3,
+        "leaf_canopy": 1.2,
+        "open_red": 0.32,
+        "open_gold": 0.38,
+        "grass_count": 2600,
+        "grass_h": 0.085,
+        "grass_straw": [
+          0.62,
+          0.48,
+          0.2
+        ],
+        "grass_olive": [
+          0.4,
+          0.4,
+          0.18
+        ],
+        "grass_olive_share": 0.3,
+        "pebble_count": 1600,
+        "pebble_size": 0.04,
+        "pebble_palette": [
+          [
+            0.3,
+            0.26,
+            0.21
+          ],
+          [
+            0.36,
+            0.31,
+            0.25
+          ],
+          [
+            0.26,
+            0.23,
+            0.2
+          ],
+          [
+            0.42,
+            0.36,
+            0.28
+          ],
+          [
+            0.33,
+            0.27,
+            0.2
+          ],
+          [
+            0.24,
+            0.22,
+            0.21
+          ]
+        ],
+        "cliff_r": 3.9
+      }
+    }
+  ]
+}

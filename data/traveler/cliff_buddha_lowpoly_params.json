@@ -1,0 +1,30 @@
+{
+  "schema": "silkroad.cliff-buddha-lowpoly.v1",
+  "asset": "res://assets/traveler/landmarks/changan-lowpoly-cliff-buddha.glb",
+  "view": "changan",
+  "position": [
+    20,
+    1.05,
+    6
+  ],
+  "scale": 5.3,
+  "yaw_degrees": 60.0,
+  "stone_color_srgb": "a79a86",
+  "roughness": 0.94,
+  "lighting": "scene sun and environment only",
+  "source_triangles": 1990,
+  "runtime_triangles": 1990,
+  "terrain_cut": {
+    "radius_local": [
+      0.72,
+      0.52
+    ],
+    "inner_radius": 0.9,
+    "outer_radius": 1.43,
+    "ground_inset": -0.025,
+    "clear_vegetation_radius": 0.97,
+    "cover_river_radius": 0.98
+  },
+  "authored_materials": true,
+  "source": "Original Blender MCP geometry from concept and four views; not Tripo"
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "silkroad.panti-meteors.v1",
+  "authorization": "Carlos：流星划的距离稍长、频次稍多；保留细尾与安静错开节奏。",
+  "shader_include": "res://shaders/traveler/panti/panti_meteors.gdshaderinc",
+  "function": "vec3 meteor_light(vec2 uv, vec2 viewport_size, float meteor_t)",
+  "clock": "Shared weather clock, offset once on reaching midnight. Starts at 2.0, 6.8 and 11.6 seconds; no independent timer. Returning fully to morning resets the next night group.",
+  "compositing": "Add through the existing sky_mask and the shared night transition weight. These weights are applied by the caller, not inside this include.",
+  "rhythm": "Three staggered meteors per 32-second group; no overlap. Travel and lifetime both increase 50%, preserving head speed; tails increase 30%. Shared freeze holds heads and tails.",
+  "placement": "Reference pixels are measured at 1920×1080, upper-left origin. The head moves diagonally from upper right toward lower left in the current central sky opening. Trees occlude it through the existing sky mask.",
+  "uniforms": {
+    "meteor_cycle_s": 32.0,
+    "meteor_reference_size": [
+      1920.0,
+      1080.0
+    ],
+    "meteor_start_times_s": [
+      2.0,
+      6.8,
+      11.6
+    ],
+    "meteor_lifetimes_s": [
+      2.55,
+      2.85,
+      2.25
+    ],
+    "meteor_start_0_px": [
+      1150.0,
+      20.0
+    ],
+    "meteor_start_1_px": [
+      1025.0,
+      12.0
+    ],
+    "meteor_start_2_px": [
+      1095.0,
+      84.0
+    ],
+    "meteor_direction": [
+      -0.84,
+      0.5425864
+    ],
+    "meteor_travel_px": [
+      210.0,
+      195.0,
+      187.5
+    ],
+    "meteor_tail_px": [
+      143.0,
+      130.0,
+      117.0
+    ],
+    "meteor_width_px": 1.35,
+    "meteor_head_length_px": 1.7,
+    "meteor_tail_falloff": 1.8,
+    "meteor_tail_energy": 0.44,
+    "meteor_brightness": 1.15,
+    "meteor_fade_s": [
+      0.16,
+      0.42
+    ],
+    "meteor_head_rgb": [
+      0.84,
+      0.92,
+      1.0
+    ],
+    "meteor_tail_rgb": [
+      0.52,
+      0.68,
+      1.0
+    ]
+  },
+  "uniform_types": {
+    "meteor_cycle_s": "float",
+    "meteor_reference_size": "Vector2",
+    "meteor_start_times_s": "Vector3",
+    "meteor_lifetimes_s": "Vector3",
+    "meteor_start_0_px": "Vector2",
+    "meteor_start_1_px": "Vector2",
+    "meteor_start_2_px": "Vector2",
+    "meteor_direction": "Vector2",
+    "meteor_travel_px": "Vector3",
+    "meteor_tail_px": "Vector3",
+    "meteor_width_px": "float",
+    "meteor_head_length_px": "float",
+    "meteor_tail_falloff": "float",
+    "meteor_tail_energy": "float",
+    "meteor_brightness": "float",
+    "meteor_fade_s": "Vector2",
+    "meteor_head_rgb": "Color",
+    "meteor_tail_rgb": "Color"
+  }
+}

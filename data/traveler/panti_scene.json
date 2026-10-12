@@ -1,0 +1,1999 @@
+{
+  "schema": "silkroad.panti-scene.v1",
+  "stage": "reference-composition-existing-assets-checkpoint",
+  "view": "panti",
+  "default_period": "morning",
+  "seed": 20260920,
+  "concept_unit_u": 0.35416666666666663,
+  "camera_target": [
+    0,
+    0,
+    0
+  ],
+  "fortress": {
+    "asset": "res://assets/traveler/panti/processed/fortress.glb",
+    "height_u": 4.8,
+    "stage_position": [
+      0.8387028064470156,
+      0,
+      3.9457864761147095
+    ],
+    "yaw_relative_camera_deg": -42.0,
+    "orientation_authorization": "Carlos 2026-09-20 最新要求：城池再左偏转30%。本版已向用户说明按再向左转30度执行，沿当前城堡原点由-12度调整为-42度。",
+    "estimated_gate_local": [
+      0,
+      0,
+      0.46
+    ],
+    "geometry_note": "现有资产不拉伸；当前只等比缩放和摆位。"
+  },
+  "character": {
+    "scene": "res://scenes/traveler/action2_character.tscn",
+    "stage_position": [
+      -3.586993,
+      0,
+      -13.938335
+    ],
+    "placement_reference": {
+      "image": "docs/reports/traveler-panti-001/references/foreground-composition-anchors-20260920.png",
+      "foot_uv": [
+        0.26,
+        0.81
+      ],
+      "head_uv": [
+        0.255,
+        0.52
+      ],
+      "authorization": "保持当前站姿与0.6375缩放，只移动靠近相机；本轮不添加营地或坐姿。"
+    },
+    "face_castle": true
+  },
+  "ground": {
+    "size_u": [
+      100,
+      120
+    ],
+    "center_stage": [
+      0,
+      -0.015,
+      28
+    ],
+    "albedo": [
+      0.86,
+      0.91,
+      0.97
+    ],
+    "relief": {
+      "authorization": "Carlos：雪地起伏再大一点，上一版太微弱。本轮增强可见雪脊和两侧雪丘，前景雪脊移入画幅；保持真实相机至人物鞋底视线低缓。",
+      "grid": {
+        "seed": 2026092018,
+        "jitter_fraction": 0.15,
+        "x_bands": [
+          [
+            -50,
+            -16,
+            2
+          ],
+          [
+            -16,
+            -8,
+            0.4
+          ],
+          [
+            -8,
+            4,
+            0.18
+          ],
+          [
+            4,
+            18,
+            0.4
+          ],
+          [
+            18,
+            50,
+            2
+          ]
+        ],
+        "z_bands": [
+          [
+            -32,
+            -18,
+            2
+          ],
+          [
+            -18,
+            -12,
+            0.18
+          ],
+          [
+            -12,
+            -2,
+            0.35
+          ],
+          [
+            -2,
+            14,
+            0.7
+          ],
+          [
+            14,
+            40,
+            2
+          ],
+          [
+            40,
+            88,
+            4
+          ]
+        ]
+      },
+      "ridges": [
+        {
+          "center": [
+            -4.1,
+            -14.95
+          ],
+          "radius": [
+            1.45,
+            0.75
+          ],
+          "height_u": 0.18,
+          "angle_deg": -18
+        },
+        {
+          "center": [
+            -1.35,
+            -14.65
+          ],
+          "radius": [
+            1.65,
+            0.9
+          ],
+          "height_u": 0.22,
+          "angle_deg": 14
+        },
+        {
+          "center": [
+            -1.75,
+            -12.2
+          ],
+          "radius": [
+            2.9,
+            1.1
+          ],
+          "height_u": 0.17,
+          "angle_deg": -15
+        },
+        {
+          "center": [
+            -5.2,
+            -10.6
+          ],
+          "radius": [
+            3.3,
+            1.5
+          ],
+          "height_u": 0.48,
+          "angle_deg": 19
+        },
+        {
+          "center": [
+            -0.9,
+            -8.9
+          ],
+          "radius": [
+            3.3,
+            1.6
+          ],
+          "height_u": 0.16,
+          "angle_deg": -21
+        },
+        {
+          "center": [
+            4.8,
+            -6.5
+          ],
+          "radius": [
+            3.8,
+            2.1
+          ],
+          "height_u": 0.7,
+          "angle_deg": 22
+        },
+        {
+          "center": [
+            -10.4,
+            -1.5
+          ],
+          "radius": [
+            4.2,
+            3.2
+          ],
+          "height_u": 0.85,
+          "angle_deg": -12
+        },
+        {
+          "center": [
+            10.8,
+            1.0
+          ],
+          "radius": [
+            4.0,
+            3.4
+          ],
+          "height_u": 0.9,
+          "angle_deg": 19
+        },
+        {
+          "center": [
+            -2.2,
+            -14.8
+          ],
+          "radius": [
+            2.7,
+            0.9
+          ],
+          "height_u": -0.075,
+          "angle_deg": -9
+        }
+      ],
+      "route": {
+        "points": [
+          [
+            -2.65625,
+            -17.0
+          ],
+          [
+            -3.586993,
+            -13.938335
+          ],
+          [
+            -2.7,
+            -7.0
+          ],
+          [
+            -1.86,
+            1.0
+          ]
+        ],
+        "half_width_u": 0.32,
+        "transition_u": 0.6,
+        "relief_fraction": 0.07
+      },
+      "castle_pad": {
+        "min_xz": [
+          -5.4,
+          -2.35
+        ],
+        "max_xz": [
+          7.1,
+          10.25
+        ],
+        "height_u": -0.015,
+        "transition_u": 1.1
+      },
+      "contacts": {
+        "rock_min_radius_u": 0.13,
+        "rock_radius_height_ratio": 1.7,
+        "character_radius_u": 0.21,
+        "transition_u": 0.3,
+        "rock_grounding_note": "石头只沿Y贴合坡面，其XZ位置、尺寸、朝向不变；支撑平斑随坡面高度，避免挖成坑。树脚允许少量积雪覆盖。"
+      }
+    }
+  },
+  "trees": {
+    "asset": "res://assets/traveler/panti/processed/pine.glb",
+    "placement_mode": "layered_forest_clusters_with_sky_gaps",
+    "reference_units_to_world": 0.35416666666666663,
+    "instances": [
+      {
+        "id": "G01",
+        "stage_position": [
+          -12.041666666666666,
+          0,
+          2.833333333333333
+        ],
+        "height_u": 19.124999999999996,
+        "crown_diameter_u": 5.312499999999999,
+        "yaw_deg": 0,
+        "reference_position": [
+          -34,
+          0,
+          -8
+        ],
+        "reference_height": 54,
+        "reference_crown_diameter": 15,
+        "yaw_note": "稳定的展示朝向；用户坐标JSON未附，朝向不是原参考实测值。",
+        "tier": "G"
+      },
+      {
+        "id": "G02",
+        "stage_position": [
+          -8.145833333333332,
+          0,
+          10.270833333333332
+        ],
+        "height_u": 17.708333333333332,
+        "crown_diameter_u": 4.604166666666666,
+        "yaw_deg": 35,
+        "reference_position": [
+          -23,
+          0,
+          -29
+        ],
+        "reference_height": 50,
+        "reference_crown_diameter": 13,
+        "yaw_note": "稳定的展示朝向；用户坐标JSON未附，朝向不是原参考实测值。",
+        "tier": "G"
+      },
+      {
+        "id": "G03",
+        "stage_position": [
+          0.7083333333333333,
+          0,
+          10.624999999999998
+        ],
+        "height_u": 12.8,
+        "crown_diameter_u": 3.85,
+        "yaw_deg": 72,
+        "reference_position": [
+          2,
+          0,
+          -30
+        ],
+        "yaw_note": "稳定的展示朝向；用户坐标JSON未附，朝向不是原参考实测值。",
+        "tier": "G",
+        "adjustment_note": "依最新疏密参考降低中间树冠，顶部形成天空开口。"
+      },
+      {
+        "id": "G04",
+        "stage_position": [
+          6.729166666666666,
+          0,
+          12.041666666666666
+        ],
+        "height_u": 19.479166666666664,
+        "crown_diameter_u": 4.958333333333333,
+        "yaw_deg": 113,
+        "reference_position": [
+          19,
+          0,
+          -34
+        ],
+        "reference_height": 55,
+        "reference_crown_diameter": 14,
+        "yaw_note": "稳定的展示朝向；用户坐标JSON未附，朝向不是原参考实测值。",
+        "tier": "G"
+      },
+      {
+        "id": "G05",
+        "stage_position": [
+          11.687499999999998,
+          0,
+          4.25
+        ],
+        "height_u": 18.416666666666664,
+        "crown_diameter_u": 4.958333333333333,
+        "yaw_deg": 160,
+        "reference_position": [
+          33,
+          0,
+          -12
+        ],
+        "reference_height": 52,
+        "reference_crown_diameter": 14,
+        "yaw_note": "稳定的展示朝向；用户坐标JSON未附，朝向不是原参考实测值。",
+        "tier": "G"
+      },
+      {
+        "id": "L01",
+        "tier": "L",
+        "stage_position": [
+          -14.874999999999998,
+          0,
+          7.083333333333332
+        ],
+        "height_u": 13.458333333333332,
+        "crown_diameter_u": 3.541666666666666,
+        "yaw_deg": 23,
+        "reference_position": [
+          -42,
+          0,
+          -20
+        ],
+        "reference_height": 38,
+        "reference_crown_diameter": 10,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "L02",
+        "tier": "L",
+        "stage_position": [
+          -10.270833333333332,
+          0,
+          14.520833333333332
+        ],
+        "height_u": 14.874999999999998,
+        "crown_diameter_u": 3.7187499999999996,
+        "yaw_deg": 70,
+        "reference_position": [
+          -29,
+          0,
+          -41
+        ],
+        "reference_height": 42,
+        "reference_crown_diameter": 10.5,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "L03",
+        "tier": "L",
+        "stage_position": [
+          -4.958333333333333,
+          0,
+          11.333333333333332
+        ],
+        "height_u": 12.749999999999998,
+        "crown_diameter_u": 3.1874999999999996,
+        "yaw_deg": 117,
+        "reference_position": [
+          -14,
+          0,
+          -32
+        ],
+        "reference_height": 36,
+        "reference_crown_diameter": 9,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "L04",
+        "tier": "L",
+        "stage_position": [
+          -2.125,
+          0,
+          15.229166666666664
+        ],
+        "height_u": 14.166666666666664,
+        "crown_diameter_u": 3.541666666666666,
+        "yaw_deg": 164,
+        "reference_position": [
+          -6,
+          0,
+          -43
+        ],
+        "reference_height": 40,
+        "reference_crown_diameter": 10,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "L05",
+        "tier": "L",
+        "stage_position": [
+          3.541666666666666,
+          0,
+          14.166666666666664
+        ],
+        "height_u": 13.458333333333332,
+        "crown_diameter_u": 3.364583333333333,
+        "yaw_deg": 211,
+        "reference_position": [
+          10,
+          0,
+          -40
+        ],
+        "reference_height": 38,
+        "reference_crown_diameter": 9.5,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "L06",
+        "tier": "L",
+        "stage_position": [
+          9.562499999999998,
+          0,
+          12.041666666666666
+        ],
+        "height_u": 14.166666666666664,
+        "crown_diameter_u": 3.541666666666666,
+        "yaw_deg": 258,
+        "reference_position": [
+          27,
+          0,
+          -34
+        ],
+        "reference_height": 40,
+        "reference_crown_diameter": 10,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "L07",
+        "tier": "L",
+        "stage_position": [
+          14.874999999999998,
+          0,
+          8.854166666666666
+        ],
+        "height_u": 13.812499999999998,
+        "crown_diameter_u": 3.541666666666666,
+        "yaw_deg": 305,
+        "reference_position": [
+          42,
+          0,
+          -25
+        ],
+        "reference_height": 39,
+        "reference_crown_diameter": 10,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "M01",
+        "tier": "M",
+        "stage_position": [
+          -10.270833333333332,
+          0,
+          -0.35416666666666663
+        ],
+        "height_u": 7.791666666666666,
+        "crown_diameter_u": 2.125,
+        "yaw_deg": 352,
+        "reference_position": [
+          -29,
+          0,
+          1
+        ],
+        "reference_height": 22,
+        "reference_crown_diameter": 6,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "M02",
+        "tier": "M",
+        "stage_position": [
+          -8.145833333333332,
+          0,
+          4.958333333333333
+        ],
+        "height_u": 6.374999999999999,
+        "crown_diameter_u": 1.770833333333333,
+        "yaw_deg": 39,
+        "reference_position": [
+          -23,
+          0,
+          -14
+        ],
+        "reference_height": 18,
+        "reference_crown_diameter": 5,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "M03",
+        "tier": "M",
+        "stage_position": [
+          -5.666666666666666,
+          0,
+          8.854166666666666
+        ],
+        "height_u": 8.5,
+        "crown_diameter_u": 2.125,
+        "yaw_deg": 86,
+        "reference_position": [
+          -16,
+          0,
+          -25
+        ],
+        "reference_height": 24,
+        "reference_crown_diameter": 6,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "M04",
+        "tier": "M",
+        "stage_position": [
+          -2.4791666666666665,
+          0,
+          9.562499999999998
+        ],
+        "height_u": 7.791666666666666,
+        "crown_diameter_u": 1.9479166666666665,
+        "yaw_deg": 133,
+        "reference_position": [
+          -7,
+          0,
+          -27
+        ],
+        "reference_height": 22,
+        "reference_crown_diameter": 5.5,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "M05",
+        "tier": "M",
+        "stage_position": [
+          3.895833333333333,
+          0,
+          9.562499999999998
+        ],
+        "height_u": 8.5,
+        "crown_diameter_u": 2.125,
+        "yaw_deg": 180,
+        "reference_position": [
+          11,
+          0,
+          -27
+        ],
+        "reference_height": 24,
+        "reference_crown_diameter": 6,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "M06",
+        "tier": "M",
+        "stage_position": [
+          9.562499999999998,
+          0,
+          7.791666666666666
+        ],
+        "height_u": 8.145833333333332,
+        "crown_diameter_u": 2.125,
+        "yaw_deg": 227,
+        "reference_position": [
+          27,
+          0,
+          -22
+        ],
+        "reference_height": 23,
+        "reference_crown_diameter": 6,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "M07",
+        "tier": "M",
+        "stage_position": [
+          11.687499999999998,
+          0,
+          -0.35416666666666663
+        ],
+        "height_u": 8.5,
+        "crown_diameter_u": 2.125,
+        "yaw_deg": 274,
+        "reference_position": [
+          33,
+          0,
+          1
+        ],
+        "reference_height": 24,
+        "reference_crown_diameter": 6,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "F01",
+        "tier": "F",
+        "stage_position": [
+          -13.458333333333332,
+          0,
+          19.833333333333332
+        ],
+        "height_u": 10.624999999999998,
+        "crown_diameter_u": 2.302083333333333,
+        "yaw_deg": 321,
+        "reference_position": [
+          -38,
+          0,
+          -56
+        ],
+        "reference_height": 30,
+        "reference_crown_diameter": 6.5,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "F02",
+        "tier": "F",
+        "stage_position": [
+          -6.729166666666666,
+          0,
+          21.604166666666664
+        ],
+        "height_u": 9.916666666666666,
+        "crown_diameter_u": 2.125,
+        "yaw_deg": 8,
+        "reference_position": [
+          -19,
+          0,
+          -61
+        ],
+        "reference_height": 28,
+        "reference_crown_diameter": 6,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "F03",
+        "tier": "F",
+        "stage_position": [
+          -0.35416666666666663,
+          0,
+          22.666666666666664
+        ],
+        "height_u": 11.333333333333332,
+        "crown_diameter_u": 2.4791666666666665,
+        "yaw_deg": 55,
+        "reference_position": [
+          -1,
+          0,
+          -64
+        ],
+        "reference_height": 32,
+        "reference_crown_diameter": 7,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "F04",
+        "tier": "F",
+        "stage_position": [
+          6.374999999999999,
+          0,
+          21.249999999999996
+        ],
+        "height_u": 10.270833333333332,
+        "crown_diameter_u": 2.125,
+        "yaw_deg": 102,
+        "reference_position": [
+          18,
+          0,
+          -60
+        ],
+        "reference_height": 29,
+        "reference_crown_diameter": 6,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "F05",
+        "tier": "F",
+        "stage_position": [
+          13.812499999999998,
+          0,
+          18.770833333333332
+        ],
+        "height_u": 10.624999999999998,
+        "crown_diameter_u": 2.302083333333333,
+        "yaw_deg": 149,
+        "reference_position": [
+          39,
+          0,
+          -53
+        ],
+        "reference_height": 30,
+        "reference_crown_diameter": 6.5,
+        "source_note": "根据用户俯视图轴线估读的位置、树高和冠径；未收到其提及的坐标JSON，因此不是原始坐标文件的精确值。"
+      },
+      {
+        "id": "LCluster01",
+        "tier": "L",
+        "stage_position": [
+          -17.5,
+          0,
+          17
+        ],
+        "height_u": 15.2,
+        "crown_diameter_u": 3.6,
+        "yaw_deg": 41.67
+      },
+      {
+        "id": "LCluster02",
+        "tier": "L",
+        "stage_position": [
+          -13,
+          0,
+          19
+        ],
+        "height_u": 13.8,
+        "crown_diameter_u": 3.4,
+        "yaw_deg": 213.87
+      },
+      {
+        "id": "LCluster03",
+        "tier": "L",
+        "stage_position": [
+          -8.5,
+          0,
+          18
+        ],
+        "height_u": 12.0,
+        "crown_diameter_u": 2.9,
+        "yaw_deg": 120.66
+      },
+      {
+        "id": "LCluster04",
+        "tier": "L",
+        "stage_position": [
+          -5.2,
+          0,
+          20
+        ],
+        "height_u": 11.4,
+        "crown_diameter_u": 2.8,
+        "yaw_deg": 325.09
+      },
+      {
+        "id": "LCluster05",
+        "tier": "L",
+        "stage_position": [
+          -0.5,
+          0,
+          18.5
+        ],
+        "height_u": 10.6,
+        "crown_diameter_u": 2.7,
+        "yaw_deg": 51.88
+      },
+      {
+        "id": "LCluster06",
+        "tier": "L",
+        "stage_position": [
+          3.1,
+          0,
+          18
+        ],
+        "height_u": 12.4,
+        "crown_diameter_u": 3.1,
+        "yaw_deg": 279.85
+      },
+      {
+        "id": "LCluster07",
+        "tier": "L",
+        "stage_position": [
+          8.5,
+          0,
+          19
+        ],
+        "height_u": 16.8,
+        "crown_diameter_u": 4.0,
+        "yaw_deg": 170.99
+      },
+      {
+        "id": "LCluster08",
+        "tier": "L",
+        "stage_position": [
+          13.2,
+          0,
+          18
+        ],
+        "height_u": 19.1,
+        "crown_diameter_u": 4.5,
+        "yaw_deg": 270.35
+      },
+      {
+        "id": "FCluster01",
+        "tier": "F",
+        "stage_position": [
+          -36,
+          0,
+          37
+        ],
+        "height_u": 39,
+        "crown_diameter_u": 7,
+        "yaw_deg": 41.83
+      },
+      {
+        "id": "FCluster02",
+        "tier": "F",
+        "stage_position": [
+          -30,
+          0,
+          39
+        ],
+        "height_u": 37,
+        "crown_diameter_u": 6.8,
+        "yaw_deg": 217.41
+      },
+      {
+        "id": "FCluster03",
+        "tier": "F",
+        "stage_position": [
+          -25,
+          0,
+          36
+        ],
+        "height_u": 33,
+        "crown_diameter_u": 6.2,
+        "yaw_deg": 75.55
+      },
+      {
+        "id": "FCluster04",
+        "tier": "F",
+        "stage_position": [
+          -20,
+          0,
+          38
+        ],
+        "height_u": 34,
+        "crown_diameter_u": 6.4,
+        "yaw_deg": 133.68
+      },
+      {
+        "id": "FCluster05",
+        "tier": "F",
+        "stage_position": [
+          -16,
+          0,
+          36
+        ],
+        "height_u": 28.5,
+        "crown_diameter_u": 5.8,
+        "yaw_deg": 179.22
+      },
+      {
+        "id": "FCluster06",
+        "tier": "F",
+        "stage_position": [
+          -12.8,
+          0,
+          39
+        ],
+        "height_u": 30.5,
+        "crown_diameter_u": 5.3,
+        "yaw_deg": 280.41
+      },
+      {
+        "id": "FCluster07",
+        "tier": "F",
+        "stage_position": [
+          -8.5,
+          0,
+          37
+        ],
+        "height_u": 28.5,
+        "crown_diameter_u": 5.5,
+        "yaw_deg": 130.63
+      },
+      {
+        "id": "FCluster08",
+        "tier": "F",
+        "stage_position": [
+          -3.5,
+          0,
+          39
+        ],
+        "height_u": 29.0,
+        "crown_diameter_u": 5.7,
+        "yaw_deg": 52.86
+      },
+      {
+        "id": "FCluster09",
+        "tier": "F",
+        "stage_position": [
+          1.0,
+          0,
+          36
+        ],
+        "height_u": 24.5,
+        "crown_diameter_u": 5,
+        "yaw_deg": 80.87
+      },
+      {
+        "id": "FCluster10",
+        "tier": "F",
+        "stage_position": [
+          6.4,
+          0,
+          38
+        ],
+        "height_u": 28.8,
+        "crown_diameter_u": 5.4,
+        "yaw_deg": 56.09
+      },
+      {
+        "id": "FCluster11",
+        "tier": "F",
+        "stage_position": [
+          10.5,
+          0,
+          36
+        ],
+        "height_u": 32.0,
+        "crown_diameter_u": 6,
+        "yaw_deg": 214.44
+      },
+      {
+        "id": "FCluster12",
+        "tier": "F",
+        "stage_position": [
+          15,
+          0,
+          39
+        ],
+        "height_u": 32.5,
+        "crown_diameter_u": 6.5,
+        "yaw_deg": 191.84
+      },
+      {
+        "id": "FCluster13",
+        "tier": "F",
+        "stage_position": [
+          18.5,
+          0,
+          36
+        ],
+        "height_u": 35,
+        "crown_diameter_u": 7,
+        "yaw_deg": 205.11
+      },
+      {
+        "id": "FCluster14",
+        "tier": "F",
+        "stage_position": [
+          23,
+          0,
+          40
+        ],
+        "height_u": 38,
+        "crown_diameter_u": 7.2,
+        "yaw_deg": 199.06
+      },
+      {
+        "id": "FCluster15",
+        "tier": "F",
+        "stage_position": [
+          27.5,
+          0,
+          37
+        ],
+        "height_u": 36,
+        "crown_diameter_u": 6.8,
+        "yaw_deg": 219.69
+      },
+      {
+        "id": "FCluster16",
+        "tier": "F",
+        "stage_position": [
+          32,
+          0,
+          39
+        ],
+        "height_u": 39,
+        "crown_diameter_u": 7.4,
+        "yaw_deg": 316.6
+      },
+      {
+        "id": "FCluster17",
+        "tier": "F",
+        "stage_position": [
+          37,
+          0,
+          37
+        ],
+        "height_u": 35,
+        "crown_diameter_u": 6.5,
+        "yaw_deg": 256.27
+      },
+      {
+        "id": "MCluster01",
+        "tier": "M",
+        "stage_position": [
+          -13.5,
+          0,
+          13
+        ],
+        "height_u": 6.1,
+        "crown_diameter_u": 2.2,
+        "yaw_deg": 61.7
+      },
+      {
+        "id": "MCluster02",
+        "tier": "M",
+        "stage_position": [
+          -10.3,
+          0,
+          16
+        ],
+        "height_u": 6.8,
+        "crown_diameter_u": 2.3,
+        "yaw_deg": 123.4
+      },
+      {
+        "id": "MCluster03",
+        "tier": "M",
+        "stage_position": [
+          -6.5,
+          0,
+          18
+        ],
+        "height_u": 7.6,
+        "crown_diameter_u": 2.4,
+        "yaw_deg": 185.10000000000002
+      },
+      {
+        "id": "MCluster04",
+        "tier": "M",
+        "stage_position": [
+          8.7,
+          0,
+          17
+        ],
+        "height_u": 7.1,
+        "crown_diameter_u": 2.3,
+        "yaw_deg": 246.8
+      },
+      {
+        "id": "MCluster05",
+        "tier": "M",
+        "stage_position": [
+          14.2,
+          0,
+          14.5
+        ],
+        "height_u": 7.9,
+        "crown_diameter_u": 2.5,
+        "yaw_deg": 308.5
+      }
+    ],
+    "authorization": "Carlos：参考新图雪松摆放，露出一些天空，疏密有致，其他不变。本轮仅调整雪松；两侧巨树围合、中间降低树冠，远层以错落树簇保留不规则天空开口。",
+    "spacing_reference": {
+      "image": "docs/reports/traveler-panti-001/references/cedar-spacing-20260920.png",
+      "scope": "仅参考雪松疏密与高低；现有相机、角色、城堡、夕阳和景深不变。",
+      "layout_note": "54棵，四层；两侧巨树保留，中间远树顶部错落形成向下收窄的天空开口，低层小树填补林脚。坐标按当前镜头手工摆放，不是参考图的工程数据。",
+      "yaw_seed": 2026092014
+    }
+  },
+  "stage_elevation_u": 0.0,
+  "camera_composition": {
+    "mode": "position_and_look_at",
+    "fov_vertical_deg": 40.0,
+    "keep_aspect": "KEEP_HEIGHT",
+    "position_stage": [
+      -2.6562499999999996,
+      0.2526,
+      -17.0
+    ],
+    "look_at_stage": [
+      -2.6562499999999996,
+      3.4033637638360847,
+      0.0
+    ],
+    "authorization": "Carlos 2026-09-20: 雪松背景几乎铺满，不看天空，距离远的明显虚化，再仰视一些。本轮仅提高仰角8→10.5度。"
+  },
+  "depth_of_field_override": {
+    "far_distance_u": 27.5,
+    "far_transition_u": 8.0,
+    "blur_amount": 0.2,
+    "authorization": "Carlos: 距离远的要虚化要虚化。清晰区覆盖角色与完整城堡，随后更快过渡到远林虚化。"
+  },
+  "rocks": {
+    "assets": {
+      "rock01": "res://assets/traveler/panti/processed/rock01.glb",
+      "rock02": "res://assets/traveler/panti/processed/rock02.glb"
+    },
+    "reference": "docs/reports/traveler-panti-001/references/rock-layout.png",
+    "authorization": "Carlos：接着摆放石头。沿用两块原有资产，前景左右框景、中景稀疏过渡，人物至门口通路留空。",
+    "placement_note": "当前已认可低机位下，从1080p像素反推等比尺寸和地面落点；不照搬旧俯视构图米数。每块只做等比缩放，原纹理保留。",
+    "yaw_seed": 2026092016,
+    "yaw_random_range_deg": [
+      0,
+      360
+    ],
+    "instance_count": 30,
+    "grouping": "asset × size tier; four MultiMesh batches (XL rock02, L rock01, M rock02, S rock01)",
+    "tiers": {
+      "XL": {
+        "screen_upright_height_px": [
+          175,
+          185
+        ]
+      },
+      "L": {
+        "screen_upright_height_px": [
+          75,
+          100
+        ]
+      },
+      "M": {
+        "screen_upright_height_px": [
+          30,
+          62
+        ]
+      },
+      "S": {
+        "screen_upright_height_px": [
+          14,
+          26
+        ]
+      }
+    },
+    "character_exclusion_screen_px": [
+      360,
+      580,
+      660,
+      990
+    ],
+    "clear_route_screen_px": [
+      [
+        500,
+        945
+      ],
+      [
+        760,
+        878
+      ],
+      [
+        1040,
+        832
+      ]
+    ],
+    "instances": [
+      {
+        "id": "R01",
+        "cluster": "left_foreground",
+        "tier": "XL",
+        "asset": "rock02",
+        "stage_position": [
+          -3.782729,
+          -0.015,
+          -15.040573
+        ],
+        "height_u": 0.216742,
+        "yaw_deg": 307.59,
+        "screen_foot_target_px": [
+          70,
+          1030
+        ],
+        "screen_upright_height_target_px": 175
+      },
+      {
+        "id": "R02",
+        "cluster": "left_foreground",
+        "tier": "L",
+        "asset": "rock01",
+        "stage_position": [
+          -3.820323,
+          -0.015,
+          -14.669266
+        ],
+        "height_u": 0.135317,
+        "yaw_deg": 315.32,
+        "screen_foot_target_px": [
+          190,
+          995
+        ],
+        "screen_upright_height_target_px": 92
+      },
+      {
+        "id": "R03",
+        "cluster": "left_foreground",
+        "tier": "L",
+        "asset": "rock01",
+        "stage_position": [
+          -3.514966,
+          -0.015,
+          -15.125445
+        ],
+        "height_u": 0.087603,
+        "yaw_deg": 289.92,
+        "screen_foot_target_px": [
+          250,
+          1040
+        ],
+        "screen_upright_height_target_px": 75
+      },
+      {
+        "id": "R04",
+        "cluster": "left_foreground",
+        "tier": "M",
+        "asset": "rock02",
+        "stage_position": [
+          -3.580036,
+          -0.015,
+          -14.789311
+        ],
+        "height_u": 0.046995,
+        "yaw_deg": 99.91,
+        "screen_foot_target_px": [
+          315,
+          1005
+        ],
+        "screen_upright_height_target_px": 34
+      },
+      {
+        "id": "R05",
+        "cluster": "left_foreground",
+        "tier": "M",
+        "asset": "rock02",
+        "stage_position": [
+          -3.606043,
+          -0.015,
+          -15.340126
+        ],
+        "height_u": 0.04091,
+        "yaw_deg": 129.07,
+        "screen_foot_target_px": [
+          70,
+          1070
+        ],
+        "screen_upright_height_target_px": 40
+      },
+      {
+        "id": "R06",
+        "cluster": "left_foreground",
+        "tier": "M",
+        "asset": "rock02",
+        "stage_position": [
+          -3.530941,
+          -0.015,
+          -14.995106
+        ],
+        "height_u": 0.047432,
+        "yaw_deg": 343.43,
+        "screen_foot_target_px": [
+          285,
+          1025
+        ],
+        "screen_upright_height_target_px": 38
+      },
+      {
+        "id": "R07",
+        "cluster": "left_foreground",
+        "tier": "S",
+        "asset": "rock01",
+        "stage_position": [
+          -3.379999,
+          -0.015,
+          -15.203095
+        ],
+        "height_u": 0.021083,
+        "yaw_deg": 286.09,
+        "screen_foot_target_px": [
+          335,
+          1050
+        ],
+        "screen_upright_height_target_px": 19
+      },
+      {
+        "id": "R08",
+        "cluster": "right_foreground",
+        "tier": "XL",
+        "asset": "rock02",
+        "stage_position": [
+          -1.637212,
+          -0.015,
+          -15.203095
+        ],
+        "height_u": 0.209377,
+        "yaw_deg": 305.8,
+        "screen_foot_target_px": [
+          1840,
+          1050
+        ],
+        "screen_upright_height_target_px": 185
+      },
+      {
+        "id": "R09",
+        "cluster": "right_foreground",
+        "tier": "L",
+        "asset": "rock01",
+        "stage_position": [
+          -1.486861,
+          -0.015,
+          -14.730911
+        ],
+        "height_u": 0.14316,
+        "yaw_deg": 318.08,
+        "screen_foot_target_px": [
+          1755,
+          1000
+        ],
+        "screen_upright_height_target_px": 100
+      },
+      {
+        "id": "R10",
+        "cluster": "right_foreground",
+        "tier": "L",
+        "asset": "rock01",
+        "stage_position": [
+          -1.808227,
+          -0.015,
+          -15.040573
+        ],
+        "height_u": 0.11034,
+        "yaw_deg": 139.94,
+        "screen_foot_target_px": [
+          1630,
+          1030
+        ],
+        "screen_upright_height_target_px": 90
+      },
+      {
+        "id": "R11",
+        "cluster": "right_foreground",
+        "tier": "M",
+        "asset": "rock02",
+        "stage_position": [
+          -2.000915,
+          -0.015,
+          -15.274407
+        ],
+        "height_u": 0.051204,
+        "yaw_deg": 317.66,
+        "screen_foot_target_px": [
+          1550,
+          1060
+        ],
+        "screen_upright_height_target_px": 48
+      },
+      {
+        "id": "R12",
+        "cluster": "right_foreground",
+        "tier": "M",
+        "asset": "rock02",
+        "stage_position": [
+          -1.925815,
+          -0.015,
+          -14.789311
+        ],
+        "height_u": 0.04422,
+        "yaw_deg": 217.3,
+        "screen_foot_target_px": [
+          1470,
+          1005
+        ],
+        "screen_upright_height_target_px": 32
+      },
+      {
+        "id": "R13",
+        "cluster": "right_foreground",
+        "tier": "M",
+        "asset": "rock02",
+        "stage_position": [
+          -1.177681,
+          -0.015,
+          -14.576979
+        ],
+        "height_u": 0.079265,
+        "yaw_deg": 126.49,
+        "screen_foot_target_px": [
+          1900,
+          988
+        ],
+        "screen_upright_height_target_px": 52
+      },
+      {
+        "id": "R14",
+        "cluster": "right_foreground",
+        "tier": "S",
+        "asset": "rock01",
+        "stage_position": [
+          -2.07571,
+          -0.015,
+          -15.125445
+        ],
+        "height_u": 0.019721,
+        "yaw_deg": 358.06,
+        "screen_foot_target_px": [
+          1440,
+          1040
+        ],
+        "screen_upright_height_target_px": 17
+      },
+      {
+        "id": "R15",
+        "cluster": "left_middle",
+        "tier": "M",
+        "asset": "rock02",
+        "stage_position": [
+          -5.123965,
+          -0.015,
+          -12.176626
+        ],
+        "height_u": 0.192309,
+        "yaw_deg": 203.46,
+        "screen_foot_target_px": [
+          180,
+          901
+        ],
+        "screen_upright_height_target_px": 62
+      },
+      {
+        "id": "R16",
+        "cluster": "left_middle",
+        "tier": "M",
+        "asset": "rock02",
+        "stage_position": [
+          -5.296845,
+          -0.015,
+          -10.913424
+        ],
+        "height_u": 0.133205,
+        "yaw_deg": 97.42,
+        "screen_foot_target_px": [
+          300,
+          883
+        ],
+        "screen_upright_height_target_px": 34
+      },
+      {
+        "id": "R17",
+        "cluster": "left_middle",
+        "tier": "M",
+        "asset": "rock02",
+        "stage_position": [
+          -6.647808,
+          -0.015,
+          -10.220928
+        ],
+        "height_u": 0.196951,
+        "yaw_deg": 51.83,
+        "screen_foot_target_px": [
+          65,
+          876
+        ],
+        "screen_upright_height_target_px": 45
+      },
+      {
+        "id": "R18",
+        "cluster": "left_middle",
+        "tier": "S",
+        "asset": "rock01",
+        "stage_position": [
+          -4.8801,
+          -0.015,
+          -13.002666
+        ],
+        "height_u": 0.050933,
+        "yaw_deg": 260.69,
+        "screen_foot_target_px": [
+          110,
+          919
+        ],
+        "screen_upright_height_target_px": 20
+      },
+      {
+        "id": "R19",
+        "cluster": "left_middle",
+        "tier": "S",
+        "asset": "rock01",
+        "stage_position": [
+          -4.695201,
+          -0.015,
+          -12.004129
+        ],
+        "height_u": 0.047954,
+        "yaw_deg": 49.95,
+        "screen_foot_target_px": [
+          338,
+          898
+        ],
+        "screen_upright_height_target_px": 15
+      },
+      {
+        "id": "R20",
+        "cluster": "left_middle",
+        "tier": "S",
+        "asset": "rock01",
+        "stage_position": [
+          -4.380362,
+          -0.015,
+          -13.21795
+        ],
+        "height_u": 0.03366,
+        "yaw_deg": 8.49,
+        "screen_foot_target_px": [
+          263,
+          925
+        ],
+        "screen_upright_height_target_px": 14
+      },
+      {
+        "id": "R21",
+        "cluster": "right_middle",
+        "tier": "M",
+        "asset": "rock02",
+        "stage_position": [
+          0.064537,
+          -0.015,
+          -12.004129
+        ],
+        "height_u": 0.18638,
+        "yaw_deg": 253.97,
+        "screen_foot_target_px": [
+          1790,
+          898
+        ],
+        "screen_upright_height_target_px": 58
+      },
+      {
+        "id": "R22",
+        "cluster": "right_middle",
+        "tier": "M",
+        "asset": "rock02",
+        "stage_position": [
+          1.469103,
+          -0.015,
+          -10.220928
+        ],
+        "height_u": 0.166174,
+        "yaw_deg": 277.56,
+        "screen_foot_target_px": [
+          1885,
+          876
+        ],
+        "screen_upright_height_target_px": 38
+      },
+      {
+        "id": "R23",
+        "cluster": "right_middle",
+        "tier": "M",
+        "asset": "rock02",
+        "stage_position": [
+          0.63643,
+          -0.015,
+          -9.872996
+        ],
+        "height_u": 0.13789,
+        "yaw_deg": 47.14,
+        "screen_foot_target_px": [
+          1662,
+          873
+        ],
+        "screen_upright_height_target_px": 30
+      },
+      {
+        "id": "R24",
+        "cluster": "right_middle",
+        "tier": "S",
+        "asset": "rock01",
+        "stage_position": [
+          -0.660886,
+          -0.015,
+          -13.040255
+        ],
+        "height_u": 0.045387,
+        "yaw_deg": 235.14,
+        "screen_foot_target_px": [
+          1730,
+          920
+        ],
+        "screen_upright_height_target_px": 18
+      },
+      {
+        "id": "R25",
+        "cluster": "right_middle",
+        "tier": "S",
+        "asset": "rock01",
+        "stage_position": [
+          -0.220351,
+          -0.015,
+          -13.040255
+        ],
+        "height_u": 0.055499,
+        "yaw_deg": 285.25,
+        "screen_foot_target_px": [
+          1900,
+          920
+        ],
+        "screen_upright_height_target_px": 22
+      },
+      {
+        "id": "R26",
+        "cluster": "right_middle",
+        "tier": "S",
+        "asset": "rock01",
+        "stage_position": [
+          -0.433176,
+          -0.015,
+          -11.943826
+        ],
+        "height_u": 0.045302,
+        "yaw_deg": 114.02,
+        "screen_foot_target_px": [
+          1630,
+          897
+        ],
+        "screen_upright_height_target_px": 14
+      },
+      {
+        "id": "R27",
+        "cluster": "forest_edge",
+        "tier": "S",
+        "asset": "rock01",
+        "stage_position": [
+          -5.366946,
+          -0.015,
+          -3.713568
+        ],
+        "height_u": 0.206839,
+        "yaw_deg": 116.03,
+        "screen_foot_target_px": [
+          651,
+          846
+        ],
+        "screen_upright_height_target_px": 24
+      },
+      {
+        "id": "R28",
+        "cluster": "forest_edge",
+        "tier": "S",
+        "asset": "rock01",
+        "stage_position": [
+          -4.744241,
+          -0.015,
+          -2.29655
+        ],
+        "height_u": 0.181233,
+        "yaw_deg": 347.59,
+        "screen_foot_target_px": [
+          745,
+          843
+        ],
+        "screen_upright_height_target_px": 19
+      },
+      {
+        "id": "R29",
+        "cluster": "forest_edge",
+        "tier": "S",
+        "asset": "rock01",
+        "stage_position": [
+          3.377717,
+          -0.015,
+          -4.126909
+        ],
+        "height_u": 0.217104,
+        "yaw_deg": 36.11,
+        "screen_foot_target_px": [
+          1670,
+          847
+        ],
+        "screen_upright_height_target_px": 26
+      },
+      {
+        "id": "R30",
+        "cluster": "forest_edge",
+        "tier": "S",
+        "asset": "rock01",
+        "stage_position": [
+          5.501222,
+          -0.015,
+          -1.754296
+        ],
+        "height_u": 0.168136,
+        "yaw_deg": 133.48,
+        "screen_foot_target_px": [
+          1770,
+          842
+        ],
+        "screen_upright_height_target_px": 17
+      }
+    ]
+  },
+  "camp": {
+    "enabled": true,
+    "reference": "res://docs/reports/traveler-panti-001/references/camp/overall-reference.png",
+    "layout_note": "沿用checkpoint20相机、城池、树林和雪坡。参考建议的设计坐标转换为当前机位的屏幕三角关系；stage +Z朝远处。",
+    "root_stage": [
+      -3.54,
+      0,
+      -14.2
+    ],
+    "props": [
+      {
+        "id": "tent",
+        "asset": "res://assets/traveler/panti/camp/processed/tent.glb",
+        "offset_stage": [
+          -0.66,
+          0,
+          1.02
+        ],
+        "size_axis": "y",
+        "size_u": 0.82,
+        "yaw_deg": 28,
+        "bury_u": 0.018,
+        "contact_radius_u": 0.49
+      },
+      {
+        "id": "stump",
+        "asset": "res://assets/traveler/panti/camp/processed/stump.glb",
+        "offset_stage": [
+          0,
+          0,
+          0
+        ],
+        "size_axis": "x",
+        "size_u": 0.75,
+        "yaw_deg": 18,
+        "bury_u": 0.018,
+        "contact_radius_u": 0.32
+      },
+      {
+        "id": "firepit",
+        "asset": "res://assets/traveler/panti/camp/processed/firepit.glb",
+        "offset_stage": [
+          0.48,
+          0,
+          -0.17
+        ],
+        "size_axis": "x",
+        "size_u": 0.43,
+        "yaw_deg": -12,
+        "bury_u": 0.009,
+        "contact_radius_u": 0.21
+      },
+      {
+        "id": "lantern",
+        "asset": "res://assets/traveler/panti/camp/processed/lantern.glb",
+        "offset_stage": [
+          -0.34,
+          0,
+          0.18
+        ],
+        "size_axis": "y",
+        "size_u": 0.16,
+        "yaw_deg": 10,
+        "bury_u": 0.004,
+        "contact_radius_u": 0.07,
+        "mount": "stump",
+        "mount_fraction": [
+          -0.27,
+          0.92,
+          0.08
+        ]
+      },
+      {
+        "id": "banner",
+        "asset": "res://assets/traveler/panti/camp/processed/banner.glb",
+        "offset_stage": [
+          -1.36,
+          0,
+          1.08
+        ],
+        "size_axis": "y",
+        "size_u": 1.4,
+        "yaw_deg": -8,
+        "bury_u": 0.025,
+        "contact_radius_u": 0.08
+      }
+    ],
+    "seat": {
+      "stump_local_fraction": [
+        0.1,
+        0.92,
+        0.27
+      ],
+      "yaw_deg": 75.0,
+      "note": "座位锚点以树桩实际导出包围盒换算，角色臀部对齐坐面；人物朝向镜头与右侧篝火。",
+      "orientation_note": "Carlos纠正：应该另一个方向。本次从原30deg朝火堆一侧旋转45deg到75deg，臀部座位锚点不动。"
+    },
+    "fire": {
+      "light_range_u": 0.75,
+      "light_energy": 0.32,
+      "flame_height_u": 0.28,
+      "flame_width_u": 0.2,
+      "spark_amount": 8,
+      "spark_lifetime_s": 1.6,
+      "spark_size_u": 0.008,
+      "flame_count": 5,
+      "flame_base_color": "#FFF2A8",
+      "flame_mid_color": "#FFB23D",
+      "flame_tip_color": "#FF7526"
+    },
+    "lantern": {
+      "emission_energy": 1.3,
+      "light_energy": 0.14,
+      "light_range_u": 0.33,
+      "light_color": [
+        1,
+        0.6,
+        0.24
+      ]
+    },
+    "character_outline_width_multiplier": 0.5,
+    "seated_idle": {
+      "enabled": true,
+      "asset": "res://assets/traveler/panti/camp/character/sitting-animated.glb",
+      "start_offset_s": 0.5166666666666667
+    }
+  },
+  "weather": {
+    "enabled": true,
+    "direction": "screen_right_to_left",
+    "wind": {
+      "enabled": true,
+      "tip_displacement_ratio": 0.0264,
+      "gust_period_s": 5.5,
+      "sway_period_s": 5.0,
+      "gust_weight": 0.72,
+      "rest_bend_ratio": 0.18,
+      "bend_exponent": 1.8,
+      "root_lock_fraction": 0.02,
+      "crown_ripple_ratio": 0.18,
+      "crown_layers": 3.0,
+      "bounds_padding_u": 0.04,
+      "revision_note": "Carlos：树摆幅和频次都太小。尖端幅度增至2.4倍，阵风周期10→5.5秒，个体周期9.6→5秒。"
+    },
+    "mist": {
+      "enabled": true,
+      "seed": 2026092027,
+      "density": 1.0,
+      "lifetime_s": 12.0,
+      "lifetime_randomness": 0.25,
+      "preprocess_s": 14.0,
+      "speed_min_u_s": 0.15,
+      "speed_max_u_s": 0.27,
+      "spread_deg": 2.0,
+      "width_px": [
+        170,
+        370
+      ],
+      "height_px": 68,
+      "alpha": 0.19,
+      "color": "#F5FBFF",
+      "bands": [
+        {
+          "id": "snow_midground",
+          "center_stage": [
+            -2.65,
+            0.46,
+            -7
+          ],
+          "amount": 7,
+          "half_width_frame": 0.7,
+          "half_height_u": 0.2,
+          "half_depth_u": 1.5,
+          "alpha_scale": 0.79
+        },
+        {
+          "id": "forest_lower_edge",
+          "center_stage": [
+            -2.65,
+            1.1,
+            11
+          ],
+          "amount": 9,
+          "half_width_frame": 0.69,
+          "half_height_u": 0.43,
+          "half_depth_u": 3,
+          "alpha_scale": 1.0
+        }
+      ]
+    },
+    "snow": {
+      "enabled": true,
+      "reference_image_size": [
+        1920,
+        1080
+      ],
+      "seed": 20260920,
+      "whiteness": 0.96,
+      "opacity": 0.85,
+      "simulation_hz": 60,
+      "layers": [
+        {
+          "name": "middle",
+          "amount": 105,
+          "depth_u": 9.5,
+          "depth_half_u": 1.25,
+          "lifetime_s": 11,
+          "lifetime_randomness": 0.2,
+          "prewarm_s": 11,
+          "wind_speed_u_s": 0.28,
+          "fall_speed_u_s": 0.13,
+          "velocity_randomness": 0.18,
+          "size_min_px": 2,
+          "size_max_px": 4.8,
+          "spread_deg": 5
+        },
+        {
+          "name": "back",
+          "amount": 125,
+          "depth_u": 18,
+          "depth_half_u": 2,
+          "lifetime_s": 13,
+          "lifetime_randomness": 0.2,
+          "prewarm_s": 13,
+          "wind_speed_u_s": 0.42,
+          "fall_speed_u_s": 0.19,
+          "velocity_randomness": 0.18,
+          "size_min_px": 2,
+          "size_max_px": 4.4,
+          "spread_deg": 5
+        }
+      ]
+    }
+  }
+}

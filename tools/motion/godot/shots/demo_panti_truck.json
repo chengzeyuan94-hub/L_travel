@@ -1,0 +1,40 @@
+{
+  "target": "panti",
+  "duration": 3.0,
+  "warmup_frames": 45,
+  "note": "demo: slow truck right + slight push in the act's own camera frame (act space); morning",
+  "camera": {
+    "mode": "keys",
+    "space": "act",
+    "interp": "linear",
+    "keys": [
+      {
+        "t": 0.0,
+        "pos": [
+          -0.35,
+          0.0,
+          0.3
+        ],
+        "look": [
+          -0.2,
+          0.0,
+          -10.0
+        ],
+        "ease": "inOutSine"
+      },
+      {
+        "t": 3.0,
+        "pos": [
+          0.45,
+          0.06,
+          -0.5
+        ],
+        "look": [
+          0.35,
+          0.05,
+          -10.0
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "target": "changan",
+  "duration": 5.0,
+  "warmup_frames": 45,
+  "note": "vantage survey: 5 camera positions, one per second (ease hold = hard cut); read stills at k+0.8 s",
+  "camera": {
+    "mode": "keys",
+    "space": "world",
+    "interp": "linear",
+    "keys": [
+      {
+        "t": 0,
+        "pos": [
+          34.57,
+          3.97,
+          14.92
+        ],
+        "look": [
+          28.81,
+          2.74,
+          6.85
+        ],
+        "fov": 36,
+        "ease": "hold"
+      },
+      {
+        "t": 1,
+        "pos": [
+          30.9,
+          1.05,
+          8.6
+        ],
+        "look": [
+          29.65,
+          1.05,
+          6.2
+        ],
+        "fov": 40,
+        "ease": "hold"
+      },
+      {
+        "t": 2,
+        "pos": [
+          26.5,
+          3.4,
+          11.0
+        ],
+        "look": [
+          20.8,
+          2.8,
+          6.5
+        ],
+        "fov": 36,
+        "ease": "hold"
+      },
+      {
+        "t": 3,
+        "pos": [
+          42.0,
+          13.0,
+          24.0
+        ],
+        "look": [
+          27.0,
+          0.5,
+          3.0
+        ],
+        "fov": 40,
+        "ease": "hold"
+      },
+      {
+        "t": 4,
+        "pos": [
+          28.3,
+          2.4,
+          1.8
+        ],
+        "look": [
+          31.5,
+          0.9,
+          11.0
+        ],
+        "fov": 38,
+        "ease": "hold"
+      }
+    ]
+  }
+}

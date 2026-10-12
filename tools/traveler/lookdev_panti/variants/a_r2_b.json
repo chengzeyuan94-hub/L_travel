@@ -1,0 +1,200 @@
+{
+  "static": {
+    "extra_scripts": [
+      {
+        "script": "res://tools/traveler/lookdev_panti/a_extra_rim.gd",
+        "cfg": {
+          "trees": {
+            "gain": {
+              "G": 1.0,
+              "L": 1.0,
+              "M": 0.85,
+              "F": 0.3
+            },
+            "gain_night": {
+              "G": 0.9,
+              "L": 0.9,
+              "M": 0.8,
+              "F": 0.5
+            },
+            "rim_width_px": 3.0,
+            "width_ref_dist": 14.0,
+            "gap_lo": 0.06,
+            "gap_hi": 0.25,
+            "fade_start": 20.0,
+            "fade_end": 50.0,
+            "fade_min": 0.12
+          },
+          "castle": {
+            "gain": 1.8,
+            "gain_night": 1.9,
+            "rim_width_px": 2.5,
+            "width_ref_dist": 17.0,
+            "gap_lo": 0.04,
+            "gap_hi": 0.18,
+            "fade_start": 30.0,
+            "fade_end": 60.0
+          },
+          "rocks": {
+            "gain": 1.0,
+            "gain_night": 0.55,
+            "rim_width_px": 2.0,
+            "width_ref_dist": 8.0,
+            "gap_lo": 0.015,
+            "gap_hi": 0.08
+          },
+          "props": {
+            "nodes": [
+              "Tent",
+              "Stump",
+              "Banner"
+            ],
+            "gain": 1.0,
+            "gain_night": 0.5,
+            "rim_width_px": 2.0,
+            "width_ref_dist": 3.0,
+            "gap_lo": 0.03,
+            "gap_hi": 0.12
+          },
+          "character": {}
+        }
+      }
+    ]
+  },
+  "morning": {
+    "shaders": {
+      "a_rim_edge_tree.gdshader": {
+        "rim_tint": [
+          1.0,
+          0.8,
+          0.52
+        ],
+        "rim_strength": 2.2,
+        "back_min": -0.5,
+        "back_max": 0.5,
+        "back_floor": 0.3,
+        "side_min": -0.35,
+        "side_max": 0.25,
+        "screen_up_mix": 0.0,
+        "period_w": 0.0,
+        "up_boost": 0.0
+      },
+      "a_rim_edge.gdshader": {
+        "rim_tint": [
+          1.0,
+          0.8,
+          0.52
+        ],
+        "rim_strength": 2.2,
+        "back_min": -0.5,
+        "back_max": 0.5,
+        "back_floor": 0.3,
+        "side_min": -0.35,
+        "side_max": 0.25,
+        "screen_up_mix": 0.0,
+        "period_w": 0.0,
+        "up_boost": 0.0
+      },
+      "a_rim_char.gdshader": {
+        "rim_color": [
+          1.0,
+          0.8,
+          0.52
+        ],
+        "rim_intensity": 4.0,
+        "rim_lo": 0.42,
+        "rim_hi": 0.72,
+        "dir_weight": 0.8,
+        "back_min": -0.6,
+        "back_max": 0.6,
+        "back_floor": 0.4,
+        "up_bias": 0.0,
+        "shadow_floor": 0.8,
+        "fire_intensity": 0.0,
+        "fire_lo": 0.3,
+        "fire_hi": 0.7
+      }
+    },
+    "sun": {
+      "sunel": -16.0,
+      "sunaz": -63.0,
+      "light_color": [
+        1.0,
+        0.84,
+        0.66
+      ],
+      "light_energy": 2.05
+    },
+    "env": {
+      "ambient_light_energy": 0.54
+    }
+  },
+  "midnight": {
+    "shaders": {
+      "a_rim_edge_tree.gdshader": {
+        "rim_tint": [
+          0.8,
+          0.9,
+          1.0
+        ],
+        "rim_strength": 8.0,
+        "back_min": -1.2,
+        "back_max": 0.2,
+        "back_floor": 0.6,
+        "side_min": -0.2,
+        "side_max": 0.35,
+        "screen_up_mix": 0.6,
+        "period_w": 1.0,
+        "up_boost": 1.0
+      },
+      "a_rim_edge.gdshader": {
+        "rim_tint": [
+          0.8,
+          0.9,
+          1.0
+        ],
+        "rim_strength": 8.0,
+        "back_min": -1.2,
+        "back_max": 0.2,
+        "back_floor": 0.6,
+        "side_min": -0.2,
+        "side_max": 0.35,
+        "screen_up_mix": 0.6,
+        "period_w": 1.0,
+        "up_boost": 1.0
+      },
+      "a_rim_char.gdshader": {
+        "rim_color": [
+          0.8,
+          0.9,
+          1.0
+        ],
+        "rim_intensity": 12.0,
+        "rim_lo": 0.35,
+        "rim_hi": 0.7,
+        "dir_weight": 0.5,
+        "back_min": -1.2,
+        "back_max": 0.2,
+        "back_floor": 0.6,
+        "up_bias": 0.7,
+        "shadow_floor": 0.8,
+        "fire_intensity": 14.0,
+        "fire_lo": 0.3,
+        "fire_hi": 0.7
+      }
+    },
+    "sun": {
+      "sunel": -32.0,
+      "sunaz": -28.0,
+      "light_color": [
+        0.5,
+        0.64,
+        1.0
+      ],
+      "light_energy": 0.6
+    },
+    "env": {
+      "ambient_light_energy": 0.45
+    }
+  }
+}

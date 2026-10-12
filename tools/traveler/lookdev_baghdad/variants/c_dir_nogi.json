@@ -1,0 +1,6 @@
+{
+  "base": "c_dir",
+  "env": {
+    "sdfgi_read_sky_light": false
+  }
+}

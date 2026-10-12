@@ -1,0 +1,45 @@
+{
+  "base": "c_bands_v4_sunG",
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_baghdad/lookdev_extra_drift.gd",
+      "cfg": {
+        "seed": 20260923,
+        "cast_shadow": true,
+        "max_triangles": 29000,
+        "main": {
+          "region": [
+            -10.0,
+            10.0,
+            4.4,
+            24.0
+          ],
+          "crest_angle_deg": 16.0,
+          "lee_toward_camera": true,
+          "size_depth": [
+            5.0,
+            20.0
+          ],
+          "spacing_near": 1.0,
+          "spacing_far": 0.45,
+          "len_near": 2.4,
+          "len_far": 0.8,
+          "gap_near": 0.7,
+          "gap_far": 0.3,
+          "h_near": 0.1,
+          "h_far": 0.035,
+          "stoss_ratio": 4.5,
+          "lee_ratio": 1.5,
+          "cap_ratio": 0.35,
+          "cap_drop": 0.9,
+          "cap_boost": 1.12,
+          "seg_len_u": 0.3,
+          "max_seg": 8,
+          "wobble_u": 0.3,
+          "crescent": 1.0,
+          "bury_u": 0.004
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "logo": {
+    "size": [
+      1257,
+      420
+    ]
+  },
+  "btn_ochre": {
+    "size": [
+      602,
+      216
+    ],
+    "nine": [
+      108,
+      65,
+      108,
+      65
+    ]
+  },
+  "btn_cream": {
+    "size": [
+      602,
+      216
+    ],
+    "nine": [
+      108,
+      65,
+      108,
+      65
+    ]
+  },
+  "btn_denim": {
+    "size": [
+      602,
+      216
+    ],
+    "nine": [
+      108,
+      65,
+      108,
+      65
+    ]
+  },
+  "btn_ochre_pressed": {
+    "size": [
+      687,
+      216
+    ],
+    "nine": [
+      108,
+      65,
+      108,
+      65
+    ]
+  },
+  "btn_cream_pressed": {
+    "size": [
+      687,
+      216
+    ],
+    "nine": [
+      108,
+      65,
+      108,
+      65
+    ]
+  },
+  "btn_denim_pressed": {
+    "size": [
+      687,
+      216
+    ],
+    "nine": [
+      108,
+      65,
+      108,
+      65
+    ]
+  },
+  "panel_leather": {
+    "size": [
+      917,
+      400
+    ],
+    "nine": [
+      64,
+      96,
+      96,
+      64
+    ]
+  },
+  "bubble": {
+    "size": [
+      487,
+      200
+    ],
+    "nine": [
+      100,
+      60,
+      60,
+      96
+    ]
+  },
+  "badge_on": {
+    "size": [
+      491,
+      200
+    ]
+  },
+  "badge_off": {
+    "size": [
+      578,
+      200
+    ]
+  },
+  "lens_music": {
+    "size": [
+      234,
+      200
+    ]
+  },
+  "lens_gear": {
+    "size": [
+      230,
+      200
+    ]
+  },
+  "icon_suitcase": {
+    "size": [
+      231,
+      200
+    ]
+  },
+  "icon_mountain": {
+    "size": [
+      281,
+      200
+    ]
+  },
+  "icon_glasses": {
+    "size": [
+      338,
+      120
+    ]
+  },
+  "picker_bg": {
+    "size": [
+      1536,
+      1024
+    ]
+  },
+  "card_blank": {
+    "size": [
+      919,
+      1380
+    ],
+    "nine": [
+      110,
+      110,
+      110,
+      110
+    ]
+  },
+  "clip": {
+    "size": [
+      174,
+      160
+    ]
+  },
+  "btn_back": {
+    "size": [
+      256,
+      220
+    ]
+  },
+  "stamp_current": {
+    "size": [
+      333,
+      280
+    ]
+  },
+  "txt_picker": {
+    "size": [
+      717,
+      200
+    ]
+  },
+  "txt_merchant": {
+    "size": [
+      458,
+      120
+    ]
+  },
+  "txt_load": {
+    "size": [
+      469,
+      120
+    ]
+  },
+  "txt_traveler": {
+    "size": [
+      441,
+      120
+    ]
+  },
+  "txt_subtitle": {
+    "size": [
+      754,
+      96
+    ]
+  }
+}

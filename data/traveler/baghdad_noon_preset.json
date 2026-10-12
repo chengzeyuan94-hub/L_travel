@@ -1,0 +1,107 @@
+{
+  "schema": "silkroad.baghdad-look.v1",
+  "preset": "baghdad/noon",
+  "source": "Review candidate 2026-09-21: clear high sun with stronger low-poly material separation.",
+  "params": {
+    "sun": 4.5,
+    "sunel": -32.0,
+    "sunaz": -25.0,
+    "amb": 0.7,
+    "exp": 1.12,
+    "white": 1.7,
+    "sat": 1.04,
+    "con": 1.03,
+    "ao": 0.35,
+    "aoi": 2.8,
+    "ssil": 0.6,
+    "ssili": 0.2,
+    "glow": 0.12,
+    "fogb": 35.0,
+    "foge": 120.0,
+    "aerial": 0.12,
+    "fogd": 0.3,
+    "dof": 12.0,
+    "blur": 0.04,
+    "ang": 0.6,
+    "sblur": 0.8,
+    "shmax": 60.0,
+    "bias": 0.04,
+    "nbias": 0.1,
+    "shadow_atlas_size": 4096,
+    "dof_transition": 8.0,
+    "sdfgi_enabled": true,
+    "sdfgi_read_sky_light": false,
+    "sdfgi_use_occlusion": true,
+    "sdfgi_cascades": 4,
+    "sdfgi_min_cell_size": 0.5,
+    "sdfgi_max_distance": 64.0,
+    "sdfgi_y_scale": 2,
+    "sdfgi_energy": 0.6,
+    "sdfgi_bounce_feedback": 0.7,
+    "sdfgi_normal_bias": 1.1,
+    "sdfgi_probe_bias": 1.1,
+    "lowpoly_materials": true,
+    "lowpoly_roughness": 0.86,
+    "lowpoly_specular_disabled": true,
+    "tree_albedo_boost": 1.4,
+    "tree_emission_enabled": true,
+    "tree_emission_color": [
+      0.025,
+      0.09,
+      0.012
+    ],
+    "tree_emission_energy": 1.0
+  },
+  "sky": {
+    "top": [
+      0.2,
+      0.4,
+      0.72
+    ],
+    "horizon": [
+      0.68,
+      0.82,
+      0.96
+    ],
+    "ground_bottom": [
+      0.5,
+      0.38,
+      0.26
+    ],
+    "ground_horizon": [
+      0.78,
+      0.7,
+      0.55
+    ],
+    "sun_color": [
+      1.0,
+      0.96,
+      0.82
+    ],
+    "fog_color": [
+      0.72,
+      0.79,
+      0.88
+    ],
+    "sun_disc_color": [
+      1.0,
+      0.98,
+      0.88
+    ],
+    "sun_disc_energy": 1.8,
+    "sun_radius_deg": 0.6,
+    "sun_edge_deg": 0.018,
+    "sun_halo_radius_deg": 3.5,
+    "sun_halo_strength": 0.08,
+    "cloud_color": [
+      0.93,
+      0.96,
+      1.0
+    ],
+    "cloud_opacity": 0.18,
+    "cloud_seed": 29.0,
+    "cloud_coverage": 0.35,
+    "horizon_falloff": 0.28,
+    "sky_energy": 1.05
+  }
+}

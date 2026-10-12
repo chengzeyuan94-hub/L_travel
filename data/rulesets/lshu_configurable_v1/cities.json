@@ -1,0 +1,332 @@
+{
+  "ruleset_id": "lshu_configurable_v1",
+  "edition_id": "user_confirmed_v1",
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "yumenguan",
+      "display_name": "玉门关",
+      "nation_id": "yumenguan",
+      "city_card_id": "yumenguan",
+      "board_node_id": "yumenguan",
+      "node_type": "CITY",
+      "starting_transport": "CAMEL",
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "map_attribute": "陆地城市",
+      "trade_color_id": "deck_panti_yumenguan",
+      "map_position": [
+        2440.5,
+        348.5
+      ],
+      "illustration_id": "yf064_illustration_city_yumenguan"
+    },
+    {
+      "id": "rome",
+      "display_name": "古罗马城",
+      "nation_id": "rome",
+      "city_card_id": "rome",
+      "board_node_id": "rome",
+      "node_type": "CITY",
+      "starting_transport": "CAMEL",
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "map_attribute": "海陆交叉点",
+      "trade_color_id": "deck_cairo_rome",
+      "map_position": [
+        387.585,
+        183.614
+      ],
+      "illustration_id": "yf064_illustration_city_rome"
+    },
+    {
+      "id": "constantinople",
+      "display_name": "君士坦丁堡",
+      "nation_id": "constantinople",
+      "city_card_id": "constantinople",
+      "board_node_id": "constantinople",
+      "node_type": "CITY",
+      "starting_transport": "CAMEL",
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "map_attribute": "陆地城市",
+      "trade_color_id": "deck_constantinople_baghdad",
+      "map_position": [
+        693.0,
+        296.0
+      ],
+      "illustration_id": "yf064_illustration_city_constantinople"
+    },
+    {
+      "id": "changan",
+      "display_name": "长安",
+      "nation_id": "changan",
+      "city_card_id": "changan",
+      "board_node_id": "changan",
+      "node_type": "CITY",
+      "starting_transport": "CAMEL",
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "map_attribute": "陆地城市",
+      "trade_color_id": "deck_quanzhou_changan",
+      "map_position": [
+        2789.0,
+        504.0
+      ],
+      "illustration_id": "yf064_illustration_city_changan"
+    },
+    {
+      "id": "panti",
+      "display_name": "盘橐城",
+      "nation_id": "panti",
+      "city_card_id": "panti",
+      "board_node_id": "panti",
+      "node_type": "CITY",
+      "starting_transport": "CAMEL",
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "map_attribute": "陆地城市",
+      "trade_color_id": "deck_panti_yumenguan",
+      "map_position": [
+        1921.5,
+        334.5
+      ],
+      "illustration_id": "yf064_illustration_city_panti"
+    },
+    {
+      "id": "baghdad",
+      "display_name": "巴格达",
+      "nation_id": "baghdad",
+      "city_card_id": "baghdad",
+      "board_node_id": "baghdad",
+      "node_type": "CITY",
+      "starting_transport": "CAMEL",
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "map_attribute": "陆地城市",
+      "trade_color_id": "deck_constantinople_baghdad",
+      "map_position": [
+        1416.5,
+        558.0
+      ],
+      "illustration_id": "yf064_illustration_city_baghdad"
+    },
+    {
+      "id": "delhi",
+      "display_name": "德里",
+      "nation_id": "delhi",
+      "city_card_id": "delhi",
+      "board_node_id": "delhi",
+      "node_type": "CITY",
+      "starting_transport": "CAMEL",
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "map_attribute": "陆地城市",
+      "trade_color_id": "deck_simhala_delhi",
+      "map_position": [
+        2117.5,
+        663.0
+      ],
+      "illustration_id": "yf064_illustration_city_delhi"
+    },
+    {
+      "id": "geumseong",
+      "display_name": "金城",
+      "nation_id": "geumseong",
+      "city_card_id": "geumseong",
+      "board_node_id": "geumseong",
+      "node_type": "CITY",
+      "starting_transport": "CAMEL",
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "map_attribute": "海陆交叉点",
+      "trade_color_id": "deck_heijokyo_geumseong",
+      "map_position": [
+        3497.0,
+        310.0
+      ],
+      "illustration_id": "yf064_illustration_city_geumseong"
+    },
+    {
+      "id": "chenla",
+      "display_name": "真腊",
+      "nation_id": "chenla",
+      "city_card_id": "chenla",
+      "board_node_id": "chenla",
+      "node_type": "CITY",
+      "starting_transport": "SHIP",
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "map_attribute": "海上城市",
+      "trade_color_id": "deck_chenla_dagon",
+      "map_position": [
+        3103.5,
+        781.0
+      ],
+      "illustration_id": "yf064_illustration_city_chenla"
+    },
+    {
+      "id": "aden",
+      "display_name": "阿丹国",
+      "nation_id": "aden",
+      "city_card_id": "aden",
+      "board_node_id": "aden",
+      "node_type": "CITY",
+      "starting_transport": "SHIP",
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "map_attribute": "海上城市",
+      "trade_color_id": "deck_jeddah_aden",
+      "map_position": [
+        1227.56,
+        1084.932
+      ],
+      "illustration_id": "yf064_illustration_city_aden"
+    },
+    {
+      "id": "heijokyo",
+      "display_name": "平城京",
+      "nation_id": "heijokyo",
+      "city_card_id": "heijokyo",
+      "board_node_id": "heijokyo",
+      "node_type": "CITY",
+      "starting_transport": "SHIP",
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "map_attribute": "海上城市",
+      "trade_color_id": "deck_heijokyo_geumseong",
+      "map_position": [
+        3730.0,
+        477.0
+      ],
+      "illustration_id": "yf064_illustration_city_heijokyo"
+    },
+    {
+      "id": "simhala",
+      "display_name": "狮子国",
+      "nation_id": "simhala",
+      "city_card_id": "simhala",
+      "board_node_id": "simhala",
+      "node_type": "CITY",
+      "starting_transport": "SHIP",
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "map_attribute": "海陆交叉点",
+      "trade_color_id": "deck_simhala_delhi",
+      "map_position": [
+        2251.585,
+        978.114
+      ],
+      "illustration_id": "yf064_illustration_city_simhala"
+    },
+    {
+      "id": "cairo",
+      "display_name": "开罗",
+      "nation_id": "cairo",
+      "city_card_id": "cairo",
+      "board_node_id": "cairo",
+      "node_type": "CITY",
+      "starting_transport": "SHIP",
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "map_attribute": "海上城市",
+      "trade_color_id": "deck_cairo_rome",
+      "map_position": [
+        746.0,
+        575.0
+      ],
+      "illustration_id": "yf064_illustration_city_cairo"
+    },
+    {
+      "id": "jeddah",
+      "display_name": "吉达",
+      "nation_id": "jeddah",
+      "city_card_id": "jeddah",
+      "board_node_id": "jeddah",
+      "node_type": "CITY",
+      "starting_transport": "SHIP",
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "map_attribute": "海陆交叉点",
+      "trade_color_id": "deck_jeddah_aden",
+      "map_position": [
+        1236.5,
+        693.5
+      ],
+      "illustration_id": "yf064_illustration_city_jeddah"
+    },
+    {
+      "id": "dagon",
+      "display_name": "大光",
+      "nation_id": "dagon",
+      "city_card_id": "dagon",
+      "board_node_id": "dagon",
+      "node_type": "CITY",
+      "starting_transport": "SHIP",
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "map_attribute": "海上城市",
+      "trade_color_id": "deck_chenla_dagon",
+      "map_position": [
+        2622.5,
+        874.5
+      ],
+      "illustration_id": "yf064_illustration_city_dagon"
+    },
+    {
+      "id": "quanzhou",
+      "display_name": "泉州",
+      "nation_id": "quanzhou",
+      "city_card_id": "quanzhou",
+      "board_node_id": "quanzhou",
+      "node_type": "CITY",
+      "starting_transport": "SHIP",
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "map_attribute": "海陆交叉点",
+      "trade_color_id": "deck_quanzhou_changan",
+      "map_position": [
+        3103.585,
+        614.114
+      ],
+      "illustration_id": "yf064_illustration_city_quanzhou"
+    }
+  ]
+}

@@ -1,0 +1,622 @@
+{
+  "_note": "TASK-MOTION-001 numeric contract. Every number here is either measured on this machine (see _measured) or derived from the frozen traveler camera. Codex must implement these values verbatim; any change needs a line in the delivery report saying which number changed and the measurement that justified it.",
+  "_measured": {
+    "traveler_camera": {
+      "fov_vertical_deg": 36.0,
+      "pitch_deg": 13.0,
+      "distance_u": 11.0,
+      "lift_u": 1.15,
+      "azimuth_rad": 0.62,
+      "keep_aspect": "KEEP_HEIGHT"
+    },
+    "px_per_world_unit_1080p": {
+      "3u": 554.0,
+      "5u": 332.4,
+      "8u": 207.7,
+      "11u": 151.1,
+      "16u": 103.9,
+      "25u": 66.5,
+      "40u": 41.5,
+      "55u": 30.2,
+      "70u": 23.7,
+      "95u": 17.5,
+      "150u": 11.1
+    },
+    "frame_extent_u_at_11u": {
+      "width": 12.7,
+      "height": 7.1,
+      "horizontal_fov_deg": 60.02
+    },
+    "vegetation_local_heights_u": {
+      "gold": 1.651,
+      "copper": 1.653,
+      "olive": 1.657,
+      "tropic": 1.632,
+      "cypress": 1.908,
+      "palm": 2.005,
+      "dry": 0.851,
+      "sage": 0.412,
+      "low_tree_generated": 1.76,
+      "grass_mesh": 0.92
+    },
+    "vegetation_instance_scale_median": {
+      "cypress": 0.548,
+      "gold": 0.539,
+      "tropic": 0.522,
+      "olive": 0.515,
+      "palm": 0.505,
+      "copper": 0.487,
+      "sage": 0.65,
+      "dry": 0.627,
+      "grass": 0.261
+    },
+    "vegetation_world_height_median_u": {
+      "cypress": 1.046,
+      "palm": 1.013,
+      "gold": 0.89,
+      "olive": 0.853,
+      "tropic": 0.852,
+      "copper": 0.806,
+      "dry": 0.533,
+      "sage": 0.268,
+      "grass": 0.24
+    },
+    "instance_counts": {
+      "trees": 6655,
+      "rocks": 1907,
+      "grasses": 1101,
+      "cypress_share": 2500
+    },
+    "baseline_traveler_frame": {
+      "source": "scratchpad/atlas-lookdev/out/look-final-dusk.json",
+      "draw_calls": 422,
+      "rendered_primitives": 2284949,
+      "viewport": [
+        1600,
+        1000
+      ],
+      "renderer": "forward_plus"
+    },
+    "godot": "4.7.1.stable.official.a13da4feb",
+    "godot_defaults_that_break_at_this_scale": {
+      "OmniLight3D.shadow_bias": 0.1,
+      "OmniLight3D.shadow_normal_bias": 1.0,
+      "OmniLight3D.omni_range": 5.0,
+      "OmniLight3D.omni_shadow_mode": "SHADOW_CUBE(1)",
+      "GPUParticles3D.visibility_aabb": "(-4,-4,-4)+(8,8,8)",
+      "GPUParticles3D.local_coords": false,
+      "GPUParticles3D.fixed_fps": 30,
+      "positional_shadow_atlas_size": 4096,
+      "editor/movie_writer/fps": 60
+    },
+    "api_facts": {
+      "ParticleProcessMaterial.turbulence_*": "exists (enabled/noise_strength/noise_scale/noise_speed/influence_min/max/initial_displacement)",
+      "CPUParticles3D.turbulence": "DOES NOT EXIST",
+      "GPUParticles3D.use_fixed_seed+seed": "exists -> deterministic gate",
+      "MultiMesh.use_custom_data": "available and currently UNUSED (only use_colors=true)",
+      "godot_omni_falloff": "att(d) = max(1-(d/range)^4,0)^2 * d^(-omni_attenuation)"
+    },
+    "headless_render_cost": "a 1920x1080 capture of the Atlas traveler scene did not complete 90 frames in 20 min under --headless (>7 s/frame); an empty SceneTree does 40 frames in 258 ms (6.5 ms/frame). The gate MUST run windowed."
+  },
+  "wind": {
+    "shader_file": "shaders/atlas_surface.gdshader (lookdev rewrite)",
+    "formula": "t = anim_t<0 ? TIME : anim_t; phase = o.x*0.72 + o.z*0.63 (o = MODEL_MATRIX[3].xyz, per-instance for MultiMesh); lever = pow(max(VERTEX.y,0.0), wind_stiff); move = (sin(t*1.1+phase) + 0.4*sin(t*1.8+phase*1.6)) * wind_amp * wind_gust * lever; VERTEX.x += move*1.0; VERTEX.z += move*0.38;",
+    "why_cantilever_not_root_cut": "the prototypes have no UV2 and no CUSTOM channel (verified: COLOR_0/NORMAL/POSITION only), so a per-vertex root height would mean re-authoring 8 GLBs; pow(y,stiff) gives the same rigid base with C1 continuity across the trunk/canopy seam and needs no new attribute.",
+    "per_material": {
+      "plants": {
+        "wind_amp": 0.017,
+        "wind_stiff": 1.6,
+        "tip_travel_u": 0.0276,
+        "tip_px_at_11u": 4.17,
+        "tip_px_at_5u": 9.17,
+        "trunk_top_share": 0.42
+      },
+      "trunk": {
+        "wind_amp": 0.017,
+        "wind_stiff": 1.6,
+        "_note": "NEW material kind; same params as plants so the trunk and canopy bend as one object"
+      },
+      "grass": {
+        "wind_amp": 0.1,
+        "wind_stiff": 1.15,
+        "tip_travel_u": 0.0331,
+        "tip_px_at_11u": 5.0,
+        "tip_px_at_5u": 10.99
+      },
+      "cypress": {
+        "wind_amp": 0.007,
+        "wind_stiff": 2.2,
+        "tip_travel_u": 0.0223,
+        "tip_px_at_11u": 3.36,
+        "_note": "2500 of 6655 trees; a fir must read stiff"
+      },
+      "bush_dry_sage": {
+        "wind_amp": 0.055,
+        "wind_stiff": 1.3
+      },
+      "city_plants": {
+        "wind_amp": 0.012,
+        "wind_stiff": 1.6
+      },
+      "solid_terrain_rock_wall_water": {
+        "wind_amp": 0.0,
+        "_note": "must stay 0"
+      }
+    },
+    "why_current_is_invisible": "current wind_strength 0.014 with lever=max(VERTEX.y,0) on a 1.65u-local canopy at instance scale 0.52 gives 0.0070 u of travel = 1.06 px at 11 u and 0.47 px at 25 u. Sub-2-px motion at 1080p is not perceptible; that is the measured reason the frame reads dead.",
+    "gust": {
+      "range": [
+        0.55,
+        1.55
+      ],
+      "formula": "gust(tt) = 1.05 + 0.50*sin(tt/13.7) * (0.60 + 0.40*sin(tt/4.3))",
+      "audio_lead_s": 0.35,
+      "note": "audio reads gust(t+0.35), shaders read gust(t) -> you hear the gust arrive before the leaves answer"
+    },
+    "instance_custom": {
+      "enable": "mm.use_custom_data = true",
+      "packing": "R=phase jitter 0..1, G=amp multiplier 0.75..1.25, B=gust response 0.6..1.4, A=reserved",
+      "cost_bytes": 154608,
+      "shader_guard": "amp_mul = INSTANCE_CUSTOM.g <= 0.0 ? 1.0 : INSTANCE_CUSTOM.g (non-instanced draws read 0)"
+    },
+    "custom_aabb_grow_u": 0.1
+  },
+  "clouds": {
+    "current": {
+      "nodes": 9,
+      "glb": [
+        "cloud_bank.glb 1300 tris 3.89u",
+        "cloud_cumulus.glb 1350 tris 2.29u",
+        "cloud_drifter.glb 1200 tris 3.13u"
+      ],
+      "scales": [
+        2.6,
+        7.4
+      ],
+      "cast_shadow": "OFF (keep)"
+    },
+    "method": "node translation in _process, NOT a shader offset",
+    "why_node": "per-cloud parallax speeds need per-node state anyway; a shader offset invalidates the AABB and these are the largest meshes in the frame; 9-14 transform writes per frame is free",
+    "bands": {
+      "near": {
+        "z_from_target": [
+          -40,
+          -70
+        ],
+        "mean_distance_u": 55,
+        "speed_u_per_s": 0.084,
+        "px_per_s": 2.54,
+        "frame_crossing_s": 756,
+        "frame_crossing_min": 12.6
+      },
+      "far": {
+        "z_from_target": [
+          -70,
+          -110
+        ],
+        "mean_distance_u": 95,
+        "speed_u_per_s": 0.034,
+        "px_per_s": 0.59,
+        "frame_crossing_s": 3228,
+        "frame_crossing_min": 53.8
+      }
+    },
+    "reference": "Little Planet = one revolution in 17.5 min; the near band at 12.6 min per frame width is the same tempo",
+    "wrap": {
+      "near_reset_at_abs_dx_u": 70,
+      "far_reset_at_abs_dx_u": 120,
+      "rule": "reset only outside the 60-deg horizontal frustum plus the cloud's half width"
+    },
+    "spin": {
+      "net_spin": "NONE",
+      "yaw_sway_rad": 0.026,
+      "yaw_period_s": 295,
+      "bob_u": 0.06,
+      "bob_period_s": 61,
+      "why": "a faceted cloud that spins reads as a rotating solid; a yaw sway only re-catches the light"
+    },
+    "shadows": "stay off. Directional shadow max distance is 60 u with 2 splits, so a 40-110 u cloud shadow either misses or eats the split budget; if a cloud shadow is wanted later, do it as a scrolling multiply in the terrain shader.",
+    "budget": {
+      "draw_calls_max": 14,
+      "triangles_max": 18000
+    }
+  },
+  "fire": {
+    "light": {
+      "color": "#FF7627",
+      "flare_color": "#FFA63C",
+      "omni_range_u_camp_scale": 3.3,
+      "omni_range_u_atlas_scale": 0.9,
+      "omni_attenuation": 1.6,
+      "light_energy_camp": 2.6,
+      "light_energy_atlas": 1.4,
+      "why_attenuation_1_6": "Godot att = max(1-(d/r)^4,0)^2 * d^-att; at att=2.0 a face 0.25 u away gets 16x the 1 u value and blows out, 1.6 gives 9.2x"
+    },
+    "shadow": {
+      "shadow_enabled": true,
+      "omni_shadow_mode": "SHADOW_CUBE",
+      "shadow_bias": 0.012,
+      "shadow_normal_bias": 0.045,
+      "shadow_blur": 1.4,
+      "shadow_opacity": 0.88,
+      "why": "T2 is entirely held up by firelight shadows, and all 5 prototype point lights cast none. Godot's OmniLight defaults (bias 0.1 / normal_bias 1.0) push the shadow off the caster at this scale, exactly as the 1.4 normal_bias did for the sun."
+    },
+    "flicker": {
+      "formula": "e = base * (1 + 0.055*sin(t*9.0) + 0.085*sin(t*2.3+1.7) + 0.120*(noise1d(t*13.0)-0.5))",
+      "peak_to_peak_pct": 27.7,
+      "with_noise_pct": 40,
+      "max_slope_pct_per_frame": 1.65,
+      "noise": "FastNoiseLite, seed 20260918, get_noise_1d(t*13.0) - never randf() per frame (that strobes)",
+      "flare": {
+        "interval_s": [
+          7,
+          19
+        ],
+        "attack_s": 0.35,
+        "peak_gain": 1.38,
+        "decay_s": 0.9
+      }
+    },
+    "core_mesh": {
+      "tris": 4,
+      "shading_mode": "UNSHADED",
+      "emission": "#FFF4B0",
+      "emission_energy": 3.0,
+      "scale_pulse_pct": 6,
+      "signal": "same noise term as the light"
+    },
+    "prototype_reference": {
+      "fire": "#ff7627 range 3.3 energy 1.7 decay 2, jitter sin(t*9)*0.04",
+      "lantern": "#ff9c41 range 2.2 energy 1.1-1.7",
+      "doorway": "#ff953b range 2.3 energy 3.1"
+    }
+  },
+  "particles": {
+    "choice": "GPUParticles3D for both",
+    "why": "ParticleProcessMaterial.turbulence_* exists and CPUParticles3D has no turbulence at all (verified on 4.7.1). Leaves that fall in straight lines are the single cheapest-looking failure, and turbulence is the fix. GPUParticlesCollisionHeightField3D (also Forward+ only) lets leaves land instead of sinking. Both are 1 draw call either way.",
+    "leaves": {
+      "amount_camp": 96,
+      "amount_atlas_view": 48,
+      "lifetime": 11.0,
+      "lifetime_randomness": 0.35,
+      "preprocess": 11.0,
+      "randomness": 0.6,
+      "explosiveness": 0.0,
+      "fixed_fps": 30,
+      "interpolate": true,
+      "use_fixed_seed": true,
+      "seed": 20260918,
+      "local_coords": false,
+      "cast_shadow": "OFF",
+      "draw_order": "INDEX (quads are opaque, no sorting needed)",
+      "visibility_aabb": "AABB(-14,-1,-14, 28,9,28)",
+      "emission_shape": "BOX",
+      "emission_box_extents": [
+        13,
+        0.3,
+        13
+      ],
+      "emitter_y_camp": 4.2,
+      "emitter_y_atlas": 1.3,
+      "gravity": [
+        0,
+        -0.85,
+        0
+      ],
+      "why_gravity": "a leaf's terminal velocity is ~1 m/s; -9.8 drops it like a stone",
+      "damping_min_max": [
+        0.4,
+        0.8
+      ],
+      "initial_velocity_min_max": [
+        0.15,
+        0.5
+      ],
+      "direction": [
+        0.82,
+        -0.1,
+        0.38
+      ],
+      "spread": 28,
+      "turbulence": {
+        "enabled": true,
+        "noise_strength": 1.6,
+        "noise_scale": 3.4,
+        "noise_speed": [
+          0.22,
+          0.05,
+          0.14
+        ],
+        "influence_min": 0.25,
+        "influence_max": 0.55
+      },
+      "angular_velocity_min_max": [
+        -95,
+        95
+      ],
+      "angle_min_max": [
+        -180,
+        180
+      ],
+      "mesh": "QuadMesh 0.085 x 0.055 u (camp) / 0.030 x 0.020 u (atlas view), 2 tris",
+      "colors": [
+        "#b4772e",
+        "#caa844",
+        "#a65631",
+        "#d7b957"
+      ],
+      "cost": {
+        "draw_calls": 1,
+        "triangles": 192
+      }
+    },
+    "sparks": {
+      "amount": 34,
+      "lifetime": 1.9,
+      "preprocess": 1.9,
+      "use_fixed_seed": true,
+      "seed": 20260919,
+      "emission_shape": "SPHERE",
+      "emission_sphere_radius": 0.12,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "spread": 16,
+      "initial_velocity_min_max": [
+        0.55,
+        1.15
+      ],
+      "gravity": [
+        0,
+        0.42,
+        0
+      ],
+      "why_positive_gravity": "embers ride the thermal; damping kills them at the top",
+      "damping_min_max": [
+        1.2,
+        2.2
+      ],
+      "turbulence": {
+        "enabled": true,
+        "noise_strength": 2.4,
+        "noise_scale": 1.8,
+        "noise_speed": [
+          0.1,
+          0.35,
+          0.1
+        ],
+        "influence_min": 0.35,
+        "influence_max": 0.8
+      },
+      "scale_min_max": [
+        0.6,
+        1.0
+      ],
+      "scale_curve": "falls to 0 at end of life",
+      "color_ramp": [
+        "#fff4b0",
+        "#ff9c36",
+        "#b4402a",
+        "alpha 0"
+      ],
+      "shading_mode": "UNSHADED",
+      "emission_energy": 2.6,
+      "visibility_aabb": "AABB(-1.2,-0.2,-1.2, 2.4,4.0,2.4)",
+      "local_coords": false,
+      "cast_shadow": "OFF",
+      "cost": {
+        "draw_calls": 1,
+        "triangles": 68
+      }
+    },
+    "insects_optional": {
+      "amount": 14,
+      "lifetime": 6.0,
+      "gravity": [
+        0,
+        0,
+        0
+      ],
+      "orbit_velocity": 0.35,
+      "quad_u": 0.02,
+      "color": "#FFE9A8",
+      "emission_energy": 1.8,
+      "confine_sphere_u": 1.2
+    }
+  },
+  "light_drift": {
+    "rule": "no day-night cycle; a single locked time of day that breathes",
+    "periods_s": {
+      "P1": 227,
+      "P2": 149,
+      "why": "incommensurate, so the loop is 9.4 h and never reads as a cycle; neither shares a period with the 756 s cloud crossing"
+    },
+    "terms": {
+      "tonemap_exposure": {
+        "base": 0.95,
+        "a1": 0.03,
+        "a2": 0.012,
+        "max_rate_pct_per_s": 0.083
+      },
+      "sun_rotation_y_deg": {
+        "base": 42.0,
+        "amp": 2.0,
+        "period": 227,
+        "phase": 0.9
+      },
+      "sun_rotation_x_deg": {
+        "base": -19.0,
+        "amp": 0.8,
+        "period": 149
+      },
+      "ambient_light_energy": {
+        "base": 0.38,
+        "amp_pct": 4,
+        "period": 149,
+        "phase": 2.1
+      },
+      "fog_density": {
+        "base": 1.0,
+        "amp_pct": 9,
+        "period": 227,
+        "phase": 4.0
+      },
+      "fog_light_color": {
+        "lerp": [
+          "#C9B2C6",
+          "#D8BBB0"
+        ],
+        "period": 227
+      }
+    },
+    "hard_rate_limit": {
+      "per_s_pct": 0.25,
+      "per_frame_pct": 0.01,
+      "measured_worst_term": "fog_density 0.249 %/s, 0.0083 %/frame"
+    },
+    "shadow_quantization_note": "an 8192 map over 60 u is 0.0073 u per texel = 1.1 px at 11 u; a 0.0018 deg/frame sun rotation snaps a texel every ~4 s, which is visible on a long straight shadow edge. Keep shadow_blur 0.8 and light_angular_distance 0.35 so the edge spans >=2 texels.",
+    "do_not_animate": [
+      "adjustment_contrast",
+      "adjustment_saturation",
+      "sky material colors per frame"
+    ]
+  },
+  "water": {
+    "rivers": {
+      "current": "StandardMaterial3D #5f9d9d, zero motion, and ribbons() writes no UV at all",
+      "change": "add u=accumulated arclength, v=across to ribbons() (3 lines), then a shader that scrolls along u",
+      "wavelengths_u": [
+        0.35,
+        0.11
+      ],
+      "normal_amp": [
+        0.06,
+        0.03
+      ],
+      "scroll_u_per_s": [
+        0.06,
+        -0.11
+      ],
+      "no_vertex_displacement": "the ribbons are 0.065 u wide = 10 px; displacement would only alias"
+    },
+    "lake_sea": {
+      "existing_shader_already_animates": "atlas_water.gdshader normals at TIME*0.42/0.34 and a sparkle at TIME*0.45 - tuned to the 190 u sea, so at traveler framing the sparkle period is ~1.4 u = 210 px and reads as slow blobs",
+      "camp_scale": {
+        "world_pos_mult": [
+          28.5,
+          90.0
+        ],
+        "wavelengths_u": [
+          0.22,
+          0.07
+        ],
+        "drift_u_per_s": 0.08,
+        "vertex_amp_u": 0.012,
+        "vertex_periods_s": [
+          3.3,
+          5.1
+        ],
+        "shore_foam": "1-smoothstep(0,0.08,thickness) times a 0.9 Hz pulse"
+      },
+      "keep": "depth_draw_always + the opaque_depth trick; do NOT stack a second translucent plane (the shader's own comment warns)"
+    }
+  },
+  "birds": {
+    "optional": false,
+    "status": "cancelled",
+    "reason": "User decision: the distant goose flock effect is abandoned and is not loaded by MotionDirector."
+  },
+  "audio_coupling": {
+    "single_signal_source": "MotionDirector publishes gust(t) and fire_flare(t); shaders, particles and audio all read the same functions",
+    "wind_loop": {
+      "volume_db": "lerp(-19,-7, (gust-0.55)/1.0)",
+      "lowpass_hz": "lerp(1400,6200, same)",
+      "lead_s": 0.35
+    },
+    "fire_crackle": {
+      "trigger": "fire_flare crossing 0.55 rising, plus a Poisson trickle at 1.9/s",
+      "volume_db": "-14 + 6*flare",
+      "pitch_scale": [
+        0.92,
+        1.12
+      ],
+      "stream": "AudioStreamRandomizer with 4-6 one-shots",
+      "rule": "never a pop without a brightening"
+    },
+    "fire_bed": "AudioStreamPlayer3D at the fire; reuse the unit_size numbers from scratchpad/probe/atten_proj rather than guessing",
+    "water": "steady AudioStreamPlayer3D loop; do NOT couple it to the wave sines",
+    "leaf_rustle": "NOT a separate sound - it is the wind loop's high band",
+    "existing": {
+      "autoload": "AudioManager=res://scripts/audio/audio_manager.gd",
+      "ambience_files_today": 0,
+      "sfx_wav_today": 10
+    }
+  },
+  "gate": {
+    "run_mode": "WINDOWED (no --headless), 1920x1080, --fixed-fps 30, Engine.max_fps 0, use_taa=false, screen_space_aa=DISABLED, msaa_3d=4x, particles use_fixed_seed=true",
+    "length_s": 60.0,
+    "engine_frames": 1801,
+    "sampling": {
+      "slow": {
+        "every_n_frames": 30,
+        "interval_s": 1.0,
+        "samples": 61
+      },
+      "fast": {
+        "every_n_frames": 6,
+        "interval_s": 0.2,
+        "window_s": 6,
+        "samples": 31
+      }
+    },
+    "metric": {
+      "grid": [
+        12,
+        7
+      ],
+      "cells": 84,
+      "pixel_threshold": 6,
+      "cell_fraction": 0.004,
+      "thinning": "greedy, no two kept cells share an edge or a corner (8-neighbourhood)",
+      "max_possible_live_cells": 24
+    },
+    "thresholds": {
+      "A_live_cells_per_pair_min": 8,
+      "A_union_coverage_min_cells": 22,
+      "A_moved_pixel_fraction_range": [
+        0.008,
+        0.2
+      ],
+      "B_live_cells_per_pair_max": 0,
+      "B_moved_pixel_fraction_max": 0.0005,
+      "A_vs_B_frame0_mean_abs_diff_max": 3
+    },
+    "threshold_derivation": "measured on the real frame docs/design/shanhe-luren/lookdev/traveler-grandeur-dusk-1499x937.png: a synthetic 2.6 px shift of the frame trips 67 of 84 cells / 14 non-adjacent; freezing rows 0-2 (sky and peaks) still gives 11. The metric is insensitive to pixel_threshold over 3..12 and to cell_fraction over 0.002..0.02, so 6 / 0.004 sit in the flat middle. M=8 leaves headroom for the fact that only part of each cell's area actually moves.",
+    "per_item_runs": [
+      "wind",
+      "clouds",
+      "fire",
+      "leaves",
+      "sparks",
+      "water",
+      "light"
+    ],
+    "per_item_rule": "each item alone, 10 s, must produce >=1 live cell inside its own expected region (clouds rows 0-2; fire/sparks the 2x2 cells around the unprojected fire position; water the cells containing the river/lake; wind rows 3-6)",
+    "light_drift_own_check": "mean luminance at t=0 vs t=57 s differs by 1.2-4.0%, and no single 1.0 s pair differs by more than 0.35%",
+    "framerate_independence": "the same engine time at max_fps 30 vs 120 -> mean |diff| <= 2/255 on 6 sampled frames",
+    "determinism": "two identical gate runs -> mean |diff| <= 1/255 on all 61 frames",
+    "frozen_geometry": "with only the wind layer on, the city-core cells must show 0 live cells",
+    "perf": {
+      "p50_ms_max": 8.0,
+      "p95_ms_max": 12.0,
+      "draw_calls_max": 480,
+      "primitives_max": 2450000,
+      "baseline_draw_calls": 422,
+      "baseline_primitives": 2284949,
+      "budget_ms_at_30fps": 33.3
+    },
+    "fire_shadow_proof": "fire on: a 16x16 patch in the fire-side shadow of a rock is >=22% darker than a 16x16 patch at the same distance on the lit side; with shadow_enabled=false the two patches differ by <=6%"
+  }
+}

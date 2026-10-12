@@ -1,0 +1,14 @@
+{
+  "base": "l1_final",
+  "description": "L1 option B for Carlos: the tile floats 1.3 m above the stage (floor lowered, no contact occlusion), so the cast shadow detaches and softens; everything else = l1_final.",
+  "common": {
+    "floor": {
+      "y": -2.1
+    },
+    "atmos": {
+      "floor": {
+        "contact_ao": 0.0
+      }
+    }
+  }
+}

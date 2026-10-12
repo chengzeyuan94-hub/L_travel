@@ -1,0 +1,28 @@
+{
+  "base": "v1_dusk",
+  "rim": {
+    "amount": 0.7,
+    "tint": 0.2,
+    "tree": true,
+    "character": true
+  },
+  "backlight": {
+    "color": [
+      1.0,
+      0.72,
+      0.35
+    ],
+    "energy": 1.8,
+    "el": -22.0,
+    "az": -45.0,
+    "layer": 2,
+    "exclude_cool_fill": false
+  },
+  "leaves": {
+    "amount": 48,
+    "lifetime_s": 9.0,
+    "preprocess_s": 9.0,
+    "leaf_height_u": 0.13,
+    "leaf_width_u": 0.09
+  }
+}

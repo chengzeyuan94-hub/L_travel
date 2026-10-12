@@ -1,0 +1,103 @@
+{
+  "ruleset_id": "lshu_configurable_v1",
+  "edition_id": "user_confirmed_v1",
+  "schema_version": 1,
+  "decks": [
+    {
+      "id": "deck_cairo_rome",
+      "color_id": "original_pair_01",
+      "printed_color_id": null,
+      "city_ids": [
+        "cairo",
+        "rome"
+      ],
+      "shared_by_city_pair": true,
+      "draw_order": "SHUFFLED",
+      "cards": []
+    },
+    {
+      "id": "deck_quanzhou_changan",
+      "color_id": "original_pair_02",
+      "printed_color_id": null,
+      "city_ids": [
+        "quanzhou",
+        "changan"
+      ],
+      "shared_by_city_pair": true,
+      "draw_order": "SHUFFLED",
+      "cards": []
+    },
+    {
+      "id": "deck_heijokyo_geumseong",
+      "color_id": "original_pair_03",
+      "printed_color_id": null,
+      "city_ids": [
+        "heijokyo",
+        "geumseong"
+      ],
+      "shared_by_city_pair": true,
+      "draw_order": "SHUFFLED",
+      "cards": []
+    },
+    {
+      "id": "deck_simhala_delhi",
+      "color_id": "original_pair_04",
+      "printed_color_id": null,
+      "city_ids": [
+        "simhala",
+        "delhi"
+      ],
+      "shared_by_city_pair": true,
+      "draw_order": "SHUFFLED",
+      "cards": []
+    },
+    {
+      "id": "deck_jeddah_aden",
+      "color_id": "original_pair_05",
+      "printed_color_id": null,
+      "city_ids": [
+        "jeddah",
+        "aden"
+      ],
+      "shared_by_city_pair": true,
+      "draw_order": "SHUFFLED",
+      "cards": []
+    },
+    {
+      "id": "deck_panti_yumenguan",
+      "color_id": "original_pair_06",
+      "printed_color_id": null,
+      "city_ids": [
+        "panti",
+        "yumenguan"
+      ],
+      "shared_by_city_pair": true,
+      "draw_order": "SHUFFLED",
+      "cards": []
+    },
+    {
+      "id": "deck_constantinople_baghdad",
+      "color_id": "original_pair_07",
+      "printed_color_id": null,
+      "city_ids": [
+        "constantinople",
+        "baghdad"
+      ],
+      "shared_by_city_pair": true,
+      "draw_order": "SHUFFLED",
+      "cards": []
+    },
+    {
+      "id": "deck_chenla_dagon",
+      "color_id": "original_pair_08",
+      "printed_color_id": null,
+      "city_ids": [
+        "chenla",
+        "dagon"
+      ],
+      "shared_by_city_pair": true,
+      "draw_order": "SHUFFLED",
+      "cards": []
+    }
+  ]
+}

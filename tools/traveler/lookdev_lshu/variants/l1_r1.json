@@ -1,0 +1,410 @@
+{
+  "base": "baseline",
+  "description": "L1 round 1: global lighting & atmosphere presets. Coloured key/fill + hemisphere ambient, PCSS soft shadows on an 8k atlas, SSAO+SSIL, depth haze + low mist from the backdrop colour, studio backdrop (gradient, light pool, vignette, contact AO, cool cast shadow, night stars), tilt-shift DOF, warm local lights at night.",
+  "common": {
+    "camera": {
+      "dof": {
+        "far_enabled": true,
+        "far_offset": 1.5,
+        "far_transition": 5.0,
+        "near_enabled": true,
+        "near_offset": 2.5,
+        "near_transition": 3.0,
+        "amount": 0.06
+      }
+    },
+    "sun": {
+      "shadow_bias": 0.06,
+      "shadow_normal_bias": 2.5,
+      "shadow_blur": 1.0,
+      "angular_distance_deg": 1.5
+    },
+    "env": {
+      "tonemap": "aces",
+      "white": 6.0,
+      "ssao": {
+        "enabled": true,
+        "radius": 0.8,
+        "intensity": 1.6,
+        "power": 1.6,
+        "detail": 0.6,
+        "horizon": 0.06,
+        "sharpness": 0.98,
+        "light_affect": 0.15,
+        "ao_channel_affect": 0.0
+      },
+      "ssil": {
+        "enabled": true,
+        "radius": 2.5,
+        "intensity": 0.8
+      },
+      "glow": {
+        "enabled": true,
+        "intensity": 0.5,
+        "strength": 1.0,
+        "bloom": 0.03,
+        "hdr_threshold": 0.95,
+        "hdr_scale": 2.0,
+        "blend_mode": "screen",
+        "levels": [
+          0,
+          0,
+          1,
+          0.6,
+          0.4,
+          0,
+          0
+        ]
+      },
+      "adjust": {
+        "enabled": true,
+        "brightness": 1.0,
+        "contrast": 1.04,
+        "saturation": 1.05
+      }
+    },
+    "sky": {
+      "top_mult": 1.05,
+      "bottom_mult": 0.86,
+      "vignette": 0.18,
+      "glow_amount": 0.12
+    },
+    "floor": {
+      "shadow_value": 0.75,
+      "shadow_tint": [
+        0.9,
+        0.95,
+        1.1
+      ]
+    },
+    "atmos": {
+      "floor": {
+        "gradient_curve": 1.2,
+        "glow_tint": "#ffffff",
+        "glow_radius": [
+          1.3,
+          1.9
+        ],
+        "glow_center": [
+          0.5,
+          0.47
+        ],
+        "vignette_inner": 0.3,
+        "vignette_outer": 0.85,
+        "contact_ao": 0.3,
+        "contact_ao_radius": 0.6,
+        "shadow_fade_distance": 60.0,
+        "stars_amount": 0.0
+      },
+      "fog": {
+        "enabled": true,
+        "mode": "depth",
+        "depth_begin_offset": -5.0,
+        "depth_end_offset": 12.0,
+        "depth_curve": 1.0,
+        "density": 0.12,
+        "height": -0.2,
+        "height_density": 0.6,
+        "light_energy": 1.0
+      },
+      "glow": {
+        "luminance_cap": 12.0,
+        "normalized": false,
+        "mix": 0.05
+      },
+      "ssil": {
+        "sharpness": 0.98,
+        "normal_rejection": 1.0
+      }
+    }
+  },
+  "lights": {
+    "morning": {
+      "sun": {
+        "position": [
+          7,
+          6.5,
+          -5
+        ],
+        "color": "#ffe2b8",
+        "energy": 1.6,
+        "angular_distance_deg": 1.5
+      },
+      "fill": {
+        "color": "#a8c4e8",
+        "energy": 0.35
+      },
+      "env": {
+        "exposure": 1.05,
+        "adjust": {
+          "contrast": 1.02,
+          "saturation": 1.0
+        }
+      },
+      "sky": {
+        "backdrop": "#c2d4d7",
+        "theme_backdrop": {
+          "desert": "#d9ccc3",
+          "snow": "#c4d4dc",
+          "harbor": "#bcd2d6",
+          "autumn": "#cfd8d0"
+        },
+        "ambient_top": "#9fbde0",
+        "ambient_horizon": "#d9d4cc",
+        "ambient_bottom": "#b0a494",
+        "ambient_energy": 0.75
+      },
+      "floor": {
+        "shadow_value": 0.78,
+        "shadow_tint": [
+          0.88,
+          0.95,
+          1.1
+        ]
+      },
+      "atmos": {
+        "fog": {
+          "density": 0.25,
+          "height": -0.05,
+          "height_density": 1.2
+        }
+      },
+      "surface": {
+        "roles": {
+          "glow": {
+            "emission_strength": 0.15
+          }
+        }
+      },
+      "fires": {
+        "light_energy": 0.5
+      },
+      "lamps": {
+        "light_energy": 0.25
+      }
+    },
+    "day": {
+      "sun": {
+        "position": [
+          -8,
+          13,
+          7
+        ],
+        "color": "#fff4e0",
+        "energy": 1.9,
+        "angular_distance_deg": 1.0
+      },
+      "fill": {
+        "color": "#b4c8ea",
+        "energy": 0.35
+      },
+      "env": {
+        "exposure": 1.0,
+        "adjust": {
+          "contrast": 1.04,
+          "saturation": 1.06
+        }
+      },
+      "sky": {
+        "ambient_top": "#a9c6ea",
+        "ambient_horizon": "#dcd8d0",
+        "ambient_bottom": "#b8a58f",
+        "ambient_energy": 0.72
+      },
+      "surface": {
+        "roles": {
+          "glow": {
+            "emission_strength": 0.1
+          }
+        }
+      },
+      "fires": {
+        "light_energy": 0.35
+      },
+      "lamps": {
+        "light_energy": 0.2
+      }
+    },
+    "sunset": {
+      "sun": {
+        "position": [
+          -10,
+          5.5,
+          4
+        ],
+        "color": "#ff9a4a",
+        "energy": 2.1,
+        "angular_distance_deg": 2.0
+      },
+      "fill": {
+        "color": "#9c8fd0",
+        "energy": 0.35
+      },
+      "env": {
+        "exposure": 1.02,
+        "adjust": {
+          "contrast": 1.05,
+          "saturation": 1.08
+        },
+        "glow": {
+          "intensity": 0.6,
+          "hdr_threshold": 0.9
+        }
+      },
+      "sky": {
+        "backdrop": "#ddaf9b",
+        "theme_backdrop": {
+          "desert": "#dea593",
+          "snow": "#d6aea6",
+          "harbor": "#d8ada0",
+          "autumn": "#dcae98"
+        },
+        "ambient_top": "#8f86c0",
+        "ambient_horizon": "#e0a890",
+        "ambient_bottom": "#a0706a",
+        "ambient_energy": 0.55
+      },
+      "floor": {
+        "shadow_value": 0.72,
+        "shadow_tint": [
+          0.85,
+          0.85,
+          1.12
+        ]
+      },
+      "atmos": {
+        "floor": {
+          "glow_tint": "#ffe0c0"
+        },
+        "fog": {
+          "density": 0.18
+        }
+      },
+      "surface": {
+        "roles": {
+          "glow": {
+            "emission_strength": 0.8
+          }
+        }
+      },
+      "fires": {
+        "light_energy": 1.0,
+        "light_range": 3.0
+      },
+      "lamps": {
+        "light_energy": 0.8,
+        "light_range": 3.0
+      }
+    },
+    "night": {
+      "sun": {
+        "position": [
+          -7,
+          10,
+          -7
+        ],
+        "color": "#8fa8ff",
+        "energy": 0.5,
+        "angular_distance_deg": 2.0
+      },
+      "fill": {
+        "color": "#5f78c0",
+        "energy": 0.35
+      },
+      "env": {
+        "exposure": 1.1,
+        "adjust": {
+          "enabled": true,
+          "contrast": 1.05,
+          "saturation": 0.9
+        },
+        "glow": {
+          "intensity": 0.9,
+          "bloom": 0.0,
+          "hdr_threshold": 0.9,
+          "levels": [
+            0,
+            1,
+            1,
+            0.8,
+            0.5,
+            0.2,
+            0
+          ]
+        }
+      },
+      "sky": {
+        "backdrop": "#192a49",
+        "theme_backdrop": {
+          "desert": "#1f2544",
+          "snow": "#1b2c4c",
+          "harbor": "#15294a",
+          "autumn": "#1a2a46"
+        },
+        "ambient_top": "#3a4f8a",
+        "ambient_horizon": "#2c3a66",
+        "ambient_bottom": "#1e2240",
+        "ambient_energy": 0.45,
+        "glow_amount": 0.3
+      },
+      "floor": {
+        "shadow_value": 0.9,
+        "shadow_tint": [
+          1,
+          1,
+          1
+        ]
+      },
+      "atmos": {
+        "floor": {
+          "glow_tint": [
+            0.8,
+            0.9,
+            1.3
+          ],
+          "stars_amount": 0.5,
+          "stars_density": 0.0015
+        },
+        "fog": {
+          "density": 0.2,
+          "height_density": 0.8
+        }
+      },
+      "surface": {
+        "roles": {
+          "glow": {
+            "emission_strength": 2.4
+          }
+        }
+      },
+      "fires": {
+        "light_color": "#ff7a2a",
+        "light_energy": 2.2,
+        "light_range": 4.0,
+        "light_attenuation": 1.2,
+        "shadow": true
+      },
+      "lamps": {
+        "light_color": "#ffb060",
+        "light_energy": 1.4,
+        "light_range": 3.5
+      }
+    }
+  },
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_lshu/modules/l1_atmos.gd",
+      "cfg": {
+        "shadow_atlas": 8192,
+        "soft_shadow_quality": 4,
+        "positional_soft_shadow_quality": 3,
+        "positional_shadow_atlas": 4096,
+        "dof_quality": "high",
+        "dof_bokeh": "circle",
+        "dof_jitter": false,
+        "debanding": true,
+        "taa": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "files": 6285,
+  "bytes": 1873690359,
+  "largest": 26726232,
+  "glbs": 1037,
+  "physical_reference_hashes": 117,
+  "original_card_signatures": 79,
+  "issues": [],
+  "scope": "Full cleaned public source bytes and embedded GLB textures; exact matches plus provenance review, not a legal guarantee",
+  "asset_families": "Project production provenance, per-asset license manifest; rendered game media treated separately from raw motion"
+}

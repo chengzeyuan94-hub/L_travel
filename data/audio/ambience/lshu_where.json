@@ -1,0 +1,240 @@
+{
+  "schema": "silkroad.ambience-mix.v1",
+  "scene": "lshu_where",
+  "note": "第四幕「L叔在哪儿」环境声起点值（方案 §3.8），不是冻结值，随时可调。底床整组的响度由 bed_target_lufs 定，terrains.beds 的 volume_db 只定一块地里各底床的比例；篝火、点缀、事件实听 ≈ 文件响度 + volume_db + master_db（点缀和事件再加 oneshot_db）。所有时长都是真实秒，不跟 L叔 的加速时钟走。",
+  "master_db": 0.0,
+  "oneshot_db": 3.0,
+  "bed_target_lufs": -27.5,
+  "bed_lufs": {
+    "birds_day_bed_loop_v1": -33.2,
+    "wind_leaves_bed_loop_v1": -30.3,
+    "wind_open_bed_loop_v1": -30.1,
+    "breeze_hiss_bed_loop_v1": -33.2,
+    "waves_shore_bed_loop_v1": -30.2
+  },
+  "level_note": "bed_target_lufs：每块地的底床合起来实听多响（不含篝火和点缀）。bed_lufs 是各底床文件在 0 dB 时实听的响度（ffmpeg ebur128，单声道按左右同电平算），用来换算。地块内部各底床的比例照 terrains.beds 的 volume_db；master_db 管全部，oneshot_db 只管点缀和事件声。2026-09-26 实测（Movie Maker 录音，ebur128）：白天各类地块 −25.7 到 −28.3（没火的 −27 到 −28，有营地篝火的 −25.7 到 −27.4），60 倍速预览整段 −27.2，换地交叉段 −27.0 / −27.2；夜里（帐篷，压 4 dB）−31.2 到 −32.1；天亮晨鸟那 3 秒 −25.5。",
+  "fade_in_s": 3.0,
+  "xfade_s": 2.5,
+  "finish_s": 0.6,
+  "resync_s": 2.0,
+  "follow_s": 0.15,
+  "fallback_terrain": "grass",
+  "aliases": {
+    "port": "harbour",
+    "harbor": "harbour"
+  },
+  "scatter_interval_exp": 0.5,
+  "scatter_first_delay": [
+    0.3,
+    0.6
+  ],
+  "terrain_note": "一块地的地形标签取 pool.json 的 postcard_terrain；没写的按 postcard_lines.json terrain_resolve 推（城 / 地貌 / 生物群系）。几个标签按 weight 在功率上平均（同一条底床在几个标签里共用时不叠成两份），再整体拉到 bed_target_lufs，所以标签多少、哪种地形，底床都一样响；gain_db 是在这之上的地形整体微调（dB，按标签权重平均）。点缀在该地块所有标签里都开，间隔 × (1 / 权重)^scatter_interval_exp，标签越多每种越稀。",
+  "terrains": {
+    "grass": {
+      "weight": 1.0,
+      "gain_db": 0.0,
+      "beds": {
+        "birds_day_bed_loop_v1": -2.0,
+        "wind_leaves_bed_loop_v1": -6.0
+      },
+      "scatters": [
+        "bird_calls"
+      ]
+    },
+    "rock": {
+      "weight": 1.0,
+      "gain_db": 0.0,
+      "beds": {
+        "wind_open_bed_loop_v1": -1.0,
+        "breeze_hiss_bed_loop_v1": -8.0
+      },
+      "scatters": [
+        "rock_gust"
+      ]
+    },
+    "city": {
+      "weight": 1.0,
+      "gain_db": 0.0,
+      "beds": {
+        "wind_leaves_bed_loop_v1": -6.0
+      },
+      "scatters": [
+        "temple_bell",
+        "hooves_pass"
+      ]
+    },
+    "desert": {
+      "weight": 1.0,
+      "gain_db": 0.0,
+      "beds": {
+        "breeze_hiss_bed_loop_v1": -2.0,
+        "wind_open_bed_loop_v1": -6.0
+      },
+      "scatters": []
+    },
+    "snow": {
+      "weight": 1.0,
+      "gain_db": 0.0,
+      "beds": {
+        "wind_open_bed_loop_v1": 0.0
+      },
+      "scatters": [
+        "snow_gust"
+      ]
+    },
+    "harbour": {
+      "weight": 1.0,
+      "gain_db": 0.0,
+      "beds": {
+        "waves_shore_bed_loop_v1": -2.0
+      },
+      "scatters": [
+        "rowing_pass"
+      ]
+    }
+  },
+  "night_mute": {
+    "note": "这些底床和点缀的音量 × (1 − 夜晚权重 look.weight(\"night\"))；点缀在夜晚权重超过 scatter_off_above 时不再叫",
+    "beds": [
+      "birds_day_bed_loop_v1"
+    ],
+    "scatters": [
+      "bird_calls"
+    ],
+    "scatter_off_above": 0.85,
+    "comp": 1.0,
+    "comp_max_db": 6.0,
+    "comp_note": "鸟退掉的那部分响度由同一块地的其余底床补回 comp（0 = 不补，照方案字面；1 = 全补，夜里整体只差 duck），最多补 comp_max_db"
+  },
+  "scatters": {
+    "bird_calls": {
+      "sounds": [
+        "bird_call_v1",
+        "bird_call_v2",
+        "bird_call_v3",
+        "bird_call_v4",
+        "bird_call_v5"
+      ],
+      "interval_s": [
+        15.0,
+        35.0
+      ],
+      "volume_db": [
+        -16.0,
+        -12.0
+      ],
+      "pitch": [
+        0.95,
+        1.05
+      ]
+    },
+    "rock_gust": {
+      "sounds": [
+        "wind_leaves_gust_v1"
+      ],
+      "interval_s": [
+        20.0,
+        40.0
+      ],
+      "volume_db": [
+        -12.0,
+        -8.0
+      ],
+      "pitch": [
+        0.83,
+        0.87
+      ]
+    },
+    "temple_bell": {
+      "sounds": [
+        "temple_bell_v1"
+      ],
+      "interval_s": [
+        60.0,
+        120.0
+      ],
+      "volume_db": [
+        -15.0,
+        -13.0
+      ],
+      "pitch": [
+        0.97,
+        1.03
+      ]
+    },
+    "snow_gust": {
+      "sounds": [
+        "wind_leaves_gust_v1"
+      ],
+      "interval_s": [
+        20.0,
+        40.0
+      ],
+      "volume_db": [
+        -10.0,
+        -6.0
+      ],
+      "pitch": [
+        0.9,
+        0.98
+      ]
+    },
+    "hooves_pass": {
+      "segment": "hooves_walk_loop_v1",
+      "length_s": 8.0,
+      "fade_in_s": 1.5,
+      "fade_out_s": 2.0,
+      "interval_s": [
+        40.0,
+        80.0
+      ],
+      "volume_db": -14.0,
+      "note": "街上有人骑马经过：从马蹄循环里随机截一段"
+    },
+    "rowing_pass": {
+      "segment": "rowing_loop_v1",
+      "length_s": 10.0,
+      "fade_in_s": 2.0,
+      "fade_out_s": 2.5,
+      "interval_s": [
+        30.0,
+        60.0
+      ],
+      "volume_db": -14.0,
+      "note": "有船划过：从划桨循环里随机截一段"
+    }
+  },
+  "fire": {
+    "sound": "campfire_bed_loop_v1",
+    "db": -2.0,
+    "effect_only_db": -8.0,
+    "min_level": 0.02,
+    "follow_s": 1.2,
+    "note": "音量 = db + 20·log10(level)（照方案 −2；实听约 −32 LUFS，比底床低 4.5 dB，有火的地块整体约响 1.3 dB），level 是舞台地块 life.fire_level（导演每帧 set_fire_level 设的：进帐篷降到 0.45，走后慢慢降到余烬 0.1）。地块只有别的火点、没有营地篝火时用 effect_only_db；没有火就没声"
+  },
+  "duck": {
+    "db": -4.0,
+    "fade_s": 3.0,
+    "note": "night_start（打盹）/ tent_in（进帐篷）起所有底床（含篝火）在 fade_s 内压 db，night_end 同样在 fade_s 内放开"
+  },
+  "events": {
+    "night_end": {
+      "sound": "bird_call_v6",
+      "volume_db": -6.0,
+      "pitch": 1.0,
+      "note": "天亮了"
+    },
+    "greeted": {
+      "sound": "bell_small_ding_v1",
+      "volume_db": -16.0,
+      "pitch": 1.0,
+      "note": "点到他：鞠躬或点头"
+    },
+    "snap": {
+      "sound": "bell_small_ding_v1",
+      "volume_db": -10.0,
+      "pitch": 1.5,
+      "note": "拍明信片成功（snap_finished ok）；缺快门声，先用铃铛占位"
+    }
+  }
+}

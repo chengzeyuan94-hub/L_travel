@@ -1,0 +1,37 @@
+{
+  "aspect": 1.77777777777778,
+  "asset": "res://assets/traveler/mountains/changan-framed-massif.res",
+  "band_horizontal_offsets": [
+    -5.0,
+    6.0,
+    -2.0
+  ],
+  "camera_fov": 36.0,
+  "camera_position": [
+    34.5735778808594,
+    3.96782684326172,
+    14.9224071502686
+  ],
+  "clipped_source_faces": 288,
+  "contributing_source_faces": 22208,
+  "height_scale": 0.48,
+  "image_size": [
+    1920,
+    1080
+  ],
+  "lighting": "scene_sun_and_environment",
+  "models": 1,
+  "peak_spacing_scale": 1.12,
+  "peak_width_scale": 0.86,
+  "policy": "Transform full source before camera frustum clipping and backface removal; retain overlapping front faces to preserve silhouette, depth and fog. Fixed-camera background asset, not a freely orbitable mountain.",
+  "rejected_backfaces": 46259,
+  "rejected_outside": 21691,
+  "save_error": 0,
+  "source_triangles": 90158,
+  "surfaces": 1,
+  "triangles": 22356,
+  "viewport_size": [
+    1920,
+    1080
+  ]
+}

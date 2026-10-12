@@ -1,0 +1,264 @@
+{
+  "schema": "yf064_world_map_semantics_v1",
+  "source_pxd": "all地图.pxd",
+  "source_pxd_sha256": "f9fb6cfbbb5f122b38aa9f2005764d81c1d28b8724c7ed812374d80ff52a6de6",
+  "coordinate_space": "world_map_4096x1363_y_down",
+  "city_route_point_aliases": {
+    "land_point_001": "ancient_rome",
+    "sea_point_001": "ancient_rome",
+    "land_point_003": "constantinople",
+    "sea_point_003": "cairo",
+    "land_point_006": "jeddah",
+    "sea_point_006": "jeddah",
+    "land_point_008": "baghdad",
+    "sea_point_009": "aden",
+    "land_point_011": "pantuo",
+    "land_point_014": "delhi",
+    "land_point_016": "simhala",
+    "sea_point_013": "simhala",
+    "sea_point_015": "dagon",
+    "land_point_018": "yumenguan",
+    "sea_point_020": "chenla",
+    "land_point_021": "changan",
+    "land_point_023": "quanzhou",
+    "sea_point_022": "quanzhou",
+    "sea_point_025": "geumseong",
+    "sea_point_026": "heijokyo"
+  },
+  "source_path_types": {
+    "LAND": [
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      43,
+      44,
+      48,
+      49,
+      50,
+      51
+    ],
+    "SEA": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      19,
+      40,
+      41,
+      42,
+      45,
+      46,
+      47,
+      52,
+      53,
+      54
+    ]
+  },
+  "internal_city_connector_paths": [
+    18,
+    22,
+    26
+  ],
+  "excluded_route_layers": {
+    "32": "NON_ROUTE_DECORATIVE"
+  },
+  "expected": {
+    "cities": 16,
+    "route_points_in_source": 51,
+    "aliases": 20,
+    "playable_stops": 54,
+    "edges": 57,
+    "land_edges": 30,
+    "sea_edges": 27,
+    "components": 1,
+    "isolates": 0,
+    "city_corridors": 19,
+    "intermediate_points_per_corridor": 2
+  },
+  "notes": [
+    "PXD circles are authored road hints and city seats; previous ownership and connectivity inference is superseded by the physical-board corridor manifest.",
+    "Current city seats are shared by all permitted transport types. Two road hints belong exclusively to each city corridor, regardless of geometry samples or screen distance.",
+    "Source stroke types, legacy aliases and exclusion records remain historical tracing evidence, not movement authority."
+  ],
+  "semantic_authority": "res://data/rulesets/lshu_configurable_v1/map_corridors_v1.json",
+  "city_route_point_aliases_role": "Historical auto-classification kept for source traceability; it no longer determines playable stops or current city seats.",
+  "historical_route_anchors": {
+    "ancient_rome": {
+      "LAND": "land_point_001",
+      "SEA": "sea_point_001"
+    },
+    "jeddah": {
+      "LAND": "land_point_006",
+      "SEA": "sea_point_006"
+    },
+    "simhala": {
+      "LAND": "land_point_016",
+      "SEA": "sea_point_013"
+    },
+    "quanzhou": {
+      "LAND": "land_point_023",
+      "SEA": "sea_point_022"
+    },
+    "geumseong": {
+      "LAND": [
+        3497.0,
+        310.0
+      ],
+      "SEA": "sea_point_025"
+    }
+  },
+  "historical_notes": [
+    "Route type is taken from each PXD path layer's active stroke color, not inferred from nearby circles.",
+    "A city remains one logical stop while route_anchors preserve separate LAND and SEA boarding positions.",
+    "land_point_025 is a distinct stop west of Geumseong; Geumseong's LAND anchor is the path_43 city endpoint, not land_point_025."
+  ],
+  "route_anchors": {
+    "yumenguan": {
+      "LAND": [
+        2440.5,
+        348.5
+      ]
+    },
+    "ancient_rome": {
+      "LAND": [
+        387.585,
+        183.614
+      ],
+      "SEA": [
+        387.585,
+        183.614
+      ]
+    },
+    "constantinople": {
+      "LAND": [
+        693.0,
+        296.0
+      ]
+    },
+    "changan": {
+      "LAND": [
+        2789.0,
+        504.0
+      ]
+    },
+    "pantuo": {
+      "LAND": [
+        1921.5,
+        334.5
+      ]
+    },
+    "baghdad": {
+      "LAND": [
+        1416.5,
+        558.0
+      ]
+    },
+    "delhi": {
+      "LAND": [
+        2117.5,
+        663.0
+      ]
+    },
+    "geumseong": {
+      "LAND": [
+        3497.0,
+        310.0
+      ],
+      "SEA": [
+        3497.0,
+        310.0
+      ]
+    },
+    "chenla": {
+      "SEA": [
+        3103.5,
+        781.0
+      ]
+    },
+    "aden": {
+      "SEA": [
+        1227.56,
+        1084.932
+      ]
+    },
+    "heijokyo": {
+      "SEA": [
+        3730.0,
+        477.0
+      ]
+    },
+    "simhala": {
+      "LAND": [
+        2251.585,
+        978.114
+      ],
+      "SEA": [
+        2251.585,
+        978.114
+      ]
+    },
+    "cairo": {
+      "SEA": [
+        746.0,
+        575.0
+      ]
+    },
+    "jeddah": {
+      "LAND": [
+        1236.5,
+        693.5
+      ],
+      "SEA": [
+        1236.5,
+        693.5
+      ]
+    },
+    "dagon": {
+      "SEA": [
+        2622.5,
+        874.5
+      ]
+    },
+    "quanzhou": {
+      "LAND": [
+        3103.585,
+        614.114
+      ],
+      "SEA": [
+        3103.585,
+        614.114
+      ]
+    }
+  }
+}

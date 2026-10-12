@@ -1,0 +1,96 @@
+{
+  "schema": "silkroad.panti-seated-idle.v1",
+  "asset": "res://assets/traveler/panti/camp/character/sitting-animated.glb",
+  "animation": "seated_idle",
+  "start_offset_s": 0.5166666666666667,
+  "sample_hz": 60,
+  "bones": 49,
+  "body_triangles": 18367,
+  "outline_triangles": 13693,
+  "outline_excludes_glasses": true,
+  "body_and_outline_share_joint_nodes": true,
+  "standing_rest_height_u": 1.0,
+  "normalization_scale": 1.0004885421477128,
+  "outside_world_scale": 0.6375,
+  "outline_grow_model_u_at_half_width": 0.00585,
+  "seat_anchor_local_godot": [
+    0.004507055040448904,
+    0.13439008593559265,
+    -0.009475672126023306
+  ],
+  "seat_anchor_in_hips_local_blender": [
+    0.0010725189881055828,
+    -0.06898662354215439,
+    -0.02093540374484186
+  ],
+  "front_direction": [
+    0,
+    0,
+    1
+  ],
+  "coordinate_note": "Normalized model root, +Y up and +Z facing forward; source origin and selected phase match the static Panti sitting pose.",
+  "audit": {
+    "samples": 537,
+    "all_finite": true,
+    "seat_anchor_max_error_u": 2.4587621507130722e-08,
+    "loop_seam_max_vertex_error_u": 0.0,
+    "outline_body_match_max_error_u": 0.0,
+    "max_triangle_edge_u": 0.14115148394846821,
+    "max_vertex_step_u": 0.010185810525385463,
+    "weight_sum_max_error": 1.471489667892456e-07,
+    "original_seat_anchor_range_u": [
+      0.0010114973410964012,
+      0.006188518833369017,
+      0.004225477576255798
+    ],
+    "three_cycles_method": "Repeat the same absolute sample phases; no integrated transforms or mixed animation. Godot runtime multi-cycle audit is separate.",
+    "normalization_max_vertex_error_u": 2.8940782697131524e-06,
+    "max_source_influences": 7
+  },
+  "mesh_transform_normalization": {
+    "rig_scale": [
+      1,
+      1,
+      1
+    ],
+    "body_scale": [
+      1,
+      1,
+      1
+    ],
+    "outline_scale": [
+      1,
+      1,
+      1
+    ],
+    "grow_model_u": 0.00585,
+    "export_all_influences": true,
+    "mesh_local_aabbs": {
+      "PantiSeatedBody": {
+        "min": [
+          -0.43111878633499146,
+          -0.20001742243766785,
+          -3.5796645647678815e-09
+        ],
+        "max": [
+          0.43111878633499146,
+          0.2010573446750641,
+          0.9999999403953552
+        ]
+      },
+      "PantiSeatedOutline": {
+        "min": [
+          -0.43111878633499146,
+          -0.20001742243766785,
+          -3.5796645647678815e-09
+        ],
+        "max": [
+          0.43111878633499146,
+          0.2010573446750641,
+          0.9999999403953552
+        ]
+      }
+    }
+  },
+  "motion_source": "Independent procedural sine motion in public release; no external keyframes included"
+}

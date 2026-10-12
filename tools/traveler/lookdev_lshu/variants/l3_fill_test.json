@@ -1,0 +1,26 @@
+{
+  "base": "l3_final",
+  "description": "L3 option test: character-only fill light at night (lights only the L叔 render layer).",
+  "lights": {
+    "night": {
+      "l3": {
+        "character": {
+          "fill": {
+            "energy": 0.35,
+            "color": "#dfe6ff"
+          }
+        }
+      }
+    },
+    "sunset": {
+      "l3": {
+        "character": {
+          "fill": {
+            "energy": 0.15,
+            "color": "#ffe2c4"
+          }
+        }
+      }
+    }
+  }
+}

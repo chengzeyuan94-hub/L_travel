@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/formal_city_card.gd" id="1"]
+
+[node name="FormalCityCard" type="Control"]
+custom_minimum_size = Vector2(270, 360)
+layout_mode = 0
+mouse_filter = 0
+script = ExtResource("1")

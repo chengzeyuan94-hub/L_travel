@@ -1,0 +1,154 @@
+{
+  "base": "v8_dusk3",
+  "sky": {
+    "shader": "res://tools/traveler/lookdev_baghdad/lookdev_sunset_sky.gdshader",
+    "zenith_color": [
+      0.3,
+      0.26,
+      0.54
+    ],
+    "mid_color": [
+      0.86,
+      0.44,
+      0.4
+    ],
+    "mid_height": 0.18,
+    "horizon_color": [
+      1.0,
+      0.6,
+      0.24
+    ],
+    "horizon_falloff": 0.2,
+    "ground_horizon_color": [
+      0.8,
+      0.44,
+      0.24
+    ],
+    "ground_bottom_color": [
+      0.22,
+      0.14,
+      0.18
+    ],
+    "sun_disc_color": [
+      1.0,
+      0.92,
+      0.72
+    ],
+    "sun_disc_energy": 3.4,
+    "sun_radius_deg": 1.0,
+    "sun_halo_radius_deg": 14.0,
+    "sun_halo_strength": 0.5,
+    "cloud_opacity": 0.0,
+    "cumulus_enabled": 1.0,
+    "cloud_b_base_el": 0.06,
+    "cloud_b_top_el": 0.3,
+    "cloud_b_scale": [
+      2.6,
+      4.5
+    ],
+    "cloud_b_offset": [
+      11.3,
+      2.9
+    ],
+    "cloud_b_coverage": 0.62,
+    "cloud_b_alpha": 0.97,
+    "cloud_a_base_el": 0.3,
+    "cloud_a_top_el": 0.62,
+    "cloud_a_scale": [
+      2.0,
+      3.5
+    ],
+    "cloud_a_offset": [
+      3.1,
+      7.7
+    ],
+    "cloud_a_coverage": 0.46,
+    "cloud_a_alpha": 0.78,
+    "cloud_lit_color": [
+      1.0,
+      0.82,
+      0.62
+    ],
+    "cloud_shadow_color": [
+      0.3,
+      0.16,
+      0.34
+    ],
+    "cloud_rim_color": [
+      1.0,
+      0.8,
+      0.4
+    ],
+    "cloud_rim_strength": 3.0,
+    "cloud_rim_step": 0.12,
+    "cloud_sun_sigma_deg": 60.0,
+    "cloud_prox_floor": 0.45,
+    "cloud_underglow": 0.3
+  },
+  "fresnel": {
+    "color": [
+      1.0,
+      0.72,
+      0.32
+    ],
+    "tree_power": 2.6,
+    "tree_intensity": 0.75,
+    "character_power": 3.4,
+    "character_intensity": 1.6,
+    "dir_weight": 0.8,
+    "dir_softness": 0.35,
+    "tree": true,
+    "character": true
+  },
+  "leaves": {
+    "amount": 80,
+    "lifetime_s": 9.0,
+    "preprocess_s": 9.0,
+    "leaf_height_u": 0.22,
+    "leaf_width_u": 0.15,
+    "emission_boost": 0.5,
+    "crown_center_fraction": 0.5,
+    "crown_half_extents_u": [
+      2.6,
+      1.2,
+      2.6
+    ],
+    "gravity": [
+      0.0,
+      -0.25,
+      0.0
+    ],
+    "velocity_u_per_s": [
+      0.25,
+      0.5
+    ],
+    "spread_deg": 40.0,
+    "damping": [
+      0.05,
+      0.15
+    ],
+    "turbulence_strength": 0.18,
+    "colors": [
+      [
+        0.42,
+        0.58,
+        0.16
+      ],
+      [
+        0.7,
+        0.66,
+        0.14
+      ],
+      [
+        0.92,
+        0.66,
+        0.16
+      ],
+      [
+        0.85,
+        0.45,
+        0.12
+      ]
+    ]
+  }
+}

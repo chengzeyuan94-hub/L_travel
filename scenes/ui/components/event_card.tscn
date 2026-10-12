@@ -1,0 +1,125 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/event_card.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/game/ui/event_cards/card_back_768x1024.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/game/ui/event_cards/card_frame_transparent_768x1024.png" id="3"]
+
+[node name="EventCard" type="Control"]
+custom_minimum_size = Vector2(180, 240)
+mouse_filter = 0
+script = ExtResource("1")
+
+[node name="Back" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="Front" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Illustration" type="TextureRect" parent="Front"]
+unique_name_in_owner = true
+layout_mode = 1
+anchor_left = 0.125
+anchor_top = 0.18
+anchor_right = 0.875
+anchor_bottom = 0.75
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6
+mouse_filter = 2
+
+[node name="Frame" type="TextureRect" parent="Front"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="TitleBack" type="ColorRect" parent="Front"]
+layout_mode = 1
+anchor_left = 0.23
+anchor_top = 0.07
+anchor_right = 0.77
+anchor_bottom = 0.15
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.176471, 0.0901961, 0.0431373, 0.96)
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="Front"]
+unique_name_in_owner = true
+layout_mode = 1
+anchor_left = 0.22
+anchor_top = 0.065
+anchor_right = 0.78
+anchor_bottom = 0.155
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+mouse_filter = 2
+
+[node name="Instruction" type="Label" parent="Front"]
+unique_name_in_owner = true
+layout_mode = 1
+anchor_left = 0.10
+anchor_top = 0.765
+anchor_right = 0.90
+anchor_bottom = 0.82
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+max_lines_visible = 4
+mouse_filter = 2
+
+[node name="Emphasis" type="Label" parent="Front"]
+unique_name_in_owner = true
+layout_mode = 1
+anchor_left = 0.08
+anchor_top = 0.82
+anchor_right = 0.92
+anchor_bottom = 0.88
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+mouse_filter = 2
+
+[node name="Flavor" type="Label" parent="Front"]
+unique_name_in_owner = true
+layout_mode = 1
+anchor_left = 0.10
+anchor_top = 0.88
+anchor_right = 0.90
+anchor_bottom = 0.965
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+mouse_filter = 2

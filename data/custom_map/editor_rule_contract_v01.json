@@ -1,0 +1,18 @@
+{
+  "schema": "lshu.editor.rule_contract.v01",
+  "source": "unchanged E product controls; applies to all registered deck versions",
+  "max_pairs": 2,
+  "max_user": 2,
+  "bank_delta_per_city": {
+    "2": 0,
+    "3": 0,
+    "4": 0
+  },
+  "topology_rules": {
+    "host_max_degree_before": 3,
+    "pair_min_host_steps": 9,
+    "pair_sym_max": 2.0,
+    "map_mid_x": 2048.0,
+    "corridor_steps": 3
+  }
+}

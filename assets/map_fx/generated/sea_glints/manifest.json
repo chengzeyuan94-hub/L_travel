@@ -1,0 +1,25 @@
+{
+  "id": "sea_glints",
+  "source": "incoming_map_fx/jimeng-2026-07-22-6007-纯黑背景上的独立游戏特效素材，固定镜头。画面中只有稀疏分布的短小弧形水面闪光和极....mp4",
+  "source_duration_seconds": 4.0945,
+  "decoder": "avfoundation",
+  "background_mode": "black",
+  "fps": 8.0,
+  "frame_count": 32,
+  "frame_size": [
+    480,
+    268
+  ],
+  "columns": 8,
+  "rows": 4,
+  "atlas": "res://assets/map_fx/generated/sea_glints/sea_glints_atlas.png",
+  "crop_source_pixels": [
+    0,
+    4,
+    1024,
+    572
+  ],
+  "alpha_noise_threshold": 4.0,
+  "alpha_peak": 252.0,
+  "loop_mode": "ping_pong"
+}

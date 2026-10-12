@@ -1,0 +1,63 @@
+{
+  "ruleset_id": "lshu_configurable_v1",
+  "edition_id": "user_confirmed_v1",
+  "schema_version": 1,
+  "content_revision": "handoff_integrity_001_rev1",
+  "display_name": "旅行L叔 · 待配置规则",
+  "min_players": 2,
+  "max_players": 4,
+  "warehouse_capacity": 4,
+  "silver_supply_by_player_count": {},
+  "dice_faces": [],
+  "open_trade_route_reward": 0,
+  "direct_sale_rate": 0,
+  "goods_supply_total_all": 0,
+  "event_deck_exhaust_policy": "RESHUFFLE_DISCARD",
+  "lose_good_selection_policy": "PLAYER_CHOICE",
+  "half_silver_rounding": "CEIL",
+  "half_goods_single_item_policy": "NO_LOSS",
+  "gain_starting_resource_uses_full_starting_grant": true,
+  "expected_counts": {
+    "nations": 16,
+    "cities": 16,
+    "city_cards": 16,
+    "goods": 15,
+    "trade_decks": 8,
+    "trade_cards": 0,
+    "event_definitions": 0,
+    "event_card_instances": 0,
+    "illustrations": 52,
+    "incremental_illustrations": 45,
+    "board_nodes": 54,
+    "board_edges": 57
+  },
+  "unresolved_rule_fields": [
+    "economy",
+    "trade_decks",
+    "events",
+    "city_specialties"
+  ],
+  "player_colors": [
+    {
+      "id": "red",
+      "display_name": "红",
+      "color": "#A54A3F"
+    },
+    {
+      "id": "blue",
+      "display_name": "蓝",
+      "color": "#3F6D8C"
+    },
+    {
+      "id": "green",
+      "display_name": "绿",
+      "color": "#3F7D63"
+    },
+    {
+      "id": "yellow",
+      "display_name": "黄",
+      "color": "#C58B32"
+    }
+  ],
+  "public_configuration_required": true
+}

@@ -1,0 +1,56 @@
+[gd_scene format=4]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_naut3"]
+resource_name = "Weathered stone"
+cull_mode = 2
+albedo_color = Color(0.6509804, 0.60784316, 0.5019608, 1)
+roughness = 0.88
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8x2jl"]
+_surfaces = [{
+"aabb": AABB(-0.47731483, 0, -0.40870765, 0.9347289, 0.67, 0.7783754),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 105,
+"vertex_data": PackedByteArray("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")
+}]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ax3nh"]
+resource_name = "Weathered stone"
+cull_mode = 2
+albedo_color = Color(0.7254902, 0.68235296, 0.5529412, 1)
+roughness = 0.88
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rankp"]
+_surfaces = [{
+"aabb": AABB(-0.23445728, 0, -0.29767388, 0.4972926, 0.35, 0.591244),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 105,
+"vertex_data": PackedByteArray("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")
+}]
+
+[node name="Rock" type="Node3D" unique_id=380268720]
+metadata/asset_id = "rock"
+metadata/source_script = "res://tools/miniworld/bake_editor_assets.gd"
+metadata/ground_origin = true
+metadata/source_bounds = AABB(-0.59731483, 0, -0.47870764, 1.2001501, 0.67, 1.0222777)
+
+[node name="RockOutcrop" type="Node3D" parent="." unique_id=1315148142]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0027602315, 0, -0.032431215)
+
+[node name="WeatheredRock" type="Node3D" parent="RockOutcrop" unique_id=2110800948]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12, 0, -0.07)
+
+[node name="Faceted rock" type="MeshInstance3D" parent="RockOutcrop/WeatheredRock" unique_id=863469319]
+material_override = SubResource("StandardMaterial3D_naut3")
+mesh = SubResource("ArrayMesh_8x2jl")
+
+[node name="Detail_004" type="Node3D" parent="RockOutcrop" unique_id=378371923]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.34, 0, 0.25)
+
+[node name="Faceted rock" type="MeshInstance3D" parent="RockOutcrop/Detail_004" unique_id=1230029861]
+material_override = SubResource("StandardMaterial3D_ax3nh")
+mesh = SubResource("ArrayMesh_rankp")

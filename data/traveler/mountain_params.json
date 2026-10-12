@@ -1,0 +1,151 @@
+{
+  "schema": "silkroad.traveler-mountain-params.v1",
+  "stage": "Lower, more open skyline; scene sunlight and ambient only",
+  "lighting": {
+    "mode": "scene_lit",
+    "direction_to_key_world": [
+      -0.55,
+      0.75,
+      0.9
+    ],
+    "key_color_linear": [
+      1.0,
+      0.93,
+      0.85
+    ],
+    "key_energy": 3.2,
+    "fill_color_linear": [
+      0.68,
+      0.73,
+      1.0
+    ],
+    "fill_energy": 0.24,
+    "albedo_input_color_space": "sRGB; decode before baking",
+    "fog_enabled": true
+  },
+  "placement": {
+    "seed": 20260918,
+    "seed_stride": 77,
+    "x_jitter": 10.0,
+    "z_jitter": 7.0,
+    "base_y": -1.2,
+    "band_y_step": -0.5,
+    "height_range": [
+      0.82,
+      1.22
+    ],
+    "radius_range": [
+      0.86,
+      1.18
+    ]
+  },
+  "bands": [
+    {
+      "z": -62,
+      "count": 7,
+      "h": 22,
+      "r": 21,
+      "span": 150,
+      "rock": [
+        0.4,
+        0.38,
+        0.52
+      ],
+      "snow": [
+        0.9,
+        0.9,
+        0.97
+      ],
+      "ang": 22,
+      "ring": 8
+    },
+    {
+      "z": -102,
+      "count": 7,
+      "h": 34,
+      "r": 31,
+      "span": 210,
+      "rock": [
+        0.52,
+        0.5,
+        0.64
+      ],
+      "snow": [
+        0.93,
+        0.93,
+        0.98
+      ],
+      "ang": 20,
+      "ring": 7
+    },
+    {
+      "z": -152,
+      "count": 6,
+      "h": 46,
+      "r": 41,
+      "span": 280,
+      "rock": [
+        0.63,
+        0.62,
+        0.76
+      ],
+      "snow": [
+        0.96,
+        0.96,
+        0.99
+      ],
+      "ang": 18,
+      "ring": 6
+    }
+  ],
+  "snow": {
+    "start_height": 0.53,
+    "ridge_weight": 0.3,
+    "rock_color": [
+      0.34509803921568627,
+      0.3137254901960784,
+      0.3176470588235294
+    ],
+    "snow_color": [
+      0.94,
+      0.95,
+      0.96
+    ],
+    "value_gradient": 0.06,
+    "boundary_samples": 96,
+    "correlation_min": 0.4,
+    "decision": "Carlos: T7 morphology, positive correlation; obsolete A2 report-only",
+    "rock_palette_reference": "color-followup/reference-rock.png"
+  },
+  "geometry": {
+    "main_spacing": 0.055,
+    "shoulder_spacing": 0.095,
+    "main_attempts": 12000,
+    "shoulder_attempts": 6000,
+    "ridge_lobes": [
+      12,
+      20
+    ],
+    "ridge_amplitude": 0.045,
+    "minimum_angle": 12.1,
+    "quality_iterations": 30
+  },
+  "runtime_mode": "framed_massif",
+  "asset_variant_params_path": "res://data/traveler/mountain_asset_params.json",
+  "framed_asset": {
+    "path": "res://assets/traveler/mountains/changan-framed-massif.res",
+    "report": "res://assets/traveler/mountains/changan-framed-massif.json",
+    "view": "changan",
+    "aspect": 1.7777777777777777,
+    "clipping": "Frozen-camera frustum; remove back-facing triangles; one mesh and surface",
+    "height_scale": 0.48,
+    "peak_width_scale": 0.86,
+    "peak_spacing_scale": 1.12,
+    "lighting": "Scene sun and environment; no baked key, emission, dedicated light or period multiplier",
+    "band_horizontal_offsets": [
+      -5.0,
+      6.0,
+      -2.0
+    ]
+  }
+}

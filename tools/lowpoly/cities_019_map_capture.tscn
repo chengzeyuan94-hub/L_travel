@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://tools/lowpoly/cities_019_map_capture.gd" id="1"]
+
+[node name="City019Comparison" type="Node"]
+script = ExtResource("1")

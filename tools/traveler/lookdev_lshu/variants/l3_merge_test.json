@@ -1,0 +1,605 @@
+{
+  "base": "l1_final",
+  "description": "L3 merge test (not a deliverable): l1_final + l2_final sections/modules + l3_final sections/module, to check that the three look lines compose. Rebuild with the same recipe if l2_final/l3_final change.",
+  "common": {
+    "surface": {
+      "shader": "res://tools/traveler/lookdev_lshu/shaders/l2_surface.gdshader",
+      "roles": {
+        "ground": {
+          "l2_ground_smooth": 1.0,
+          "l2_grain": 0.075,
+          "l2_grain_scale": 24.0,
+          "l2_patch": 0.09,
+          "l2_patch_scale": 0.7,
+          "l2_patch_hue": 0.5,
+          "l2_sand_ripple": 0.05,
+          "l2_path_detail": 1.0,
+          "l2_path_edge": 0.06,
+          "l2_slope_tint": 0.5,
+          "l2_valley": 0.12,
+          "l2_glint": 0.8,
+          "l2_smooth_normal": 0.75,
+          "l2_glint_sand": 0.1,
+          "l2_glint_density": 0.05,
+          "l2_dry_tint": [
+            1.05,
+            1.02,
+            0.86
+          ],
+          "l2_lush_tint": [
+            0.93,
+            1.03,
+            0.95
+          ],
+          "l2_slope_color": "#dcc2a8",
+          "l2_valley_tint": "#e6ecf8"
+        },
+        "skirt": {
+          "l2_strata": 0.08,
+          "l2_lip": 1.0,
+          "l2_lip_height": 0.045,
+          "l2_bottom_dark": 0.15
+        },
+        "cliff": {
+          "l2_strata": 0.05,
+          "l2_strata_freq": 22.0,
+          "l2_height_grad": 0.3,
+          "l2_height_grad_range": 1.2,
+          "facet_jitter": 0.06,
+          "l2_edge": 0.24,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "rock": {
+          "l2_height_grad": 0.25,
+          "l2_height_grad_range": 0.3,
+          "noise_amount": 0.05,
+          "noise_scale": 7.0,
+          "facet_jitter": 0.08,
+          "l2_top_light": 0.06,
+          "l2_edge": 0.35,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "landmark": {
+          "l2_height_grad": 0.22,
+          "l2_height_grad_range": 1.0,
+          "noise_amount": 0.03,
+          "noise_scale": 5.0,
+          "facet_jitter": 0.04,
+          "l2_edge": 0.3,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "tree": {
+          "l2_height_grad": 0.3,
+          "l2_height_grad_range": 0.8,
+          "facet_jitter": 0.07,
+          "l2_edge": 0.1,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "prop": {
+          "l2_height_grad": 0.18,
+          "l2_height_grad_range": 0.4,
+          "facet_jitter": 0.04,
+          "l2_edge": 0.18,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "structure": {
+          "l2_height_grad": 0.2,
+          "l2_height_grad_range": 1.0,
+          "noise_amount": 0.03,
+          "noise_scale": 6.0,
+          "l2_edge": 0.26,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "steps": {
+          "noise_amount": 0.05,
+          "noise_scale": 8.0,
+          "facet_jitter": 0.06,
+          "l2_edge": 0.26,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "vegetation": {
+          "l2_height_grad": 0.25,
+          "l2_height_grad_range": 0.3,
+          "l2_edge": 0.1,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "water": {
+          "shader": "res://tools/traveler/lookdev_lshu/shaders/l2_water.gdshader",
+          "l2_wave": 0.7,
+          "l2_foam": 0.8,
+          "l2_foam_width": 0.07,
+          "l2_foam_bands": 0.55,
+          "l2_shimmer": 0.08,
+          "l2_glint": 0.8,
+          "l2_shallow": "#9fd6cf",
+          "l2_mid": "#53aab3",
+          "l2_deep": "#388996",
+          "l2_wave_scale": 5.0,
+          "l2_foam_color": "#eef8f3",
+          "l2_depth_mid": 0.07,
+          "l2_depth_deep": 0.26
+        },
+        "water_side": {
+          "l2_side_depth": 1.0
+        },
+        "glow": {
+          "l2_glow_glass": 0.0,
+          "l2_glow_flicker": 0.0,
+          "l2_glass_color": "#3d4852"
+        },
+        "scatter": {
+          "shader": "res://tools/traveler/lookdev_lshu/shaders/l2_scatter.gdshader",
+          "roughness": 0.9,
+          "specular_amount": 0.15,
+          "l2_sway": 160.0
+        },
+        "matte": {
+          "l2_edge": 0.2,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        },
+        "metal": {
+          "l2_edge": 0.15,
+          "l2_edge_px": 1.15,
+          "l2_edge_dark": 0.08,
+          "l2_edge_color": "#fff4e2"
+        }
+      }
+    },
+    "fires": {
+      "flame": false
+    },
+    "motion": {
+      "wind_strength": 0.04
+    },
+    "l3": {
+      "character": {
+        "layer_bit": 18,
+        "face_camera_max_deg": 70.0,
+        "rim": {
+          "enabled": true,
+          "color": "sun",
+          "tint": "#ffffff",
+          "strength": 0.5,
+          "power": 2.6,
+          "key_bias": 0.65,
+          "top_bias": 0.3
+        },
+        "contact": {
+          "enabled": true,
+          "radius_m": 0.46,
+          "seated_radius_m": 0.58,
+          "height_m": 0.5,
+          "softness": 1.25,
+          "strength": 0.5
+        },
+        "cup": {
+          "enabled": true,
+          "steam": false,
+          "hold": "both",
+          "radius_m": 0.035,
+          "height_m": 0.07,
+          "offset_m": [
+            0,
+            -0.02,
+            0
+          ],
+          "color": "#efe4d2"
+        },
+        "blossom": {
+          "enabled": true,
+          "emission": 0.8,
+          "scale": 1.0,
+          "growth_s": 5.5
+        }
+      },
+      "fire": {
+        "enabled": true,
+        "flame_height_per_scale": 0.68,
+        "flame_width_per_scale": 0.44,
+        "base_lift_per_scale": 0.11,
+        "effect_point_mult": 0.7,
+        "flame_count": 5,
+        "spark_amount": 10,
+        "spark_lifetime_s": 1.4,
+        "spark_size_per_scale": 0.05,
+        "coals": true,
+        "coal_emission": 1.0
+      },
+      "smoke": {
+        "chimney": {
+          "enabled": true,
+          "puffs": 10,
+          "rise_m": 1.4,
+          "drift_m": [
+            0.35,
+            0.0,
+            -0.12
+          ],
+          "speed": 0.08,
+          "size_start_m": 0.14,
+          "size_end_m": 0.46,
+          "alpha": 0.36,
+          "wobble_m": 0.06,
+          "color": "#dfe3df",
+          "warm": 0.0
+        },
+        "fire": {
+          "enabled": true,
+          "puffs": 8,
+          "rise_m": 1.0,
+          "drift_m": [
+            0.15,
+            0.0,
+            -0.05
+          ],
+          "speed": 0.16,
+          "size_start_m": 0.04,
+          "size_end_m": 0.15,
+          "alpha": 0.16,
+          "wobble_m": 0.04,
+          "color": "#d9d6d0",
+          "warm": 0.0,
+          "start_above_flame": 1.15
+        },
+        "steam": {
+          "puffs": 6,
+          "rise_m": 0.36,
+          "drift_m": [
+            0.04,
+            0.0,
+            0.0
+          ],
+          "speed": 0.3,
+          "size_start_m": 0.035,
+          "size_end_m": 0.1,
+          "alpha": 0.55,
+          "wobble_m": 0.02,
+          "color": "#ffffff",
+          "warm": 0.0
+        }
+      },
+      "lanterns": {
+        "enabled": true,
+        "halo_color": "#ffb66e",
+        "halo_strength": 0.0,
+        "halo_size_m": 0.7,
+        "halo_falloff": 3.0,
+        "flicker": 0.05,
+        "halo_toward_camera_m": -0.22
+      }
+    }
+  },
+  "lights": {
+    "morning": {
+      "surface": {
+        "roles": {
+          "glow": {
+            "l2_glow_glass": 0.6,
+            "emission_strength": 0.08
+          }
+        }
+      },
+      "l3": {
+        "character": {
+          "rim": {
+            "strength": 0.35
+          }
+        },
+        "fire": {
+          "coal_emission": 0.8
+        }
+      }
+    },
+    "day": {
+      "surface": {
+        "roles": {
+          "glow": {
+            "l2_glow_glass": 0.8,
+            "emission_strength": 0.03
+          }
+        }
+      },
+      "l3": {
+        "character": {
+          "rim": {
+            "strength": 0.3
+          }
+        },
+        "fire": {
+          "coal_emission": 0.6
+        }
+      }
+    },
+    "sunset": {
+      "surface": {
+        "roles": {
+          "glow": {
+            "l2_glow_flicker": 0.05
+          },
+          "ground": {
+            "l2_glint": 1.0
+          }
+        }
+      },
+      "l3": {
+        "character": {
+          "rim": {
+            "strength": 0.55,
+            "local_key_radius_m": 0.0
+          }
+        },
+        "fire": {
+          "coal_emission": 1.2
+        },
+        "lanterns": {
+          "halo_strength": 0.15
+        }
+      }
+    },
+    "night": {
+      "surface": {
+        "roles": {
+          "glow": {
+            "l2_glow_flicker": 0.07
+          },
+          "ground": {
+            "l2_glint": 0.5
+          },
+          "water": {
+            "l2_glint": 0.4
+          }
+        }
+      },
+      "l3": {
+        "character": {
+          "rim": {
+            "color": "#9fb6ff",
+            "strength": 0.35,
+            "key_bias": 0.85,
+            "top_bias": 0.08,
+            "local_key_radius_m": 2.5,
+            "local_key_color": "#ffa060"
+          },
+          "contact": {
+            "strength": 0.45
+          }
+        },
+        "fire": {
+          "coal_emission": 2.2
+        },
+        "smoke": {
+          "chimney": {
+            "color": "#b9c3d9",
+            "warm": 0.0,
+            "alpha": 0.42,
+            "self_lit": 0.35
+          },
+          "fire": {
+            "color": "#8a8f9c",
+            "warm": 0.35,
+            "self_lit": 0.2
+          },
+          "steam": {
+            "color": "#c8d2e6"
+          }
+        },
+        "lanterns": {
+          "halo_strength": 0.4
+        }
+      }
+    }
+  },
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_lshu/modules/l2_edges.gd",
+      "cfg": {
+        "crease_deg": 28.0,
+        "proc_roles": [
+          "structure",
+          "steps",
+          "cliff"
+        ]
+      }
+    },
+    {
+      "script": "res://tools/traveler/lookdev_lshu/modules/l2_surface_detail.gd",
+      "cfg": {
+        "map_roles": [
+          "ground",
+          "skirt",
+          "cliff"
+        ],
+        "hide_proc_foam": true,
+        "ripple_visible": {
+          "default": false
+        }
+      }
+    },
+    {
+      "script": "res://tools/traveler/lookdev_lshu/modules/l2_scatter.gd",
+      "cfg": {
+        "role": "scatter",
+        "hide_web_grass": true,
+        "cell": 0.07,
+        "edge_margin": 0.1,
+        "character_radius": 0.26,
+        "near_boost": 1.8,
+        "activity_scale": 0.45,
+        "cluster_frequency": 0.75,
+        "flower_frequency": 1.1,
+        "tuft_tone": [
+          1.3,
+          0.97
+        ],
+        "pebble_ground_mix": 0.3,
+        "density": {
+          "grass": {
+            "tuft": 16.0,
+            "flower": 2.0,
+            "pebble": 0.5
+          },
+          "sand": {
+            "dry": 1.8,
+            "pebble": 2.2
+          },
+          "beach": {
+            "pebble": 1.4,
+            "dry": 1.6
+          },
+          "snow": {
+            "lump": 0.25,
+            "stalk": 1.0,
+            "pebble": 0.35
+          },
+          "wet": {
+            "pebble": 0.8
+          },
+          "path_rim": {
+            "pebble": 2.5
+          },
+          "path_core": {
+            "pebble": 1.2
+          }
+        },
+        "sizes": {
+          "pebble": {
+            "radius": [
+              0.018,
+              0.05
+            ]
+          },
+          "lump": {
+            "radius": [
+              0.08,
+              0.18
+            ]
+          },
+          "tuft": {
+            "scale": [
+              0.8,
+              1.35
+            ]
+          },
+          "leaf": {
+            "scale": [
+              1.2,
+              1.8
+            ]
+          },
+          "flower": {
+            "scale": [
+              1.0,
+              1.5
+            ]
+          }
+        },
+        "flower_colors": {
+          "autumn": [
+            "#f4f1e8",
+            "#f2cf4a",
+            "#eea5b5",
+            "#b9a4e6",
+            "#f2f2f2"
+          ],
+          "harbor": [
+            "#f4f1e8",
+            "#f6d65a",
+            "#f4f4f4"
+          ],
+          "desert": [
+            "#e99a9a",
+            "#f2cf4a"
+          ],
+          "snow": [
+            "#f4f4f4"
+          ]
+        },
+        "dry_colors": {
+          "desert": [
+            "#9a9550",
+            "#a9a15e",
+            "#8b8746"
+          ],
+          "harbor": [
+            "#a8a86a",
+            "#9fa468",
+            "#b3ad78"
+          ],
+          "default": [
+            "#9a9550",
+            "#a39c5c"
+          ]
+        },
+        "stalk_colors": {
+          "default": [
+            "#7a6a58",
+            "#6b5d4f",
+            "#8c7b66"
+          ]
+        },
+        "pebble_colors": {
+          "autumn": [
+            "#9d9b95",
+            "#8e8b84",
+            "#aaa69c"
+          ],
+          "desert": [
+            "#a3715a",
+            "#b4876b",
+            "#8d634f"
+          ],
+          "snow": [
+            "#7d8a92",
+            "#96a2a9",
+            "#6f7b83"
+          ],
+          "harbor": [
+            "#c3bcad",
+            "#d9d2c3",
+            "#a9a498"
+          ]
+        },
+        "lump_colors": {
+          "default": [
+            "#f4f8f9",
+            "#eef4f6"
+          ]
+        },
+        "leaves_per_tree": 40,
+        "leaf_spread": 1.25,
+        "cast_shadow": [
+          "pebble",
+          "lump"
+        ],
+        "near_boost_by_kind": {
+          "lump": 7.0
+        },
+        "lump_stretch": 1.6
+      }
+    },
+    {
+      "script": "res://tools/traveler/lookdev_lshu/modules/l3_life.gd",
+      "cfg": {
+        "measure": true
+      }
+    }
+  ]
+}

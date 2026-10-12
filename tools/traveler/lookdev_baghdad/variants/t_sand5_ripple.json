@@ -1,0 +1,42 @@
+{
+  "base": "c_bands_v4_sunG",
+  "ground_shader": {
+    "shader": "res://tools/traveler/lookdev_baghdad/lookdev_sand.gdshader",
+    "macro_scale": 0.35,
+    "macro_strength": 0.6,
+    "trough_tint": [
+      0.76,
+      0.5,
+      0.34
+    ],
+    "crest_tint": [
+      0.93,
+      0.77,
+      0.55
+    ],
+    "grain_scale": [
+      60.0,
+      4.0
+    ],
+    "grain_strength": 0.18,
+    "grain_far_floor": 1.0,
+    "fleck_scale": [
+      28.0,
+      2.2
+    ],
+    "fleck_density": 0.05,
+    "fleck_dark": 0.35,
+    "ripple_enabled": 1.0,
+    "ripple_angle_deg": 70.0,
+    "ripple_wavelength": 0.28,
+    "ripple_warp": 1.4,
+    "ripple_warp_scale": 0.4,
+    "ripple_strength": 0.35,
+    "ripple_albedo": 0.04,
+    "ripple_start_z": 4.0,
+    "ripple_patch_scale": 0.18,
+    "ripple_patch_cover": 0.55,
+    "ripple_fade_px": 3.0,
+    "glint_strength": 0.0
+  }
+}

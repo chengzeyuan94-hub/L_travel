@@ -1,0 +1,31 @@
+{
+  "version": "v01",
+  "city": {
+    "name": "景德镇瓷业窑坊",
+    "front": "+Z",
+    "up": "+Y",
+    "scale": 1.0
+  },
+  "palette": {
+    "ivory": "e9dec6",
+    "wood": "76533a",
+    "darkwood": "4e392d",
+    "roof": "456366",
+    "rooflight": "698184",
+    "brick": "b97550",
+    "bricklight": "d5996e",
+    "porcelain": "f5f4e6",
+    "cobalt": "245aab",
+    "shadow": "282b30",
+    "gold": "d9b775"
+  },
+  "icon": {
+    "sizes": [
+      1024,
+      256,
+      128
+    ],
+    "background": "transparent",
+    "description": "原创白瓷青花瓶，折枝花纹与双圈口沿，不复制文物图样"
+  }
+}

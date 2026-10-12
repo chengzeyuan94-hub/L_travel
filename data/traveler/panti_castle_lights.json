@@ -1,0 +1,130 @@
+{
+  "schema": "silkroad.panti-castle-lights.v1",
+  "authorization": "Carlos 2026-09-20：深夜银河之外，盘橐城要出现透光灯光。",
+  "enabled_periods": [
+    "midnight"
+  ],
+  "window_emission": {
+    "texture": "res://assets/traveler/panti/processed/fortress-window-emission.png",
+    "color": "#FFB954",
+    "energy": 2.8,
+    "window_count": 10,
+    "placement": "Existing slit interiors, mapped to the original UVs from the accepted fixed camera. Original model and albedo unchanged.",
+    "breath": {
+      "period_s": 6.8,
+      "amplitude": 0.2,
+      "phase_rad": 0.35
+    }
+  },
+  "spill": {
+    "color": "#FFAD6A",
+    "attenuation": 1.5,
+    "shadow_enabled": false,
+    "anchors": [
+      {
+        "id": "gate-interior",
+        "castle_local_position": [
+          -0.03534804900332467,
+          0.04259587070154558,
+          0.3945546945678367
+        ],
+        "camera_offset_u": 0.18,
+        "energy": 1.33,
+        "range_u": 1.45,
+        "screen_anchor_1920x1080": [
+          1037,
+          805
+        ],
+        "breath": {
+          "period_s": 5.6,
+          "amplitude": 0.3,
+          "phase_rad": 0.0
+        }
+      },
+      {
+        "id": "left-market",
+        "castle_local_position": [
+          -0.35824041515522054,
+          0.0272552025978222,
+          0.4116233678748506
+        ],
+        "camera_offset_u": 0.18,
+        "energy": 0.735,
+        "range_u": 1.05,
+        "screen_anchor_1920x1080": [
+          867,
+          816
+        ],
+        "breath": {
+          "period_s": 6.3,
+          "amplitude": 0.28,
+          "phase_rad": 0.9
+        }
+      },
+      {
+        "id": "front-market",
+        "castle_local_position": [
+          0.22902230438579194,
+          0.026257088750204237,
+          0.40803938829276537
+        ],
+        "camera_offset_u": 0.18,
+        "energy": 0.77,
+        "range_u": 1.2,
+        "screen_anchor_1920x1080": [
+          1191,
+          817
+        ],
+        "breath": {
+          "period_s": 4.9,
+          "amplitude": 0.32,
+          "phase_rad": 2.1
+        }
+      },
+      {
+        "id": "right-market",
+        "castle_local_position": [
+          0.45343738523729094,
+          0.028773280992356914,
+          0.10856392490376689
+        ],
+        "camera_offset_u": 0.18,
+        "energy": 0.595,
+        "range_u": 1.0,
+        "screen_anchor_1920x1080": [
+          1459,
+          815
+        ],
+        "breath": {
+          "period_s": 6.9,
+          "amplitude": 0.27,
+          "phase_rad": 3.4
+        }
+      },
+      {
+        "id": "upper-gallery",
+        "castle_local_position": [
+          0.17863234508262302,
+          0.2135346062046329,
+          0.3143392824335901
+        ],
+        "camera_offset_u": 0.18,
+        "energy": 0.525,
+        "range_u": 0.9,
+        "screen_anchor_1920x1080": [
+          1194,
+          678
+        ],
+        "breath": {
+          "period_s": 5.3,
+          "amplitude": 0.3,
+          "phase_rad": 4.7
+        }
+      }
+    ]
+  },
+  "transition": {
+    "duration_s": 8.0,
+    "driver": "viewer shared morning-midnight transition weight, multiplied into all energies; zero restores the original material"
+  }
+}

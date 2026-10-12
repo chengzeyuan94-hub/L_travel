@@ -1,0 +1,280 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Theme" path="res://assets/ui_theme.tres" id="1_theme"]
+[ext_resource type="Script" path="res://scripts/ui/player_setup_screen.gd" id="2_script"]
+[ext_resource type="Texture2D" path="res://assets/game/ui/ui_hud_scroll_v1.png" id="3_parchment"]
+[ext_resource type="Texture2D" path="res://assets/game/ui/ui_hud_topbar_wood_v1.png" id="4_topbar"]
+[ext_resource type="Texture2D" path="res://assets/game/ui/ui_hud_red_plaque_v1.png" id="5_plaque"]
+[node name="PlayerSetupScreen" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_theme")
+script = ExtResource("2_script")
+
+[node name="ParchmentBackground" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_parchment")
+expand_mode = 1
+stretch_mode = 6
+modulate = Color(1, 0.98, 0.91, 1)
+mouse_filter = 2
+
+[node name="BackgroundWash" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.91, 0.82, 0.64, 0.54)
+mouse_filter = 2
+
+[node name="TopBar" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 64.0
+grow_horizontal = 2
+texture = ExtResource("4_topbar")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TitlePlaque" type="TextureRect" parent="TopBar"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 8.0
+offset_right = 268.0
+offset_bottom = 56.0
+texture = ExtResource("5_plaque")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TitleLabel" type="Label" parent="TopBar/TitlePlaque"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "组建你的商旅"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContentCaption" type="Label" parent="TopBar"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -12.0
+offset_right = 150.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "丝路十六城 · 正式规则 · 玩家 VS 电脑"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="Button" parent="TopBar"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -126.0
+offset_top = -18.0
+offset_right = -24.0
+offset_bottom = 18.0
+grow_horizontal = 0
+grow_vertical = 2
+flat = true
+text = "返回标题"
+
+[node name="BodyMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 14
+
+[node name="PageColumn" type="VBoxContainer" parent="BodyMargin"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="CardRow" type="HBoxContainer" parent="BodyMargin/PageColumn"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+theme_override_constants/separation = 24
+
+[node name="HumanCard" type="PanelContainer" parent="BodyMargin/PageColumn/CardRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 348)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="BodyMargin/PageColumn/CardRow/HumanCard"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 18
+
+[node name="Column" type="VBoxContainer" parent="BodyMargin/PageColumn/CardRow/HumanCard/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Heading" type="Label" parent="BodyMargin/PageColumn/CardRow/HumanCard/Margin/Column"]
+layout_mode = 2
+text = "你的商旅"
+horizontal_alignment = 1
+
+[node name="NameCaption" type="Label" parent="BodyMargin/PageColumn/CardRow/HumanCard/Margin/Column"]
+layout_mode = 2
+text = "名称"
+
+[node name="NameEdit" type="LineEdit" parent="BodyMargin/PageColumn/CardRow/HumanCard/Margin/Column"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+max_length = 12
+placeholder_text = "玩家"
+
+[node name="ColorCaption" type="Label" parent="BodyMargin/PageColumn/CardRow/HumanCard/Margin/Column"]
+layout_mode = 2
+text = "颜色"
+
+[node name="ColorRow" type="HBoxContainer" parent="BodyMargin/PageColumn/CardRow/HumanCard/Margin/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="Divider" type="HSeparator" parent="BodyMargin/PageColumn/CardRow/HumanCard/Margin/Column"]
+layout_mode = 2
+
+[node name="OpponentLabel" type="Label" parent="BodyMargin/PageColumn/CardRow/HumanCard/Margin/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "对手：电脑商旅 · 自动配色"
+horizontal_alignment = 1
+
+[node name="AIColorLabel" type="Label" parent="BodyMargin/PageColumn/CardRow/HumanCard/Margin/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "电脑商旅：—"
+horizontal_alignment = 1
+
+[node name="InfoCard" type="PanelContainer" parent="BodyMargin/PageColumn/CardRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 348)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="BodyMargin/PageColumn/CardRow/InfoCard"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 18
+
+[node name="Column" type="VBoxContainer" parent="BodyMargin/PageColumn/CardRow/InfoCard/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Heading" type="Label" parent="BodyMargin/PageColumn/CardRow/InfoCard/Margin/Column"]
+layout_mode = 2
+text = "启程情报"
+horizontal_alignment = 1
+
+[node name="CityAspect" type="Control" parent="BodyMargin/PageColumn/CardRow/InfoCard/Margin/Column"]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CityIllustration" type="TextureRect" parent="BodyMargin/PageColumn/CardRow/InfoCard/Margin/Column/CityAspect"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_filter = 1
+expand_mode = 1
+stretch_mode = 6
+
+[node name="HomeCityLabel" type="Label" parent="BodyMargin/PageColumn/CardRow/InfoCard/Margin/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "起始城市：—"
+horizontal_alignment = 1
+
+[node name="StartingGrantRow" type="HBoxContainer" parent="BodyMargin/PageColumn/CardRow/InfoCard/Margin/Column"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 6
+
+[node name="TransportRow" type="HBoxContainer" parent="BodyMargin/PageColumn/CardRow/InfoCard/Margin/Column"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 18
+
+[node name="CamelButton" type="Button" parent="BodyMargin/PageColumn/CardRow/InfoCard/Margin/Column/TransportRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+toggle_mode = true
+text = "骆驼"
+
+[node name="ShipButton" type="Button" parent="BodyMargin/PageColumn/CardRow/InfoCard/Margin/Column/TransportRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+toggle_mode = true
+text = "商船"
+
+[node name="TransportHint" type="Label" parent="BodyMargin/PageColumn/CardRow/InfoCard/Margin/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "内陆城市只能选择骆驼"
+horizontal_alignment = 1
+
+[node name="GateLabel" type="Label" parent="BodyMargin/PageColumn"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="StartButton" type="Button" parent="BodyMargin/PageColumn"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(224, 56)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "启程"

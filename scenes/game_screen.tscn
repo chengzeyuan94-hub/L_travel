@@ -1,0 +1,520 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Theme" path="res://assets/ui_theme.tres" id="1_theme"]
+[ext_resource type="Script" path="res://scripts/ui/game_screen.gd" id="2_script"]
+[ext_resource type="Script" path="res://scripts/ui/board_view.gd" id="3_board"]
+[ext_resource type="PackedScene" path="res://scenes/ui/event_dialog.tscn" id="4_event"]
+[ext_resource type="PackedScene" path="res://scenes/ui/components/event_draw_overlay.tscn" id="5_event_draw"]
+[ext_resource type="PackedScene" path="res://scenes/ui/components/city_lore_card.tscn" id="6_city_lore"]
+
+[node name="GameScreen" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_theme")
+script = ExtResource("2_script")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.85098, 0.764706, 0.603922, 1)
+
+[node name="RootMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 12
+
+[node name="RootVBox" type="VBoxContainer" parent="RootMargin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="ModeBanner" type="Label" parent="RootMargin/RootVBox"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.647059, 0.290196, 0.247059, 1)
+theme_override_font_sizes/font_size = 16
+text = "内容测试模式·非完整原版牌组"
+horizontal_alignment = 1
+
+[node name="TopBar" type="HBoxContainer" parent="RootMargin/RootVBox"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="CurrentPlayerLabel" type="Label" parent="RootMargin/RootVBox/TopBar"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 20
+text = "当前：-"
+
+[node name="PhaseLabel" type="Label" parent="RootMargin/RootVBox/TopBar"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 18
+text = "阶段：-"
+
+[node name="TransportLabel" type="Label" parent="RootMargin/RootVBox/TopBar"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 18
+text = "交通：-"
+
+[node name="RoundLabel" type="Label" parent="RootMargin/RootVBox/TopBar"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 18
+text = "轮次：1"
+
+[node name="SupplyLabel" type="Label" parent="RootMargin/RootVBox/TopBar"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 18
+text = "公共白银：0"
+
+[node name="DiceLabel" type="Label" parent="RootMargin/RootVBox/TopBar"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 18
+text = "骰面：-"
+
+[node name="EndgameBanner" type="Label" parent="RootMargin/RootVBox"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.647059, 0.290196, 0.247059, 1)
+theme_override_font_sizes/font_size = 16
+text = "终局已触发：补齐本轮后结算"
+horizontal_alignment = 1
+
+[node name="MainRow" type="HBoxContainer" parent="RootMargin/RootVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+
+[node name="BoardView" type="Control" parent="RootMargin/RootVBox/MainRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(720, 480)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("3_board")
+
+[node name="SidePanel" type="VBoxContainer" parent="RootMargin/RootVBox/MainRow"]
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="PlayersTitle" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 16
+text = "玩家"
+
+[node name="PlayersBox" type="VBoxContainer" parent="RootMargin/RootVBox/MainRow/SidePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="WarehouseTitle" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 16
+text = "货仓（4）"
+
+[node name="WarehouseSlots" type="HBoxContainer" parent="RootMargin/RootVBox/MainRow/SidePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Slot0" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/WarehouseSlots"]
+custom_minimum_size = Vector2(78, 36)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 14
+text = "空"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot1" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/WarehouseSlots"]
+custom_minimum_size = Vector2(78, 36)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 14
+text = "空"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot2" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/WarehouseSlots"]
+custom_minimum_size = Vector2(78, 36)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 14
+text = "空"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot3" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/WarehouseSlots"]
+custom_minimum_size = Vector2(78, 36)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 14
+text = "空"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TradeScroll" type="ScrollContainer" parent="RootMargin/RootVBox/MainRow/SidePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="TradePanel" type="VBoxContainer" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+
+[node name="TradeTitleLabel" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 17
+text = "城市贸易"
+
+[node name="TradeCardHeading" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 14
+text = "当前商情"
+
+[node name="TradeCardLabel" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.490196, 0.352941, 0.227451, 1)
+theme_override_font_sizes/font_size = 13
+autowrap_mode = 2
+
+[node name="GiveLabel" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 14
+text = "交付"
+
+[node name="GiveOption" type="OptionButton" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ReceiveLabel" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 14
+text = "获得"
+
+[node name="ReceiveOption" type="OptionButton" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TradePreviewHeading" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 14
+text = "兑换预览"
+
+[node name="TradePreviewLabel" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.490196, 0.352941, 0.227451, 1)
+theme_override_font_sizes/font_size = 13
+autowrap_mode = 2
+
+[node name="TradeStatusLabel" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.647059, 0.290196, 0.247059, 1)
+theme_override_font_sizes/font_size = 13
+autowrap_mode = 2
+
+[node name="TradeButtonRow" type="HBoxContainer" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="ExchangeOneButton" type="Button" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel/TradeButtonRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "兑换 1 次"
+
+[node name="ExchangeMaxButton" type="Button" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel/TradeButtonRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "全部兑换"
+
+[node name="SaleTitle" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 15
+text = "直接出售"
+
+[node name="SaleRows" type="VBoxContainer" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="SalePreviewLabel" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.490196, 0.352941, 0.227451, 1)
+theme_override_font_sizes/font_size = 13
+text = "预计获得：0 白银"
+
+[node name="SaleButtonRow" type="HBoxContainer" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="SaleButton" type="Button" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel/SaleButtonRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "直接出售"
+
+[node name="DiscardButton" type="Button" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel/SaleButtonRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "丢弃"
+
+[node name="SkipTradeButton" type="Button" parent="RootMargin/RootVBox/MainRow/SidePanel/TradeScroll/TradePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "跳过贸易"
+
+[node name="ActionRow" type="HBoxContainer" parent="RootMargin/RootVBox/MainRow/SidePanel"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="RollButton" type="Button" parent="RootMargin/RootVBox/MainRow/SidePanel/ActionRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "掷骰"
+
+[node name="StayButton" type="Button" parent="RootMargin/RootVBox/MainRow/SidePanel/ActionRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "停留0步"
+
+[node name="ConfirmMoveButton" type="Button" parent="RootMargin/RootVBox/MainRow/SidePanel/ActionRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "确认移动"
+
+[node name="SwitchButton" type="Button" parent="RootMargin/RootVBox/MainRow/SidePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "港口换乘"
+
+[node name="ProceedButton" type="Button" parent="RootMargin/RootVBox/MainRow/SidePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "继续（开商道/贸易）"
+
+[node name="EndTurnButton" type="Button" parent="RootMargin/RootVBox/MainRow/SidePanel"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "结束回合"
+
+[node name="FeedbackLabel" type="Label" parent="RootMargin/RootVBox/MainRow/SidePanel"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.490196, 0.352941, 0.227451, 1)
+theme_override_font_sizes/font_size = 15
+autowrap_mode = 2
+
+[node name="CityLoreLayer" type="CanvasLayer" parent="."]
+layer = 70
+
+[node name="CityLoreCard" parent="CityLoreLayer" instance=ExtResource("6_city_lore")]
+unique_name_in_owner = true
+
+[node name="EventDrawLayer" type="CanvasLayer" parent="."]
+layer = 80
+
+[node name="EventDrawOverlay" parent="EventDrawLayer" instance=ExtResource("5_event_draw")]
+unique_name_in_owner = true
+
+[node name="EventLayer" type="CanvasLayer" parent="."]
+layer = 90
+
+[node name="EventDialog" parent="EventLayer" instance=ExtResource("4_event")]
+unique_name_in_owner = true
+
+[node name="HandoverLayer" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="HandoverOverlay" type="Control" parent="HandoverLayer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+
+[node name="HandoverDimmer" type="ColorRect" parent="HandoverLayer/HandoverOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+color = Color(0.184314, 0.164706, 0.141176, 0.55)
+
+[node name="HandoverCenter" type="CenterContainer" parent="HandoverLayer/HandoverOverlay"]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HandoverPanel" type="PanelContainer" parent="HandoverLayer/HandoverOverlay/HandoverCenter"]
+custom_minimum_size = Vector2(420, 0)
+layout_mode = 2
+
+[node name="HandoverMargin" type="MarginContainer" parent="HandoverLayer/HandoverOverlay/HandoverCenter/HandoverPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 24
+
+[node name="HandoverVBox" type="VBoxContainer" parent="HandoverLayer/HandoverOverlay/HandoverCenter/HandoverPanel/HandoverMargin"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="HandoverLabel" type="Label" parent="HandoverLayer/HandoverOverlay/HandoverCenter/HandoverPanel/HandoverMargin/HandoverVBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 24
+text = "请将设备交给下一位玩家"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="HandoverButton" type="Button" parent="HandoverLayer/HandoverOverlay/HandoverCenter/HandoverPanel/HandoverMargin/HandoverVBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "已交接，继续"
+
+[node name="ResultLayer" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="ResultOverlay" type="Control" parent="ResultLayer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+
+[node name="ResultDimmer" type="ColorRect" parent="ResultLayer/ResultOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+color = Color(0.184314, 0.164706, 0.141176, 0.65)
+
+[node name="ResultCenter" type="CenterContainer" parent="ResultLayer/ResultOverlay"]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResultPanel" type="PanelContainer" parent="ResultLayer/ResultOverlay/ResultCenter"]
+custom_minimum_size = Vector2(480, 0)
+layout_mode = 2
+
+[node name="ResultMargin" type="MarginContainer" parent="ResultLayer/ResultOverlay/ResultCenter/ResultPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 24
+
+[node name="ResultVBox" type="VBoxContainer" parent="ResultLayer/ResultOverlay/ResultCenter/ResultPanel/ResultMargin"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="ResultTitleLabel" type="Label" parent="ResultLayer/ResultOverlay/ResultCenter/ResultPanel/ResultMargin/ResultVBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 28
+text = "结算"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="ResultListLabel" type="Label" parent="ResultLayer/ResultOverlay/ResultCenter/ResultPanel/ResultMargin/ResultVBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.141176, 1)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="ResultButtonRow" type="HBoxContainer" parent="ResultLayer/ResultOverlay/ResultCenter/ResultPanel/ResultMargin/ResultVBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="RestartButton" type="Button" parent="ResultLayer/ResultOverlay/ResultCenter/ResultPanel/ResultMargin/ResultVBox/ResultButtonRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 44)
+layout_mode = 2
+text = "再来一局"
+
+[node name="BackTitleButton" type="Button" parent="ResultLayer/ResultOverlay/ResultCenter/ResultPanel/ResultMargin/ResultVBox/ResultButtonRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 44)
+layout_mode = 2
+text = "返回标题"

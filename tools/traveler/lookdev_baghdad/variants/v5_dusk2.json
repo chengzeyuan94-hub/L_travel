@@ -1,0 +1,110 @@
+{
+  "light": {
+    "sunel": -8.5,
+    "sunaz": -16.5,
+    "color": [
+      1.0,
+      0.66,
+      0.36
+    ],
+    "energy": 3.4,
+    "angular_distance": 1.0,
+    "cool_fill_energy": 0.45,
+    "cool_fill_color": [
+      0.5,
+      0.5,
+      0.78
+    ]
+  },
+  "env": {
+    "fog_light_color": [
+      1.0,
+      0.64,
+      0.4
+    ],
+    "fog_density": 0.3,
+    "fog_aerial_perspective": 0.32,
+    "glow_intensity": 0.45,
+    "glow_bloom": 0.28,
+    "ambient_light_color": [
+      0.5,
+      0.42,
+      0.56
+    ],
+    "ambient_light_energy": 0.42,
+    "adjustment_saturation": 1.1,
+    "adjustment_contrast": 1.04,
+    "tonemap_white": 1.7
+  },
+  "sky": {
+    "shader": "res://tools/traveler/lookdev_baghdad/lookdev_sunset_sky.gdshader",
+    "zenith_color": [
+      0.24,
+      0.21,
+      0.46
+    ],
+    "horizon_color": [
+      1.0,
+      0.56,
+      0.22
+    ],
+    "horizon_falloff": 0.26,
+    "ground_horizon_color": [
+      0.8,
+      0.44,
+      0.24
+    ],
+    "ground_bottom_color": [
+      0.22,
+      0.14,
+      0.18
+    ],
+    "sun_disc_color": [
+      1.0,
+      0.92,
+      0.72
+    ],
+    "sun_disc_energy": 3.4,
+    "sun_radius_deg": 1.0,
+    "sun_halo_radius_deg": 14.0,
+    "sun_halo_strength": 0.5,
+    "cloud_opacity": 0.0,
+    "cumulus_enabled": 1.0,
+    "cloud_a_height": 1.0,
+    "cloud_a_scale": 0.55,
+    "cloud_a_coverage": 0.48,
+    "cloud_a_offset": [
+      3.1,
+      7.7
+    ],
+    "cloud_b_height": 0.35,
+    "cloud_b_scale": 0.9,
+    "cloud_b_coverage": 0.6,
+    "cloud_b_offset": [
+      11.3,
+      2.9
+    ],
+    "cloud_lit_color": [
+      1.0,
+      0.8,
+      0.62
+    ],
+    "cloud_shadow_color": [
+      0.4,
+      0.25,
+      0.38
+    ],
+    "cloud_rim_color": [
+      1.0,
+      0.8,
+      0.4
+    ],
+    "cloud_rim_strength": 2.2,
+    "cloud_rim_step": 0.06,
+    "cloud_sun_sigma_deg": 50.0,
+    "cloud_alpha": 0.95,
+    "cloud_horizon_fade": 0.1,
+    "cloud_max_elevation": 0.8,
+    "cloud_underglow": 0.3
+  }
+}

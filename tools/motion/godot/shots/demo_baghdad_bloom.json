@@ -1,0 +1,44 @@
+{
+  "target": "baghdad",
+  "duration": 3.0,
+  "warmup_frames": 45,
+  "baghdad": {
+    "start": 2.0,
+    "rate": 1.0
+  },
+  "note": "demo: rain world, the potato flowers opening (cycle t 2..5 s), slow push in on both worlds' cameras",
+  "camera": {
+    "mode": "keys",
+    "space": "act",
+    "interp": "linear",
+    "keys": [
+      {
+        "t": 0.0,
+        "pos": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "look": [
+          0.0,
+          0.0,
+          -10.0
+        ],
+        "ease": "inOutSine"
+      },
+      {
+        "t": 3.0,
+        "pos": [
+          0.05,
+          -0.01,
+          -0.9
+        ],
+        "look": [
+          0.1,
+          -0.05,
+          -10.0
+        ]
+      }
+    ]
+  }
+}

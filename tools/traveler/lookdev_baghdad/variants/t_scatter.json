@@ -1,0 +1,18 @@
+{
+  "base": "c_bands_v4_sunG",
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_baghdad/lookdev_extra_scatter.gd",
+      "cfg": {
+        "seed": 20260923,
+        "pebble_count": 9000,
+        "patch_count": 2800,
+        "grass_count": 600,
+        "cluster_count": 70
+      }
+    }
+  ],
+  "camera": {
+    "dof_enabled": false
+  }
+}

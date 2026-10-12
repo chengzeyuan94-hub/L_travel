@@ -1,0 +1,12 @@
+{
+  "morning": {
+    "env": {
+      "glow_enabled": false
+    }
+  },
+  "midnight": {
+    "env": {
+      "glow_enabled": false
+    }
+  }
+}

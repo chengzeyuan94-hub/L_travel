@@ -1,0 +1,22 @@
+/* The game's CJK faces for motion pages rendered by tools/motion/html/render.mjs.
+   local() first (fonts activated on this Mac), then the system asset files served at /__fonts/.
+   Verified by rendering (2026-09-27): by name "Wawati SC", "Yuanti SC", "Hannotate SC", "Kaiti SC", "Songti SC",
+   "Weibei SC", "Yuppy SC", "PingFang SC", "Libian SC", "HanziPen SC", "Baoli SC" all resolve; "STXingkai" does not —
+   use MotionXingkai (served file). Motion* aliases below always resolve through /__fonts/. */
+@font-face { font-family: "Wawati SC"; src: local("Wawati SC"), local("WawaSC-Regular"), url("/__fonts/WawaSC-Regular.otf") format("opentype"); }
+@font-face { font-family: "Weibei SC"; src: local("Weibei SC Bold"), local("WeibeiSC-Bold"), url("/__fonts/WeibeiSC-Bold.otf") format("opentype"); font-weight: 400 900; }
+@font-face { font-family: "Yuppy SC"; src: local("Yuppy SC"), local("YuppySC-Regular"), url("/__fonts/YuppySC-Regular.otf") format("opentype"); }
+@font-face { font-family: "MotionYuanti"; src: local("Yuanti SC"), local("YuantiSC-Regular"), url("/__fonts/Yuanti.ttc"); font-weight: 400; }
+@font-face { font-family: "MotionYuanti"; src: local("Yuanti SC Bold"), local("YuantiSC-Bold"), url("/__fonts/Yuanti.ttc"); font-weight: 700; }
+@font-face { font-family: "MotionKaiti"; src: local("Kaiti SC"), local("STKaiti"), url("/__fonts/Kaiti.ttc"); }
+@font-face { font-family: "MotionXingkai"; src: local("Xingkai SC"), local("STXingkai"), url("/__fonts/Xingkai.ttc"); }
+@font-face { font-family: "MotionHannotate"; src: local("Hannotate SC"), local("HannotateSC-W5"), url("/__fonts/Hannotate.ttc"); }
+@font-face { font-family: "MotionSongti"; src: local("Songti SC"), local("STSongti-SC-Regular"), url("/__fonts/Songti.ttc"); }
+:root {
+  --font-headline: "Wawati SC", "MotionYuanti", "PingFang SC", sans-serif;
+  --font-body: "Yuanti SC", "MotionYuanti", "PingFang SC", sans-serif;
+  --font-brush: "MotionXingkai", "Kaiti SC", serif;         /* "STXingkai" by name does NOT resolve in headless Chrome */
+  --font-hand: "Hannotate SC", "MotionHannotate", "MotionYuanti", sans-serif;   /* L叔's handwriting */
+  --font-kai: "Kaiti SC", "MotionKaiti", serif;
+  --font-song: "Songti SC", "MotionSongti", serif;
+}

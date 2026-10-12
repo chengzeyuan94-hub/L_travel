@@ -1,0 +1,272 @@
+{
+  "schema": "silkroad.sound-director.v1",
+  "_note": "SoundDirector（scripts/audio/sound_director.gd，方案 docs/design/shanhe-luren/sound-20260926/plan.md §3.2–3.4）的参数：商旅设置页、加载页、对局。音量都是 volume_db，叠在文件自身响度上（底床约 −30 到 −33 LUFS，一次性约 −20 到 −25）。这是起点值，不是冻结值，随时可调；缺哪个键就用脚本里的默认值。",
+  "_music": "音乐 = 开场 BGM（title_bgm_loop_v1.wav，2026-09-27 重渲到 −1.1 dBTP，比原来低 1.6 dB，所以这里的数都比方案原值高 1.6：设置页 −12.4 = 原 −14，对局 −16.4 = 原 −18）。开场一隐藏就从开场音乐停下的位置接着放（设置页 A 方案），设置页、加载页一直放。对局专用曲「一路向西」（assets/audio/music/match_bgm_v1.ogg，−19 LUFS，3 分 41 秒循环，工具 tools/audio/match_music/）：进对局界面时开场曲按 match_xfade_sec 等功率交叉到它（从头放），开场曲同时按 handoff_sec 压到 match_db；对局里 match_track_db（实测对局里只算音乐约 −36 LUFS，和原来开场曲在对局里的 −35.9 一样）；再来一局的加载页留在对局曲上用 match_track_loading_db，不重头。对局曲本身就压着高频做的，音乐总线的对局低通 match_lowpass_hz 设成 20000 = 关掉（原来 5000 是给开场曲用的）。",
+  "music": {
+    "setup_db": -12.4,
+    "loading_db": -13.4,
+    "match_db": -16.4,
+    "handoff_sec": 1.5,
+    "fade_in_sec": 2.5,
+    "fade_out_sec": 0.5,
+    "match_lowpass_hz": 20000.0,
+    "event_duck_db": -4.0,
+    "match_track_db": -17.0,
+    "match_track_loading_db": -15.0,
+    "match_xfade_sec": 5.0
+  },
+  "_mixes": "环境底床（2026-09-27 实录后海路、交叉点各抬 1 dB，和陆路齐平在 −38 到 −40 LUFS）：每个状态各层的 volume_db，没写的层 = 静音；状态之间按等功率交叉。setup / loading 是两个页面，land / sea / port 是对局底床（看当前玩家停在陆路、海路还是海陆交叉点），dawn / noon / dusk / twilight 是对局时段层（3D 棋盘的 day_stage()）。",
+  "sounds": {
+    "wind_open": "wind_open_bed_loop_v1",
+    "breeze": "breeze_hiss_bed_loop_v1",
+    "waves": "waves_shore_bed_loop_v1",
+    "birds": "birds_day_bed_loop_v1",
+    "leaves": "wind_leaves_bed_loop_v1"
+  },
+  "mixes": {
+    "setup": {
+      "wind_open": -14.0
+    },
+    "loading": {
+      "wind_open": -8.0
+    },
+    "land": {
+      "wind_open": -9.0,
+      "breeze": -14.0
+    },
+    "sea": {
+      "waves": -9.0
+    },
+    "port": {
+      "waves": -13.0,
+      "wind_open": -12.0
+    },
+    "dawn": {
+      "birds": -12.0
+    },
+    "noon": {
+      "birds": -18.0
+    },
+    "dusk": {
+      "leaves": -14.0,
+      "birds": -20.0
+    },
+    "twilight": {}
+  },
+  "fades": {
+    "page_in_sec": 1.5,
+    "page_out_sec": 0.8,
+    "match_in_sec": 2.5,
+    "match_out_sec": 0.8,
+    "bed_xfade_sec": 3.0,
+    "bed_dwell_sec": 6.0,
+    "tod_fade_sec": 6.0
+  },
+  "match_lowpass_hz": 7000.0,
+  "loading": {
+    "_note": "加载页：骆驼走着时驼铃，小花每开一朵叮一下（宫商角徵羽），走满庆祝一串铃",
+    "bells": {
+      "sound": "bell_small_ding_v1",
+      "interval_sec": [
+        0.9,
+        1.6
+      ],
+      "volume_db": -18.0,
+      "pitch": [
+        0.8,
+        0.9
+      ]
+    },
+    "bloom": {
+      "sound": "bell_small_ding_v1",
+      "volume_db": -12.0,
+      "pitches": [
+        1.0,
+        1.122,
+        1.26,
+        1.498,
+        1.682
+      ]
+    },
+    "done": {
+      "sound": "bell_small_jingle_v1",
+      "volume_db": -8.0
+    }
+  },
+  "camel_bells": {
+    "_note": "对局里骆驼在走（AudioManager 的移动循环在响且是骆驼）时叠的驼铃；密度 Carlos 2026-09-27 定为不变",
+    "sound": "bell_small_ding_v1",
+    "interval_sec": [
+      1.1,
+      2.2
+    ],
+    "volume_db": -16.0,
+    "pitch": [
+      0.78,
+      0.9
+    ]
+  },
+  "_events": "事件卡翻开后 delay_sec 响一声点缀。事件定义里有 sfx 字段就用它（取值是 sfx 表里的名字，趣味事件扩展会填），没有就按 sentiment：positive / negative / neutral（neutral 分陆地、海上）。趣味事件还可以带 sfx_bed（同时垫一声，比表里的音量再低 bed_db）和 sfx_cues（layer 同时叠一声；winner / reveal_win / reveal_lose / confirm 由那一步的界面调 SoundDirector.play_event_cue(event, cue)），取值都是 sfx 表里的名字。",
+  "events": {
+    "delay_sec": 0.12,
+    "bed_db": -4.0,
+    "by_sentiment": {
+      "positive": "bell_jingle",
+      "negative": "wind_gust",
+      "neutral_land": "hooves_burst",
+      "neutral_sea": "waves_swell"
+    },
+    "sfx": {
+      "bell_jingle": {
+        "sounds": [
+          "bell_small_jingle_v1"
+        ],
+        "volume_db": -10.0,
+        "pitch": [
+          0.98,
+          1.02
+        ]
+      },
+      "wind_gust": {
+        "sounds": [
+          "wind_leaves_gust_v1"
+        ],
+        "volume_db": -4.0,
+        "pitch": [
+          0.95,
+          1.05
+        ]
+      },
+      "hooves_burst": {
+        "sounds": [
+          "hooves_burst_v1"
+        ],
+        "volume_db": -4.0,
+        "pitch": [
+          0.97,
+          1.03
+        ]
+      },
+      "waves_swell": {
+        "sounds": [
+          "waves_swell_v1"
+        ],
+        "volume_db": -10.0,
+        "pitch": [
+          0.97,
+          1.03
+        ]
+      },
+      "temple_bell": {
+        "sounds": [
+          "temple_bell_short_v1"
+        ],
+        "volume_db": -10.0,
+        "pitch": [
+          0.98,
+          1.02
+        ]
+      },
+      "bird_call": {
+        "sounds": [
+          "bird_call_v1",
+          "bird_call_v2",
+          "bird_call_v3",
+          "bird_call_v4",
+          "bird_call_v5"
+        ],
+        "volume_db": -8.0,
+        "pitch": [
+          0.95,
+          1.05
+        ]
+      },
+      "campfire_crackle": {
+        "sounds": [
+          "campfire_crackle_v1"
+        ],
+        "volume_db": -10.0,
+        "pitch": [
+          0.97,
+          1.03
+        ]
+      },
+      "rain_burst": {
+        "sounds": [
+          "rain_burst_v1"
+        ],
+        "volume_db": -10.0,
+        "pitch": [
+          0.97,
+          1.03
+        ]
+      },
+      "oars_burst": {
+        "sounds": [
+          "oars_burst_v1"
+        ],
+        "volume_db": -10.0,
+        "pitch": [
+          0.97,
+          1.03
+        ]
+      }
+    }
+  },
+  "route_open": [
+    {
+      "sound": "bell_small_jingle_v1",
+      "volume_db": -6.0,
+      "pitch": 1.0,
+      "delay_sec": 0.0
+    },
+    {
+      "sound": "bell_small_ding_v1",
+      "volume_db": -12.0,
+      "pitch": 1.5,
+      "delay_sec": 0.25
+    }
+  ],
+  "your_turn": {
+    "sound": "bell_small_ding_v1",
+    "volume_db": -12.0,
+    "pitch": 1.26
+  },
+  "last_round": {
+    "sound": "temple_bell_v1",
+    "volume_db": -8.0,
+    "duck_db": -4.0,
+    "duck_sec": 4.0
+  },
+  "time_warning": {
+    "sound": "temple_bell_short_v1",
+    "volume_db": -12.0,
+    "at_sec": 60.0
+  },
+  "game_over": {
+    "sound": "temple_bell_v1",
+    "volume_db": -6.0,
+    "ambience_db": -12.0,
+    "music_db": -6.0,
+    "fade_sec": 2.0,
+    "win": [
+      {
+        "sound": "bell_small_jingle_v1",
+        "volume_db": -6.0,
+        "pitch": 1.0,
+        "delay_sec": 1.2
+      },
+      {
+        "sound": "bell_small_jingle_v1",
+        "volume_db": -6.0,
+        "pitch": 1.26,
+        "delay_sec": 1.8
+      }
+    ]
+  },
+  "ai": {
+    "_note": "AI 回合补骰子和交易声（B2，Carlos 2026-09-27 同意）：AudioManager 的公开方法，交易比真人低 3 dB",
+    "trade_db": -3.0,
+    "dice_land_after_sec": 0.55
+  }
+}

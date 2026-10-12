@@ -1,0 +1,71 @@
+{
+  "base": "k0_baseline",
+  "surface": {
+    "shader": "res://tools/traveler/lookdev_changan/atlas_surface_dusk_ground.gdshader"
+  },
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_changan/changan_extra_ground.gd",
+      "cfg": {
+        "terrain": {
+          "ground_v2": 1.0,
+          "ground_v2_fade_start": 14.0,
+          "ground_v2_fade_end": 40.0,
+          "ground_v2_far_keep": 0.3,
+          "ground_patch_scale": 0.3,
+          "ground_patch_amount": 0.8,
+          "ground_patch_warp": 1.2,
+          "ground_ochre": [
+            1.3,
+            1.02,
+            0.6
+          ],
+          "ground_green": [
+            0.78,
+            0.98,
+            0.92
+          ],
+          "ground_rust": [
+            1.2,
+            0.72,
+            0.5
+          ],
+          "ground_rust_amount": 0.8,
+          "ground_warm_mul": [
+            1.06,
+            1.0,
+            0.92
+          ],
+          "ground_cool_mul": [
+            0.9,
+            0.95,
+            1.08
+          ],
+          "ground_facet_jitter": 0.06,
+          "ground_fine_fade_start": 9.0,
+          "ground_fine_fade_end": 22.0,
+          "ground_clod_scale": 6.5,
+          "ground_clod_amount": 0.1,
+          "ground_clod_edge": 0.1,
+          "ground_grain2_scale": 21.0,
+          "ground_grain2_amount": 0.07,
+          "ground_leaf_density": 0.1,
+          "ground_leaf_mix": 0.75
+        },
+        "d_min": 5.0,
+        "d_max": 28.0,
+        "far_fade_d": 18.0,
+        "leaf_count": 7000,
+        "leaf_size": 0.055,
+        "leaf_plate_mul": 0.5,
+        "leaf_base": 0.35,
+        "leaf_canopy": 1.0,
+        "grass_count": 2200,
+        "grass_h": 0.075,
+        "pebble_count": 2500,
+        "pebble_size": 0.045,
+        "cliff_r": 3.9
+      }
+    }
+  ]
+}

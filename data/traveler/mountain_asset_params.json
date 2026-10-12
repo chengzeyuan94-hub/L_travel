@@ -1,0 +1,168 @@
+{
+  "schema": "silkroad.traveler-mountain-params.v2",
+  "stage": "Authorized T7 GLB, three bands with independent key and foothill transition",
+  "lighting": {
+    "mode": "isolated_directional_light",
+    "layer_mask": 8,
+    "color": [
+      1.0,
+      0.93,
+      0.82
+    ],
+    "energy": 0.95,
+    "rotation_degrees": [
+      -30.0,
+      28.0,
+      0.0
+    ],
+    "shadow_enabled": false,
+    "sky_mode": "light_only",
+    "fog_enabled": true
+  },
+  "placement": {
+    "seed": 20260918,
+    "seed_stride": 77,
+    "x_jitter": 10.0,
+    "z_jitter": 7.0,
+    "base_y": -1.2,
+    "band_y_step": -0.5,
+    "height_range": [
+      0.82,
+      1.22
+    ],
+    "radius_range": [
+      0.86,
+      1.18
+    ]
+  },
+  "bands": [
+    {
+      "z": -62,
+      "count": 7,
+      "h": 22,
+      "r": 21,
+      "span": 150,
+      "rock": [
+        0.4,
+        0.38,
+        0.52
+      ],
+      "snow": [
+        0.9,
+        0.9,
+        0.97
+      ],
+      "ang": 22,
+      "ring": 8
+    },
+    {
+      "z": -102,
+      "count": 7,
+      "h": 34,
+      "r": 31,
+      "span": 210,
+      "rock": [
+        0.52,
+        0.5,
+        0.64
+      ],
+      "snow": [
+        0.93,
+        0.93,
+        0.98
+      ],
+      "ang": 20,
+      "ring": 7
+    },
+    {
+      "z": -152,
+      "count": 6,
+      "h": 46,
+      "r": 41,
+      "span": 280,
+      "rock": [
+        0.63,
+        0.62,
+        0.76
+      ],
+      "snow": [
+        0.96,
+        0.96,
+        0.99
+      ],
+      "ang": 18,
+      "ring": 6
+    }
+  ],
+  "asset": {
+    "path": "res://assets/traveler/mountains/t7-snow-massif.glb",
+    "height": 14.0,
+    "width": 20.19,
+    "depth": 13.29,
+    "triangles": 2027,
+    "instances_per_band": [
+      3,
+      3,
+      2
+    ],
+    "scale_multiplier": 1.85,
+    "scale_x": [
+      0.92,
+      1.14
+    ],
+    "scale_y": [
+      0.86,
+      1.1
+    ],
+    "yaw": [
+      -0.6,
+      0.6
+    ],
+    "odd_yaw_degrees": 180.0,
+    "material_policy": "Preserve both imported materials; no COLOR_0 bake or MultiMesh"
+  },
+  "foot": {
+    "seed": 20260919,
+    "hill_count": [
+      5,
+      9
+    ],
+    "ring_radius": [
+      0.85,
+      1.12
+    ],
+    "hill_height": [
+      0.04,
+      0.08
+    ],
+    "hill_radius": [
+      0.22,
+      0.4
+    ],
+    "prototype": "cypress",
+    "tree_attempts": 160,
+    "tree_radius": [
+      0.72,
+      1.25
+    ],
+    "tree_height": 0.02,
+    "tree_scale": [
+      0.6,
+      1.8
+    ],
+    "fade_height": [
+      0.04,
+      0.24
+    ],
+    "tree_height_max": 2.2
+  },
+  "fog_review": {
+    "fogb_options": [
+      60,
+      45,
+      35
+    ],
+    "applied_automatically": false,
+    "policy": "Review via --set=fogb only; preserve look_presets.json"
+  }
+}

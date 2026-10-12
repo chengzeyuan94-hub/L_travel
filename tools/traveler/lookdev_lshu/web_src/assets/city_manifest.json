@@ -1,0 +1,1116 @@
+{
+  "count": 20,
+  "assets": [
+    {
+      "id": "S21",
+      "name": "古罗马城 · 拱廊广场",
+      "city": "古罗马城",
+      "slug": "rome_forum",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "ruin",
+      "description": "三孔石拱、柱廊和小广场；不复制某一座真实凯旋门。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.295,
+        2.345,
+        3.16
+      ],
+      "triangles": 1386,
+      "file": "assets/glb/S21.glb",
+      "thumbnail": "assets/thumbs/S21.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 996,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0.0225,
+          0,
+          1.58
+        ],
+        "stand": [
+          0.0225,
+          0,
+          1.73
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "b0d5cb139f70ef153bf98c4a415ee7779002566a098eb04ffef9941010a4e531"
+    },
+    {
+      "id": "S22",
+      "name": "君士坦丁堡 · 穹顶城丘",
+      "city": "君士坦丁堡",
+      "slug": "constantinople_dome",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "hill",
+      "description": "中央大穹顶、半穹与扶壁组成山丘建筑。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        3.875,
+        3.2557,
+        3.2
+      ],
+      "triangles": 2060,
+      "file": "assets/glb/S22.glb",
+      "thumbnail": "assets/thumbs/S22.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "glow",
+          "start_triangle": 1394,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 1442,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1664,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1886,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0,
+          0,
+          1.6
+        ],
+        "stand": [
+          0,
+          0,
+          1.75
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "3be33160952b2eb2a95404834fdeebfb50e275e808e39e5e0ae29370fd0349dd"
+    },
+    {
+      "id": "S23",
+      "name": "开罗 · 河畔方尖碑",
+      "city": "开罗",
+      "slug": "cairo_quay",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "shore",
+      "description": "双塔门、方尖碑与河畔台阶，水面由外部地块衔接。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.27,
+      "size": [
+        3.973746,
+        3.43,
+        4.333694
+      ],
+      "triangles": 594,
+      "file": "assets/glb/S23.glb",
+      "thumbnail": "assets/thumbs/S23.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 224,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0.086873,
+          0.27,
+          2.173847
+        ],
+        "stand": [
+          0.086873,
+          0.53,
+          1.803847
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "effect_points": [],
+      "sha256": "dad90d67260ac68beef85fbb3cf0434bb44df88dce69fcef5fa8e6fd081d1ca6"
+    },
+    {
+      "id": "S24",
+      "name": "吉达 · 红海商馆",
+      "city": "吉达",
+      "slug": "jeddah_house",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "shore",
+      "description": "白色商馆、高低错落的木窗格与临海门廊。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.31,
+      "size": [
+        3.513746,
+        3.32,
+        4.052695
+      ],
+      "triangles": 1512,
+      "file": "assets/glb/S24.glb",
+      "thumbnail": "assets/thumbs/S24.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 120,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 240,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0.106873,
+          0.31,
+          2.026347
+        ],
+        "stand": [
+          0.106873,
+          0.31,
+          2.176347
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "42c293df8654c28d4981f11303ef61b06faef68be0661cc4b672f8dcc6c6945d"
+    },
+    {
+      "id": "S25",
+      "name": "阿丹国 · 火山岩港",
+      "city": "阿丹国",
+      "slug": "aden_volcanic_port",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "headland",
+      "description": "赤褐岩壁围住一座小海港，石塔与岸边栈台。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.29,
+      "size": [
+        3.955474,
+        3.59,
+        3.745057
+      ],
+      "triangles": 801,
+      "file": "assets/glb/S25.glb",
+      "thumbnail": "assets/thumbs/S25.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 441,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          -0.013991,
+          0.29,
+          1.872528
+        ],
+        "stand": [
+          -0.013991,
+          0.29,
+          2.022528
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "b46e2fab157e2c9382b648c9472fa0350e6876cb38b1d332c2a04b9e81f28027"
+    },
+    {
+      "id": "S26",
+      "name": "巴格达 · 圆顶学宫",
+      "city": "巴格达",
+      "slug": "baghdad_academy",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "desert"
+      ],
+      "theme": "desert",
+      "landform": "oasis",
+      "description": "蓝绿穹顶、深拱门与几何庭院，游戏化学宫意象。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.058746,
+        3.2251,
+        3.690694
+      ],
+      "triangles": 1959,
+      "file": "assets/glb/S26.glb",
+      "thumbnail": "assets/thumbs/S26.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 666,
+          "triangle_count": 15
+        },
+        {
+          "role": "matte",
+          "start_triangle": 741,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1311,
+          "triangle_count": 12
+        },
+        {
+          "role": "water",
+          "start_triangle": 1833,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 1923,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0.104373,
+          0,
+          1.845347
+        ],
+        "stand": [
+          0.104373,
+          0,
+          1.995347
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "9c8fedddea7a72ea233dcaac6c713b2b5c6760e28db3ead5abce6126b4895c38"
+    },
+    {
+      "id": "S27",
+      "name": "盘橐城 · 绿洲宫城",
+      "city": "盘橐城",
+      "slug": "pantu_oasis_palace",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "desert"
+      ],
+      "theme": "desert",
+      "landform": "oasis",
+      "description": "不对称台阶式土砖宫城，仓舍、门楼和一小片绿荫。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.345,
+        3.63,
+        3.255694
+      ],
+      "triangles": 932,
+      "file": "assets/glb/S27.glb",
+      "thumbnail": "assets/thumbs/S27.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 276,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 396,
+          "triangle_count": 12
+        },
+        {
+          "role": "water",
+          "start_triangle": 920,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          -0.1975,
+          0,
+          1.627847
+        ],
+        "stand": [
+          -0.1975,
+          0,
+          1.777847
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "92fba55930777a668f98ae3926eb00e8625cc10d3f6c35f68930f8fc3ae5362a"
+    },
+    {
+      "id": "S28",
+      "name": "玉门关 · 夯土关塞",
+      "city": "玉门关",
+      "slug": "yumen_pass",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "desert"
+      ],
+      "theme": "desert",
+      "landform": "ruin",
+      "description": "低矮空旷的夯土关墙、单门和一座朴素的烽燧。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.05,
+        2.085,
+        2.7
+      ],
+      "triangles": 737,
+      "file": "assets/glb/S28.glb",
+      "thumbnail": "assets/thumbs/S28.png",
+      "runtime_parts": [],
+      "material_regions": [],
+      "sockets": {
+        "entrance": [
+          0,
+          0,
+          1.35
+        ],
+        "stand": [
+          0,
+          0,
+          1.5
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "f20d21f688210039a5a5126817ddb11665d8bb98886ce9f25c8d12e43a9bd430"
+    },
+    {
+      "id": "S29",
+      "name": "德里 · 红砂阶井",
+      "city": "德里",
+      "slug": "delhi_stepwell",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "terrace",
+      "description": "下沉水院、四向梯级和红砂石柱亭，采用抬高的局部井壁而非穿透地板。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.2,
+        2.57255,
+        4.02
+      ],
+      "triangles": 1492,
+      "file": "assets/glb/S29.glb",
+      "thumbnail": "assets/thumbs/S29.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "water",
+          "start_triangle": 72,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0,
+          0,
+          1.89
+        ],
+        "stand": [
+          0,
+          0.1,
+          2.04
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "f06d1f5005d029c423be4428b07059a1ab0e6c3d9ed2e92be0ce9545cff4a7a1"
+    },
+    {
+      "id": "S30",
+      "name": "狮子国 · 莲台佛塔",
+      "city": "狮子国",
+      "slug": "lanka_stupa",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "shore",
+      "description": "白色半球塔、金色尖顶和开敞环台。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.393746,
+        2.7832,
+        3.603195
+      ],
+      "triangles": 1238,
+      "file": "assets/glb/S30.glb",
+      "thumbnail": "assets/thumbs/S30.png",
+      "runtime_parts": [],
+      "material_regions": [],
+      "sockets": {
+        "entrance": [
+          -0.173127,
+          0,
+          1.801597
+        ],
+        "stand": [
+          -0.173127,
+          0,
+          1.951597
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "8ae2096b8534c0ad6e5c5acd94c71f7abcd627a7507e0f8f0e04e13ac838bd66"
+    },
+    {
+      "id": "S31",
+      "name": "长安 · 石窟台地",
+      "city": "长安",
+      "slug": "changan_grotto",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "ridge",
+      "description": "虚构的丝路石窟意象：岩壁中的坐像、层叠石阶与小亭；不是西安某座石窟的复原。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.65,
+        3.88247,
+        3.549449
+      ],
+      "triangles": 2418,
+      "file": "assets/glb/S31.glb",
+      "thumbnail": "assets/thumbs/S31.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "matte",
+          "start_triangle": 417,
+          "triangle_count": 15
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1008,
+          "triangle_count": 15
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1551,
+          "triangle_count": 15
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0,
+          0,
+          1.774725
+        ],
+        "stand": [
+          0,
+          0.14,
+          1.554725
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "5875b30a4d946f895ecebfd44d86ea586f8f14c5c4a12b5e881d10d30637e8d8"
+    },
+    {
+      "id": "S32",
+      "name": "大光 · 金塔水院",
+      "city": "大光",
+      "slug": "dagon_gold_court",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "shore",
+      "description": "金色层叠尖塔、小红顶佛殿与水边石台。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.34,
+      "size": [
+        4.09,
+        3.44825,
+        4.079094
+      ],
+      "triangles": 1434,
+      "file": "assets/glb/S32.glb",
+      "thumbnail": "assets/thumbs/S32.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "water",
+          "start_triangle": 1214,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          -0.195,
+          0.34,
+          2.039547
+        ],
+        "stand": [
+          -0.195,
+          0.34,
+          2.189547
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "e08795deedbcdfe5a9efe38e9ccf6744859b26911607b898e08c58cf381d760e"
+    },
+    {
+      "id": "S33",
+      "name": "真腊 · 丛林塔庙",
+      "city": "真腊",
+      "slug": "chenla_prasat",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "terrace",
+      "description": "灰石三塔与层级门洞，树根和绿色苔块只点缀转折处。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.755544,
+        3.477273,
+        3.807236
+      ],
+      "triangles": 1276,
+      "file": "assets/glb/S33.glb",
+      "thumbnail": "assets/thumbs/S33.png",
+      "runtime_parts": [],
+      "material_regions": [],
+      "sockets": {
+        "entrance": [
+          -0.075865,
+          0,
+          1.903618
+        ],
+        "stand": [
+          -0.075865,
+          0,
+          2.053618
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "7fd1624a62bfe36b577c82796e9a7ea5bddc33d4e2c04c1c4960a6432c714445"
+    },
+    {
+      "id": "S34",
+      "name": "泉州 · 刺桐海港",
+      "city": "泉州",
+      "slug": "quanzhou_twin_port",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "shore",
+      "description": "双石塔、红瓦仓舍与简化码头；水由地块统一提供。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.3,
+      "size": [
+        4.1,
+        3.28855,
+        3.7347
+      ],
+      "triangles": 2996,
+      "file": "assets/glb/S34.glb",
+      "thumbnail": "assets/thumbs/S34.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "glow",
+          "start_triangle": 156,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 432,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 708,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 984,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 1340,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1616,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 1892,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 2212,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0,
+          0.3,
+          1.86735
+        ],
+        "stand": [
+          0,
+          0.3,
+          2.01735
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "99fb67017df3f12a8fea6b24ae7de2e5753dcdd2e78b2980e9a8cd72c1acb327"
+    },
+    {
+      "id": "S35",
+      "name": "金城 · 山岭石城",
+      "city": "金城",
+      "slug": "geumseong_mountain_wall",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "ridge",
+      "description": "灰岩台地上的弯折石城墙与东方式木构门楼。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.110405,
+        3.411962,
+        3.429092
+      ],
+      "triangles": 1199,
+      "file": "assets/glb/S35.glb",
+      "thumbnail": "assets/thumbs/S35.png",
+      "runtime_parts": [],
+      "material_regions": [],
+      "sockets": {
+        "entrance": [
+          0.080107,
+          0,
+          1.714546
+        ],
+        "stand": [
+          0.080107,
+          0,
+          1.864546
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "d203589abdf33482b16c04a294dee34eabc72a3d85083ad9ddd68620af712cbe"
+    },
+    {
+      "id": "S36",
+      "name": "平城京 · 木构寺塔",
+      "city": "平城京",
+      "slug": "heijo_pagoda",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "grove",
+      "description": "五层木塔和低矮佛堂、粉色花树，塔与殿保持高低对照。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        3.933299,
+        3.73855,
+        3.5
+      ],
+      "triangles": 2108,
+      "file": "assets/glb/S36.glb",
+      "thumbnail": "assets/thumbs/S36.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "glow",
+          "start_triangle": 156,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 432,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 708,
+          "triangle_count": 12
+        },
+        {
+          "role": "matte",
+          "start_triangle": 984,
+          "triangle_count": 12
+        },
+        {
+          "role": "glow",
+          "start_triangle": 1260,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          -0.01665,
+          0,
+          1.75
+        ],
+        "stand": [
+          -0.01665,
+          0,
+          1.9
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "1dbb228df44ab29e70b4b46962b0e0630b44f175c80e3c297cc358e385e2619a"
+    },
+    {
+      "id": "S37",
+      "name": "长安 · 山门钟楼",
+      "city": "长安",
+      "slug": "changan_bell_gate",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "terrace",
+      "description": "宽阔的山门石阶，双层飞檐围住一口低模铜钟。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.015,
+      "size": [
+        3.803732,
+        3.836962,
+        3.2
+      ],
+      "triangles": 1074,
+      "file": "assets/glb/S37.glb",
+      "thumbnail": "assets/thumbs/S37.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "metal",
+          "start_triangle": 552,
+          "triangle_count": 402
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0.101866,
+          0.015,
+          1.6
+        ],
+        "stand": [
+          0.101866,
+          0.015,
+          1.75
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "1521e1f7fefea3af33107cb57ba5ace558deec8c74585f5c5d3f19d4e7880ff4"
+    },
+    {
+      "id": "S38",
+      "name": "巴格达 · 星象观台",
+      "city": "巴格达",
+      "slug": "baghdad_observatory",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "desert"
+      ],
+      "theme": "desert",
+      "landform": "terrace",
+      "description": "阶梯观台、大型铜色浑仪和蓝色小穹顶，奇想学术主题。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0,
+      "size": [
+        4.245,
+        2.705037,
+        3.590695
+      ],
+      "triangles": 2252,
+      "file": "assets/glb/S38.glb",
+      "thumbnail": "assets/thumbs/S38.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "metal",
+          "start_triangle": 216,
+          "triangle_count": 1472
+        },
+        {
+          "role": "matte",
+          "start_triangle": 1736,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          -0.2475,
+          0,
+          1.795347
+        ],
+        "stand": [
+          -0.2475,
+          0,
+          1.945347
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "1a60ffcee2735dbbca9487047d22dc850245779bdc139566e117c1d79fa47484"
+    },
+    {
+      "id": "S39",
+      "name": "古罗马城 · 山谷水道",
+      "city": "古罗马城",
+      "slug": "rome_aqueduct",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "autumn"
+      ],
+      "theme": "autumn",
+      "landform": "ravine",
+      "description": "上下两层连续石拱跨越谷口，清水槽顺着顶端延伸。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.0091,
+      "size": [
+        4.553828,
+        2.6391,
+        1.361089
+      ],
+      "triangles": 1554,
+      "file": "assets/glb/S39.glb",
+      "thumbnail": "assets/thumbs/S39.png",
+      "runtime_parts": [],
+      "material_regions": [
+        {
+          "role": "water",
+          "start_triangle": 1200,
+          "triangle_count": 12
+        }
+      ],
+      "sockets": {
+        "entrance": [
+          0.013229,
+          0.0091,
+          0.680545
+        ],
+        "stand": [
+          0.013229,
+          0.0091,
+          0.830545
+        ]
+      },
+      "composition": "land",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "375715427c6a864a472f270e3b5fc1a9ecd948230915bcc7283b59a4d107ee5d"
+    },
+    {
+      "id": "S40",
+      "name": "泉州 · 海风古庙",
+      "city": "泉州",
+      "slug": "quanzhou_sea_shrine",
+      "group": "city_scenery",
+      "role": "landmark",
+      "themes": [
+        "harbor"
+      ],
+      "theme": "harbor",
+      "landform": "shore",
+      "description": "红柱飞檐的海边小庙、石门与桅杆，面朝小港。",
+      "pivot": "bottom_center",
+      "forward": "+Z",
+      "unit": "design_metre",
+      "ground_offset_m": 0.31,
+      "size": [
+        4.035143,
+        3.321962,
+        3.643
+      ],
+      "triangles": 945,
+      "file": "assets/glb/S40.glb",
+      "thumbnail": "assets/thumbs/S40.png",
+      "runtime_parts": [],
+      "material_regions": [],
+      "sockets": {
+        "entrance": [
+          -0.067572,
+          0.31,
+          1.8215
+        ],
+        "stand": [
+          -0.067572,
+          0.31,
+          1.9715
+        ]
+      },
+      "composition": "coastal",
+      "access": "front",
+      "source": "Original procedural low-poly game scenery. Inspired by approved concept references; not an archaeological reconstruction.",
+      "interpretation": "艺术化游戏地标，非真实建筑测绘；年代与地理不作考据还原。",
+      "sha256": "ecce4bf9e1a0cc6c4802550607bad143278bca3982fb56e3e790a2e4fc6c4498"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "checks": [
+    {
+      "label": "fresh release requires owner configuration",
+      "passed": true
+    },
+    {
+      "label": "no original deck or event fallback",
+      "passed": true
+    },
+    {
+      "label": "empty rules cannot pass formal validation",
+      "passed": true
+    },
+    {
+      "label": "unconfirmed blank config is rejected",
+      "passed": true
+    },
+    {
+      "label": "ordinary game ignores child-only data switch",
+      "passed": true
+    },
+    {
+      "label": "relative child directory rejected",
+      "passed": true
+    },
+    {
+      "label": "conflicting child roots rejected",
+      "passed": true
+    },
+    {
+      "label": "Windows drive path is carried as a single argument",
+      "passed": true
+    },
+    {
+      "label": "existing v2 works with explicit synthetic QA policy",
+      "passed": true
+    },
+    {
+      "label": "v2 generation is deterministic",
+      "passed": true
+    },
+    {
+      "label": "no built-in event text",
+      "passed": true
+    },
+    {
+      "label": "owner event templates use deterministic seed",
+      "passed": true
+    },
+    {
+      "label": "missing event text/effects rejected",
+      "passed": true
+    },
+    {
+      "label": "all travel acts open without win override",
+      "passed": true
+    },
+    {
+      "label": "only public generic pieces are offered",
+      "passed": true
+    },
+    {
+      "label": "empty-rule workshop creates a new draft",
+      "passed": true
+    },
+    {
+      "label": "empty-rule workshop places a city",
+      "passed": true
+    },
+    {
+      "label": "draft city has a real presentation record without configured trade",
+      "passed": true
+    },
+    {
+      "label": "draft saves with unconfigured rules",
+      "passed": true
+    },
+    {
+      "label": "real disk reopen has identical SHA",
+      "passed": true
+    },
+    {
+      "label": "workshop reopens editable draft",
+      "passed": true
+    },
+    {
+      "label": "unconfigured trial is blocked without changing the map",
+      "passed": true
+    },
+    {
+      "label": "explicit complete synthetic config installs and passes formal validation",
+      "passed": true
+    },
+    {
+      "label": "configured formal game starts with synthetic owner data",
+      "passed": true
+    },
+    {
+      "label": "configured transaction moves synthetic goods and silver",
+      "passed": true
+    },
+    {
+      "label": "trade rejects unavailable inventory without crashing",
+      "passed": true
+    },
+    {
+      "label": "invalid config preserves prior disk policy",
+      "passed": true
+    },
+    {
+      "label": "removing test policy restores empty public state",
+      "passed": true
+    },
+    {
+      "label": "no engine/script errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failed": 0,
+  "passed": 29,
+  "scope": "headless cleaned public source; synthetic policy is QA only, never a default ruleset"
+}

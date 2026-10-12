@@ -1,0 +1,75 @@
+{
+  "static": {
+    "extra_scripts": [
+      {
+        "script": "res://tools/traveler/lookdev_panti/b_snow_extra.gd",
+        "cfg": {
+          "uniforms": {
+            "detail": 1.0,
+            "detail_near": 2.0,
+            "detail_far": 9.0,
+            "wind_dir": [
+              -0.81,
+              0.58
+            ],
+            "rip_freq": 5.0,
+            "rip_slope": 0.05,
+            "rip_tone": 0.025,
+            "rip_tint_amount": 0.5,
+            "macro_amount": 0.5,
+            "macro_scale": 0.18,
+            "glit_density": 0.35,
+            "glit_cell_px": 7.0,
+            "glit_cone": 0.965,
+            "glit_speed": 0.5,
+            "glit_wobble": 0.22
+          }
+        }
+      }
+    ]
+  },
+  "morning": {
+    "shaders": {
+      "b_snow_surface.gdshader": {
+        "sheen_sun": 0.35,
+        "sheen_point": 1.0,
+        "sheen_power_sun": 6.0,
+        "sheen_power_point": 10.0,
+        "sheen_tint": [
+          1.0,
+          0.95,
+          0.88
+        ],
+        "glit_sun": 2.5,
+        "glit_point": 2.0,
+        "glit_tint": [
+          1.0,
+          0.97,
+          0.92
+        ]
+      }
+    }
+  },
+  "midnight": {
+    "shaders": {
+      "b_snow_surface.gdshader": {
+        "sheen_sun": 0.5,
+        "sheen_point": 2.0,
+        "sheen_power_sun": 6.0,
+        "sheen_power_point": 10.0,
+        "sheen_tint": [
+          0.9,
+          0.95,
+          1.0
+        ],
+        "glit_sun": 4.0,
+        "glit_point": 4.0,
+        "glit_tint": [
+          0.92,
+          0.96,
+          1.0
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,903 @@
+{
+  "schema": "shanhai.traveler.look-presets.v2",
+  "created": "2026-09-18",
+  "status": "起点，不是契约",
+  "why": "Carlos 认可的那张画面此前只存在于一串手打的命令行参数里。合并时 --set= 解析被丢掉，于是 --dusk 变成了『只换天空颜色、仍用白天的太阳照』——太阳强度 3.6 倍过亮、景深整个关闭，画面静默退步（meanV +0.090、meanS -0.067）而没有任何东西报警。把数字写下来是为了让这种退步**被看见**，不是为了把画面钉死。",
+  "how_to_use_this_file": {
+    "这是起点": "Carlos 2026-09-18 的原话：『倒也不用固化预设吧，先接近成这样，然后再慢慢调整优化，因为可能旅人模式还会有些别的场景』。所以这些值是每个场景的**出发点**，随时可以改，改了就更新这里并记下是哪张图。",
+    "不是门禁": "**不要**用它做通过/不通过的判定。每次渲染把 meanV / meanS 与 baseline_image 的偏差**报出来**即可——让人看见变化，不要挡住变化。",
+    "为什么仍然要有它": "因为今天证明了：没有它，一次重构就能让画面退回去而没人发现，而且要靠人翻两小时才查得出根因。",
+    "新场景怎么办": "雪山山谷城市、山谷湖边露营各自加一组，不要硬套长安的值。共用的只有机位口径与材质语言，不是光照数值。"
+  },
+  "scenes": {
+    "panti": {
+      "day": {
+        "source": "Carlos supplied bright snowy daylight concepts, composition checkpoint 1",
+        "family": "snow_valley_city",
+        "dusk_colors": false,
+        "baseline_image": "docs/reports/traveler-panti-001/references/concept-1.png",
+        "params": {
+          "sun": 2.4,
+          "sunel": -44.0,
+          "sunaz": -28.0,
+          "amb": 0.65,
+          "exp": 1.0,
+          "white": 1.5,
+          "sat": 1.08,
+          "con": 1.02,
+          "ao": 0.35,
+          "aoi": 2.8,
+          "ssil": 0.8,
+          "ssili": 0.55,
+          "glow": 0.06,
+          "fogb": 25.0,
+          "foge": 95.0,
+          "aerial": 0.12,
+          "fogd": 0.65,
+          "dof": 28.0,
+          "dofn": 0.0,
+          "blur": 0.14,
+          "ang": 0.6,
+          "sblur": 1.0,
+          "shmax": 85.0,
+          "bias": 0.035,
+          "nbias": 0.08,
+          "rock": 0.0,
+          "rough": 0.95
+        },
+        "sky": {
+          "top": [
+            0.38,
+            0.58,
+            0.82
+          ],
+          "horizon": [
+            0.69,
+            0.83,
+            0.96
+          ],
+          "ground_bottom": [
+            0.65,
+            0.76,
+            0.9
+          ],
+          "ground_horizon": [
+            0.72,
+            0.84,
+            0.95
+          ],
+          "sun_color": [
+            1.0,
+            0.95,
+            0.88
+          ],
+          "fog_color": [
+            0.73,
+            0.85,
+            0.96
+          ]
+        }
+      },
+      "sunset": {
+        "source": "Carlos 2026-09-20: 光照改为夕阳光线；盘橐独立预设，替代此前明亮雪天方向。",
+        "family": "snow_valley_city",
+        "dusk_colors": false,
+        "baseline_image": "docs/reports/traveler-panti-001/references/concept-1.png",
+        "params": {
+          "sun": 2.55,
+          "sunel": -14.0,
+          "sunaz": -28.0,
+          "amb": 0.5,
+          "exp": 1.1,
+          "white": 1.5,
+          "sat": 1.1,
+          "con": 1.04,
+          "ao": 0.35,
+          "aoi": 2.8,
+          "ssil": 0.8,
+          "ssili": 0.62,
+          "glow": 0.1,
+          "fogb": 25.0,
+          "foge": 95.0,
+          "aerial": 0.12,
+          "fogd": 0.65,
+          "dof": 28.0,
+          "dofn": 0.0,
+          "blur": 0.14,
+          "ang": 0.35,
+          "sblur": 0.8,
+          "shmax": 85.0,
+          "bias": 0.035,
+          "nbias": 0.08,
+          "rock": 0.0,
+          "rough": 0.95
+        },
+        "sky": {
+          "top": [
+            0.34,
+            0.42,
+            0.64
+          ],
+          "horizon": [
+            0.94,
+            0.66,
+            0.44
+          ],
+          "ground_bottom": [
+            0.3,
+            0.36,
+            0.53
+          ],
+          "ground_horizon": [
+            0.63,
+            0.57,
+            0.56
+          ],
+          "sun_color": [
+            1.0,
+            0.66,
+            0.38
+          ],
+          "fog_color": [
+            0.73,
+            0.67,
+            0.7
+          ]
+        }
+      },
+      "morning": {
+        "source": "Carlos 2026-09-20：盘橐由黄昏调整为清晨，保留构图，初版晨光试看。",
+        "family": "snow_valley_city",
+        "dusk_colors": false,
+        "baseline_image": "docs/reports/traveler-panti-001/references/concept-1.png",
+        "params": {
+          "sun": 1.8,
+          "sunel": -18.0,
+          "sunaz": -58.0,
+          "amb": 0.56,
+          "exp": 1.08,
+          "white": 1.5,
+          "sat": 1.04,
+          "con": 1.02,
+          "ao": 0.35,
+          "aoi": 2.8,
+          "ssil": 0.8,
+          "ssili": 0.62,
+          "glow": 0.1,
+          "fogb": 25.0,
+          "foge": 95.0,
+          "aerial": 0.1,
+          "fogd": 0.65,
+          "dof": 28.0,
+          "dofn": 0.0,
+          "blur": 0.14,
+          "ang": 0.35,
+          "sblur": 0.8,
+          "shmax": 85.0,
+          "bias": 0.035,
+          "nbias": 0.08,
+          "rock": 0.0,
+          "rough": 0.95
+        },
+        "sky": {
+          "top": [
+            0.32,
+            0.5,
+            0.72
+          ],
+          "horizon": [
+            0.89,
+            0.8,
+            0.73
+          ],
+          "ground_bottom": [
+            0.45,
+            0.56,
+            0.73
+          ],
+          "ground_horizon": [
+            0.72,
+            0.76,
+            0.82
+          ],
+          "sun_color": [
+            1.0,
+            0.86,
+            0.71
+          ],
+          "fog_color": [
+            0.73,
+            0.8,
+            0.87
+          ]
+        },
+        "period_effects": {
+          "mist_color": "#DEEAF3",
+          "snow_color": "#F5F9FF"
+        }
+      },
+      "midnight": {
+        "source": "Carlos 2026-09-20：试做深夜银河，城内窗口与门口暖光；参考冷蓝雪林与营火。",
+        "family": "snow_valley_city",
+        "dusk_colors": false,
+        "baseline_image": "docs/reports/traveler-panti-001/references/concept-1.png",
+        "params": {
+          "sun": 0.55,
+          "sunel": -32.0,
+          "sunaz": -28.0,
+          "amb": 0.48,
+          "exp": 1.02,
+          "white": 1.5,
+          "sat": 1.04,
+          "con": 1.04,
+          "ao": 0.35,
+          "aoi": 2.8,
+          "ssil": 0.8,
+          "ssili": 0.45,
+          "glow": 0.22,
+          "fogb": 25.0,
+          "foge": 95.0,
+          "aerial": 0.04,
+          "fogd": 0.65,
+          "dof": 28.0,
+          "dofn": 0.0,
+          "blur": 0.14,
+          "ang": 0.35,
+          "sblur": 0.8,
+          "shmax": 85.0,
+          "bias": 0.035,
+          "nbias": 0.08,
+          "rock": 0.0,
+          "rough": 0.95
+        },
+        "sky": {
+          "top": [
+            0.008,
+            0.019,
+            0.065
+          ],
+          "horizon": [
+            0.034,
+            0.061,
+            0.15
+          ],
+          "ground_bottom": [
+            0.012,
+            0.021,
+            0.048
+          ],
+          "ground_horizon": [
+            0.044,
+            0.068,
+            0.14
+          ],
+          "sun_color": [
+            0.48,
+            0.61,
+            1.0
+          ],
+          "fog_color": [
+            0.12,
+            0.2,
+            0.39
+          ]
+        },
+        "ambient": {
+          "source": "color",
+          "color": [
+            0.37,
+            0.47,
+            0.76
+          ],
+          "sky_contribution": 0.0
+        },
+        "galaxy": {
+          "settings": "res://data/traveler/panti_night_sky.json"
+        },
+        "period_effects": {
+          "mist_color": "#748CBD",
+          "snow_color": "#A9BCE4",
+          "fire_energy": 0.9,
+          "fire_range_u": 1.2,
+          "lantern_energy": 0.26,
+          "lantern_range_u": 0.48,
+          "lantern_emission": 1.6,
+          "character_fill_energy": 0.18,
+          "character_fill_color": [
+            0.4,
+            0.5,
+            0.84
+          ],
+          "character_fill_range_u": 1.7
+        }
+      }
+    },
+    "changan": {
+      "dusk": {
+        "source": "Carlos 2026-09-23 认可的日暮光影（探针 k_merge_c，TASK-CHANGAN-DUSK-001）；2026-09-24 转正进正式代码。更早的 2026-09-18 版见 layers.previous。",
+        "baseline_image": "docs/reports/traveler-changan-dusk-20260923/changan_dusk_after.png",
+        "verified": "2026-09-24 转正复核：--fixed-fps 64 同时序截图与探针 k_merge_c 相比，寺庙 0.000 / 雪山 0.004 / 中景地面 0.0002（/255，区域平均绝对差）；--day 与改动前逐像素一致。证据 docs/reports/traveler-port-20260924/changan/。",
+        "dusk_colors": true,
+        "params": {
+          "sun": 0.72,
+          "sunel": -11.0,
+          "sunaz": 247.0,
+          "amb": 0.16,
+          "exp": 1.15,
+          "white": 1.5,
+          "sat": 1.22,
+          "con": 1.12,
+          "ao": 0.16,
+          "aoi": 4.0,
+          "ssil": 0.9,
+          "ssili": 1.0,
+          "glow": 0.85,
+          "fogb": 60.0,
+          "foge": 360.0,
+          "aerial": 0.42,
+          "fogd": 1.0,
+          "dof": 19.0,
+          "dofn": 5.5,
+          "blur": 0.16,
+          "ang": 0.6,
+          "sblur": 1.0,
+          "shmax": 35.0,
+          "bias": 0.06,
+          "nbias": 0.5,
+          "rock": 0.6,
+          "rough": 0.95,
+          "split1": 0.3
+        },
+        "sun_color": [
+          1.0,
+          0.66,
+          0.38
+        ],
+        "layers": {
+          "source": "探针 tools/traveler/lookdev_changan/variants/k_merge_c.json（= k_rim_final + k_bounce_final + k_ground_final 合并），数值逐项照搬，键名照探针。代码：scripts/traveler/changan_dusk/；着色器：shaders/traveler/atlas_surface_dusk.gdshader、dusk_rim_edge / dusk_rim_fresnel / dusk_snow_sheen.gdshader。",
+          "fade": "全部随 traveler_lookdev.gd 的 apply_period_mix(t) 淡入淡出：t = 0（白天）整层拆掉，t = 1 与探针相同。",
+          "visual_layers": {
+            "cliff_bounce": 65536,
+            "character_light (character_controller.gd)": 131072,
+            "massif_alpenglow": 524288,
+            "note": "旅人模式可视层登记：1<<16 佛窟山崖反光灯，1<<17 人物补光，1<<19 远景雪山晚霞暖光。character_controller 的 1<<18 / 1<<19 是物理碰撞层，不冲突。"
+          },
+          "surface": {
+            "sun_wrap": 0.2,
+            "bounce_strength": 0.3,
+            "bounce_ground_color": [
+              1.0,
+              0.55,
+              0.28
+            ],
+            "bounce_sky_color": [
+              0.42,
+              0.48,
+              0.9
+            ],
+            "bounce_sky_mix": 0.4,
+            "bounce_floor": 0.03,
+            "lamp_bounce_strength": 0.45,
+            "lamp_bounce_radius": 2.4,
+            "lamp_bounce_height": 0.55,
+            "lamp_bounce_color": [
+              1.0,
+              0.58,
+              0.28
+            ],
+            "glaze_radius": 3.2,
+            "glaze_roughness": 0.55,
+            "glaze_specular": 0.4,
+            "glaze_sun_spec": 2.5,
+            "glaze_shininess": 32.0,
+            "glaze_spec_tint": [
+              1.0,
+              0.9,
+              0.8
+            ],
+            "glaze_sky_strength": 0.26,
+            "glaze_f0": 0.04,
+            "glaze_fresnel_power": 4.0,
+            "glaze_sky_horizon": [
+              1.0,
+              0.58,
+              0.5
+            ],
+            "glaze_sky_zenith": [
+              0.4,
+              0.3,
+              0.58
+            ],
+            "glaze_sky_sun": [
+              1.0,
+              0.66,
+              0.38
+            ],
+            "glaze_sky_sun_power": 5.0,
+            "glaze_gold_spec": 2.0,
+            "glaze_gold_shininess": 10.0,
+            "bounce_up_cut": 1.0,
+            "glaze_sky_curve": 1.1
+          },
+          "rim": {
+            "massif_key": {
+              "path": "FarBackdrop/MassifBandMerged",
+              "layer_bit": 19,
+              "color": [
+                1.0,
+                0.72,
+                0.6
+              ],
+              "energy": 0.35
+            },
+            "targets": [
+              {
+                "kind": "atlas",
+                "exclude": [
+                  "grass",
+                  "seabed",
+                  "Sea",
+                  "ocean_edge"
+                ],
+                "cull_exempt": [
+                  "terrain"
+                ],
+                "cull_dist": 30.0,
+                "rim_strength": 3.0,
+                "rim_width_px": 3.0,
+                "gap_lo": 0.06,
+                "gap_hi": 0.25,
+                "back_min": 0.0,
+                "back_max": 0.7,
+                "side_min": -0.35,
+                "side_max": 0.25,
+                "color": [
+                  1.0,
+                  0.95,
+                  0.8
+                ],
+                "rim_albedo_mix": 0.35,
+                "up_start": 0.85,
+                "up_end": 0.97,
+                "fade_start": 12.0,
+                "fade_end": 24.0,
+                "fade_min": 0.0
+              },
+              {
+                "root": "character",
+                "match": "tripo_node",
+                "mode": "fresnel",
+                "color": [
+                  1.0,
+                  0.78,
+                  0.45
+                ],
+                "intensity": 2.0,
+                "power": 2.2,
+                "dir_weight": 0.8,
+                "back_min": -0.2,
+                "back_max": 0.6,
+                "fade_start": 100.0,
+                "fade_end": 200.0
+              },
+              {
+                "path": "CliffBuddha",
+                "mode": "edge",
+                "rim_strength": 1.6,
+                "rim_albedo_mix": 0.0,
+                "color": [
+                  1.0,
+                  0.9,
+                  0.7
+                ],
+                "rim_width_px": 3.0,
+                "fade_start": 30.0,
+                "fade_end": 90.0
+              },
+              {
+                "path": "FarBackdrop/MassifBandMerged",
+                "mode": "edge",
+                "rim_strength": 0.6,
+                "rim_albedo_mix": 0.0,
+                "color": [
+                  1.0,
+                  0.88,
+                  0.72
+                ],
+                "rim_width_px": 2.5,
+                "gap_lo": 0.03,
+                "gap_hi": 0.15,
+                "fade_start": 50.0,
+                "fade_end": 170.0,
+                "fade_min": 0.35
+              }
+            ]
+          },
+          "bounce": {
+            "temple_path": "Cities/changan/changan",
+            "glaze_center_lift": 0.8,
+            "court_offset": 1.4,
+            "snow": {
+              "sheen_color": [
+                1.0,
+                0.66,
+                0.6
+              ],
+              "sheen_strength": 0.3,
+              "face_amount": 0.5,
+              "lobe_amount": 0.8,
+              "lobe_power": 10.0,
+              "fres_amount": 0.5,
+              "fres_power": 3.0
+            },
+            "character": {
+              "energy": 0.45,
+              "range": 0.6,
+              "lift": -0.04,
+              "toward_court": 0.2,
+              "color": [
+                1.0,
+                0.6,
+                0.32
+              ]
+            },
+            "cliff_rig": {
+              "path": "CliffBuddha",
+              "layer": 65536,
+              "lights": [
+                {
+                  "color": [
+                    1.0,
+                    0.58,
+                    0.32
+                  ],
+                  "energy": 0.05,
+                  "dir": {
+                    "right": 0.55,
+                    "toward_cam": 0.6,
+                    "up": -0.35
+                  }
+                },
+                {
+                  "color": [
+                    0.52,
+                    0.56,
+                    1.0
+                  ],
+                  "energy": 0.045,
+                  "dir": {
+                    "right": 0.1,
+                    "toward_cam": 0.2,
+                    "up": 1.0
+                  }
+                }
+              ]
+            }
+          },
+          "ground": {
+            "terrain": {
+              "ground_v2": 1.0,
+              "ground_v2_fade_start": 14.0,
+              "ground_v2_fade_end": 46.0,
+              "ground_v2_far_keep": 0.55,
+              "ground_patch_scale": 0.3,
+              "ground_patch_amount": 1.0,
+              "ground_patch_warp": 1.2,
+              "ground_ochre": [
+                1.2,
+                1.05,
+                0.8
+              ],
+              "ground_green": [
+                0.8,
+                0.94,
+                0.92
+              ],
+              "ground_rust": [
+                1.08,
+                0.78,
+                0.64
+              ],
+              "ground_rust_amount": 0.75,
+              "ground_warm_mul": [
+                1.06,
+                1.01,
+                0.94
+              ],
+              "ground_cool_mul": [
+                0.9,
+                0.95,
+                1.06
+              ],
+              "ground_facet_jitter": 0.05,
+              "ground_fine_fade_start": 9.0,
+              "ground_fine_fade_end": 20.0,
+              "ground_clod_scale": 6.5,
+              "ground_clod_amount": 0.08,
+              "ground_clod_edge": 0.05,
+              "ground_grain2_scale": 21.0,
+              "ground_grain2_amount": 0.08,
+              "ground_leaf_density": 0.05,
+              "ground_leaf_mix": 0.7
+            },
+            "clear_court": true,
+            "court_clear_grow": 0.02,
+            "scatter": "res://assets/traveler/changan_dusk/ground_scatter.scn",
+            "scatter_bake": {
+              "d_min": 5.0,
+              "d_max": 25.0,
+              "far_fade_d": 13.0,
+              "leaf_count": 7000,
+              "leaf_size": 0.055,
+              "leaf_plate_mul": 0.5,
+              "leaf_base": 0.22,
+              "leaf_canopy": 1.4,
+              "open_red": 0.32,
+              "open_gold": 0.38,
+              "grass_count": 2600,
+              "grass_h": 0.085,
+              "grass_straw": [
+                0.62,
+                0.48,
+                0.2
+              ],
+              "grass_olive": [
+                0.4,
+                0.4,
+                0.18
+              ],
+              "grass_olive_share": 0.3,
+              "pebble_count": 1600,
+              "pebble_size": 0.05,
+              "pebble_palette": [
+                [
+                  0.32,
+                  0.26,
+                  0.17
+                ],
+                [
+                  0.38,
+                  0.31,
+                  0.2
+                ],
+                [
+                  0.28,
+                  0.23,
+                  0.16
+                ],
+                [
+                  0.44,
+                  0.36,
+                  0.22
+                ],
+                [
+                  0.26,
+                  0.22,
+                  0.17
+                ],
+                [
+                  0.3,
+                  0.29,
+                  0.27
+                ]
+              ],
+              "cliff_r": 3.9
+            },
+            "scatter_note": "散布离线烘好（scripts/traveler/changan_dusk/ground_scatter_bake.gd，--bake-changan-dusk-scatter），运行时只加载；scatter_bake 是烘焙参数。"
+          },
+          "previous": {
+            "note": "改动前（2026-09-18 版日暮）的数值，只给对照截图用：--changan-dusk-off=<层> 会把该层退回这里的值。",
+            "sun_color": [
+              0.58,
+              0.62,
+              0.95
+            ],
+            "params": {
+              "sun": 0.85,
+              "sunel": -14.0,
+              "sunaz": 250.0,
+              "bias": 0.045,
+              "nbias": 0.12,
+              "shmax": 60.0,
+              "ssil": 0.6,
+              "ssili": 0.7,
+              "split1": 0.08
+            },
+            "param_groups": {
+              "light": [
+                "sun",
+                "sunel",
+                "sunaz"
+              ],
+              "ground": [
+                "bias",
+                "nbias",
+                "shmax",
+                "split1"
+              ],
+              "bounce": [
+                "ssil",
+                "ssili"
+              ]
+            },
+            "cloud_dusk_palette": {
+              "light": "edc9b4",
+              "shade": "8d819e"
+            }
+          }
+        }
+      },
+      "day": {
+        "source": "与 dusk 同一轮渲出",
+        "baseline_image": "docs/design/shanhe-luren/lookdev/changan-massif-day-1502x939.png",
+        "verified": "未单独复核数值",
+        "dusk_colors": false,
+        "params": {
+          "sun": 3.4,
+          "sunel": -32.0,
+          "sunaz": 70.0,
+          "amb": 0.26,
+          "exp": 0.95,
+          "white": 1.5,
+          "sat": 1.26,
+          "con": 1.16,
+          "ao": 0.16,
+          "aoi": 4.0,
+          "ssil": 0.6,
+          "ssili": 0.7,
+          "glow": 0.55,
+          "fogb": 70.0,
+          "foge": 380.0,
+          "aerial": 0.36,
+          "fogd": 1.0,
+          "dof": 19.0,
+          "dofn": 5.5,
+          "blur": 0.16,
+          "ang": 0.35,
+          "sblur": 0.8,
+          "shmax": 60.0,
+          "bias": 0.045,
+          "nbias": 0.12,
+          "rock": 0.6,
+          "rough": 0.95,
+          "split1": 0.08
+        }
+      }
+    },
+    "_planned": {
+      "note": "以下场景还没做，占位提醒不要硬套长安的光照值。",
+      "snow_valley_city": "雪山山谷城市 —— 参考 T3 / T4 / T5，白对白是最难的一档，要靠真实 AO 与带色阴影分形",
+      "lake_camp": "山谷湖边露营 —— 参考 T2 / T6，火光是主光，需要新的水面处理"
+    },
+    "baghdad": {
+      "sunset": {
+        "source": "Strong readable golden-hour sunset candidate 2026-09-22: warm key, cool fill, long shadows, toon separation.",
+        "family": "desert_arch_tree_sunset",
+        "params": {
+          "sun": 4.7,
+          "sunel": -12.0,
+          "sunaz": -15.163568109516078,
+          "amb": 0.34,
+          "exp": 1.12,
+          "white": 1.55,
+          "sat": 1.11,
+          "con": 1.08,
+          "ao": 0.35,
+          "aoi": 2.4,
+          "ssil": 0.6,
+          "ssili": 0.0,
+          "glow": 0.28,
+          "fogb": 20.0,
+          "foge": 95.0,
+          "aerial": 0.22,
+          "fogd": 0.36,
+          "dof": 12.0,
+          "blur": 0.04,
+          "ang": 0.22,
+          "sblur": 0.65,
+          "shmax": 55.0,
+          "bias": 0.04,
+          "nbias": 0.1,
+          "shadow_atlas_size": 4096,
+          "dof_transition": 8.0,
+          "sdfgi_enabled": true,
+          "sdfgi_read_sky_light": true,
+          "sdfgi_use_occlusion": true,
+          "sdfgi_cascades": 4,
+          "sdfgi_min_cell_size": 0.5,
+          "sdfgi_max_distance": 64.0,
+          "sdfgi_y_scale": 2,
+          "sdfgi_energy": 0.6,
+          "sdfgi_bounce_feedback": 0.62,
+          "sdfgi_normal_bias": 1.1,
+          "sdfgi_probe_bias": 1.1,
+          "lowpoly_materials": true,
+          "lowpoly_roughness": 0.86,
+          "lowpoly_specular_disabled": true,
+          "tree_albedo_boost": 1.35,
+          "tree_emission_enabled": true,
+          "tree_emission_color": [
+            0.06,
+            0.16,
+            0.015
+          ],
+          "tree_emission_energy": 1.0,
+          "ambient_fill_color": [
+            0.22,
+            0.28,
+            0.5
+          ],
+          "ambient_fill_energy": 1.0
+        },
+        "sky": {
+          "top": [
+            0.12,
+            0.16,
+            0.36
+          ],
+          "horizon": [
+            1.0,
+            0.48,
+            0.18
+          ],
+          "ground_bottom": [
+            0.16,
+            0.12,
+            0.17
+          ],
+          "ground_horizon": [
+            0.78,
+            0.43,
+            0.24
+          ],
+          "sun_color": [
+            1.0,
+            0.62,
+            0.3
+          ],
+          "fog_color": [
+            1.0,
+            0.55,
+            0.3
+          ],
+          "sky_curve": 0.17,
+          "ground_curve": 0.08,
+          "sun_angle_max_deg": 2.8,
+          "sun_curve": 0.05,
+          "shader": "res://shaders/traveler/baghdad/baghdad_sunset_sky.gdshader",
+          "horizon_falloff": 0.16,
+          "sky_energy": 1.0,
+          "sun_disc_color": [
+            1.0,
+            0.96,
+            0.76
+          ],
+          "sun_disc_energy": 2.8,
+          "sun_radius_deg": 1.08,
+          "sun_edge_deg": 0.025,
+          "sun_halo_radius_deg": 5.0,
+          "sun_halo_strength": 0.27,
+          "cloud_color": [
+            0.95,
+            0.62,
+            0.42
+          ],
+          "cloud_opacity": 0.2,
+          "cloud_seed": 29.0,
+          "cloud_coverage": 0.42,
+          "static_sky_note": "Static EYEDIR shader; explicit 1.08 degree sun disc plus sparse thin cloud wisps. No TIME and no extra scene render."
+        }
+      }
+    }
+  },
+  "camera": {
+    "note": "机位是另一回事：它已由 Carlos 认可并冻结，任何场景任何预设都不许改。权威副本在 data/traveler/motion_params.json 的 _measured.traveler_camera。",
+    "fov_vertical_deg": 36.0,
+    "pitch_deg": 13.0,
+    "azimuth_rad": 0.62,
+    "distance_u": 11.0,
+    "lift_u": 1.15,
+    "keep_aspect": "KEEP_HEIGHT"
+  },
+  "known_gap": "当前 scripts/traveler/traveler_lookdev.gd 的 lk 默认值仍是白天值（sun 3.1 / amb 0.38 / dof 0 关闭），且 --set= 解析在合并时丢失。接上这个文件、并恢复 --set= 作为调参手段，是下一张单子的第一步。"
+}

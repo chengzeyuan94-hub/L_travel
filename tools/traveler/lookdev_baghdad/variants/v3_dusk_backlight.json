@@ -1,0 +1,15 @@
+{
+  "base": "v1_dusk",
+  "backlight": {
+    "color": [
+      1.0,
+      0.72,
+      0.35
+    ],
+    "energy": 1.8,
+    "el": -22.0,
+    "az": -45.0,
+    "layer": 2,
+    "exclude_cool_fill": false
+  }
+}

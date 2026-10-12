@@ -1,0 +1,1138 @@
+{
+  "schema": "lshu.glb-index.v1",
+  "color_0": "srgb",
+  "count": 140,
+  "assets": [
+    {
+      "id": "B01",
+      "tris": 448,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "B02",
+      "tris": 448,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "B03",
+      "tris": 468,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "B04",
+      "tris": 448,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "B05",
+      "tris": 468,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "B06",
+      "tris": 468,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "B07",
+      "tris": 448,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "B08",
+      "tris": 448,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "B09",
+      "tris": 468,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "B10",
+      "tris": 472,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "B11",
+      "tris": 472,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "B12",
+      "tris": 472,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T01",
+      "tris": 196,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T02",
+      "tris": 252,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T03",
+      "tris": 308,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T04",
+      "tris": 196,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T05",
+      "tris": 252,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T06",
+      "tris": 308,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T07",
+      "tris": 304,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T08",
+      "tris": 304,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T09",
+      "tris": 304,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T10",
+      "tris": 304,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T11",
+      "tris": 304,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T12",
+      "tris": 304,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T13",
+      "tris": 446,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T14",
+      "tris": 446,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T15",
+      "tris": 446,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T16",
+      "tris": 116,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T17",
+      "tris": 112,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T18",
+      "tris": 380,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T19",
+      "tris": 112,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T20",
+      "tris": 140,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T21",
+      "tris": 112,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T22",
+      "tris": 116,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T23",
+      "tris": 304,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "T24",
+      "tris": 304,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R01",
+      "tris": 70,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R02",
+      "tris": 70,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R03",
+      "tris": 70,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R04",
+      "tris": 140,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R05",
+      "tris": 56,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R06",
+      "tris": 56,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R07",
+      "tris": 56,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R08",
+      "tris": 112,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R09",
+      "tris": 56,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R10",
+      "tris": 56,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R11",
+      "tris": 56,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R12",
+      "tris": 112,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R13",
+      "tris": 56,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R14",
+      "tris": 56,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R15",
+      "tris": 56,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "R16",
+      "tris": 112,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C01",
+      "tris": 179,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C02",
+      "tris": 181,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C03",
+      "tris": 165,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C04",
+      "tris": 176,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C05",
+      "tris": 136,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C06",
+      "tris": 64,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C07",
+      "tris": 36,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C08",
+      "tris": 88,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C09",
+      "tris": 222,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C10",
+      "tris": 196,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C11",
+      "tris": 242,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C12",
+      "tris": 216,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C13",
+      "tris": 160,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C14",
+      "tris": 192,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C15",
+      "tris": 176,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "C16",
+      "tris": 184,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "H01",
+      "tris": 392,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "H02",
+      "tris": 416,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "H03",
+      "tris": 392,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "H04",
+      "tris": 404,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "H05",
+      "tris": 139,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "H06",
+      "tris": 152,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "H07",
+      "tris": 168,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "H08",
+      "tris": 139,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "H09",
+      "tris": 80,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "H10",
+      "tris": 108,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "H11",
+      "tris": 108,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "H12",
+      "tris": 96,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "V01",
+      "tris": 20,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "V02",
+      "tris": 20,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "V03",
+      "tris": 20,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "V04",
+      "tris": 60,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "V05",
+      "tris": 60,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "V06",
+      "tris": 60,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "V07",
+      "tris": 402,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "V08",
+      "tris": 402,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "V09",
+      "tris": 442,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "V10",
+      "tris": 168,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "V11",
+      "tris": 20,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "V12",
+      "tris": 128,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "P01",
+      "tris": 36,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "P02",
+      "tris": 42,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "P03",
+      "tris": 84,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "P04",
+      "tris": 108,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "P05",
+      "tris": 48,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "P06",
+      "tris": 132,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "P07",
+      "tris": 80,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "P08",
+      "tris": 156,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S01",
+      "tris": 498,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S02",
+      "tris": 1576,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S03",
+      "tris": 670,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 1
+    },
+    {
+      "id": "S04",
+      "tris": 863,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S05",
+      "tris": 1125,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S06",
+      "tris": 1067,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S07",
+      "tris": 564,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S08",
+      "tris": 672,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S09",
+      "tris": 1116,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S10",
+      "tris": 1926,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S11",
+      "tris": 946,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S12",
+      "tris": 1353,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S13",
+      "tris": 674,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S14",
+      "tris": 835,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S15",
+      "tris": 1244,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S16",
+      "tris": 830,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S17",
+      "tris": 1417,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S18",
+      "tris": 550,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S19",
+      "tris": 2264,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S20",
+      "tris": 1383,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S21",
+      "tris": 1386,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S22",
+      "tris": 2060,
+      "roles": [
+        "matte",
+        "glow"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S23",
+      "tris": 594,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S24",
+      "tris": 1512,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S25",
+      "tris": 801,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S26",
+      "tris": 1959,
+      "roles": [
+        "matte",
+        "water",
+        "glow"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S27",
+      "tris": 932,
+      "roles": [
+        "matte",
+        "water"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S28",
+      "tris": 737,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S29",
+      "tris": 1492,
+      "roles": [
+        "matte",
+        "water"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S30",
+      "tris": 1238,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S31",
+      "tris": 2418,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S32",
+      "tris": 1434,
+      "roles": [
+        "matte",
+        "water"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S33",
+      "tris": 1276,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S34",
+      "tris": 2996,
+      "roles": [
+        "matte",
+        "glow"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S35",
+      "tris": 1199,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S36",
+      "tris": 2108,
+      "roles": [
+        "matte",
+        "glow"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S37",
+      "tris": 1074,
+      "roles": [
+        "matte",
+        "metal"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S38",
+      "tris": 2252,
+      "roles": [
+        "matte",
+        "metal"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S39",
+      "tris": 1554,
+      "roles": [
+        "matte",
+        "water"
+      ],
+      "rotor": 0
+    },
+    {
+      "id": "S40",
+      "tris": 945,
+      "roles": [
+        "matte"
+      ],
+      "rotor": 0
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "D01",
+    "name": "雪林来信",
+    "description": "温暖小窗与雪路，V4.1原生木屋样板",
+    "composition_id": "J027",
+    "lighting": "night",
+    "scene_id": "cabin",
+    "asset": "S12",
+    "thumbnail": "previews/960/sample_01.png"
+  },
+  {
+    "id": "D02",
+    "name": "海角等风",
+    "description": "V4.1灯塔、连续岸线与码头",
+    "composition_id": "J057",
+    "lighting": "day",
+    "scene_id": "cape",
+    "asset": "S02",
+    "thumbnail": "previews/960/sample_02.png"
+  },
+  {
+    "id": "D03",
+    "name": "红岩古道",
+    "description": "V4.1峡谷，古道穿过双侧岩壁",
+    "composition_id": "J013",
+    "lighting": "sunset",
+    "scene_id": "canyon",
+    "asset": "S11",
+    "thumbnail": "previews/960/sample_03.png"
+  },
+  {
+    "id": "D04",
+    "name": "风车草丘",
+    "description": "旧风车资产，偏侧高台与喝茶小景",
+    "composition_id": "J103",
+    "lighting": "day",
+    "scene_id": "windmill",
+    "asset": "S03",
+    "thumbnail": "previews/960/sample_04.png"
+  },
+  {
+    "id": "D05",
+    "name": "长安石窟",
+    "description": "新坐像岩龛、层叠台阶与岩壁",
+    "composition_id": "J721",
+    "lighting": "sunset",
+    "scene_id": "changan_grotto",
+    "asset": "S31",
+    "thumbnail": "previews/960/sample_05.png"
+  },
+  {
+    "id": "D06",
+    "name": "刺桐海港",
+    "description": "新双石塔、仓舍与木码头",
+    "composition_id": "J801",
+    "lighting": "day",
+    "scene_id": "quanzhou_twin_port",
+    "asset": "S34",
+    "thumbnail": "previews/960/sample_06.png"
+  },
+  {
+    "id": "D07",
+    "name": "玉门关塞",
+    "description": "新夯土低墙、单门与烽燧",
+    "composition_id": "J661",
+    "lighting": "sunset",
+    "scene_id": "yumen_pass",
+    "asset": "S28",
+    "thumbnail": "previews/960/sample_07.png"
+  },
+  {
+    "id": "D08",
+    "name": "盘橐绿洲",
+    "description": "新层叠宫城、绿荫与小营地",
+    "composition_id": "J626",
+    "lighting": "day",
+    "scene_id": "pantu_oasis_palace",
+    "asset": "S27",
+    "thumbnail": "previews/960/sample_08.png"
+  },
+  {
+    "id": "D09",
+    "name": "平城京寺塔",
+    "description": "新五层木塔、低殿与花树",
+    "composition_id": "J845",
+    "lighting": "day",
+    "scene_id": "heijo_pagoda",
+    "asset": "S36",
+    "thumbnail": "previews/960/sample_09.png"
+  },
+  {
+    "id": "D10",
+    "name": "真腊塔庙",
+    "description": "新三塔门洞、石阶与树根",
+    "composition_id": "J777",
+    "lighting": "morning",
+    "scene_id": "chenla_prasat",
+    "asset": "S33",
+    "thumbnail": "previews/960/sample_10.png"
+  },
+  {
+    "id": "D11",
+    "name": "巴格达学宫",
+    "description": "新蓝色穹顶庭院，与土豆花互动",
+    "composition_id": "J620",
+    "lighting": "sunset",
+    "scene_id": "baghdad_academy",
+    "asset": "S26",
+    "thumbnail": "previews/960/sample_11.png"
+  },
+  {
+    "id": "D12",
+    "name": "德里阶井",
+    "description": "新下沉台阶结构与红砂柱亭",
+    "composition_id": "J673",
+    "lighting": "day",
+    "scene_id": "delhi_stepwell",
+    "asset": "S29",
+    "thumbnail": "previews/960/sample_12.png"
+  }
+]

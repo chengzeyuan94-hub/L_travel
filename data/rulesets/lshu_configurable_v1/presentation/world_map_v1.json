@@ -1,0 +1,2914 @@
+{
+  "schema": "world_map_presentation_v1",
+  "task": "TASK-WORLD-MAP-DATA-001-REV2D",
+  "logic_size": [
+    4096,
+    1363
+  ],
+  "document_size_px": [
+    8192,
+    2726
+  ],
+  "coordinate_space": "screen_y_down",
+  "model_to_screen": "screen_y = LOGIC_H - model_y",
+  "map_texture": "res://assets/game/maps/world/world_map_v1.png",
+  "cities": [
+    {
+      "city_id": "yumenguan",
+      "display_name": "玉门关",
+      "pxd_label_name": "玉门关",
+      "name_correction": null,
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "building_position": [
+        2267.5,
+        150.207
+      ],
+      "building_size": [
+        389.0,
+        263.0
+      ],
+      "label_position": [
+        2420.0,
+        184.5
+      ],
+      "label_size": [
+        69.5,
+        38.0
+      ],
+      "building_rect_normalized": {
+        "x": 0.565089,
+        "y": 0.181055,
+        "w": 0.07197,
+        "h": 0.098928
+      },
+      "label_rect_normalized": {
+        "x": 0.59082,
+        "y": 0.135363,
+        "w": 0.016968,
+        "h": 0.02788
+      },
+      "raw_anchor_px": [
+        2440.5,
+        348.5
+      ],
+      "snapped_anchor_px": [
+        2440.5,
+        348.5
+      ],
+      "piece_anchor_px": [
+        2440.5,
+        348.5
+      ],
+      "piece_anchor_normalized": [
+        0.595825,
+        0.255686
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        2440.5,
+        348.5
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": [
+        2440.5,
+        348.5
+      ],
+      "sea_entry_anchor_px": null,
+      "land_route_attach_anchor_px": [
+        2440.5,
+        348.5
+      ],
+      "sea_route_attach_anchor_px": null,
+      "building_hit_rect": {
+        "x": 2304.605,
+        "y": 236.777,
+        "w": 314.789,
+        "h": 154.839
+      },
+      "label_hit_rect": {
+        "x": 2416.0,
+        "y": 180.5,
+        "w": 77.5,
+        "h": 46.0
+      },
+      "hover_hit_rect": {
+        "x": 2304.605,
+        "y": 174.5,
+        "w": 314.789,
+        "h": 217.116
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.37,
+        67.85
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        20,
+        50
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/yumenguan/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/yumenguan/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        2462.0,
+        281.707
+      ],
+      "normalized_position": [
+        0.601074,
+        0.206682
+      ],
+      "route_anchors_px": {
+        "LAND": [
+          2440.5,
+          348.5
+        ]
+      },
+      "route_anchors_normalized": {
+        "LAND": [
+          0.595825,
+          0.255686
+        ]
+      }
+    },
+    {
+      "city_id": "ancient_rome",
+      "display_name": "古罗马城",
+      "pxd_label_name": "古罗马",
+      "name_correction": {
+        "from": "古罗马",
+        "to": "古罗马城"
+      },
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "building_position": [
+        242.978,
+        289.389
+      ],
+      "building_size": [
+        389.0,
+        321.0
+      ],
+      "label_position": [
+        421.0,
+        335.5
+      ],
+      "label_size": [
+        69.5,
+        40.5
+      ],
+      "building_rect_normalized": {
+        "x": 0.070728,
+        "y": 0.272115,
+        "w": 0.072155,
+        "h": 0.147194
+      },
+      "label_rect_normalized": {
+        "x": 0.102783,
+        "y": 0.246148,
+        "w": 0.016968,
+        "h": 0.029714
+      },
+      "raw_anchor_px": [
+        387.585,
+        183.614
+      ],
+      "snapped_anchor_px": [
+        487.915,
+        362.798
+      ],
+      "piece_anchor_px": [
+        387.585,
+        183.614
+      ],
+      "piece_anchor_normalized": [
+        0.094625,
+        0.134713
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        487.915,
+        362.798
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": [
+        387.585,
+        183.614
+      ],
+      "sea_entry_anchor_px": [
+        387.585,
+        183.614
+      ],
+      "land_route_attach_anchor_px": [
+        387.585,
+        183.614
+      ],
+      "sea_route_attach_anchor_px": [
+        387.585,
+        183.614
+      ],
+      "building_hit_rect": {
+        "x": 279.704,
+        "y": 360.893,
+        "w": 315.549,
+        "h": 220.625
+      },
+      "label_hit_rect": {
+        "x": 417.0,
+        "y": 331.5,
+        "w": 77.5,
+        "h": 48.5
+      },
+      "hover_hit_rect": {
+        "x": 279.704,
+        "y": 325.5,
+        "w": 315.549,
+        "h": 256.018
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.61,
+        80.01
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        26,
+        27
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/ancient_rome/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/ancient_rome/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        437.478,
+        449.889
+      ],
+      "normalized_position": [
+        0.106806,
+        0.330073
+      ],
+      "route_anchors_px": {
+        "LAND": [
+          387.585,
+          183.614
+        ],
+        "SEA": [
+          387.585,
+          183.614
+        ]
+      },
+      "route_anchors_normalized": {
+        "LAND": [
+          0.094625,
+          0.134713
+        ],
+        "SEA": [
+          0.094625,
+          0.134713
+        ]
+      }
+    },
+    {
+      "city_id": "constantinople",
+      "display_name": "君士坦丁堡",
+      "pxd_label_name": "君士坦丁堡",
+      "name_correction": null,
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "building_position": [
+        603.0,
+        103.739
+      ],
+      "building_size": [
+        389.0,
+        328.0
+      ],
+      "label_position": [
+        750.0,
+        144.0
+      ],
+      "label_size": [
+        101.0,
+        40.5
+      ],
+      "building_rect_normalized": {
+        "x": 0.158624,
+        "y": 0.133922,
+        "w": 0.072155,
+        "h": 0.153694
+      },
+      "label_rect_normalized": {
+        "x": 0.183105,
+        "y": 0.105649,
+        "w": 0.024658,
+        "h": 0.029714
+      },
+      "raw_anchor_px": [
+        693.0,
+        296.0
+      ],
+      "snapped_anchor_px": [
+        693.0,
+        296.0
+      ],
+      "piece_anchor_px": [
+        693.0,
+        296.0
+      ],
+      "piece_anchor_normalized": [
+        0.169189,
+        0.217168
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        693.0,
+        296.0
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": [
+        693.0,
+        296.0
+      ],
+      "sea_entry_anchor_px": null,
+      "land_route_attach_anchor_px": [
+        693.0,
+        296.0
+      ],
+      "sea_route_attach_anchor_px": null,
+      "building_hit_rect": {
+        "x": 639.726,
+        "y": 172.536,
+        "w": 315.549,
+        "h": 229.484
+      },
+      "label_hit_rect": {
+        "x": 746.0,
+        "y": 140.0,
+        "w": 109.0,
+        "h": 48.5
+      },
+      "hover_hit_rect": {
+        "x": 639.726,
+        "y": 134.0,
+        "w": 315.549,
+        "h": 268.02
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.61,
+        83.76
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        28
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/constantinople/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/constantinople/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        797.5,
+        267.739
+      ],
+      "normalized_position": [
+        0.194702,
+        0.196434
+      ],
+      "route_anchors_px": {
+        "LAND": [
+          693.0,
+          296.0
+        ]
+      },
+      "route_anchors_normalized": {
+        "LAND": [
+          0.169189,
+          0.217168
+        ]
+      }
+    },
+    {
+      "city_id": "changan",
+      "display_name": "长安",
+      "pxd_label_name": "长安",
+      "name_correction": null,
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "building_position": [
+        2653.5,
+        276.049
+      ],
+      "building_size": [
+        389.0,
+        299.5
+      ],
+      "label_position": [
+        2823.0,
+        309.0
+      ],
+      "label_size": [
+        69.5,
+        38.0
+      ],
+      "building_rect_normalized": {
+        "x": 0.659235,
+        "y": 0.267335,
+        "w": 0.072155,
+        "h": 0.128537
+      },
+      "label_rect_normalized": {
+        "x": 0.689209,
+        "y": 0.226706,
+        "w": 0.016968,
+        "h": 0.02788
+      },
+      "raw_anchor_px": [
+        2789.0,
+        504.0
+      ],
+      "snapped_anchor_px": [
+        2789.0,
+        504.0
+      ],
+      "piece_anchor_px": [
+        2789.0,
+        504.0
+      ],
+      "piece_anchor_normalized": [
+        0.680908,
+        0.369773
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        2789.0,
+        504.0
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": [
+        2789.0,
+        504.0
+      ],
+      "sea_entry_anchor_px": null,
+      "land_route_attach_anchor_px": [
+        2789.0,
+        504.0
+      ],
+      "sea_route_attach_anchor_px": null,
+      "building_hit_rect": {
+        "x": 2690.226,
+        "y": 354.378,
+        "w": 315.549,
+        "h": 195.196
+      },
+      "label_hit_rect": {
+        "x": 2819.0,
+        "y": 305.0,
+        "w": 77.5,
+        "h": 46.0
+      },
+      "hover_hit_rect": {
+        "x": 2690.226,
+        "y": 299.0,
+        "w": 315.549,
+        "h": 250.574
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.61,
+        78.3
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        16,
+        49
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/changan/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/changan/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        2848.0,
+        425.799
+      ],
+      "normalized_position": [
+        0.695312,
+        0.312399
+      ],
+      "route_anchors_px": {
+        "LAND": [
+          2789.0,
+          504.0
+        ]
+      },
+      "route_anchors_normalized": {
+        "LAND": [
+          0.680908,
+          0.369773
+        ]
+      }
+    },
+    {
+      "city_id": "pantuo",
+      "display_name": "盘橐城",
+      "pxd_label_name": "盘橐城",
+      "name_correction": null,
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "building_position": [
+        1728.229,
+        127.25
+      ],
+      "building_size": [
+        384.0,
+        265.5
+      ],
+      "label_position": [
+        1884.5,
+        144.0
+      ],
+      "label_size": [
+        69.5,
+        40.5
+      ],
+      "building_rect_normalized": {
+        "x": 0.43365,
+        "y": 0.163744,
+        "w": 0.070312,
+        "h": 0.10101
+      },
+      "label_rect_normalized": {
+        "x": 0.460083,
+        "y": 0.105649,
+        "w": 0.016968,
+        "h": 0.029714
+      },
+      "raw_anchor_px": [
+        1921.5,
+        334.5
+      ],
+      "snapped_anchor_px": [
+        1921.5,
+        334.5
+      ],
+      "piece_anchor_px": [
+        1921.5,
+        334.5
+      ],
+      "piece_anchor_normalized": [
+        0.469116,
+        0.245415
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        1921.5,
+        334.5
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": [
+        1921.5,
+        334.5
+      ],
+      "sea_entry_anchor_px": null,
+      "land_route_attach_anchor_px": [
+        1921.5,
+        334.5
+      ],
+      "sea_route_attach_anchor_px": null,
+      "building_hit_rect": {
+        "x": 1766.229,
+        "y": 213.183,
+        "w": 308.0,
+        "h": 157.676
+      },
+      "label_hit_rect": {
+        "x": 1880.5,
+        "y": 140.0,
+        "w": 77.5,
+        "h": 48.5
+      },
+      "hover_hit_rect": {
+        "x": 1766.229,
+        "y": 134.0,
+        "w": 308.0,
+        "h": 236.859
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        96.25,
+        74.02
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        37,
+        38,
+        39
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/pantuo/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/pantuo/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        1920.229,
+        260.0
+      ],
+      "normalized_position": [
+        0.468806,
+        0.190756
+      ],
+      "route_anchors_px": {
+        "LAND": [
+          1921.5,
+          334.5
+        ]
+      },
+      "route_anchors_normalized": {
+        "LAND": [
+          0.469116,
+          0.245415
+        ]
+      }
+    },
+    {
+      "city_id": "baghdad",
+      "display_name": "巴格达",
+      "pxd_label_name": "巴格达",
+      "name_correction": null,
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "building_position": [
+        1255.5,
+        346.06
+      ],
+      "building_size": [
+        389.0,
+        276.5
+      ],
+      "label_position": [
+        1410.0,
+        355.5
+      ],
+      "label_size": [
+        69.5,
+        40.5
+      ],
+      "building_rect_normalized": {
+        "x": 0.318019,
+        "y": 0.322837,
+        "w": 0.072063,
+        "h": 0.109553
+      },
+      "label_rect_normalized": {
+        "x": 0.344238,
+        "y": 0.260822,
+        "w": 0.016968,
+        "h": 0.029714
+      },
+      "raw_anchor_px": [
+        1416.5,
+        558.0
+      ],
+      "snapped_anchor_px": [
+        1416.5,
+        558.0
+      ],
+      "piece_anchor_px": [
+        1416.5,
+        558.0
+      ],
+      "piece_anchor_normalized": [
+        0.345825,
+        0.409391
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        1416.5,
+        558.0
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": [
+        1416.5,
+        558.0
+      ],
+      "sea_entry_anchor_px": null,
+      "land_route_attach_anchor_px": [
+        1416.5,
+        558.0
+      ],
+      "sea_route_attach_anchor_px": null,
+      "building_hit_rect": {
+        "x": 1292.605,
+        "y": 430.027,
+        "w": 315.169,
+        "h": 169.321
+      },
+      "label_hit_rect": {
+        "x": 1406.0,
+        "y": 351.5,
+        "w": 77.5,
+        "h": 48.5
+      },
+      "hover_hit_rect": {
+        "x": 1292.605,
+        "y": 345.5,
+        "w": 315.169,
+        "h": 253.848
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.49,
+        79.33
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        31,
+        34
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/baghdad/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/baghdad/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        1450.0,
+        484.31
+      ],
+      "normalized_position": [
+        0.354004,
+        0.355326
+      ],
+      "route_anchors_px": {
+        "LAND": [
+          1416.5,
+          558.0
+        ]
+      },
+      "route_anchors_normalized": {
+        "LAND": [
+          0.345825,
+          0.409391
+        ]
+      }
+    },
+    {
+      "city_id": "delhi",
+      "display_name": "德里",
+      "pxd_label_name": "德里",
+      "name_correction": null,
+      "allowed_routes": [
+        "LAND"
+      ],
+      "is_transport_interchange": false,
+      "building_position": [
+        2065.5,
+        571.647
+      ],
+      "building_size": [
+        389.0,
+        375.5
+      ],
+      "label_position": [
+        2237.0,
+        627.5
+      ],
+      "label_size": [
+        69.5,
+        38.0
+      ],
+      "building_rect_normalized": {
+        "x": 0.51568,
+        "y": 0.460028,
+        "w": 0.072063,
+        "h": 0.20151
+      },
+      "label_rect_normalized": {
+        "x": 0.546143,
+        "y": 0.460382,
+        "w": 0.016968,
+        "h": 0.02788
+      },
+      "raw_anchor_px": [
+        2117.5,
+        663.0
+      ],
+      "snapped_anchor_px": [
+        2117.5,
+        663.0
+      ],
+      "piece_anchor_px": [
+        2117.5,
+        663.0
+      ],
+      "piece_anchor_normalized": [
+        0.516968,
+        0.486427
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        2117.5,
+        663.0
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": [
+        2117.5,
+        663.0
+      ],
+      "sea_entry_anchor_px": null,
+      "land_route_attach_anchor_px": [
+        2117.5,
+        663.0
+      ],
+      "sea_route_attach_anchor_px": null,
+      "building_hit_rect": {
+        "x": 2102.226,
+        "y": 617.019,
+        "w": 315.169,
+        "h": 294.658
+      },
+      "label_hit_rect": {
+        "x": 2233.0,
+        "y": 623.5,
+        "w": 77.5,
+        "h": 46.0
+      },
+      "hover_hit_rect": {
+        "x": 2102.226,
+        "y": 617.019,
+        "w": 315.169,
+        "h": 294.658
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.49,
+        92.08
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        24,
+        25
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/delhi/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/delhi/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        2260.0,
+        759.397
+      ],
+      "normalized_position": [
+        0.551758,
+        0.557151
+      ],
+      "route_anchors_px": {
+        "LAND": [
+          2117.5,
+          663.0
+        ]
+      },
+      "route_anchors_normalized": {
+        "LAND": [
+          0.516968,
+          0.486427
+        ]
+      }
+    },
+    {
+      "city_id": "geumseong",
+      "display_name": "金城",
+      "pxd_label_name": "金城",
+      "name_correction": null,
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "building_position": [
+        3341.0,
+        258.825
+      ],
+      "building_size": [
+        389.0,
+        292.5
+      ],
+      "label_position": [
+        3522.5,
+        289.0
+      ],
+      "label_size": [
+        69.5,
+        38.0
+      ],
+      "building_rect_normalized": {
+        "x": 0.827081,
+        "y": 0.256327,
+        "w": 0.072155,
+        "h": 0.122389
+      },
+      "label_rect_normalized": {
+        "x": 0.859985,
+        "y": 0.212032,
+        "w": 0.016968,
+        "h": 0.02788
+      },
+      "raw_anchor_px": [
+        3497.0,
+        310.0
+      ],
+      "snapped_anchor_px": [
+        3497.0,
+        310.0
+      ],
+      "piece_anchor_px": [
+        3497.0,
+        310.0
+      ],
+      "piece_anchor_normalized": [
+        0.85376,
+        0.227439
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        3497.0,
+        310.0
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": [
+        3497.0,
+        310.0
+      ],
+      "sea_entry_anchor_px": [
+        3497.0,
+        310.0
+      ],
+      "land_route_attach_anchor_px": [
+        3497.0,
+        310.0
+      ],
+      "sea_route_attach_anchor_px": [
+        3497.0,
+        310.0
+      ],
+      "building_hit_rect": {
+        "x": 3377.726,
+        "y": 339.374,
+        "w": 315.549,
+        "h": 186.816
+      },
+      "label_hit_rect": {
+        "x": 3518.5,
+        "y": 285.0,
+        "w": 77.5,
+        "h": 46.0
+      },
+      "hover_hit_rect": {
+        "x": 3377.726,
+        "y": 279.0,
+        "w": 315.549,
+        "h": 247.191
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.61,
+        77.25
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        42,
+        43
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/geumseong/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/geumseong/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        3535.5,
+        405.075
+      ],
+      "normalized_position": [
+        0.863159,
+        0.297193
+      ],
+      "route_anchors_px": {
+        "LAND": [
+          3497.0,
+          310.0
+        ],
+        "SEA": [
+          3497.0,
+          310.0
+        ]
+      },
+      "route_anchors_normalized": {
+        "LAND": [
+          0.85376,
+          0.227439
+        ],
+        "SEA": [
+          0.85376,
+          0.227439
+        ]
+      }
+    },
+    {
+      "city_id": "chenla",
+      "display_name": "真腊",
+      "pxd_label_name": "真腊",
+      "name_correction": null,
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "building_position": [
+        2803.5,
+        736.114
+      ],
+      "building_size": [
+        389.0,
+        387.0
+      ],
+      "label_position": [
+        2968.0,
+        798.5
+      ],
+      "label_size": [
+        69.5,
+        38.0
+      ],
+      "building_rect_normalized": {
+        "x": 0.695856,
+        "y": 0.575561,
+        "w": 0.072063,
+        "h": 0.214058
+      },
+      "label_rect_normalized": {
+        "x": 0.724609,
+        "y": 0.58584,
+        "w": 0.016968,
+        "h": 0.02788
+      },
+      "raw_anchor_px": [
+        3103.5,
+        781.0
+      ],
+      "snapped_anchor_px": [
+        3103.5,
+        781.0
+      ],
+      "piece_anchor_px": [
+        3103.5,
+        781.0
+      ],
+      "piece_anchor_normalized": [
+        0.75769,
+        0.573001
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        3103.5,
+        781.0
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": null,
+      "sea_entry_anchor_px": [
+        3103.5,
+        781.0
+      ],
+      "land_route_attach_anchor_px": null,
+      "sea_route_attach_anchor_px": [
+        3103.5,
+        781.0
+      ],
+      "building_hit_rect": {
+        "x": 2840.226,
+        "y": 774.489,
+        "w": 315.169,
+        "h": 311.762
+      },
+      "label_hit_rect": {
+        "x": 2964.0,
+        "y": 794.5,
+        "w": 77.5,
+        "h": 46.0
+      },
+      "hover_hit_rect": {
+        "x": 2840.226,
+        "y": 774.489,
+        "w": 315.169,
+        "h": 311.762
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.49,
+        97.43
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        46,
+        47
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/chenla/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/chenla/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        2998.0,
+        929.614
+      ],
+      "normalized_position": [
+        0.731934,
+        0.682036
+      ],
+      "route_anchors_px": {
+        "SEA": [
+          3103.5,
+          781.0
+        ]
+      },
+      "route_anchors_normalized": {
+        "SEA": [
+          0.75769,
+          0.573001
+        ]
+      }
+    },
+    {
+      "city_id": "aden",
+      "display_name": "阿丹国",
+      "pxd_label_name": "阿丹",
+      "name_correction": {
+        "from": "阿丹",
+        "to": "阿丹国"
+      },
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "building_position": [
+        1081.5,
+        1000.791
+      ],
+      "building_size": [
+        389.0,
+        355.5
+      ],
+      "label_position": [
+        1255.5,
+        1034.0
+      ],
+      "label_size": [
+        69.5,
+        40.5
+      ],
+      "building_rect_normalized": {
+        "x": 0.275538,
+        "y": 0.782905,
+        "w": 0.072063,
+        "h": 0.180588
+      },
+      "label_rect_normalized": {
+        "x": 0.306519,
+        "y": 0.758621,
+        "w": 0.016968,
+        "h": 0.029714
+      },
+      "raw_anchor_px": [
+        1227.56,
+        1084.932
+      ],
+      "snapped_anchor_px": [
+        1294.127,
+        1063.585
+      ],
+      "piece_anchor_px": [
+        1227.56,
+        1084.932
+      ],
+      "piece_anchor_normalized": [
+        0.299697,
+        0.795989
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        1294.127,
+        1063.585
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": null,
+      "sea_entry_anchor_px": [
+        1227.56,
+        1084.932
+      ],
+      "land_route_attach_anchor_px": null,
+      "sea_route_attach_anchor_px": [
+        1227.56,
+        1084.932
+      ],
+      "building_hit_rect": {
+        "x": 1118.605,
+        "y": 1057.1,
+        "w": 315.169,
+        "h": 266.142
+      },
+      "label_hit_rect": {
+        "x": 1251.5,
+        "y": 1030.0,
+        "w": 77.5,
+        "h": 48.5
+      },
+      "hover_hit_rect": {
+        "x": 1118.605,
+        "y": 1024.0,
+        "w": 315.169,
+        "h": 299.242
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.49,
+        93.51
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        5,
+        6
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/aden/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/aden/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        1276.0,
+        1178.541
+      ],
+      "normalized_position": [
+        0.311523,
+        0.864667
+      ],
+      "route_anchors_px": {
+        "SEA": [
+          1227.56,
+          1084.932
+        ]
+      },
+      "route_anchors_normalized": {
+        "SEA": [
+          0.299697,
+          0.795988
+        ]
+      }
+    },
+    {
+      "city_id": "heijokyo",
+      "display_name": "平城京",
+      "pxd_label_name": "平城京",
+      "name_correction": null,
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "building_position": [
+        3577.5,
+        236.135
+      ],
+      "building_size": [
+        389.0,
+        273.0
+      ],
+      "label_position": [
+        3732.0,
+        269.0
+      ],
+      "label_size": [
+        69.5,
+        38.0
+      ],
+      "building_rect_normalized": {
+        "x": 0.884913,
+        "y": 0.24288,
+        "w": 0.07197,
+        "h": 0.106602
+      },
+      "label_rect_normalized": {
+        "x": 0.911133,
+        "y": 0.197359,
+        "w": 0.016968,
+        "h": 0.02788
+      },
+      "raw_anchor_px": [
+        3730.0,
+        477.0
+      ],
+      "snapped_anchor_px": [
+        3730.0,
+        477.0
+      ],
+      "piece_anchor_px": [
+        3730.0,
+        477.0
+      ],
+      "piece_anchor_normalized": [
+        0.910645,
+        0.349963
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        3730.0,
+        477.0
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": null,
+      "sea_entry_anchor_px": [
+        3730.0,
+        477.0
+      ],
+      "land_route_attach_anchor_px": null,
+      "sea_route_attach_anchor_px": [
+        3730.0,
+        477.0
+      ],
+      "building_hit_rect": {
+        "x": 3614.605,
+        "y": 321.045,
+        "w": 314.789,
+        "h": 165.298
+      },
+      "label_hit_rect": {
+        "x": 3728.0,
+        "y": 265.0,
+        "w": 77.5,
+        "h": 46.0
+      },
+      "hover_hit_rect": {
+        "x": 3614.605,
+        "y": 259.0,
+        "w": 314.789,
+        "h": 227.343
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.37,
+        71.04
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        40
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/heijo_kyo/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/heijo_kyo/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        3772.0,
+        372.635
+      ],
+      "normalized_position": [
+        0.920898,
+        0.273393
+      ],
+      "route_anchors_px": {
+        "SEA": [
+          3730.0,
+          477.0
+        ]
+      },
+      "route_anchors_normalized": {
+        "SEA": [
+          0.910645,
+          0.349963
+        ]
+      }
+    },
+    {
+      "city_id": "simhala",
+      "display_name": "狮子国",
+      "pxd_label_name": "狮子国",
+      "name_correction": null,
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "building_position": [
+        2076.439,
+        982.425
+      ],
+      "building_size": [
+        389.0,
+        392.5
+      ],
+      "label_position": [
+        2237.0,
+        1054.0
+      ],
+      "label_size": [
+        69.5,
+        38.0
+      ],
+      "building_rect_normalized": {
+        "x": 0.518351,
+        "y": 0.753684,
+        "w": 0.072155,
+        "h": 0.220475
+      },
+      "label_rect_normalized": {
+        "x": 0.546143,
+        "y": 0.773294,
+        "w": 0.016968,
+        "h": 0.02788
+      },
+      "raw_anchor_px": [
+        2251.585,
+        978.114
+      ],
+      "snapped_anchor_px": [
+        2257.699,
+        1018.629
+      ],
+      "piece_anchor_px": [
+        2251.585,
+        978.114
+      ],
+      "piece_anchor_normalized": [
+        0.549703,
+        0.717619
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        2257.699,
+        1018.629
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": [
+        2251.585,
+        978.114
+      ],
+      "sea_entry_anchor_px": [
+        2251.585,
+        978.114
+      ],
+      "land_route_attach_anchor_px": [
+        2251.585,
+        978.114
+      ],
+      "sea_route_attach_anchor_px": [
+        2251.585,
+        978.114
+      ],
+      "building_hit_rect": {
+        "x": 2113.165,
+        "y": 1017.271,
+        "w": 315.549,
+        "h": 320.508
+      },
+      "label_hit_rect": {
+        "x": 2233.0,
+        "y": 1050.0,
+        "w": 77.5,
+        "h": 46.0
+      },
+      "hover_hit_rect": {
+        "x": 2113.165,
+        "y": 1017.271,
+        "w": 315.549,
+        "h": 320.508
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.61,
+        100.16
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        22,
+        23
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/sri_lanka/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/sri_lanka/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        2270.939,
+        1178.675
+      ],
+      "normalized_position": [
+        0.554428,
+        0.864765
+      ],
+      "route_anchors_px": {
+        "LAND": [
+          2251.585,
+          978.114
+        ],
+        "SEA": [
+          2251.585,
+          978.114
+        ]
+      },
+      "route_anchors_normalized": {
+        "LAND": [
+          0.549703,
+          0.717618
+        ],
+        "SEA": [
+          0.549703,
+          0.717618
+        ]
+      }
+    },
+    {
+      "city_id": "cairo",
+      "display_name": "开罗",
+      "pxd_label_name": "开罗",
+      "name_correction": null,
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "building_position": [
+        625.0,
+        476.942
+      ],
+      "building_size": [
+        389.0,
+        348.5
+      ],
+      "label_position": [
+        787.0,
+        520.0
+      ],
+      "label_size": [
+        69.5,
+        40.5
+      ],
+      "building_rect_normalized": {
+        "x": 0.164088,
+        "y": 0.401108,
+        "w": 0.072063,
+        "h": 0.173787
+      },
+      "label_rect_normalized": {
+        "x": 0.192139,
+        "y": 0.381511,
+        "w": 0.016968,
+        "h": 0.029714
+      },
+      "raw_anchor_px": [
+        746.0,
+        575.0
+      ],
+      "snapped_anchor_px": [
+        746.0,
+        575.0
+      ],
+      "piece_anchor_px": [
+        746.0,
+        575.0
+      ],
+      "piece_anchor_normalized": [
+        0.182129,
+        0.421864
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        746.0,
+        575.0
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": null,
+      "sea_entry_anchor_px": [
+        746.0,
+        575.0
+      ],
+      "land_route_attach_anchor_px": null,
+      "sea_route_attach_anchor_px": [
+        746.0,
+        575.0
+      ],
+      "building_hit_rect": {
+        "x": 662.105,
+        "y": 536.71,
+        "w": 315.169,
+        "h": 256.871
+      },
+      "label_hit_rect": {
+        "x": 783.0,
+        "y": 516.0,
+        "w": 77.5,
+        "h": 48.5
+      },
+      "hover_hit_rect": {
+        "x": 662.105,
+        "y": 510.0,
+        "w": 315.169,
+        "h": 283.581
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.49,
+        88.62
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        53,
+        54
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/cairo/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/cairo/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        819.5,
+        651.192
+      ],
+      "normalized_position": [
+        0.200073,
+        0.477763
+      ],
+      "route_anchors_px": {
+        "SEA": [
+          746.0,
+          575.0
+        ]
+      },
+      "route_anchors_normalized": {
+        "SEA": [
+          0.182129,
+          0.421864
+        ]
+      }
+    },
+    {
+      "city_id": "jeddah",
+      "display_name": "吉达",
+      "pxd_label_name": "吉达",
+      "name_correction": null,
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "building_position": [
+        950.0,
+        647.443
+      ],
+      "building_size": [
+        389.0,
+        369.5
+      ],
+      "label_position": [
+        1095.0,
+        709.0
+      ],
+      "label_size": [
+        69.5,
+        40.5
+      ],
+      "building_rect_normalized": {
+        "x": 0.243434,
+        "y": 0.517901,
+        "w": 0.072063,
+        "h": 0.195378
+      },
+      "label_rect_normalized": {
+        "x": 0.267334,
+        "y": 0.520176,
+        "w": 0.016968,
+        "h": 0.029714
+      },
+      "raw_anchor_px": [
+        1236.5,
+        693.5
+      ],
+      "snapped_anchor_px": [
+        1236.5,
+        693.5
+      ],
+      "piece_anchor_px": [
+        1236.5,
+        693.5
+      ],
+      "piece_anchor_normalized": [
+        0.30188,
+        0.508804
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        1236.5,
+        693.5
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": [
+        1236.5,
+        693.5
+      ],
+      "sea_entry_anchor_px": [
+        1236.5,
+        693.5
+      ],
+      "land_route_attach_anchor_px": [
+        1236.5,
+        693.5
+      ],
+      "sea_route_attach_anchor_px": [
+        1236.5,
+        693.5
+      ],
+      "building_hit_rect": {
+        "x": 987.105,
+        "y": 695.899,
+        "w": 315.169,
+        "h": 286.3
+      },
+      "label_hit_rect": {
+        "x": 1091.0,
+        "y": 705.0,
+        "w": 77.5,
+        "h": 48.5
+      },
+      "hover_hit_rect": {
+        "x": 987.105,
+        "y": 695.899,
+        "w": 315.169,
+        "h": 286.3
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        98.49,
+        89.47
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        2,
+        33,
+        34
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/jeddah/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/jeddah/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        1144.5,
+        832.193
+      ],
+      "normalized_position": [
+        0.279419,
+        0.61056
+      ],
+      "route_anchors_px": {
+        "LAND": [
+          1236.5,
+          693.5
+        ],
+        "SEA": [
+          1236.5,
+          693.5
+        ]
+      },
+      "route_anchors_normalized": {
+        "LAND": [
+          0.30188,
+          0.508804
+        ],
+        "SEA": [
+          0.30188,
+          0.508804
+        ]
+      }
+    },
+    {
+      "city_id": "dagon",
+      "display_name": "大光",
+      "pxd_label_name": "大光",
+      "name_correction": null,
+      "allowed_routes": [
+        "SEA"
+      ],
+      "is_transport_interchange": false,
+      "building_position": [
+        2595.75,
+        654.972
+      ],
+      "building_size": [
+        370.5,
+        400.0
+      ],
+      "label_position": [
+        2759.0,
+        729.5
+      ],
+      "label_size": [
+        69.5,
+        38.0
+      ],
+      "building_rect_normalized": {
+        "x": 0.646183,
+        "y": 0.509769,
+        "w": 0.065367,
+        "h": 0.2287
+      },
+      "label_rect_normalized": {
+        "x": 0.673584,
+        "y": 0.535216,
+        "w": 0.016968,
+        "h": 0.02788
+      },
+      "raw_anchor_px": [
+        2622.5,
+        874.5
+      ],
+      "snapped_anchor_px": [
+        2622.5,
+        874.5
+      ],
+      "piece_anchor_px": [
+        2622.5,
+        874.5
+      ],
+      "piece_anchor_normalized": [
+        0.640259,
+        0.641599
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        2622.5,
+        874.5
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": null,
+      "sea_entry_anchor_px": [
+        2622.5,
+        874.5
+      ],
+      "land_route_attach_anchor_px": null,
+      "sea_route_attach_anchor_px": [
+        2622.5,
+        874.5
+      ],
+      "building_hit_rect": {
+        "x": 2636.766,
+        "y": 684.816,
+        "w": 287.744,
+        "h": 331.719
+      },
+      "label_hit_rect": {
+        "x": 2755.0,
+        "y": 725.5,
+        "w": 77.5,
+        "h": 46.0
+      },
+      "hover_hit_rect": {
+        "x": 2636.766,
+        "y": 684.816,
+        "w": 287.744,
+        "h": 331.719
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        89.92,
+        103.66
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        11,
+        12
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/dagon/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/dagon/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        2781.0,
+        854.972
+      ],
+      "normalized_position": [
+        0.678955,
+        0.627272
+      ],
+      "route_anchors_px": {
+        "SEA": [
+          2622.5,
+          874.5
+        ]
+      },
+      "route_anchors_normalized": {
+        "SEA": [
+          0.640259,
+          0.641599
+        ]
+      }
+    },
+    {
+      "city_id": "quanzhou",
+      "display_name": "泉州",
+      "pxd_label_name": "泉州",
+      "name_correction": null,
+      "allowed_routes": [
+        "LAND",
+        "SEA"
+      ],
+      "is_transport_interchange": true,
+      "building_position": [
+        3132.578,
+        415.523
+      ],
+      "building_size": [
+        384.5,
+        400.0
+      ],
+      "label_position": [
+        3300.0,
+        500.0
+      ],
+      "label_size": [
+        69.5,
+        38.0
+      ],
+      "building_rect_normalized": {
+        "x": 0.776524,
+        "y": 0.333805,
+        "w": 0.070404,
+        "h": 0.2287
+      },
+      "label_rect_normalized": {
+        "x": 0.805664,
+        "y": 0.366838,
+        "w": 0.016968,
+        "h": 0.02788
+      },
+      "raw_anchor_px": [
+        3103.585,
+        614.114
+      ],
+      "snapped_anchor_px": [
+        3252.5,
+        703.5
+      ],
+      "piece_anchor_px": [
+        3103.585,
+        614.114
+      ],
+      "piece_anchor_normalized": [
+        0.757711,
+        0.450561
+      ],
+      "piece_anchor_error_px": 0.0,
+      "route_attach_anchor_px": [
+        3252.5,
+        703.5
+      ],
+      "pre_snap_error_px": 0.0,
+      "snap_distance_px": 0.0,
+      "land_entry_anchor_px": [
+        3103.585,
+        614.114
+      ],
+      "sea_entry_anchor_px": [
+        3103.585,
+        614.114
+      ],
+      "land_route_attach_anchor_px": [
+        3103.585,
+        614.114
+      ],
+      "sea_route_attach_anchor_px": [
+        3103.585,
+        614.114
+      ],
+      "building_hit_rect": {
+        "x": 3170.64,
+        "y": 444.976,
+        "w": 308.375,
+        "h": 331.719
+      },
+      "label_hit_rect": {
+        "x": 3296.0,
+        "y": 496.0,
+        "w": 77.5,
+        "h": 46.0
+      },
+      "hover_hit_rect": {
+        "x": 3170.64,
+        "y": 444.976,
+        "w": 308.375,
+        "h": 331.719
+      },
+      "hover_hit_min_screen_px_at_min_fit": [
+        96.37,
+        103.66
+      ],
+      "anchor_verification_status": "verified",
+      "anchor_source_path_layers": [
+        17,
+        18
+      ],
+      "static_texture": "res://assets/game/cities/world_hover_preview/quanzhou/idle.png",
+      "animation_texture": "res://assets/game/cities/world_hover_preview/quanzhou/hover_32f.png",
+      "frame_count": 32,
+      "fps": 8.0,
+      "source_position_px": [
+        3324.828,
+        615.523
+      ],
+      "normalized_position": [
+        0.811726,
+        0.451595
+      ],
+      "route_anchors_px": {
+        "LAND": [
+          3103.585,
+          614.114
+        ],
+        "SEA": [
+          3103.585,
+          614.114
+        ]
+      },
+      "route_anchors_normalized": {
+        "LAND": [
+          0.757711,
+          0.450561
+        ],
+        "SEA": [
+          0.757711,
+          0.450561
+        ]
+      }
+    }
+  ],
+  "route_points": [
+    {
+      "id": "land_point_001",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 25",
+      "source_position_px": [
+        387.585,
+        183.614
+      ],
+      "normalized_position": [
+        0.094625,
+        0.134713
+      ],
+      "alias_of": "ancient_rome",
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_002",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 24",
+      "source_position_px": [
+        587.085,
+        201.614
+      ],
+      "normalized_position": [
+        0.143331,
+        0.14792
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_003",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 6",
+      "source_position_px": [
+        728.585,
+        332.614
+      ],
+      "normalized_position": [
+        0.177877,
+        0.244031
+      ],
+      "playable": false,
+      "alias_of": "constantinople",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_004",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 23",
+      "source_position_px": [
+        964.94,
+        392.678
+      ],
+      "normalized_position": [
+        0.235581,
+        0.288098
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_005",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 20",
+      "source_position_px": [
+        1183.94,
+        451.678
+      ],
+      "normalized_position": [
+        0.289048,
+        0.331385
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_006",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 21",
+      "source_position_px": [
+        1218.94,
+        667.678
+      ],
+      "normalized_position": [
+        0.297593,
+        0.489859
+      ],
+      "playable": false,
+      "alias_of": "jeddah",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_007",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 22",
+      "source_position_px": [
+        1314.44,
+        860.678
+      ],
+      "normalized_position": [
+        0.320908,
+        0.631459
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_008",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 5",
+      "source_position_px": [
+        1455.44,
+        575.178
+      ],
+      "normalized_position": [
+        0.355332,
+        0.421994
+      ],
+      "playable": false,
+      "alias_of": "baghdad",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_009",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 18",
+      "source_position_px": [
+        1629.44,
+        522.678
+      ],
+      "normalized_position": [
+        0.397813,
+        0.383476
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_010",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 19",
+      "source_position_px": [
+        1731.44,
+        392.678
+      ],
+      "normalized_position": [
+        0.422715,
+        0.288098
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_011",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 4",
+      "source_position_px": [
+        1868.585,
+        332.614
+      ],
+      "normalized_position": [
+        0.456197,
+        0.244031
+      ],
+      "playable": false,
+      "alias_of": "pantuo",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_012",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 15",
+      "source_position_px": [
+        1950.585,
+        550.614
+      ],
+      "normalized_position": [
+        0.476217,
+        0.403972
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_013",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 13",
+      "source_position_px": [
+        2070.085,
+        296.114
+      ],
+      "normalized_position": [
+        0.505392,
+        0.217252
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_014",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 16",
+      "source_position_px": [
+        2109.585,
+        633.614
+      ],
+      "normalized_position": [
+        0.515035,
+        0.464867
+      ],
+      "playable": false,
+      "alias_of": "delhi",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_015",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本",
+      "source_position_px": [
+        2213.085,
+        846.614
+      ],
+      "normalized_position": [
+        0.540304,
+        0.62114
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_016",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 17",
+      "source_position_px": [
+        2251.585,
+        978.114
+      ],
+      "normalized_position": [
+        0.549703,
+        0.717619
+      ],
+      "alias_of": "simhala",
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_017",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 14",
+      "source_position_px": [
+        2270.085,
+        301.114
+      ],
+      "normalized_position": [
+        0.55422,
+        0.22092
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_018",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 3",
+      "source_position_px": [
+        2475.585,
+        346.614
+      ],
+      "normalized_position": [
+        0.604391,
+        0.254303
+      ],
+      "playable": false,
+      "alias_of": "yumenguan",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_019",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 8",
+      "source_position_px": [
+        2595.585,
+        395.614
+      ],
+      "normalized_position": [
+        0.633688,
+        0.290253
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_020",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 7",
+      "source_position_px": [
+        2707.585,
+        458.614
+      ],
+      "normalized_position": [
+        0.661031,
+        0.336474
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_021",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 2",
+      "source_position_px": [
+        2819.585,
+        518.114
+      ],
+      "normalized_position": [
+        0.688375,
+        0.380128
+      ],
+      "playable": false,
+      "alias_of": "changan",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_022",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 11",
+      "source_position_px": [
+        2929.085,
+        600.114
+      ],
+      "normalized_position": [
+        0.715109,
+        0.440289
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_023",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 12",
+      "source_position_px": [
+        3103.585,
+        614.114
+      ],
+      "normalized_position": [
+        0.757711,
+        0.450561
+      ],
+      "alias_of": "quanzhou",
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_024",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 9",
+      "source_position_px": [
+        3121.085,
+        352.614
+      ],
+      "normalized_position": [
+        0.761984,
+        0.258705
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "land_point_025",
+      "transport_type": "LAND",
+      "pxd_group": "群组 副本 10",
+      "source_position_px": [
+        3311.585,
+        204.614
+      ],
+      "normalized_position": [
+        0.808492,
+        0.150121
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_001",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 9",
+      "source_position_px": [
+        520.56,
+        380.432
+      ],
+      "normalized_position": [
+        0.12709,
+        0.279114
+      ],
+      "playable": false,
+      "alias_of": "ancient_rome",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_002",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 24",
+      "source_position_px": [
+        569.56,
+        560.932
+      ],
+      "normalized_position": [
+        0.139053,
+        0.411542
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_003",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 23",
+      "source_position_px": [
+        711.06,
+        578.432
+      ],
+      "normalized_position": [
+        0.173599,
+        0.424382
+      ],
+      "playable": false,
+      "alias_of": "cairo",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_004",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 8",
+      "source_position_px": [
+        912.56,
+        639.432
+      ],
+      "normalized_position": [
+        0.222793,
+        0.469136
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_005",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 26",
+      "source_position_px": [
+        965.06,
+        725.932
+      ],
+      "normalized_position": [
+        0.23561,
+        0.532599
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_006",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 27",
+      "source_position_px": [
+        1015.06,
+        795.932
+      ],
+      "normalized_position": [
+        0.247817,
+        0.583956
+      ],
+      "playable": false,
+      "alias_of": "jeddah",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_007",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 25",
+      "source_position_px": [
+        1068.56,
+        883.932
+      ],
+      "normalized_position": [
+        0.260879,
+        0.64852
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_008",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 7",
+      "source_position_px": [
+        1143.06,
+        987.932
+      ],
+      "normalized_position": [
+        0.279067,
+        0.724822
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_009",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 21",
+      "source_position_px": [
+        1227.56,
+        1084.932
+      ],
+      "normalized_position": [
+        0.299697,
+        0.795989
+      ],
+      "alias_of": "aden",
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_010",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 6",
+      "source_position_px": [
+        1374.06,
+        1140.932
+      ],
+      "normalized_position": [
+        0.335464,
+        0.837074
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_011",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 19",
+      "source_position_px": [
+        1593.56,
+        1202.432
+      ],
+      "normalized_position": [
+        0.389053,
+        0.882195
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_012",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 20",
+      "source_position_px": [
+        1868.56,
+        1126.932
+      ],
+      "normalized_position": [
+        0.456191,
+        0.826803
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_013",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 5",
+      "source_position_px": [
+        2250.56,
+        1273.932
+      ],
+      "normalized_position": [
+        0.549453,
+        0.934653
+      ],
+      "playable": false,
+      "alias_of": "simhala",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_014",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 18",
+      "source_position_px": [
+        2440.56,
+        1015.932
+      ],
+      "normalized_position": [
+        0.59584,
+        0.745365
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_015",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 16",
+      "source_position_px": [
+        2595.56,
+        862.932
+      ],
+      "normalized_position": [
+        0.633682,
+        0.633112
+      ],
+      "playable": false,
+      "alias_of": "dagon",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_016",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点",
+      "source_position_px": [
+        2731.06,
+        958.432
+      ],
+      "normalized_position": [
+        0.666763,
+        0.703179
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_017",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 15",
+      "source_position_px": [
+        2881.56,
+        1112.932
+      ],
+      "normalized_position": [
+        0.703506,
+        0.816531
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_018",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本",
+      "source_position_px": [
+        2997.56,
+        1043.932
+      ],
+      "normalized_position": [
+        0.731826,
+        0.765908
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_019",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 14",
+      "source_position_px": [
+        3081.56,
+        1245.932
+      ],
+      "normalized_position": [
+        0.752334,
+        0.91411
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_020",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 12",
+      "source_position_px": [
+        3116.56,
+        760.932
+      ],
+      "normalized_position": [
+        0.760879,
+        0.558278
+      ],
+      "playable": false,
+      "alias_of": "chenla",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_021",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 13",
+      "source_position_px": [
+        3214.06,
+        911.932
+      ],
+      "normalized_position": [
+        0.784683,
+        0.669063
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_022",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 2",
+      "source_position_px": [
+        3283.56,
+        719.932
+      ],
+      "normalized_position": [
+        0.80165,
+        0.528197
+      ],
+      "playable": false,
+      "alias_of": "quanzhou",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_023",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 11",
+      "source_position_px": [
+        3346.56,
+        415.432
+      ],
+      "normalized_position": [
+        0.817031,
+        0.304793
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_024",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 10",
+      "source_position_px": [
+        3426.56,
+        531.932
+      ],
+      "normalized_position": [
+        0.836562,
+        0.390266
+      ],
+      "playable": false,
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_025",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 4",
+      "source_position_px": [
+        3497.06,
+        346.432
+      ],
+      "normalized_position": [
+        0.853774,
+        0.254169
+      ],
+      "playable": false,
+      "alias_of": "geumseong",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    },
+    {
+      "id": "sea_point_026",
+      "transport_type": "SEA",
+      "pxd_group": "海洋点 副本 3",
+      "source_position_px": [
+        3747.56,
+        448.432
+      ],
+      "normalized_position": [
+        0.914932,
+        0.329004
+      ],
+      "playable": false,
+      "alias_of": "heijokyo",
+      "source_role": "authored_hint_or_city_seat; classification_superseded_by_corridor_manifest"
+    }
+  ],
+  "stop_aliases": {
+    "land_point_001": "ancient_rome",
+    "sea_point_001": "ancient_rome",
+    "land_point_003": "constantinople",
+    "sea_point_003": "cairo",
+    "land_point_006": "jeddah",
+    "sea_point_006": "jeddah",
+    "land_point_008": "baghdad",
+    "sea_point_009": "aden",
+    "land_point_011": "pantuo",
+    "land_point_014": "delhi",
+    "land_point_016": "simhala",
+    "sea_point_013": "simhala",
+    "sea_point_015": "dagon",
+    "land_point_018": "yumenguan",
+    "sea_point_020": "chenla",
+    "land_point_021": "changan",
+    "land_point_023": "quanzhou",
+    "sea_point_022": "quanzhou",
+    "sea_point_025": "geumseong",
+    "sea_point_026": "heijokyo"
+  },
+  "counts": {
+    "cities": 16,
+    "land_points": 25,
+    "sea_points": 26,
+    "alias_route_points": 20,
+    "playable_stops": 54,
+    "audit_nodes": 67,
+    "interchange_cities": 5,
+    "path_layers": 54,
+    "unique_edges": 57,
+    "playable_route_points": 38,
+    "land_edges": 30,
+    "sea_edges": 27
+  },
+  "notes": {
+    "path_layers_note": "54 PXD path layers are NOT board_edges; see topology_candidate.json",
+    "candidate_only": false,
+    "snap_threshold_px": 80.0,
+    "alias_note": "Aliased route points are audit-only; not playable stops",
+    "rev2b_semantics_frozen": true,
+    "rev2c_movement_geometry_frozen": true,
+    "polyline_px_is_movement": true,
+    "route_mask": "dash_only_from_pxd_path_layers",
+    "route_recalibration": "PHYSICAL-024: 19 original-board city corridors, each with 2 road hints and 3 steps. City seats are unified. Source circles remain artwork evidence; their previous auto-classification is superseded."
+  },
+  "topology": "res://data/rulesets/lshu_configurable_v1/presentation/world_map_topology_v1.json",
+  "map_texture_overscan": "res://assets/game/maps/world/world_map_v2_overscan.png",
+  "map_texture_origin": [
+    0,
+    -184
+  ],
+  "camera": {
+    "default_visible_width_ratio": 0.44,
+    "min_zoom_factor": 0.8,
+    "default_zoom_factor": 1.0,
+    "max_zoom_factor": 1.5,
+    "focus_anchor": [
+      0.45,
+      0.5
+    ],
+    "overscan_bounds": [
+      0,
+      -184,
+      4096,
+      1755
+    ],
+    "logic_size": [
+      4096,
+      1363
+    ],
+    "elastic_overscroll_screen_px": 24,
+    "focus_safe_margin_px": 28
+  },
+  "route_semantics": "res://data/rulesets/lshu_configurable_v1/presentation/world_map_semantics_v1.json",
+  "corridor_manifest": "res://data/rulesets/lshu_configurable_v1/map_corridors_v1.json"
+}

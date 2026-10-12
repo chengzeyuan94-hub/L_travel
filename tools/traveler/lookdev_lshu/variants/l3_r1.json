@@ -1,0 +1,209 @@
+{
+  "base": "baseline",
+  "description": "L3 round 1: L叔 integration & cheap global life. Character on its own render layer, facing clamp toward camera, contact-shadow decal, sun-keyed rim pass; tea cup + steam (seated), potato blossoms (carrying); act-3 camp fire (flame cards + sparks + coal bed) on every fires[] entry; chimney smoke + fire wisps; lantern halos + flicker; stronger tree sway. All rules from tile data, nothing per tile.",
+  "common": {
+    "fires": {
+      "flame": false
+    },
+    "motion": {
+      "wind_strength": 0.04
+    },
+    "l3": {
+      "character": {
+        "layer_bit": 18,
+        "face_camera_max_deg": 40.0,
+        "rim": {
+          "enabled": true,
+          "color": "sun",
+          "tint": "#ffffff",
+          "strength": 0.35,
+          "power": 3.0,
+          "key_bias": 0.6,
+          "top_bias": 0.25
+        },
+        "contact": {
+          "enabled": true,
+          "radius_m": 0.36,
+          "seated_radius_m": 0.48,
+          "height_m": 0.5,
+          "softness": 1.6,
+          "strength": 0.55
+        },
+        "cup": {
+          "enabled": true,
+          "steam": true,
+          "hold": "both",
+          "radius_m": 0.035,
+          "height_m": 0.07,
+          "offset_m": [
+            0,
+            -0.02,
+            0
+          ],
+          "color": "#efe4d2"
+        },
+        "blossom": {
+          "enabled": true,
+          "emission": 0.8,
+          "scale": 1.0,
+          "growth_s": 5.5
+        }
+      },
+      "fire": {
+        "enabled": true,
+        "flame_height_per_scale": 0.62,
+        "flame_width_per_scale": 0.42,
+        "base_lift_per_scale": 0.11,
+        "effect_point_mult": 0.7,
+        "flame_count": 5,
+        "spark_amount": 10,
+        "spark_lifetime_s": 1.4,
+        "spark_size_per_scale": 0.028,
+        "coals": true,
+        "coal_emission": 1.0
+      },
+      "smoke": {
+        "chimney": {
+          "enabled": true,
+          "puffs": 8,
+          "rise_m": 1.4,
+          "drift_m": [
+            0.35,
+            0.0,
+            -0.12
+          ],
+          "speed": 0.1,
+          "size_start_m": 0.12,
+          "size_end_m": 0.36,
+          "alpha": 0.45,
+          "wobble_m": 0.05,
+          "color": "#dfe3df",
+          "warm": 0.0
+        },
+        "fire": {
+          "enabled": true,
+          "puffs": 6,
+          "rise_m": 0.9,
+          "drift_m": [
+            0.15,
+            0.0,
+            -0.05
+          ],
+          "speed": 0.16,
+          "size_start_m": 0.05,
+          "size_end_m": 0.16,
+          "alpha": 0.22,
+          "wobble_m": 0.04,
+          "color": "#d9d6d0",
+          "warm": 0.0
+        },
+        "steam": {
+          "puffs": 5,
+          "rise_m": 0.28,
+          "drift_m": [
+            0.04,
+            0.0,
+            0.0
+          ],
+          "speed": 0.35,
+          "size_start_m": 0.025,
+          "size_end_m": 0.07,
+          "alpha": 0.45,
+          "wobble_m": 0.02,
+          "color": "#ffffff",
+          "warm": 0.0
+        }
+      },
+      "lanterns": {
+        "enabled": true,
+        "halo_color": "#ffb66e",
+        "halo_strength": 0.0,
+        "halo_size_m": 0.7,
+        "halo_falloff": 3.2,
+        "flicker": 0.05
+      }
+    }
+  },
+  "lights": {
+    "morning": {
+      "l3": {
+        "character": {
+          "rim": {
+            "strength": 0.3
+          }
+        },
+        "fire": {
+          "coal_emission": 0.8
+        }
+      }
+    },
+    "day": {
+      "l3": {
+        "character": {
+          "rim": {
+            "strength": 0.28
+          }
+        },
+        "fire": {
+          "coal_emission": 0.6
+        }
+      }
+    },
+    "sunset": {
+      "l3": {
+        "character": {
+          "rim": {
+            "strength": 0.45
+          }
+        },
+        "fire": {
+          "coal_emission": 1.2
+        },
+        "lanterns": {
+          "halo_strength": 0.35
+        }
+      }
+    },
+    "night": {
+      "l3": {
+        "character": {
+          "rim": {
+            "color": "#9fb6ff",
+            "strength": 0.3,
+            "key_bias": 0.3
+          },
+          "contact": {
+            "strength": 0.4
+          }
+        },
+        "fire": {
+          "coal_emission": 2.2
+        },
+        "smoke": {
+          "chimney": {
+            "color": "#8e98ad",
+            "warm": 0.0
+          },
+          "fire": {
+            "color": "#8a8f9c",
+            "warm": 0.35
+          },
+          "steam": {
+            "color": "#c8d2e6"
+          }
+        },
+        "lanterns": {
+          "halo_strength": 0.9
+        }
+      }
+    }
+  },
+  "extra_scripts": [
+    {
+      "script": "res://tools/traveler/lookdev_lshu/modules/l3_life.gd",
+      "cfg": {
+        "measure": true
+      }
+    }
+  ]
+}

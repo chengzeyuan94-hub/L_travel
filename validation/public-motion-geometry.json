@@ -1,0 +1,34 @@
+[
+  {
+    "path": "assets/traveler/characters/chibi-rigged.glb",
+    "mesh_image_skin_streams_equal": true
+  },
+  {
+    "path": "assets/traveler/panti/camp/character/sitting-rigged.glb",
+    "mesh_image_skin_streams_equal": true
+  },
+  {
+    "path": "assets/traveler/panti/camp/character/sitting-animated.glb",
+    "mesh_image_skin_streams_equal": true
+  },
+  {
+    "path": "assets/traveler/characters/action2/animations/walk.glb",
+    "mesh_image_skin_streams_equal": true
+  },
+  {
+    "path": "assets/traveler/characters/action2/animations/turn_180.glb",
+    "mesh_image_skin_streams_equal": true
+  },
+  {
+    "path": "assets/traveler/characters/action2/animations/bow.glb",
+    "mesh_image_skin_streams_equal": true
+  },
+  {
+    "path": "assets/traveler/characters/action2/animations/idle.glb",
+    "mesh_image_skin_streams_equal": true
+  },
+  {
+    "path": "assets/traveler/baghdad/character/carrying_animated.glb",
+    "mesh_image_skin_streams_equal": true
+  }
+]

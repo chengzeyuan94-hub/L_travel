@@ -1,0 +1,40 @@
+{
+  "base": "v13_blaze_clouds2",
+  "light": {
+    "sunel": -8.5,
+    "sunaz": -16.5,
+    "color": [
+      1.0,
+      0.66,
+      0.36
+    ],
+    "energy": 3.4,
+    "angular_distance": 1.0,
+    "cool_fill_energy": 0.45,
+    "cool_fill_color": [
+      0.5,
+      0.5,
+      0.78
+    ]
+  },
+  "env": {
+    "fog_light_color": [
+      1.0,
+      0.64,
+      0.4
+    ],
+    "fog_density": 0.3,
+    "fog_aerial_perspective": 0.32,
+    "glow_intensity": 0.45,
+    "glow_bloom": 0.28,
+    "ambient_light_color": [
+      0.5,
+      0.42,
+      0.56
+    ],
+    "ambient_light_energy": 0.42,
+    "adjustment_saturation": 1.1,
+    "adjustment_contrast": 1.04,
+    "tonemap_white": 1.7
+  }
+}

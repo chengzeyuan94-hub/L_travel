@@ -1,0 +1,16 @@
+import math
+c = asset_col(KEY)
+jade = mat("jade", hexrgb("#CFE4C5"), rough=0.3)
+jade_dk = mat("jade_dark", hexrgb("#9DC296"), rough=0.3)
+red = mat("cord_red", hexrgb("#C8252C"), rough=0.6)
+gold = mat("gold", hexrgb("#D9A441"), rough=0.35, metal=0.65)
+d = torus("jade_disc", c, R=0.24, r=0.15, segs=14, rsegs=6, m=jade, loc=(0, 0, 0.5), rot=(math.pi / 2, 0, 0))
+d.scale = (1, 1, 0.34)
+for j, (R, rr) in enumerate(((0.3, 0.012), (0.17, 0.01))):
+    t = torus(f"jade_groove_{j}", c, R=R, r=rr, segs=16, rsegs=4, m=jade_dk, loc=(0, -0.046, 0.5), rot=(math.pi / 2, 0, 0))
+cyl("jade_cord_top", c, r=0.018, h=0.2, segs=6, m=red, loc=(0, 0, 0.86))
+ico("jade_knot", c, radius=0.05, subdiv=1, m=red, loc=(0, 0, 0.93))
+cyl("jade_cord_bottom", c, r=0.016, h=0.1, segs=6, m=red, loc=(0, 0, 0.05))
+ico("jade_bead", c, radius=0.032, subdiv=1, m=gold, loc=(0, 0, 0.12))
+lathe("jade_tassel", c, [(0.02, 0.0), (0.075, -0.01), (0.075, 0.02), (0.03, 0.1)], segs=8, m=red, loc=(0, 0, -0.13), scale=(1, 1, 1.4))
+print(finish(KEY))

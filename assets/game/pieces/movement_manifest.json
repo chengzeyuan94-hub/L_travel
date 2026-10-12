@@ -1,0 +1,431 @@
+{
+  "version": 1,
+  "units": [
+    {
+      "unit": "camel",
+      "direction": "n",
+      "source_video_id": "9973",
+      "spritesheet": "res://assets/game/pieces/camel/camel_n_walk_8f.png",
+      "frame_count": 8,
+      "fps": 9.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        220.0
+      ],
+      "anchor_kind": "foot",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "camel",
+      "direction": "ne",
+      "source_video_id": "4250",
+      "spritesheet": "res://assets/game/pieces/camel/camel_ne_walk_8f.png",
+      "frame_count": 8,
+      "fps": 9.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        220.0
+      ],
+      "anchor_kind": "foot",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "camel",
+      "direction": "e",
+      "source_video_id": "2983",
+      "spritesheet": "res://assets/game/pieces/camel/camel_e_walk_8f.png",
+      "frame_count": 8,
+      "fps": 9.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        220.0
+      ],
+      "anchor_kind": "foot",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "camel",
+      "direction": "se",
+      "source_video_id": "6566",
+      "spritesheet": "res://assets/game/pieces/camel/camel_se_walk_8f.png",
+      "frame_count": 8,
+      "fps": 9.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        220.0
+      ],
+      "anchor_kind": "foot",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "camel",
+      "direction": "s",
+      "source_video_id": "9630",
+      "spritesheet": "res://assets/game/pieces/camel/camel_s_walk_8f.png",
+      "frame_count": 8,
+      "fps": 9.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        220.0
+      ],
+      "anchor_kind": "foot",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "camel",
+      "direction": "sw",
+      "source_video_id": "4572",
+      "spritesheet": "res://assets/game/pieces/camel/camel_sw_walk_8f.png",
+      "frame_count": 8,
+      "fps": 9.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        220.0
+      ],
+      "anchor_kind": "foot",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "camel",
+      "direction": "w",
+      "source_video_id": "2754",
+      "spritesheet": "res://assets/game/pieces/camel/camel_w_walk_8f.png",
+      "frame_count": 8,
+      "fps": 9.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        220.0
+      ],
+      "anchor_kind": "foot",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "camel",
+      "direction": "nw",
+      "source_video_id": "5402",
+      "spritesheet": "res://assets/game/pieces/camel/camel_nw_walk_8f.png",
+      "frame_count": 8,
+      "fps": 9.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        220.0
+      ],
+      "anchor_kind": "foot",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "ship",
+      "direction": "n",
+      "source_video_id": "9001",
+      "spritesheet": "res://assets/game/pieces/ship/ship_n_sail_8f.png",
+      "frame_count": 8,
+      "fps": 7.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        190.0
+      ],
+      "anchor_kind": "waterline",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "ship",
+      "direction": "ne",
+      "source_video_id": "1248",
+      "spritesheet": "res://assets/game/pieces/ship/ship_ne_sail_8f.png",
+      "frame_count": 8,
+      "fps": 7.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        190.0
+      ],
+      "anchor_kind": "waterline",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "ship",
+      "direction": "e",
+      "source_video_id": "8833",
+      "spritesheet": "res://assets/game/pieces/ship/ship_e_sail_8f.png",
+      "frame_count": 8,
+      "fps": 7.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        190.0
+      ],
+      "anchor_kind": "waterline",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "ship",
+      "direction": "se",
+      "source_video_id": "3779",
+      "spritesheet": "res://assets/game/pieces/ship/ship_se_sail_8f.png",
+      "frame_count": 8,
+      "fps": 7.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        190.0
+      ],
+      "anchor_kind": "waterline",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "ship",
+      "direction": "s",
+      "source_video_id": "8900",
+      "spritesheet": "res://assets/game/pieces/ship/ship_s_sail_8f.png",
+      "frame_count": 8,
+      "fps": 7.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        190.0
+      ],
+      "anchor_kind": "waterline",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "ship",
+      "direction": "sw",
+      "source_video_id": "8992",
+      "spritesheet": "res://assets/game/pieces/ship/ship_sw_sail_8f.png",
+      "frame_count": 8,
+      "fps": 7.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        190.0
+      ],
+      "anchor_kind": "waterline",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "ship",
+      "direction": "w",
+      "source_video_id": "9047",
+      "spritesheet": "res://assets/game/pieces/ship/ship_w_sail_8f.png",
+      "frame_count": 8,
+      "fps": 7.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        190.0
+      ],
+      "anchor_kind": "waterline",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    },
+    {
+      "unit": "ship",
+      "direction": "nw",
+      "source_video_id": "3069",
+      "spritesheet": "res://assets/game/pieces/ship/ship_nw_sail_8f.png",
+      "frame_count": 8,
+      "fps": 7.0,
+      "cell_size": [
+        256,
+        256
+      ],
+      "sheet_size": [
+        2048,
+        256
+      ],
+      "layout": "8x1",
+      "anchor": [
+        128.0,
+        190.0
+      ],
+      "anchor_kind": "waterline",
+      "anchor_frame_spread_px": 0.0,
+      "corner_alpha_zero": true,
+      "magenta_residue_ratio": 0.0,
+      "rgba": true
+    }
+  ],
+  "direction_order": [
+    "n",
+    "ne",
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw"
+  ]
+}

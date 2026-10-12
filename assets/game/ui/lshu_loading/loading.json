@@ -1,0 +1,44 @@
+{
+  "txt_loading_title": {
+    "size": [
+      837,
+      200
+    ]
+  },
+  "strip_blank": {
+    "size": [
+      2464,
+      360
+    ],
+    "nine": [
+      151,
+      151,
+      151,
+      151
+    ]
+  },
+  "flag_start": {
+    "size": [
+      268,
+      320
+    ]
+  },
+  "lshu_walk": {
+    "size": [
+      510,
+      1000
+    ]
+  },
+  "flower_bud": {
+    "size": [
+      156,
+      200
+    ]
+  },
+  "flower_bloom": {
+    "size": [
+      156,
+      200
+    ]
+  }
+}

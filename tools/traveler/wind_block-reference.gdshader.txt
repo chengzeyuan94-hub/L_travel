@@ -1,0 +1,82 @@
+// ============================================================================
+// TASK-MOTION-001 · wind block for shaders/atlas_surface.gdshader
+// Paste over the existing uniforms + vertex() of the LOOKDEV rewrite
+// (docs/design/shanhe-luren/lookdev/recipe/atlas_surface-lookdev.gdshader).
+// Do not re-add `ambient_light_disabled` and do not restore the old fragment():
+// the fire's shadow and SSAO only read on the rewritten (engine-lit) version.
+// ============================================================================
+
+// --- existing lookdev uniforms, unchanged ---
+uniform vec4  base_color : source_color = vec4(1.0);
+uniform float night_amount : hint_range(0.0, 1.0) = 0.0;
+uniform float emission_strength : hint_range(0.0, 8.0) = 0.0;
+uniform float brightness : hint_range(0.0, 3.0) = 1.02;
+uniform float roughness : hint_range(0.0, 1.0) = 0.95;
+uniform float rock_tint_amount : hint_range(0.0, 1.0) = 0.0;
+uniform vec3  rock_tint_color : source_color = vec3(0.62, 0.55, 0.44);
+
+// --- motion layer ---
+// wind_amp is a TILT (dimensionless), not a distance: displacement = amp * lever,
+// lever is in local units, so the same amp gives the same *relative* sway on a
+// 0.27 u bush and a 1.05 u fir. Per-material values are in motion_params.json.
+uniform float wind_amp   : hint_range(0.0, 0.30) = 0.0;
+uniform float wind_stiff : hint_range(0.5, 3.0)  = 1.6;
+uniform float wind_gust                          = 1.0;   // 0.55..1.55, MotionDirector, once per frame
+uniform vec2  wind_dir                           = vec2(1.0, 0.38);
+uniform float anim_t                             = -1.0;  // <0 => fall back to TIME (editor preview)
+
+void vertex() {
+	if (wind_amp > 0.0) {
+		float t = anim_t < 0.0 ? TIME : anim_t;
+		// MODEL_MATRIX[3] is the per-instance origin inside a MultiMesh
+		// (already relied on by the shipped shader's own comment; step S1b re-verifies it).
+		vec3  o = MODEL_MATRIX[3].xyz;
+		// = the two web prototypes' phase terms summed: (x*0.44+z*0.26) + (x*0.28+z*0.37)
+		float phase = o.x * 0.72 + o.z * 0.63;
+		// per-instance jitter; INSTANCE_CUSTOM reads 0 on non-instanced draws, hence the guards
+		float pj  = INSTANCE_CUSTOM.r * 6.2831853;
+		float amp = wind_amp * (INSTANCE_CUSTOM.g <= 0.0 ? 1.0 : INSTANCE_CUSTOM.g);
+		float gr  = (INSTANCE_CUSTOM.b <= 0.0 ? 1.0 : INSTANCE_CUSTOM.b);
+		float gust = 1.0 + (wind_gust - 1.0) * gr;
+		// cantilever: the base is rigid, the tip carries the travel, and the
+		// trunk/canopy seam stays continuous without any per-vertex root height.
+		float lever = pow(max(VERTEX.y, 0.0), wind_stiff);
+		float move  = (sin(t * 1.1 + phase + pj) + 0.4 * sin(t * 1.8 + (phase + pj) * 1.6))
+		              * amp * gust * lever;
+		VERTEX.x += move * wind_dir.x;
+		VERTEX.z += move * wind_dir.y;
+	}
+}
+
+// ============================================================================
+// Wiring in scripts/atlas_builder.gd
+// ============================================================================
+// 1) material(): add the new kinds and set amp/stiff instead of wind_strength
+//      "plants"      -> wind_amp 0.017  wind_stiff 1.60
+//      "trunk"       -> wind_amp 0.017  wind_stiff 1.60      (NEW kind)
+//      "cypress"     -> wind_amp 0.007  wind_stiff 2.20      (NEW kind)
+//      "grass"       -> wind_amp 0.100  wind_stiff 1.15
+//      "bush"        -> wind_amp 0.055  wind_stiff 1.30      (NEW kind, dry/sage)
+//      "city_plants" -> wind_amp 0.012  wind_stiff 1.60
+//      everything else -> wind_amp 0.0
+//
+// 2) import_glb(): the tree prototypes name their trunk surface "solid", which is
+//    the SAME shared material as terrain, rocks, walls and boats. Remap it, using
+//    the pattern already in the file for city plants:
+//      if kind == "solid"  and path.contains("/prototypes/"): kind = "trunk"
+//      if kind == "plants" and path.contains("/prototypes/cypress"): kind = "cypress"
+//      if kind == "plants" and (path.contains("/dry") or path.contains("/sage")): kind = "bush"
+//    Without this remap, raising the wind on "solid" sways the whole continent.
+//
+// 3) instance_mesh(): mm.use_colors is already true and use_custom_data is unused.
+//      mm.use_custom_data = true
+//      mm.set_instance_custom_data(i, Color(rng.randf(), rng.randf_range(0.75,1.25),
+//                                           rng.randf_range(0.6,1.4), 0.0))
+//    Cost for all 9,663 instances: 154,608 bytes.
+//
+// 4) the vertex offset breaks the computed AABB, so on every vegetation
+//    MultiMeshInstance3D: n.custom_aabb = <mesh+instances AABB>.grow(0.10)
+//
+// 5) the LOW LOD path uses material_override = material("plants") for the whole
+//    low_tree (trunk included), so the cantilever works there with no remap; the
+//    HIGH LOD path keeps per-surface materials and needs the remap in (2).

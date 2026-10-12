@@ -1,0 +1,15 @@
+.godot/
+.DS_Store
+builds/
+packages/
+*.log
+__pycache__/
+*.pyc
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+.env*
+export_credentials.cfg
+BUILD_INFO.json

@@ -1,0 +1,70 @@
+[gd_scene format=4]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_efqr6"]
+resource_name = "Quiet turquoise water"
+cull_mode = 2
+albedo_color = Color(0.30588236, 0.67058825, 0.6627451, 1)
+roughness = 0.45
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_j1w7p"]
+_surfaces = [{
+"aabb": AABB(-1.7898401, 0.055, -1.3934631, 3.5660868, 1e-05, 2.80514),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 54,
+"vertex_data": PackedByteArray("AAAAAK5HYT0AAAAADFzjP65HYT0AAAAAViXTP65HYT1Fxu8+AAAAAK5HYT0AAAAAViXTP65HYT1Fxu8+/8ytP65HYT0hgWM/AAAAAK5HYT0AAAAA/8ytP65HYT0hgWM/OF9SP65HYT0xG44/AAAAAK5HYT0AAAAAOF9SP65HYT0xG44/mJCRPq5HYT3p+qA/AAAAAK5HYT0AAAAAmJCRPq5HYT3p+qA/OGSjvq5HYT3UsbQ/AAAAAK5HYT0AAAAAOGSjvq5HYT3UsbQ/bJlSv65HYT2BQo4/AAAAAK5HYT0AAAAAbJlSv65HYT2BQo4/dBGyv65HYT0nF2k/AAAAAK5HYT0AAAAAdBGyv65HYT0nF2k/PzfWv65HYT2+QvM+AAAAAK5HYT0AAAAAPzfWv65HYT2+QvM+exnlv65HYT1pHUUlAAAAAK5HYT0AAAAAexnlv65HYT1pHUUlwOjWv65HYT1QDPS+AAAAAK5HYT0AAAAAwOjWv65HYT1QDPS+lW2wv65HYT2L8Wa/AAAAAK5HYT0AAAAAlW2wv65HYT2L8Wa/ualav65HYT3xtJO/AAAAAK5HYT0AAAAAualav65HYT3xtJO/i0ihvq5HYT0AXbK/AAAAAK5HYT0AAAAAi0ihvq5HYT0AXbK/n0idPq5HYT2k8K2/AAAAAK5HYT0AAAAAn0idPq5HYT2k8K2/4nZQP65HYT1S0Yy/AAAAAK5HYT0AAAAA4nZQP65HYT1S0Yy/OZmgP65HYT0FOVK/AAAAAK5HYT0AAAAAOZmgP65HYT0FOVK/xfTUP65HYT2K1PG+AAAAAK5HYT0AAAAAxfTUP65HYT2K1PG+DFzjP65HYT0AAAAA/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+/")
+}]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v70rk"]
+resource_name = "Water depth"
+cull_mode = 2
+albedo_color = Color(0.21176471, 0.49411765, 0.5294118, 1)
+roughness = 0.88
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_a0xt7"]
+_surfaces = [{
+"aabb": AABB(-1.7898401, 0, -1.3934631, 3.5660868, 0.055, 2.80514),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 108,
+"vertex_data": PackedByteArray("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")
+}]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e1rjh"]
+resource_name = "Soft wave crests"
+cull_mode = 2
+albedo_color = Color(0.6, 0.8039216, 0.7529412, 1)
+roughness = 0.88
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_60irn"]
+_surfaces = [{
+"aabb": AABB(-0.8, 0.057, -0.67800003, 1.4200001, 1e-05, 1.076),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 18,
+"vertex_data": PackedByteArray("zcxMv9V4aT29dJO+zszMvtV4aT0lBoG+zcxMv9V4aT0lBoG+zcxMv9V4aT29dJO+zszMvtV4aT29dJO+zszMvtV4aT0lBoG+rUdhPtV4aT0QWLk+UrgeP9V4aT2oxss+rUdhPtV4aT2oxss+rUdhPtV4aT0QWLk+UrgeP9V4aT0QWLk+UrgeP9V4aT2oxss+CNejPNV4aT1pkS2/PgrXPtV4aT0dWiS/CNejPNV4aT0dWiS/CNejPNV4aT1pkS2/PgrXPtV4aT1pkS2/PgrXPtV4aT0dWiS//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+/")
+}]
+
+[node name="WaterPatch" type="Node3D" unique_id=1811215935]
+metadata/asset_id = "water_patch"
+metadata/source_script = "res://tools/miniworld/bake_editor_assets.gd"
+metadata/ground_origin = true
+metadata/source_bounds = AABB(-1.7898401, 0, -1.3934631, 3.5660868, 0.05701, 2.80514)
+
+[node name="WaterPatch" type="Node3D" parent="." unique_id=941420760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0067967176, 0, -0.0091068745)
+
+[node name="Water surface" type="MeshInstance3D" parent="WaterPatch" unique_id=1988639556]
+material_override = SubResource("StandardMaterial3D_efqr6")
+mesh = SubResource("ArrayMesh_j1w7p")
+
+[node name="Patch edge" type="MeshInstance3D" parent="WaterPatch" unique_id=2004372093]
+material_override = SubResource("StandardMaterial3D_v70rk")
+mesh = SubResource("ArrayMesh_a0xt7")
+
+[node name="Quiet water highlights" type="MeshInstance3D" parent="WaterPatch" unique_id=1261781518]
+material_override = SubResource("StandardMaterial3D_e1rjh")
+mesh = SubResource("ArrayMesh_60irn")

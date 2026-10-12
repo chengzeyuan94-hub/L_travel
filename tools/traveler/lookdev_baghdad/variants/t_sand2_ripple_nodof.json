@@ -1,0 +1,6 @@
+{
+  "base": "t_sand2_ripple",
+  "camera": {
+    "dof_enabled": false
+  }
+}

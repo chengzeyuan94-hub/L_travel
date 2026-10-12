@@ -1,0 +1,28 @@
+{
+  "schema": "silkroad.cliff-buddha.v1",
+  "asset": "res://assets/traveler/landmarks/changan-cliff-buddha.glb",
+  "view": "changan",
+  "position": [
+    20.0,
+    1.1,
+    6.0
+  ],
+  "scale": 6.0,
+  "yaw_degrees": 60.0,
+  "stone_color_srgb": "a79a86",
+  "roughness": 0.94,
+  "lighting": "scene sun and environment only",
+  "source_triangles": 1988575,
+  "runtime_triangles": 119999,
+  "terrain_cut": {
+    "radius_local": [
+      0.56,
+      0.45
+    ],
+    "inner_radius": 0.88,
+    "outer_radius": 1.32,
+    "ground_inset": 0.045,
+    "clear_vegetation_radius": 1.0,
+    "cover_river_radius": 0.96
+  }
+}

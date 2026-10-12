@@ -1,0 +1,9 @@
+{
+  "base": "l3_probe",
+  "description": "L3 motion probe: same as l3_probe, frozen at t=5.0 s (compare with t=2.5 to measure sway amplitude).",
+  "common": {
+    "motion": {
+      "freeze_time_s": 5.0
+    }
+  }
+}

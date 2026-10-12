@@ -1,0 +1,142 @@
+{
+  "schema": "shanhai.traveler.day-leaves.v1",
+  "reference": {
+    "url": "https://bruno-simon.com/",
+    "observed_by": "Parent executor opened the live page on 2026-09-19 at 1920x1080",
+    "adopted": [
+      "Sparse small separate brown pieces moving among world scenery; static paving litter excluded",
+      "Slow drifting in gusts; no continuous screen-filling layer",
+      "No visible streak trails; retain original scene DOF"
+    ],
+    "limitation": "Direct 4.522s source-site sequence shows three identifiable small moving brown pieces; exact airborne count, rotation axes and blur mechanism are not identifiable from that view. Size/visibility target follows the user 8..22px requirement, not a fabricated source constant."
+  },
+  "amount": 32,
+  "amount_ratio": 1.0,
+  "_derived_density": {
+    "emission_volume_u3": 57.6,
+    "pool_particles_per_u3": 0.555555555555556,
+    "formula": "amount / (8 * half_extents.x * half_extents.y * half_extents.z)",
+    "note": "Reporting values derived from the active amount and volume; not a visible-particle count."
+  },
+  "visible_count_target": [
+    8,
+    18
+  ],
+  "density_note": "32 particles distributed in a world volume 12 x 2 x 2.4 u (0.556 particles/u^3 before drift and occlusion); visibility target8..18 is the scene implementation, not a measured source-site count.",
+  "lifetime_s": 9.5,
+  "lifetime_randomness": 0.0,
+  "preprocess_s": 9.5,
+  "randomness": 0.55,
+  "explosiveness": 0.0,
+  "fixed_fps": 30,
+  "interpolate": false,
+  "fract_delta": true,
+  "seed": 20260919,
+  "emitter": {
+    "camera_depth_u": 8.5,
+    "height_above_camera_ray_u": -0.4,
+    "horizontal_offset_u": 0.0,
+    "half_extents_u": [
+      6.0,
+      1.0,
+      1.2
+    ],
+    "placement": "Convert frozen camera directions to a world transform once; parent is the static world, never the camera. World-Y-up box distributes emission across depth and canopy height.",
+    "world_space": true
+  },
+  "motion": {
+    "direction": [
+      0.85,
+      -0.6,
+      0.0
+    ],
+    "spread_deg": 12.0,
+    "initial_velocity_u_per_s": [
+      1.58,
+      1.6
+    ],
+    "gravity_u_per_s2": [
+      0.0,
+      -0.09,
+      0.0
+    ],
+    "damping": [
+      0.0,
+      0.0
+    ],
+    "initial_angle_deg": [
+      -180.0,
+      180.0
+    ],
+    "rotation_velocity_3d_min_deg_per_s": [
+      -6.0,
+      -8.0,
+      -14.0
+    ],
+    "rotation_velocity_3d_max_deg_per_s": [
+      6.0,
+      8.0,
+      14.0
+    ]
+  },
+  "turbulence": {
+    "enabled": true,
+    "noise_strength": 1.15,
+    "noise_scale": 2.8,
+    "noise_speed": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "noise_speed_random": 0.0,
+    "influence": [
+      0.0,
+      0.0
+    ],
+    "initial_displacement": [
+      0.0,
+      0.0
+    ],
+    "determinism": "Turbulence is enabled for the Godot 4.7 ParticleProcessMaterial path, but influence is explicitly zero: the shared wind vector and gravity form one stable swept flow, avoiding per-render-call velocity reorientation and flies. Zero temporal noise speed also removes wall-clock timing from independent A/B starts."
+  },
+  "mesh": {
+    "height_u": 0.125,
+    "width_u": 0.075,
+    "fold_u": 0.008,
+    "scale": [
+      0.85,
+      1.15
+    ],
+    "pixel_height_median_target": [
+      8,
+      22
+    ],
+    "shape": "Four opaque triangles forming a pointed, lightly folded leaf; no texture, billboarding, trails, or motion blur."
+  },
+  "colors": [
+    "#b4772e",
+    "#caa844",
+    "#a65631",
+    "#d7b957"
+  ],
+  "render": {
+    "roughness": 1.0,
+    "specular": 0.0,
+    "cast_shadow": false,
+    "clear_depth_clip_u": [
+      5.5,
+      19.0
+    ],
+    "visibility_aabb_position_u": [
+      -10.0,
+      -10.0,
+      -10.0
+    ],
+    "visibility_aabb_size_u": [
+      20.0,
+      20.0,
+      20.0
+    ]
+  },
+  "clock": "speed_scale stays zero. Only MotionDirector.apply_time requests particle simulation; set_frozen(true) requests no advances. Preprocess and seed are identical in A/B."
+}

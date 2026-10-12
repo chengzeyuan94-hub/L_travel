@@ -1,0 +1,175 @@
+{
+  "base": "c_rig4",
+  "morning": {
+    "lights": {
+      "C_BounceCamp": {
+        "light_energy": 0.35,
+        "light_color": [
+          1.0,
+          0.93,
+          0.84
+        ]
+      },
+      "C_BounceCastle": {
+        "light_energy": 0.22,
+        "light_color": [
+          1.0,
+          0.93,
+          0.84
+        ]
+      },
+      "C_FirePool": {
+        "light_energy": 0.14,
+        "omni_range": 1.4
+      },
+      "C_FireReach": {
+        "light_energy": 0.06,
+        "omni_range": 1.6
+      },
+      "C_FireBounce": {
+        "light_energy": 0.1
+      },
+      "C_WallGlowL": {
+        "light_energy": 0.0
+      },
+      "C_WallGlowLG": {
+        "light_energy": 0.0
+      },
+      "C_WallGlowGF": {
+        "light_energy": 0.0
+      },
+      "C_WallGlowT": {
+        "light_energy": 0.0
+      },
+      "C_WallGlowR": {
+        "light_energy": 0.0
+      },
+      "C_PoolGate": {
+        "light_energy": 0.0
+      },
+      "C_PoolLeft": {
+        "light_energy": 0.0
+      },
+      "C_PoolFront": {
+        "light_energy": 0.0
+      },
+      "C_PoolRight": {
+        "light_energy": 0.0
+      },
+      "C_WidePoolGate": {
+        "light_energy": 0.0
+      },
+      "C_WidePoolLeft": {
+        "light_energy": 0.0
+      },
+      "C_WidePoolFront": {
+        "light_energy": 0.0
+      },
+      "C_WidePoolRight": {
+        "light_energy": 0.0
+      }
+    },
+    "materials": {
+      "SnowRocks_*": {
+        "roughness": 0.62,
+        "metallic_specular": 0.7
+      },
+      "Stump": {
+        "roughness": 0.75
+      },
+      "Firepit": {
+        "roughness": 0.6,
+        "metallic_specular": 0.7
+      },
+      "Tent": {
+        "roughness": 0.85
+      }
+    }
+  },
+  "midnight": {
+    "lights": {
+      "C_BounceCamp": {
+        "light_energy": 0.12,
+        "light_color": [
+          0.55,
+          0.68,
+          1.0
+        ]
+      },
+      "C_BounceCastle": {
+        "light_energy": 0.03,
+        "light_color": [
+          0.55,
+          0.68,
+          1.0
+        ]
+      },
+      "C_FirePool": {
+        "light_energy": 0.8,
+        "omni_range": 1.9
+      },
+      "C_FireReach": {
+        "light_energy": 0.3,
+        "omni_range": 2.2
+      },
+      "C_FireBounce": {
+        "light_energy": 0.2
+      },
+      "C_WallGlowL": {
+        "light_energy": 1.1
+      },
+      "C_WallGlowLG": {
+        "light_energy": 1.1
+      },
+      "C_WallGlowGF": {
+        "light_energy": 1.1
+      },
+      "C_WallGlowT": {
+        "light_energy": 0.6
+      },
+      "C_WallGlowR": {
+        "light_energy": 0.6
+      },
+      "C_PoolGate": {
+        "light_energy": 2.6
+      },
+      "C_PoolLeft": {
+        "light_energy": 1.6
+      },
+      "C_PoolFront": {
+        "light_energy": 1.6
+      },
+      "C_PoolRight": {
+        "light_energy": 1.6
+      },
+      "C_WidePoolGate": {
+        "light_energy": 2.4
+      },
+      "C_WidePoolLeft": {
+        "light_energy": 1.5
+      },
+      "C_WidePoolFront": {
+        "light_energy": 1.5
+      },
+      "C_WidePoolRight": {
+        "light_energy": 1.5
+      }
+    },
+    "materials": {
+      "SnowRocks_*": {
+        "roughness": 0.62,
+        "metallic_specular": 0.7
+      },
+      "Stump": {
+        "roughness": 0.75
+      },
+      "Firepit": {
+        "roughness": 0.6,
+        "metallic_specular": 0.7
+      },
+      "Tent": {
+        "roughness": 0.85
+      }
+    }
+  }
+}
