@@ -6,11 +6,13 @@ macOS：打开DMG，把游戏及工坊.app拖到Applications再启动。包为ad
 
 Windows：把整个ZIP解压到一个目录，双击游戏或Workshop.exe；相应.pck与.exe保留在同目录。Windows x86_64、支持Vulkan的显卡/驱动；未代码签名、无Windows实机验收。
 
-Android：arm64-v8a、兼容Godot4.7移动渲染器的设备。下载并由用户在自己的设备选择安装APK；项目不自动更改安装来源设置。游戏与工坊不同应用ID、各自数据隔离，没有Play商店发布/签名身份。未Android实机安装与触控验收。工坊独立Android实例/试玩返回仍需设备复核，不把导出验证当实测。
+Android：arm64-v8a、兼容Godot4.7移动渲染器的设备。下载并由用户在自己的设备选择安装APK；项目不自动更改安装来源设置。游戏与工坊不同应用ID、各自应用私有目录隔离，没有Play商店发布/签名身份。两个APK的Manifest启动显示名相同，19项启动图标资源SHA也一致；实际设备桌面未验收，请按APK文件名和应用ID区分。未Android实机安装与触控验收。工坊独立Android实例/试玩返回仍需设备复核，不把导出验证当实测。
 
 首次使用：先打开工坊新建地图、放城市、接路线、保存并重开。游戏标题可以进入四幕旅行，无需胜场解锁。正式商旅和工坊试玩需「配置玩法规则」，参见RULES_CONFIGURATION.md；本版本不提供原牌或未经确认的替代默认经济。
 
-桌面程序的数据目录为 `<OS.get_data_dir()>/LShuTravel-Open-v0.2.4`，工坊和游戏共享公开版目录；macOS通常在 `~/Library/Application Support/`，Windows通常在用户AppData/Roaming。Godot内部user://也用独立公开版名称，避免覆盖私人版本。Android数据属于各应用私有目录；游戏ID `com.chengzeyuan.lshutravel.public.game`，工坊ID `.public.workshop`，跨应用分享需使用导出/导入文件。
+桌面程序的普通地图、规则配置、进度和商旅存档目录为 `<OS.get_data_dir()>/LShuTravel-Open-v0.2.4`，工坊和游戏共享公开版目录；macOS通常在 `~/Library/Application Support/`，Windows通常在用户AppData/Roaming。Godot内部user://也用独立公开版名称。Android普通数据属于各应用私有目录；游戏ID `com.chengzeyuan.lshutravel.public.game`，工坊ID `.public.workshop`，跨应用分享需使用导出/导入文件。
+
+**现有桌面包的隔离例外：** 第四幕「L叔去哪儿」仍默认使用 `<OS.get_data_dir()>/ShanheLvren/lshu_where`（调试时钟使用`lshu_where_scaled`），与旧私人版共用旅行本和明信片路径。因此不能承诺所有公开版数据都避免覆盖私人数据。本次只纠正文档，既有包没有改目录；已有旧旅行本时，应先备份，并避免同时运行公开与私人版第四幕。没有自动、经确认的旧档复制迁移流程。商旅旧局也未绑定开局规则，变更或删除配置后不能默认正确恢复；请保留原规则配置。[定版已知问题](VERSIONING.md#已知问题与验收边界)
 
 同ID/同签名的Android更新通常保留数据；卸载会清除应用私有数据，系统备份未启用，也未要求保留卸载数据。升级、卸载或换设备前通过工坊导出地图并单独备份规则文件。不同签名或ID不能假定继承旧存档。不要自动导入作者的旧私人地图/经济/角色资产；旧地图若内嵌原牌或私人IP，不适合再公开。
 
