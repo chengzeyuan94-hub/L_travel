@@ -1,5 +1,13 @@
 # Public release cleanup · 0.2.4-public.1
 
+## 2026-10-19: separately downloadable functional rules
+
+At the project maintainer's explicit request, `rules/LTravel-functional-rules-v1.json` now supplies the r2 baseline's functional exchange values, goods supplies, starting grants and 36 machine-readable event effects. Event titles and instructions are newly written. The JSON uses the already bundled board and excludes original card images, scans, original prose, private maps and third-party character assets. Existing v2 additional-city parameters are retained unchanged; this is not a balance certification or a claim of the tabletop author's authorization. The code MIT and project-owned asset licenses do not automatically grant rights in third-party data, text, artwork or arrangement.
+
+The installation packages and frozen tag are unchanged. The following records the original package cleanup, not the content of this later optional JSON. See [import instructions](rules/IMPORT-RULES.md).
+
+## Original package cleanup
+
 The independent release copy is based on the accepted map-workshop **0.2.4-r2** assembly dated 2026-10-10, with the required generated traveler atlas restored from the local production source. The unaccepted r4 GUI candidate, old main-branch snapshot and prior postcard-unlock packages are not this release's baseline. Private originals and the existing remote initial commit were preserved.
 
 Removed from public source, history and packages:

@@ -1,0 +1,3024 @@
+{
+  "schema": "lshu.rules.config.v1",
+  "confirmed_by_owner": true,
+  "seed": 20261019,
+  "events_enabled": true,
+  "ruleset": {
+    "warehouse_capacity": 4,
+    "silver_supply_by_player_count": {
+      "2": 100,
+      "3": 120,
+      "4": 140
+    },
+    "dice_faces": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      "EVENT"
+    ],
+    "open_trade_route_reward": 2,
+    "direct_sale_rate": 1,
+    "goods_supply_total_all": 160,
+    "event_deck_exhaust_policy": "RESHUFFLE_DISCARD",
+    "lose_good_selection_policy": "PLAYER_CHOICE",
+    "half_silver_rounding": "CEIL",
+    "half_goods_single_item_policy": "NO_LOSS",
+    "gain_starting_resource_uses_full_starting_grant": true
+  },
+  "goods": [
+    {
+      "id": "tea",
+      "supply_total": 10
+    },
+    {
+      "id": "silk",
+      "supply_total": 20
+    },
+    {
+      "id": "agarwood",
+      "supply_total": 10
+    },
+    {
+      "id": "perfume",
+      "supply_total": 10
+    },
+    {
+      "id": "jade",
+      "supply_total": 10
+    },
+    {
+      "id": "horse",
+      "supply_total": 10
+    },
+    {
+      "id": "frankincense",
+      "supply_total": 10
+    },
+    {
+      "id": "porcelain",
+      "supply_total": 10
+    },
+    {
+      "id": "black_pepper",
+      "supply_total": 10
+    },
+    {
+      "id": "dates",
+      "supply_total": 10
+    },
+    {
+      "id": "gems",
+      "supply_total": 10
+    },
+    {
+      "id": "ginseng",
+      "supply_total": 10
+    },
+    {
+      "id": "lacquerware",
+      "supply_total": 10
+    },
+    {
+      "id": "glass",
+      "supply_total": 10
+    },
+    {
+      "id": "ivory",
+      "supply_total": 10
+    }
+  ],
+  "city_cards": [
+    {
+      "city_id": "yumenguan",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "jade",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "rome",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "glass",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "constantinople",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "SILVER",
+            "resource_id": "silver",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "changan",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "tea",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "panti",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "horse",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "baghdad",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "dates",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "delhi",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "black_pepper",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "geumseong",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "ginseng",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "chenla",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "agarwood",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "aden",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "frankincense",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "heijokyo",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "lacquerware",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "simhala",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "gems",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "cairo",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "perfume",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "jeddah",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "SILVER",
+            "resource_id": "silver",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "dagon",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "ivory",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "city_id": "quanzhou",
+      "starting_grant": {
+        "entries": [
+          {
+            "resource_kind": "GOOD",
+            "resource_id": "porcelain",
+            "quantity": 1
+          }
+        ]
+      }
+    }
+  ],
+  "trade_decks": [
+    {
+      "id": "functional_trade_01",
+      "city_ids": [
+        "cairo",
+        "rome"
+      ],
+      "cards": [
+        {
+          "id": "functional_trade_01_01",
+          "card_number": 1,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_01_02",
+          "card_number": 2,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_01_03",
+          "card_number": 3,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_01_04",
+          "card_number": 4,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_01_05",
+          "card_number": 5,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_01_06",
+          "card_number": 6,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_01_07",
+          "card_number": 7,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_01_08",
+          "card_number": 8,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_01_09",
+          "card_number": 9,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_01_10",
+          "card_number": 10,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "functional_trade_02",
+      "city_ids": [
+        "quanzhou",
+        "changan"
+      ],
+      "cards": [
+        {
+          "id": "functional_trade_02_01",
+          "card_number": 1,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_02_02",
+          "card_number": 2,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_02_03",
+          "card_number": 3,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_02_04",
+          "card_number": 4,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_02_05",
+          "card_number": 5,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_02_06",
+          "card_number": 6,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_02_07",
+          "card_number": 7,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_02_08",
+          "card_number": 8,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_02_09",
+          "card_number": 9,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_02_10",
+          "card_number": 10,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "functional_trade_03",
+      "city_ids": [
+        "heijokyo",
+        "geumseong"
+      ],
+      "cards": [
+        {
+          "id": "functional_trade_03_01",
+          "card_number": 1,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_03_02",
+          "card_number": 2,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_03_03",
+          "card_number": 3,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_03_04",
+          "card_number": 4,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_03_05",
+          "card_number": 5,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_03_06",
+          "card_number": 6,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_03_07",
+          "card_number": 7,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_03_08",
+          "card_number": 8,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_03_09",
+          "card_number": 9,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_03_10",
+          "card_number": 10,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "functional_trade_04",
+      "city_ids": [
+        "simhala",
+        "delhi"
+      ],
+      "cards": [
+        {
+          "id": "functional_trade_04_01",
+          "card_number": 1,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_04_02",
+          "card_number": 2,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_04_03",
+          "card_number": 3,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_04_04",
+          "card_number": 4,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_04_05",
+          "card_number": 5,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_04_06",
+          "card_number": 6,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_04_07",
+          "card_number": 7,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_04_08",
+          "card_number": 8,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_04_09",
+          "card_number": 9,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_04_10",
+          "card_number": 10,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "functional_trade_05",
+      "city_ids": [
+        "jeddah",
+        "aden"
+      ],
+      "cards": [
+        {
+          "id": "functional_trade_05_01",
+          "card_number": 1,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_05_02",
+          "card_number": 2,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_05_03",
+          "card_number": 3,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_05_04",
+          "card_number": 4,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_05_05",
+          "card_number": 5,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_05_06",
+          "card_number": 6,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_05_07",
+          "card_number": 7,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_05_08",
+          "card_number": 8,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_05_09",
+          "card_number": 9,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_05_10",
+          "card_number": 10,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "functional_trade_06",
+      "city_ids": [
+        "panti",
+        "yumenguan"
+      ],
+      "cards": [
+        {
+          "id": "functional_trade_06_01",
+          "card_number": 1,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_06_02",
+          "card_number": 2,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_06_03",
+          "card_number": 3,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_06_04",
+          "card_number": 4,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_06_05",
+          "card_number": 5,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_06_06",
+          "card_number": 6,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_06_07",
+          "card_number": 7,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_06_08",
+          "card_number": 8,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_06_09",
+          "card_number": 9,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_06_10",
+          "card_number": 10,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "functional_trade_07",
+      "city_ids": [
+        "constantinople",
+        "baghdad"
+      ],
+      "cards": [
+        {
+          "id": "functional_trade_07_01",
+          "card_number": 1,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_07_02",
+          "card_number": 2,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_07_03",
+          "card_number": 3,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_07_04",
+          "card_number": 4,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_07_05",
+          "card_number": 5,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_07_06",
+          "card_number": 6,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_07_07",
+          "card_number": 7,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_07_08",
+          "card_number": 8,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_07_09",
+          "card_number": 9,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_07_10",
+          "card_number": 10,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "functional_trade_08",
+      "city_ids": [
+        "chenla",
+        "dagon"
+      ],
+      "cards": [
+        {
+          "id": "functional_trade_08_01",
+          "card_number": 1,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "dates",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_08_02",
+          "card_number": 2,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "black_pepper",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_08_03",
+          "card_number": 3,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_08_04",
+          "card_number": 4,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "jade",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "perfume",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_08_05",
+          "card_number": 5,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_08_06",
+          "card_number": 6,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "frankincense",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_08_07",
+          "card_number": 7,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "gems",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ivory",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "ginseng",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_08_08",
+          "card_number": 8,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "porcelain",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 2
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "lacquerware",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_08_09",
+          "card_number": 9,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "horse",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 4
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "glass",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "functional_trade_08_10",
+          "card_number": 10,
+          "entries": [
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "tea",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "agarwood",
+              "quantity": 3
+            },
+            {
+              "resource_kind": "GOOD",
+              "resource_id": "silk",
+              "quantity": 1
+            },
+            {
+              "resource_kind": "SILVER",
+              "resource_id": "silver",
+              "quantity": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "event_recipes": [
+    {
+      "id": "functional_land_01",
+      "deck_type": "LAND",
+      "card_number": 1,
+      "title": "陆路规则 01",
+      "template": "本次可用当前交通工具移动0至5步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 5,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_02",
+      "deck_type": "LAND",
+      "card_number": 2,
+      "title": "陆路规则 02",
+      "template": "本次可用当前交通工具移动0至4步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 4,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_03",
+      "deck_type": "LAND",
+      "card_number": 3,
+      "title": "陆路规则 03",
+      "template": "持有0或1件货物时不损失；持有2或3件时交回1件，持有4件时交回2件。由自己选择货物。",
+      "effects": [
+        {
+          "op": "LOSE_HALF_GOODS_MAX_2",
+          "max_loss": 2,
+          "single_item_policy": "NO_LOSS",
+          "two_item_loss_threshold": 4
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_04",
+      "deck_type": "LAND",
+      "card_number": 4,
+      "title": "陆路规则 04",
+      "template": "交回持有白银的一半，奇数向上取整，最多交回5银。",
+      "effects": [
+        {
+          "op": "LOSE_HALF_SILVER_MAX_5"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_05",
+      "deck_type": "LAND",
+      "card_number": 5,
+      "title": "陆路规则 05",
+      "template": "本次可用当前交通工具移动0至3步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 3,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_06",
+      "deck_type": "LAND",
+      "card_number": 6,
+      "title": "陆路规则 06",
+      "template": "从自己持有的货物中选择1件，放回公共供应；没有货物则不变。",
+      "effects": [
+        {
+          "op": "LOSE_GOOD",
+          "quantity": 1,
+          "selection_policy": "PLAYER_CHOICE"
+        }
+      ],
+      "failure_policy": "NONE_WHEN_EMPTY"
+    },
+    {
+      "id": "functional_land_07",
+      "deck_type": "LAND",
+      "card_number": 7,
+      "title": "陆路规则 07",
+      "template": "本次可用当前交通工具移动0至6步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 6,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_08",
+      "deck_type": "LAND",
+      "card_number": 8,
+      "title": "陆路规则 08",
+      "template": "从自己持有的货物中选择1件，放回公共供应；没有货物则不变。",
+      "effects": [
+        {
+          "op": "LOSE_GOOD",
+          "quantity": 1,
+          "selection_policy": "PLAYER_CHOICE"
+        }
+      ],
+      "failure_policy": "NONE_WHEN_EMPTY"
+    },
+    {
+      "id": "functional_land_09",
+      "deck_type": "LAND",
+      "card_number": 9,
+      "title": "陆路规则 09",
+      "template": "再领取自己开局城市规定的一份起始物资；按现有引擎的库存和货仓限制结算。",
+      "effects": [
+        {
+          "op": "GAIN_STARTING_RESOURCE",
+          "quantity": 1
+        }
+      ],
+      "failure_policy": "NONE_WHEN_UNAVAILABLE"
+    },
+    {
+      "id": "functional_land_10",
+      "deck_type": "LAND",
+      "card_number": 10,
+      "title": "陆路规则 10",
+      "template": "交出1件自己的货物，与公共供应或另一位玩家交换1件不同货物；没有可行交换则不变。",
+      "effects": [
+        {
+          "op": "EXCHANGE_ONE_GOOD"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_11",
+      "deck_type": "LAND",
+      "card_number": 11,
+      "title": "陆路规则 11",
+      "template": "本次可用当前交通工具移动0至4步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 4,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_12",
+      "deck_type": "LAND",
+      "card_number": 12,
+      "title": "陆路规则 12",
+      "template": "交出1件自己的货物，与公共供应或另一位玩家交换1件不同货物；没有可行交换则不变。",
+      "effects": [
+        {
+          "op": "EXCHANGE_ONE_GOOD"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_13",
+      "deck_type": "LAND",
+      "card_number": 13,
+      "title": "陆路规则 13",
+      "template": "本次可用当前交通工具移动0至5步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 5,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_14",
+      "deck_type": "LAND",
+      "card_number": 14,
+      "title": "陆路规则 14",
+      "template": "本次可用当前交通工具移动0至2步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 2,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_15",
+      "deck_type": "LAND",
+      "card_number": 15,
+      "title": "陆路规则 15",
+      "template": "本次可用当前交通工具移动0至2步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 2,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_16",
+      "deck_type": "LAND",
+      "card_number": 16,
+      "title": "陆路规则 16",
+      "template": "本次可用当前交通工具移动0至6步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 6,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_land_17",
+      "deck_type": "LAND",
+      "card_number": 17,
+      "title": "陆路规则 17",
+      "template": "再领取自己开局城市规定的一份起始物资；按现有引擎的库存和货仓限制结算。",
+      "effects": [
+        {
+          "op": "GAIN_STARTING_RESOURCE",
+          "quantity": 1
+        }
+      ],
+      "failure_policy": "NONE_WHEN_UNAVAILABLE"
+    },
+    {
+      "id": "functional_land_18",
+      "deck_type": "LAND",
+      "card_number": 18,
+      "title": "陆路规则 18",
+      "template": "本次可用当前交通工具移动0至3步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 3,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_01",
+      "deck_type": "SEA",
+      "card_number": 1,
+      "title": "海路规则 01",
+      "template": "交回持有白银的一半，奇数向上取整，最多交回5银。",
+      "effects": [
+        {
+          "op": "LOSE_HALF_SILVER_MAX_5"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_02",
+      "deck_type": "SEA",
+      "card_number": 2,
+      "title": "海路规则 02",
+      "template": "本次可用当前交通工具移动0至5步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 5,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_03",
+      "deck_type": "SEA",
+      "card_number": 3,
+      "title": "海路规则 03",
+      "template": "再领取自己开局城市规定的一份起始物资；按现有引擎的库存和货仓限制结算。",
+      "effects": [
+        {
+          "op": "GAIN_STARTING_RESOURCE",
+          "quantity": 1
+        }
+      ],
+      "failure_policy": "NONE_WHEN_UNAVAILABLE"
+    },
+    {
+      "id": "functional_sea_04",
+      "deck_type": "SEA",
+      "card_number": 4,
+      "title": "海路规则 04",
+      "template": "本次可用当前交通工具移动0至2步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 2,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_05",
+      "deck_type": "SEA",
+      "card_number": 5,
+      "title": "海路规则 05",
+      "template": "本次可用当前交通工具移动0至5步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 5,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_06",
+      "deck_type": "SEA",
+      "card_number": 6,
+      "title": "海路规则 06",
+      "template": "交出1件自己的货物，与公共供应或另一位玩家交换1件不同货物；没有可行交换则不变。",
+      "effects": [
+        {
+          "op": "EXCHANGE_ONE_GOOD"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_07",
+      "deck_type": "SEA",
+      "card_number": 7,
+      "title": "海路规则 07",
+      "template": "本次可用当前交通工具移动0至3步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 3,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_08",
+      "deck_type": "SEA",
+      "card_number": 8,
+      "title": "海路规则 08",
+      "template": "本次可用当前交通工具移动0至6步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 6,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_09",
+      "deck_type": "SEA",
+      "card_number": 9,
+      "title": "海路规则 09",
+      "template": "从自己持有的货物中选择1件，放回公共供应；没有货物则不变。",
+      "effects": [
+        {
+          "op": "LOSE_GOOD",
+          "quantity": 1,
+          "selection_policy": "PLAYER_CHOICE"
+        }
+      ],
+      "failure_policy": "NONE_WHEN_EMPTY"
+    },
+    {
+      "id": "functional_sea_10",
+      "deck_type": "SEA",
+      "card_number": 10,
+      "title": "海路规则 10",
+      "template": "交出1件自己的货物，与公共供应或另一位玩家交换1件不同货物；没有可行交换则不变。",
+      "effects": [
+        {
+          "op": "EXCHANGE_ONE_GOOD"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_11",
+      "deck_type": "SEA",
+      "card_number": 11,
+      "title": "海路规则 11",
+      "template": "从自己持有的货物中选择1件，放回公共供应；没有货物则不变。",
+      "effects": [
+        {
+          "op": "LOSE_GOOD",
+          "quantity": 1,
+          "selection_policy": "PLAYER_CHOICE"
+        }
+      ],
+      "failure_policy": "NONE_WHEN_EMPTY"
+    },
+    {
+      "id": "functional_sea_12",
+      "deck_type": "SEA",
+      "card_number": 12,
+      "title": "海路规则 12",
+      "template": "再领取自己开局城市规定的一份起始物资；按现有引擎的库存和货仓限制结算。",
+      "effects": [
+        {
+          "op": "GAIN_STARTING_RESOURCE",
+          "quantity": 1
+        }
+      ],
+      "failure_policy": "NONE_WHEN_UNAVAILABLE"
+    },
+    {
+      "id": "functional_sea_13",
+      "deck_type": "SEA",
+      "card_number": 13,
+      "title": "海路规则 13",
+      "template": "本次可用当前交通工具移动0至2步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 2,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_14",
+      "deck_type": "SEA",
+      "card_number": 14,
+      "title": "海路规则 14",
+      "template": "本次可用当前交通工具移动0至4步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 4,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_15",
+      "deck_type": "SEA",
+      "card_number": 15,
+      "title": "海路规则 15",
+      "template": "持有0或1件货物时不损失；持有2或3件时交回1件，持有4件时交回2件。由自己选择货物。",
+      "effects": [
+        {
+          "op": "LOSE_HALF_GOODS_MAX_2",
+          "max_loss": 2,
+          "single_item_policy": "NO_LOSS",
+          "two_item_loss_threshold": 4
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_16",
+      "deck_type": "SEA",
+      "card_number": 16,
+      "title": "海路规则 16",
+      "template": "本次可用当前交通工具移动0至4步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 4,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_17",
+      "deck_type": "SEA",
+      "card_number": 17,
+      "title": "海路规则 17",
+      "template": "本次可用当前交通工具移动0至6步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 6,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    },
+    {
+      "id": "functional_sea_18",
+      "deck_type": "SEA",
+      "card_number": 18,
+      "title": "海路规则 18",
+      "template": "本次可用当前交通工具移动0至3步，也可停留。",
+      "effects": [
+        {
+          "op": "MOVE_BY_RANGE",
+          "min_steps": 0,
+          "max_steps": 3,
+          "route_mode": "CURRENT_TRANSPORT"
+        }
+      ],
+      "failure_policy": "NONE"
+    }
+  ],
+  "generator_params": {
+    "version": "tradegen_v2_original_1",
+    "local_batches": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "silver_cap": 5,
+    "price_base": 2,
+    "distance_step": 6,
+    "silk_count": 4,
+    "partner_count": 2,
+    "foreign_max": 3,
+    "weight_scale": 12,
+    "salt": 0,
+    "assignment_relaxation_budget": 400000
+  },
+  "generation_request": {},
+  "description": "旅行L叔公开包功能规则：16城、15种货物、80张贸易牌数值、36张陆海事件机器效果。事件标题和说明为新写操作提示，无原卡图像、原文或第三方角色素材。地图使用程序内置16城棋盘。新增城市生成参数为现有原创v2，保持原值，不代表原桌游公式或平衡认证。"
+}

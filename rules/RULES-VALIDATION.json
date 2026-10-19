@@ -1,0 +1,236 @@
+{
+  "filename": "LTravel-functional-rules-v1.json",
+  "sha256": "d89e7672c7abcf864d0e38504796d5f3b3005e54d1155f45ca9fd58ddced1057",
+  "bytes": 75954,
+  "goods": 15,
+  "cities": 16,
+  "decks": 8,
+  "trade_cards": 80,
+  "events_by_deck": {
+    "LAND": 18,
+    "SEA": 18
+  },
+  "mechanical_values_match_r2": true,
+  "original_event_prose_copied": false,
+  "new_event_titles_and_instructions": true,
+  "generator_v2_parameters_unchanged": true,
+  "includes_map_topology": false,
+  "uses_bundled_map": true,
+  "runtime_validation": {
+    "checks_passed": 16,
+    "checks_failed": 0,
+    "source_commit": "ab6d4ce6e6ac5fc5345300754b9630e5871496b3",
+    "package_source_commit": "09af7f35bdd892a186304a208e42f1217c367aed",
+    "gameplay_scripts_unchanged": true,
+    "loaded_counts": {
+      "cities": 16,
+      "edges": 57,
+      "event_definitions": 36,
+      "event_instances": 36,
+      "goods": 15,
+      "nodes": 54,
+      "trade_cards": 80,
+      "trade_decks": 8
+    },
+    "human_setup_player_counts": [
+      2,
+      3,
+      4
+    ],
+    "event_effect_tests": [
+      {
+        "id": "user_event_functional_land_01",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_02",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_03",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_04",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_05",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_06",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_07",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_08",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_09",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_10",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_11",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_12",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_13",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_14",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_15",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_16",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_17",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_land_18",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_01",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_02",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_03",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_04",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_05",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_06",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_07",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_08",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_09",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_10",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_11",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_12",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_13",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_14",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_15",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_16",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_17",
+        "passed": true
+      },
+      {
+        "id": "user_event_functional_sea_18",
+        "passed": true
+      }
+    ],
+    "games": [
+      {
+        "finished": true,
+        "last": {
+          "message": "goods conservation and warehouse consistency",
+          "success": true
+        },
+        "natural_end": false,
+        "players": 2,
+        "success": true,
+        "turns": 122
+      },
+      {
+        "finished": true,
+        "last": {
+          "message": "goods conservation and warehouse consistency",
+          "success": true
+        },
+        "natural_end": false,
+        "players": 3,
+        "success": true,
+        "turns": 123
+      },
+      {
+        "finished": true,
+        "last": {
+          "message": "goods conservation and warehouse consistency",
+          "success": true
+        },
+        "natural_end": false,
+        "players": 4,
+        "success": true,
+        "turns": 124
+      }
+    ],
+    "trade_actions": 98,
+    "random_dice": {
+      "1": 58,
+      "2": 71,
+      "3": 65,
+      "4": 63,
+      "5": 56,
+      "EVENT": 56
+    },
+    "scope": "Isolated Godot source runtime, unchanged public.1 gameplay scripts; no GUI/platform/balance certification. Forced event coverage and supported time-limit settlement are distinguished from random play.",
+    "environment_limitations": [
+      "Headless sandbox emitted system-font lookup errors; no script parse or compile errors in final run. Godot default user-cache creation was sandbox-blocked; rules and test output were written to the explicitly isolated workspace data directory.",
+      "No GUI, Windows/Android device, natural bank-exhaustion or economic-balance certification."
+    ]
+  }
+}
